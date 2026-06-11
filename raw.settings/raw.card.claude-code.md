@@ -44,16 +44,55 @@ AGENTS.md / CLAUDE.md (always) → subagent body → skills (on-demand) → MCP 
 - **AGENTS.md read as fallback** when no CLAUDE.md in a dir → one lean AGENTS.md = cross-tool contract; keep CLAUDE.md thin.
 - Budget: ~150-200 instructions reliably followed; system prompt uses ~50 → keep contract < ~300 lines.
 
-## Hooks — 17 events total; the ones you'll use
+## Hooks — 30 events (updated 2026-06-10); the ones you'll use
 PostToolUse(Edit|Write)=format/lint · PreToolUse(Bash)=deny rm -rf/sudo · PreToolUse(Edit|Write)=scope-leash ·
 SessionStart=inject context · SessionEnd=journal · UserPromptSubmit=enrich prompt · Stop/StopFailure=gate "done" ·
-SubagentStart/Stop·TeammateIdle=lifecycle · PreCompact=backup transcript · PermissionRequest=auto-approve safelist · Notification=Slack.
+SubagentStart/Stop · TeammateIdle=lifecycle · PreCompact=backup transcript · PostCompact · PermissionRequest=auto-approve ·
+Notification=Slack · TaskCreated/TaskCompleted · WorktreeCreate/WorktreeRemove · MessageDisplay ·
+PostToolBatch · PostToolUseFailure · UserPromptExpansion · InstructionsLoaded · ConfigChange ·
+CwdChanged · FileChanged · PermissionDenied · Elicitation/ElicitationResult · Setup · StopFailure.
+
 Exit 0 = proceed; exit 2 = block. stdout injected as context only for UserPromptSubmit / UserPromptExpansion / SessionStart.
+
+**Handler types (5):** `command` · `http` · `mcp_tool` · `prompt` · `agent` (experimental — spawns subagent as hook handler).
+
+**BREAKING (v2.1.139):** `/dev/tty` no longer accessible from command hooks on macOS/Linux.
+Use `terminalSequence` field instead (requires v2.1.141+).
+
+**New env var in hooks:** `CLAUDE_EFFORT` — exposes current effort level to hook scripts.
 
 ## VOLATILE / watch
 - Model strings rotate (Opus 4.x line). Never hardcode dated strings in agents; set a floor, verify via changelog.
 - Moving fast: Agent Teams, dynamic workflows, background sessions (Ctrl+T pin), `--fallback-model`.
 - Also in `~/.claude`: rules, workflows, auto-memory — exist, not yet load-bearing here; inspect before relying.
+
+## Rate caps & fallback strategy (2026-06-10)
+
+**Current status:** Good rate — ceiling not a day-to-day constraint. Token spend
+can be used aggressively for big-brain tasks.
+
+**Model tier as of 2026-06-10:**
+Fable 5 (`claude-fable-5` / alias `"fable"`) > Opus 4.8 > Sonnet 4.6 > Haiku 4.5.
+
+**Fallback ladder when Fable ceiling is hit:**
+- Houston (planning loops) → route to Janus (Opus)
+- Agol (continuous synthesis) → route to Janus (Opus)
+- Janus (deliberation) → already Opus; no lower fallback needed
+- Epoch (research) → stays Sonnet; not Fable-tier
+- Trajectory (implementation) → stays Sonnet; not Fable-tier
+
+**Practical rule:** same agent body, lower model tier. The agent's prompt does not
+change when falling back — only the `model:` override changes at spawn time.
+
+**Tokenizer note (from Opus 4.7+):** same text produces ~30% more tokens vs
+pre-4.7 models. Recalibrate any hardcoded token budgets in prompts.
+
+**`fallbackModel` setting** (`["sonnet", "haiku"]`) handles model *unavailability*,
+not rate limits — these are separate concerns. Rate-limit fallback is operational
+routing, not a settings.json field.
+
+**advisorModel alias:** `"fable"` works from Claude Code v2.1.170+. Use full ID
+`claude-fable-5` on older installs.
 
 ## Recommendation for LARVA
 Thin agent shells; specialization in portable skills; model floor in ONE place per agent; pack a project
