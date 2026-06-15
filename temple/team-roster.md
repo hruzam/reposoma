@@ -34,16 +34,16 @@ These load in every Claude Code session regardless of project.
 
 | @ name | File | Model | Role |
 |--------|------|-------|------|
-| @Atlas | `atlas` (`claude.creator.ui`) | Sonnet | Interactive primitive creator — interactive sessions, buffers before writing |
-| @AtlasAuto | `atlas-auto` (`claude.creator.auto`) | Sonnet | Automated primitive creator — spawnable by orchestrators, writes to staging |
+| @Atlas | `atlas-ui` | Sonnet | Interactive primitive creator — interactive sessions, buffers before writing |
+| @AtlasAuto | `atlas-auto` | Sonnet | Automated primitive creator — spawnable by orchestrators, writes to staging |
 | @Zenith | `zenith` (`claude.creator.sniffer`) | Haiku | Targeted reader for heavy `raw.settings` reference files |
 | @Agol | `agol` | Fable | Continuous-reasoning advisor — cross-phase synthesis, non-adversarial, no verdict forced |
 | @CapCom | `capcom` | Sonnet | Mission controller — human gate before Houston gets full autonomy |
 | @Hypatia | `hypatia` | Opus | Strategic cross-project consultant (Larva / Chytros / Stridularium) — Astrolabe method, one ranked verdict |
 | @Recorder | `recorder` | Haiku | Session memory librarian — merges dumps/artifacts into `session-draft-memory.md` |
-| @Senior | `trajectory-senior-dev` | Sonnet | Senior implementation lead — flags better approaches, spawns @Delta |
-| @Delta | `delta` (`coder-junior`) | Haiku | δ(x) executor — surgical tasks, zero judgment, integrates to one |
-| @Symmetry | `symmetry-ai-expert` | — | AI-human cohabitation project persona (conceptual layer, not a CLI agent) |
+| @Senior | `trajectory` | Sonnet | Senior implementation lead — flags better approaches, spawns @Delta |
+| @Delta | `delta` | Haiku | δ(x) executor — surgical tasks, zero judgment, integrates to one |
+| @Symmetry | `symmetry` | — | AI-human cohabitation project persona (conceptual layer, not a CLI agent) |
 
 **Agol vs Janus:** Agol = continuous synthesis, no verdict forced. Janus = adversarial challenger, one verdict. Pick by purpose. Agol → Janus fallback if Fable ceiling hit.
 
