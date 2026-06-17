@@ -38,6 +38,7 @@ These load in every Claude Code session regardless of project.
 | @AtlasAuto | `atlas-auto` | Sonnet | Automated primitive creator — spawnable by orchestrators, writes to staging |
 | @Zenith | `zenith` (`claude.creator.sniffer`) | Haiku | Targeted reader for heavy `raw.settings` reference files |
 | @Agol | `agol` | Fable | Continuous-reasoning advisor — cross-phase synthesis, non-adversarial, no verdict forced |
+| @Houston | `houston` | Opus · effort:high | Architect / orchestrator — phase planner, owns `session/plan/session.plan.md`, spawns @AtlasAuto + challenger, gated by @CapCom. Project-agnostic global form (freya/piql variants are project-scoped) |
 | @CapCom | `capcom` | Sonnet | Mission controller — human gate before Houston gets full autonomy |
 | @Hypatia | `hypatia` | Opus | Strategic cross-project consultant (Larva / Chytros / Stridularium) — Astrolabe method, one ranked verdict |
 | @Recorder | `recorder` | Haiku | Session memory librarian — merges dumps/artifacts into `session-draft-memory.md` |

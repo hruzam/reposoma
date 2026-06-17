@@ -1,6 +1,6 @@
-# Agentive System — the bigger picture
+# Agentive System — the bigger picture (v2, cleaned)
 
-_Drawn from `the-team_doctrine-v2.md` (archetypes) + `team-roster.md` (live cast), as the future build. Orange = the deltas we derived this session, not yet in canon._
+_Drawn from `the-team_doctrine-v3.md` (archetypes) + `team-roster.md` (live cast). Orange = deltas not yet in canon. v2 fixes: added `@Atlas → @Zenith` reader; kept `@Trajectory` self-clone and `@Houston → @Delta` (trivial reads) as doctrine-true; removed the "swarm" scope-leak, keeping `@Agol → @Houston` as a report-up._
 
 ```mermaid
 flowchart TD
@@ -21,9 +21,10 @@ flowchart TD
         JAN["CHALLENGER // @Janus · Opus<br/>one verdict · one risk · read-only"]
         AGOL["ADVISOR // @Agol · Fable<br/>cross-phase synthesis · no verdict"]
         EPO["RESEARCHER // @Epoch · Sonnet<br/>live fetch · dated · cited"]
-        TRA["SENIOR IMPL // @Trajectory · Sonnet<br/>writes code · runs shell"]
+        TRA["SENIOR IMPL // @Trajectory · Sonnet<br/>writes code · runs shell<br/>self-clones for hard tasks"]
         DEL["EXECUTOR // @Delta · Haiku<br/>surgical · zero judgment"]
         ATL["CREATOR // @Atlas · Sonnet<br/>builds native primitives"]
+        ZEN["READER // @Zenith · Haiku<br/>targeted heavy-doc reader"]
         HYP["OVERSIGHT // @Hypatia · Opus<br/>cross-project · ranked verdict"]
         REC["@Recorder · Haiku<br/>session memory"]
         VARA["ORCHESTRATOR // @Vara<br/>DEFERRED until volume"]
@@ -36,17 +37,12 @@ flowchart TD
     HOU --> TRA
     HOU --> ATL
     HOU --> REC
+    HOU -->|trivial reads| DEL
     TRA --> DEL
-    HOU --> DEL
+    TRA -.self-clone.-> TRA
+    ATL --> ZEN
+    AGOL -.synthesis report-up.-> HOU
     HYP -.spans projects.-> HOU
-    TRA --> AGOL
-    DEL --> AGOL
-    TRA --> TRA
-    TRA --> DEL
-
-    subgraph FEEDBACK["Feedback Loop"]
-        AGOL -.gathers feedback (from swarm or Delta).-> HOU
-    end
 
     subgraph CANON[" sovereign canon · durable files in git "]
         PLAN["plan.md · what we are doing"]
@@ -55,7 +51,7 @@ flowchart TD
         DEC["docs/decisions/ · ADR<br/>superseded, never edited"]
     end
 
-    GATE{{"agentctl materialize<br/>ONE source to N surfaces<br/>lockfile · verify on drift"}}
+    GATE{{"materializer · the gate<br/>ONE source to N surfaces<br/>lockfile · verify on drift"}}
 
     subgraph SURF[" consumer surfaces · weather · gitignored "]
         AG["AGENTS.md<br/>graduated to canon-grade"]
@@ -70,7 +66,7 @@ flowchart TD
         A3["OpenCode · runtime hedge"]
     end
 
-    LIVE["local MCP · the live slice ONLY<br/>query_schema · last_error · tail_logs<br/>deferred loading"]
+    LIVE["local MCP · the live slice ONLY<br/>query_schema · last_error · tail_logs<br/>deferred loading · sized to workload"]
 
     HOU ==>|authoring| CANON
     CANON ==> GATE
@@ -86,16 +82,9 @@ flowchart TD
     class LIVE live
 ```
 
-## How to read it
+## What changed from v1
 
-- **Top band — the human gate.** majkee is the orchestrator until volume forces @Vara into existence (deferred, dashed).
-- **Middle band — the team.** Each seat is `ARCHETYPE // live-cast · tier`. The doctrine owns the left of the `//`; the roster owns the right. Solid arrows = dispatch; dotted = authorize / span. The architect never holds the wrench.
-- **Lower bands — the one-direction flow (force 4).** Authoring → **canon** (plan/flag/pulse/decisions) → **the gate** (`agentctl`) → **surfaces** (weather, gitignored) → **runtimes + commands**. Intelligence flows down only.
-- **The live slice (pink), off to the side.** Not in the canon flow — the implementer and researcher read it directly for runtime truth. This is the Model-C remainder, still unsized.
-
-## The four future deltas marked here
-
-1. **AGENTS.md graduated** (orange) — moved from vendor-weather to canon-grade; needs the graduation rule added to the file plane.
-2. **agentctl gate** — your materializer as the single compile-down, superset of the report's Ruler.
-3. **OpenCode hedge** (orange) — runtime fallback against a Gemini-style rug-pull.
-4. **Deferred-loading on the live MCP** — the fix for F3 (global servers bloat every session).
+- **`@Atlas → @Zenith`** added — the creator's Haiku reader was in the roster and missing from the map. My omission, fixed.
+- **`@Trajectory` self-clone** kept — the senior forks for parallel perspective on a hard task. Not an artifact; a real pattern.
+- **`@Houston → @Delta` (trivial reads)** kept — dispatching the cheap reader is flat dispatch, not "holding the wrench." The wrench is shell/app-code, not delegation.
+- **"swarm" removed** — that word reached into the parked composition study; the seed says do not merge. `@Agol → @Houston` stays as a synthesis report-up (the advisor returns findings; the architect persists them).
