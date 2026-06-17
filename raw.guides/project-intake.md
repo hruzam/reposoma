@@ -1,6 +1,7 @@
 # Project intake — the scope I need to draw your per-project bones
 
 `tier: raw.guides · fill one per project · the architect turns this into the team skeleton`
+`fill: COPY this to raw.guides/intake/<project>.intake.md and fill the COPY — never write into this template.`
 `produces: the seat list · the vendor-team allocation · the PROJECT.yaml contract ·`
 `the durable files (plan/flag/pulse/decisions) · the gate · the named deferral thresholds.`
 `rule: answer short. a blank means "not promised yet", not a bug. field work refines it.`

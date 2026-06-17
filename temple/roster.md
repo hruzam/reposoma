@@ -1,6 +1,6 @@
 ---
 expiration: weather (updating often according dev needs)
-updated: 2026-06-15
+updated: 2026-06-17
 CLI: Claude Code, Gemini (agy), Cursor, ChatGPT/Codex, piql
 Chat-bots: GEM (gemini.google.com), claude.ai
 IDE: Cursor
@@ -72,7 +72,8 @@ These load in every Claude Code session regardless of project.
 | reposoma RAG | `/home/hruzam/reposoma/` | Global config, raw cards, temple |
 | piql registry | `~/.config/piql/registry.toml` | Paths, services, ports for office box |
 | recorder index | `~/.claude/recorder.index.json` | All known session roots (cross-project scan) |
-| houston goal | `~/.claude/houston.goal` | CapCom reads this before spawning Houston |
+| houston goal | per-project (global `~/.claude/houston.goal` retired 2026-06-17) | goals now live per project, not one global file |
+| zsh machine layer | `~/.config/zsh/` (lighthouse: `AGENTS.md`) | Machine identity (`$MACHINE_NAME` · `echo $MACHINE_NAME`) + per-machine resource guards. Operator's personal layer — never bind its paths into a project consumer surface (§4.7). |
 
 ---
 
