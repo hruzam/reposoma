@@ -38,7 +38,8 @@ These load in every Claude Code session regardless of project.
 | @AtlasAuto | `atlas-auto` | Sonnet | Automated primitive creator — spawnable by orchestrators, writes to staging |
 | @Zenith | `zenith` (`claude.creator.sniffer`) | Haiku | Targeted reader for heavy `raw.settings` reference files |
 | @Agol | `agol` | Fable | Continuous-reasoning advisor — cross-phase synthesis, non-adversarial, no verdict forced |
-| @Houston | `houston` | Opus · effort:high | Architect / orchestrator — phase planner, owns `session/plan/session.plan.md`, spawns @AtlasAuto + challenger, gated by @CapCom. Project-agnostic global form (freya/piql variants are project-scoped) |
+| @Houston | `houston` | Opus · effort:high | Architect / orchestrator — phase planner, owns `session/plan/session.plan.md`, spawns @AtlasAuto + @Janus, gated by @CapCom. Project-agnostic global form (freya/piql variants are project-scoped) |
+| @Janus | `janus` | Opus · effort:high | Challenger — second voice before a decision locks: one position, one primary risk, one alternative. Read-only. Project-agnostic global form (freya `janus-devstudio-counsel` is project-scoped) |
 | @CapCom | `capcom` | Sonnet | Mission controller — human gate before Houston gets full autonomy |
 | @Hypatia | `hypatia` | Opus | Strategic cross-project consultant (Larva / Chytros / Stridularium) — Astrolabe method, one ranked verdict |
 | @Recorder | `recorder` | Haiku | Session memory librarian — merges dumps/artifacts into `session-draft-memory.md` |
@@ -50,42 +51,8 @@ These load in every Claude Code session regardless of project.
 
 ---
 
-## freya.devstudio project agents — `.claude/agents/` (freya.devstudio)
-
-Scoped to `/home/hruzam/www/imago_cz/freya.devstudio/`. Load only in that project session.
-
-| @ name | File | Model | Role |
-|--------|------|-------|------|
-| @Houston | `houston-devstudio-architect` | Opus · effort:high | Architect — phase planner, owns `session/plan/session.plan.md`, spawns Janus + creator |
-| @Janus | `janus-devstudio-counsel` | Opus · effort:high | Challenger — one position, one primary risk, one alternative. Read-only. |
-| @Agol | `agol-devstudio-mind` | Fable | Devstudio continuous advisor — synthesizes R1/R2/R3 across phases |
-| @Epoch | `epoch-devstudio-researcher` | Sonnet | Researcher — live fetch, dated snapshot reports to `session/research/` |
-| @Trajectory | `trajectory-devstudio-senior-dev` | Sonnet | Senior implementer — Laravel 13 / PHP 8.4 / Livewire 4 / Pest 4 / Larastan L6 |
-| @Delta | `delta-devstudio` (`coder-devstudio-junior`) | Haiku | δ(x) executor for freya — Czech PHP comments, no Tailwind, strict scope |
-
-### freya.devstudio research phases
-
-| Phase | Goal | Owner |
-|-------|------|-------|
-| R1 | Laravel × Cursor cohabitation — CLI vs IDE, brand agents, token hygiene | @Epoch |
-| R2 | freya codebase audit — AI setup, paratest, MCP package ID | @Epoch |
-| R3 | 3 independent studies (Claude / Gemini / Cursor-ChatGPT) → triangulate → devstudio contours | multi |
-| B  | Build devstudio from R3 synthesis | @Houston + build |
-
-### freya stack facts (burned into all agents)
-
-```
-Framework:  Laravel 13.x · PHP 8.4 strict
-Frontend:   Livewire 4 · Skaven CSS — Tailwind permanently forbidden
-Tests:      Pest 4 · brianium/paratest installed
-Analysis:   Larastan Level 6 — never suppress without reason
-Octane:     RoadRunner (spiral/roadrunner-*)
-DB:         MariaDB 10.11
-Comments:   Czech language — always, no exceptions
-OS:         Manjaro Linux · Arch · systemd
-Paths:      app code  → /home/hruzam/www/imago_cz/freya/
-            devstudio → /home/hruzam/www/imago_cz/freya.devstudio/
-```
+## Project-scoped agents
+> Project-scoped agents, stack facts, and research phases live in each project's own roster (e.g. freya.devstudio — in that repo). Kept out of the agnostic substrate.
 
 ---
 

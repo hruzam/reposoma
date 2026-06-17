@@ -24,7 +24,7 @@
 
 You have been handed a new project — complex, agentive, a different shape from where this doctrine was
 forged. **That does not matter.** What transfers is not the stack — it is the *shape of the cooperating
-group* and *how it survives the human it serves.* Swap the implementer's domain; keep everything else.
+group* and *how it survives the human it serves.* Swap the implementer's domain; keep everything else. The doctrine was forged in one shop's stack and is written to be ported into a very different one; if it still reads as stack-specific anywhere, that is a leak to fix, not a rule to follow.
 
 **The caveat, stated plainly:** where this doctrine names a concrete tool — the primitive-builder
 `atlas-creator-*`, the contract `PROJECT.yaml`, the materializer/gate (`agentctl` in the shop where this

@@ -67,22 +67,7 @@ reposoma/                      META-REPO · plane 1 + 3 · the global sovereign 
 ```
 
 ---
-`@majkee->Symmetry`
-Just only FYI
-> TIER 3 can be provided by MCP, or better to say in case I am installed laravel-boost and used 
-```bash 
-composer update
-composer install
-```
-> --> passed to project folder harness and I assume that laravel boost itself can inform agents about indexed and well known laravel style. Is that what is matches your diagram? because this approach I am using with my officemates on Laravel projects. If there some new primitives -> installing via composer which is laravel-boost standard.
 
-> Not sure if research did not refuse directly, but how can iI imagine this part *(cide)* ```My team of agents is also application data (JSON prompts + .md), not agents in the CLI.``` -> although we said that can be extreme can you give me some example, how that can look. only I can see difference.
-
-> Taking your vision. Now you can say what should be gaveled.
-
-> my lean
-`@majkee->Symmetry` 
->END.
 ## The legend is the point — sovereignty is a gradient, not a binary
 
 | Tag | Tier | Migration truth |

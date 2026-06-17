@@ -1,0 +1,38 @@
+# Stand up a team for a new project (from the temple)
+
+`tier: raw.guides · the B-door procedure (the temple is the source; this is the steps)`
+`audience: an architect agent (or the operator) starting a new project`
+`date: 2026-06-17`
+
+> Read the temple's `doctrine.md` first for the why. This is the how: from empty repo to a working
+> team, smallest-first.
+
+## Step 0 — mount and read state
+Mount the temple as your global RAG. Read, in order: the project's `PROJECT.yaml` (the contract —
+the one file you may assume exists) and its clean `pulse.md`. Do not scan the codebase; read the
+contract's `docs.*` pointers.
+
+## Step 1 — start with the four seats (doctrine §6)
+**architect + challenger + researcher + implementer.** Plus a plan file, a flag/decisions ledger,
+one compile-down gate, one adversarial pass before each lock. Do **not** pre-grant domain seats.
+
+## Step 2 — write the contract
+`PROJECT.yaml` (schema in `tools/agentctl.spec.md`): capability names not stack names, the verbs
+agents resolve (`commands.*`), the doc entry points (`docs.*`), the requested agent set, the MCP
+profile. Anything not in the contract is not promised.
+
+## Step 3 — materialize (the gate)
+Run `agentctl materialize` (or do it by hand at first): one sovereign source → the project's native
+surfaces, with a lockfile + `verify` that fails CI on drift. Author canon in Tier S only; never
+hand-edit a generated (Tier GW) file.
+
+## Step 4 — grow by earning seats (doctrine §5)
+Let load — not a planning whim — pull each new seat into existence: a deep core specialist, a domain
+researcher, a deterministic-vs-agentive tool-builder split, a human-facing surface. Earn the
+orchestrator and any multi-group split the same way: only at measured volume.
+
+## Step 5 — keep the record
+Per project: `plan` (what we're doing) · `flag`/`decisions` (what's locked) · `pulse` (volatile).
+Lock the convergence; leave unverified mechanism conditional. Challenge before every lock.
+
+> The smallest team that ships one correct thing beats the complete team that ships an org chart.

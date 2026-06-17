@@ -1,6 +1,6 @@
 # Agentive System — the bigger picture (v2, cleaned)
 
-_Drawn from `the-team_doctrine-v3.md` (archetypes) + `team-roster.md` (live cast). Orange = deltas not yet in canon. v2 fixes: added `@Atlas → @Zenith` reader; kept `@Trajectory` self-clone and `@Houston → @Delta` (trivial reads) as doctrine-true; removed the "swarm" scope-leak, keeping `@Agol → @Houston` as a report-up._
+_Drawn from `doctrine.md` (archetypes) + `roster.md` (live cast). Orange = deltas not yet in canon. v2 fixes: added `@Atlas → @Zenith` reader; kept `@Trajectory` self-clone and `@Houston → @Delta` (trivial reads) as doctrine-true; removed the "swarm" scope-leak, keeping `@Agol → @Houston` as a report-up._
 
 ```mermaid
 flowchart TD
