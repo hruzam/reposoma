@@ -8,7 +8,7 @@
 |---|---|---|---|---|
 | reposoma (temple / meta-repo) | office | live | — (this repo) | `temple/README.md` |
 | subai.devenv | office | cleared 🟢 | [`registry/subai.devenv.md`](subai.devenv.md) | `README.md` · `PROJECT.yaml` · siblings: reposoma.devenv, piql.dev |
-| reposoma.devenv | office | onboarding (§D locked) | _pending — basement/atlas_ | `raw.guides/intake/reposoma.devenv.intake.md` |
+| reposoma.devenv | office | onboarding (§D locked) | [`registry/reposoma.devenv.md`](reposoma.devenv.md) | `CLAUDE.md` · charter `synth.restart.reposoma.md` · siblings: subai.devenv, piql.dev |
 | freya.devstudio | ? | active | _pending — reshape from raw.projects_ | `raw.projects/raw.project.freya.devstudio.md` (legacy) |
 | piql.dev | office | active | [`registry/piql.md`](piql.md) | `session/mesh-state.md` · `CLAUDE.md` · siblings: freya.devstudio, subai.devenv |
 
