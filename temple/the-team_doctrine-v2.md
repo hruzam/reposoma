@@ -2,8 +2,8 @@
 
 `authored-by: Houston (architect, freya.devstudio) · as team leader`
 `for: the next architect, standing up a team on a new project`
-`date: 2026-06-11 · tier: reposoma/temple (curated mental source, cross-project)`
-`domain: agnostic — this is the agentic skeleton, not a stack. UNIX more than Laravel.`
+`date: 2026-06-11 · tier: temple (curated mental source, cross-project)`
+`domain: agnostic — this is the agentic skeleton, not a stack. UNIX more than any one framework.`
 
 > A senior pulled me aside once and said: *the team is not the work — the team is the thing that
 > makes the work survivable.* This is that conversation, written down. Read it as advice, not law.
@@ -13,16 +13,16 @@
 
 ## 0. What this is, and the one honest caveat
 
-You have been handed a new project — complex, agentive: a RAG, guides, a dashboard, a journal, tools
-both hardcoded and agent-driven, a vector/tensor engine, spectral analysis. Different stack from where
-this doctrine was forged (a Laravel shop). **That does not matter.** What transfers is not the stack —
-it is the *shape of the cooperating group* and *how it survives the human it serves.* Swap the
-implementer's domain; keep everything else.
+You have been handed a new project — complex, agentive, a different shape from where this doctrine was
+forged. **That does not matter.** What transfers is not the stack — it is the *shape of the cooperating
+group* and *how it survives the human it serves.* Swap the implementer's domain; keep everything else.
+The doctrine was forged in one shop's stack and is written to be ported into a very different one; if it
+still reads as stack-specific anywhere, that is a leak to fix, not a rule to follow.
 
 **The caveat, stated plainly:** where this doctrine names the primitive-builder, it calls it
 `atlas-creator-*`. That is the target name — the clean, ad-hoc primitive-builder you should build into a
 new project from day one. (In the shop where this was forged it still answers to an older name mid-rename;
-the new project has no such debt — start it as `atlas-creator-*`.) Everything else here is reported as it
+a fresh project has no such debt — start it as `atlas-creator-*`.) Everything else here is reported as it
 actually runs.
 
 ---
@@ -99,9 +99,9 @@ the same one-direction gate as everything else.
 locked X because Y"). A sentence trying to live in two files is in the wrong tense — move it,
 don't copy it.
 
-*Stack footnote:* inside a Laravel shop, "Pulse" collides with the Laravel Pulse monitoring
-package. One definition line in the compiled guidelines disarms every agent's confusion; the
-canon keeps its name.
+*Stack footnote:* in some stacks a canon name like "Pulse" collides with a same-named vendor
+package (a monitoring tool, say). One definition line in the compiled guidelines disarms every
+agent's confusion; the canon keeps its name.
 
 ---
 
@@ -130,6 +130,17 @@ Two notes that matter more than they look:
   do not want soothing synthesis when you need to be told you're wrong.
 - **The architect never executes.** The discipline that the planner does not also hold the wrench is what
   keeps the grip clean. The moment the architect starts editing files and running commands, the plan rots.
+
+**Archetypes above, cast below — one knowledge system in two layers, not two parallel docs.** This table is
+doctrine: the durable set of cleanly separated jobs, and the substrate the two notes above stand on (you
+cannot reason about the Challenger-vs-Advisor split, or *architect-never-executes*, unless the roles exist
+here). *Who* fills each seat on any given day — the named agents, the model behind each one, the CLI it runs
+in — is weather, and it belongs in exactly one place: the **team roster** (its own sibling file). Keep the
+relation one-directional, the same gate as everything else (force 4): an archetype here is *instantiated* by
+a named agent in the roster; every name in the roster must trace back to an archetype here. That is how you
+honor "never run two parallel knowledge systems" (force 3) *without* gutting this section — the roster is
+not a second copy of the doctrine, it is the volatile lower layer the doctrine is deliberately silent about.
+When you want the live cast, read the roster; when you want to know *why* a seat exists at all, read here.
 
 ---
 
@@ -210,17 +221,18 @@ None of this is a problem. It is the operating environment. Here is how you thri
 
 ## 5. Adapting the skeleton to a new project
 
-The new project is more UNIX than framework — a tensor/vector engine, spectral analysis, a RAG, a
-dashboard, a journal, agentive and hardcoded tools. The skeleton does not change. The implementer's *domain*
-does. Keep the architect, the challenger, the advisor, the researcher, the implementer, the executor, the
-creator, and the cross-project oversight. Then earn — do not pre-grant — the domain seats this project will
-likely want:
+The skeleton does not change. The implementer's *domain* does. Keep the architect, the challenger, the
+advisor, the researcher, the implementer, the executor, the creator, and the cross-project oversight. Then
+earn — do not pre-grant — the domain seats your particular project will likely want. The seats below are
+illustrative; read the *pattern*, not the labels:
 
-- an **engine specialist** (vector/tensor core: numerics, memory layout, performance — a deep, narrow seat);
-- a **signal/spectral researcher** (the analysis domain — math and method, not framework trivia);
-- a split between a **hardcoded-tool builder** (deterministic, tested, fast) and an **agentive-tool
+- a **deep core specialist** when the project has a narrow, performance- or correctness-critical heart
+  (numerics, memory layout, a hot path) — a deep, narrow seat;
+- a **domain researcher** when there is a body of method or math the team must get right, distinct from
+  framework trivia;
+- a split between a **deterministic-tool builder** (tested, fast, predictable) and an **agentive-tool
   builder** (LLM-driven, bounded, observable) — these are different disciplines; don't conflate them;
-- a **dashboard/journal surface** seat (the human-facing read-out — where the system explains itself).
+- a **human-facing surface** seat (the read-out where the system explains itself to the person it serves).
 
 Start flat with the minimum (architect + one challenger + one researcher + one implementer) and let load
 pull each new seat into existence. **The smallest team that ships one correct thing beats the complete team
@@ -231,11 +243,11 @@ The knowledge tier carries over unchanged: a **global cross-project RAG** (this 
 generated scope summaries the agents read instead of rescanning) + **live tools** for runtime truth. Global
 on-demand, project pushed, live both.
 
-**On splitting into more than one group** (the human is already considering it): when it comes, split by
-*concern surface*, not by headcount — e.g. an engine-core cell, a research/RAG cell, a dashboard/journal
-cell — each a flat human-in-the-loop unit with its own architect, federated under the cross-project
-oversight role. But a multi-group structure is itself a volume decision. Earn it the same way you earn an
-orchestrator: when one architect can no longer hold the grip, and not a day before.
+**On splitting into more than one group:** when it comes, split by *concern surface*, not by headcount —
+e.g. a core cell, a research/RAG cell, a human-facing-surface cell — each a flat human-in-the-loop unit with
+its own architect, federated under the cross-project oversight role. But a multi-group structure is itself a
+volume decision. Earn it the same way you earn an orchestrator: when one architect can no longer hold the
+grip, and not a day before.
 
 ---
 
