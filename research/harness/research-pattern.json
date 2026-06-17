@@ -1,0 +1,84 @@
+{
+  "pattern": "blind-fanout-deep-study",
+  "version": "1.0",
+  "purpose": "Reusable, hypothesis-swappable research harness. Keep the fixed method; refill the swappable parameters to study a different hypothesis.",
+  "derivedFrom": "agentic-sovereignty study (2026-06-16)",
+  "doctrine": ["blind-before-grounded", "gate-the-big", "challenge-before-lock", "cost-gradient", "persist-durably", "honesty-over-show"],
+  "principle": "Separate the FIXED method (how you run a study) from the SWAPPABLE parameters (the hypothesis + its concrete lenses). The reusable weight is the lens taxonomy: it makes a study triangulated rather than an echo chamber.",
+
+  "fixed": {
+    "phases": [
+      {"n": 1, "name": "Frame & scope", "does": "State hypothesis as a question; name competing options; set scope/audience; list cross-cuts; declare options given-not-exhaustive."},
+      {"n": 2, "name": "Source discovery", "does": "One BLIND agent per lens maps trusted sources (who/what, why-durable, must-read); does NOT answer. Includes a pattern-scout lens.", "rule": "blind-before-grounded", "output": "source-map file"},
+      {"n": 3, "name": "Scope gate", "does": "Human blesses scope: resolve split-offs, add counterweight lens if one-sided, set deliverable target.", "rule": "gate-the-big"},
+      {"n": 4, "name": "Deep dive", "does": "One agent per option + one per cross-cut + pattern-scout, grounded in mapped sources; returns structured findings.", "rule": "verify-before-build"},
+      {"n": 5, "name": "Adversarial verify", "does": "One default-skeptical refuter per load-bearing claim; verdict + survives-as.", "rule": "challenge-before-lock"},
+      {"n": 6, "name": "Synthesize", "does": "One top-model agent writes the report: even-handed map first, then a flagged [LEAN] + steelmanned dissent.", "rule": "honesty-over-show", "output": "report file"}
+    ],
+
+    "lensTypes": [
+      {"id": "domain-primary", "purpose": "Ground truth of the field itself", "sources": "practitioners + canonical primary docs/specs", "instances": "1", "required": true},
+      {"id": "first-principles", "purpose": "The durable tradition the hypothesis rests on", "sources": "foundational texts/voices that outlive products", "instances": "1-3", "required": true},
+      {"id": "exemplar", "purpose": "Dissect a best-in-class real implementation", "sources": "one concrete 'done well' case study", "instances": "1", "required": true},
+      {"id": "strategy-economics", "purpose": "Follow the money / incentives", "sources": "lock-in, standards, market/strategy canon", "instances": "1", "required": true},
+      {"id": "adjacent-discipline", "purpose": "Borrow a neighbor's habits", "sources": "a nearby field whose methods illuminate", "instances": "0-1", "required": false},
+      {"id": "counterweight", "purpose": "DISAGREE with the emerging consensus", "sources": "risk, governance, the cost nobody is pricing", "instances": "1+", "required": true, "rule": "Must dissent. If every lens agrees, you mapped an echo chamber."},
+      {"id": "pattern-scout", "purpose": "Find options beyond the given set (the 4th/5th)", "sources": "the wild: adopted + emerging + speculative", "instances": "1", "required": true}
+    ],
+    "lensSelectionCriteria": ["durability over virality", "primary/canonical over hot takes", "date version-sensitive facts", "5-10 ranked sources, quality over quantity", "each lens closes with {favorsOption, blindSpot}"],
+
+    "deepDiveStructure": {"agents": "one per option + one per cross-cut + pattern-scout", "grounding": "the phase-2 source map", "schema": "dive"},
+    "verifyStructure": {"agents": "one default-skeptical refuter per load-bearing claim", "rule": "if evidence mixed -> holds-with-caveats; only holds if it survives a hard attack", "schema": "verdict"},
+
+    "synthesisSections": [
+      "1. Executive answer (the [LEAN], with confidence)",
+      "2. The given options, fully mapped (even-handed)",
+      "3. Beyond the options - emergent patterns (FLAGGED, rated for promotion)",
+      "4. The cross-cuts (name breakpoints/numbers)",
+      "5. Adversarial findings (refutations not buried)",
+      "6. Recommendation (flagged lean + confidence + steelmanned dissent)",
+      "7. Design sketch (concrete, buildable)",
+      "8. What would change the answer (2-3 flip-facts)"
+    ],
+
+    "schemas": {
+      "sourceMapEntry": {"name": "str", "what": "str", "whyDurable": "str", "url": "str", "mustRead": "1-2", "status": "optional", "lensNote": {"favorsOption": "str", "blindSpot": "str"}},
+      "dive": {"topic": "str", "summary": "str", "keyFindings": [{"claim": "str", "evidence": "str", "citations": ["url"], "confidence": "high|medium|low", "bearing": "which option, why"}], "strongestClaim": "str", "biggestLimitation": "str", "openQuestions": ["str"], "emergentPatterns": [{"name": "str", "description": "str", "distinctFrom": "str", "citations": ["url"], "status": "real-and-adopted|emerging|speculative"}]},
+      "verdict": {"claim": "str", "verdict": "holds|holds-with-caveats|refuted", "confidence": "high|medium|low", "reasoning": "str", "counterEvidence": [{"point": "str", "citation": "url"}], "survivesAs": "str"}
+    },
+
+    "modelTiering": {"discovery": "sonnet", "deepDive": "sonnet", "verify": "sonnet", "synthesis": "opus", "rationale": "cost-gradient: grounded research + refutation = mid tier; the single keystone synthesis = top tier"},
+    "fanOutSize": {"discovery": "6-8", "deepDive": "8", "verify": "5", "synthesis": 1, "approxTotal": 14},
+    "crossCutTypes": ["economics/cost", "portability/lock-in", "risk/governance", "operations/maintenance", "domain-specific"]
+  },
+
+  "parameters": {
+    "hypothesis": "<the question/claim under study, one sentence>",
+    "scope": "<the audience & their constraints>",
+    "options": ["<competing approach A>", "<B>", "<C>"],
+    "lenses": [{"type": "<lensType id>", "topic": "<concrete topic>", "seedSources": ["<url|name>"]}],
+    "crossCuts": ["<theme that cuts across all options>"],
+    "claims": ["<load-bearing claim to refute: each option's strongest + the recommendation's load-bearers>"],
+    "target": "map | decision | design (or a~b blend, lean flagged)"
+  },
+
+  "instantiateSteps": [
+    "1. Fill parameters (hypothesis, scope, options, crossCuts).",
+    "2. Pick 5-8 lenses by type; give each topic + seedSources; force >=1 dissenting counterweight.",
+    "3. Run phase 2 (blind source discovery) -> save <study>.source-map.<date>.md. GATE.",
+    "4. Derive claims from the source map.",
+    "5. Run phases 4-6 (dive -> verify -> synth) -> save <study>.report.<date>.md."
+  ],
+
+  "instantiations": [
+    {
+      "name": "agentic-sovereignty",
+      "date": "2026-06-16",
+      "hypothesis": "How should a solo operator own/deliver AI-agent knowledge across brands?",
+      "options": ["A=sovereign-markdown", "B=native-primitives", "C=MCP-served"],
+      "lensCount": 7,
+      "files": {"sourceMap": "research/agentic-sovereignty.source-map.2026-06-16.md", "report": "research/agentic-sovereignty.report.2026-06-16.md"},
+      "outcome": "counterweight (governance) dissented -> A held-with-caveats as canon, C refuted as general substrate, B selective convenience"
+    }
+  ]
+}

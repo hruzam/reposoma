@@ -1,0 +1,65 @@
+{
+  "catalog": "research-source-catalog",
+  "version": "1.0",
+  "purpose": "Hypothesis-agnostic, append-only database of sources STUDIED across research loops. Decoupled from any one hypothesis: organized by SUBJECT DOMAIN (not by a study's A/B/C lenses) so a future loop on a different hypothesis can pull seed sources by domain/tag without inheriting the old question.",
+  "relationship": {
+    "source-map (per study)": "research/<study>.source-map.<date>.md — sources organized BY that study's lenses; coupled to its hypothesis.",
+    "source-catalog (this)": "cross-study, domain-organized, ACCUMULATING. After each study, append its new sources here; never delete. This is the reusable bibliography / source-RAG.",
+    "research-pattern": "research/harness/research-pattern.{md,json,jsonl} — the METHOD (phases + lens taxonomy). The catalog feeds step 'instantiate lenses with seedSources'."
+  },
+  "records": "Live one-per-line in source-catalog.jsonl (line-economic: grep by domain/tag, read only the lines you need). This .json is the manifest + schema + index.",
+  "recordSchema": {
+    "id": "stable kebab slug",
+    "url": "the link",
+    "title": "what it is",
+    "domain": "one subject domain (see domains)",
+    "kind": "spec|doc|essay|book|paper|report|repo|blog|talk|community|cve|benchmark",
+    "tags": ["fine-grained retrieval keywords"],
+    "note": "one line: why durable + what it bears on"
+  },
+  "domains": {
+    "agent-tooling": "MCP, Claude Code/Cursor/Codex, agent frameworks, primary tool docs",
+    "unix-philosophy": "systems design, plain-text sovereignty, composability, data-over-code",
+    "knowledge-mgmt": "Zettelkasten, atomic/associative notes, PKM, digital gardens",
+    "framework-tooling": "framework AI-tooling done well (Laravel Boost ecosystem), convention-over-config",
+    "standards-economics": "lock-in, standards/convergence, hourglass, AAIF, platform-vs-protocol",
+    "scientific-computing": "literate/reproducible knowledge, array/tensor languages, RAG/embeddings sovereignty",
+    "governance-security": "permissions, CVEs, OWASP/NIST/CSA, secrets, audit/provenance",
+    "token-economics": "context/tool-cost benchmarks, caching, deferred loading, the breakpoints",
+    "emergent-patterns": "approaches beyond a given A/B/C set surfaced by the pattern-scout (AGENTS.md/SKILL.md/Ruler/OpenCode/engraph/OKF/DSPy/agents-as-data/etc.)"
+  },
+  "usage": [
+    "grep '\"domain\":\"governance-security\"' source-catalog.jsonl   # all governance sources",
+    "grep '\"agents-md\"' source-catalog.jsonl                        # by tag",
+    "grep '\"kind\":\"primary\"' ... or kind in {spec,paper,doc}        # authority filter",
+    "to seed a new study: pick domains relevant to the new hypothesis, pull those records as lens seedSources"
+  ],
+  "conventions": {
+    "append-only": "never delete a studied source; mark superseded ones with a tag if needed",
+    "provenance": "v1 records all come from the agentic-sovereignty study (2026-06-16); future studies append their new finds and may add a per-record firstSeen if mixing provenance matters",
+    "dedup": "one record per URL; multi-topic sources carry multiple tags rather than duplicate entries"
+  },
+  "provenance": [
+    {
+      "study": "agentic-sovereignty",
+      "date": "2026-06-16",
+      "sourceMap": "research/agentic-sovereignty.source-map.2026-06-16.md",
+      "report": "research/agentic-sovereignty.report.2026-06-16.md",
+      "verifiedAgainstWeb": "2026-06-16"
+    }
+  ],
+  "stats": {
+    "total": 98,
+    "byDomain": {
+      "agent-tooling": 19,
+      "governance-security": 17,
+      "standards-economics": 13,
+      "emergent-patterns": 11,
+      "unix-philosophy": 8,
+      "token-economics": 8,
+      "scientific-computing": 8,
+      "framework-tooling": 8,
+      "knowledge-mgmt": 6
+    }
+  }
+}
