@@ -10,7 +10,7 @@
 | subai.devenv | office | cleared 🟢 | [`registry/subai.devenv.md`](subai.devenv.md) | `README.md` · `PROJECT.yaml` · siblings: reposoma.devenv, piql.dev |
 | reposoma.devenv | office | onboarding (§D locked) | [`registry/reposoma.devenv.md`](reposoma.devenv.md) | `CLAUDE.md` · charter `synth.restart.reposoma.md` · siblings: subai.devenv, piql.dev |
 | freya.devstudio | ? | active | _pending — reshape from raw.projects_ | `raw.projects/raw.project.freya.devstudio.md` (legacy) |
-| piql.dev | office | active | [`registry/piql.md`](piql.md) | `session/mesh-state.md` · `CLAUDE.md` · siblings: freya.devstudio, subai.devenv |
+| piql.dev | office | active | [`registry/piql.dev.md`](piql.dev.md) | `PROJECT.yaml` · `session/mesh-state.md` · siblings: freya.devstudio, subai.devenv |
 
 ## Sibling-graph (who shares what)
 - **subai.devenv ↔ reposoma.devenv** — share **spectral · bus/`_mail` · X→Z research · file-native medium**.

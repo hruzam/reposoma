@@ -1,0 +1,9 @@
+{
+  "selectedAuthType": "gemini-api-key",
+  "security": {
+    "auth": {
+      "selectedType": "gemini-api-key",
+      "apiKey": "${GEMINI_API_KEY}"
+    }
+  }
+}

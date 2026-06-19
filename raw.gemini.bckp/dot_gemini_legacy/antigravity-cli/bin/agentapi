@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "/home/hruzam/.local/bin/agy.1781727978224407915.old" agentapi "$@"

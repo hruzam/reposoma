@@ -1,0 +1,8 @@
+{
+  "colorScheme": "dark",
+  "permissions": {
+    "allow": [
+      "command(agy)"
+    ]
+  }
+}

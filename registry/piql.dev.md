@@ -4,12 +4,12 @@ path: /home/hruzam/www/piql/piql.dev
 repo: git@github.com:hruzam/piql.dev.git
 host: office
 status: active
-contract: absent → CLAUDE.md
+contract: PROJECT.yaml
 lighthouse: session/mesh-state.md
 sibling-of: [freya.devstudio, subai.devenv, reposoma]
 shares: [bus/_mail, gatekeeper-archetype, piql-gate, reach, guide-publishing/sync]
 deposited-by: atlas
-updated: 2026-06-18
+updated: 2026-06-19
 derived-from: raw.projects/raw.project.piql.dev.md
 ---
 
@@ -18,7 +18,7 @@ derived-from: raw.projects/raw.project.piql.dev.md
 Privacy-first local agent layer: gate → scrub → Ollama inference → answer, running on office hardware (CPU-only, no cloud egress).
 
 ## Read first (the anchors — POINTERS, never copies)
-- contract     → /home/hruzam/www/piql/piql.dev/CLAUDE.md
+- contract     → /home/hruzam/www/piql/piql.dev/PROJECT.yaml
 - architecture → /home/hruzam/www/piql/piql.dev/CLAUDE.md + /home/hruzam/www/piql/piql.dev/flag.md  (no single architecture doc)
 - decisions    → /home/hruzam/www/piql/piql.dev/flag.md (tracked) · session/plan/session.plan.md (local only)
 - conventions  → /home/hruzam/www/piql/piql.dev/guides/  (piql.md · piql-bus-usage.md · ssh-self-service.md · phase08-gates-BC-manual.md)

@@ -1,0 +1,141 @@
+I0611 06:10:11.766073 36757 server.go:1307] Starting language server process with pid 36757
+I0611 06:10:11.766603 36757 server.go:485] Language server will attempt to listen on host localhost
+I0611 06:10:11.767312 36757 server.go:499] Language server listening on random port at 36447 for HTTPS (gRPC)
+I0611 06:10:11.767396 36757 server.go:506] Language server listening on random port at 46385 for HTTP
+W0611 06:10:12.054438 36757 launchmanager.go:69] Entering local chrome mode! This is WRONG unless you are running tests or in eval mode on Linux.
+I0611 06:10:12.055583 36757 manager.go:92] Creating trajectory store manager with proto store and SQLite store
+E0611 06:10:12.057285 36757 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0611 06:10:12.057618 36757 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0611 06:10:12.057649 36757 log.go:398] error getting token source: You are not logged into Antigravity.
+W0611 06:10:12.057818 36757 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0611 06:10:12.057836 36757 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0611 06:10:12.058018 36757 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0611 06:10:12.061853 36757 server.go:2309] Auth succeeded, refreshing features and managers
+E0611 06:10:12.061974 36757 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0611 06:10:12.062220 36757 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0611 06:10:12.062243 36757 log.go:398] error getting token source: You are not logged into Antigravity.
+W0611 06:10:12.062460 36757 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0611 06:10:12.062472 36757 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0611 06:10:12.062692 36757 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0611 06:10:12.062885 36757 server.go:2315] State refresh took 1ms
+I0611 06:10:12.068548 36757 server.go:1967] initialized server successfully in 302.397269ms
+I0611 06:10:12.070346 36757 auto_updater.go:253] Spawned background update process with PID 36783
+I0611 06:10:12.070498 36757 common.go:104] Launching CLI mode
+E0611 06:10:12.070548 36757 common.go:123] Failed to resolve GeminiDir ".gemini": .gemini must be an absolute path: path is not absolute, falling back to default
+I0611 06:10:12.070625 36757 common.go:154] CLI app data directory: /home/hruzam/.gemini/antigravity-cli
+I0611 06:10:12.070684 36757 server.go:211] Creating CLI server backend: product=antigravity workspaceDirs=[/home/hruzam] appDataDir=/home/hruzam/.gemini/antigravity-cli cascadeManager=true codeAssist=true
+I0611 06:10:12.071028 36757 project.go:156] project: no project found from /home/hruzam, creating new project
+W0611 06:10:12.071439 36757 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0611 06:10:12.071572 36757 log.go:398] error getting token source: You are not logged into Antigravity.
+I0611 06:10:12.071867 36757 project.go:136] project: created project "/home/hruzam" (id=fbafc615-a4eb-4aeb-8073-c46b25ccc171) at /home/hruzam/.gemini/config/projects/fbafc615-a4eb-4aeb-8073-c46b25ccc171.json (no symlink)
+I0611 06:10:12.071916 36757 server.go:1354] Backend project ID updated dynamically to: fbafc615-a4eb-4aeb-8073-c46b25ccc171
+W0611 06:10:12.072370 36757 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0611 06:10:12.072447 36757 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0611 06:10:12.072868 36757 server.go:623] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0611 06:10:12.072890 36757 client.go:81] failed to set auth token
+I0611 06:10:12.073196 36757 manager.go:282] Initializing CLI store manager for workspace /home/hruzam
+W0611 06:10:12.073283 36757 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0611 06:10:12.073689 36757 log.go:398] error getting token source: You are not logged into Antigravity.
+W0611 06:10:12.073801 36757 cli_setting_manager.go:235] cli settings not available, using defaults: failed to read cli settings: open /home/hruzam/.gemini/antigravity-cli/settings.json: no such file or directory
+I0611 06:10:12.073823 36757 cli_setting_manager.go:67] config.json not found or unreadable, using CLI settings only: open /home/hruzam/.gemini/config/config.json: no such file or directory
+I0611 06:10:12.073841 36757 cli_setting_manager.go:655] Skipping telemetry propagation because user is not logged in
+I0611 06:10:12.073847 36757 cli_setting_manager.go:79] CLI settings initialized: permissions=<nil>, toolPermission=request-review
+W0611 06:10:12.073977 36757 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0611 06:10:12.073999 36757 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0611 06:10:12.074011 36757 manager.go:396] CLI store manager initialized successfully
+I0611 06:10:12.074033 36757 common.go:381] CLI store manager created successfully
+I0611 06:10:12.074043 36757 cli_setting_manager.go:192] ApplyProjectPermissionGrants: no grants for project "/home/hruzam", cleared project permissions
+E0611 06:10:12.074194 36757 server.go:623] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0611 06:10:12.074203 36757 client.go:81] failed to set auth token
+E0611 06:10:12.074214 36757 server.go:623] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0611 06:10:12.074222 36757 client.go:81] failed to set auth token
+I0611 06:10:12.081579 36757 common.go:483] Starting CLI program
+CLI ready for user input (startup took 11.047032ms)
+ERROR: logging before google.Init: I0611 06:10:12.088449     151 terminal_info_manager.go:160] Terminal detection: TERM="xterm-256color" altScreen=true ssh=false
+I0611 06:10:12.090489 36757 gemini_extensions.go:28] Detecting Gemini extensions in /home/hruzam/.gemini/extensions
+I0611 06:10:12.090576 36757 gemini_extensions.go:49] No extensions found
+I0611 06:10:12.139804 36757 manager.go:629] Full redraw completed (rerenderAll) for conversation  (epoch 0, items 1)
+I0611 06:10:20.514687 36757 auth_manager.go:106] Starting OAuth authentication flow
+I0611 06:10:20.514777 36757 browser.go:55] consumerOAuth: starting OAuth flow
+I0611 06:10:48.378120 36757 browser.go:150] consumerOAuth: authentication completed successfully
+I0611 06:10:48.530674 36757 browser.go:162] consumerOAuth: authenticated successfully as hruzam.imago@gmail.com
+I0611 06:10:48.530780 36757 auth.go:131] ChainedAuth: interactive auth completed via consumer
+I0611 06:10:48.530808 36757 server_oauth.go:212] applyAuthResult: email=hruzam.imago@gmail.com, authMethod=consumer, quotaProject=
+I0611 06:10:48.530830 36757 server_oauth.go:217] OAuth: authenticated successfully as hruzam.imago@gmail.com
+I0611 06:10:48.530852 36757 server_oauth.go:223] b.codeAssistClient.AuthProvider (0x2bd2aa4e6c80) is same as b.cliAuth (0x2bd2aa4e6c80)
+I0611 06:10:49.454781 36757 http_helpers.go:183] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1ced1c1348d88e68
+I0611 06:10:49.700547 36757 http_helpers.go:229] Failed to make code assist backend request (fetchAdminControls): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+W0611 06:10:49.701137 36757 log_context.go:117] Cache(fetchAdminControls): Singleflight refresh failed: failed to make code assist backend request
+E0611 06:10:49.701195 36757 log.go:398] failed to make code assist backend request
+W0611 06:10:49.701531 36757 log_context.go:117] Failed to refresh cache in background: failed to make code assist backend request
+W0611 06:10:49.701563 36757 log_context.go:117] Failed to refresh cache in background: failed to make code assist backend request
+I0611 06:10:50.030643 36757 http_helpers.go:183] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xaac41109176edeba
+I0611 06:10:50.035167 36757 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (Medium)"
+I0611 06:10:50.283702 36757 input_loop.go:533] Auth done received, triggering experiment refresh
+I0611 06:10:50.283872 36757 experiment_manager.go:35] Starting experiment refresh after login
+I0611 06:10:50.601147 36757 experiment_manager.go:39] Experiments refreshed after login
+I0611 06:10:50.601310 36757 manager.go:1229] Reloading system slash commands
+I0611 06:10:51.155604 36757 http_helpers.go:183] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xcab9c70e8d14ace5
+I0611 06:10:51.156296 36757 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (Medium)"
+I0611 06:10:51.422690 36757 input_loop.go:533] Auth done received, triggering experiment refresh
+I0611 06:10:51.422803 36757 experiment_manager.go:35] Starting experiment refresh after login
+I0611 06:10:51.753846 36757 experiment_manager.go:39] Experiments refreshed after login
+I0611 06:10:51.754103 36757 manager.go:1229] Reloading system slash commands
+I0611 06:10:51.763143 36757 manager.go:1233] Slash commands unchanged, skipping update
+I0611 06:10:56.332663 36757 http_helpers.go:183] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x14877856ba0f44b9
+I0611 06:10:56.390427 36757 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (Medium)"
+I0611 06:10:56.390691 36757 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (Medium)"
+I0611 06:10:56.647587 36757 input_loop.go:533] Auth done received, triggering experiment refresh
+I0611 06:10:56.647702 36757 experiment_manager.go:35] Starting experiment refresh after login
+I0611 06:10:56.660605 36757 input_loop.go:533] Auth done received, triggering experiment refresh
+I0611 06:10:56.660720 36757 experiment_manager.go:35] Starting experiment refresh after login
+I0611 06:10:56.702192 36757 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (Medium)"
+I0611 06:10:56.780682 36757 experiment_manager.go:39] Experiments refreshed after login
+I0611 06:10:56.780990 36757 manager.go:1229] Reloading system slash commands
+I0611 06:10:56.784184 36757 manager.go:1233] Slash commands unchanged, skipping update
+I0611 06:10:56.936957 36757 experiment_manager.go:39] Experiments refreshed after login
+I0611 06:10:56.937211 36757 manager.go:1229] Reloading system slash commands
+I0611 06:10:56.942012 36757 manager.go:1233] Slash commands unchanged, skipping update
+I0611 06:10:56.979130 36757 input_loop.go:533] Auth done received, triggering experiment refresh
+I0611 06:10:56.979219 36757 experiment_manager.go:35] Starting experiment refresh after login
+I0611 06:10:57.260727 36757 experiment_manager.go:39] Experiments refreshed after login
+I0611 06:10:57.261017 36757 manager.go:1229] Reloading system slash commands
+I0611 06:10:57.264044 36757 manager.go:1233] Slash commands unchanged, skipping update
+I0611 06:10:57.635381 36757 http_helpers.go:183] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8f9f787ed26c30ab
+I0611 06:11:42.714625 36757 manager.go:629] Full redraw completed (rerenderAll) for conversation  (epoch 1, items 1)
+I0611 06:11:54.110891 36757 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (Medium)"
+I0611 06:11:54.111011 36757 manager.go:1229] Reloading system slash commands
+I0611 06:11:54.113879 36757 manager.go:1233] Slash commands unchanged, skipping update
+I0611 06:12:20.632938 36757 conversation_manager.go:291] Starting new conversation (agent=false)
+I0611 06:12:20.633114 36757 server.go:722] Creating new cascade trajectory (agentScript=false)
+I0611 06:12:20.633154 36757 server.go:725] Conversation using project ID: fbafc615-a4eb-4aeb-8073-c46b25ccc171
+I0611 06:12:20.656129 36757 server.go:753] Created conversation d11e942e-cd15-45ec-bf34-3254c50d8bd5
+I0611 06:12:20.657070 36757 server.go:2060] GetConversationDetail: found conversation d11e942e-cd15-45ec-bf34-3254c50d8bd5 (active=true)
+I0611 06:12:20.657149 36757 conversation_manager.go:320] project: switching to conversation belonging to project ID: fbafc615-a4eb-4aeb-8073-c46b25ccc171
+I0611 06:12:20.657276 36757 server.go:1354] Backend project ID updated dynamically to: fbafc615-a4eb-4aeb-8073-c46b25ccc171
+I0611 06:12:20.657299 36757 cli_setting_manager.go:192] ApplyProjectPermissionGrants: no grants for project "/home/hruzam", cleared project permissions
+E0611 06:12:20.657404 36757 conversation_manager.go:363] project: failed to add project resource folder "/home/hruzam" to workspace dynamically: failed to add workspace folder /home/hruzam: uri: file:///home/hruzam: path is already tracked
+I0611 06:12:20.657625 36757 conversation_manager.go:371] project: synced active project to "/home/hruzam" (id=fbafc615-a4eb-4aeb-8073-c46b25ccc171) and updated workspace cache
+I0611 06:12:20.657648 36757 conversation_manager.go:474] Streaming conversation d11e942e-cd15-45ec-bf34-3254c50d8bd5
+I0611 06:12:20.658533 36757 server.go:772] Starting conversation update stream for d11e942e-cd15-45ec-bf34-3254c50d8bd5
+I0611 06:12:32.069995 36757 input_loop.go:34] HandleUserInput called with text: "exit"
+I0611 06:12:32.071064 36757 conversation_manager.go:408] Forwarding user message to conversation d11e942e-cd15-45ec-bf34-3254c50d8bd5 (items=1, media=0)
+I0611 06:12:32.071112 36757 server.go:1069] Sending user message to conversation d11e942e-cd15-45ec-bf34-3254c50d8bd5 (items=1, media=0)
+I0611 06:12:35.061261 36757 encoder_embed.go:85] Installing/updating embedded webm_encoder binary to /home/hruzam/.gemini/antigravity-cli/bin/webm_encoder
+I0611 06:12:36.344766 36757 http_helpers.go:183] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x91aa13617270dcd6
+I0611 06:12:37.231915 36757 http_helpers.go:183] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbb3a0749b1cbeab1
+I0611 06:12:38.767183 36757 http_helpers.go:183] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x4def5e269d4126e8
+I0611 06:12:38.783240 36757 text_drip.go:173] Drip stopped: lastStepIdx=5, charIdx=48, length=299
+I0611 07:12:24.642911 36757 common.go:467] Terminal gone, shutting down
+I0611 07:12:24.677374 36757 common.go:488] CLI program exited, shutting down
+I0611 07:12:24.677466 36757 manager.go:537] CLI store manager shutting down
+I0611 07:12:24.677554 36757 conversation_manager.go:441] Stopping conversation stream
+I0611 07:12:24.677865 36757 server.go:2213] Language server shutting down
+E0611 07:12:24.684722 36757 mcp_manager.go:1319] Failed to close MCP instance "filesystem": signal: hangup

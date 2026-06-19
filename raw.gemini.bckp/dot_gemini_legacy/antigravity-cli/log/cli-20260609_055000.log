@@ -1,0 +1,48 @@
+I0609 05:50:00.946282 485388 server.go:1301] Starting language server process with pid 485388
+I0609 05:50:00.947328 485388 server.go:484] Language server will attempt to listen on host localhost
+I0609 05:50:00.949800 485388 server.go:498] Language server listening on random port at 33607 for HTTPS (gRPC)
+I0609 05:50:00.949883 485388 server.go:505] Language server listening on random port at 43219 for HTTP
+W0609 05:50:01.177332 485388 launchmanager.go:69] Entering local chrome mode! This is WRONG unless you are running tests or in eval mode on Linux.
+I0609 05:50:01.177981 485388 manager.go:92] Creating trajectory store manager with proto store and SQLite store
+E0609 05:50:01.181139 485388 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0609 05:50:01.181537 485388 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0609 05:50:01.181569 485388 log.go:398] error getting token source: You are not logged into Antigravity.
+W0609 05:50:01.181803 485388 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:50:01.181826 485388 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:50:01.182061 485388 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0609 05:50:01.186848 485388 server.go:2303] Auth succeeded, refreshing features and managers
+E0609 05:50:01.186912 485388 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0609 05:50:01.187103 485388 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0609 05:50:01.187118 485388 log.go:398] error getting token source: You are not logged into Antigravity.
+W0609 05:50:01.187314 485388 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:50:01.187328 485388 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:50:01.187642 485388 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0609 05:50:01.187816 485388 server.go:2309] State refresh took 0ms
+I0609 05:50:01.190226 485388 server.go:1961] initialized server successfully in 243.87124ms
+I0609 05:50:01.190397 485388 auto_updater.go:207] Last check was less than 15 minutes ago, skipping update
+I0609 05:50:01.190423 485388 common.go:104] Launching CLI mode
+E0609 05:50:01.190437 485388 common.go:123] Failed to resolve GeminiDir ".gemini": .gemini must be an absolute path: path is not absolute, falling back to default
+I0609 05:50:01.190454 485388 common.go:154] CLI app data directory: /home/hruzam/.gemini/antigravity-cli
+I0609 05:50:01.190479 485388 server.go:211] Creating CLI server backend: product=antigravity workspaceDirs=[/home/hruzam/www/imago_cz/freya.devstudio] appDataDir=/home/hruzam/.gemini/antigravity-cli cascadeManager=true codeAssist=true
+W0609 05:50:01.190759 485388 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0609 05:50:01.190788 485388 log.go:398] error getting token source: You are not logged into Antigravity.
+I0609 05:50:01.190840 485388 project.go:153] project: discovered project "/home/hruzam/www/imago_cz/freya.devstudio" (id=a78d1e84-699f-4887-a72c-6d9ae9e6a785) via cache
+I0609 05:50:01.190861 485388 server.go:1356] Backend project ID updated dynamically to: a78d1e84-699f-4887-a72c-6d9ae9e6a785
+W0609 05:50:01.191009 485388 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:50:01.191031 485388 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:50:01.191255 485388 server.go:617] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0609 05:50:01.191267 485388 client.go:81] failed to set auth token
+I0609 05:50:01.191507 485388 printmode.go:82] Print mode: starting (promptLength=31, model="", conversationID="")
+I0609 05:50:01.191524 485388 manager.go:267] Initializing CLI store manager for workspace /home/hruzam/www/imago_cz/freya.devstudio
+W0609 05:50:01.191726 485388 cli_setting_manager.go:235] cli settings not available, using defaults: failed to read cli settings: open /home/hruzam/.gemini/antigravity-cli/settings.json: no such file or directory
+I0609 05:50:01.191739 485388 cli_setting_manager.go:67] config.json not found or unreadable, using CLI settings only: open /home/hruzam/.gemini/config/config.json: no such file or directory
+I0609 05:50:01.191749 485388 cli_setting_manager.go:655] Skipping telemetry propagation because user is not logged in
+I0609 05:50:01.191754 485388 cli_setting_manager.go:79] CLI settings initialized: permissions=<nil>, toolPermission=request-review
+I0609 05:50:01.191874 485388 manager.go:372] CLI store manager initialized successfully
+I0609 05:50:01.191894 485388 printmode.go:181] Print mode: not authenticated, trying silent auth
+I0609 05:50:01.192698 485388 printmode.go:187] Print mode: silent auth failed, triggering OAuth
+I0609 05:50:01.192711 485388 auth_manager.go:106] Starting OAuth authentication flow
+I0609 05:50:01.192716 485388 browser.go:55] consumerOAuth: starting OAuth flow
+E0609 05:50:31.193692 485388 printmode.go:235] Print mode: auth timed out
+I0609 05:50:31.193753 485388 manager.go:513] CLI store manager shutting down
+I0609 05:50:31.195011 485388 server.go:2207] Language server shutting down

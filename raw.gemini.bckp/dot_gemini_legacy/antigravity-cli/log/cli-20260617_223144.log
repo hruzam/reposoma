@@ -1,0 +1,54 @@
+I0617 22:31:44.475304 44681 server.go:1338] Starting language server process with pid 44681
+I0617 22:31:44.477587 44681 server.go:499] Language server will attempt to listen on host localhost
+I0617 22:31:44.479910 44681 server.go:514] Language server listening on random port at 35261 for HTTPS (gRPC)
+I0617 22:31:44.480235 44681 server.go:522] Language server listening on random port at 45865 for HTTP
+W0617 22:31:44.779632 44681 launchmanager.go:69] Entering local chrome mode! This is WRONG unless you are running tests or in eval mode on Linux.
+I0617 22:31:44.781317 44681 manager.go:93] Creating trajectory store manager with proto store and SQLite store
+E0617 22:31:44.793408 44681 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0617 22:31:44.794554 44681 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0617 22:31:44.794664 44681 log.go:398] error getting token source: You are not logged into Antigravity.
+W0617 22:31:44.795471 44681 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0617 22:31:44.795532 44681 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0617 22:31:44.796326 44681 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0617 22:31:44.818162 44681 server.go:2368] Auth succeeded, refreshing features and managers
+E0617 22:31:44.818501 44681 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0617 22:31:44.819894 44681 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0617 22:31:44.820036 44681 log.go:398] error getting token source: You are not logged into Antigravity.
+W0617 22:31:44.821684 44681 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0617 22:31:44.821802 44681 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0617 22:31:44.823354 44681 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0617 22:31:44.824621 44681 server.go:2374] State refresh took 6ms
+I0617 22:31:44.824666 44681 server.go:2487] [RemoteControl] Resolved proxyServerURL: ""
+I0617 22:31:44.825831 44681 server.go:2014] initialized server successfully in 350.287098ms
+I0617 22:31:44.826310 44681 auto_updater.go:207] Last check was less than 15 minutes ago, skipping update
+I0617 22:31:44.826389 44681 common.go:106] Launching CLI mode
+E0617 22:31:44.826428 44681 common.go:125] Failed to resolve GeminiDir ".gemini": .gemini must be an absolute path: path is not absolute, falling back to default
+I0617 22:31:44.826488 44681 common.go:156] CLI app data directory: /home/hruzam/.gemini/antigravity-cli
+I0617 22:31:44.826560 44681 server.go:213] Creating CLI server backend: product=antigravity workspaceDirs=[/home/hruzam/www/imago_cz/freya.devstudio] appDataDir=/home/hruzam/.gemini/antigravity-cli cascadeManager=true codeAssist=true
+I0617 22:31:44.827356 44681 project.go:162] project: discovered project "/home/hruzam/www/imago_cz/freya.devstudio" (id=a78d1e84-699f-4887-a72c-6d9ae9e6a785) via cache
+I0617 22:31:44.827429 44681 server.go:1391] Backend project ID updated dynamically to: a78d1e84-699f-4887-a72c-6d9ae9e6a785
+W0617 22:31:44.827627 44681 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0617 22:31:44.827781 44681 log.go:398] error getting token source: You are not logged into Antigravity.
+W0617 22:31:44.828861 44681 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0617 22:31:44.828937 44681 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0617 22:31:44.829717 44681 server.go:640] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0617 22:31:44.829799 44681 client.go:82] failed to set auth token
+I0617 22:31:44.830699 44681 manager.go:303] Initializing CLI store manager for workspace /home/hruzam/www/imago_cz/freya.devstudio
+I0617 22:31:44.832099 44681 cli_setting_manager.go:68] config.json not found or unreadable, using CLI settings only: open /home/hruzam/.gemini/config/config.json: no such file or directory
+I0617 22:31:44.832187 44681 cli_setting_manager.go:667] Skipping telemetry propagation because user is not logged in
+I0617 22:31:44.832227 44681 cli_setting_manager.go:80] CLI settings initialized: permissions=&{Allow:[command(agy)] Deny:[] Ask:[]}, toolPermission=request-review
+I0617 22:31:44.834345 44681 manager.go:453] CLI store manager initialized successfully
+I0617 22:31:44.834405 44681 quota_manager.go:63] quotaRefreshLoop: skipped (not logged in)
+I0617 22:31:44.834447 44681 common.go:393] CLI store manager created successfully
+I0617 22:31:44.834479 44681 cli_setting_manager.go:199] ApplyProjectPermissionGrants: no grants for project "/home/hruzam/www/imago_cz/freya.devstudio", cleared project permissions
+I0617 22:31:44.965037 44681 auth.go:121] ChainedAuth: authenticated via keyring (effective: keyring)
+I0617 22:31:44.965110 44681 server_oauth.go:212] applyAuthResult: email=hruzam.imago@gmail.com, authMethod=consumer, quotaProject=
+I0617 22:31:44.965130 44681 server_oauth.go:217] OAuth: authenticated successfully as hruzam.imago@gmail.com
+I0617 22:31:44.965145 44681 server_oauth.go:223] b.codeAssistClient.AuthProvider (0x3ade246b6a80) is same as b.cliAuth (0x3ade246b6a80)
+I0617 22:31:45.901008 44681 http_helpers.go:197] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x82857e4569736293
+I0617 22:31:46.200606 44681 http_helpers.go:197] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfdc1f7c98d4f79c3
+I0617 22:31:46.204707 44681 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (Medium)"
+I0617 22:31:46.204938 44681 quota_manager.go:72] quotaRefreshLoop: starting reload (force=true)
+I0617 22:31:46.456387 44681 input_loop.go:518] Auth done received, triggering experiment refresh
+I0617 22:31:46.456492 44681 experiment_manager.go:35] Starting experiment refresh after login
+I0617 22:31:46.543972 44681 server.go:2260] Language server shutting down

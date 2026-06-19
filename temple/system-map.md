@@ -19,7 +19,7 @@ flowchart TD
     subgraph TEAM[" cooperating group · ARCHETYPE // cast · tier "]
         HOU["ARCHITECT // @Houston · Opus<br/>owns plan · dispatches<br/>never runs shell or code"]
         JAN["CHALLENGER // @Janus · Opus<br/>one verdict · one risk · read-only"]
-        AGOL["ADVISOR // @Agol · Fable<br/>cross-phase synthesis · no verdict"]
+        AGOL["ADVISOR // @Agol · Opus<br/>cross-phase synthesis · no verdict"]
         EPO["RESEARCHER // @Epoch · Sonnet<br/>live fetch · dated · cited"]
         TRA["SENIOR IMPL // @Trajectory · Sonnet<br/>writes code · runs shell<br/>self-clones for hard tasks"]
         DEL["EXECUTOR // @Delta · Haiku<br/>surgical · zero judgment"]

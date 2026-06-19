@@ -1,0 +1,53 @@
+I0609 05:49:07.234133 484661 server.go:1301] Starting language server process with pid 484661
+I0609 05:49:07.236559 484661 server.go:484] Language server will attempt to listen on host localhost
+I0609 05:49:07.238710 484661 server.go:498] Language server listening on random port at 44553 for HTTPS (gRPC)
+I0609 05:49:07.238907 484661 server.go:505] Language server listening on random port at 41491 for HTTP
+W0609 05:49:07.549286 484661 launchmanager.go:69] Entering local chrome mode! This is WRONG unless you are running tests or in eval mode on Linux.
+I0609 05:49:07.552662 484661 migrate.go:39] Migration marker /home/hruzam/.gemini/config/.migrated does not exist. Attempting migration from AppDataDir /home/hruzam/.gemini/antigravity-cli.
+I0609 05:49:07.554077 484661 migrate.go:147] Migration complete, marked with /home/hruzam/.gemini/config/.migrated
+I0609 05:49:07.554773 484661 manager.go:92] Creating trajectory store manager with proto store and SQLite store
+E0609 05:49:07.556688 484661 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0609 05:49:07.560258 484661 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0609 05:49:07.560465 484661 log.go:398] error getting token source: You are not logged into Antigravity.
+W0609 05:49:07.562040 484661 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:49:07.562217 484661 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:49:07.564090 484661 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0609 05:49:07.588310 484661 server.go:2303] Auth succeeded, refreshing features and managers
+E0609 05:49:07.588480 484661 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0609 05:49:07.589029 484661 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0609 05:49:07.589072 484661 log.go:398] error getting token source: You are not logged into Antigravity.
+W0609 05:49:07.589590 484661 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:49:07.589627 484661 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:49:07.590042 484661 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0609 05:49:07.590407 484661 server.go:2309] State refresh took 2ms
+I0609 05:49:07.593887 484661 server.go:1961] initialized server successfully in 359.184931ms
+I0609 05:49:07.595752 484661 auto_updater.go:253] Spawned background update process with PID 484684
+I0609 05:49:07.595816 484661 common.go:104] Launching CLI mode
+E0609 05:49:07.595845 484661 common.go:123] Failed to resolve GeminiDir ".gemini": .gemini must be an absolute path: path is not absolute, falling back to default
+I0609 05:49:07.595869 484661 common.go:154] CLI app data directory: /home/hruzam/.gemini/antigravity-cli
+W0609 05:49:07.596440 484661 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0609 05:49:07.596488 484661 log.go:398] error getting token source: You are not logged into Antigravity.
+I0609 05:49:07.596546 484661 server.go:211] Creating CLI server backend: product=antigravity workspaceDirs=[/home/hruzam/www/imago_cz/freya.devstudio] appDataDir=/home/hruzam/.gemini/antigravity-cli cascadeManager=true codeAssist=true
+W0609 05:49:07.596763 484661 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:49:07.596795 484661 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:49:07.597033 484661 server.go:617] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0609 05:49:07.597051 484661 client.go:81] failed to set auth token
+I0609 05:49:07.597143 484661 project.go:156] project: no project found from /home/hruzam/www/imago_cz/freya.devstudio, creating new project
+I0609 05:49:07.597527 484661 project.go:136] project: created project "/home/hruzam/www/imago_cz/freya.devstudio" (id=a78d1e84-699f-4887-a72c-6d9ae9e6a785) at /home/hruzam/.gemini/config/projects/a78d1e84-699f-4887-a72c-6d9ae9e6a785.json (no symlink)
+I0609 05:49:07.597548 484661 server.go:1356] Backend project ID updated dynamically to: a78d1e84-699f-4887-a72c-6d9ae9e6a785
+W0609 05:49:07.600633 484661 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0609 05:49:07.600740 484661 log.go:398] error getting token source: You are not logged into Antigravity.
+W0609 05:49:07.601729 484661 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:49:07.601795 484661 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0609 05:49:07.602683 484661 server.go:617] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0609 05:49:07.602718 484661 client.go:81] failed to set auth token
+I0609 05:49:07.603930 484661 manager.go:267] Initializing CLI store manager for workspace /home/hruzam/www/imago_cz/freya.devstudio
+W0609 05:49:07.604899 484661 cli_setting_manager.go:235] cli settings not available, using defaults: failed to read cli settings: open /home/hruzam/.gemini/antigravity-cli/settings.json: no such file or directory
+I0609 05:49:07.604975 484661 cli_setting_manager.go:67] config.json not found or unreadable, using CLI settings only: open /home/hruzam/.gemini/config/config.json: no such file or directory
+I0609 05:49:07.605028 484661 cli_setting_manager.go:655] Skipping telemetry propagation because user is not logged in
+I0609 05:49:07.605053 484661 cli_setting_manager.go:79] CLI settings initialized: permissions=<nil>, toolPermission=request-review
+I0609 05:49:07.605893 484661 manager.go:372] CLI store manager initialized successfully
+I0609 05:49:07.605977 484661 common.go:381] CLI store manager created successfully
+I0609 05:49:07.606013 484661 cli_setting_manager.go:192] ApplyProjectPermissionGrants: no grants for project "/home/hruzam/www/imago_cz/freya.devstudio", cleared project permissions
+Fetching available models...
+I0609 05:49:07.616875 484661 server.go:2207] Language server shutting down
