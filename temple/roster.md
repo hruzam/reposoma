@@ -43,7 +43,7 @@ These load in every Claude Code session regardless of project.
 | @CapCom | `capcom` | Sonnet | Mission controller — human gate before Houston gets full autonomy |
 | @Hypatia | `hypatia` | Opus | Strategic cross-project consultant (Larva / Chytros / Stridularium) — Astrolabe method, one ranked verdict |
 | @Recorder | `recorder` | Haiku | Session memory librarian — merges dumps/artifacts into `session-draft-memory.md` |
-| @Senior | `trajectory` | Sonnet | Senior implementation lead — flags better approaches, spawns @Delta |
+| @Trajectory | `trajectory` | Sonnet | Senior implementation lead — flags better approaches, spawns @Delta |
 | @Delta | `delta` | Haiku | δ(x) executor — surgical tasks, zero judgment, integrates to one |
 | @Symmetry | `symmetry` | — | AI-human cohabitation project persona (conceptual layer, not a CLI agent) |
 
@@ -74,6 +74,7 @@ These load in every Claude Code session regardless of project.
 | recorder index | `~/.claude/recorder.index.json` | All known session roots (cross-project scan) |
 | houston goal | per-project (global `~/.claude/houston.goal` retired 2026-06-17) | goals now live per project, not one global file |
 | zsh machine layer | `~/.config/zsh/` (lighthouse: `AGENTS.md`) | Machine identity (`$MACHINE_NAME` · `echo $MACHINE_NAME`) + per-machine resource guards. Operator's personal layer — never bind its paths into a project consumer surface (§4.7). |
+| registry | `/home/hruzam/reposoma/registry/` | Cross-project lighthouse: project beacons + the sibling map + shared layers (plane 3). Point, never copy. |
 
 ---
 

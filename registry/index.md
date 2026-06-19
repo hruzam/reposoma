@@ -17,5 +17,12 @@
 - **subai.devenv ↔ piql.dev** — share **privacy-gate** (piql's prefilter → subai's `privacy_gate` finger).
 - **freya.devstudio ← piql.dev** — lineage (freya derives from the piql temple pattern).
 - **piql.dev** — precursor temple/template origin; the reposoma temple is the v3 successor.
+> **Graph still-filling:** edges to/from freya.devstudio + piql.dev are unverified until their beacons land — the *convention* is locked, the *graph* is not yet settled.
+
+## Shared layers (cross-cutting — not projects, but teams need them)
+| layer | lighthouse | what it holds |
+|---|---|---|
+| zsh machine layer | decision `0003` → `temple/decisions/0003-machine-provenance.md` | the machine layer (host id `$MACHINE_NAME` · per-machine resource guards · `substrate.`-parked legacy), reached through its **host-scoped decision record** — the registry never names a personal absolute path (§4.7). |
+| research harness | `research/harness/` (`research-pattern` + `source-catalog`) | the shared blind-fanout study method + the source catalog; siblings upstream from here. |
 
 > Deposit a beacon → add your row here. `raw.projects/` retires once freya + piql are reshaped into beacons.

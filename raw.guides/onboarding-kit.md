@@ -35,6 +35,7 @@ do the stack work. (doctrine §0, §4: don't greenfield-on-brownfield; merge int
 5. **the gate** — for Gemini/Cursor, by-hand light surfaces (below); robust `agentctl materialize` **deferred**.
 6. **named deferral thresholds** — written out loud in flag/pulse (when a domain seat / orchestrator / sub-team is earned).
 7. **the trust/constraints layer** — intake-C constraints → flag.md + per-vendor settings (deny-first + PreToolUse). Per vendor; never assumed portable (§7).
+8. **registry beacon** — deposit `registry/<project>.md` (a thin pointer to the project's lighthouse) + a row in `registry/index.md`, so siblings find you. Point, never copy (see `registry/README.md`).
 
 Start every project with the **four seats** (doctrine §6): architect + challenger + researcher + implementer. No domain seat pre-granted.
 

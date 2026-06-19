@@ -1,7 +1,7 @@
 ---
 beacon: subai.devenv
 path: /home/hruzam/www/ovum/subai.devenv
-repo: TODO(operator) — git remote (not known to this chain)
+repo: local-only (no git remote at project root — siblings use path: above)
 host: office             # provenance — decision 0003
 status: cleared
 contract: /home/hruzam/www/ovum/subai.devenv/PROJECT.yaml

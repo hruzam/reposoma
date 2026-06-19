@@ -30,6 +30,7 @@ sibling-graph.
 - **Siblings.** `sibling-of:` + `shares:` (named shared-anchors) let a sibling researcher jump straight
   to the shared artifact (e.g. `spectral`, the bus/`_mail` pattern, the `X→Z` method).
 - **Provenance.** `host:` (0003) + `updated:` on every beacon.
+- **Project-relative anchors only.** No absolute or home-rooted (`~/`) paths in a beacon or the index. A personal/machine layer is reached through its **decision record** (e.g. `0003` for the zsh machine layer), never indexed directly — §4.7 made structural, not a convention to remember.
 
 ## How to read (a sibling's architect / Epoch / whoever's clever enough)
 `index.md` → the relevant beacon → follow the anchor. That's the whole search path — no repo scan.
