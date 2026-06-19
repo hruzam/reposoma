@@ -4,6 +4,7 @@ brand: Antigravity — agy CLI (gty)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
 verified: 2026-06-19
 half_life: ~2-4 weeks (new CLI evolving rapidly)
+half_life_days: 21
 recheck:
   - https://github.com/google-antigravity/antigravity-cli
   - https://antigravitylab.net/en/articles/

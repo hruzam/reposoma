@@ -4,6 +4,7 @@ brand: Cursor (IDE; runs Claude / GPT / etc. models)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
 verified: 2026-06-02
 half_life: ~weeks (Cursor 3 line)
+half_life_days: 30
 recheck:
   - https://docs.cursor.com
   - https://www.cursor.com/changelog

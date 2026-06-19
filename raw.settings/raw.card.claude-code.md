@@ -4,6 +4,7 @@ brand: Anthropic — Claude Code (CLI)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
 verified: 2026-06-02
 half_life: ~2-4 weeks (ships ~10 versions/month)
+half_life_days: 30
 recheck:
   - https://code.claude.com/docs/en/changelog        # generated from repo CHANGELOG.md
   - https://github.com/anthropics/claude-code

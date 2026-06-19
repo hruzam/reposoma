@@ -4,6 +4,7 @@ brand: Google — Gemini app (Gems / chat)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
 verified: 2026-06-02
 half_life: ~weeks
+half_life_days: 30
 recheck:
   - https://gemini.google.com
   - https://blog.google/products/gemini/

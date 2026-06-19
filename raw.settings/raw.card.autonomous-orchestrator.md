@@ -4,6 +4,7 @@ brand: LARVA — Houston / CapCom (autonomous orchestration layer)
 kind: knowledge-card · RELATIVE (build-time reference for claude-creator-auto)
 verified: 2026-06-06
 half_life: ~months (harness-coupled; recheck when hooks or permissionMode API changes)
+half_life_days: 60
 recheck:
   - raw.card.claude-code.md          # hooks event list, permissionMode values
   - raw.claude-agents.harness.*.md   # frontmatter schema

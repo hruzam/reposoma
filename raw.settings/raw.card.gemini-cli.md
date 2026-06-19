@@ -4,6 +4,7 @@ brand: Google — Gemini CLI
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
 verified: 2026-06-02
 half_life: ~1-2 weeks (nightlies daily; stable ~weekly)
+half_life_days: 30
 recheck:
   - https://geminicli.com/docs/changelogs/
   - https://github.com/google-gemini/gemini-cli         # releases + discussions

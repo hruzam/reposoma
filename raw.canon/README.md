@@ -43,3 +43,5 @@ An entry without `expresses_as` is bloat and must be removed.
 - `canon.sovereignty-as-design-force` — portable Markdown owned by the project; vendor configs are adapters
 - `canon.language-split` — English for everything persisted
 - `canon.reflection-channels` — the two feedback channels (therapy, crossfeed) and their governors
+- `canon.mail-protocol` — file-native bus: per-author pulse logs + `_mail` inbox/archive/toAll; single-writer-per-file *(promoted 2026-06-19)*
+- `canon.context-economy` — conserve the gate-shape, not the quantity; saddle-entry + demand-spend + scoped delegation + ask-first *(promoted 2026-06-19)*

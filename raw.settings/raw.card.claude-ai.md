@@ -4,6 +4,7 @@ brand: Anthropic — claude.ai (chat + Projects)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
 verified: 2026-06-02
 half_life: ~weeks
+half_life_days: 30
 recheck:
   - https://support.claude.com
   - https://www.anthropic.com/news
