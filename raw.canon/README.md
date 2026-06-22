@@ -45,3 +45,4 @@ An entry without `expresses_as` is bloat and must be removed.
 - `canon.reflection-channels` — the two feedback channels (therapy, crossfeed) and their governors
 - `canon.mail-protocol` — file-native bus: per-author pulse logs + `_mail` inbox/archive/toAll; single-writer-per-file *(promoted 2026-06-19)*
 - `canon.context-economy` — conserve the gate-shape, not the quantity; saddle-entry + demand-spend + scoped delegation + ask-first *(promoted 2026-06-19)*
+- `canon.refresh-cycle` — fetch → dump → synthesis → compact card; agents read the card not the dump; freshness closes the loop *(promoted 2026-06-20)*
