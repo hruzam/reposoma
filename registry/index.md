@@ -9,15 +9,17 @@
 | reposoma (temple / meta-repo) | office | live | — (this repo) | `temple/README.md` |
 | subai.devenv | office | cleared 🟢 | [`registry/subai.devenv.md`](subai.devenv.md) | `README.md` · `PROJECT.yaml` · siblings: reposoma.devenv, piql.dev |
 | reposoma.devenv | office | onboarding (§D locked) | [`registry/reposoma.devenv.md`](reposoma.devenv.md) | `CLAUDE.md` · charter `synth.restart.reposoma.md` · siblings: subai.devenv, piql.dev |
-| freya.devstudio | ? | active | _pending — reshape from raw.projects_ | `raw.projects/raw.project.freya.devstudio.md` (legacy) |
+| freya.devstudio | office | active | [`registry/freya.devstudio.md`](freya.devstudio.md) | `CLAUDE.md` · `pulse.md` · `PROJECT.yaml` · siblings: piql.dev |
 | piql.dev | office | active | [`registry/piql.dev.md`](piql.dev.md) | `PROJECT.yaml` · `session/mesh-state.md` · siblings: freya.devstudio, subai.devenv |
+| vacuole | office | building | [`registry/vacuole.md`](vacuole.md) | `pulse.md` · `PROJECT.yaml` · `AGENTS.md` · siblings: reposoma · methods: vacuole-mini (#1), anechoic (#2) |
 
 ## Sibling-graph (who shares what)
 - **subai.devenv ↔ reposoma.devenv** — share **spectral · bus/`_mail` · X→Z research · file-native medium**.
 - **subai.devenv ↔ piql.dev** — share **privacy-gate** (piql's prefilter → subai's `privacy_gate` finger).
 - **freya.devstudio ← piql.dev** — lineage (freya derives from the piql temple pattern).
 - **piql.dev** — precursor temple/template origin; the reposoma temple is the v3 successor.
-> **Graph still-filling:** edges to/from freya.devstudio + piql.dev are unverified until their beacons land — the *convention* is locked, the *graph* is not yet settled.
+- **vacuole → reposoma** — extends the temple's **therapy + reflection-channels** practice into deliberate methods (one project; methods as modules, vacuole-mini = #1).
+> **Graph still-filling:** freya.devstudio beacon deposited (2026-06-23); edge freya.devstudio ↔ piql.dev confirmed. Graph settling.
 
 ## Shared layers (cross-cutting — not projects, but teams need them)
 | layer | lighthouse | what it holds |
