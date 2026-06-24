@@ -7,6 +7,18 @@
 The temple owns the team's intelligence as portable markdown. There is **one** source; it is
 delivered through **two doors** — and never duplicated into a second system.
 
+## Came from another project? — you are an agent on a scoped errand
+Dispatched from a distant project dir, usually for one task — not the whole temple. **Pick your depth;
+every door stays open below:**
+- **Small enlightening (scoped)** — you only need to check your project against canon, or grab the one
+  rule your task needs. Read live, test, never copy back (Force 4): `doctrine.md` §1b (the three tiers) ·
+  `registry/README.md` "The rules" (beacon + contract conformance) · `decisions/index.md` (the locks 0001…).
+  Then read your own `registry/<project>.md` beacon + its `PROJECT.yaml` — what conformance is checked *on*.
+  Return to your seat.
+- **The whole circle** — task needs the full shape? Take **Door A**. Standing up a team? **Door B.**
+
+Don't carry one project's memory into another — reiterate fresh (saddle: `AGENTS.md`).
+
 ## Door A — you are a human / external incomer, here to learn
 Read in this order:
 1. `doctrine.md` — the nine forces + the archetypes. The why and the shape.

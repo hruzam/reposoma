@@ -1,13 +1,12 @@
 # _mail/ — the temple bus (NON-CANONICAL · gitignored)
 
-Working-state message bus for the temple. **Nothing here is canon** (canon lives in
-`temple/decisions/`, `temple/doctrine.md`, `raw.canon/`). Only this `README.md` + `.gitignore` are
+Working-state message bus for the temple. **Nothing here is canon**. Only this `README.md` + `.gitignore` are
 tracked; everything else is gitignored and **drainable** (Cinderella rule: extract what matters into
 its real home, then delete).
 
 ## What goes where
 - **Deep proposals / architectural arguments** (architect ↔ architect) → `_mail/<recipient>/…`
-- **Fast status / "what I just did"** → the **per-author pulse bus**: `pulse.houston.md` · `pulse.vega.md`
+- **Fast status / "what I just did"** → the **per-author pulse bus**: `pulse.claude.md` · `pulse.gemini.md`
   (each owner writes ONLY their own file — collision-free; read both). NOT here.
 - **The rolling plan memo** (Houston → next incarnation) → `_mail/monkey/houston.monkey-not-forget-this.<date>.md`.
 
