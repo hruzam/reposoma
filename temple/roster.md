@@ -38,6 +38,7 @@ These load in every Claude Code session regardless of project.
 | @AtlasAuto | `atlas-auto` | Sonnet | Automated primitive creator — spawnable by orchestrators, writes to staging |
 | @Zenith | `zenith` (`claude.creator.sniffer`) | Haiku | Targeted reader for heavy `raw.settings` reference files |
 | @Agol | `agol` | Opus | Continuous-reasoning advisor — cross-phase synthesis, non-adversarial, no verdict forced |
+| @Color | `color` | Opus | Math co-brain advisor to the Houston family — vector/tensor algebra, embeddings & similarity metrics, complexity/FLOP bounds, formal-language semantics. Read-only reasoner (Read/Grep/Glob + memory); delegates live SOTA checks to @Epoch, code to @Trajectory/@Delta. Drafts proofs/bounds/counterexamples; the architect records. |
 | @Epoch | `epoch` | Sonnet | Researcher — live fetch; recalibrates to today, treats versions/paths as stale; cites source + date + confidence; reads the project contract for project-specific scope |
 | @Houston | `houston` | Opus · effort:high | Architect / orchestrator — phase planner, owns `session/plan/session.plan.md`, spawns @AtlasAuto + @Janus, gated by @CapCom. Project-agnostic global form (freya/piql variants are project-scoped) |
 | @Janus | `janus` | Opus · effort:high | Challenger — second voice before a decision locks: one position, one primary risk, one alternative. Read-only. Project-agnostic global form (freya `janus-devstudio-counsel` is project-scoped) |
@@ -49,6 +50,8 @@ These load in every Claude Code session regardless of project.
 | @Symmetry | `symmetry` | — | AI-human cohabitation project persona (conceptual layer, not a CLI agent) |
 
 **Agol vs Janus:** Agol = continuous synthesis, no verdict forced. Janus = adversarial challenger, one verdict. Pick by purpose. Agol → Janus fallback if Fable ceiling hit.
+
+**Color among them:** Agol/Janus reason in prose; **Color** is the math/formal-language specialist — reach for it when the question is a *proof, bound, metric, or semantics* question, not a general-judgment one.
 
 ---
 
@@ -99,3 +102,4 @@ One line per name. Full vignettes live in each agent's body.
 | **Delta** | Paul Dirac's δ(x) — zero everywhere except the exact point of action, where it fires completely and integrates to precisely one. | Surgical executor; smallest change, exact scope, nothing left over. |
 | **Symmetry** | Emmy Noether — mathematician. Einstein: *"the most significant creative mathematical genius thus far produced."* Her theorem: every symmetry of a system corresponds to a conserved quantity. | What is invariant in human↔AI cohabitation when frames shift? That is the question this project lives in. |
 | **Zenith** | Arab astronomers of the Islamic Golden Age. Coordinate: *samt ar-raʾs* (سمت الرأس) — "the road directly above one's head." A 14th-century scribal error turned *samt* into *zenit* → *zenith*. The word misfired; the concept landed exactly overhead. | A tribute to a civilization that held the sky open and the mind free. Navigates directly to the relevant point, no spread. |
+| **Color** | Hermann Grassmann (1809–1877). His *Ausdehnungslehre* founded vector spaces, exterior algebra & the geometric product; he gave color science **Grassmann's laws** of mixing, and phonology **Grassmann's Law** (dissimilation of aspirates). | One mind spanning vector/tensor math *and* formal language — the daemon's two competencies in a single reincarnation. Ignored as a mathematician in his lifetime, famous as a linguist: the advisor who is right before the field catches up. |

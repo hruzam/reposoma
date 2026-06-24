@@ -20,6 +20,7 @@ flowchart TD
         HOU["ARCHITECT // @Houston · Opus<br/>owns plan · dispatches<br/>never runs shell or code"]
         JAN["CHALLENGER // @Janus · Opus<br/>one verdict · one risk · read-only"]
         AGOL["ADVISOR // @Agol · Opus<br/>cross-phase synthesis · no verdict"]
+        COL["MATH ADVISOR // @Color · Opus<br/>vector/tensor · formal language<br/>proofs · bounds · read-only"]
         EPO["RESEARCHER // @Epoch · Sonnet<br/>live fetch · dated · cited"]
         TRA["SENIOR IMPL // @Trajectory · Sonnet<br/>writes code · runs shell<br/>self-clones for hard tasks"]
         DEL["EXECUTOR // @Delta · Haiku<br/>surgical · zero judgment"]
@@ -33,6 +34,8 @@ flowchart TD
     CAP -.authorizes.-> HOU
     HOU --> JAN
     HOU --> AGOL
+    HOU --> COL
+    COL -.proof / bound report-up.-> HOU
     HOU --> EPO
     HOU --> TRA
     HOU --> ATL
@@ -88,3 +91,4 @@ flowchart TD
 - **`@Trajectory` self-clone** kept — the senior forks for parallel perspective on a hard task. Not an artifact; a real pattern.
 - **`@Houston → @Delta` (trivial reads)** kept — dispatching the cheap reader is flat dispatch, not "holding the wrench." The wrench is shell/app-code, not delegation.
 - **"swarm" removed** — that word reached into the parked composition study; the seed says do not merge. `@Agol → @Houston` stays as a synthesis report-up (the advisor returns findings; the architect persists them).
+- **`@Color` seated** — math/formal-language co-brain advisor for the Houston family; read-only like @Agol/@Janus, delegates live SOTA to @Epoch. `@Houston → @Color` dispatch, `@Color → @Houston` proof/bound report-up. Gaveled 2026-06-24.
