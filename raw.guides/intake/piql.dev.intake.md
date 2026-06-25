@@ -64,7 +64,7 @@
 - the one head (allocates work, holds canon authority): **@Houston (piql.dev claude basement). Operator = human gate.**
 - the split — what each team OWNS ("mine / yours"). Canon stays at the basement gate: **Claude owns architecture + bus design + canon authorship + phase sequencing. Cursor owns deterministic brick implementation (code-only; no architectural calls). Canon stays at the Claude gate; Cursor reads contract, integrates. (Force 4, one-direction.)**
 
-*Note: Gemini/Antigravity mentioned in `raw.projects/raw.project.piql.dev.md` as part of multi-vendor aspirational shape — not actively allocated on piql today. Leave seat open; don't pre-assign.*
+*Note: Gemini/Antigravity mentioned in `registry/projects/piql.dev.md` as part of multi-vendor aspirational shape — not actively allocated on piql today. Leave seat open; don't pre-assign.*
 
 ---
 

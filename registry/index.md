@@ -27,4 +27,12 @@
 | zsh machine layer | decision `0003` → `temple/decisions/0003-machine-provenance.md` | the machine layer (host id `$MACHINE_NAME` · per-machine resource guards · `substrate.`-parked legacy), reached through its **host-scoped decision record** — the registry never names a personal absolute path (§4.7). |
 | research harness | `research/harness/` (`research-pattern` + `source-catalog`) | the shared blind-fanout study method + the source catalog; siblings upstream from here. |
 
-> Deposit a beacon → add your row here. `raw.projects/` retires once freya + piql are reshaped into beacons.
+> Deposit a beacon → add your row here. `./registry/projects/` retires once freya + piql are reshaped into beacons.
+
+
+## `projects/`
+Full project overviews live in `./registry/projects/` — read one to confirm a sibling is real and current.
+- **Ask-first (token economy):** open these only if your orchestrator or the user sent you here. Don't browse on your own behalf — it burns tokens for nothing.
+- Each overview is **dated** and carries a `source-of-truth:` pointer back to the project's own canon. **On any disagreement, the source files win** — the overview is a snapshot, not the truth.
+That keeps your guard, fixes the rough phrasing, and adds the freshness contract (dated + source-of-truth + "source files win") — which is exactly the "be sure it's really your sibling" check.
+

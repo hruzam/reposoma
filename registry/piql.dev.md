@@ -10,7 +10,7 @@ sibling-of: [freya.devstudio, subai.devenv, reposoma]
 shares: [bus/_mail, gatekeeper-archetype, piql-gate, reach, guide-publishing/sync]
 deposited-by: atlas
 updated: 2026-06-19
-derived-from: raw.projects/raw.project.piql.dev.md
+derived-from: registry/projects/piql.dev.md
 ---
 
 # piql.dev — beacon

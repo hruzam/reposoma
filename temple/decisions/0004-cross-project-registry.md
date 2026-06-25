@@ -12,7 +12,7 @@
 Sibling projects (subai.devenv ↔ reposoma.devenv share spectral · bus/`_mail` · X→Z; freya ← piql
 lineage) need to navigate each other — or jump to a shared artifact — without scanning a repo. The
 mechanism half-existed already: each project's `PROJECT.yaml` + `docs.*` + a tracked "Read first" file
-(piql.dev's `mesh-state.md` is the model), and the `raw.projects/*` ad-hoc pointer cards. This locks
+(piql.dev's `mesh-state.md` is the model), and the `registry/projects/*` ad-hoc pointer cards. This locks
 the named home + the rules. Plane 3 (binding/activation), doctrine §3b.
 
 ---
@@ -57,7 +57,7 @@ unverified until their beacons land.
 ## Consequences
 
 - A sibling navigates a project (or finds a shared artifact) by reading **one beacon, never scanning**.
-- `raw.projects/*` retire into beacons once freya + piql are reshaped.
+- `registry/projects/*` retire into beacons once freya + piql are reshaped.
 - **Not a second knowledge system (Force 3):** a pure pointer index over the one source is a legitimate
   Plane-3 integration artifact, not parallel knowledge — true *only as long as L2 holds*.
 

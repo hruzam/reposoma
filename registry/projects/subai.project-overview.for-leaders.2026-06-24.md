@@ -148,3 +148,11 @@ in `flag.md`:
 
 *Snapshot as of 2026-06-24. State claims (§5) reflect the 2026-06-23 session handoff and
 the pulse ledger through v0023. This document is descriptive — it locks nothing.*
+
+## Cross-project boundaries (do NOT cross)
+*Ratified by @Hypatia cross-project verdict, 2026-06-24. Three sibling projects, one ecosystem, clean lanes:*
+- **chitinx (= subai)** = the human↔ai **daemon + its own live-medium** (the mouth/skin).
+- **reposoma** = the **knowledge-RAG / brain** (spectral metabolism over the knowledge corpus).
+- **piql** = the **privacy/thinking valve** (optional, additive-only) — NOT subai's bus, NOT the RAG.
+
+**The fence (structural, not temporal):** subai meets any knowledge-corpus RAG need by **renting reposoma over MCP (`recall_lighthouse`), never by building a peer knowledge-brain.** subai's L2 spectral stays scoped to **live-medium lane telemetry** (`k`+`λ₂` on agent `from→to` traffic) — a structurally *different graph* from reposoma's knowledge-corpus Laplacian. The Larva V-R1 extract subai takes is the **grammar only** (a pulse-schema convention; shared Larva ancestry, touches reposoma at zero points). **Two engines, two graphs, no overlap.**
