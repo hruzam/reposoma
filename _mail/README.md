@@ -25,5 +25,17 @@ _mail/houston/{inbox,archive}/      _mail/vega/{inbox,archive}/      _mail/toAll
   hook) drops a monthly reminder into `_mail/toAll/inbox/` when `raw.settings/` card half-lives expire.
   Built + owned by Vega (Gemini sector). Spec: `_mail/vega/…/houston.recalibration-script.2026-06-19.md`.
 
-## Filename shape
-`_mail/<recipient>/<inbox|archive>/<sender>.<topic>.<YYYY-MM-DD>.md` · carry `host:` provenance where it matters.
+## Addressing & the round-trip (gaveled 2026-06-25)
+- **Filename shape:** `_mail/<receiver>/<inbox|archive>/<sender>.<scope>.<YYYY-MM-DD>.md` · carry `host:`
+  provenance where it matters.
+- **Address = logical `<origin>:<agent>`** (e.g. `subai:houston`, `temple:houston`). It is **derived, not
+  stored**: `origin` → the project's beacon repo-root; the inbox → the `_mail/<agent>/inbox/` convention; any
+  machine/physical path resolves through **decision 0003**, *never* written into a beacon (**0004 L4** — no
+  `~/`/absolute paths in the registry). The address book is a *derivation rule*, not a new data field.
+- **The receiver owns the message.** You write a message **into the receiver's inbox**; the receiver `mv`s it
+  to `archive/` once processed.
+- **No sent-copy.** The sender keeps nothing in their own folder — the filesystem *is* the state machine. A
+  reply returns to **your** inbox (`_mail/<you>/inbox/<them>.<scope>.<date>.md`); that is where you look for
+  answers.
+- **Cross-repo / basement staging** (here-vs-direct delivery) is a transport detail, deferred to the
+  mail-transport mechanism (candidate 0008) — the *logical* rule above holds regardless of topology.

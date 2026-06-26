@@ -16,6 +16,7 @@
 2. **`registry/index.md`** — the projects + the sibling-graph. Beacons *point, never copy*.
 3. **the most recent `_mail/to-monkey.*.md`** — the rolling *"you are here / what changed / what's open"* state, kept current at each lock.
 4. **`temple/README.md`** — the two doors, for the *why*.
+5. **Check your inbox (presence-only, ask-first).** Run `temple-mail-inbox <this-origin>:<your-seat>`. It lists UNREAD inbox items + `toAll/` broadcasts by filename only — it never reads them. If items are present, surface *"I see inbox/toAll items — read them now, or is this a quick run?"* and **ask before reading** (token economy, `_mail/README.md`). Empty → silent, carry on.
 
 That is the whole re-entry. You never start from scratch.
 

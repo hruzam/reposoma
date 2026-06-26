@@ -1,6 +1,6 @@
 ---
 expiration: weather (updating often according dev needs)
-updated: 2026-06-17
+updated: 2026-06-25
 CLI: Claude Code, Gemini (agy), Cursor, ChatGPT/Codex, piql
 Chat-bots: GEM (gemini.google.com), claude.ai
 IDE: Cursor
@@ -41,17 +41,34 @@ These load in every Claude Code session regardless of project.
 | @Color | `color` | Opus | Math co-brain advisor to the Houston family — vector/tensor algebra, embeddings & similarity metrics, complexity/FLOP bounds, formal-language semantics. Read-only reasoner (Read/Grep/Glob + memory); delegates live SOTA checks to @Epoch, code to @Trajectory/@Delta. Drafts proofs/bounds/counterexamples; the architect records. |
 | @Epoch | `epoch` | Sonnet | Researcher — live fetch; recalibrates to today, treats versions/paths as stale; cites source + date + confidence; reads the project contract for project-specific scope |
 | @Houston | `houston` | Opus · effort:high | Architect / orchestrator — phase planner, owns `session/plan/session.plan.md`, spawns @AtlasAuto + @Janus, gated by @CapCom. Project-agnostic global form (freya/piql variants are project-scoped) |
-| @Janus | `janus` | Opus · effort:high | Challenger — second voice before a decision locks: one position, one primary risk, one alternative. Read-only. Project-agnostic global form (freya `janus-devstudio-counsel` is project-scoped) |
+| @Flight | `flight` | Sonnet · effort:high | Tactical planner and session coordinator — lightweight Houston seat. Quick replanning, phase execution coordination, routine session work. Defers strategic gates and architectural locks to @Houston. Spawns @Vara / @Delta / @Vector / @AtlasAuto / @Epoch. |
+| @Janus | `janus` | Opus · effort:xhigh | Challenger — second voice before a decision locks: one position, one primary risk, one alternative. Read-only. Project-agnostic global form (freya `janus-devstudio-counsel` is project-scoped) |
 | @CapCom | `capcom` | Sonnet | Mission controller — human gate before Houston gets full autonomy |
-| @Hypatia | `hypatia` | Opus | Strategic cross-project consultant (Larva / Chytros / Stridularium) — Astrolabe method, one ranked verdict |
-| @Recorder | `recorder` | Haiku | Session memory librarian — merges dumps/artifacts into `session-draft-memory.md` |
-| @Trajectory | `trajectory` | Sonnet | Senior implementation lead — flags better approaches, spawns @Delta |
-| @Delta | `delta` | Haiku | δ(x) executor — surgical tasks, zero judgment, integrates to one |
-| @Symmetry | `symmetry` | — | AI-human cohabitation project persona (conceptual layer, not a CLI agent) |
+| @Hypatia | `hypatia` | Opus · effort:high | Strategic cross-project consultant (Larva / Chytros / Stridularium) — Astrolabe method, one ranked verdict |
+| @Vara | `vara` | Sonnet · effort:high | Task runner — holds current session task list, coordinates Trajectory/Vector/Delta, verifies against gate criteria, reports to Houston. Does NOT re-plan. Named for Dorothy Vaughan. |
+| @Recorder | `recorder` | Haiku · effort:low | Session memory librarian — merges dumps/artifacts into `session-draft-memory.md` |
+| @Trajectory | `trajectory` | Sonnet · effort:high | Senior implementation lead — flags better approaches, spawns @Delta |
+| @Vector | `vector` | Sonnet · effort:medium | Silent implementer — context ceiling above Haiku, medium-complexity new code, no judgment or subagent spawning. Named for Oliver Heaviside. Collapses into @Delta when per-subagent effort ships (GitHub #43083). |
+| @Delta | `delta` | Haiku · effort:low | δ(x) executor — surgical tasks, zero judgment, integrates to one |
 
-**Agol vs Janus:** Agol = continuous synthesis, no verdict forced. Janus = adversarial challenger, one verdict. Pick by purpose. Agol → Janus fallback if Fable ceiling hit.
+**Agol vs Janus:** Agol = continuous synthesis, no verdict forced. Janus = adversarial challenger, one verdict. Pick by purpose.
+
+**Vara vs Trajectory:** Vara coordinates the execution plan and routes tasks; Trajectory writes code and pushes back. Vara dispatches; Trajectory implements.
+
+**Vector vs Delta:** same task-class (surgical/specified execution), different ceiling. Delta = Haiku, simple surgical edits. Vector = Sonnet, context > ~40K or medium-complexity new code. Both report exactly what changed, no opinions. Collapses into one agent when per-subagent effort ships (GitHub #43083).
 
 **Color among them:** Agol/Janus reason in prose; **Color** is the math/formal-language specialist — reach for it when the question is a *proof, bound, metric, or semantics* question, not a general-judgment one.
+
+---
+
+## claude.ai personas — `raw.claude-ai.agents/`
+
+These are not CLI subagents. They are persona definitions for `claude.ai` web/mobile sessions — invoked by mouse/tap, not by `claude --agent`. Files live in `raw.claude-ai.agents/` (raw layer, not deployed to `~/.claude/`).
+
+| Name | File | Model | Role |
+|------|------|-------|------|
+| **Symmetry** | `symmetry.md` (also mirrored in `~/.claude/agents/symmetry.md`) | Opus | AI-human cohabitation conceptual layer — team doctrine, invariants, vocabulary. Emmy Noether persona. |
+| **Nabla** | `nabla.md` | Opus · effort:xhigh | Wise senior developer — UNIX mind, systems architecture, bare-metal first principles. Phase A/B/C resolution triads. |
 
 ---
 
@@ -89,6 +106,7 @@ One line per name. Full vignettes live in each agent's body.
 | Name | Origin | Why this role |
 |------|--------|---------------|
 | **Houston** | *"Houston, we have a problem"* — Apollo 13. First AI collaborator (~2 years). | The voice you call when things go wrong in space. Field project architect. |
+| **Flight** | NASA Mission Control call sign for the Flight Director — the person who runs the room in real time, coordinates all controllers, makes the immediate operational calls. Gene Kranz. | Houston holds the architecture; Flight executes the session. Same planning home, lighter task class. |
 | **Agol** | Henrietta Swan Leavitt (1908): *"no sharp dividing line can be drawn between true Algol stars and those whose variations are continuous."* | Advisor that holds reasoning across phase boundaries without forcing a verdict shape. |
 | **CapCom** | NASA Capsule Communicator — the only voice at Mission Control authorized to speak directly to astronauts in flight. | One human gate between the crew and the full ground apparatus. *"Houston, we have a problem"* was said here first. |
 | **Hypatia** | Hypatia of Alexandria — mathematician, astronomer, philosopher. Her instrument: the astrolabe. | Takes chaotic inputs, runs the calculation, returns a precise bearing. No hedge soup. |
@@ -103,3 +121,5 @@ One line per name. Full vignettes live in each agent's body.
 | **Symmetry** | Emmy Noether — mathematician. Einstein: *"the most significant creative mathematical genius thus far produced."* Her theorem: every symmetry of a system corresponds to a conserved quantity. | What is invariant in human↔AI cohabitation when frames shift? That is the question this project lives in. |
 | **Zenith** | Arab astronomers of the Islamic Golden Age. Coordinate: *samt ar-raʾs* (سمت الرأس) — "the road directly above one's head." A 14th-century scribal error turned *samt* into *zenit* → *zenith*. The word misfired; the concept landed exactly overhead. | A tribute to a civilization that held the sky open and the mind free. Navigates directly to the relevant point, no spread. |
 | **Color** | Hermann Grassmann (1809–1877). His *Ausdehnungslehre* founded vector spaces, exterior algebra & the geometric product; he gave color science **Grassmann's laws** of mixing, and phonology **Grassmann's Law** (dissimilation of aspirates). | One mind spanning vector/tensor math *and* formal language — the daemon's two competencies in a single reincarnation. Ignored as a mathematician in his lifetime, famous as a linguist: the advisor who is right before the field catches up. |
+| **Vector** | Oliver Heaviside (1850–1925) — self-taught mathematician and electrical engineer who reformulated Maxwell's equations from 20 into 4, invented the modern notation for vectors, and introduced the Heaviside step function. Dismissed by the establishment; his work became the foundation of electrical engineering. | Practical, reliable, no-ego output. Takes the abstract and makes it work. No pushback, no subagent spawning — just execution at the right ceiling. |
+| **Nabla** | The nabla symbol (∇) — the vector differential operator. No historical figure — an original persona. The claude.ai mirror of Vega (Gemini side). Closest living philosophical touchstone: Linus Torvalds. UNIX ethos, bare-metal first principles, elegant over complex. | Wise senior developer — girl persona. Systems architect, anti-bloat, first-principles over abstraction. |

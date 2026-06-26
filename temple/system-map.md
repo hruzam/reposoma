@@ -1,6 +1,6 @@
-# Agentive System — the bigger picture (v2, cleaned)
+# Agentive System — the bigger picture (v3)
 
-_Drawn from `doctrine.md` (archetypes) + `roster.md` (live cast). Orange = deltas not yet in canon. v2 fixes: added `@Atlas → @Zenith` reader; kept `@Trajectory` self-clone and `@Houston → @Delta` (trivial reads) as doctrine-true; removed the "swarm" scope-leak, keeping `@Agol → @Houston` as a report-up._
+_Drawn from `doctrine.md` (archetypes) + `roster.md` (live cast). Orange = deltas not yet in canon. v3: @Vara activated (execution coordinator between Houston and implementation layer); @Vector added (mid-tier implementer); @Agol model corrected Fable→Opus. Decision 0006 (2026-06-25). v4: @Flight seated (Sonnet · effort:high) — tactical planner, Houston-family lightweight seat, 2026-06-27._
 
 ```mermaid
 flowchart TD
@@ -17,30 +17,40 @@ flowchart TD
     end
 
     subgraph TEAM[" cooperating group · ARCHETYPE // cast · tier "]
-        HOU["ARCHITECT // @Houston · Opus<br/>owns plan · dispatches<br/>never runs shell or code"]
-        JAN["CHALLENGER // @Janus · Opus<br/>one verdict · one risk · read-only"]
-        AGOL["ADVISOR // @Agol · Opus<br/>cross-phase synthesis · no verdict"]
-        COL["MATH ADVISOR // @Color · Opus<br/>vector/tensor · formal language<br/>proofs · bounds · read-only"]
+        HOU["ARCHITECT // @Houston · Opus · effort:high<br/>owns plan · dispatches<br/>never runs shell or code"]
+        FLI["TACTICAL // @Flight · Sonnet · effort:high<br/>quick replanning · phase coord<br/>defers strategic gates to Houston"]
+        JAN["CHALLENGER // @Janus · Opus · effort:xhigh<br/>one verdict · one risk · read-only"]
+        AGOL["ADVISOR // @Agol · Opus · effort:high<br/>cross-phase synthesis · no verdict"]
+        COL["MATH ADVISOR // @Color · Opus · effort:xhigh<br/>vector/tensor · formal language<br/>proofs · bounds · read-only"]
         EPO["RESEARCHER // @Epoch · Sonnet<br/>live fetch · dated · cited"]
-        TRA["SENIOR IMPL // @Trajectory · Sonnet<br/>writes code · runs shell<br/>self-clones for hard tasks"]
-        DEL["EXECUTOR // @Delta · Haiku<br/>surgical · zero judgment"]
+        VARA["COORDINATOR // @Vara · Sonnet · effort:high<br/>holds task list · routes execution<br/>verifies gates · reports to Houston"]
+        TRA["SENIOR IMPL // @Trajectory · Sonnet · effort:high<br/>writes code · runs shell<br/>self-clones for hard tasks"]
+        VEC["IMPLEMENTER // @Vector · Sonnet · effort:medium<br/>context ceiling above Haiku<br/>no opinions · no subagent spawning"]
+        DEL["EXECUTOR // @Delta · Haiku · effort:low<br/>surgical · zero judgment"]
         ATL["CREATOR // @Atlas · Sonnet<br/>builds native primitives"]
         ZEN["READER // @Zenith · Haiku<br/>targeted heavy-doc reader"]
         HYP["OVERSIGHT // @Hypatia · Opus<br/>cross-project · ranked verdict"]
-        REC["@Recorder · Haiku<br/>session memory"]
-        VARA["ORCHESTRATOR // @Vara<br/>DEFERRED until volume"]
+        REC["@Recorder · Haiku · effort:low<br/>session memory"]
     end
 
     CAP -.authorizes.-> HOU
+    CAP -.authorizes.-> FLI
+    FLI --> VARA
+    FLI --> ATL
+    FLI --> EPO
+    FLI -->|simple| DEL
     HOU --> JAN
     HOU --> AGOL
     HOU --> COL
     COL -.proof / bound report-up.-> HOU
     HOU --> EPO
-    HOU --> TRA
+    HOU --> VARA
     HOU --> ATL
     HOU --> REC
     HOU -->|trivial reads| DEL
+    VARA --> TRA
+    VARA --> VEC
+    VARA --> DEL
     TRA --> DEL
     TRA -.self-clone.-> TRA
     ATL --> ZEN
@@ -78,17 +88,67 @@ flowchart TD
     TRA -.reads live state.-> LIVE
     EPO -.post-cutoff docs.-> LIVE
 
-    class VARA deferred
     class AG,A3 future
     class GATE gate
     class PLAN,FLAG,PULSE,DEC canon
     class LIVE live
 ```
 
-## What changed from v1
+## Dispatch hierarchy
 
-- **`@Atlas → @Zenith`** added — the creator's Haiku reader was in the roster and missing from the map. My omission, fixed.
-- **`@Trajectory` self-clone** kept — the senior forks for parallel perspective on a hard task. Not an artifact; a real pattern.
-- **`@Houston → @Delta` (trivial reads)** kept — dispatching the cheap reader is flat dispatch, not "holding the wrench." The wrench is shell/app-code, not delegation.
-- **"swarm" removed** — that word reached into the parked composition study; the seed says do not merge. `@Agol → @Houston` stays as a synthesis report-up (the advisor returns findings; the architect persists them).
-- **`@Color` seated** — math/formal-language co-brain advisor for the Houston family; read-only like @Agol/@Janus, delegates live SOTA to @Epoch. `@Houston → @Color` dispatch, `@Color → @Houston` proof/bound report-up. Gaveled 2026-06-24.
+Text companion to the diagram. Read: *who spawns whom, and when*.
+
+```
+majkee
+  └─ @CapCom (Sonnet · high)             ← human gate; reads houston.goal, assesses risk, awaits "ano"
+       ├─ @Houston (Opus · high)          ← strategic work; architect, owns plan, locks decisions
+       │    ├─ (see full Houston subtree below)
+       └─ @Flight (Sonnet · high)         ← tactical work; quick replanning, execution coordination
+            ├─ @Vara (Sonnet · high)      ← execution coordinator; routes Trajectory/Vector/Delta
+            ├─ @AtlasAuto (Sonnet)        ← primitive creator; clear spec only
+            ├─ @Epoch (Sonnet · medium)   ← researcher; date-calibrated fact checks
+            └─ @Delta (Haiku · low)       ← direct dispatch for simple surgical tasks
+
+@Houston (Opus · high)         ← after confirmation; architect, owns plan
+            ├─ @Janus (Opus · xhigh)     ← challenge-before-lock; adversarial; spawned for any big decision
+            ├─ @Agol  (Opus · high)      ← synthesis advisor; spawned when cross-phase reasoning needed
+            ├─ @Color (Opus · xhigh)     ← math/formal-language co-brain; spawned for proofs/bounds/semantics
+            ├─ @Epoch (Sonnet · medium)  ← researcher; spawned for live version/stack checks
+            ├─ @Atlas (Sonnet · high)    ← primitive creator; spawned to build/repair agents
+            ├─ @Recorder (Haiku · low)   ← memory librarian; spawned to file session state
+            ├─ @Hypatia (Opus · high)    ← cross-project strategist; spans projects, rare
+            └─ @Vara (Sonnet · high)     ← execution coordinator; spawned when a plan enters execution phase
+                 ├─ @Trajectory (Sonnet · high)   ← senior impl; spawned for complex/judgment tasks
+                 │    └─ @Delta (Haiku · low)      ← surgical executor; spawned for specific subtasks
+                 │         [fallback: if Delta is not strong enough, Trajectory takes over directly]
+                 ├─ @Vector (Sonnet · medium)      ← mid-tier impl; spawned when context > ~40K or
+                 │                                    medium-complexity new code, no judgment needed
+                 └─ @Delta (Haiku · low)            ← direct dispatch for simple surgical tasks
+```
+
+**Fallback rules:**
+- `Delta not strong enough` → Trajectory picks up the task directly (no re-dispatch through Vara)
+- `Context > 100–128K` → escalate to Trajectory from task start; do not wait for Delta to fail
+- `Hard task (3+ hop debug, architecture root-cause)` → skip Trajectory, go directly to an Opus seat (Houston / Color / Janus depending on domain)
+- `Advisory needed mid-execution` → Vara surfaces to Houston; Houston spawns the relevant advisor
+
+**What Vara does NOT do:** re-plan, run Bash, or override Houston's gate decisions.
+**What Trajectory does NOT do:** hold the task list across sessions (that is Vara's responsibility).
+
+---
+
+## What changed
+
+**v2 (2026-06-24):**
+- **`@Atlas → @Zenith`** added — the creator's Haiku reader was in the roster and missing from the map.
+- **`@Trajectory` self-clone** kept — the senior forks for parallel perspective on a hard task.
+- **`@Houston → @Delta` (trivial reads)** kept — dispatching the cheap reader is flat dispatch, not "holding the wrench."
+- **"swarm" removed** — `@Agol → @Houston` stays as a synthesis report-up only.
+- **`@Color` seated** — math/formal-language co-brain; `@Houston → @Color` dispatch, `@Color → @Houston` report-up. Gaveled 2026-06-24.
+
+**v3 (2026-06-25 · decision 0006):**
+- **`@Vara` activated** — execution coordinator layer between Houston and implementation. Holds task list, routes Trajectory/Vector/Delta, verifies gates, reports state. Was deferred; now canon.
+- **`@Vector` added** — mid-tier implementer (Sonnet, effort:medium). Sits between Delta and Trajectory on the escalation ladder: context ceiling above Haiku or medium-complexity new code, but no judgment or subagent spawning needed.
+- **Effort levels added to node labels** — model tier alone is insufficient; effort is an orthogonal quality axis (AMD/Laurenzo finding: effort-misconfig risk > tier-selection risk).
+- **`@Agol` corrected Fable → Opus** — Fable 5 pulled within 48h of launch; silent self-degradation confirmed in Anthropic system card.
+- **`@Janus` effort:high → effort:xhigh** — must exceed architect's reasoning depth to produce meaningful challenge-before-lock.
