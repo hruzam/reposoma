@@ -2,7 +2,7 @@
 card: card.gemini-cli
 brand: Google — Gemini CLI
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-06-02
+verified: 2026-06-27
 half_life: ~1-2 weeks (nightlies daily; stable ~weekly)
 half_life_days: 30
 recheck:
@@ -24,6 +24,8 @@ auth_survival: paid Gemini API key OR enterprise license   # see VOLATILE
 - Successor: **Antigravity CLI** (`agy`) — Go, closed-source, single binary, async/background model.
   Keeps Skills, Hooks, Subagents, Extensions (as "Antigravity plugins"). Separate config tree
   `~/.gemini/antigravity-cli/`, separate auth. NOT 1:1 parity at launch.
+  ⚠ LOW-CONFIDENCE: Gemini CLI v0.49.0 published 2026-06-25 (repo active); Antigravity as
+  "successor" not confirmed via official Google announcement (2026-06-27). Re-verify.
 - ACTION: confirm BOTH machines' `gemini` auth = API key (not personal Google login).
 
 ## Config home
@@ -33,7 +35,11 @@ auth_survival: paid Gemini API key OR enterprise license   # see VOLATILE
 ## Native primitives
 1. **Subagent** (preview 🔬) — `<~/.gemini|.gemini>/agents/<name>.md`. YAML frontmatter + body = system prompt.
    - Tool WILDCARDS: `*` (all), `mcp_*` (all MCP), `mcp_<server>_*` (one server). Isolated context + recursion guard.
-   - Manage via `/agents`. Registration: first-wins, project-prioritized. Invoke: `gemini -a <name>`.
+   - Manage via `/agents`. Registration: first-wins, project-prioritized.
+   - External (headless) invocation: `gemini "@<name> <task>"` — `@name` prefix in the
+     prompt selects the agent. Equivalent of `claude --agent <name> "task"`.
+   - Interactive invocation: `gemini` → then `/agents` TUI to switch seat.
+   - Dead: `gemini -a <name>` (removed). Tested/dead: `GEMINI_AGENT=<name>` (no effect).
 2. **Skill** — `skills/<name>/SKILL.md`  (SAME Agent Skills standard as Claude → portable).
 3. **Custom command** — `commands/<name>.toml`  (TOML, not markdown) → `/name` or `/<ext>.name`.
    (`~/.gemini/commands/`, project `.gemini/commands/`.) Manage: `/commands`.
@@ -52,8 +58,11 @@ auth_survival: paid Gemini API key OR enterprise license   # see VOLATILE
   headless mode, A2A remote subagents. Gemini 3 default; Gemma 4 via API default.
 
 ## VOLATILE / watch
-- Versions move daily (stable ~v0.4x). The Antigravity transition is the big one — re-verify migration doc.
+- Versions move daily (stable ~v0.49x as of 2026-06-27). Antigravity CLI transition: LOW-confidence — re-verify.
 - Subagents are PREVIEW → less stable than Claude's GA subagents.
+- **`--allowed-tools` CLI arg and `tools.allowed` in settings.json are deprecated** (removal at v1.0).
+  Migrate to Policy Engine: https://geminicli.com/docs/core/policy-engine/
+  (Policy Engine = primitive #7 in Native primitives above.)
 
 ## Recommendation for LARVA
 Keep CLI alive via API key. Mirror the portable skills corpus (read from the shared dir). Park an

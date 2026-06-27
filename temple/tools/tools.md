@@ -16,6 +16,7 @@
 | 6 | `temple-mail-inbox` (read-side) | list unread inbox + `toAll/` (presence=unread, ask-first) | **shared-tool** — built + verified | `transport-and-doorbell.run2-and-circuit.md` | machine layer (0003) |
 | 7 | `temple-recalibration` | drop a dated reminder when `raw.settings` cards pass `half_life_days` | **shared-tool** — built + verified · **schedule pending** (systemd --user timer) | recalibration handoff (`_mail/vega/inbox/houston.recalibration-script.2026-06-19.md`) | machine layer (0003) |
 | 8 | `temple-transport-selftest` | end-to-end verify-it-fires for #3–#7 (the proto-gate) | **shared-tool** — built + verified | `transport-and-doorbell.run2-and-circuit.md` | machine layer (0003) |
+| 9 | `doorbell-smoke` | real-trigger smoke probe for the canon-doorbell (closes 0009 L5); exercises the live `commit → hook → base.zsh → temple-doorbell-run` path in a sandboxed temp git repo with `DOORBELL_DRY_FIRE=1`; includes mandatory deliberate-red (planted dead path) | **shared-tool** — built + verified 2026-06-27 (green PASS + deliberate-red PASS) | `doorbell-smoke-probe.spec.draft.md` | machine layer (0003) |
 
 ## Emission discipline (0007 L7 — the answer to "what else must be emitted")
 - **At each graduation rung**, the agent making the transition emits/updates that tool's row here (name · job · graduation-state). The duty came **with the architect seat** — it survives reincarnation.
