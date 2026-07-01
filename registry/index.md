@@ -13,6 +13,7 @@
 | piql.dev | office | active | [`registry/piql.dev.md`](piql.dev.md) | `PROJECT.yaml` · `session/mesh-state.md` · siblings: freya.devstudio, subai.devenv |
 | vacuole | office | building | [`registry/vacuole.md`](vacuole.md) | `pulse.md` · `PROJECT.yaml` · `AGENTS.md` · siblings: reposoma · methods: vacuole-mini (#1), anechoic (#2) |
 | nabla-lab | office | building | [`registry/nabla-lab.md`](nabla-lab.md) | `PROJECT.yaml` · `AGENTS.md` · `session/` |
+| fantasyobchod | home | active/maintenance | [`registry/fantasyobchod.md`](fantasyobchod.md) | `AGENTS.md` · `CLAUDE.md` · siblings: freya.devstudio |
 
 ## Sibling-graph (who shares what)
 - **subai.devenv ↔ reposoma.devenv** — share **spectral · bus/`_mail` · X→Z research · file-native medium**.
