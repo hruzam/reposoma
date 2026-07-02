@@ -49,7 +49,7 @@ These load in every Claude Code session regardless of project.
 | @Atlas | `atlas-ui` | Sonnet | Interactive primitive creator — interactive sessions, buffers before writing |
 | @AtlasAuto | `atlas-auto` | Sonnet | Automated primitive creator — spawnable by orchestrators, writes to staging |
 | @Zenith | `zenith` (`claude.creator.sniffer`) | Haiku | Targeted reader for heavy `raw.settings` reference files |
-| @Agol | `agol` | Opus | Continuous-reasoning advisor — cross-phase synthesis, non-adversarial, no verdict forced |
+| @Agol | `agol` | Fable | Continuous-reasoning advisor — cross-phase synthesis, non-adversarial, no verdict forced |
 | @Color | `color` | Opus | Math co-brain advisor to the Houston family — vector/tensor algebra, embeddings & similarity metrics, complexity/FLOP bounds, formal-language semantics. Read-only reasoner (Read/Grep/Glob + memory); delegates live SOTA checks to @Epoch, code to @Trajectory/@Delta. Drafts proofs/bounds/counterexamples; the architect records. |
 | @Epoch | `epoch` | Sonnet | Researcher — live fetch; recalibrates to today, treats versions/paths as stale; cites source + date + confidence; reads the project contract for project-specific scope |
 | @Houston | `houston` | Opus · effort:high | Architect / orchestrator — phase planner, owns `session/plan/session.plan.md`, spawns @AtlasAuto + @Janus, gated by @CapCom. Project-agnostic global form (freya/piql variants are project-scoped) |
