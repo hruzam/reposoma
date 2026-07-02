@@ -10,46 +10,55 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ## [TASK — open for next Atlas incarnation]
 
-### T1 — nabla-lab: does a bones project enable canon injection?
+### T3 — Oraculum: new agent primitive (reconfigured Hypatia)
 
-**Research question:** When a fresh project has the minimal bones (PROJECT.yaml + AGENTS.md + session/pulse.md),
-does an agent spawned inside it naturally receive the right temple canon — or does the injection fail silently?
-This is decision 0008 (propagation/transport) tested live on a real project.
+**Source:** `_mail/atlas/inbox/majkee.hypatia-to-oraculum.2026-07-02.md` (read before starting)
 
-**Subject:** `nabla-lab` — `/home/hruzam/nabla-lab` · host: **office** (hruzam-120922)
-Beacon: `registry/nabla-lab.md` · status: building · deposited-by: atlas
+**What it is:** Hypatia reconfigured and renamed as Oraculum — the machine historical Hypatia
+used. New role: **super-Houston**. Houston → Oraculum in dispatch topology, same as Flight →
+Houston. NOT an advisor or heuristic expert. More scientist: strong thinker first, then plans
+work for other agents. Close to Color — neural and coding depth.
 
-**Note — Houston not needed here:** Houston is a global agent wired to any project through the
-temple mechanism (AGENTS.md → decisions → registry). No project-scoped Houston seat required.
-This makes the research question cleaner: do the **bones alone** give a global agent sufficient
-canon, without any project-specific agent setup?
+**Shape:**
+- Name: `oraculum` · file: `~/.claude/agents/oraculum.md` (global)
+- Model: **Fable** · effort: high / xHigh
+- Tools: Read, Grep, Glob, Write, Agent (sub-agent spawning)
+- Working process: buffering (ref: `raw.claude-ai.agents/nabla.md`), sub-agent spawning, read+write
+- Cut larva context entirely
 
-**Wires to read first (in order):**
-1. `registry/nabla-lab.md` — beacon (already read)
-2. `temple/decisions/0008-propagation-transport.md` — the doctrine being tested
-3. `raw.guides/bootstrap-new-project.md` — the bones template (what "bones" means)
+**Read first (in order):**
+1. `_mail/atlas/inbox/majkee.hypatia-to-oraculum.2026-07-02.md` — the brief (already in context)
+2. `~/.claude/agents/hypatia.md` — current definition (check if exists; starting point)
+3. `raw.claude-ai.agents/nabla.md` — buffering process reference
+4. `raw.claude-ai.agents/symmetry.md` — therapy process reference
+5. `/home/hruzam/www/ovum/larva.dev/.shared/skills/skill.honest.md` — legacy; assess what to carry
+6. `/home/hruzam/www/ovum/larva.dev/.shared/skills/skill.regime-creative.md` — assess: against the build?
 
-**Audit checklist (delegate reads to @Delta on office):**
-- [ ] Does `/home/hruzam/nabla-lab/PROJECT.yaml` exist and have the right shape?
-- [ ] Does `/home/hruzam/nabla-lab/AGENTS.md` exist — is it wired to temple canon or empty?
-- [ ] Does `/home/hruzam/nabla-lab/session/pulse.md` exist?
-- [ ] Does `/home/hruzam/nabla-lab/.claude/` exist — any agents, settings, CLAUDE.md?
-- [ ] Is there a `CLAUDE.md` at repo root pointing to AGENTS.md (the `@AGENTS.md` import)?
-
-**Atlas's job (not delegatable):**
-- Interpret findings: what's missing, what's wired wrong, what works
-- Decide: does the bones structure as-is produce correct canon injection, or does it need a propagation pass (0008)?
-- If a propagation pass is needed: design it (don't run it — that's Trajectory/Delta's job)
-
-**Cost note:** The thinking is Atlas + Opus/Fable for interpretation. The reads are cheap (Delta/Haiku). Keep delegation tight.
-
-**Success looks like:** A short verdict — "bones sufficient / bones missing X / propagation pass needed" + a one-paragraph finding that could be filed in `temple/decisions/` or `pulse.atlas.md` as a note.
+**After writing:** decide fate of `hypatia.md` — retire, rename, or keep as alias. Surface to
+@majkee before acting on it. Confirm full draft before writing (interactive mode = buffer cycle).
 
 ---
 
 ## [2026-07-02]
 
 ### Done
+- **T2 DONE — nabla-lab AGENTS.md: standing disciplines section** (2026-07-02)
+  - Added `## Standing disciplines` (two bullets) after Conventions, before Read order.
+  - Token economy / ask-first → pointer to `raw.canon/canon.mail-protocol.md`. Context discipline → read thin, list inbox filenames first. Canon gavel not duplicated (already in Conventions).
+
+- **T1 DONE — nabla-lab canon injection audit** (2026-07-02)
+  - Audit scope: does a bones project (PROJECT.yaml + AGENTS.md + CLAUDE.md + session/pulse.md) produce correct canon injection for global agents? Includes temple disciplines — doctrine, forces, **token economy** — not just project orientation.
+  - Findings:
+    - `CLAUDE.md` (`@AGENTS.md`) present and live → project orientation injection works ✓
+    - `session/pulse.md` + `PROJECT.yaml` present, correct shape ✓
+    - `.claude/` does not exist → no project-scoped agent surface → **0008 propagation pass not applicable** (empty diff)
+    - `CLAUDE.md` is gitignored → fresh clone breaks injection (latent risk, single-host lab for now)
+  - **Two-layer verdict:**
+    - *Project orientation:* sufficient. Global agents spawned in nabla-lab receive the lighthouse (what the project is, shaping team, gates, read order).
+    - *Temple canon:* **insufficient.** Doctrine, nine forces, token economy (`raw.canon/canon.mail-protocol.md`), decision records (0001–0008) are NOT in the injection path. Reposoma is a separate repo, not mounted. Global agents carry only their compiled-in discipline slice — if temple moved since the definition was last written, the agent in a nabla-lab session won't know.
+  - **nabla-lab gap (project-level):** AGENTS.md (the lighthouse) does not mention token economy / ask-first / don't-blow-context discipline. Agents operating there have no project-level signal for these behaviors — they rely entirely on their own definition. If a new global agent or a claude.ai persona (Nabla, Symmetry) operates in this project, it is flying blind on temple disciplines.
+  - **Open question for Houston:** is the doctrine gap a structural issue for ALL bones projects, or only for projects whose AGENTS.md doesn't explicitly reference temple disciplines? Should `bootstrap-new-project.md` include a token-economy / key-discipline callout in the bones template?
+
 - `raw.settings/README.md` — new: folder entry point, card frontmatter template, freshness rule
 - `raw.card.claude-code.md` — MCP scope table (4 scopes, merge-not-override) + context-loading-by-scope (3 scenarios, CWD invariant, synthesizing-agent note)
 - `bootstrap-new-project.md` — CLAUDE.md budget rule (120 cap, cumulative framing, open research flag) + session-handoff pattern note
@@ -63,3 +72,4 @@ canon, without any project-specific agent setup?
 - CLAUDE.md line cap: RESOLVED — official = per-file 200-line soft cap; MEMORY.md is separate hard limit (200 lines/25KB). Bootstrap + card updated. Temple's 120-combined rule stands as conservative judgment.
 - `@Agol` Fable candidate — DONE: `model: fable` written to `~/.claude/agents/agol.md` (outside repo, active next session)
 - `advisor-high` model:fable — confirmed live ✓ no action needed
+- **[TABLED → Houston]** nabla-lab doctrine gap: AGENTS.md missing token economy / temple disciplines callout. Broader question: should `bootstrap-new-project.md` bones template include a standing discipline section (or pointer to `raw.canon/`) so every project lighthouse covers this by default? Atlas flags; Houston gates.
