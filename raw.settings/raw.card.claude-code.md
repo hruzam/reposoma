@@ -58,6 +58,8 @@ AGENTS.md / CLAUDE.md (always) → subagent body → skills (on-demand) → MCP 
 - CLAUDE.md merge: `~/.claude/CLAUDE.md` + `<repo>/CLAUDE.md` + subdir + `.claude/CLAUDE.md`.
 - **AGENTS.md read as fallback** when no CLAUDE.md in a dir → one lean AGENTS.md = cross-tool contract; keep CLAUDE.md thin.
 - Budget: ~150-200 instructions reliably followed; system prompt uses ~50 → keep contract < ~300 lines.
+- **CLAUDE.md cap:** 200 lines per-file (soft, adherence degrades — no hard truncation). All files concatenate; cumulative load degrades proportionally. Official mitigation: `.claude/rules/<name>.md` with `paths:` frontmatter to load rules only when matching files are accessed.
+- **MEMORY.md cap (different system):** hard 200-line / 25KB truncation — content beyond that is NOT loaded. Do not conflate with CLAUDE.md. *(source: code.claude.com/docs/en/memory, verified 2026-07-02)*
 
 ## Context loading by scope — agent perspective
 

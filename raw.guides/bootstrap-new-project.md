@@ -24,8 +24,14 @@ already loaded (~30 lines), a new project CLAUDE.md should stay under ~90 lines 
 keep the combined total safely under 120. Prefer `@path/to/file` imports over inline
 expansion to pull content on demand rather than always-on.
 
-⚠ *Research open: whether the cap is per-file or combined is community-unverified.
-Treat as combined until confirmed otherwise.*
+*Official (code.claude.com/docs/en/memory, verified 2026-07-02): the 200-line figure is
+**per-file**, soft adherence recommendation, no hard truncation for CLAUDE.md. All files
+still concatenate — cumulative load degrades adherence proportionally, but Anthropic does
+not issue a combined cap; their mitigation is `.claude/rules/<name>.md` with `paths:` frontmatter
+(load only when Claude reads matching files). The 120-line combined operating rule is the
+temple's conservative engineering judgment, not officially mandated.*
+
+*⚠ Do not conflate with MEMORY.md — that has a separate hard limit: 200 lines / 25KB truncation.*
 
 ## Step 1 — start with the four seats (doctrine §6)
 **architect + challenger + researcher + implementer.** Plus a plan file, a flag/decisions ledger,

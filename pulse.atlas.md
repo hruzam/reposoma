@@ -21,6 +21,6 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 - `~/.claude/skills/session-resume/SKILL.md` — new global skill (CWD-derived slug, ask-first, journal-free)
 
 ### Open / tabled
-- CLAUDE.md line cap: per-file vs combined — community research open (flagged in bootstrap, not resolved)
+- CLAUDE.md line cap: RESOLVED — official = per-file 200-line soft cap; MEMORY.md is separate hard limit (200 lines/25KB). Bootstrap + card updated. Temple's 120-combined rule stands as conservative judgment.
 - `@Agol` Fable candidate — parked; per-session manual switch if needed; not committed to any file
 - `advisor-high` model:fable — confirmed live ✓ no action needed
