@@ -1,8 +1,8 @@
 # Decision Record — Cross-machine mail transport: completing `_mail` direct-inform (part 4)
 
-`status: GAVELED-BY-OPERATOR 2026-07-02 (@majkee). Two @Janus passes folded (pass-1 → append-only inbox; pass-2 → distributor=notifier-not-carrier + 0007/registry-F4 cleared). Append-only once committed (doctrine §1b). COMMIT GATED — see Consequences (0009 L5 doorbell real-fire + re-ring warning). index.md row 0010 written to working tree; commit follows at the gate.`
+`status: GAVELED-BY-OPERATOR 2026-07-02 (@majkee). Two @Janus passes folded (pass-1 → append-only inbox; pass-2 → distributor=notifier-not-carrier). Post-review amendments R-a/R-b/R-c gaveled 2026-07-02 (advisor-high whole-scope review + disposable spike; L1–L10 unchanged). Append-only once committed (doctrine §1b). COMMIT GATE = conscious acceptance of the twin re-ring ONLY — 0009 L5 real-fire is PAID (probe re-verified green + deliberate-red 2026-07-02). index.md row 0010 written to working tree; commit follows on the re-ring go.`
 `date: 2026-07-02 · host: office · extends 0008 (transport doctrine). Guards checked clean: 0008 (no-central-bus / F3) · 0007 L3 (discovery-only, no callable column) · registry Force-4 (no write into another project's canon).`
-`shape: light ADR — context · locked shape (L1–L10) · consequences · residual`
+`shape: light ADR — context · locked shape (L1–L10) · post-review amendments · consequences · residual`
 
 ---
 
@@ -69,15 +69,46 @@ sender/receiver *through* the registry is the central bus reborn (0007 L3) — f
 
 ---
 
+## Post-review amendments (gaveled 2026-07-02 — @majkee)
+
+*Source: an `advisor-high` (Fable) whole-scope review + a disposable end-to-end spike (@Trajectory), both
+2026-07-02. Neither changes L1–L10; these are residual/sequencing refinements that protect the North Star
+("do not build a second parallel system per project").*
+
+**R-a — the supersession is double, and named.** When the 0010 transport is built it supersedes BOTH
+(i) the per-message `.md` inbox store (current `temple-mail`) AND (ii) the doorbell's *pushed-ring* delivery
+(`temple-doorbell.zsh` writing via `temple-mail`), which L7 replaces with a boot-time query. Until the
+transport lands, the live file-based tools are **explicit stepping-stones** — safe in the interim precisely
+because reposoma `_mail` is gitignored, so the file model's move/delete drain semantics only break
+*cross-machine*, which is exactly 0010's scope.
+
+**R-b — part-3 binds to the tool interface, never the storage layout.** The twin read-side rollout (part 3)
+MUST adopt the interface `temple-mail-inbox <origin>:<seat>` with zero path/format knowledge — never the
+layout (`glob _mail/<agent>/inbox/*.md`, presence = unread). This makes the eventual `.md`→jsonl swap a
+**single-tool internal change** (one edit, no per-twin re-rollout) and is the structural reason the interim
+format cannot ossify into a per-project second parallel system.
+
+**R-c — append-only does double duty (spike-confirmed).** Disposable spike, 2026-07-02: per-writer
+partitions make concurrent state-transitions structurally non-overlapping (Scenario B — two hosts archiving
+the same message, each to its own partition → **clean merge**, fold = archived). In-place mutation of a
+shared record **conflicts** (Scenario C — literal git conflict markers) = the empirical justification for
+L3. Even same-partition appends from two hosts merge cleanly because append-only content is purely additive
+(line-diff, no edits to existing lines). Fold-as-view (L5) and doorbell-as-query (L7) both validated, no DB.
+
+---
+
 ## Consequences
 
-- **Closes task-1 part 4** (the delicate one). Part 1 (mail) is LIVE. Parts 2 (doorbell real-fire) and 3
-  (twin read-side rollout) remain **residual implementation**, tracked separately — this record locks the
-  *doctrine*, not those builds.
-- **COMMIT GATED.** Committing under `temple/decisions/` re-rings every stale twin, and the relocated
-  doorbell's real-fire is still OWED (0009 L5 smoke-probe unbuilt). This record + the index row are written
-  to the working tree now; the **commit waits on the 0009 L5 gate** (or a conscious acceptance of the
-  re-ring). Houston has no Bash → the gated commit is handed to @Delta.
+- **Closes task-1 part 4** (the delicate one). Part 1 (mail) is LIVE. Part 2 (doorbell) is built + hook
+  installed + **verified firing** (see below). Part 3 (twin read-side rollout) remains residual — now
+  constrained by R-b.
+- **COMMIT GATE (reduced to one call).** Committing under `temple/decisions/` re-rings every stale twin —
+  which is the doorbell's *intended* job. The doorbell real-fire is now **VERIFIED**:
+  `~/.config/zsh/ai/doorbell-smoke.zsh` re-ran **green + deliberate-red on 2026-07-02** (@Delta, exit 0,
+  zero residue; dry-fire confirmed it would ring the 5 stale twins with `canon=decisions@2026-07-02`). So
+  **0009 L5's owed real-fire is PAID.** The only remaining gate is **@majkee's conscious acceptance of the
+  twin re-ring** (low-stakes: the twins already hold unread rings and cannot consume them until part-3
+  read-side adoption). Houston has no Bash → the commit is handed to @Delta on the go.
 - **@majkee's MariaDB mail-MCP stays valid** — with L6 applied (distributor demoted to notifier).
 - Extends 0008; guards 0007 L3 + registry Force-4 checked clean (an inbox is a receive-buffer, not canon;
   the message is inert until the receiver drains it).
@@ -86,10 +117,15 @@ sender/receiver *through* the registry is the central bus reborn (0007 L3) — f
 
 ## Residual / next
 
-1. **Doorbell real-fire (0009 L5 smoke-probe)** — build + dry-fire + deliberate-red before the doorbell is
-   trusted; also gates this commit.
-2. **Twin read-side rollout (part 3)** — the twin-pass draft's Action A (@majkee-by-hand first adoption).
+1. **Doorbell real-fire (0009 L5) — PAID.** The probe `ai/doorbell-smoke.zsh` was already BUILT 2026-06-27
+   and re-verified green + deliberate-red 2026-07-02 (@Delta). No build owed. *(Correction: earlier memos
+   wrongly carried this as "build the probe / unbuilt" — the source file on disk was the truth. Trust disk
+   over carried-forward text on tool state.)*
+2. **Twin read-side rollout (part 3)** — per **R-b: bind to the `temple-mail-inbox` interface, never the
+   layout.** The twin-pass draft's Action A (@majkee-by-hand first adoption); @Janus's 5 OQs on that draft
+   still owed before dispatch. Sequencing note (R-a): interim file-format coexists safely until the
+   transport is built; do not let part-3 bake the layout in.
 3. **Address-book beacon** — draft the addresses-only discovery surface (L8) when part 3 lands.
 
-*Next: @Delta commits 0010 + index row 0010 once the 0009 L5 doorbell real-fire clears (or the re-ring is
-consciously accepted). @Janus FINAL-confirm optional (both passes already folded).*
+*Next: @Delta commits 0010 + index row 0010 (and the now-unblocked 0009 row) once @majkee gives the
+twin-re-ring go. @Janus FINAL-confirm on 0009 optional (its L5 is now satisfied).*
