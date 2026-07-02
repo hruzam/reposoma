@@ -50,4 +50,11 @@ orchestrator and any multi-group split the same way: only at measured volume.
 Per project: `plan` (what we're doing) · `flag`/`decisions` (what's locked) · `pulse` (volatile).
 Lock the convergence; leave unverified mechanism conditional. Challenge before every lock.
 
+## Optional patterns (earn before adding)
+
+**Session continuity** — for projects that use a dev journal (`.dev/session/`): add
+`session-handoff` + `track` skills to `.claude/skills/` (reference implementation: `fantasyobchod/.claude/skills/`).
+For journal-free session recovery in any project, the global `/session-resume` skill derives the
+project from CWD and asks before reading — no journal dependency, no hardcoded paths.
+
 > The smallest team that ships one correct thing beats the complete team that ships an org chart.
