@@ -1,9 +1,9 @@
 # agentctl — the materializer / gate (independent tool spec)
 
 `tier: temple · cross-project canon · the tool the doctrine names but does not specify`
-`date: 2026-06-17 · status: spec (tool itself: build when the first real project needs it)`
-`supersedes: temple/agent-platform-activation-study.md (2026-06-11) — durable core lifted here`
-`governed-by: doctrine §3b (planes/contract) · §7 (trust) · decisions/ L2,L5,L6`
+`date: 2026-06-17 (spec predates 0006/0007/0008, locked 2026-06-25) · status: spec — build when the seal-gate clears (see Reconciliation state)`
+`supersedes: temple/agent-platform-activation-study.md (2026-06-11) — folded into doctrine §3b (v3); original file removed, lineage kept here`
+`governed-by: doctrine §3b (planes/contract) · §7 (trust) · decisions 0001 (L2/L5/L6: tiers · two-supply-chains) · 0006 (seats) · 0007 (tool-lifecycle/lockfile) · 0008 (protected-set · verify-collapse)`
 
 > This is the **independent tool / parallel service** the doctrine references as `bin/agentctl`
 > and the file-tree draws as the gate. The doctrine says *why* it exists; this file says *what
@@ -12,6 +12,21 @@
 > resist frameworkitis.
 
 ---
+
+## Reconciliation state — the underline (2026-07-02)
+This spec (2026-06-17) predates 0006/0007/0008 (locked 2026-06-25). A fix-now conformance pass added the
+live-consumed schema fields and re-anchored the decision refs; deep design stays deferred to build-time.
+- **In-schema NOW (canon, not deferred):** `tools:` structured Tier-S intent row incl. the
+  `graduation-state` FIELD + enum (0007 L1/L5) · `protected:` declared set (0008 L9).
+- **DEFERRED to build-time (do NOT design ahead of the seal-gate):** the Tier-G lockfile FACT columns
+  (path-exists · interface-responds · deps-resolve · working-state) · the `verify → materialize --verify`
+  collapse (0008) · the graduation-ladder ENFORCEMENT (how the tool walks the states) + the
+  `.devenv→.v<N>` packaging-shift mechanics · L7 emission internals. *(The graduation-STATE field is
+  canon now — only its enforcement defers.)*
+- **Build status: SEAL-GATE-BLOCKED (0007), as of 2026-07-02.** Both conditions unmet — (a) subai
+  packaging-shift unproven, (b) rule-of-two second-adopter unmet. Demand pressure is real (piql/freya/subai
+  active on hand-authored surfaces = the F1/F4 this tool kills), but the gate is NOT cleared. Do not code
+  agentctl until it clears; if urgency rises, the task is to CLEAR the gate, not skip it.
 
 ## What it is
 One declarative, idempotent command that reads `PROJECT.yaml` + the registry + the meta-repo and
@@ -37,8 +52,14 @@ docs:                                        # entry points, not content
   architecture: docs/ARCHITECTURE.md
   decisions:    docs/decisions/
 agents:        [ <capability-name>, … ]      # requested capability SET, names from registry
+tools:                                       # 0007 L1 — Tier-S tool INTENT (hand-authored). Gated FACT columns
+                                             # (path-exists · interface-responds · deps-resolve · working-state)
+                                             # live in the deferred Tier-G lockfile, NEVER here.
+  - { name: <capability-name>, job: <one-line>, graduation-state: spike|project-brick|shared-tool|packaged }
 mcp_profile:   <named tool-set>              # resolved against the profile store
 guidelines_channel: stable                   # which meta-repo channel/tag feeds guidelines
+protected:                                   # 0008 L9 — declared protected-set; each entry decision-cited, hard against SILENT overwrite
+  - { field: <path>, reason: D-<project>-NN }
 ```
 Rules: agents read `{{commands.*}}` / `{{docs.*}}` instead of guessing or scanning; **anything not in
 the contract is not promised**; version the schema (`# PROJECT.yaml v1`) so the platform evolves
@@ -50,8 +71,11 @@ agentctl materialize:   renders → .claude/agents/* (from P1 templates, vars {{
                                  → .claude/settings.json (enabled servers per mcp_profile · the TRUST layer)
                                  → .mcp.json (the live-slice server only — see untuned string)
                                  → guidelines/* (from guidelines_channel)
-                                 → .agent-lock.json (versions + content hashes of all of the above)
-agentctl verify:        recompute hashes vs lockfile; exit non-zero on drift → answers F4 (CI + pre-session)
+                                 → .agent-lock.json (§3b materialization-drift lockfile: versions + content
+                                   hashes of the 4 generated surfaces — NOT the 0007 Tier-G TOOL lockfile,
+                                   which is a SEPARATE, DEFERRED artifact: fact columns, never hand-edited)
+agentctl verify:        recompute hashes vs lockfile; exit non-zero on drift → answers F4 (CI + pre-session).
+                        DEFERRED collapse → folds into `materialize --verify` (0008), Stage-2 home of the propagation re-projection pass.
 agentctl diff / update: show what a channel bump changes; PR-able (review surface ≈ Dependabot)
 ```
 
