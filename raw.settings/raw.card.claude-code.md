@@ -63,6 +63,9 @@ AGENTS.md / CLAUDE.md (always) → subagent body → skills (on-demand) → MCP 
 - Budget: ~150-200 instructions reliably followed; system prompt uses ~50 → keep contract < ~300 lines.
 - **CLAUDE.md cap:** 200 lines per-file (soft, adherence degrades — no hard truncation). All files concatenate; cumulative load degrades proportionally. Official mitigation: `.claude/rules/<name>.md` with `paths:` frontmatter for path-scoped loading. CLAUDE.md length warning now **scales with model context window** (v2.1.169).
 - **MEMORY.md cap (different system):** hard 200-line / 25KB truncation — content beyond that is NOT loaded. Do not conflate with CLAUDE.md. *(verified 2026-07-02)*
+- **Startup context budget** (context-window visualization, code.claude.com/docs/en/context-window):
+  System prompt ~4,200 tok · MEMORY.md ~680 tok · Environment info ~280 tok · MCP tool names (deferred) ~120 tok.
+  Total overhead before any user content: ~5,300 tokens. MCP full schemas stay deferred via tool search.
 
 ## Context loading by scope — agent perspective
 

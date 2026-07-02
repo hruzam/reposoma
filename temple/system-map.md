@@ -20,7 +20,7 @@ flowchart TD
         HOU["ARCHITECT // @Houston · Opus · effort:high<br/>owns plan · dispatches<br/>never runs shell or code"]
         FLI["TACTICAL // @Flight · Sonnet · effort:high<br/>quick replanning · phase coord<br/>defers strategic gates to Houston"]
         JAN["CHALLENGER // @Janus · Opus · effort:xhigh<br/>one verdict · one risk · read-only"]
-        AGOL["ADVISOR // @Agol · Opus · effort:high<br/>cross-phase synthesis · no verdict"]
+        AGOL["ADVISOR // @Agol · Fable · effort:high<br/>cross-phase synthesis · no verdict"]
         COL["MATH ADVISOR // @Color · Opus · effort:xhigh<br/>vector/tensor · formal language<br/>proofs · bounds · read-only"]
         EPO["RESEARCHER // @Epoch · Sonnet<br/>live fetch · dated · cited"]
         VARA["COORDINATOR // @Vara · Sonnet · effort:high<br/>holds task list · routes execution<br/>verifies gates · reports to Houston"]

@@ -53,7 +53,7 @@ recheck:
 - By the 50th tool call, conversation history alone can exceed 150K tokens — re-sent every turn.
 - Mode switch (Cmd+. / Ctrl+.) = **fresh context window** (confirmed). Continuity lost; cost resets. Hard boundary, not a handoff.
 - Real-world: same workflow = 12% daily usage cap in Claude Code vs **80% in Cursor** (InfoQ, Apr 2026).
-- MAX mode: removes context truncation + raises tool-call cap to 200; token-based API pricing + 20% margin. Does NOT change per-turn accumulation.
+- MAX mode: removes context truncation + raises tool-call cap to 200. Pricing by plan: Individual = model API rate (no surcharge); Teams = model API rate + $0.25/M Cursor Token Rate on non-Auto requests; legacy = model API rate + 20% surcharge. Does NOT change per-turn accumulation.
 
 ## CAVEAT / watch
 - Binding a specific `.mdc` to ONE custom mode is weak — `alwaysApply` rules apply across modes.
