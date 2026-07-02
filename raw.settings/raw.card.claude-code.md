@@ -38,12 +38,43 @@ model_floor: claude-opus-4.x   # CONFIRM current string via changelog; do NOT ha
 
 ## Settings hierarchy
 `~/.claude/settings.json` (global) → `<repo>/.claude/settings.json` (team) → `settings.local.json` (personal, gitignored). Hooks + permissions live here.
+Precedence (high→low): Managed → CLI args → Local → Project → User.
+
+## MCP scope (`.mcp.json`)
+All applicable scopes are **merged** at session start (additive, not override):
+
+| Scope | File | Notes |
+|-------|------|-------|
+| Managed (org-wide) | `managed-mcp.json` (system dir) | highest trust |
+| User (global) | `~/.claude.json` | all projects |
+| Project (team) | `<repo>/.mcp.json` | **repo root** — NOT inside `.claude/`; commit to git |
+| Local (per-project) | `~/.claude.json` per-project key | `claude mcp add --scope local`; not committed |
+
+Scope perspective mirrors agents/settings: CWD at session start determines which project `.mcp.json` loads.
+`CLAUDE_CONFIG_DIR` relocates `~/.claude/` paths but does NOT move `<repo>/.mcp.json` (repo-rooted) or `~/.claude.json` (user MCP store).
 
 ## Always-on context (the "circle" at invocation)
 AGENTS.md / CLAUDE.md (always) → subagent body → skills (on-demand) → MCP → hooks.
 - CLAUDE.md merge: `~/.claude/CLAUDE.md` + `<repo>/CLAUDE.md` + subdir + `.claude/CLAUDE.md`.
 - **AGENTS.md read as fallback** when no CLAUDE.md in a dir → one lean AGENTS.md = cross-tool contract; keep CLAUDE.md thin.
 - Budget: ~150-200 instructions reliably followed; system prompt uses ~50 → keep contract < ~300 lines.
+
+## Context loading by scope — agent perspective
+
+**Invariant:** CLAUDE.md/settings.json/.mcp.json loading is **CWD-based, not agent-file-location-based.**
+The agent receives whatever context stack was assembled from the working directory at session start.
+
+| Scenario | Agent loads? | CLAUDE.md received | Settings / MCP |
+|----------|-------------|-------------------|----------------|
+| Global agent (`~/.claude/agents/`) in project folder | Yes — priority 4 | global + project stack | global + project (project overrides) |
+| Project agent invoked **outside** its project folder | **No** — not scanned | — | — |
+| Project agent in its own project folder | Yes — priority 3, wins over same-name global twin | global + project stack | global + project |
+
+**Exception:** `--agents <JSON>` CLI flag injects any agent spec regardless of CWD (priority 2).
+Context received = CWD stack at invocation — NOT the agent's original project.
+
+*Synthesizing agents: read this section when reasoning about what context a subagent actually received,
+or why an agent behaved as if it didn't know its home project's rules.*
 
 ## Hooks — 30 events (updated 2026-06-10); the ones you'll use
 PostToolUse(Edit|Write)=format/lint · PreToolUse(Bash)=deny rm -rf/sudo · PreToolUse(Edit|Write)=scope-leash ·

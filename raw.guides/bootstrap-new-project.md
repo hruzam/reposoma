@@ -12,6 +12,21 @@ Mount the temple as your global RAG. Read, in order: the project's `PROJECT.yaml
 the one file you may assume exists) and its clean `pulse.md`. Do not scan the codebase; read the
 contract's `docs.*` pointers.
 
+## CLAUDE.md budget (before you write anything)
+
+Project `CLAUDE.md` cap: **< 120 lines** (150 = red zone, context loss risk).
+All CLAUDE.md files concatenate at session start — global + project + subdir — the
+model receives the total. Harness per-file guidance is <200 lines each, but budget
+is consumed cumulatively.
+
+Rule: check combined line count before adding project instructions. If global is
+already loaded (~30 lines), a new project CLAUDE.md should stay under ~90 lines to
+keep the combined total safely under 120. Prefer `@path/to/file` imports over inline
+expansion to pull content on demand rather than always-on.
+
+⚠ *Research open: whether the cap is per-file or combined is community-unverified.
+Treat as combined until confirmed otherwise.*
+
 ## Step 1 — start with the four seats (doctrine §6)
 **architect + challenger + researcher + implementer.** Plus a plan file, a flag/decisions ledger,
 one compile-down gate, one adversarial pass before each lock. Do **not** pre-grant domain seats.
