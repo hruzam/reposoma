@@ -2,7 +2,7 @@
 card: card.claude-code
 brand: Anthropic — Claude Code (CLI)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-06-02
+verified: 2026-07-02
 half_life: ~2-4 weeks (ships ~10 versions/month)
 half_life_days: 30
 recheck:
@@ -10,7 +10,7 @@ recheck:
   - https://github.com/anthropics/claude-code
   - https://code.claude.com/docs/en/claude-directory
 verify_cmd: claude --version
-model_floor: claude-opus-4.x   # CONFIRM current string via changelog; do NOT hardcode dated strings
+model_floor: claude-sonnet-5   # CONFIRM current string via changelog; do NOT hardcode dated strings
 ---
 
 # Claude Code — native build surface
@@ -25,16 +25,19 @@ model_floor: claude-opus-4.x   # CONFIRM current string via changelog; do NOT ha
 1. **Subagent** (identity / master prompt) — `<.claude|~/.claude>/agents/<name>.md`
    - YAML frontmatter: name, description, model, tools, color, optional hooks/memory. Body = system prompt.
    - Resolution precedence: session > project > user > plugin.
-   - Invoked by the main agent via the Task tool; own context window; returns a summary.
-   - `run_in_background: true`, `max_turns: N`. Manage via `/agents`.
+   - Invoked via the Agent tool (renamed from Task in v2.1.63; `Task(...)` aliases still work); own context window; returns a summary.
+   - `background: true`, `maxTurns: N`. **Manage: ask Claude to create/edit, or edit `.claude/agents/*.md` directly.**
+   - ⚠ `/agents` wizard removed v2.1.198. `/agents` command still opens the management TUI (Running/Library tabs), but creation wizard is gone.
+   - Nested spawning up to **5 levels deep** (v2.1.172). Fork (`/fork`) inherits full parent conversation — expensive; use sparingly.
 2. **Skill** (on-demand expertise) — `<.claude|~/.claude>/skills/<name>/SKILL.md`  (Agent Skills open standard)
    - Slash commands MERGED into skills: `.claude/commands/x.md` and `skills/x/SKILL.md` both create `/x`.
-   - Auto-loads when description matches, or invoked as `/x`.
+   - Auto-loads when description matches, or invoked as `/x`. `/reload-skills` re-scans skill dirs without restart (v2.1.152).
 3. **Hook** (determinism) — in `settings.json` under `hooks`. Shell command on a lifecycle event (model can't skip).
 4. **MCP** (capability) — `<repo>/.mcp.json` (project) or `claude mcp add` (user/project/local scope).
+   - `claude mcp login <name>` / `logout <name>` — CLI auth without interactive menu; `--no-browser` for SSH (v2.1.186).
 5. **Plugin** (packaging unit for a complex build) — bundles all of the above:
    `.claude-plugin/plugin.json` + skills/ + agents/ + commands/ + hooks/hooks.json + .mcp.json + bin/ (on PATH) + settings.json + output-styles/
-   - Local test: `claude --plugin-dir <path>` (no global install; accepts .zip). Distribute via marketplace.
+   - Local test: `claude --plugin-dir <path>` (no global install; accepts .zip). Scaffold: `claude plugin init <name>` (v2.1.157).
 
 ## Settings hierarchy
 `~/.claude/settings.json` (global) → `<repo>/.claude/settings.json` (team) → `settings.local.json` (personal, gitignored). Hooks + permissions live here.
@@ -58,8 +61,8 @@ AGENTS.md / CLAUDE.md (always) → subagent body → skills (on-demand) → MCP 
 - CLAUDE.md merge: `~/.claude/CLAUDE.md` + `<repo>/CLAUDE.md` + subdir + `.claude/CLAUDE.md`.
 - **AGENTS.md read as fallback** when no CLAUDE.md in a dir → one lean AGENTS.md = cross-tool contract; keep CLAUDE.md thin.
 - Budget: ~150-200 instructions reliably followed; system prompt uses ~50 → keep contract < ~300 lines.
-- **CLAUDE.md cap:** 200 lines per-file (soft, adherence degrades — no hard truncation). All files concatenate; cumulative load degrades proportionally. Official mitigation: `.claude/rules/<name>.md` with `paths:` frontmatter to load rules only when matching files are accessed.
-- **MEMORY.md cap (different system):** hard 200-line / 25KB truncation — content beyond that is NOT loaded. Do not conflate with CLAUDE.md. *(source: code.claude.com/docs/en/memory, verified 2026-07-02)*
+- **CLAUDE.md cap:** 200 lines per-file (soft, adherence degrades — no hard truncation). All files concatenate; cumulative load degrades proportionally. Official mitigation: `.claude/rules/<name>.md` with `paths:` frontmatter for path-scoped loading. CLAUDE.md length warning now **scales with model context window** (v2.1.169).
+- **MEMORY.md cap (different system):** hard 200-line / 25KB truncation — content beyond that is NOT loaded. Do not conflate with CLAUDE.md. *(verified 2026-07-02)*
 
 ## Context loading by scope — agent perspective
 
@@ -78,7 +81,7 @@ Context received = CWD stack at invocation — NOT the agent's original project.
 *Synthesizing agents: read this section when reasoning about what context a subagent actually received,
 or why an agent behaved as if it didn't know its home project's rules.*
 
-## Hooks — 30 events (updated 2026-06-10); the ones you'll use
+## Hooks — events (updated 2026-07-02); the ones you'll use
 PostToolUse(Edit|Write)=format/lint · PreToolUse(Bash)=deny rm -rf/sudo · PreToolUse(Edit|Write)=scope-leash ·
 SessionStart=inject context · SessionEnd=journal · UserPromptSubmit=enrich prompt · Stop/StopFailure=gate "done" ·
 SubagentStart/Stop · TeammateIdle=lifecycle · PreCompact=backup transcript · PostCompact · PermissionRequest=auto-approve ·
@@ -93,27 +96,40 @@ Exit 0 = proceed; exit 2 = block. stdout injected as context only for UserPrompt
 **BREAKING (v2.1.139):** `/dev/tty` no longer accessible from command hooks on macOS/Linux.
 Use `terminalSequence` field instead (requires v2.1.141+).
 
-**New env var in hooks:** `CLAUDE_EFFORT` — exposes current effort level to hook scripts.
+**New env vars in hooks:** `CLAUDE_EFFORT` · `CLAUDE_CODE_SESSION_ID` (stdio MCP servers also receive these).
+
+## Permission rules — key syntax (updated 2026-07-02)
+- `permissions.allow|deny|ask` in `settings.json`. Deny-first is the safe default.
+- Standard: `Tool(name)`, `Bash(npm run *)`, `Read(/path/**)`, `Write(src/**)`.
+- **New (v2.1.178): `Tool(param:value)` parameter matching** — e.g., `Agent(model:opus)` blocks Opus subagents, `Agent(type:researcher)` blocks by type. WebFetch domain wildcards: `domain:*.example.com` (v2.1.172).
+- **Destructive git now blocked by default** (v2.1.183): `git reset --hard`, `git checkout -- .`, `git clean -fd`, `git stash drop`, `git commit --amend` (when not agent-authored this session).
+- `terraform destroy` / `pulumi destroy` / `cdk destroy` blocked unless specific stack requested (v2.1.183).
+- **`sandbox.credentials` setting** — block sandboxed commands from reading credential files and secret env vars (v2.1.187).
+- **Auto mode:** GA on Bedrock/Vertex/Foundry; no longer requires opt-in consent (v2.1.157); subagent spawns evaluated by classifier before launch (v2.1.178).
 
 ## VOLATILE / watch
-- Model strings rotate (Opus 4.x line). Never hardcode dated strings in agents; set a floor, verify via changelog.
-- Moving fast: Agent Teams, dynamic workflows, background sessions (Ctrl+T pin), `--fallback-model`.
+- **Sonnet 5 is now default** (v2.1.197, released 2026-06-30). Model strings rotate fast — never hardcode dated strings; set a floor.
+- **Explore agent model changed (v2.1.198):** now inherits main session model (capped at Opus) — was Haiku. Exploration passes are no longer Haiku-cheap; factor into context budgets.
+- **`/agents` wizard removed (v2.1.198):** create/manage subagents by asking Claude or editing `.claude/agents/` files directly.
+- **`ultracode` keyword (v2.1.160):** replaces `workflow` as the trigger word. "workflow" no longer triggers.
+- Moving fast: background sessions (Ctrl+T pin), `--fallback-model`, `--bg --exec <cmd>`, implicit agent teams.
 - Also in `~/.claude`: rules, workflows, auto-memory — exist, not yet load-bearing here; inspect before relying.
 
-## Rate caps & fallback strategy (2026-06-10)
+## Rate caps & fallback strategy (2026-07-02)
 
 **Current status:** Good rate — ceiling not a day-to-day constraint. Token spend
 can be used aggressively for big-brain tasks.
 
-**Model tier as of 2026-06-10:**
-Fable 5 (`claude-fable-5` / alias `"fable"`) > Opus 4.8 > Sonnet 4.6 > Haiku 4.5.
+**Model tier as of 2026-07-02:**
+Fable 5 (`claude-fable-5` / alias `"fable"`) > Opus 4.8 > **Sonnet 5** (default; alias `"sonnet"`) > Sonnet 4.6 (legacy) > Haiku 4.5.
+Sonnet 5 promotional pricing: $2/$10 per Mtok through 2026-08-31.
 
 **Fallback ladder when Fable ceiling is hit:**
 - Houston (planning loops) → route to Janus (Opus)
 - Agol (continuous synthesis) → route to Janus (Opus)
 - Janus (deliberation) → already Opus; no lower fallback needed
-- Epoch (research) → stays Sonnet; not Fable-tier
-- Trajectory (implementation) → stays Sonnet; not Fable-tier
+- Epoch (research) → stays Sonnet 5; not Fable-tier
+- Trajectory (implementation) → stays Sonnet 5; not Fable-tier
 
 **Practical rule:** same agent body, lower model tier. The agent's prompt does not
 change when falling back — only the `model:` override changes at spawn time.
