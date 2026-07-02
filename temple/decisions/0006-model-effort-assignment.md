@@ -50,7 +50,7 @@ AMD/Laurenzo (instrumented, 6,852 sessions, 234,760 tool calls): a single defaul
 | @Janus | opus | xhigh | Adversarial challenger — must exceed Houston's reasoning envelope |
 | @Color | opus | xhigh | Math/formal reasoning co-brain |
 | @Agol | opus | high | Synthesis / continuous advisor (was Fable; Fable 5 pulled 2026-06-25) |
-| @Hypatia | opus | high | Cross-project strategic verdict (rare spawns) |
+| @Oraculum | fable | high | Scientist-tier strategist — deeper modeling, user-invoked Houston alternative |
 | @Vara | sonnet | high | Task runner: holds current session task list, coordinates Trajectory/Delta |
 | @Atlas-ui | sonnet | high | Interactive primitive creator |
 | @Trajectory | sonnet | high | Senior implementation lead |

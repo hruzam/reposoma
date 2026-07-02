@@ -8,38 +8,30 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
-## [TASK — open for next Atlas incarnation]
+## [2026-07-02]
 
-### T3 — Oraculum: new agent primitive (reconfigured Hypatia)
+### T3 DONE — Oraculum seated, Hypatia retired (2026-07-02)
 
-**Source:** `_mail/atlas/inbox/majkee.hypatia-to-oraculum.2026-07-02.md` (read before starting)
+- `~/.claude/agents/oraculum.md` — new agent (Fable · effort:high · Read/Grep/Glob/Write/Agent)
+  - Scientist-tier, user-invoked alternative to Houston. Same canon reading list.
+  - Phases: Substrate → Architecture → Directive. Buffering (Nabla-derived). Honesty baked in.
+  - Therapy protocol (Symmetry-derived). Neural/coding depth close to Color.
+- `~/.claude/agents/hypatia.md` — tombstone (retired, points to oraculum)
+- `~/.claude/skills/agol-brief/SKILL.md` — new skill (repurposed from hypatia-brief)
+- `~/.claude/skills/hypatia-brief/SKILL.md` — tombstone (retired, points to agol-brief)
+- `temple/roster.md` — Hypatia → Oraculum (table row + name-origin entry)
+- `temple/system-map.md` — HYP node → ORA; dispatch hierarchy updated; v5 changelog added
+- `raw.canon/canon.cost-gradient.md` — tier table updated
+- `temple/decisions/0006-model-effort-assignment.md` — matrix row updated
+- `~/.claude/agents/houston.md` — @Hypatia refs removed; @Oraculum noted as user-invoked alt
+- `~/.claude/agents/flight.md` — @Hypatia → @Oraculum in "do not spawn" list
+- `~/.claude/agents/agol.md` — stale "running on Opus" note cleared; Fable confirmed
 
-**What it is:** Hypatia reconfigured and renamed as Oraculum — the machine historical Hypatia
-used. New role: **super-Houston**. Houston → Oraculum in dispatch topology, same as Flight →
-Houston. NOT an advisor or heuristic expert. More scientist: strong thinker first, then plans
-work for other agents. Close to Color — neural and coding depth.
-
-**Shape:**
-- Name: `oraculum` · file: `~/.claude/agents/oraculum.md` (global)
-- Model: **Fable** · effort: high / xHigh
-- Tools: Read, Grep, Glob, Write, Agent (sub-agent spawning)
-- Working process: buffering (ref: `raw.claude-ai.agents/nabla.md`), sub-agent spawning, read+write
-- Cut larva context entirely
-
-**Read first (in order):**
-1. `_mail/atlas/inbox/majkee.hypatia-to-oraculum.2026-07-02.md` — the brief (already in context)
-2. `~/.claude/agents/hypatia.md` — current definition (check if exists; starting point)
-3. `raw.claude-ai.agents/nabla.md` — buffering process reference
-4. `raw.claude-ai.agents/symmetry.md` — therapy process reference
-5. `/home/hruzam/www/ovum/larva.dev/.shared/skills/skill.honest.md` — legacy; assess what to carry
-6. `/home/hruzam/www/ovum/larva.dev/.shared/skills/skill.regime-creative.md` — assess: against the build?
-
-**After writing:** decide fate of `hypatia.md` — retire, rename, or keep as alias. Surface to
-@majkee before acting on it. Confirm full draft before writing (interactive mode = buffer cycle).
+**Positioning note:** Oraculum is a philosophical gradient above Houston (user choice of seat,
+not a dispatch node Houston calls). `hypatia-brief` repurposed to `agol-brief` for Agol
+synthesis handoffs. Therapy file `raw.therapy/hypatia-core/` kept as historical archive.
 
 ---
-
-## [2026-07-02]
 
 ### Done
 - **T2 DONE — nabla-lab AGENTS.md: standing disciplines section** (2026-07-02)

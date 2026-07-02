@@ -1,6 +1,6 @@
 # Agentive System — the bigger picture (v3)
 
-_Drawn from `doctrine.md` (archetypes) + `roster.md` (live cast). Orange = deltas not yet in canon. v3: @Vara activated (execution coordinator between Houston and implementation layer); @Vector added (mid-tier implementer); @Agol model corrected Fable→Opus. Decision 0006 (2026-06-25). v4: @Flight seated (Sonnet · effort:high) — tactical planner, Houston-family lightweight seat, 2026-06-27._
+_Drawn from `doctrine.md` (archetypes) + `roster.md` (live cast). Orange = deltas not yet in canon. v3: @Vara activated (execution coordinator between Houston and implementation layer); @Vector added (mid-tier implementer); @Agol model corrected Fable→Opus. Decision 0006 (2026-06-25). v4: @Flight seated (Sonnet · effort:high) — tactical planner, Houston-family lightweight seat, 2026-06-27. v5: @Hypatia retired → @Oraculum seated (Fable · effort:high) — scientist-tier, user-invoked Houston alternative, 2026-07-02._
 
 ```mermaid
 flowchart TD
@@ -29,7 +29,7 @@ flowchart TD
         DEL["EXECUTOR // @Delta · Haiku · effort:low<br/>surgical · zero judgment"]
         ATL["CREATOR // @Atlas · Sonnet<br/>builds native primitives"]
         ZEN["READER // @Zenith · Haiku<br/>targeted heavy-doc reader"]
-        HYP["OVERSIGHT // @Hypatia · Opus<br/>cross-project · ranked verdict"]
+        ORA["SCIENTIST-TIER // @Oraculum · Fable · effort:high<br/>deep modeling · user-invoked alt to Houston"]
         REC["@Recorder · Haiku · effort:low<br/>session memory"]
     end
 
@@ -55,7 +55,7 @@ flowchart TD
     TRA -.self-clone.-> TRA
     ATL --> ZEN
     AGOL -.synthesis report-up.-> HOU
-    HYP -.spans projects.-> HOU
+    MK -.direct invoke.-> ORA
 
     subgraph CANON[" sovereign canon · durable files in git "]
         PLAN["plan.md · what we are doing"]
@@ -100,6 +100,7 @@ Text companion to the diagram. Read: *who spawns whom, and when*.
 
 ```
 majkee
+  ├─ @Oraculum (Fable · high)            ← direct invoke; scientist-tier, deeper than Houston
   └─ @CapCom (Sonnet · high)             ← human gate; reads houston.goal, assesses risk, awaits "ano"
        ├─ @Houston (Opus · high)          ← strategic work; architect, owns plan, locks decisions
        │    ├─ (see full Houston subtree below)
@@ -116,7 +117,6 @@ majkee
             ├─ @Epoch (Sonnet · medium)  ← researcher; spawned for live version/stack checks
             ├─ @Atlas (Sonnet · high)    ← primitive creator; spawned to build/repair agents
             ├─ @Recorder (Haiku · low)   ← memory librarian; spawned to file session state
-            ├─ @Hypatia (Opus · high)    ← cross-project strategist; spans projects, rare
             └─ @Vara (Sonnet · high)     ← execution coordinator; spawned when a plan enters execution phase
                  ├─ @Trajectory (Sonnet · high)   ← senior impl; spawned for complex/judgment tasks
                  │    └─ @Delta (Haiku · low)      ← surgical executor; spawned for specific subtasks
@@ -152,3 +152,7 @@ majkee
 - **Effort levels added to node labels** — model tier alone is insufficient; effort is an orthogonal quality axis (AMD/Laurenzo finding: effort-misconfig risk > tier-selection risk).
 - **`@Agol` corrected Fable → Opus** — Fable 5 pulled within 48h of launch; silent self-degradation confirmed in Anthropic system card.
 - **`@Janus` effort:high → effort:xhigh** — must exceed architect's reasoning depth to produce meaningful challenge-before-lock.
+
+**v5 (2026-07-02):**
+- **`@Hypatia` retired → `@Oraculum` seated** — reconfigured and renamed. Oraculum: Fable · effort:high, scientist-tier, user-invoked alternative to Houston. Same canon reading list, deeper problem-modeling phase (Phase A/B/C), neural and coding depth close to Color. Not spawned by Houston — user invokes directly. `hypatia-brief` skill retired; `agol-brief` created as its successor for Agol synthesis context handoffs.
+- **`@Agol` model note updated** — Fable returned 2026-07-02; stale Opus note cleared from definition.

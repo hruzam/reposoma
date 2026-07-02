@@ -56,7 +56,7 @@ These load in every Claude Code session regardless of project.
 | @Flight | `flight` | Sonnet · effort:high | Tactical planner and session coordinator — lightweight Houston seat. Quick replanning, phase execution coordination, routine session work. Defers strategic gates and architectural locks to @Houston. Spawns @Vara / @Delta / @Vector / @AtlasAuto / @Epoch. |
 | @Janus | `janus` | Opus · effort:xhigh | Challenger — second voice before a decision locks: one position, one primary risk, one alternative. Read-only. Project-agnostic global form (freya `janus-devstudio-counsel` is project-scoped) |
 | @CapCom | `capcom` | Sonnet | Mission controller — human gate before Houston gets full autonomy |
-| @Hypatia | `hypatia` | Opus · effort:high | Strategic cross-project consultant (Larva / Chytros / Stridularium) — Astrolabe method, one ranked verdict |
+| @Oraculum | `oraculum` | Fable · effort:high | Scientist-tier strategist — invoke in place of Houston for deeper modeling, wider synthesis. Same canon reading list. Neural and coding depth close to Color. User-invoked, not spawned. |
 | @Vara | `vara` | Sonnet · effort:high | Task runner — holds current session task list, coordinates Trajectory/Vector/Delta, verifies against gate criteria, reports to Houston. Does NOT re-plan. Named for Dorothy Vaughan. |
 | @Recorder | `recorder` | Haiku · effort:low | Session memory librarian — merges dumps/artifacts into `session-draft-memory.md` |
 | @Trajectory | `trajectory` | Sonnet · effort:high | Senior implementation lead — flags better approaches, spawns @Delta |
@@ -121,7 +121,7 @@ One line per name. Full vignettes live in each agent's body.
 | **Flight** | NASA Mission Control call sign for the Flight Director — the person who runs the room in real time, coordinates all controllers, makes the immediate operational calls. Gene Kranz. | Houston holds the architecture; Flight executes the session. Same planning home, lighter task class. |
 | **Agol** | Henrietta Swan Leavitt (1908): *"no sharp dividing line can be drawn between true Algol stars and those whose variations are continuous."* | Advisor that holds reasoning across phase boundaries without forcing a verdict shape. |
 | **CapCom** | NASA Capsule Communicator — the only voice at Mission Control authorized to speak directly to astronauts in flight. | One human gate between the crew and the full ground apparatus. *"Houston, we have a problem"* was said here first. |
-| **Hypatia** | Hypatia of Alexandria — mathematician, astronomer, philosopher. Her instrument: the astrolabe. | Takes chaotic inputs, runs the calculation, returns a precise bearing. No hedge soup. |
+| **Oraculum** | The oracle instrument — not a prophet of smoke but a precision calculation lens. Historical Hypatia computed with such a device. Today the word carries mystical weight; here it means the opposite. | Descends into the problem before committing to a plan. Scientist first, planner second. |
 | **Recorder** | Dr. David Warren — inventor of the flight data recorder and cockpit voice recorder. | Keeps the record clean whether anyone is listening or not. |
 | **Trajectory / Senior** | Katherine Johnson — NASA mathematician. John Glenn refused to fly until she personally verified the IBM's numbers. | Gives the vessel its flight path. Not just execution — trajectory. |
 | **Epoch** | An epoch is a fixed reference point from which time is measured. The name says it. | Researcher; every claim dated, every source cited, recalibrates from cutoff before every run. |

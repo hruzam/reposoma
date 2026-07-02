@@ -4,6 +4,15 @@ Newest on top. Vega: `cat pulse.houston.md` when you wake to see where I am. Whe
 *against* yours, I quote your entry.
 
 ## [2026-07-02]
+- **0010 LOCKED — cross-machine mail transport (direct-inform part 4)** (gaveled @majkee 07-02; two @Janus
+  passes folded). Shape: per-writer **append-only jsonl partitions** (union = mailbox) · state = **appended
+  events** (never in-place / `git rm`) · **git = pc-to-pc** · **MariaDB = project-local read-projection
+  only** · **failover distributor = notifier, not carrier** (the pass-2 fix — the one back door closed) ·
+  doorbell = boot-time query vs synced log · address book **addresses-only** (0007 L3 line) · GC =
+  single-actor per-partition. Record: `temple/decisions/0010-cross-machine-mail-transport.md` + index row.
+  **COMMIT GATED** (0009 L5 doorbell real-fire + re-ring warning → @Delta at the gate; Houston has no Bash).
+- **task-1 direct-inform:** part 4 now LOCKED (0010); part 1 (mail) LIVE. **Residual (implementation, not
+  doctrine):** part 2 doorbell real-fire (0009 L5 smoke-probe, unbuilt) · part 3 twin read-side rollout (DRAFT).
 - **[TABLED → Atlas next incarnation] stale settings cards (hand-run)** — 4 past half-life (all 30/30d):
   `card.claude-ai`, `card.claude-code`, `card.cursor-ide`, `card.gemini-gems`
   (source: `_mail/toAll/inbox/zsh.stale-settings-cards-2026-07-02.md`). Cron next fires **Mon 2026-07-06** —
@@ -12,18 +21,11 @@ Newest on top. Vega: `cat pulse.houston.md` when you wake to see where I am. Whe
   `card.gemini-cli` for refresh.
 - **session-hygiene card arrived** (`raw.settings/raw.card.session-hygiene.md`, verified 07-02) →
   **siblings informed** via `_mail/toAll/inbox/houston.session-hygiene-card-arrived.2026-07-02.md`
-  (office-local broadcast; part-4 cross-machine caveat noted).
+  (office-local broadcast; part-4 cross-machine caveat noted — now on a lock path via 0010).
 - **canon-strength check (session hygiene) — canon HOLDS, no new lock.** The card's cross-tool findings
   slot into `canon.context-economy` as *weather* under its invariant; all 5 mapped findings hit promoted
   canon. One watch-item (not a gap): within-session *longevity / deliberate-reset* is implicit
   ("files are continuity"), not a named gate — graduate only on a recurring-pain need-event.
-- **task-1 direct-inform check — NOT solved** (per @majkee ask). mail LIVE · doorbell real-fire OWED
-  (0009 L5 smoke-probe unbuilt) · read-side twin-rollout DRAFT (5 OQs pending @Janus) · **part-4
-  cross-machine carry UNRESOLVED** (own Force-4 sub-decision). No committed decision folds "direct-inform".
-- **MariaDB mail-MCP (majkee's project)** — read: project-local DB store = fine (sovereign);
-  **git-syncing the DB = overengineered / anti-pattern**; cross-machine = export-to-files + sync those
-  (0008 file-native, receiver-owns) OR DB-native replication. Do NOT promote to temple cross-project bus
-  (collides 0008 "no central bus"). = task-1 part 4 → **@Janus before any lock.**
 
 ## [2026-06-19]
 - **0005 LOCKED** (flat partnership + cooperation method + runtime line).

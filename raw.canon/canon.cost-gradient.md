@@ -27,7 +27,7 @@ Fable 5 > Opus 4.8 > Sonnet 4.6 > Haiku 4.5.
 
 | Tier | When to use | Global examples |
 |------|-------------|-----------------|
-| **Fable / Opus** | Irreversible decisions, architecture, second voice, strategy | agol (Fable, advisor), houston (Opus, architect), hypatia (Opus, strategy), janus (Opus, challenge) |
+| **Fable / Opus** | Irreversible decisions, architecture, second voice, strategy | agol (Fable, advisor), oraculum (Fable, scientist-tier), houston (Opus, architect), janus (Opus, challenge) |
 | **Sonnet** | Judgment + execution, live verification, creation | trajectory (implement), atlas-auto / atlas-ui (create) |
 | **Haiku** | Deterministic, surgical, no judgment | delta (executor), recorder (librarian), zenith (reader), guard hooks |
 
