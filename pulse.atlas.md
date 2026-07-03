@@ -10,6 +10,24 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ## [2026-07-03]
 
+### delta-sql reposoma mutation — DONE
+
+**Brief:** `_mail/atlas/inbox/majkee.db-agent-plus-mcp.2026-07-02.md` (→ archived)
+
+Three files written:
+
+- `/home/hruzam/www/mariadb-mcp/config.local.php` — `reposoma` added to `databases` allow-list
+- `/home/hruzam/reposoma/.mcp.json` — new; wires `mariadb-local` MCP server
+  (`php -d extension=iconv /home/hruzam/www/mariadb-mcp/server.php`)
+- `/home/hruzam/reposoma/.claude/agents/delta-sql.md` — new; local mutation of fantasyobchod
+  delta-sql. Not scoped to a single DB — caller names the DB, agent confirms via `list_databases`.
+  Clone note names fantasyobchod mutation as authoritative for OpenCart schema work.
+
+Active next reposoma session. Global agents spawned here (Houston, Trajectory, etc.) will have
+`mcp__mariadb-local__*` tools available when the session's CWD is reposoma.
+
+---
+
 ### Gemini rebuild — plan + execution briefs COMPLETE
 
 Plan: `~/.claude/plans/we-are-in-plan-smooth-sprout.md`

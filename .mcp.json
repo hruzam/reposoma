@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mariadb-local": {
+      "command": "php",
+      "args": ["-d", "extension=iconv", "/home/hruzam/www/mariadb-mcp/server.php"]
+    }
+  }
+}

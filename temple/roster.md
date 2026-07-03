@@ -1,6 +1,6 @@
 ---
 expiration: weather (updating often according dev needs)
-updated: 2026-06-29
+updated: 2026-07-03
 CLI: Claude Code, Gemini (agy), Cursor, ChatGPT/Codex, piql
 Chat-bots: GEM (gemini.google.com), claude.ai
 IDE: Cursor
@@ -86,6 +86,14 @@ These are not CLI subagents. They are persona definitions for `claude.ai` web/mo
 
 ## Project-scoped agents
 > Project-scoped agents, stack facts, and research phases live in each project's own roster (e.g. freya.devstudio — in that repo). Kept out of the agnostic substrate.
+
+### reposoma-local — `.claude/agents/`
+
+Agents bonded to this project only. Active when CWD = reposoma. MCP wired via `.mcp.json` at repo root.
+
+| @ name | File | Model | Role |
+|--------|------|-------|------|
+| @delta-sql | `delta-sql` | Haiku | DB explorer — schema orientation + test query execution via `mariadb-local` MCP (`127.0.0.1`). Reposoma mutation of fantasyobchod delta-sql; not tied to a single database. Caller names the DB; agent confirms via `list_databases`. Advise-only — hands tested queries to @Delta / @Trajectory. |
 
 ---
 
