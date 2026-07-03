@@ -135,6 +135,9 @@ majkee
 **What Vara does NOT do:** re-plan, run Bash, or override Houston's gate decisions.
 **What Trajectory does NOT do:** hold the task list across sessions (that is Vara's responsibility).
 
+**Dispatch discipline — a Write-less seat cannot file its own mail (gaveled 2026-07-03).**
+When you dispatch a seat that has **no `Write` tool** (a read-only / query seat — e.g. an MCP query agent, a read-only advisor), **the spawning session owns filing that seat's output.** Filing it is part of definition-of-done, not optional: unfiled read-only-seat output **silently evaporates** when the subagent context closes. This is the read-side mirror of 0010's *"content enters through exactly one door — a writer's own append"*: if the seat cannot write, the spawner must carry the write. *(Origin: @delta-sql's reposoma-schema impulse never reached disk — no Write tool, the filing step dropped; recovered from the session transcript by @Oraculum, 2026-07-03.)*
+
 ---
 
 ## What changed
@@ -156,3 +159,6 @@ majkee
 **v5 (2026-07-02):**
 - **`@Hypatia` retired → `@Oraculum` seated** — reconfigured and renamed. Oraculum: Fable · effort:high, scientist-tier, user-invoked alternative to Houston. Same canon reading list, deeper problem-modeling phase (Phase A/B/C), neural and coding depth close to Color. Not spawned by Houston — user invokes directly. `hypatia-brief` skill retired; `agol-brief` created as its successor for Agol synthesis context handoffs.
 - **`@Agol` model note updated** — Fable returned 2026-07-02; stale Opus note cleared from definition.
+
+**v6 (2026-07-03):**
+- **Dispatch discipline added — Write-less seats.** The spawning session must file a read-only seat's output as definition-of-done (see the discipline block above). Gaveled 2026-07-03 after @delta-sql's schema impulse evaporated for lack of a Write tool.
