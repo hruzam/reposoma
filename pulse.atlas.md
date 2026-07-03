@@ -10,6 +10,48 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ## [2026-07-02]
 
+### T5 DONE — nabla-lab report read + gemini-rebuild mail lean (2026-07-03)
+
+- Read `nabla-lab/session/report.final.oraculum.2026-07-02.md` §6 + `leg-gemini-direct.2026-07-02.md`
+- Key finding: Gemini P1 research leg produced no cards — bluebottle persona lock + 503s on direct CLI attempts (separate from the script). `-p` flag confirmed real by Oraculum's direct bash.
+- Lean written to `_mail/atlas/inbox/majkee.gemini-rebuilding-cleanup.2026-07-03.md` under `# ATLAS PREINCARNATION LEAN`
+- Covers: confirmed facts, one clarification request ("massive"?), structural leans (`.sh` over `.zsh`, `--raw` load-bearing, RE/SEARCH gates BUILD), dependency flags (gemini-cross-check + epoch.md)
+
+---
+
+### T4 DONE — gemini-cross-check + BlueBottle + Delta soft-enforcement (2026-07-02)
+
+Mail: `_mail/atlas/inbox/epoch.gemini-synth-delta-build.2026-07-02.md`
+
+**Task 1 — Delta soft-enforcement (no new primitive):**
+- `~/.claude/agents/epoch.md` — `## Subagent` updated: delta spawn now includes turn-budget
+  injection rule ("Complete in ≤3 turns: read → edit → report") + gemini-cross-check routing rule.
+  Option A (project-scoped delta) rejected — would leash ALL delta spawns in reposoma, not just Epoch's.
+  `maxTurns` cannot be injected at Agent tool call time (not a supported parameter).
+
+**Task 2 — gemini-cross-check + BlueBottle:**
+- `reposoma/.claude/agents/gemini-cross-check.md` — NEW Haiku plumbing agent (maxTurns:4,
+  Bash+Write+Read). Writes blob to tmp → calls `zsh ~/.config/zsh/ai/bluebottle.zsh "$TMPFILE"` →
+  returns synthesis or graceful-fail signal. Never blocks Epoch.
+- `~/.gemini/agents/bluebottle.md` — NEW Gemini Flash synthesis seat (no tools, strict schema:
+  3 agreements · 2 additions/corrections · 1 overstated). Persona: Turing mercury delay-line memories.
+- `~/.config/zsh/ai/bluebottle.zsh` — NEW standalone driver. Two-path:
+  1. REST API primary: `GOOGLE_API_KEY` (preferred, matches CLI key priority) → curl →
+     `generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent` →
+     jq extract → clean output. Fix: `printf '%s'` not `echo` for jq pipe (trailing newline broke parse).
+  2. CLI fallback: `gemini "@bluebottle $BLOB"` with `grep -v` noise filter for startup warnings.
+- `~/.config/zsh/ai/gemini-agents.zsh` — `bluebottle()` function added as PARTITION 5;
+  agy→PARTITION 6, help→PARTITION 7; help table updated.
+- `~/.config/zsh/ai/gemini-base.zsh` — `g-bluebottle` / `gemini-bluebottle` aliases added.
+- `~/.config/zsh/ai/base.zsh` — "Defines:" comment updated to include bluebottle.
+
+**Confirmed working:** REST API path fires (GOOGLE_API_KEY set), schema respected, zero CLI noise.
+BlueBottle correctly flags non-research input. Graceful-fail guard in place.
+
+**Parked:** headless auth / `--agent` flag investigation — moot, REST API is the right rail.
+
+---
+
 ### T3 DONE — Oraculum seated, Hypatia retired (2026-07-02)
 
 - `~/.claude/agents/oraculum.md` — new agent (Fable · effort:high · Read/Grep/Glob/Write/Agent)
