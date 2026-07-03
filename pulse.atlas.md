@@ -8,6 +8,32 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-07-03]
+
+### Gemini rebuild — plan + execution briefs COMPLETE
+
+Plan: `~/.claude/plans/we-are-in-plan-smooth-sprout.md`
+
+4 executor brief files written to `_mail/toAll/inbox/`:
+- `task.gemini-rebuild.phase0-research.md` — Epoch (RE/SEARCH, 7 questions, gates all)
+- `task.gemini-rebuild.phase1-infra.md` — Trajectory Track A (processor + keyboard + kill + base.zsh + README + guides + AGENTS.md)
+- `task.gemini-rebuild.phase1-scripts.md` — Gemini team / second Claude session Track B (4 per-agent scripts)
+- `task.gemini-rebuild.phase2-finalize.md` — Trajectory (gemini-cross-check + epoch.md + 2 cards + stress test + ia-sync sync)
+
+Exploration findings captured in plan: current gemini-agents.zsh has 7 partitions + all models; ia-sync is explicit/manual (sync.sh, already stale); single hard-coded path breaks after rebuild (gemini-cross-check.md line 33); model matrix in raw.card.gemini-models.md recommends 2.5 line for CLI; no stability matrix exists yet.
+
+**Needs commit:** pulse.atlas.md + 4 new brief files (Trajectory or user).
+
+---
+
+### Stale settings cards — RESOLVED (Epoch actualized, not marked)
+
+Houston tabled to Atlas: `card.claude-ai`, `card.claude-code`, `card.cursor-ide`, `card.gemini-gems` — all 4 past half-life.
+User confirms Epoch actualized all 4. Inbox mail already archived. Closed here. Houston's pulse.claude.md entry stands as historical record.
+Companion flag (`card.cursor-ide` + `card.gemini-cli` via session-hygiene card) — subsumed by same Epoch pass.
+
+---
+
 ## [2026-07-02]
 
 ### T5 DONE — nabla-lab report read + gemini-rebuild mail lean (2026-07-03)

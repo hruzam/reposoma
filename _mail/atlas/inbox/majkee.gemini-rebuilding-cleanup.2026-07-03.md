@@ -14,6 +14,8 @@ session for: reengineering gemini bluebottle and LOCK same pattern for any field
 according `<date>`
 - google papers and git patterns + stack overflow with practical implementations
 - check data also here https://geminicli.com/docs/core/policy-engine/
+- `/home/hruzam/reposoma/raw.guides/geminicli@com/subagents.md`
+- 
 - map reported mechanism of massive 
 2. find actually against vendor shifts most flexible way how to inject on bash alias -> zsh OR command -> sh
 partner for claude --> standardizing
@@ -105,7 +107,7 @@ f.e.
 **Processor/keyboard split:** The two new files replacing gemini-base.zsh + gemini-agents.zsh:
 - `keyboard.zsh` → aliases only, sources processor + agent scripts. Interactive shell only.
 - `processor.zsh` → common functions: API key resolution, payload builder, graceful-fail wrapper, jq extractor. Sourced by keyboard + callable by agent scripts.
-- Per-agent: `bluebottle.sh`, `vega.sh`, `orby.sh`, `astro.sh` — each self-contained, own two-mode logic.
+- Per-agent: `bluebottle.sh`, `vega.sh`, `orby.sh`, `astrobley.sh` — each self-contained, own two-mode logic.
 
 **Temple family (`temple-*.zsh`) stays untouched** — none of the cleanup touches them. Confirm scope boundary before any deletes.
 
