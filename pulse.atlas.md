@@ -8,6 +8,37 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-07-03] — Gemini rebuild COMPLETE
+
+### Gemini rebuild close-out — @Trajectory (single-pass WP-A through WP-D)
+
+**WP-A — Kills:** `gemini-agents.zsh`, `gemini-base.zsh`, `bluebottle.zsh` deleted from
+`~/.config/zsh/ai/`. No surviving source references (base.zsh comments were documentary only).
+Post-kill: `zsh -c 'source keyboard.zsh && type gemini-agents-help'` → clean.
+
+**WP-B — Phase 2 finalize (4 files):**
+- `reposoma/.claude/agents/gemini-cross-check.md`: line 33 updated to `bash bluebottle.sh` (was `zsh bluebottle.zsh`). Comment updated to reflect REST-only, no CLI.
+- `~/.claude/agents/epoch.md`: `## Gemini cross-check runbook` section added after `## Subagent`. Per operator override: headless = `bash ~/.config/zsh/ai/bluebottle.sh`, @agent-in-prompt CLI patterns explicitly forbidden (Class C hang triage 2026-07-03).
+- `raw.settings/raw.card.gemini-cli.md`: `## CLI stability matrix` section added before Recommendation. Key correction: gemini-3.5-flash REST = ✓ (confirmed HTTP 200 2026-07-03); @agent = ✗ (agentic loop). `verified:` updated to 2026-07-03.
+- `raw.settings/raw.card.gemini-models.md`: `CLI stable?` column added to model matrix; stability note below table. `verified:` updated to 2026-07-03.
+
+**WP-C — Coder build (astrobley --patch):**
+- `ai_scripts/astrobley.sh` + `~/.config/zsh/ai/astrobley.sh`: `--patch` mode added. Model gemini-3.5-flash pinned, multi-turn ledger (Gemini contents[] format), 4-iter/~50K ceiling documented, `-s` guard for mktemp-created empty ledger files (bug found and fixed during smoke test).
+- `~/.config/zsh/ai/personas/astrobley-patch.md`: new PHP patch-protocol persona (plain text, operator-tunable).
+- Documentation: guide-for-user.md (patch protocol section), guide-for-builder.md (persona files section), ai/README.md (personas/ row), AGENTS.md (--patch + personas/ documented).
+- Smoke test: Turn 1 (new task) — exit 0, stdout = unified diff, first line = `---`, ledger 2 turns. Turn 2 (follow-up) — exit 0, stdout = unified diff, ledger 4 turns.
+
+**WP-D — Sync:**
+- `ia-sync`: sync.sh run, all killed files absent, new files present (personas/ included). Secret scan hit was false positive on variable names in processor.sh (actual key in deny-listed secrets.zsh). Committed `bc337d4`, pushed to origin/main.
+- phase2-finalize.md sign-off boxes all ticked.
+
+**Resisted / flagged:**
+- `bluebottle.zsh` was never in ia-sync (not synced from its original creation on 2026-07-02) — no D-entry in commit; correct.
+- `gemini/agents/epoch.md` deleted from ia-sync — pre-existing: never was in `~/.gemini/agents/` (epoch is a Claude seat, not a gemini agent). Not from this session.
+- AGENTS.md ImportProcessor escape still ungaveled per standing instruction — not touched.
+
+---
+
 ## [2026-07-03]
 
 ### delta-sql reposoma mutation — DONE

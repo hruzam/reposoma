@@ -2,7 +2,7 @@
 card: card.gemini-cli
 brand: Google — Gemini CLI
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-07-02
+verified: 2026-07-03
 half_life: ~1-2 weeks (nightlies daily; stable ~weekly)
 half_life_days: 14
 recheck:
@@ -92,6 +92,36 @@ auth_survival: paid Gemini API key OR enterprise license   # see VOLATILE
 - **`--allowed-tools` CLI arg and `tools.allowed` in settings.json are deprecated** (removal at v1.0).
   Migrate to Policy Engine: https://geminicli.com/docs/core/policy-engine/
 - **Antigravity CLI (`agy`)** is the confirmed successor — timeline for Gemini CLI end-of-life for enterprise not yet published.
+
+## CLI stability matrix
+
+Based on: triage.gemini-hang.2026-07-03.md + handoff.gemini-rebuild.addendum-hang.2026-07-03.md + report.gemini-fix-pass.2026-07-03.md.
+
+| Use case | Safe? | Notes |
+|---|---|---|
+| Interactive UI session (short) | ✓ | < 20 turns, manual /compress |
+| Interactive UI session (long) | ⚠ | Bug #8609: crash past ~50 turns |
+| Headless one-shot (CLI -p < /dev/null) | ✓ | Stable; stdin regression fixed v0.49.0 (issue #6715) |
+| Headless one-shot (REST API) | ✓✓ | Preferred — no TTY, no noise, no MCP init |
+| Automated loop / agentic CLI | ⚠ | Token bloat, 503 cascade risk, 10-min agentic timeout |
+| @agent in prompt (any scripted mode) | ✗ | Agentic loop — confirmed hang Class C (90s+, triage 2026-07-03); NEVER in scripts |
+| Gemini 2.5-flash | ✓ | Recommended for CLI automation and headless scripts |
+| Gemini 2.5-pro | ✓ | Recommended for thinking/advisor; accept auto-downgrade risk under load |
+| gemini-3.5-flash (REST) | ✓ | HTTP 200 confirmed 2026-07-03; REST probe via key enumeration |
+| gemini-3.5-flash (CLI agentic) | ⚠ | Agentic-first design; prefer REST for scripted use |
+| Gemini 3.x other (CLI) | ⚠ | CLI instability reported 2026-06-27; agentic-first, timeout/silent-fallback risk |
+
+Confirmed hang classes (empirical triage 2026-07-03, gemini v0.49.0):
+- Class C (primary): `@agent` in prompt → agentic loop even with -p and < /dev/null; 90s timeout confirmed
+- Class B: positional arg in $() without -p → immediate hang
+- Class A (stdin blocking): fixed in v0.49.0 (< /dev/null still required as regression insurance)
+- Class D (latent): curl without --max-time → network stall hangs indefinitely
+
+Note on Gemini 3.x: the ✗ for "Gemini 3.x any" in the prior template was stale for REST use.
+gemini-3.5-flash REST returns HTTP 200 (confirmed). The ⚠ applies to CLI agentic mode only.
+
+Recommendation: REST-primary for all headless/scripted use. For any CLI invocation in scripts:
+`timeout 180 gemini -p "..." < /dev/null`. Never use @agent-in-prompt in scripted paths.
 
 ## Recommendation for LARVA
 Keep CLI alive via API key. Mirror the portable skills corpus (read from the shared dir).

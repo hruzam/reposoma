@@ -30,16 +30,17 @@ Use the Write tool to write the full research blob verbatim to `TMPFILE`.
 **Step 3 — Invoke BlueBottle and clean up:**
 ```bash
 TMPFILE="<path from step 1>"
-RESULT=$(zsh ~/.config/zsh/ai/bluebottle.zsh "$TMPFILE")
+RESULT=$(bash ~/.config/zsh/ai/bluebottle.sh "$TMPFILE")
 rm -f "$TMPFILE"
 echo "$RESULT"
 ```
 
-`bluebottle.zsh` handles: `--agent` load, `-p` single-pass headless, graceful-fail output, exit codes.
+`bluebottle.sh` handles: REST-primary synthesis, graceful-fail output, exit codes.
+No @agent CLI patterns used — REST only (Class C hang confirmed, triage 2026-07-03).
 
 ## Graceful-fail guard
 
-Handled by `bluebottle.zsh`. On any failure (gemini not on PATH, non-zero exit, auth error)
+Handled by `bluebottle.sh`. On any failure (REST non-200, missing API key, auth error)
 it returns `[CROSS-CHECK UNAVAILABLE: ...]` — this agent echoes it through. Never blocks Epoch.
 
 ## Constraints

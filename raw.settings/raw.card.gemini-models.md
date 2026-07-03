@@ -2,7 +2,7 @@
 card: card.gemini-models
 brand: Google — Gemini Models & CLI Model Config
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-06-27
+verified: 2026-07-03
 half_life: ~6 weeks
 half_life_days: 45
 recheck:
@@ -28,17 +28,22 @@ verify_cmd: gemini --version
 - Majkee's working position (2026-06-27): prefer 2.5 line for coding tasks until 3.x
   CLI stability is confirmed by experience.
 
-## Model matrix (verified 2026-06-27)
+## Model matrix (verified 2026-07-03)
 
-| Grade | Gemini 3.x | Gemini 2.5 (Recommended for CLI) |
-|---|---|---|
-| Pro | gemini-3.1-pro-preview | gemini-2.5-pro |
-| Flash | gemini-3.5-flash (GA) | gemini-2.5-flash |
-| Flash-Lite | gemini-3.1-flash-lite (GA) | gemini-2.5-flash-lite |
-| Computer-use | gemini-3.5-flash (Computer Use built-in, GA 2026-06-24) | gemini-2.5-computer-use-preview-10-2025 (specialty preview — likely legacy) |
+| Grade | Gemini 3.x | Gemini 2.5 (Recommended for CLI) | CLI stable? |
+|---|---|---|---|
+| Pro | gemini-3.1-pro-preview | gemini-2.5-pro | 2.5: ✓ / 3.x: ⚠ (CLI agentic-first) |
+| Flash | gemini-3.5-flash (GA) | gemini-2.5-flash | 2.5: ✓ / 3.5-flash REST: ✓ / 3.5-flash CLI agentic: ⚠ |
+| Flash-Lite | gemini-3.1-flash-lite (GA) | gemini-2.5-flash-lite | 2.5: ✓ / 3.x: unknown |
+| Computer-use | gemini-3.5-flash (Computer Use built-in, GA 2026-06-24) | gemini-2.5-computer-use-preview-10-2025 (specialty preview — likely legacy) | see Flash row |
 
 Note: `gemini-3.1-flash` (without -lite), `gemini-3.0-pro`, `gemini-3.5-flash-lite`
 not found on official models page — unverified; may be internal or hallucinated.
+
+CLI stability note (2026-07-03, triage v0.49.0): gemini-3.5-flash returns HTTP 200 via REST
+(empirically confirmed). The ⚠ applies to CLI agentic mode (Planning/Thinking Mode → timeout/
+silent-fallback risk). Prefer REST for scripted use of 3.5-flash. Gemini 2.5 line remains
+recommended for CLI automation until 3.x CLI stability is confirmed by extended experience.
 
 ## CLI env var (confirmed)
 
