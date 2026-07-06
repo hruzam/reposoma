@@ -8,6 +8,34 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-07-03] — TABLED — freya-advisor primitive
+
+**Session cut short (user off). Resume next session.**
+
+**Context:** User asked whether an existing agent covers "Laravel Advisor" for the Freya project.
+
+**Findings:**
+- No existing candidate. No `.claude/agents/` dir in freya project (only `.claude/skills/` exists).
+- `laravel-best-practices` skill = rules-based, not advisory judgment.
+- `advisor-low` (Sonnet) = generic, no Freya stack context baked in.
+- `agol` (Fable) = cross-project synthesis, wrong scope, Fable cost tier being restricted.
+
+**Design agreed:**
+- Primitive: project-scoped subagent → `freya/.claude/agents/freya-advisor.md`
+- Model: `sonnet` (user confirmed — enough for implementation-tier judgment)
+- Tools: `Read, Grep` (read-only, purely advisory)
+- Value-add over `advisor-low`: Freya constraints baked in (Skaven CSS, no Tailwind, Octane/RoadRunner, Czech comments, Laravel 13, Livewire 4, Larastan lvl 6, PSR-4 traps, graveyard awareness)
+
+**Open question before writing:** activation scope / brief format
+- Option A: structured brief (like advisor-mid: Project/Decision/Context/Options/Lean)
+- Option B: freestyle question — user describes situation, advisor responds
+- Option C: hybrid — accepts both
+- Naming: `freya-advisor` vs `laravel-counsel` — user not yet decided
+
+**Next action:** confirm brief format + name → Atlas writes the file.
+
+---
+
 ## [2026-07-03] — Gemini rebuild COMPLETE
 
 ### Gemini rebuild close-out — @Trajectory (single-pass WP-A through WP-D)
