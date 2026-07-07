@@ -145,3 +145,29 @@ Cost rule: if task anticipated >150K tokens → Sonnet-from-start (saves uncache
 *Research files: `raw.research/capabilities.claude/` — hypothesis, source-map, lenses L1–L6, dives A–D+X1, stratification.*
 *All 15 CLI agent files present in `~/.claude/agents/` on 2026-06-25.*
 *Next: monitor Delta seat per the protocol above. Re-evaluate Agol/Houston ceiling when Fable stabilizes.*
+
+---
+
+## Amendment A1 — 2026-07-07 (append-only correction · doctrine §1b · the matrix above is NOT edited)
+`the 2026-06-25 LOCK stands; this block corrects forward, never reverts.`
+`trigger: 2026-07-03 temple audit (Oraculum ×2 sweeps + Janus + Vega blind) · Houston disk-verified · gated by adr-guard 2026-07-07`
+
+**Why this exists.** The L2 matrix (locked 2026-06-25) was edited **in place** after its lock:
+`@Hypatia` was replaced by `@Oraculum` at row `@Oraculum | fable | high`. That is an append-only
+breach (§1b). Per doctrine we do **not** silently revert — we record it and correct forward.
+
+**Corrections (the matrix above is a dated 2026-06-25 SNAPSHOT — superseded for LIVE values by `temple/roster.md`):**
+1. **@Hypatia → @Oraculum** — Hypatia retired 2026-07-02; @Oraculum (`fable · high`, scientist-tier,
+   user-invoked) seated in her place. Correct as a 2026-07-02+ fact; wrong to inject into the 2026-06-25 matrix.
+2. **@Agol — Opus·high → Fable·high.** OQ4 below ("Fable return timeline unknown") has **FIRED**: Fable
+   returned 2026-07-02. All entries reading `@Agol opus·high (Fable pulled)` are superseded → **Fable · high**.
+3. **@CapCom — haiku·low → Sonnet.** The live roster/system-map run Sonnet; the matrix `haiku·low` is superseded.
+
+**Structural fix (with G9).** Model/effort facts drifted because they lived in four places. Going forward
+**`temple/roster.md` is the single live home** of model/effort; this ADR's matrix is a frozen dated snapshot,
+`system-map.md` carries edges only, and duplicate agent-facts are scalpeled from the historical copies.
+
+**Resolves** OQ4 (Fable return). **Unchanged:** the locked structural findings — Quality = f(tier, effort,
+task-class); effort-risk > tier-risk — stand as-is.
+
+---
