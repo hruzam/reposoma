@@ -70,3 +70,7 @@ inferred from green components.
 *Next: build the L5 smoke probe (spec: `temple/tools/doorbell-smoke-probe.spec.draft.md`) → fire the relocated
 doorbell in dry-fire mode + a deliberate red → then @Janus final-confirm · index.md row 0009 · machine-layer
 AGENTS.md committed to the `ai/` layout.*
+
+*Status note (appended 2026-07-07, wave-3a drift flag): the "Next: build the L5 smoke probe" line
+above is historical — the probe was already built and the L5 real-fire was PAID (green + deliberate-red)
+on 2026-07-02; run evidence lives in the 0010 record. This note closes that residual; no doctrine change.*
