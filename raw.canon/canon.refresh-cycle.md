@@ -22,7 +22,7 @@ A RELATIVE card is not hand-written — it is the **compact distillate of a full
   (`raw.settings/card.template.md`), carrying both freshness fields: `half_life:` (human prose) +
   `half_life_days:` (the integer the freshness tooling reads).
 - **The loop closes on freshness:** stale when `today − verified >= half_life_days`; the recalibration trigger
-  (`ainp-stale` → a `_mail/toAll` broadcast) flags it → re-fetch + re-synthesize. The larva "self-refreshing
+  (`aihs-stale` → a `_mail/toAll` broadcast) flags it → re-fetch + re-synthesize. The larva "self-refreshing
   triangle" (cards = memory · researcher = perception), now with a real template and an integer clock.
 - Old dated dumps are **regenerable substrate** — archivable; the card is the living distillate.
 

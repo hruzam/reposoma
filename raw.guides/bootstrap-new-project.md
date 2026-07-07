@@ -1,3 +1,8 @@
+---
+verified: 2026-07-07
+half_life_days: 90
+---
+
 # Stand up a team for a new project (from the temple)
 
 `tier: raw.guides · the B-door procedure (the temple is the source; this is the steps)`

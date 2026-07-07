@@ -30,7 +30,7 @@ verify_cmd: <optional local check, e.g. `claude --version`>
 ```
 
 Two freshness fields on purpose: `half_life:` is human-readable; `half_life_days:` is the integer
-the freshness checker (`ainp-stale`) reads. Keep both; researcher updates both on every refresh.
+the freshness checker (`aihs-stale`) reads. Keep both; researcher updates both on every refresh.
 
 ## Freshness rule
 

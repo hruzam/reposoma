@@ -1,7 +1,7 @@
 ---
 # card.template — the canonical RELATIVE-card shape · temple-owned · COPY this to start a new card.
 # This file is a TEMPLATE, not a card: its name has no `raw.card.` prefix, so the freshness glob
-# `raw.card.*.md` (the `ainp-stale` checker) never picks it up. Rename to `raw.card.<name>.md` to make a real card.
+# `raw.card.*.md` (the `aihs-stale` checker) never picks it up. Rename to `raw.card.<name>.md` to make a real card.
 card: card.<name>                       # the card id, e.g. card.claude-code
 brand: <Vendor> — <Product>             # e.g. Anthropic — Claude Code (CLI)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
@@ -34,7 +34,7 @@ verify_cmd: <local truth check>         # where one exists, e.g. `claude --versi
 - **Freshness rule:** stale when `(today − verified) >= half_life_days`. Past that → mark low-confidence; do not
   emit from a stale card without a re-check (use `recheck:` / `verify_cmd:`).
 - **Two freshness fields, on purpose:** `half_life:` is human prose (readable at a glance); **`half_life_days:` is
-  the integer the freshness tooling reads** (`ainp-stale`). Keep BOTH — the researcher writes both on every refresh.
+  the integer the freshness tooling reads** (`aihs-stale`). Keep BOTH — the researcher writes both on every refresh.
 - **Lineage (point, never copy):** the RELATIVE-card protocol is inherited from larva
   (`raw.larva.cards.structure-and-protocol.md` — **verbatim, another project; reference it, do not edit it**).
   This template is the temple's own clean expression of it.

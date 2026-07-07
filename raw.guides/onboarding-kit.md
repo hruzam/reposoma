@@ -1,3 +1,8 @@
+---
+verified: 2026-07-07
+half_life_days: 90
+---
+
 # Onboarding kit — from a filled intake to a project's first bones
 
 `tier: raw.guides · the deliverable bundle the architect emits per project`
@@ -48,11 +53,12 @@ Per operator (2026-06-17): these two need no robust system. The cards converge o
 - **No `agentctl`, no lockfile, no materialize pipeline** for these two. The robust gate earns its seat only at Claude-harness scale / ≥2 actively-materialized projects (agentctl spec, activation entry B). Defer it; name the threshold; don't pre-build show.
 
 ## Freshness gate (operator rule: a raw.settings primitive is trustworthy only if `verified` ≤ 72h)
-Fresh today (2026-06-17) = `verified` ≥ 2026-06-14. Status of the cards this onboarding leans on:
-- `raw.card.gemini-cli.md` — `verified: 2026-06-02` → **STALE (15d)**. The load-bearing volatile fact is the **2026-06-18 sunset / auth path** — verify *that* before onboarding a Gemini surface.
-- `raw.card.cursor-ide.md` — `verified: 2026-06-02` → **STALE (15d)**. Surface conventions are stable; recheck the MCP path only.
-- `raw.card.agents.addendum.md` — `verified: 2026-06-11` → **STALE (6d)**. Recheck MCP config paths before baking them into a surface.
-- **Pragmatic call:** the surface *conventions* (AGENTS.md, `.cursor/rules`, `GEMINI.md→AGENTS.md`, shared skills) are stable enough to use now; only the Gemini auth/`agy` fact is urgent. A full re-derivation is not needed — a targeted researcher recheck of the volatile bits (card `recheck:` URLs) suffices.
+Run `aihs-stale` (or inspect each card directly in `raw.settings/`) before onboarding a Gemini or Cursor surface:
+- `raw.settings/raw.card.gemini-cli.md` — load-bearing volatile fact: auth path / `agy` surface. Highest urgency.
+- `raw.settings/raw.card.cursor-ide.md` — surface conventions stable; recheck the MCP path.
+- `raw.settings/raw.card.agents.addendum.md` — recheck MCP config paths before baking them into a surface.
+
+A full re-derivation is not needed — a targeted researcher recheck of the volatile bits (card `recheck:` URLs) suffices.
 
 ## Red flags to clear with each architect
 - **R1 · template collision** — two projects, one intake file. Each fills its **own copy** → `raw.guides/intake/<project>.intake.md` (or hands prose). Keep the template blank.
