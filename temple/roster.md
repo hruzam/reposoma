@@ -57,7 +57,7 @@ These load in every Claude Code session regardless of project.
 | @Houston | `houston` | Opus · effort:high | Architect / orchestrator — phase planner, owns `session/plan/session.plan.md`, spawns @AtlasAuto + @Janus, gated by @CapCom. Project-agnostic global form (freya/piql variants are project-scoped) |
 | @Flight | `flight` | Sonnet · effort:high | Tactical planner and session coordinator — lightweight Houston seat. Quick replanning, phase execution coordination, routine session work. Defers strategic gates and architectural locks to @Houston. Spawns @Vara / @Delta / @Vector / @AtlasAuto / @Epoch. |
 | @Janus | `janus` | Opus · effort:xhigh | Challenger — second voice before a decision locks: one position, one primary risk, one alternative. Read-only. Project-agnostic global form (freya `janus-devstudio-counsel` is project-scoped) |
-| @CapCom | `capcom` | Sonnet | Mission controller — human gate before Houston gets full autonomy |
+| @CapCom | `capcom` | Sonnet · effort:low | Mission controller — human gate before Houston gets full autonomy (effort:low — gate, not arguer; majkee 2026-07-07) |
 | @Oraculum | `oraculum` | Fable · effort:high | Scientist-tier strategist — invoke in place of Houston for deeper modeling, wider synthesis. Same canon reading list. Neural and coding depth close to Color. User-invoked, not spawned. |
 | @Vara | `vara` | Sonnet · effort:high | Task runner — holds current session task list, coordinates Trajectory/Vector/Delta, verifies against gate criteria, reports to Houston. Does NOT re-plan. Named for Dorothy Vaughan. |
 | @Recorder | `recorder` | Haiku · effort:low | Session memory librarian — merges dumps/artifacts into `session-draft-memory.md` |
