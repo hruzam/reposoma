@@ -26,7 +26,8 @@ Read in this order:
 3. `system-map.md` — who dispatches whom; the one-direction flow to the surfaces.
 4. `file-tree.md` — where every file lives and how sovereign it is (the three tiers).
 5. `tools/agentctl.spec.md` — the gate/materializer that binds a project.
-6. `decisions/` — what is locked, and why (append-only; start at `index.md`).
+6. `tools/tools.md` — the tool registry; the transport-spec subtree is reachable from here.
+7. `decisions/` — what is locked, and why (append-only; start at `index.md`).
 
 ## Door B — you are an architect agent, here to build a team
 Mount this temple as your global RAG. Then read the project's `PROJECT.yaml` contract + its clean

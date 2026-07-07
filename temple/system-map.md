@@ -112,7 +112,7 @@ majkee
 
 @Houston (Opus · high)         ← after confirmation; architect, owns plan
             ├─ @Janus (Opus · xhigh)     ← challenge-before-lock; adversarial; spawned for any big decision
-            ├─ @Agol  (Opus · high)      ← synthesis advisor; spawned when cross-phase reasoning needed
+            ├─ @Agol  (Fable · high)     ← synthesis advisor; spawned when cross-phase reasoning needed
             ├─ @Color (Opus · xhigh)     ← math/formal-language co-brain; spawned for proofs/bounds/semantics
             ├─ @Epoch (Sonnet · medium)  ← researcher; spawned for live version/stack checks
             ├─ @Atlas (Sonnet · high)    ← primitive creator; spawned to build/repair agents
