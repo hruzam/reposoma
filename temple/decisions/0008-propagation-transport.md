@@ -292,3 +292,12 @@ failure mode), §7 (trust does not port) · decisions 0004 (registry), 0006 (mat
 *Next: LOCKED 2026-06-25 — index.md row 0008 added + flag ledger updated (propagation-O3 resolved). Stage 1
 follows: build the neutral transport script · decide executor topology (pull-by-resident vs dispatch) ·
 settle the L10 silence-default (opt-in vs opt-out).*
+
+---
+
+*Evidence redirect (wave 2 audit — 2026-07-07): source mail drained verbatim to `temple/evidence/0008/`
+(never edited; home is outside `temple/decisions/` by design — adr-guard domain stays crisp):*
+- `temple/evidence/0008/atlas.piql-propagation-report.2026-06-25.md` — piql propagation pass report
+  (@AtlasAuto, run 2026-06-25, report-only)
+- `temple/evidence/0008/houston.propagation-reconciliation.2026-06-25.md` — propagation reconciliation
+  (temple:houston → piql:houston, @majkee-gaveled 2026-06-25)

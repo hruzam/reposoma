@@ -210,3 +210,10 @@ definition-of-done + graduation trigger + seat-obligation + Stage-1 detection ba
 *Lineage: doctrine §1b (sovereignty gradient), §2 + §4.5 (seat-obligation, gate-big-flow-small), §3b
 (contract / verify-gate / F4), decision 0004 (registry).*
 *Next: @majkee gavel → on lock, add index.md row + flag, then subai runs Stage 0 as first runner.*
+
+---
+
+*Evidence redirect (wave 2 audit — 2026-07-07): source mail drained verbatim to `temple/evidence/0007/`
+(never edited; home is outside `temple/decisions/` by design — adr-guard domain stays crisp):*
+- `temple/evidence/0007/subai.houston.tool-lifecycle-doctrine.2026-06-25.md` — original subai → temple
+  dispatch (tool-lifecycle proposal, post-@Janus, reconstructed verbatim from transcript; operator-approved)
