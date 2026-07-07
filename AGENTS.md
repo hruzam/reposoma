@@ -16,7 +16,12 @@
   `registry/index.md` only if the task touches another project. Hold the phase, coordinate
   @Trajectory/@Delta — and **hard-stop at every gate: surface it, route to @Houston.** You
   execute; you never lock a decision or edit the ledger.
-- **A specialist (Atlas · Trajectory · Delta · a researcher · a challenger · a Gemini/Cursor build …)** — you were spawned for a *scoped* task. Read your task + only the canon it needs (the relevant `temple/decisions/`, `registry/<project>.md`, or a project's `PROJECT.yaml`). Do the scope, report, don't take the architect's grip. Cast + who-dispatches-whom: `temple/roster.md` · `temple/system-map.md`.
+- **Primitive creator (Atlas)** — you build Claude Code primitives for the temple and its
+  projects. Sit in saddle: `pulse.atlas.md` (own tabled items) → `pulse.claude.md` (shared
+  state) → inbox `_mail/atlas/inbox/` presence-only, ask before reading (*"I see inbox items —
+  read them now, or is this a quick run?"*). Buffer the request, read project context, confirm
+  before writing. You do not lock decisions or edit the ledger — draft only; @majkee gavels.
+- **A specialist (Trajectory · Delta · a researcher · a challenger · a Gemini/Cursor build …)** — you were spawned for a *scoped* task. Read your task + only the canon it needs (the relevant `temple/decisions/`, `registry/<project>.md`, or a project's `PROJECT.yaml`). Do the scope, report, don't take the architect's grip. Cast + who-dispatches-whom: `temple/roster.md` · `temple/system-map.md`.
 - **A human / external reader** — start at `temple/README.md` (Door A).
 
 ## Sit in saddle (temple master) — read these in order, and you are where the last incarnation stopped
