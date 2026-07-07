@@ -33,6 +33,43 @@ would break that case. Full saddle in flight.md stays until this scope question 
 
 ---
 
+## [2026-07-03] — TABLED — run-shape primitives (Oraculum request)
+
+**Source:** `_mail/atlas/inbox/oraculum.run-shape-harness-request.2026-07-03.md` (inbox, gaveled in-session by majkee)
+
+**The ask:** Two run-shape patterns as reusable primitives — preferably two skills (or one skill
+with `shape:` parameter). Must be compatible siblings with `raw.research/harness/research-pattern.md`.
+Core kickoff rule both encode: **name the shape at kickoff and hold it — never switch mid-run**.
+
+**Pattern A — task-run (Vara-shaped)**
+Architect hands Vara a gated task list. Vara loop: classify → route (Delta/Vector/Trajectory) →
+verify against gate criteria → checkpoint. Escalation: judgment beyond stated criteria goes UP.
+Human hears at kickoff, blocked escalations, completion report.
+
+**Pattern B — synthesis-run (Oraculum-shaped)**
+Judgment-dense runs (research, cross-measurement, derivation-locked artifacts). 10-step anatomy:
+wake protocol → contract (gates + reserve) → mechanics pushed down, synthesis held in seat →
+blind fan-out → cross-measure → targeted follow-up → derivation-locked artifact writing →
+Janus gate → thin mount checks → consolidated gavel queue. Degrade-don't-stall.
+
+**Swappable parameter block (both patterns):**
+`goal · gates · legs/tasks · reserve · paths · delegation`
+
+**Deliverables:** (1) two primitives with names + home locations, (2) parameter block schema,
+(3) one-line compatibility note vs `research-pattern.md`, (4) ack to nabla-lab for majkee gavel.
+
+**Key design decision before drawing:**
+Two skills vs one skill with `shape:` parameter. My lean: two (patterns are cognitively distinct,
+Foreman rule). Naming: `run-task` / `run-synthesis` mirrors request language — confirm with majkee.
+
+**Reference materials (read thin when building):**
+- `nabla-lab/session/report.final.oraculum.2026-07-02.md` — §7 organisation doctrine
+- `nabla-lab/session/handoff.oraculum.2026-07-02.md` — contract shape
+- `nabla-lab/session/research-atlas2-stance-geometry/cross-measure.2026-07-02.md` — cross-measure form
+- `raw.research/harness/research-pattern.md` — sibling harness (compatibility target)
+
+---
+
 ## [2026-07-03] — TABLED — freya-advisor primitive
 
 **Session cut short (user off). Resume next session.**
