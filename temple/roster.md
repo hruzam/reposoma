@@ -9,6 +9,8 @@ locals: gemma3:4b (Ollama, gate-only)
 
 # TEAM ROSTER
 
+> **Fact-kind taxonomy:** defaults live here (join by file-stem) · overrides on system-map edges (edge wins; absence inherits) · task-class ceilings in ADR 0006-L5 · join key = file-stem, NOT display @name
+
 ---
 
 ## CLI runtimes & surfaces
@@ -46,12 +48,12 @@ These load in every Claude Code session regardless of project.
 
 | @ name | File | Model | Role |
 |--------|------|-------|------|
-| @Atlas | `atlas-ui` | Sonnet | Interactive primitive creator — interactive sessions, buffers before writing |
+| @Atlas | `atlas-ui` | Sonnet · effort:high | Interactive primitive creator — interactive sessions, buffers before writing |
 | @AtlasAuto | `atlas-auto` | Sonnet | Automated primitive creator — spawnable by orchestrators, writes to staging |
 | @Zenith | `zenith` (`claude.creator.sniffer`) | Haiku | Targeted reader for heavy `raw.settings` reference files |
-| @Agol | `agol` | Fable | Continuous-reasoning advisor — cross-phase synthesis, non-adversarial, no verdict forced |
-| @Color | `color` | Opus | Math co-brain advisor to the Houston family — vector/tensor algebra, embeddings & similarity metrics, complexity/FLOP bounds, formal-language semantics. Read-only reasoner (Read/Grep/Glob + memory); delegates live SOTA checks to @Epoch, code to @Trajectory/@Delta. Drafts proofs/bounds/counterexamples; the architect records. |
-| @Epoch | `epoch` | Sonnet | Researcher — live fetch; recalibrates to today, treats versions/paths as stale; cites source + date + confidence; reads the project contract for project-specific scope |
+| @Agol | `agol` | Fable · effort:high | Continuous-reasoning advisor — cross-phase synthesis, non-adversarial, no verdict forced |
+| @Color | `color` | Opus · effort:xhigh | Math co-brain advisor to the Houston family — vector/tensor algebra, embeddings & similarity metrics, complexity/FLOP bounds, formal-language semantics. Read-only reasoner (Read/Grep/Glob + memory); delegates live SOTA checks to @Epoch, code to @Trajectory/@Delta. Drafts proofs/bounds/counterexamples; the architect records. |
+| @Epoch | `epoch` | Sonnet · effort:medium | Researcher — live fetch; recalibrates to today, treats versions/paths as stale; cites source + date + confidence; reads the project contract for project-specific scope |
 | @Houston | `houston` | Opus · effort:high | Architect / orchestrator — phase planner, owns `session/plan/session.plan.md`, spawns @AtlasAuto + @Janus, gated by @CapCom. Project-agnostic global form (freya/piql variants are project-scoped) |
 | @Flight | `flight` | Sonnet · effort:high | Tactical planner and session coordinator — lightweight Houston seat. Quick replanning, phase execution coordination, routine session work. Defers strategic gates and architectural locks to @Houston. Spawns @Vara / @Delta / @Vector / @AtlasAuto / @Epoch. |
 | @Janus | `janus` | Opus · effort:xhigh | Challenger — second voice before a decision locks: one position, one primary risk, one alternative. Read-only. Project-agnostic global form (freya `janus-devstudio-counsel` is project-scoped) |

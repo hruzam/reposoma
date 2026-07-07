@@ -1,6 +1,8 @@
 # Agentive System — the bigger picture (v3)
 
-_Drawn from `doctrine.md` (archetypes) + `roster.md` (live cast). Orange = deltas not yet in canon. v3: @Vara activated (execution coordinator between Houston and implementation layer); @Vector added (mid-tier implementer); @Agol model corrected Fable→Opus. Decision 0006 (2026-06-25). v4: @Flight seated (Sonnet · effort:high) — tactical planner, Houston-family lightweight seat, 2026-06-27. v5: @Hypatia retired → @Oraculum seated (Fable · effort:high) — scientist-tier, user-invoked Houston alternative, 2026-07-02._
+_Drawn from `doctrine.md` (archetypes) + `roster.md` (live cast). Orange = deltas not yet in canon. v3: @Vara activated (execution coordinator between Houston and implementation layer); @Vector added (mid-tier implementer); @Agol model corrected Fable→Opus. Decision 0006 (2026-06-25). v4: @Flight seated — tactical planner, Houston-family lightweight seat, 2026-06-27. v5: @Hypatia retired → @Oraculum seated — scientist-tier, user-invoked Houston alternative, 2026-07-02. v7: G9 fact-kind taxonomy — node-labels stripped to name only; model/effort defaults consolidated in roster.md; 2026-07-07._
+
+> **Fact-kind taxonomy:** node facts live in `roster.md` (join by file-stem); edges = who-dispatches-whom; an edge may carry an effort/model override annotation which wins over the roster default.
 
 ```mermaid
 flowchart TD
@@ -12,25 +14,25 @@ flowchart TD
 
     subgraph HUMAN[" human-in-the-loop "]
         MK["majkee — chaos monkey<br/>IS the orchestrator until volume"]
-        CAP["@CapCom · Sonnet<br/>human gate · reads houston.goal"]
+        CAP["@CapCom<br/>human gate · reads houston.goal"]
         MK --> CAP
     end
 
     subgraph TEAM[" cooperating group · ARCHETYPE // cast · tier "]
-        HOU["ARCHITECT // @Houston · Opus · effort:high<br/>owns plan · dispatches<br/>never runs shell or code"]
-        FLI["TACTICAL // @Flight · Sonnet · effort:high<br/>quick replanning · phase coord<br/>defers strategic gates to Houston"]
-        JAN["CHALLENGER // @Janus · Opus · effort:xhigh<br/>one verdict · one risk · read-only"]
-        AGOL["ADVISOR // @Agol · Fable · effort:high<br/>cross-phase synthesis · no verdict"]
-        COL["MATH ADVISOR // @Color · Opus · effort:xhigh<br/>vector/tensor · formal language<br/>proofs · bounds · read-only"]
-        EPO["RESEARCHER // @Epoch · Sonnet<br/>live fetch · dated · cited"]
-        VARA["COORDINATOR // @Vara · Sonnet · effort:high<br/>holds task list · routes execution<br/>verifies gates · reports to Houston"]
-        TRA["SENIOR IMPL // @Trajectory · Sonnet · effort:high<br/>writes code · runs shell<br/>self-clones for hard tasks"]
-        VEC["IMPLEMENTER // @Vector · Sonnet · effort:medium<br/>context ceiling above Haiku<br/>no opinions · no subagent spawning"]
-        DEL["EXECUTOR // @Delta · Haiku · effort:low<br/>surgical · zero judgment"]
-        ATL["CREATOR // @Atlas · Sonnet<br/>builds native primitives"]
-        ZEN["READER // @Zenith · Haiku<br/>targeted heavy-doc reader"]
-        ORA["SCIENTIST-TIER // @Oraculum · Fable · effort:high<br/>deep modeling · user-invoked alt to Houston"]
-        REC["@Recorder · Haiku · effort:low<br/>session memory"]
+        HOU["ARCHITECT // @Houston<br/>owns plan · dispatches<br/>never runs shell or code"]
+        FLI["TACTICAL // @Flight<br/>quick replanning · phase coord<br/>defers strategic gates to Houston"]
+        JAN["CHALLENGER // @Janus<br/>one verdict · one risk · read-only"]
+        AGOL["ADVISOR // @Agol<br/>cross-phase synthesis · no verdict"]
+        COL["MATH ADVISOR // @Color<br/>vector/tensor · formal language<br/>proofs · bounds · read-only"]
+        EPO["RESEARCHER // @Epoch<br/>live fetch · dated · cited"]
+        VARA["COORDINATOR // @Vara<br/>holds task list · routes execution<br/>verifies gates · reports to Houston"]
+        TRA["SENIOR IMPL // @Trajectory<br/>writes code · runs shell<br/>self-clones for hard tasks"]
+        VEC["IMPLEMENTER // @Vector<br/>context ceiling above Haiku<br/>no opinions · no subagent spawning"]
+        DEL["EXECUTOR // @Delta<br/>surgical · zero judgment"]
+        ATL["CREATOR // @Atlas<br/>builds native primitives"]
+        ZEN["READER // @Zenith<br/>targeted heavy-doc reader"]
+        ORA["SCIENTIST-TIER // @Oraculum<br/>deep modeling · user-invoked alt to Houston"]
+        REC["@Recorder<br/>session memory"]
     end
 
     CAP -.authorizes.-> HOU
@@ -100,30 +102,30 @@ Text companion to the diagram. Read: *who spawns whom, and when*.
 
 ```
 majkee
-  ├─ @Oraculum (Fable · high)            ← direct invoke; scientist-tier, deeper than Houston
-  └─ @CapCom (Sonnet · high)             ← human gate; reads houston.goal, assesses risk, awaits "ano"
-       ├─ @Houston (Opus · high)          ← strategic work; architect, owns plan, locks decisions
+  ├─ @Oraculum   ← direct invoke; scientist-tier, deeper than Houston
+  └─ @CapCom     ← human gate; reads houston.goal, assesses risk, awaits "ano"
+       ├─ @Houston          ← strategic work; architect, owns plan, locks decisions
        │    ├─ (see full Houston subtree below)
-       └─ @Flight (Sonnet · high)         ← tactical work; quick replanning, execution coordination
-            ├─ @Vara (Sonnet · high)      ← execution coordinator; routes Trajectory/Vector/Delta
-            ├─ @AtlasAuto (Sonnet)        ← primitive creator; clear spec only
-            ├─ @Epoch (Sonnet · medium)   ← researcher; date-calibrated fact checks
-            └─ @Delta (Haiku · low)       ← direct dispatch for simple surgical tasks
+       └─ @Flight           ← tactical work; quick replanning, execution coordination
+            ├─ @Vara        ← execution coordinator; routes Trajectory/Vector/Delta
+            ├─ @AtlasAuto   ← primitive creator; clear spec only
+            ├─ @Epoch       ← researcher; date-calibrated fact checks
+            └─ @Delta       ← direct dispatch for simple surgical tasks
 
-@Houston (Opus · high)         ← after confirmation; architect, owns plan
-            ├─ @Janus (Opus · xhigh)     ← challenge-before-lock; adversarial; spawned for any big decision
-            ├─ @Agol  (Fable · high)     ← synthesis advisor; spawned when cross-phase reasoning needed
-            ├─ @Color (Opus · xhigh)     ← math/formal-language co-brain; spawned for proofs/bounds/semantics
-            ├─ @Epoch (Sonnet · medium)  ← researcher; spawned for live version/stack checks
-            ├─ @Atlas (Sonnet · high)    ← primitive creator; spawned to build/repair agents
-            ├─ @Recorder (Haiku · low)   ← memory librarian; spawned to file session state
-            └─ @Vara (Sonnet · high)     ← execution coordinator; spawned when a plan enters execution phase
-                 ├─ @Trajectory (Sonnet · high)   ← senior impl; spawned for complex/judgment tasks
-                 │    └─ @Delta (Haiku · low)      ← surgical executor; spawned for specific subtasks
+@Houston          ← after confirmation; architect, owns plan
+            ├─ @Janus      ← challenge-before-lock; adversarial; spawned for any big decision
+            ├─ @Agol       ← synthesis advisor; spawned when cross-phase reasoning needed
+            ├─ @Color      ← math/formal-language co-brain; spawned for proofs/bounds/semantics
+            ├─ @Epoch      ← researcher; spawned for live version/stack checks
+            ├─ @Atlas      ← primitive creator; spawned to build/repair agents
+            ├─ @Recorder   ← memory librarian; spawned to file session state
+            └─ @Vara       ← execution coordinator; spawned when a plan enters execution phase
+                 ├─ @Trajectory   ← senior impl; spawned for complex/judgment tasks
+                 │    └─ @Delta   ← surgical executor; spawned for specific subtasks
                  │         [fallback: if Delta is not strong enough, Trajectory takes over directly]
-                 ├─ @Vector (Sonnet · medium)      ← mid-tier impl; spawned when context > ~40K or
-                 │                                    medium-complexity new code, no judgment needed
-                 └─ @Delta (Haiku · low)            ← direct dispatch for simple surgical tasks
+                 ├─ @Vector       ← mid-tier impl; spawned when context > ~40K or
+                 │                   medium-complexity new code, no judgment needed
+                 └─ @Delta        ← direct dispatch for simple surgical tasks
 ```
 
 **Fallback rules:**
@@ -162,3 +164,8 @@ When you dispatch a seat that has **no `Write` tool** (a read-only / query seat 
 
 **v6 (2026-07-03):**
 - **Dispatch discipline added — Write-less seats.** The spawning session must file a read-only seat's output as definition-of-done (see the discipline block above). Gaveled 2026-07-03 after @delta-sql's schema impulse evaporated for lack of a Write tool.
+
+**v7 (2026-07-07 · G9 fact-kind taxonomy):**
+- **Node-labels stripped** — all `· Model · effort:Level` suffixes removed from mermaid node labels and dispatch hierarchy. Map carries edges (who-dispatches-whom) only.
+- **Model/effort defaults live in roster.md** — `roster.md` is the single live home (0006 Amendment A1); join by file-stem. Map-only facts ported to roster before strip: @Agol effort:high · @Color effort:xhigh · @Epoch effort:medium · @Atlas effort:high (dispatch hierarchy); @Janus already correct at xhigh.
+- **Taxonomy header added** — one-line callout above the diagram names the three fact homes (roster · edges · ADR 0006-L5) and the join key.
