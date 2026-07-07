@@ -8,6 +8,161 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-07-07] — psdvsSys environment bootstrap DONE
+
+**Task source:** majkee direct (in-session).
+
+**Delivered (27 files across 4 locations):**
+
+**psdvsSys app-side** (gitignored, authored here):
+- `AGENTS.md` — orientation, hard rules, architecture map, agent delegation table
+- `CLAUDE.md` — `@AGENTS.md` pointer
+- `.mcp.json` — mariadb-local wired (same pattern as reposoma)
+- `.dev/flag.md` — 8 initial locks (stack, substrate, language, authoring surface, MCP, preservation, Pint, branch model)
+- `.dev/pulse.md` — Phase 0 done; Phase 1 (domain model) next
+- `.dev/PROJECT.yaml` — machine-readable contract (in .dev/ per user request)
+- `.dev/dev.journal.json` — bootstrap entry
+- `.claude/rules/00-discipline.md` — agent discipline (token economy, delegation table, hard stops)
+- `.claude/rules/01-coding.md` — Laravel 11 / PHP 8.2+ coding standards (Eloquent-first, Form Requests, Policies, Pint, Czech comment rule)
+- `.claude/agents/delta-sql.md` — mariadb-local MCP agent, bonded to `psdvs` DB; adapted from fantasyobchod pattern
+- `.claude/agents/.gitkeep` + `.claude/settings.local.json`
+- `.gitignore` (edited) — added AGENTS.md, CLAUDE.md, .dev/, .claude/, .mcp.json
+
+**psdvsSys.devenv** (new sync sibling at /home/hruzam/www/psdvs/psdvsSys.devenv/):
+- `README.md`, `SYNC_DISCIPLINE.md`, `registry.json` (home → psdvsSys), `template.registry.md`
+- `sync.sh` + `deploy.sh` — adapted from fantasyobchod.devenv; cursor/ section kept as no-op for future-proofing
+- `sync.deny`, `.gitignore`, `claude/{agents,rules,skills}/.gitkeep`, `dev/.gitkeep`
+- **Pending:** `git init` + `gh repo create psdvsSys.devenv --private` (operator step)
+
+**reposoma registry:**
+- `registry/psdvsSys.md` — beacon deposited
+- `registry/index.md` — row added (home · active/bootstrap)
+
+**mariadb-mcp:**
+- `config.local.php` — `psdvs` added to databases allow-list
+
+**Stack:** Laravel 11.x · PHP 8.2+ · MariaDB (`psdvs`) · PHPUnit 10 · Pint.
+**Domain:** stock + mission system for Pašerácká stezka dobrého vojáka Švejka.
+**Substrate:** Jeff Way course (job-listings → throw-away; own domain model in Phase 1).
+**MCP activation:** pending operator step — `claude mcp add --scope project` in psdvsSys root.
+
+---
+
+## [2026-07-07] — TABLED — next session bundle (three primitives)
+
+**Source:** majkee in-session (psdvsSys bootstrap close-out).
+
+### A — freya horizon (replaces tabled freya-advisor)
+
+**Decision:** freya-advisor (tabled 2026-07-03) becomes `horizon.md` for freya.devstudio.
+Same build as psdvsSys `horizon.md` — 1:1 structure, freya constraints baked in instead.
+
+**Path:** `freya.devstudio/.claude/agents/horizon.md`
+
+**freya-specific layer to bake in (from freya/flag.md):**
+- Laravel 13.x · PHP 8.4 · Livewire 4 · Pest 4 · Larastan L6 (sequential per-file)
+- CSS: Skaven CSS — Tailwind permanently forbidden
+- Octane/RoadRunner driver
+- IDE helper: `ide-helper:models -N` only — never `-M`/`--write`
+- Inline PHP comments: Czech (client convention)
+- Team topology: Skaven (director/CSS owner) · Gotak (composer keeper) · Alex (test runner) · Majkee (AI lead)
+- Compile-down channel: sovereign content → Boost `.ai/` extension points
+- Jeff Way parallels: freya is NOT a course substrate — it's a live production ecommerce system
+
+**Brief format question (from tabled freya-advisor note):** confirm Option B/C hybrid (same as psdvsSys) — assume yes unless overridden.
+
+**Close out tabled entry:** `[2026-07-03] — TABLED — freya-advisor primitive` → superseded by this item.
+
+---
+
+### B — freya project skill
+
+**What:** A skill that gives any agent quick orientation to the freya project — stack, team,
+conventions, locked decisions summary, read-first paths. Something agents can load before
+a session to skip the "read all of flag.md" cold-start.
+
+**Candidate name:** `freya-context` → invoked as `/freya-context`
+
+**Path:** `freya.devstudio/.claude/skills/freya-context/SKILL.md`
+
+**Contents:** stack snapshot · team map · hard rules · key paths (flag.md, pulse.md, canon/) ·
+top locked decisions in one-liners · what NOT to do (Tailwind, `-M` ide-helper, direct master commits).
+
+**Foreman check:** skill fits — on-demand expertise, no disk writes, slash-invoked.
+
+---
+
+### C — new-project bootstrap skill (was: project-env bootstrapping skill)
+
+**Refined scope** from psdvsSys session: covers three concerns —
+- **pulse** — how to seed pulse.md for a new project (phase 0 done → next)
+- **handoff** — how to write the first dev.journal.json entry + handoff.json
+- **hygiene** — gitignore discipline, sync.deny baseline, what goes in devenv vs app
+
+**Modes:** greenfield (clean slate) vs brownfield (existing code, overlay only)
+**Template source:** psdvsSys + fantasyobchod patterns (two data points now — enough to extract)
+
+**Path:** `~/.claude/skills/new-project/SKILL.md` (global — applies across all projects)
+
+**Still open:** does the skill also scaffold the devenv repo, or stop at file creation and
+hand shell ops to Trajectory? My lean: stop at files + emit a "run these shell commands" block.
+
+---
+
+**Next session:** build all three in one pass. Order: A (freya horizon) → B (freya-context skill) → C (new-project skill).
+
+---
+
+## [2026-07-07] — TABLED — project-env bootstrapping skill
+
+**Source:** majkee suggestion (in-session, psdvsSys bootstrap conversation).
+
+**The idea:** A skill (or command) for mounting a new project environment from a template.
+Operator picks a template from a list derived from existing project patterns (fantasyobchod,
+freya.devstudio, psdvsSys…), then the skill mounts: pulse + flag + PROJECT.yaml + .claude/ +
+devenv sibling + .gitignore edits. Two modes: greenfield (clean) vs brownfield (existing code,
+overlay only).
+
+**Why it fits:** This bootstrap session was ~27 files across 4 locations — high repetition with
+the fantasyobchod pattern. A skill would reduce future project launches to "pick template → run →
+confirm → gavel."
+
+**Design questions before drawing:**
+- Template discovery: static list in skill body vs scan of `registry/` for existing patterns?
+- Greenfield vs brownfield distinction: what exactly differs? (gitignore strategy, journal seed, flag locks)
+- Scope: does the skill also `git init` + wire GitHub? Or stop at file creation and delegate shell ops to Trajectory?
+- Naming: `project-bootstrap` / `new-project-env` / `mount-project`?
+
+**Next action:** When a second psdvsSys-style project launch happens, use that as the live spec
+to finalize the design. For now: no primitive, no code — just this tabled note.
+
+---
+
+## [2026-07-07] — run-shape primitives DONE (Oraculum request)
+
+**Task source:** `_mail/atlas/inbox/oraculum.run-shape-harness-request.2026-07-03.md` (archived)
+
+**Delivered:**
+
+- `~/.claude/skills/run-task/SKILL.md` — task-run shape. Vara-coordinated execution of a
+  gated task list. Fixed topology (classify → route → verify → checkpoint), escalation rule,
+  state discipline. Swappable: `goal · gates · tasks · reserve · paths · delegation`.
+- `~/.claude/skills/run-synthesis/SKILL.md` — synthesis-run shape (Oraculum-shaped).
+  Fixed 10-step anatomy: wake protocol → contract → mechanics-down → blind fan-out →
+  cross-measure → targeted follow-up → derivation-locked artifacts → Janus gate →
+  thin mount checks → consolidated gavel queue. Degrade-don't-stall. Swappable:
+  `goal · gates · legs · reserve · paths · delegation`.
+- `_mail/nabla-lab/inbox/atlas.run-shapes-staged.2026-07-07.md` — ack to Oraculum.
+  Awaiting @majkee gavel for adoption.
+
+**Compatibility:** both are siblings of `research-pattern.md` — shared spine (named gates ·
+swappable parameters · persist-to-disk · never-switch-mid-run), different topology.
+
+**Also in this session:** Atlas saddle added to `atlas-ui.md` (global) + AGENTS.md navigation
+bullet. Commit `11b899b`.
+
+---
+
 ## [2026-07-07] — Flight saddle + buffering skills DONE
 
 **Task source:** `_mail/atlas/inbox/houston.flight-saddle-reentry.2026-07-07.md` (archived)
@@ -33,7 +188,7 @@ would break that case. Full saddle in flight.md stays until this scope question 
 
 ---
 
-## [2026-07-03] — TABLED — run-shape primitives (Oraculum request)
+## [2026-07-03] — CLOSED — run-shape primitives (Oraculum request) → see 2026-07-07 entry
 
 **Source:** `_mail/atlas/inbox/oraculum.run-shape-harness-request.2026-07-03.md` (inbox, gaveled in-session by majkee)
 
@@ -70,7 +225,7 @@ Foreman rule). Naming: `run-task` / `run-synthesis` mirrors request language —
 
 ---
 
-## [2026-07-03] — TABLED — freya-advisor primitive
+## [2026-07-03] — CLOSED — freya-advisor primitive → superseded by next-session bundle item A (freya horizon, 2026-07-07)
 
 **Session cut short (user off). Resume next session.**
 

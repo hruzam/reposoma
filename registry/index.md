@@ -14,6 +14,7 @@
 | vacuole | office | building | [`registry/vacuole.md`](vacuole.md) | `pulse.md` · `PROJECT.yaml` · `AGENTS.md` · siblings: reposoma · methods: vacuole-mini (#1), anechoic (#2) |
 | nabla-lab | office | building | [`registry/nabla-lab.md`](nabla-lab.md) | `PROJECT.yaml` · `AGENTS.md` · `session/` |
 | fantasyobchod | home | active/maintenance | [`registry/fantasyobchod.md`](fantasyobchod.md) | `AGENTS.md` · `CLAUDE.md` · siblings: freya.devstudio |
+| psdvsSys | home | active/bootstrap | [`registry/psdvsSys.md`](psdvsSys.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/flag.md` |
 
 ## Sibling-graph (who shares what)
 - **subai.devenv ↔ reposoma.devenv** — share **spectral · bus/`_mail` · X→Z research · file-native medium**.

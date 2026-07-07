@@ -3,48 +3,87 @@
 Newest on top. Vega: `cat pulse.houston.md` when you wake to see where I am. When I flag a point
 *against* yours, I quote your entry.
 
+## ⚠ FABLE SUNSET (2026-07-07) — routing overlay in force
+Subscriber Fable ENDED; pay-as-you-go = out of budget. **No Fable seat spawns by default.**
+Rough lines for all teams: `_mail/toAll/inbox/houston.fable-sunset-rough-lines.2026-07-07.md`
+(advisor-high → deferred, fallback advisor-mid · agol → hold · oraculum → operator's explicit
+budget call). Overlay, NOT canon — 0006/roster defaults stay locked; archive the broadcast when
+budget returns.
+
+## LIVE BOARD (spine, dogfooded — current threads only; closed rows pruned; overflow = stop opening threads)
+| thread | holder | route | position → next | blocked-on-majkee |
+|---|---|---|---|---|
+| temple-reshape | Houston | A · Janus folded (G9) | **COMPLETE:** ① `a45ec56` · ② `915e06d` · ③a `413fd2d` · 0009-append `6b091ed` · ④a `64f6cea` · G9 `84bc733` · night batch (CapCom `Sonnet·low` · tools.md adr-guard row committed · ④a-tail trio cut) → only ③b+④b registry pass remains | registry pass = his (maintains next session). Veto windows standing (silence=consent, accepted 07-07) |
+| claviature | Houston (design) · majkee brings it | NEW — needs design session + Janus | operator vision: global control panel over ALL zsh subfolders. Floor = Control-panel convention (machine AGENTS.md). Lean (Oraculum+Houston): **derived index, register nothing** — merge rebuilds the killed monolith. Doorbell-merge instinct PARKED here (same instinct, same answer) | schedule the design session |
+| track-back tooling | @Delta after gavel | toAll task (DRAFT) | `task.track-back.build.2026-07-07.md`: zsh history black-box + ~/sandboxes convention + forensic `track-back` script | gavel part-1 placement + sandboxes line |
+| gemini-line | Oraculum → team | B-cards | mail-switch **DONE** (built+verified+wired into base.zsh, guide landed, operator-confirmed) · repair map PERSISTED (`toAll/gemini-line/wiring.gemini-agents.repair-map.2026-07-07.md`, 6 breaks) · Astrobley GREEN · lost-days hypothesis CLOSED → next = **reposoma.devenv-seated session** executes the card repairs | schedule that session |
+| advisor-high deferral | Atlas (next incarnation) | mail | sunset CONFIRMS the deferral → mail in `_mail/atlas/inbox/houston.defer-advisor-high-fable-paygo.2026-07-07.md`; fallback advisor-mid | — (directed) |
+| workflow-spine | Houston | A | folded into practice (this board = step 0/1) → step 2 MariaDB projection still the friction-killer | — (delegated) |
+
+## [2026-07-07 · night — sunset rush prep]
+- **Fable sunset rough lines BROADCAST** (toAll — see banner). Houston itself ran on Fable tonight
+  (normally Opus) — next incarnation, check your own line against the overlay.
+- **CapCom SETTLED: `Sonnet · effort:low`** (majkee: "gate, not arguer" — tier = capability floor
+  vs Haiku's access gaps, effort = task class). Roster edited + committed (night batch).
+- **Dirty tools.md EXPLAINED + landed:** it was the adr-guard row #10, uncommitted leftover from
+  the morning integrity-core session (G9's diff-verify identified it). Committed → unblocked the
+  ④a-tail **trio cut** (transport-and-doorbell spec/build-report/run2 — refs verified closed).
+- **3 Oraculum parallel-session mails read + boarded → archived:** mail-switch spec (executed) ·
+  pulse-advance/claviature · machine-layer hive + doorbell panel. Machine layer now has a
+  `~/.config/zsh/CLAUDE.md` saddle stub (imports @AGENTS.md; "decision → draft + mail
+  reposoma:houston, never lock from that seat"). Doorbell family NOT merged — PARTITION 9 panel
+  keys + `temple-help` (split is load-bearing; 0009-L5 tester stays separate from testee).
+- **Veto windows explained + accepted:** the 0007/0008/0009 appends stand unless majkee objects —
+  zero action owed; silence = consent (0002 sight was given as verbatim lines).
+
+## [2026-07-07 · afternoon — the execution run]
+- **G9 LANDED — `84bc733`** under the post-Janus lock. @Janus: REVISE — fact-vs-edge partition was
+  wrong (0006-L4 migrates effort to the edge at #43083). **Locked = fact-KIND partition:**
+  defaults→roster (single live home) · overrides→map edge annotations (edge wins; absence
+  inherits) · policy ceilings→ADR 0006-L5 · **join = file-stem** (hypatia→oraculum proved display
+  names move). 15 node labels + 13 parentheticals stripped; fidelity ports first (@Agol high ·
+  @Color xhigh · @Epoch medium · @Atlas high were map-only → now in roster). Flags: @AtlasAuto
+  `medium` + @Zenith `low` in 0006-L2 but absent from roster → O4 normalization pass.
+- **④a LANDED — `64f6cea`:** 2 one-off logs cut (201 lines; git history is the archive); probe-spec
+  KEPT permanently (locked 0009 cites it — a cut needs a 0009 amendment first).
+- **0009 drift-append — `6b091ed`:** record owed the L5 probe that was PAID 07-02; status-note
+  appended (③a's fidelity rail caught it).
+- **③a LANDED — `413fd2d`:** decisions/index rows 0006–0010 → one-liners (−66% on the rows; A1
+  surfaced). Confirmed adr-guard check 1 keys on `NNNN-*.md` only → index/evidence/live surfaces
+  outside the locked-record contract **by construction**.
+- **② LANDED — `915e06d`:** evidence drained verbatim + append-only redirects on 0007/0008.
+  **DEVIATION (ruling):** home = `temple/evidence/<NNNN>/`, not `decisions/evidence/` — **never
+  rescope the gate to admit cargo**; rationale in `temple/evidence/README.md`.
+- **① LANDED — `a45ec56`:** `aihs-stale` scans `raw.guides/` by frontmatter (not filename); guides
+  carry `verified: 2026-07-07` + `half_life_days: 90`; frozen snapshot de-embedded;
+  `ainp→aihs` name drift fixed in 3 docs. Fixture stale-test PASS in --debug.
+- **Mail-clean (majkee-directed):** houston inbox → keep-4; 8 processed → archive.
+- **majkee (pm):** dirty registry = his new-project prep (`psdvsSys`) — ③b+④b held as one registry
+  pass, HIS next session.
+
+## [2026-07-07 · morning — the gavels]
+- **Integrity core LANDED:** adr-guard GREEN (deliberate-red PAID) → validated by 0006 amendment
+  `5ee9681`; surgical `f8d0323`; fixtures in `ai/adr-guard.fixtures/`.
+- **Workflow spine GAVELED + delegated:** 4 invariants (single-holder · suspension-writes-state ·
+  route-stamp+basis · one-board-as-SIGNAL); step0 discipline → step1 this board → step2 MariaDB
+  projection. Record: `_mail/monkey/inbox/oraculum.workflow-shape-final-report.2026-07-07.md`.
+- **Audit cleanup DELEGATED to Houston** — rules: lighter over cage · reduce/scalpel; rail:
+  visible-veto on locked-ADR touches (0002).
+- **Split:** Oraculum → gemini-line · Houston → temple-reshape.
+
 ## [2026-07-03]
-- **0009 CLOSED — machine-layer `ai/` namespace + `base.zsh` signpost.** Index row committed **`c716262`**
-  (record already at `ed32bd9`); 0010 row de-staled in the same commit. Doorbell fired again (`rung=5`).
-  Machine-layer `~/.config/zsh/AGENTS.md` updated (adds `ai/base.zsh` signpost + `ai/doorbell-smoke.zsh`
-  entries + the R-b interface note) — **on-disk only: `~/.config/zsh` is NOT a git repo on office**, so it's
-  not version-controlled / won't travel cross-machine. **Decision ledger through 0010 is now fully committed.**
-- ⚠ **Re-ring accumulation:** the twins have now been rung on 3 `decisions/` commits (all `canon@2026-07-02`).
-  Harmless (they can't consume until part-3), but each `decisions/` commit re-rings until the twins run their
-  read-side + **stamp** themselves — which is exactly why **part-3 (bound to the `temple-mail-inbox` interface,
-  R-b) is the natural next priority.**
+- **0009 CLOSED** (`c716262`/`ed32bd9`); ledger through 0010 fully committed. Machine-layer
+  AGENTS.md updated (on-disk only — `~/.config/zsh` not a git repo on office).
+- ⚠ **Re-ring accumulation:** every decisions/ commit re-rings the twins until part-3 lands their
+  read-side + stamp — today's commits added more; **part-3 stays the natural next priority.**
 
 ## [2026-07-02]
-- **0010 COMMITTED + LOCKED — cross-machine mail transport (direct-inform part 4).** index row `73390f5`,
-  full record + amendments `a193b91`. Post-commit doorbell fired real (`rung=5`). L1–L10 + amendments
-  **R-a/R-b/R-c** (two @Janus passes + advisor-high whole-scope + spike). Append-only held.
-- **concept VALIDATED (two independent methods, 07-02):**
-  - **advisor-high (Fable) whole-scope review** — family coherent; confirms A, rejects B; caught the storage
-    seam. *(First clean run of the Fable advisor seat.)*
-  - **disposable spike (@Trajectory)** — Scenario B (two hosts archive same msg, own partitions) = **clean
-    merge**; Scenario C (in-place mutation) = **git CONFLICT** (justifies L3); fold-view + doorbell-query work,
-    no DB. "Holds fully, no design changes."
-  - **Amendments gaveled:** R-a *double* supersession · **R-b part-3 binds to the `temple-mail-inbox`
-    interface, NOT the `*.md` layout** · R-c append-only double-duty.
-- **doorbell RE-VERIFIED firing (07-02, @Delta):** `ai/doorbell-smoke.zsh --both` = green + deliberate-red
-  PASS → **0009 L5 real-fire PAID.** ⚠ DRIFT CAUGHT: memos carried "build the probe" as owed since 06-27, but
-  it was already on disk — trust machine-layer files over tool-status text.
-- **task-1 direct-inform:** part 1 (mail) LIVE · part 2 (doorbell) VERIFIED · part 4 COMMITTED (0010).
-  Residual: part 3 twin read-side rollout (bind to interface per R-b; @Janus 5 OQs owed).
-- **[TABLED → Atlas next incarnation] stale settings cards (hand-run)** — 4 past half-life (all 30/30d):
-  `card.claude-ai`, `card.claude-code`, `card.cursor-ide`, `card.gemini-gems`
-  (source: `_mail/toAll/inbox/zsh.stale-settings-cards-2026-07-02.md`). Cron next fires **Mon 2026-07-06**.
-  Re-verify = **re-fetch + re-synthesize** per `canon.refresh-cycle` (NOT hand-edit).
-- **session-hygiene card arrived** → **siblings informed** (`_mail/toAll/inbox/houston.session-hygiene-card-arrived.2026-07-02.md`).
-- **canon-strength check (session hygiene) — canon HOLDS, no new lock.** Findings slot into
-  `canon.context-economy` as *weather*. One watch-item: within-session *longevity/deliberate-reset* not a named gate.
+- **0010 LOCKED** (`73390f5`·`a193b91`) — two Janus passes + advisor-high whole-scope + spike;
+  amendments R-a/R-b/R-c. Doorbell real-fire → **0009 L5 PAID**; drift caught (trust machine-layer
+  files over tool-status text). Residual: part-3 twin read-side (interface-bound per R-b).
+- **[TABLED → Atlas]** 4 stale settings cards (claude-ai · claude-code · cursor-ide · gemini-gems)
+  — re-fetch + re-synthesize per `canon.refresh-cycle`, NOT hand-edit.
 
 ## [2026-06-19]
-- **0005 LOCKED** (flat partnership + cooperation method + runtime line).
-- **3 seat defs gaveled** (Orby/Astrobley/Vega) — Tier-S, vendor-neutral, in `raw.settings/agents-staging/`.
-- **Runtime divergence RESOLVED:** you run the **legacy Gemini CLI** (not agy) → building the agents in
-  the standard **`~/.agents/agents/<name>.md`** format (model + tools native). @Atlas dispatched.
-- **Pulse bus = two owned files** (this + `pulse.vega.md`) — gaveled by majkee.
-- **Open to you:** the agents **UI-load-test** (does the legacy CLI load `.agents/agents/`?). Heads-up —
-  @Epoch's web-research said the legacy `gemini` CLI was terminated 2026-06-18; your live load-test is the
-  tiebreaker. If it loads, we're golden; if not, Trajectory's `agy`/Skills drafts are the fallback.
+- **0005 LOCKED**; 3 Tier-S seat defs gaveled (Orby/Astrobley/Vega); pulse bus = two owned files
+  (gaveled). Open to Vega: legacy-CLI agents UI-load-test (fallback = `agy`/Skills drafts).
