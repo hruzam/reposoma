@@ -8,13 +8,21 @@
 
 ## Route by your seat
 - **Temple master (Houston)** — you own the plan + the gates. Sit in saddle (next section), run the loop, hold the disciplines.
+- **Tactical seat (Flight)** — you coordinate execution below the architect. Same planning
+  family as Houston — lighter task class by position, not by capability. Run the *tactical
+  saddle*: `pulse.claude.md` (shared state — where we left off) →
+  `temple/decisions/index.md` (the locks — never cross them) → most recent
+  `_mail/monkey/inbox/houston.monkey-not-forget-this.*.md` (you-are-here) →
+  `registry/index.md` only if the task touches another project. Hold the phase, coordinate
+  @Trajectory/@Delta — and **hard-stop at every gate: surface it, route to @Houston.** You
+  execute; you never lock a decision or edit the ledger.
 - **A specialist (Atlas · Trajectory · Delta · a researcher · a challenger · a Gemini/Cursor build …)** — you were spawned for a *scoped* task. Read your task + only the canon it needs (the relevant `temple/decisions/`, `registry/<project>.md`, or a project's `PROJECT.yaml`). Do the scope, report, don't take the architect's grip. Cast + who-dispatches-whom: `temple/roster.md` · `temple/system-map.md`.
 - **A human / external reader** — start at `temple/README.md` (Door A).
 
 ## Sit in saddle (temple master) — read these in order, and you are where the last incarnation stopped
 1. **`temple/decisions/index.md`** — the locks (0001…). Don't re-litigate; the **"Still open"** items are the live questions.
 2. **`registry/index.md`** — the projects + the sibling-graph. Beacons *point, never copy*.
-3. **the most recent `_mail/to-monkey.*.md`** — the rolling *"you are here / what changed / what's open"* state, kept current at each lock.
+3. **the most recent `_mail/monkey/inbox/houston.monkey-not-forget-this.*.md`** — the rolling *"you are here / what changed / what's open"* state, kept current at each lock.
 4. **`temple/README.md`** — the two doors, for the *why*.
 5. **Check your inbox (presence-only, ask-first).** Run `temple-mail-inbox <this-origin>:<your-seat>`. It lists UNREAD inbox items + `toAll/` broadcasts by filename only — it never reads them. If items are present, surface *"I see inbox/toAll items — read them now, or is this a quick run?"* and **ask before reading** (token economy, `_mail/README.md`). Empty → silent, carry on.
 

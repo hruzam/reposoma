@@ -8,6 +8,31 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-07-07] — Flight saddle + buffering skills DONE
+
+**Task source:** `_mail/atlas/inbox/houston.flight-saddle-reentry.2026-07-07.md` (archived)
+
+**Delivered:**
+
+- `~/.claude/agents/flight.md` — `## Sit in saddle (tactical seat)` added. Read order:
+  `pulse.claude.md` (0) → locks (1) → monkey memo (2) → registry (3, conditional) →
+  inbox (4, ask-first). Identity: "same planning family as @Houston — lighter task class
+  by position, not by capability" (cardinal framing, per majkee).
+- `pulse.claude.md` — header updated: "Houston / Flight write · everyone reads."
+- `AGENTS.md` — Tactical seat (Flight) bullet gaveled between Temple master and
+  A specialist. Stale memo path `_mail/to-monkey.*.md` → `_mail/monkey/inbox/houston.monkey-not-forget-this.*.md` fixed in the same pass.
+- `~/.claude/skills/buffering-creative-triad/SKILL.md` — new global skill. Substrate →
+  Architecture → Execution triad, ask-before-artifact. Pairs with `/buffering-cycle`.
+
+**Post-gavel note (do NOT thin yet):**
+Houston's mail suggested thinning flight.md saddle to a pointer at the AGENTS.md bullet
+after gavel. Held: `flight.md` is a *global* agent — active outside reposoma CWD.
+`AGENTS.md` is project-scoped — only injected when CWD is reposoma. If Flight is spawned
+in a non-reposoma session doing temple work, the inline saddle is essential. Pointer-only
+would break that case. Full saddle in flight.md stays until this scope question is resolved.
+
+---
+
 ## [2026-07-03] — TABLED — freya-advisor primitive
 
 **Session cut short (user off). Resume next session.**

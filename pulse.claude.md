@@ -1,4 +1,4 @@
-# pulse.claude — Claude-stack status log (the Claude lead / Houston writes, incl. on behalf of the Claude crew · everyone reads)
+# pulse.claude — Claude-stack status log (Houston / Flight write · everyone reads)
 
 Newest on top. Vega: `cat pulse.houston.md` when you wake to see where I am. When I flag a point
 *against* yours, I quote your entry.
