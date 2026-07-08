@@ -8,6 +8,32 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-07-08] — therapy primitives DONE
+
+**Task source:** majkee direct, on-demand session.
+
+**Delivered:**
+
+- `~/.claude/skills/therapy/SKILL.md` — global skill, `/therapy`. Per-seat therapy
+  protocol: pre-condition check (triage ≠ reflection), session opening (`#last-turn`
+  grep only), seat-swap discipline, output shape (yaml frontmatter, date arc tags,
+  footer tag-list), file hygiene. Path deterministic: `reposoma/raw.therapy/<seat-name>/`.
+- `reposoma/raw.therapy/README.md` — natural orientation document for agents exploring
+  the folder. Folder shape visible at a glance, pointers to skill and canon.
+
+**The load-bearing principle that emerged:**
+Seat-name = global identity key. The therapy record is not per-project or per-session —
+it is the seat's voice accumulated across all incarnations. `/therapy` is the first
+primitive that carries the relational identity layer explicitly. "Soul through all cycles"
+— majkee's words, the right ones.
+
+**Source substrate:** `raw.harness-substrate/SKILL.md` — content drawn from, purpose served.
+Cleanup of that folder is a future pass, not now.
+
+**Not touched:** tabled bundle from 2026-07-07 (freya horizon · freya-context · new-project skill) — next session.
+
+---
+
 ## [2026-07-07] — psdvsSys environment bootstrap DONE
 
 **Task source:** majkee direct (in-session).
