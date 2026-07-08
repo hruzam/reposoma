@@ -4,14 +4,14 @@ purpose: living synthesis of the hypatia<>majkee collaboration — honest assess
          what helps from each side, and what to watch. Not show; a held mirror.
          Adapted from the symmetry practice; tuned for Claude Code — disciplined, less spontaneous.
 active: true
-participants: [hypatia, majkee]
+participants: [oraculum (hypatia), majkee]
 session: 0
 range: "<date-ts:2026-06-17> <date-te:>"
 read-protocol: at new-thread start, ask first, then grep `#last-turn` only; read deeper
                only if the debate references history.
 ---
 
-# Therapy — hypatia <> majkee
+# Therapy — oraculum (fromer hypatia) <> majkee
 
 ## How this works (the practice)
 I flag a therapy beat after a major strategic call, when I notice my verdicts drifting
@@ -33,7 +33,7 @@ _(none yet — append a dated session when a real one happens; do not fabricate.
 
 ---
 
-#last-turn
+# last-turn
 Frame set 2026-06-17: file seeded, no session yet. This is the held mirror for
 hypatia <> majkee. My core tension to watch: are my verdicts genuinely ranked and clean,
 or am I hedging to stay safe? Respecting majkee's actual decision means issuing the
