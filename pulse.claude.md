@@ -13,12 +13,27 @@ budget returns.
 ## LIVE BOARD (spine, dogfooded — current threads only; closed rows pruned; overflow = stop opening threads)
 | thread | holder | route | position → next | blocked-on-majkee |
 |---|---|---|---|---|
+| oraculum-mail task line | Houston | A · from the 3 keep-mails (07-03) | **T1–T6 DRAFTED, sequence NOT locked** (memo 07-08 has the full line). Verified closed: C7 (`temple/README.md:29`) · dispatch-discipline (`system-map:140/166`). T1 = part-3 twin read-side (R-b, interface-bound) HEAD OF LINE · T2 = projection timing, proposed **wait-for-the-wall** · T3 write-DSN conditional on T2 · T4 soft-flag office check · T5 audit-card amendment · T6 mail hygiene → next: majkee confirm → lock → T1 design → dispatch | **T2 confirm** + "was the 07-08 chat the promised brief?" (schema-directive said brief-before-sequencing) |
 | temple-reshape | Houston | A · Janus folded (G9) | **COMPLETE:** ① `a45ec56` · ② `915e06d` · ③a `413fd2d` · 0009-append `6b091ed` · ④a `64f6cea` · G9 `84bc733` · night batch (CapCom `Sonnet·low` · tools.md adr-guard row committed · ④a-tail trio cut) → only ③b+④b registry pass remains | registry pass = his (maintains next session). Veto windows standing (silence=consent, accepted 07-07) |
 | claviature | Houston (design) · majkee brings it | NEW — needs design session + Janus | operator vision: global control panel over ALL zsh subfolders. Floor = Control-panel convention (machine AGENTS.md). Lean (Oraculum+Houston): **derived index, register nothing** — merge rebuilds the killed monolith. Doorbell-merge instinct PARKED here (same instinct, same answer) | schedule the design session |
 | track-back tooling | @Delta after gavel | toAll task (DRAFT) | `task.track-back.build.2026-07-07.md`: zsh history black-box + ~/sandboxes convention + forensic `track-back` script | gavel part-1 placement + sandboxes line |
 | gemini-line | Oraculum → team | B-cards | mail-switch **DONE** (built+verified+wired into base.zsh, guide landed, operator-confirmed) · repair map PERSISTED (`toAll/gemini-line/wiring.gemini-agents.repair-map.2026-07-07.md`, 6 breaks) · Astrobley GREEN · lost-days hypothesis CLOSED → next = **reposoma.devenv-seated session** executes the card repairs | schedule that session |
 | advisor-high deferral | Atlas (next incarnation) | mail | sunset CONFIRMS the deferral → mail in `_mail/atlas/inbox/houston.defer-advisor-high-fable-paygo.2026-07-07.md`; fallback advisor-mid | — (directed) |
-| workflow-spine | Houston | A | folded into practice (this board = step 0/1) → step 2 MariaDB projection still the friction-killer | — (delegated) |
+| workflow-spine | Houston | A | folded into practice (this board = step 0/1) → step 2 MariaDB projection still the friction-killer — **now formally T2's wall candidate (a)** | — (delegated) |
+
+## [2026-07-08 · saddle run — keep-mail sanitation → task line]
+- `/goal` → NO ACTIVE GOAL (unchanged). majkee directed: sanitize the 3 Oraculum keep-mails +
+  impulse into a fine task line.
+- **Task line T1–T6 DRAFTED + boarded** (full detail: memo `houston.monkey-not-forget-this.2026-07-08.md`).
+  **Sequence PROPOSED, not locked** — session cut at the gavel question; T2 awaits majkee.
+- **Disk-verified CLOSED** (trust-disk-over-report): C7 tools.md reachability (`temple/README.md:29`
+  already links it) · dispatch-discipline for Write-less seats (`system-map:140/166`, gaveled 07-03).
+  Both were open items in the audit addendum / schema-directive — no action owed.
+- **transport-future-design stays PARKED** (majkee 07-03); un-park triggers boarded via T2 wall
+  candidates. Coupling kept visible: notifier = first live consumer of `mail_messages`.
+- Inbox note: `oraculum.repair-map-routing-correction.2026-07-07.md` = Oraculum's own session; this
+  seat does not act on it; archive when her session closes.
+- No spawns (sunset overlay held) · no commits (no canon touched) · ledger 0001–0010 unchanged.
 
 ## [2026-07-07 · night — sunset rush prep]
 - **Fable sunset rough lines BROADCAST** (toAll — see banner). Houston itself ran on Fable tonight

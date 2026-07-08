@@ -8,6 +8,32 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## YOU ARE HERE — [2026-07-08] — read this first, then scan the log
+
+**Tabled — build these next session (in order):**
+1. **A — freya horizon** → `freya.devstudio/.claude/agents/horizon.md`
+   Same structure as psdvsSys horizon; freya constraints baked in (Laravel 13 · PHP 8.4 ·
+   Livewire 4 · Pest 4 · Larastan L6 · Skaven CSS · no Tailwind · Octane/RoadRunner ·
+   Czech comments · ide-helper models -N only). Supersedes tabled freya-advisor entry.
+2. **B — freya-context skill** → `freya.devstudio/.claude/skills/freya-context/SKILL.md`
+   Stack snapshot · team map · hard rules · key paths · top locked decisions · what NOT to do.
+3. **C — new-project global skill** → `~/.claude/skills/new-project/SKILL.md`
+   Covers: pulse seed · handoff/journal entry · hygiene (gitignore, sync.deny, devenv vs app).
+   Two modes: greenfield / brownfield. Stops at file creation; emits a shell-ops block for Trajectory.
+
+**Unread inbox item (ask majkee before reading or just read — likely routine):**
+- `_mail/atlas/inbox/houston.defer-advisor-high-fable-paygo.2026-07-07.md`
+  (Probably the formal advisor-high deferral note — already acted on via board overlay.)
+
+**Standing overlay:**
+- Fable sunset in force — no Fable seat spawns. `advisor-high` → defer or `advisor-mid` fallback.
+
+**This session (2026-07-08):**
+- Therapy skill built: `~/.claude/skills/therapy/SKILL.md` + `reposoma/raw.therapy/README.md`.
+- Tabled bundle untouched — explicitly noted in that entry below.
+
+---
+
 ## [2026-07-08] — therapy primitives DONE
 
 **Task source:** majkee direct, on-demand session.
