@@ -2,3 +2,8 @@
 pulse.md
 pulse*
 _tester/
+
+# Research report output — ephemeral by default (persist: ephemeral in scope README).
+# Canonical scopes negate their folder with !raw.research/<scope>/report/ in this file.
+raw.research/*/report/*
+!raw.research/*/report/.gitkeep

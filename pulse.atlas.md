@@ -10,6 +10,62 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ## YOU ARE HERE — [2026-07-09] — read this first, then scan the log
 
+---
+
+## [2026-07-09] — refresh skill + ai-news scope + zenith reconfigure DONE
+
+**Task source:** `_mail/atlas/inbox/epoch.refresh-skill-spec.2026-07-09.md` + majkee in-session.
+
+**Delivered (6 files):**
+
+- `raw.research/ai-news/draft/README.md` — ai-news scope config (`persist: ephemeral`,
+  `output_mode: briefing`, `window_days: 7`). `draft/` + `report/` folder structure
+  gaveled this session.
+- `raw.research/ai-news/draft/sources.jsonl` — 13 sources (Epoch-curated): research-depth ×6,
+  tools-releases ×3, policy-governance ×2, czech-scene ×2. Chris KE stub NOT added
+  (pending majkee confirmation).
+- `raw.settings/raw.card.refresh.ai-news.md` — card per template. `verified: 2026-07-09`,
+  `half_life_days: 56`. Wiring: `/refresh ai-news · data: raw.research/ai-news/draft/sources.jsonl`.
+- `~/.claude/skills/refresh/SKILL.md` — unified fetch-synthesize runner. Scope mandatory;
+  reads `raw.research/<scope>/draft/README.md`; `persist:` field governs gitignore behavior
+  (ephemeral | canonical | ask); card update prompt at end of every run (no auto-write).
+- `~/.claude/agents/zenith.md` — reconfigured: dual-path source routing table (raw.settings/
+  for cards + pre-migration harness; raw.research/<scope>/report/ for substrate snapshots;
+  raw.research/<scope>/draft/ for scope configs + source rosters).
+- `reposoma/.gitignore` — `raw.research/*/report/*` gitignored (ephemeral default);
+  `!raw.research/*/report/.gitkeep` excepts placeholder. Canonical scopes add per-scope
+  `!` negation at creation time.
+- `raw.research/ai-news/report/.gitkeep` — folder committed, content gitignored.
+
+**Design decisions gaveled this session:**
+- Folder structure: `draft/` (config) + `report/` (output) per scope. Flatten only for
+  trivially simple scopes.
+- Output path: `raw.research/<scope>/report/` (not raw.settings/) — uniformity over
+  Zenith convenience; Zenith reconfigured instead.
+- `persist:` field in scope README: ephemeral (most scopes) / canonical (wide-scope
+  research worth carrying cross-machine) / ask (per-run decision).
+- Cards stay at `raw.settings/raw.card.*.md` regardless of scope.
+- Fetch-qwen-docs → tombstone + replace with `openrouter` scope (broader, more useful).
+
+**Correction (2026-07-10, epoch.refresh-skill-correction.2026-07-10.md):**
+- Skill Steps 5–8 rewritten: substrate ALWAYS written (not snapshot-mode-only); card body
+  is now a run log (date · lead · quiet · feed flags · manual-check), not a source roster;
+  single confirm prompt covers both writes.
+- `raw.card.refresh.ai-news.md` body replaced with run-log format, seeded with 2026-07-09
+  run data from Epoch's first live run. Frontmatter unchanged (half_life_days: 2 per Epoch).
+
+**Tabled — migration pass (after /refresh ai-news verified working by majkee):**
+- Create `agent-docs/`, `ollama-docs/`, `openrouter/` scope folders under `raw.research/`
+  (migrate URL lists from old fetch-* skills)
+- Tombstone `fetch-agent-docs`, `fetch-ollama-docs`, `fetch-qwen-docs`
+- Archive / remove old substrate files from `raw.settings/`
+- Roster update (openrouter models → triangle.md or similar)
+
+**Inbox mail:** `epoch.refresh-skill-spec.2026-07-09.md` — processed this session.
+Archive when convenient (operator mv).
+
+---
+
 **Tabled — build these next session (in order):**
 1. **A — freya horizon** → home TBD (pending Oraculum reshape audit)
    Blocked: devstudio folder structure and sync architecture must be decided first.
