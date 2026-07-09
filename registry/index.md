@@ -28,7 +28,7 @@
 ## Shared layers (cross-cutting — not projects, but teams need them)
 | layer | lighthouse | what it holds |
 |---|---|---|
-| zsh machine layer | decision `0003` → `temple/decisions/0003-machine-provenance.md` | the machine layer (host id `$MACHINE_NAME` · per-machine resource guards · `substrate.`-parked legacy), reached through its **host-scoped decision record** — the registry never names a personal absolute path (§4.7). |
+| zsh machine layer | decision `0003` → `temple/decisions/0003-machine-provenance.md` | the machine layer (host id `$MACHINE_NAME` · per-machine resource guards · `substrate.`-parked legacy), reached through its **host-scoped decision record** — the registry never names a personal absolute path (§4.7). Physical root paths for registry projects live in `temple-project-map.zsh` (machine layer · decision 0008) — the disk companion to this index; shared across machines (folder layout is 1:1). |
 | research harness | `raw.research/harness/` (`research-pattern` + `source-catalog`) | the shared blind-fanout study method + the source catalog; siblings upstream from here. |
 
 > Deposit a beacon → add your row here. `./registry/projects/` retires once freya + piql are reshaped into beacons.

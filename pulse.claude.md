@@ -13,13 +13,38 @@ budget returns.
 ## LIVE BOARD (spine, dogfooded — current threads only; closed rows pruned; overflow = stop opening threads)
 | thread | holder | route | position → next | blocked-on-majkee |
 |---|---|---|---|---|
-| oraculum-mail task line | Houston | A · from the 3 keep-mails (07-03) | **T1–T6 DRAFTED, sequence NOT locked** (memo 07-08 has the full line). Verified closed: C7 (`temple/README.md:29`) · dispatch-discipline (`system-map:140/166`). T1 = part-3 twin read-side (R-b, interface-bound) HEAD OF LINE · T2 = projection timing, proposed **wait-for-the-wall** · T3 write-DSN conditional on T2 · T4 soft-flag office check · T5 audit-card amendment · T6 mail hygiene → next: majkee confirm → lock → T1 design → dispatch | **T2 confirm** + "was the 07-08 chat the promised brief?" (schema-directive said brief-before-sequencing) |
+| oraculum-mail task line | Houston | A · from the 3 keep-mails (07-03) | **SEQUENCE LOCKED 07-09** — T2 gaveled = **wait-for-the-wall** (MariaDB projection built only on a real wall — O1; never pre-built). **T1 designed + challenged + verified, GAVEL-READY:** `twin-readside.binding-spec.draft.md` (read-side boot-step, R-b interface-bound) + deliverable-0 `temple-mail-inbox.contract.draft.md` (@Delta-verified vs on-disk script; closes the tools.md:16 dangling pointer). @Janus REVISE folded (Q1→A1 · Q2 bootstrap · Q3 Force-4 split sound · Q4 dissolved). Gate: twin boot CITES contract + invokes `temple-mail-inbox <origin>:<seat>` (not layout glob) → re-rings stop. T3 write-DSN conditional on a T2 wall · T4 soft-flag office check · T5 audit-card amendment · T6 mail hygiene | **GAVEL BUNDLE:** (1) contract doc (2) re-point tools.md:16 (3) binding spec → THEN dispatch (twin surfaces = Force 4) |
 | temple-reshape | Houston | A · Janus folded (G9) | **COMPLETE:** ① `a45ec56` · ② `915e06d` · ③a `413fd2d` · 0009-append `6b091ed` · ④a `64f6cea` · G9 `84bc733` · night batch (CapCom `Sonnet·low` · tools.md adr-guard row committed · ④a-tail trio cut) → only ③b+④b registry pass remains | registry pass = his (maintains next session). Veto windows standing (silence=consent, accepted 07-07) |
 | claviature | Houston (design) · majkee brings it | NEW — needs design session + Janus | operator vision: global control panel over ALL zsh subfolders. Floor = Control-panel convention (machine AGENTS.md). Lean (Oraculum+Houston): **derived index, register nothing** — merge rebuilds the killed monolith. Doorbell-merge instinct PARKED here (same instinct, same answer) | schedule the design session |
 | track-back tooling | @Delta after gavel | toAll task (DRAFT) | `task.track-back.build.2026-07-07.md`: zsh history black-box + ~/sandboxes convention + forensic `track-back` script | gavel part-1 placement + sandboxes line |
 | gemini-line | Oraculum → team | B-cards | mail-switch **DONE** (built+verified+wired into base.zsh, guide landed, operator-confirmed) · repair map PERSISTED (`toAll/gemini-line/wiring.gemini-agents.repair-map.2026-07-07.md`, 6 breaks) · Astrobley GREEN · lost-days hypothesis CLOSED → next = **reposoma.devenv-seated session** executes the card repairs | schedule that session |
 | advisor-high deferral | Atlas (next incarnation) | mail | sunset CONFIRMS the deferral → mail in `_mail/atlas/inbox/houston.defer-advisor-high-fable-paygo.2026-07-07.md`; fallback advisor-mid | — (directed) |
-| workflow-spine | Houston | A | folded into practice (this board = step 0/1) → step 2 MariaDB projection still the friction-killer — **now formally T2's wall candidate (a)** | — (delegated) |
+| workflow-spine | Houston | A | folded into practice (this board = step 0/1) → step 2 MariaDB projection still the friction-killer — **now formally T2's wall candidate (a); T2 gaveled wait-for-the-wall 07-09** | — (delegated) |
+
+## [2026-07-09 · saddle run — T2 gaveled → sequence locked → T1 designed + challenged + verified]
+- `/goal` → NO ACTIVE GOAL (unchanged). majkee: **"T2 confirmed."**
+- **Sequence LOCKED.** T2 ruling = **wait-for-the-wall** (O1): the MariaDB projection is one implementation
+  of the T1 interface — built only when a real wall fires (board full-rewrite friction / notifier un-park),
+  never pre-built.
+- **T1 designed:** `twin-readside.binding-spec.draft.md` — read-side boot-step adoption bound to the
+  `temple-mail-inbox <origin>:<seat>` INTERFACE per R-b (zero layout knowledge); stamp/gate so doorbell
+  re-rings stop accumulating.
+- **@Janus challenged → REVISE (folded).** Weakest assumption: the interface had NO citable contract (spec
+  home `tools.md:16` → `transport-and-doorbell.run2-and-circuit.md` is a dangling pointer — file cut in the
+  ④a-tail trio cut) → R-b was a slogan; the old gate verified string-presence, not contract-adoption.
+  **Fold:** added deliverable-0 `temple-mail-inbox.contract.draft.md` (restored spec home) + rewrote the
+  gate to require a contract citation. Q1→A1 · Q2 (majkee-by-hand bootstrap) · Q3 (Force-4 split sound) all
+  confirmed.
+- **@Delta verified the contract vs the on-disk script** (`ai/temple-mail-inbox.zsh`, machine layer):
+  signature `<origin>:<seat>`; filename-only listing under an `INBOX … — N unread` header; empty→silent/exit0;
+  errors exit 1 (usage/address/unknown-project) & 2 (mapped-but-dir-missing); read-only; layout encapsulated
+  (R-b holds by construction). Contract doc now carries disk-truth, gavel-ready.
+- **DANGLING POINTER FINDING (feeds T4/T5):** `tools.md:16` names a cut file as the temple-mail-inbox spec
+  home — T5 audit-card amendment target; T4 soft-flag hit. The gavel's re-point (bundle item 2) fixes THIS
+  instance; T5 generalizes the guard.
+- **Blocked-on-majkee → GAVEL BUNDLE:** (1) contract doc, (2) re-point tools.md:16, (3) binding spec → THEN
+  dispatch (twin boot files = sovereign, Force 4). No dispatch, no commits this session; ledger 0001–0010
+  unchanged. Spawns: @Janus (Opus) + @Delta — both outside the Fable sunset.
 
 ## [2026-07-08 · saddle run — keep-mail sanitation → task line]
 - `/goal` → NO ACTIVE GOAL (unchanged). majkee directed: sanitize the 3 Oraculum keep-mails +

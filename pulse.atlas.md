@@ -11,26 +11,79 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 ## YOU ARE HERE — [2026-07-09] — read this first, then scan the log
 
 **Tabled — build these next session (in order):**
-1. **A — freya horizon** → `freya.devstudio/.claude/agents/horizon.md`
-   Same structure as psdvsSys horizon; freya constraints baked in (Laravel 13 · PHP 8.4 ·
-   Livewire 4 · Pest 4 · Larastan L6 · Skaven CSS · no Tailwind · Octane/RoadRunner ·
-   Czech comments · ide-helper models -N only). Supersedes tabled freya-advisor entry.
-2. **B — freya-context skill** → `freya.devstudio/.claude/skills/freya-context/SKILL.md`
-   Stack snapshot · team map · hard rules · key paths · top locked decisions · what NOT to do.
+1. **A — freya horizon** → home TBD (pending Oraculum reshape audit)
+   Blocked: devstudio folder structure and sync architecture must be decided first.
+   Oraculum mail sent: `freya.devstudio/_mail/oraculum/inbox/atlas.freya-devstudio-reshape-brief.2026-07-09.md`
+   Likely homes: canonical = `freya.devstudio/agents/horizon.md` · deployed = `freya/.claude/agents/horizon.md`
+2. **B — freya-context skill** → home TBD (same block as A)
+   Likely homes: canonical = `freya.devstudio/skills/freya-context/SKILL.md` · deployed = `freya/.claude/skills/freya-context/SKILL.md`
 3. **C — new-project global skill** → `~/.claude/skills/new-project/SKILL.md`
-   Covers: pulse seed · handoff/journal entry · hygiene (gitignore, sync.deny, devenv vs app).
-   Two modes: greenfield / brownfield. Stops at file creation; emits a shell-ops block for Trajectory.
+   Parked by majkee (2026-07-09) — needs substrate check first. Next session.
 
 **Inbox:**
 - `_mail/atlas/inbox/houston.defer-advisor-high-fable-paygo.2026-07-07.md` — unread; already acted on via board overlay. Archive when convenient (operator mv).
 - `_mail/atlas/inbox/oraculum.ballot-skill-request.2026-07-08.md` — processed last incarnation (majkee confirmed). Archive when convenient (operator mv).
 
 **Standing overlay:**
-- Fable sunset in force — no Fable seat spawns. `advisor-high` → defer or `advisor-mid` fallback.
+- Fable sunset in force — no Fable seat spawns. `advisor-high` → defer until **2026-07-12** (Anthropic extended term from 07-08; operator-confirmed 07-09) or `advisor-mid` fallback.
 
 **This session (2026-07-08):**
 - Therapy skill built: `~/.claude/skills/therapy/SKILL.md` + `reposoma/raw.therapy/README.md`.
 - Tabled bundle untouched — explicitly noted in that entry below.
+
+---
+
+## [2026-07-09] — machine-layer housekeeping + tree-converter mount DONE
+
+**Task source:** majkee direct, in-session.
+
+**Delivered:**
+
+- `advisor-high` deferral date updated: 07-08 → **07-12** (pulse.atlas.md standing overlay).
+- `~/.config/zsh/ai/temple-project-map.zsh` — removed host-specific framing ("shared across
+  machines, layout 1:1"); added fantasyobchod + psdvsSys entries (paths confirmed by operator);
+  `:-office` fallback → `:-unknown`; sync guide comment rewritten.
+- `reposoma/registry/index.md` — cross-wire added to temple-project-map.zsh in the zsh machine
+  layer row; "host-scoped" → "shared across machines (folder layout 1:1)".
+- `~/.config/zsh/AGENTS.md` — temple-project-map.zsh "host-scoped" note corrected; registries/tcr/
+  row added to LIVE table; tree-converter bullets added to temple family list.
+- **tree-converter full mount** (7 files):
+  - `~/.config/zsh/ai/tree-converter.sh` — dragged from larva.dev verbatim (Node.js, zero npm deps)
+  - `~/.config/zsh/registries/tcr/tcr.default.json` — default config (depth 4, JSON, gitignore + vendor/)
+  - `~/.config/zsh/ai/temple-tree.zsh` — engine; `tree-snapshot <project>` function
+  - `~/.config/zsh/ai/base.zsh` — PARTITION 5 added (sources temple-tree.zsh)
+  - `~/.config/zsh/ai/keyboard.zsh` — PARTITION 10 + ai-help "Temple utilities" section
+  - `~/.claude/skills/tree-snapshot/SKILL.md` — global skill; agents invoke via
+    `zsh -c "source ~/.config/zsh/ai/base.zsh && tree-snapshot <project>"`
+  - Guide pointer wired: `~/.config/zsh/guides/toolbox.tree-converter.md` (moved by operator)
+- **tree-convertor → tree-converter rename** (Delta): 4 files touched, 0 remaining occurrences.
+  Delta also updated 7 occurrences inside the guide itself.
+- Smoke test: GREEN (operator confirmed terminal output + file output mode).
+
+**Not touched:** tabled bundle (freya horizon · freya-context · new-project skill) — still next.
+
+---
+
+## [2026-07-09] — freya architecture brief → Oraculum
+
+**Task source:** majkee direct, in-session.
+
+**Work done:**
+- Read full substrate: `freya.devstudio/` (AGENTS, CLAUDE, flag, pulse, plan), `freya/CLAUDE.md`
+  (discovered fragile custom header + Boost block), `freya.devenv/README.md` (stale),
+  `psdvsSys/.claude/agents/horizon.md` (template reference), and the full
+  `session/renew-style-substrate-from.freya-cursor-ai-project.2026-07-09/` folder (6 files —
+  June 12 REPO-1/REPO-2 blueprint + synthesis).
+- Identified Gordian knot: devstudio folder structure undefined · devenv sync contract missing ·
+  CLAUDE.md fragile (custom header wiped on next boost:install) · two-surface problem
+  (team-facing Boost path vs Majkee-only .claude/ path) not separated.
+- Confirmed: writing horizon + freya-context is blocked until topology is decided.
+- Wrote Oraculum brief: `reposoma/_mail/oraculum/inbox/atlas.freya-reshape-brief.2026-07-09.md`
+  (temple-distance framing; three threads: T1 topology contract · T2 devstudio reshape · T3 CLAUDE.md fix)
+- Incorrect draft (freya.devstudio bus) overwritten with redirect note; operator to delete.
+
+**Not written:** horizon.md · freya-context skill — blocked pending Oraculum gate.
+**C parked:** new-project global skill — majkee confirmed, next session.
 
 ---
 
