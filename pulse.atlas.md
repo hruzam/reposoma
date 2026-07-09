@@ -8,7 +8,7 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
-## YOU ARE HERE — [2026-07-08] — read this first, then scan the log
+## YOU ARE HERE — [2026-07-09] — read this first, then scan the log
 
 **Tabled — build these next session (in order):**
 1. **A — freya horizon** → `freya.devstudio/.claude/agents/horizon.md`
@@ -21,9 +21,9 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
    Covers: pulse seed · handoff/journal entry · hygiene (gitignore, sync.deny, devenv vs app).
    Two modes: greenfield / brownfield. Stops at file creation; emits a shell-ops block for Trajectory.
 
-**Unread inbox item (ask majkee before reading or just read — likely routine):**
-- `_mail/atlas/inbox/houston.defer-advisor-high-fable-paygo.2026-07-07.md`
-  (Probably the formal advisor-high deferral note — already acted on via board overlay.)
+**Inbox:**
+- `_mail/atlas/inbox/houston.defer-advisor-high-fable-paygo.2026-07-07.md` — unread; already acted on via board overlay. Archive when convenient (operator mv).
+- `_mail/atlas/inbox/oraculum.ballot-skill-request.2026-07-08.md` — processed last incarnation (majkee confirmed). Archive when convenient (operator mv).
 
 **Standing overlay:**
 - Fable sunset in force — no Fable seat spawns. `advisor-high` → defer or `advisor-mid` fallback.
@@ -31,6 +31,36 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 **This session (2026-07-08):**
 - Therapy skill built: `~/.claude/skills/therapy/SKILL.md` + `reposoma/raw.therapy/README.md`.
 - Tabled bundle untouched — explicitly noted in that entry below.
+
+---
+
+## [2026-07-09] — nabla-lab canonization + triangulation roster DONE
+
+**Task source:** majkee direct, in-session.
+
+**Delivered:**
+
+- `nabla-lab/AGENTS.md` — canonized the raw `###### majkees addendum` (2026-07-08 leak):
+  - @Flight (executive architect) + @Oraculum (lead scientist · process orchestrator · architecture)
+    added to shaping team table, above Nabla/Symmetry
+  - Cross-brand triangulation Conventions bullet added: full-range blind triangulation requires
+    at least one non-Claude-family leg; pointer to `reposoma/triangle.md`
+  - `_mail/` row added to folder discipline tree
+- `nabla-lab/_mail/.gitignore` + `_mail/README.md` — inter-agent mail bus opened for the lab.
+  Seats wired: atlas · flight · oraculum · monkey · toAll. Pattern mirrors reposoma bus.
+  Gitignore: `*` with exceptions for itself + README (same as reposoma).
+- `reposoma/triangle.md` — triangulation roster seeded at temple root. Oraculum's template
+  (handoff `FOR-temple.triangulation-roster.template.2026-07-08.md`) canonized. Seats:
+  epoch (available) · gemini-cli (available · orchestration-unverified; four sub-surfaces:
+  g-vega/g-orby/g-bluebottle/g-astro with models + roles from guides) · cursor-agent (expected) ·
+  majkee-ui (available-when-present). Gemini status updated from `degraded` to
+  `available · orchestration-unverified` after majkee confirmed 2× hand-run GREEN
+  (Vega + Astrobley). Bluebottle REST flagged as safest orchestration dispatch path.
+  Two experience notes seeded (atlas-research-2 degraded leg + post-repair verification).
+
+**Commits:** nabla-lab `fbfeda6` · reposoma `8c1b812` — both pushed to core.
+
+**Not touched:** tabled bundle (freya horizon · freya-context · new-project skill) — still next.
 
 ---
 
