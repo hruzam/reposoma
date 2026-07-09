@@ -47,6 +47,14 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 - Cards stay at `raw.settings/raw.card.*.md` regardless of scope.
 - Fetch-qwen-docs → tombstone + replace with `openrouter` scope (broader, more useful).
 
+**Synthesis step (2026-07-10, oraculum.refresh-synthesis-step.2026-07-10.md):**
+- Step 6 (cross-reference look-back) added between fetch and card write. N=4 window
+  (3 existing substrate files + current run in memory). Entity key: arXiv ID → URL →
+  normalized title. Aggregator independence caveat baked in (weak signal marked, not
+  suppressed). `Convergence:` line added to card block template (7-B). JSONL sidecar
+  deferred — noted as prose comment in skill. Steps renumbered: 6→7, 7→8.
+- Round-trip mails sent: `_mail/oraculum/inbox/` + `_mail/epoch/inbox/`.
+
 **Correction (2026-07-10, epoch.refresh-skill-correction.2026-07-10.md):**
 - Skill Steps 5–8 rewritten: substrate ALWAYS written (not snapshot-mode-only); card body
   is now a run log (date · lead · quiet · feed flags · manual-check), not a source roster;
