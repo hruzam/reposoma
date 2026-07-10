@@ -26,6 +26,68 @@ When she finishes, her output gates the next Atlas work.
 - `houston.defer-advisor-high-fable-paygo.2026-07-07.md` — already acted on, archive-pending (operator mv).
 - Check for new items on re-entry.
 
+**Parked — larva excavation follow-ups (2026-07-10, no deadline, off main task line):**
+- Ring-trio wiring: cross-refs FROM research-pattern.md / run-synthesis / lab flag TO
+  `raw.research/harness/method.ring-trio.md` + skills only when a live run wants them.
+  Anchor sits in both homes unwired (majkee directive).
+- Hold-under-observation from the dig: conflicts.md entry grammar (Surface/Deeper/Reading/
+  Decision/Receipts, logged-not-resolved) · stream.review as potential 4th run-shape ·
+  context-tags vocabulary. Extract only on recurring temple pain.
+- Route-later: `larva.dev/.shared/registries/harness.process-aliases.json` = vocabulary
+  evidence for the claviature design session (Houston's board thread) ·
+  `audit.jsonl.schema.json` + `repair.jsonl.schema.json` = seed material for
+  reposoma.devenv's agent-memory back-track (P0 now; LAW-1 = earn it later).
+- guides/ unverified vs majkee's prior extraction: multiagent-safety ·
+  headless-agent-communication · autonomy-mode · mini-vacuole-overview.
+
+---
+
+## [2026-07-10] — larva.dev excavation (Fable session) DONE
+
+**Task source:** majkee direct. Atlas seated on Fable by explicit operator budget call
+(sunset overlay noted, operator escape valve). Off main task line — freya bundle untouched.
+
+**The dig:** `larva.dev/.shared/` full assay (own reads: traits, syntax, method skills,
+schemes context + Explore sweep of ~70 bulk files) + psychology-session prototype grounding.
+
+**Delivered (3 files + 1 edit):**
+- `raw.research/harness/method.ring-trio.md` — CANONICAL. Frame-finding method: wandering
+  step (A→C→B→D) · metaphor-tagging (load-bearing/intuition-pump/performance, removal test)
+  · cooled synthesis (assayer, four-bucket sort). Sat properly on the psychology-session
+  prototype (phase 3 synth + v2 heterogeneous reconfig); v2 lessons folded (anti-priming,
+  cross-vendor caveat, ring separation). Confirmed absent from reposoma + nabla-lab pre-dig.
+- `nabla-lab/session/handoff/FOR-temple.method.ring-trio.2026-07-10.md` — lab semiproduct
+  record (triangle.md pipeline precedent). Points to canonical; no method-body copy.
+- `~/.claude/agents/zenith.md` — `## Librarian discipline` block added (gaveled in-session):
+  never-invent · drift notes · shape-matches-question · design-questions-go-back. Lineage:
+  larva-Atlas librarian card. Zenith's own lineage: larva Gemini `@Zenit` → Claude family.
+- `temple/legacy-wall.md` — raised at session close (majkee request). Culture layer,
+  append-only, off the disk-contract. Entries: larva/kukla (full inheritance list +
+  epitaph) · Hypatia. Roster pointer gaveled + wired same session (one line under the
+  TEAM ROSTER heading → legacy-wall.md).
+- This pulse entry.
+
+**Key verdicts (recorded so nobody re-digs):**
+- KEEP: ring trio (the treasure) · librarian discipline → Zenith.
+- SUPERSEDED (verified, do not re-extract): buffering trait (skill carries `_underline_`
+  1:1) · first-person-voice trait · session-draft-memory template (recorder §0–§7/§R/§A
+  verbatim) · session-resume.sh (successor deliberately journal-free) · process-aliases
+  style (keyboard.zsh + guides = evolved form; claviature lean "derived index, register
+  nothing" covers the delta).
+- DEAD: `.if/.e/.reg` command DSL · KUKLA bracketless (POOL `~` = Force 4 fossil, provenance
+  only) · JSON schemes (registry-as-runtime-truth rejected; regimes absorbed multi-focus) ·
+  model-catalogue (stale-by-definition; model floor lives in ONE place) · orby launcher
+  (gemini line rebuilt fresh 07-03) · zsh-tree/repomix registries · harness monitors.
+- Meta-finding: larva died of mechanism, its method survived. Extract method, bury
+  mechanism — "tight invariants, loose craft" confirmed by fossil record.
+
+**Convergences worth remembering:**
+- psychology-session v2 = proto-triangulation (blind streams, cross-vendor leg) —
+  independently re-evolved as triangle.md + lab flag lock 6.
+- wandering-step telemetry footer → larva spectral toolbox → reposoma.devenv "association
+  = spectral embedding, computed not stored". Same thread, five weeks apart. Ring-trio doc
+  carries the hook, unwired.
+
 ---
 
 ## [2026-07-10] — 5-scope refresh harness DONE

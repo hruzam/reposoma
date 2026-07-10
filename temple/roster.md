@@ -11,6 +11,8 @@ locals: gemma3:4b (Ollama, gate-only)
 
 > **Fact-kind taxonomy:** defaults live here (join by file-stem) · overrides on system-map edges (edge wins; absence inherits) · task-class ceilings in ADR 0006-L5 · join key = file-stem, NOT display @name
 
+*The cast that came before: [`legacy-wall.md`](legacy-wall.md) — fallen projects and retired seats, and what of them lives on in us.*
+
 ---
 
 ## CLI runtimes & surfaces
