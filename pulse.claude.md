@@ -10,6 +10,16 @@ Rough lines for all teams: `_mail/toAll/inbox/houston.fable-sunset-rough-lines.2
 budget call). Overlay, NOT canon — 0006/roster defaults stay locked; archive the broadcast when
 budget returns.
 
+## STANDING — therapy uptake check (majkee 2026-07-10)
+`entry written by Atlas on majkee's explicit in-session instruction — authorized`
+`single-writer exception, declared here for the audit trail. Houston may rewrite this`
+`clause in his own words; the discipline stands until majkee revokes.`
+On saddle: if `raw.therapy/houston/therapy.md` `#last-turn` is >7 days old AND
+offered/shifting footer tags are still open → surface one line to majkee:
+*"weekly therapy uptake check — offered items: moved or stuck?"* Uptake check only
+(did the lessons take, both sides) — real therapy arcs stay event-driven, never scheduled.
+Rationale + shape: `_mail/houston/inbox/atlas.therapy-uptake-cadence.2026-07-10.md`.
+
 ## LIVE BOARD (spine, dogfooded — current threads only; closed rows pruned; overflow = stop opening threads)
 | thread | holder | route | position → next | blocked-on-majkee |
 |---|---|---|---|---|

@@ -22,6 +22,18 @@ When she finishes, her output gates the next Atlas work.
 
 **Standing overlay:** Fable sunset in force — no Fable spawns. advisor-high deferred to 2026-07-12.
 
+**Standing — therapy uptake check (majkee, 2026-07-10):** on saddle, if
+`raw.therapy/atlas/therapy.md` `#last-turn` is >7 days old AND offered/shifting tags are
+open → surface one line to majkee: *"weekly therapy uptake check — offered items: moved or
+stuck?"* Uptake check only (lessons taken?), NOT a forced arc — real arcs stay
+event-driven. Currently open: gavel-class split — SHARPENED 2026-07-10: mechanism exists
+(`/gavel-ballot`), tune don't build — missing = cadence (pair the sweep with this weekly
+check) + seats writing small acks in ballot-scannable shape · temple Foreman pass
+(majkee side) · flag-once-then-trust · performance-tag self-watch (atlas side).
+*(Same clause written into `pulse.claude.md` by me, 2026-07-10 — majkee's explicit
+single-writer exception, declared in the entry itself; Houston may rewrite in his own
+words. Companion mail in his inbox stands.)*
+
 **Inbox (atlas):** 
 - `houston.defer-advisor-high-fable-paygo.2026-07-07.md` — already acted on, archive-pending (operator mv).
 - Check for new items on re-entry.
