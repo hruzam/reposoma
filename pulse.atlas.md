@@ -8,7 +8,80 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
-## YOU ARE HERE — [2026-07-09] — read this first, then scan the log
+## YOU ARE HERE — [2026-07-10] — read this first, then scan the log
+
+**Waiting on Oraculum:**
+`reposoma/_mail/oraculum/inbox/atlas.freya-reshape-brief.2026-07-09.md` — sent, unread.
+Oraculum is in session auditing freya.devstudio architecture (started 2026-07-09/10).
+When she finishes, her output gates the next Atlas work.
+
+**Tabled — blocked on Oraculum gate (in order):**
+1. **A — freya horizon** → canonical home TBD (likely `freya.devstudio/agents/horizon.md` + deploy to `freya/.claude/agents/`)
+2. **B — freya-context skill** → canonical home TBD (likely `freya.devstudio/skills/freya-context/SKILL.md` + deploy to `freya/.claude/skills/`)
+3. **C — new-project global skill** → `~/.claude/skills/new-project/SKILL.md` — parked by majkee; needs substrate check first.
+
+**Standing overlay:** Fable sunset in force — no Fable spawns. advisor-high deferred to 2026-07-12.
+
+**Inbox (atlas):** 
+- `houston.defer-advisor-high-fable-paygo.2026-07-07.md` — already acted on, archive-pending (operator mv).
+- Check for new items on re-entry.
+
+---
+
+## [2026-07-10] — 5-scope refresh harness DONE
+
+**Task source:** `_mail/atlas/inbox/atlas.migration-pass-scopes.2026-07-10.md` +
+`epoch.refresh-scope.arch.2026-07-10.md` + `epoch.refresh-scope.laravel.2026-07-10.md` +
+`epoch.scope-sources-verified.2026-07-10.md`
+
+**Delivered (20 changes: 19 new files + 1 .gitignore edit):**
+
+**Migration pass — 3 scopes:**
+- `raw.research/agent-docs/draft/README.md` + `sources.jsonl` (8 sources, all code.claude.com)
+- `raw.settings/raw.card.agent-docs.md` — run-log, half_life_days: 30
+- `raw.research/agent-docs/report/.gitkeep`
+- `.gitignore` — `!raw.research/agent-docs/report/` added (persist: canonical)
+- `raw.research/ollama-docs/draft/README.md` + `sources.jsonl` (9 sources)
+- `raw.research/ollama-docs/report/.gitkeep` (ephemeral, no card)
+- `raw.research/openrouter/draft/README.md` + `sources.jsonl` (5 sources)
+- `raw.settings/raw.card.openrouter.md` — run-log, half_life_days: 14
+- `raw.research/openrouter/report/.gitkeep`
+
+**Epoch-requested scopes — arch + laravel:**
+- `raw.research/arch/draft/README.md` + `sources.jsonl` (3 sources)
+- `raw.settings/raw.card.arch.md` — run-log, half_life_days: 7
+- `raw.research/arch/report/.gitkeep`
+- `raw.research/laravel/draft/README.md` + `sources.jsonl` (4 sources)
+- `raw.settings/raw.card.laravel.md` — run-log, half_life_days: 7
+- `raw.research/laravel/report/.gitkeep`
+
+**Card naming:** `refresh.` prefix dropped across the board per majkee.
+Cards: `raw.card.agent-docs.md` · `raw.card.openrouter.md` · `raw.card.arch.md` · `raw.card.laravel.md`
+
+**Also delivered (same session, after first-run confirmation):**
+- Tombstones: `fetch-agent-docs`, `fetch-ollama-docs`, `fetch-qwen-docs` — DONE (all 3 scopes ran first pass)
+- `/pull` skill: `~/.claude/skills/pull/SKILL.md` — image extraction runner, sibling to `/refresh`
+  - scope-driven: reads `pull:` block from scope README (photos_path + output_path + purpose)
+  - laravel wired: `raw.research/laravel/photos/` inbox, `report/report.laravel-daily.<date>.md` output
+  - `raw.research/laravel/draft/README.md` — `pull:` block added + `## Pull (image extraction)` body section
+  - `.gitignore` — generic `raw.research/*/photos/*` pattern (covers all future scopes)
+  - `raw.research/laravel/photos/.gitkeep` — inbox folder seeded
+  - `/refresh` skill — one-line note added: "pull: section is for /pull — I ignore it"
+
+**Still deferred:**
+- Zenith `(pre-migration)` qualifier cleanup → blocked by auto-mode classifier (agent file edit requires explicit operator authorization)
+
+**Flagged for operator (awaiting end-of-session call):**
+- Old substrate in `raw.settings/`: `raw.claude-agents.harness.2026-06-05.md` + `raw.claude-agents.harness.2026-06-16.md` — superseded; `git rm` or `archive/` subfolder
+- No ollama or qwen substrate files found in raw.settings/ — nothing to archive there
+- Optional: update `raw.research/ai-news/draft/README.md` related_scopes — still lists agent-docs / ollama-docs / openrouter as "(future)"
+- Inbox: `epoch.scope-sources-verified.2026-07-10.md` — operator mv to archive
+
+**Inbox mails processed this session:**
+- `atlas.migration-pass-scopes.2026-07-10.md` — DONE
+- `epoch.refresh-scope.arch.2026-07-10.md` — DONE
+- `epoch.refresh-scope.laravel.2026-07-10.md` — DONE
+- `epoch.scope-sources-verified.2026-07-10.md` — DONE (data incorporated; archive when convenient)
 
 ---
 

@@ -11,10 +11,6 @@ wiring:
   purpose: >
     Live AI/LLM news feeds — newsletters, practitioners, Czech scene.
     NOT research citations (those live in raw.research/harness/source-catalog.jsonl).
-  related_scopes:
-    - raw.research/agent-docs/    (docs migration — future)
-    - raw.research/ollama-docs/   (docs migration — future)
-    - raw.research/openrouter/    (model catalog — future; replaces qwen-docs scope)
 ---
 
 # Scope: ai-news
