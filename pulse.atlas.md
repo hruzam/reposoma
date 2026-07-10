@@ -62,12 +62,20 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 - `raw.card.refresh.ai-news.md` body replaced with run-log format, seeded with 2026-07-09
   run data from Epoch's first live run. Frontmatter unchanged (half_life_days: 2 per Epoch).
 
-**Tabled — migration pass (after /refresh ai-news verified working by majkee):**
-- Create `agent-docs/`, `ollama-docs/`, `openrouter/` scope folders under `raw.research/`
-  (migrate URL lists from old fetch-* skills)
-- Tombstone `fetch-agent-docs`, `fetch-ollama-docs`, `fetch-qwen-docs`
-- Archive / remove old substrate files from `raw.settings/`
+**Tabled — migration pass (next session, self-mail ready):**
+- Task mail: `_mail/atlas/inbox/atlas.migration-pass-scopes.2026-07-10.md`
+- Source lists VERIFIED by Epoch (2026-07-10) and integrated into that mail:
+  - agent-docs: all 5 old docs.anthropic.com URLs → code.claude.com (301 redirects);
+    3 new pages added (skills · commands · changelog). 8 sources total.
+  - ollama-docs: 2 dead raw github URLs → docs.ollama.com replacements; 3 new sources.
+    7 sources total. Qwen3 live; fallback not needed.
+  - openrouter: /models UI is JS-rendered (no WebFetch); /announcements 404.
+    5 clean sources confirmed. New scope — no prior baseline.
+- Tombstone `fetch-agent-docs`, `fetch-ollama-docs`, `fetch-qwen-docs` (after first confirmed run each)
+- Archive old substrate from `raw.settings/` (operator decides git rm vs archive/)
+- Zenith cleanup: drop (pre-migration) qualifier after agent-docs first run
 - Roster update (openrouter models → triangle.md or similar)
+- Inbox mails to archive: epoch.scope-sources-verified.2026-07-10.md
 
 **Inbox mail:** `epoch.refresh-skill-spec.2026-07-09.md` — processed this session.
 Archive when convenient (operator mv).
