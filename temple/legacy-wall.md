@@ -53,4 +53,37 @@ archive, voice intact.
 
 ---
 
+## freya.devstudio — the studio that dissolved itself
+
+**Lived:** 2026-06-08 → 2026-07-10 · `~/www/imago_cz/freya.devstudio`
+(retirement gaveled 2026-07-10; burial = the archive pass →
+`freya.devenv/archive/devstudio-final/`, history carried whole)
+**Died of:** discovery, not failure. Built as an escape from a vendor generator's
+overwrites, it matured fast — R3 triangulated across three brands, mechanisms locked,
+first cargo authored — and then the fantasyobchod rhythm proved the tier itself
+unnecessary: sovereignty is single-writer + one-direction, not a separate repo.
+The studio's own findings dissolved the need for its existence.
+
+**What lives on in us:**
+- **The temple itself** — founded 2026-06-11 as this project's backlog item **B-T13**.
+  The child outlived the parent, by design.
+- **The writer-partition contract** — W1 vendor / W2 team-visible / W3 private —
+  freya's living harness; candidate 0011 offers it to every Laravel-class project.
+- **The first cargo** — `00-charter` + `parallel-testing` skill, still held on the
+  V3/V4 team gate; the reshape moved its home, never its discipline.
+- **Five canon doctrines** — cost-gradient · one-direction · language-split ·
+  pulse-heartbeat · sovereignty-as-design-force — temple-promotion candidates,
+  awaiting the gavel.
+- **R3 blind triangulation** — three studies, neutral CWD, no shared answer in the
+  brief; the worked proof of decision 0005's "stone" method.
+- **The six-seat project fleet** — houston · epoch · janus · agol · trajectory · delta
+  as a project-scoped constellation; the pattern folds forward, seat by seat.
+- **The June-12 blueprints** — ADR with the AI-agent-note field, tip-harvest harness,
+  scope-manifest pipeline — folded into `.dev/` guides, waiting for their moments.
+
+**Epitaph:** *It escaped the generator, then learned it never needed to flee — only to
+name who writes what. The best studio is the one whose lessons make it unnecessary.*
+
+---
+
 *Future entries append below. Bring only the true weight: name, dates, cause, inheritance.*

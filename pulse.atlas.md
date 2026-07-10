@@ -30,15 +30,31 @@ When she finishes, her output gates the next Atlas work.
 - Ring-trio wiring: cross-refs FROM research-pattern.md / run-synthesis / lab flag TO
   `raw.research/harness/method.ring-trio.md` + skills only when a live run wants them.
   Anchor sits in both homes unwired (majkee directive).
-- Hold-under-observation from the dig: conflicts.md entry grammar (Surface/Deeper/Reading/
-  Decision/Receipts, logged-not-resolved) · stream.review as potential 4th run-shape ·
-  context-tags vocabulary. Extract only on recurring temple pain.
-- Route-later: `larva.dev/.shared/registries/harness.process-aliases.json` = vocabulary
-  evidence for the claviature design session (Houston's board thread) ·
-  `audit.jsonl.schema.json` + `repair.jsonl.schema.json` = seed material for
-  reposoma.devenv's agent-memory back-track (P0 now; LAW-1 = earn it later).
+- **HOLD/ROUTE objects salvaged to `raw.substrate/` (2026-07-10, pre-burial — larva.dev
+  folder may be buried; these no longer depend on it):**
+  - `substrate.larva.conflict-log-grammar.md` — HOLD; trigger: recurring cross-layer
+    conflict in the temple.
+  - `substrate.larva.stream-shapes.md` — HOLD; trigger: 3rd improvised review session →
+    formalize run-review (potential 4th run-shape). Bonus: Entry-Condition + Hard-Stop
+    headings worth stealing at any run-shape revision.
+  - `substrate.larva.context-tags.md` — HOLD; trigger: turn-level intent/risk annotation
+    need. Sharpest bits: HERE/THERE scope deixis · MEM self-degradation flag.
+  - `substrate.larva.process-aliases.md` — ROUTE; trigger: claviature design session
+    (evidence only — registry mechanism stays rejected).
+  - `substrate.larva.jsonl-event-schemas.md` — ROUTE; trigger: reposoma.devenv event
+    ingestion phase (LAW-1 earned) or track-back repair-map pain.
 - guides/ unverified vs majkee's prior extraction: multiagent-safety ·
-  headless-agent-communication · autonomy-mode · mini-vacuole-overview.
+  headless-agent-communication · autonomy-mode · mini-vacuole-overview. (Still in the
+  folder — verify before/despite burial; GitHub remote `hruzam/larva.dev` holds the corpus.)
+- **TABLED — harvest-legacy skill (n=1, waiting for second dig).** majkee asked 2026-07-10;
+  verdict = not yet (one data point; judgment layer is seat-carried temple state, not
+  procedure; assay grammar already in method.ring-trio.md). Design sketch when triggered:
+  skill `/harvest-legacy <path>` — survey structure → dual-track read (own judgment-dense
+  reads + Explore sweep briefed with what-temple-already-has) → redundancy greps vs
+  reposoma/nabla-lab → four-bucket assay (cooled-synthesis instrument) → gavel bundle →
+  landing conventions (canonical home · lab semiproduct record · pulse park · legacy-wall
+  entry if project is dead). Trigger: second legacy dig requested, OR majkee names ≥2
+  queued candidates. The larva session (this entry) is the live spec.
 
 ---
 
