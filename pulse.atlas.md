@@ -8,19 +8,117 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
-## YOU ARE HERE — [2026-07-10] — read this first, then scan the log
+## YOU ARE HERE — [2026-07-11] — read this first, then scan the log
 
-**Waiting on Oraculum:**
-`reposoma/_mail/oraculum/inbox/atlas.freya-reshape-brief.2026-07-09.md` — sent, unread.
-Oraculum is in session auditing freya.devstudio architecture (started 2026-07-09/10).
-When she finishes, her output gates the next Atlas work.
+**Oraculum gate OPENED → stones DELIVERED.** Directive
+`_mail/atlas/inbox/oraculum.freya-writer-partition-directive.2026-07-10.md` processed
+2026-07-11: A (horizon) + B (freya-context) + P0 rescue + writers map all landed in
+`freya/` (see 2026-07-11 entry below). Tabled items A + B **CLOSED**.
 
-**Tabled — blocked on Oraculum gate (in order):**
-1. **A — freya horizon** → canonical home TBD (likely `freya.devstudio/agents/horizon.md` + deploy to `freya/.claude/agents/`)
-2. **B — freya-context skill** → canonical home TBD (likely `freya.devstudio/skills/freya-context/SKILL.md` + deploy to `freya/.claude/skills/`)
-3. **C — new-project global skill** → `~/.claude/skills/new-project/SKILL.md` — parked by majkee; needs substrate check first.
+**Next in sequence:** majkee gate CLEAN → **Trajectory P1 DONE 2026-07-11** (all
+checkboxes ticked in `freya/.dev/session/p1-reshape/brief.atlas-handoff.md`; report
+relayed). Remote block RESOLVED + **CONFIRMED (@Delta):** legacy `hruzam/freya.devenv`
+reclaimed — origin wired, `core` pushed + tracking + default branch, `devs` deleted,
+repo PRIVATE. **W3 durability gap CLOSED** (temple layer git-backed off-disk).
+Also gaveled: graveyard sections moved OUT of live CLAUDE.md →
+CLAUDE.local.md (sole sanctioned W1 hand-edit; rescue file annotated for the
+backup-diff lane). Then: registry beacon rewrite (A4, Houston) → archive pass
+(P2, incl. fleet fold — per-seat call with majkee).
 
-**Standing overlay:** Fable sunset in force — no Fable spawns. advisor-high deferred to 2026-07-12.
+**Still tabled:**
+- **Publishing trial (GAVELED 2026-07-11, N=4h) — DORMANT until trigger.** majkee is
+  mid-other-work; nothing starts on its own. Trigger: majkee says **"publishing-trial: go"**
+  in any session → run the kickoff sequence in the 2026-07-11 publishing entry below.
+  Do NOT nag about it on saddle — surface only if he asks or triggers.
+- **C — new-project global skill** → `~/.claude/skills/new-project/SKILL.md` — parked by
+  majkee; needs substrate check first. (Three data points now: psdvsSys + fantasyobchod
+  + freya authored-in-place.)
+- ~~Expect majkee _mail re: zsh fork~~ **CLEARED 2026-07-11 (direct word, no _mail):**
+  guides audited + smoothed, narrowed to reality. keyboard.zsh wiring is unblocked for
+  Trajectory at P1 — freya PROJECT.yaml transport-requirements updated to match.
+
+**Standing overlay:** Fable sunset in force — no Fable spawns. advisor-high deferred to
+2026-07-12. (2026-07-11 session ran on Fable by explicit operator model switch —
+escape valve, not a precedent.)
+
+**Standing — zsh machine layer STALE-MEMORY WARNING (majkee, 2026-07-11):** keyboard.zsh
+(PARTITION 11 devenv keys) + guides shifted several times on 2026-07-11 (majkee's guide
+audit ∥ Trajectory's P1 wiring — parallel sessions). Before ANY commit/ia-sync touching
+`~/.config/zsh/` (keyboard.zsh · guide-for-user.md · guide-for-builder.md): RE-READ from
+disk fresh — never act from held/session memory; verify PARTITION 11 and the audited
+guides still agree. Applies to me and any executor I dispatch.
+**First hit 2026-07-11 (same day):** majkee review caught P1's PARTITION 11 putting
+FUNCTION BODIES in keyboard.zsh — violates the control-panel convention (keyboard =
+aliases only; engines = dedicated ai/ processor scripts wired via base.zsh; exemplar:
+temple-tree.zsh mount). Repair DONE + verified (@Trajectory, guides-first, fresh reads):
+engine extracted to `ai/devenv.zsh` (named per adr-guard non-temple-family exemplar —
+scope keyword, no false family prefix) · base.zsh PARTITION 6 wires it (after
+temple-tree's 5) · keyboard.zsh PARTITION 11 = comment-only control-panel block ·
+zsh -n clean ×3 · live chain: all 7 keys resolve from the engine · guide-for-user:141
+still accurate, untouched. NOT committed (operator-gated ia-sync pass).
+**Round 2 DONE (@Trajectory):** P11 = 7 literal aliases (engine entry points renamed
+`_bo_*`/`_fr_*`/`_devenv_help`) · temple-help was in P10 (not 9) → `_temple_help` in
+NEW `ai/claude.zsh` (majkee's floated name fit: Claude Code RC surface domain) ·
+P8 `rc-stop` → `_rc_stop` in claude.zsh, other rc-* were already plain aliases ·
+base.zsh PARTITION 7 sources claude.zsh · doorbell rail NOT triggered (P8/9/10 are
+RC + mail/help surfaces; doorbell-smoke + transport-selftest untouched) · zsh -n ×4 +
+13-key chain GREEN · guides accurate, untouched · NOT committed.
+**Tail CLOSED:** @Delta functional test = GREEN, no fix needed — `ai-help` prints both
+help sections clean. Empirics beat my parse-time theory (trust-disk-over-model held);
+files untouched. Baseline recorded: `zsh -ic 'source base.zsh; ai-help'` = GREEN.
+**Round 3 DISPATCHED (majkee review widened scope):** function bodies found in almost
+EVERY keyboard partition (gemini family nearly whole in the panel despite own
+processor) — his verdict: today's guide audit fixed words, not code. @Trajectory brief:
+(A) keyboard-wide sweep, scope-correct engines (gemini → own engine, NOT claude.zsh) ·
+(B) processor.sh → gemini-processor.sh + in-tree ref fixes, out-of-tree refs listed
+for operator · (C) .sh/.zsh rule DERIVED from disk (sourced-engine .zsh vs bash-exec
+.sh expected), rename only true mismatches · (D) guides repaired to post-cleanup
+reality (control-panel rule, scope-naming, partition maps). Rails: 0009-L5 split,
+behavior identical, ai-help baseline re-test, no commits. majkee lesson boarded:
+"sit and control more often" — mirrored on Atlas side as the brief-gate rule above.
+**Round 3 DONE (@Trajectory, 13 files):** keyboard fully swept — P4 agy wrappers +
+P6 hygiene + P7 help bodies → NEW `ai/gemini.zsh` engine (base.zsh PARTITION 8);
+`ai-help` → `_ai_help` in claude.zsh (cross-scope aggregator belongs with top-level
+help bodies; keyboard keeps alias) · processor.sh → `gemini-processor.sh` + ALL
+in-tree refs fixed (vega/orby/astrobley/bluebottle .sh, keyboard, AGENTS.md, README,
+guide-for-builder) · .sh/.zsh rule derived + WRITTEN to guide (.zsh = sourced/zsh-syntax;
+.sh = standalone bash subprocess, gemini line deliberate since 07-03) · guide-for-builder
+gains "Architecture rules" (control-panel convention · processor scope-naming ·
+partition maps · engine inventory, as of 2026-07-11) · ai-help functional GREEN ×2
+(before + after deletion). **Operator items:** (1) ia-sync run propagates the rename —
+9 stale refs listed in Trajectory's report (incl. old processor.sh still present in
+ia-sync tree); (2) pre-existing doc/code mismatch: `_gai_graceful_fail` + `_gai_model`
+in gemini-agents-help text but not implemented in gemini-processor.sh — remove from
+help or stub, majkee's call. Machine layer now style-clean; words = code.
+**Round 4 DISPATCHED (majkee: one file per scope):** merge gemini.zsh INTO
+gemini-processor.sh (survivor, .sh = majkee lean), kill gemini.zsh, re-point base.zsh
+P8 · KEEP all function bodies (kill file not code — legacy gets `# LEGACY? — majkee
+audit` tags + report list, he audits later) · dual-source risk named: file feeds both
+interactive zsh AND bash launchers — both chains verified, syntax conflicts = stop-items
+not silent rewrites · guide Architecture rules amended to the gavel (dual-sourced .sh
+scope file = gemini exemplar; interactive-only engines stay .zsh).
+**Session close (majkee off until Sunday):** Oraculum FYI mail sent
+(`_mail/oraculum/inbox/atlas.freya-directive-executed-and-fixes.2026-07-11.md` — directive
+closed + 5 deviations for her model) · monkey test-checklist mail sent
+(`_mail/monkey/inbox/atlas.monkey-not-forget-freya-testing.2026-07-11.md` — 12 items:
+shell reload · gemini live run · fr-sync first-run diff expectation · voyager/skill/
+CLAUDE.local proofs · .ai/ experiment · ia-sync + ghost decisions) · therapy ARC 3
+OPENED (`raw.therapy/atlas/therapy.md` — brief-gate enforce-vs-cite watch · theory-lost-
+to-disk datum · self-shrinking third occurrence + pending Q to majkee; his side Sunday).
+**Round 4 DONE (@Trajectory, 7 files):** gemini-processor.sh = single dual-sourced
+scope file (subprocess core `_gai_*` + interactive surface, sectioned) · gemini.zsh
+DELETED, zero refs remain (grep-proven) · base.zsh P8 re-pointed · keyboard P4/P6/P7
+comments updated · dual-source VERIFIED both chains (bash: 12/12 resolve · zsh: 6/6
+resolve · vega.sh sane) — all bodies bash/zsh compatible, no stop-items · guides +
+AGENTS.md + README amended to the one-file-per-scope gavel; gemini.zsh in Removed
+section. LEGACY finding: `_gai_model` + `_gai_graceful_fail` = pure DOC GHOSTS (never
+implemented, never called by live code) — tagged inline in gemini-agents-help() for
+majkee audit; earlier round-3 stop-item hereby explained. **ia-sync pending delta
+(one operator pass covers rounds 2–4):** devenv.zsh + claude.zsh NEW ·
+gemini-processor.sh NEW (merged) · processor.sh + gemini.zsh DELETE · keyboard/base/
+launchers ×4/README/AGENTS.md/guide-for-builder MODIFIED. Lesson for future briefs: any machine-layer task MUST name
+guide-for-builder.md as the style LAW up front and force the pattern-read BEFORE
+writing — the P1 brief said "honor principles" but did not enforce the read order.
 
 **Standing — therapy uptake check (majkee, 2026-07-10):** on saddle, if
 `raw.therapy/atlas/therapy.md` `#last-turn` is >7 days old AND offered/shifting tags are
@@ -34,9 +132,9 @@ check) + seats writing small acks in ballot-scannable shape · temple Foreman pa
 single-writer exception, declared in the entry itself; Houston may rewrite in his own
 words. Companion mail in his inbox stands.)*
 
-**Inbox (atlas):** 
+**Inbox (atlas):**
 - `houston.defer-advisor-high-fable-paygo.2026-07-07.md` — already acted on, archive-pending (operator mv).
-- Check for new items on re-entry.
+- `oraculum.freya-writer-partition-directive.2026-07-10.md` — PROCESSED 2026-07-11; archive when convenient (operator mv).
 
 **Parked — larva excavation follow-ups (2026-07-10, no deadline, off main task line):**
 - Ring-trio wiring: cross-refs FROM research-pattern.md / run-synthesis / lab flag TO
@@ -67,6 +165,159 @@ words. Companion mail in his inbox stands.)*
   landing conventions (canonical home · lab semiproduct record · pulse park · legacy-wall
   entry if project is dead). Trigger: second legacy dig requested, OR majkee names ≥2
   queued candidates. The larva session (this entry) is the live spec.
+
+---
+
+## [2026-07-11] — publishing trial GAVELED (convergence-log v2) + therapy arc 2
+
+**Task source:** majkee direct, in-session. Idea: publish occasional articles reporting the
+temple's working style (co-written human+agent, not a blog). Atlas hard-critique → narrowed
+plan; @Janus adversarial pass → REVISE (weakest assumption: internal artifact ≠ publishable
+artifact — the outward rewrite is a second authorship pass, and bundling formats lets the
+expensive one set the true cost); fold accepted; **majkee gaveled v2, N = 4 hours.**
+
+**Locked plan (v2):**
+- **Trial window:** 3 convergence-log articles / 8 weeks. Convergence-logs ONLY — autopsy
+  format excluded from the window.
+- **Format unit:** dated internal receipt (commit/pulse/seed) · external publication ·
+  delta both directions. Direction recorded honestly — article #1 is external-first.
+- **Cost kill criterion:** N = 4 hours net-new authorship per article beyond the internal
+  artifact. Wall-clock hours logged from article #1. Breach = format dead on cost,
+  regardless of engagement.
+- **Engagement kill criterion (window end):** builders responding — replies / forks /
+  pattern adoption. Likes are not signal.
+- **STANDING RULE — autopsy precondition:** a system-autopsy is publishable ONLY from seeds
+  written and locked *before* any publish-decision existed. Never write-to-publish
+  (specimen protection — the audience must not contaminate the archive). This rail travels
+  into the eventual reporter primitive. Note: the larva autopsy already passes the gate
+  (pulse + legacy-wall written 07-10, zero publish intent).
+- **Filter (unchanged from narrowed plan):** publish only if (1) survived a death/challenge
+  on record, (2) vendor-invariant not mechanism, (3) dated receipt, (4) cost something.
+  Never client-identifying (freya team). Never vendor-doc restating.
+- **No reporter primitive until n≥2 articles.** Lean when triggered: skill, not agent.
+  Intake already exists organically: `raw.research/ai-news/majkees-catches/` → Symmetry seed.
+- **Before article #1 ships:** @Epoch verification pass on the actual SkillOpt paper
+  (arXiv 2605.23904) — every number, benchmark name, the ID, and the system name itself.
+  Source post is hype-styled; one wrong citation kills the credibility play at birth.
+
+**Article #1 candidate:** SkillOpt convergence log. Sources:
+`raw.research/ai-news/majkees-catches/self-improovement.md` (external catch) +
+`seed.validated-edit-discipline.2026-07-11.md` (Symmetry extraction — internal shape, needs
+full outward rewrite, hours counted).
+
+**Trigger / kickoff (added same session, majkee):** the trial is gaveled but **DORMANT** —
+majkee is mid-other-work; the gavel armed it, the trigger fires it.
+- **Trigger event:** majkee says **"publishing-trial: go"** in any session. The phrase is
+  the canonical key, not a magic string — any wording that clearly means it counts; when
+  in doubt, ask him once.
+- **Kickoff sequence on trigger:** (1) dispatch @Epoch — verification pass on arXiv
+  2605.23904 (every number · benchmark names · the ID · the system name itself);
+  (2) on Epoch's return, open the article #1 drafting session (sources: the two
+  `majkees-catches/` files); (3) hours log starts at the first outward-facing sentence —
+  reading and Epoch time don't count against N.
+- **Window clock:** the 8-week / 3-article window starts at the trigger, not at the gavel.
+- **Mechanism deliberately absent:** no hook, no reminder, no self-mail. The tabled item
+  rides every Atlas saddle — that is the whole doorbell. Surface it only on trigger or
+  on majkee's question.
+
+**Also this session:**
+- Therapy arc 2 written → `raw.therapy/atlas/therapy.md` (majkee gavel): hardness-on-request
+  watch (analyzed) + self-shrinking-before-ask observation, 2nd occurrence (therapist).
+  Footer tags + `#last-turn` updated.
+- @Janus spawned (Opus — outside the Fable sunset overlay). Verdict REVISE, folded into v2.
+- No new primitives written — held by design (mechanism-before-method refusal, n=0).
+
+---
+
+## [2026-07-11] — freya writer-partition stones + P0 rescue DONE
+
+**Task source:** `_mail/atlas/inbox/oraculum.freya-writer-partition-directive.2026-07-10.md`
+(reshape resolved: fantasyobchod model, three-tier topology dead, devstudio retires by
+harvest) + majkee in-session additions (provenance manifest, deploy-guard, keyboard-wiring
+spec, English-for-us rule).
+
+**Delivered (12 files + 1 edit — all in `freya/`, all English, ©temple-stamped):**
+- `.claude/agents/horizon.md` — tutor-architect; psdvsSys 1:1 structure, freya layer baked
+  (L13/8.4/Livewire4/Pest4/Larastan-L6-sequential · Skaven CSS/Tailwind ban · Czech PHP
+  comments · RoadRunner · W1 never-touch guards · altitude reserved-names guard ·
+  Stop-hook log line tagged `freya:horizon:stop`)
+- `.claude/skills/freya-context/SKILL.md` — `/freya-context` orientation; Boost-survival
+  risk noted in header; unique name verified vs the managed skill set
+- `CLAUDE.local.md` — army half of the client header, EN
+- `.dev/rescue/claude-header-team.md` — team half, EN translation of the Czech original;
+  graduates to `.ai/guidelines/` at V3/V4 only, diff vs 00-charter first
+- `.dev/rescue/README.md` + `.dev/rescue/zed-settings.json.backup-2026-07-11` (context_servers wiring)
+- `.dev/graveyard/laravel-13.md` — moved from devstudio; paratest section ANNOTATED with
+  the flag.md 2026-06-09 correction (deliberate non-verbatim — stale claim not carried silently)
+- `.dev/guides/bulk-query-ladder.md` (II.2) · `metrics-sizing.md` (II.3) ·
+  `mcp-economy.md` (II.4 + II.1 three-dial absorbed; B6 merge placeholder for Trajectory)
+- `.dev/adr/_template.md` — ADR with AI-agent-note field (the compile-down bridge)
+- `.dev/PROJECT.yaml` — contract (psdvsSys shape parity) + **WRITERS MAP** (W1 `skip` /
+  W2 `sync` / W3 `sync` / CLAUDE.md `backup-diff` special lane) + MCP local-scope rule +
+  provenance-stamp convention + transport spec for Trajectory: **deploy-guard**
+  (branch+HEAD+dirty stamp at sync, compared before deploy — fantasyobchod double-blind
+  incident is the origin) · **keyboard.zsh wiring** (per-project keys, parametrized body
+  Trajectory's call, guide-for-builder principles honored, wait for majkee's zsh _mail) ·
+  fresh-clone exclude re-apply. Seeded early (B5 touch, majkee-sanctioned) — Trajectory
+  EXTENDS, never recreates.
+- `freya/.git/info/exclude` — `CLAUDE.local.md` line added (client .gitignore untouched)
+
+**Verified live this session (claude-code-guide vs code.claude.com):**
+- `CLAUDE.local.md` still auto-loaded — documented, NOT deprecated (H-confidence)
+- MCP scopes = separate stores; `.mcp.json` regen cannot touch local/user scope →
+  the "temple MCPs local-scope-only" rail is sound
+
+**Flags routed to the majkee gate:**
+- **`.ai/` is GITIGNORED by the team** (freya/.gitignore:58) — contradicts the directive's
+  W2 contract AND the R3-verified "commit `.ai/` entirely" mechanism. Team cargo delivery
+  is broken until the team un-ignores it. Recorded as `blocker:` in the writers map →
+  route to Houston/Oraculum.
+- **horizon naming adjacency:** laravel/horizon v5 installed + Boost generates a
+  `configuring-horizon` skill. Kept `horizon` (agent/skill/package namespaces differ;
+  one-pattern parity with psdvsSys). Rename option (`horizon-tutor`) stays open.
+- **psdvsSys drift noted, not touched:** its horizon.md says "(Laravel 11 / psdvsSys
+  stack)" but carries a "Laravel 13 specifics" heading; its PROJECT.yaml mixes L13.x /
+  "Greenfield Laravel 11" / PHP 8.3+. Out of this scope — flag for a psdvsSys pass.
+
+**POST-GAVEL (same day, majkee rulings):**
+- **horizon → voyager, BOTH Laravel projects** (laravel/horizon v5 adjacency in freya;
+  cross-project name consistency). Done: `freya/.claude/agents/voyager.md` +
+  `psdvsSys/.claude/agents/voyager.md` written (freya body gains a one-line
+  disambiguation vs the queue-dashboard package; psdvsSys = pure rename, L11/L13 drift
+  left flagged); PROJECT.yaml agent lists both repointed; psdvsSys AGENTS.md rows 50+78
+  repointed; old horizon.md files removed via @Delta; hook logs → `~/.claude/voyager.log`
+  tagged `freya:voyager:stop` / `psdvs:voyager:stop`. Ecosystem note: tcg/voyager exists
+  but is installed in neither project. Stale `~/.claude/horizon.log` left for operator rm.
+- **W2 lane → STAGED mode** (majkee): `.ai/` rides the devenv sync while the team
+  gitignores it — Boost compiles per-machine from local `.ai/`, so majkee gets compile-ON
+  / distribution-OFF for solo experiments + team demos. Promotion = `.gitignore:58` flip
+  (Gotak/Skaven acceptance); files never move. Writers map + freya-context updated.
+  Experiment protocol handed to majkee (marker guideline → `boost:update` → check
+  generated CLAUDE.md; side effects covered by .dev/rescue/).
+- Directive mail archived by operator (own tool).
+- **zsh precondition CLEARED** (majkee direct, no _mail): guides audited + smoothed,
+  narrowed to reality → keyboard.zsh wiring unblocked; PROJECT.yaml updated.
+- **P1 DISPATCHED → @Trajectory** (background run, this session). Brief:
+  `freya/.dev/session/p1-reshape/brief.atlas-handoff.md` — D1 devenv+gh · D2
+  writers-map-driven sync/deploy + deploy-guard + CLAUDE.md backup-diff · D3
+  keyboard.zsh keys · D4 Addenda A+B migration (incl. Houston flag-mail for R3
+  templates) · D5 PROJECT.yaml extend. Rails: P1 only, devstudio read+copy,
+  no W1 touches, stop-don't-guess.
+- Publishing-trial item (parallel incarnation): majkee confirmed — his fast idea,
+  consulted with the harness creator directly, PARKED. No action; stays dormant
+  per its own trigger clause.
+- **P1 COMPLETE (Trajectory, same day, ~15 min run):** devenv built (3 commits,
+  branch `core`, remote BLOCKED — see YOU ARE HERE) · sync.sh/deploy.sh
+  writers-map-driven with deploy-guard `.deploy-stamp` + CLAUDE.md backup-diff lane ·
+  keyboard.zsh PARTITION 11 (`fr-sync/deploy/status`, `bo-*`, shared `_devenv_*` body,
+  `devenv-help`) + guide-for-user devenv section · full Addenda A+B migration landed
+  in `freya/.dev/` (flag wholesale + 5 sections marked superseded · backlog.md ·
+  ADR stubs 0001/0002 · research/ ×4 · discord scaffold · B6 merge · tip-harvest ·
+  sources.md) · Houston flag-mail sent (r3-templates) · PROJECT.yaml extended.
+  Verified: bash/zsh syntax clean · freya app repo untouched (0 staged) · W1 exclusion
+  confirmed in both scripts. Flags: freya/CLAUDE.md:34 dead devstudio pointer (W1 —
+  self-heals via rescue header at next Boost regen or team edit) · branch `core` vs
+  `main` = operator taste call before remote wiring.
 
 ---
 
