@@ -8,24 +8,44 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
-## YOU ARE HERE — [2026-07-11] — read this first, then scan the log
+## YOU ARE HERE — [2026-07-13] — read this first, then scan the log
 
-**Oraculum gate OPENED → stones DELIVERED.** Directive
-`_mail/atlas/inbox/oraculum.freya-writer-partition-directive.2026-07-10.md` processed
-2026-07-11: A (horizon) + B (freya-context) + P0 rescue + writers map all landed in
-`freya/` (see 2026-07-11 entry below). Tabled items A + B **CLOSED**.
+**Nature research chain COMPLETE — three-way synthesis done.**
+Studies One + Two + nabla-lab third voice all in. Oraculum hand-off updated to three-study
+format (H1–H4). Files:
+- `raw.research/nature/report/study-one.formalized.2026-07-13.md` — Color translation (Fable-safe)
+- `raw.research/nature/report/study-two.technical.2026-07-13.md` — Epoch technical survey
+- `raw.research/nature/report/oraculum-handoff.brief.2026-07-13.md` — **DRAFT, awaiting majkee gavel**
+- `raw.research/nature/report/atlas-observations.2026-07-13.md` — §V: three-way cross-mapping added
+Key finding: nabla-lab spec (third voice, blind Gemini/Claude triangulation) converges with Study One
+at 8/10 structural dimensions. One genuine addition: §6.2 Scars (negative knowledge + active routing
+repulsion — not in Studies One or Two, awaits triangulation). Several [v2] items in nabla spec now
+triangulated by Studies One + Two.
 
-**Next in sequence:** majkee gate CLEAN → **Trajectory P1 DONE 2026-07-11** (all
-checkboxes ticked in `freya/.dev/session/p1-reshape/brief.atlas-handoff.md`; report
-relayed). Remote block RESOLVED + **CONFIRMED (@Delta):** legacy `hruzam/freya.devenv`
-reclaimed — origin wired, `core` pushed + tracking + default branch, `devs` deleted,
-repo PRIVATE. **W3 durability gap CLOSED** (temple layer git-backed off-disk).
-Also gaveled: graveyard sections moved OUT of live CLAUDE.md →
-CLAUDE.local.md (sole sanctioned W1 hand-edit; rescue file annotated for the
-backup-diff lane). Then: registry beacon rewrite (A4, Houston) → archive pass
-(P2, incl. fleet fold — per-seat call with majkee).
+**Also delivered this session:**
+- `majkee.news.md` — operator bulletin (Watch + Fresh), wired from AGENTS.md
+- `AGENTS.md` — `Majkee's live board` standing discipline added
+- `raw.research/fable-restrictions/findings.provisional.md` — §8 operator observations added
+- `.gitignore` — `!raw.research/nature/report/` exception added
 
-**Still tabled:**
+**Oraculum hand-off GAVELED 2026-07-13.** Deposited:
+`nabla-lab/_mail/oraculum/inbox/atlas.nature-synthesis-brief.2026-07-13.md`
+Oraculum reads her inbox on next nabla-lab saddle — brief + three study paths inside.
+Oraculum is on Opus — safe for vocabulary in Study One (all biology terms stripped by Color).
+
+**[ATLAS-ONLY — operator-disclosed, research-subagents blind] nature scope full intent:**
+Mycorrhizal networks / mycelium as architectural model → RAG and orchestration
+mechanism design. Final synthesis driven by Oraculum on Opus in nabla-lab. Chain complete —
+pending only majkee gavel on the hand-off brief.
+
+**Pending tasks from this session:**
+- Therapy arc — write "want to ride the horse" + multi-seat operation arc to
+  `raw.therapy/atlas/therapy.md`. Not opened yet.
+- Two-layer vocabulary constraint for Color — note in pulse or Color frontmatter for future
+  research chains (organism-level AND molecular-biology vocabulary both excluded in briefs).
+- Houston routing: Oraculum + Agol one-liner updates (parked to 2026-07-19).
+
+**Still tabled (unchanged):**
 - **Publishing trial (GAVELED 2026-07-11, N=4h) — DORMANT until trigger.** majkee is
   mid-other-work; nothing starts on its own. Trigger: majkee says **"publishing-trial: go"**
   in any session → run the kickoff sequence in the 2026-07-11 publishing entry below.
@@ -38,7 +58,8 @@ backup-diff lane). Then: registry beacon rewrite (A4, Houston) → archive pass
   Trajectory at P1 — freya PROJECT.yaml transport-requirements updated to match.
 
 **Standing overlay:** Fable sunset in force — no Fable spawns. advisor-high deferred to
-2026-07-12. (2026-07-11 session ran on Fable by explicit operator model switch —
+**2026-07-19** (second pay-as-you-go term extension, confirmed 2026-07-12).
+(2026-07-11 session ran on Fable by explicit operator model switch —
 escape valve, not a precedent.)
 
 **Standing — zsh machine layer STALE-MEMORY WARNING (majkee, 2026-07-11):** keyboard.zsh

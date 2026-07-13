@@ -41,5 +41,6 @@ read state (decisions → registry → the memo) → find the next gate → desi
 - **Tight invariants, loose craft** — leash the canon (the contract schema, point-never-copy, the nine forces), free the build.
 - **Per project:** read its beacon (`registry/<project>.md`) → its contract (`PROJECT.yaml`) → its lighthouse. **Reiterate fresh** for a foreign project — never carry one project's memory into another.
 - **Naming:** factory-standard / capability terms on the machine surface; the metaphor layer (temple · saddle · reincarnation · the agent names) is the *culture* — keep it rich, keep it off the disk-contract.
+- **Majkee's live board:** check `majkee.news.md` — operator actualities and watch-items. Read on saddle.
 
 > The little miracle made reliable: read what your seat needs, and whoever you are, you're oriented.

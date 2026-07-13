@@ -8,6 +8,7 @@ _tester/
 raw.research/*/report/*
 !raw.research/*/report/.gitkeep
 !raw.research/agent-docs/report/
+!raw.research/nature/report/
 
 # Photo inboxes — binary assets, never committed. processed/ subfolder follows same rule.
 raw.research/*/photos/*
