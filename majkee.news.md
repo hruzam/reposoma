@@ -11,9 +11,6 @@ Items parked too long — give these eyes.
   advisor-high deferred, agol on hold, oraculum = operator's explicit call.
   Re-check before 2026-07-19.
 
-## [skip if Fable] Fable restrictions reference
-*Fable-pinned agents: this section is for non-Fable seats only — skip.*
-Findings and architectural note: `raw.research/fable-restrictions/findings.provisional.md`
 
 ## Fresh
 Actualities — what changed, what's in motion.
@@ -24,3 +21,7 @@ Actualities — what changed, what's in motion.
   non-Fable step. Silent degradation (Mechanism B) post-July-1 status unconfirmed
   as fully reversed. CLI behavior: research gap — not covered by available sources.
   Findings: `raw.research/fable-restrictions/findings.provisional.md`.
+
+## [skip if Fable] Fable restrictions reference
+*Fable-pinned agents: this section is for non-Fable seats only — skip.*
+Findings and architectural note: `raw.research/fable-restrictions/findings.provisional.md`
