@@ -9,12 +9,13 @@
 | reposoma (temple / meta-repo) | office | live | — (this repo) | `temple/README.md` |
 | subai.devenv | office | cleared 🟢 | [`registry/subai.devenv.md`](subai.devenv.md) | `README.md` · `PROJECT.yaml` · siblings: reposoma.devenv, piql.dev |
 | reposoma.devenv | office | onboarding (§D locked) | [`registry/reposoma.devenv.md`](reposoma.devenv.md) | `CLAUDE.md` · charter `synth.restart.reposoma.md` · siblings: subai.devenv, piql.dev |
-| freya.devstudio | office | active | [`registry/freya.devstudio.md`](freya.devstudio.md) | `CLAUDE.md` · `pulse.md` · `PROJECT.yaml` · siblings: piql.dev |
+| freya.devstudio | office | active | [`registry/freya.devstudio.md`](freya.devstudio.md) | `CLAUDE.md` · `pulse.md` · `PROJECT.yaml` · siblings: piql.dev, applications-in-common |
 | piql.dev | office | active | [`registry/piql.dev.md`](piql.dev.md) | `PROJECT.yaml` · `session/mesh-state.md` · siblings: freya.devstudio, subai.devenv |
 | vacuole | office | building | [`registry/vacuole.md`](vacuole.md) | `pulse.md` · `PROJECT.yaml` · `AGENTS.md` · siblings: reposoma · methods: vacuole-mini (#1), anechoic (#2) |
-| nabla-lab | office | building | [`registry/nabla-lab.md`](nabla-lab.md) | `PROJECT.yaml` · `AGENTS.md` · `session/` |
+| nabla-lab | office | building | [`registry/nabla-lab.md`](nabla-lab.md) | `PROJECT.yaml` · `AGENTS.md` · `session/` · siblings: applications-in-common |
 | fantasyobchod | home | active/maintenance | [`registry/fantasyobchod.md`](fantasyobchod.md) | `AGENTS.md` · `CLAUDE.md` · siblings: freya.devstudio |
 | psdvsSys | home | active/bootstrap | [`registry/psdvsSys.md`](psdvsSys.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/flag.md` |
+| applications-in-common | home | active/bootstrap | [`registry/applications-in-common.md`](applications-in-common.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/hypotheses.md` · siblings: freya.devstudio, nabla-lab |
 
 ## Sibling-graph (who shares what)
 - **subai.devenv ↔ reposoma.devenv** — share **spectral · bus/`_mail` · X→Z research · file-native medium**.
@@ -23,6 +24,8 @@
 - **piql.dev** — precursor temple/template origin; the reposoma temple is the v3 successor.
 - **vacuole → reposoma** — extends the temple's **therapy + reflection-channels** practice into deliberate methods (one project; methods as modules, vacuole-mini = #1).
 - **nabla-lab → [all projects]** — research supplier; shapes mathematical ideas (instrument cards, papers, seeds) into cleared artifacts that feed downstream implementations. Standalone third-party; no formal infrastructure shared yet — edges form as outputs are adopted.
+- **applications-in-common ↔ freya.devstudio** — share **ui-bricks**: element patterns proven in the playground (`bricks/`, provenance-headed) are adoption candidates for freya UI; freya's element questions seed playground hypotheses. Scopes stay separate — playground tests, freya ships.
+- **nabla-lab → applications-in-common** — first named supplier edge: the lab shapes ideas; the playground is the grounded practical sibling (mechanisms tested against reality via the H-ledger, survivors promoted as bricks). Deliberately NOT one project — different scope, shared usage as outputs mature.
 > **Graph still-filling:** freya.devstudio beacon deposited (2026-06-23); edge freya.devstudio ↔ piql.dev confirmed. nabla-lab beacon deposited (2026-06-27); supplier edges open. Graph settling.
 
 ## Shared layers (cross-cutting — not projects, but teams need them)

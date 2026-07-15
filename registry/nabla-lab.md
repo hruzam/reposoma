@@ -6,10 +6,10 @@ host: office
 status: building
 contract: PROJECT.yaml
 lighthouse: AGENTS.md
-sibling-of: []
-shares: []
+sibling-of: [applications-in-common]
+shares: [grounded-application edge]
 deposited-by: atlas
-updated: 2026-06-27
+updated: 2026-07-14
 ---
 
 # nabla-lab — beacon
@@ -21,6 +21,11 @@ reinventing-the-wheel · theatre · technical-wall. Cleared artifacts push downs
 existing projects or earn their own project seat.
 
 The lab is a research supplier. It does not own implementations.
+
+Sibling: **applications-in-common** (`registry/applications-in-common.md`) — the
+grounded practical-application sibling: UI mechanisms tested against reality
+(hypothesis ledger) and promoted as adoptable bricks. Deliberately separate scope
+(craft playground vs research lab); usage shared as outputs mature in either direction.
 
 ## Read first (the anchors — POINTERS, never copies)
 - contract   → PROJECT.yaml

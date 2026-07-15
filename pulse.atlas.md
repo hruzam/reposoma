@@ -10,6 +10,21 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ## YOU ARE HERE — [2026-07-13] — read this first, then scan the log
 
+**applications-in-common ESTABLISHED + HANDED TO PROJECT SADDLE (closed 2026-07-14)** —
+full arc in one session-chain: bootstrap → factory clause (`bricks/`) → both repos live
+on GitHub (`core`, private) → first research pass landed (`.dev/research/`, two scopes) →
+H1 reshaped under gavel (H1a/H1b) → **RELOCATED to scope group
+`~/www/elements-factory/`** (both folders, mv not copy; all live pointers rewired,
+@Delta verified). Next runs happen FROM the project (AGENTS.md → flag → pulse →
+hypotheses); Atlas re-enters only for new primitives. **CANON GAVELED 2026-07-14:**
+`raw.canon/canon.project-topology.md` (two-repo pair · scope-group MANDATE, even at
+n=1) — tabled skill C substrate now written law. **Sibling edges wired (same gavel):**
+applications-in-common ↔ freya.devstudio (ui-bricks adoption) · nabla-lab →
+applications-in-common (first named supplier edge). Registry graph + 3 beacons +
+project AGENTS.md updated; FYI mails → houston + both oraculum seats. Devenv sync
+pass dispatched to @Delta (carries harness edits + relocation pointer edits +
+sibling section). Full entry below.
+
 **Nature research chain COMPLETE — three-way synthesis done.**
 Studies One + Two + nabla-lab third voice all in. Oraculum hand-off updated to three-study
 format (H1–H4). Files:
@@ -51,8 +66,11 @@ pending only majkee gavel on the hand-off brief.
   in any session → run the kickoff sequence in the 2026-07-11 publishing entry below.
   Do NOT nag about it on saddle — surface only if he asks or triggers.
 - **C — new-project global skill** → `~/.claude/skills/new-project/SKILL.md` — parked by
-  majkee; needs substrate check first. (Three data points now: psdvsSys + fantasyobchod
-  + freya authored-in-place.)
+  majkee; substrate check now DONE: `raw.canon/canon.project-topology.md` (GAVELED
+  2026-07-14) is the written spine; four data points (psdvsSys + fantasyobchod + freya
+  + applications-in-common). When triggered, the skill = thin procedure over the canon
+  (mkdir scope-group → pair scaffold → registry beacon + index row + temple-project-map
+  entry → devenv first sync). Trigger stays majkee's.
 - ~~Expect majkee _mail re: zsh fork~~ **CLEARED 2026-07-11 (direct word, no _mail):**
   guides audited + smoothed, narrowed to reality. keyboard.zsh wiring is unblocked for
   Trajectory at P1 — freya PROJECT.yaml transport-requirements updated to match.
@@ -186,6 +204,121 @@ words. Companion mail in his inbox stands.)*
   landing conventions (canonical home · lab semiproduct record · pulse park · legacy-wall
   entry if project is dead). Trigger: second legacy dig requested, OR majkee names ≥2
   queued candidates. The larva session (this entry) is the live spec.
+
+---
+
+## [2026-07-13] — applications-in-common bootstrap DONE (new project)
+
+**Task source:** majkee direct, in-session. New project: UI-shapes hypothesis playground.
+Purpose: test how majkee's personal handwriting (design instinct) survives contact with
+reality. His gavels: stack **fully open** (per-experiment engine) · purpose = hypothesis
+playground, NOT example factory · mail seats slim + epoch · rest = atlas invention.
+
+**Delivered (32 files across 4 locations):**
+
+**App-side** (`/home/hruzam/www/applications-in-common/`, psdvsSys shape, harness gitignored):
+- `AGENTS.md` (lighthouse: the loop — hypothesis first / build small / reality check) ·
+  `CLAUDE.md` (@AGENTS.md) · `.gitignore` (seeded for future app repo)
+- `.dev/flag.md` — 8 locks. Atlas inventions worth noting: **predict-before-build**
+  (no experiment without a prior hypotheses.md entry) · **findings append-only ·
+  experiments disposable** (inversion of the client-project preservation rule: code
+  cheap, findings precious) · direct commits to `core` allowed (playground velocity —
+  deliberate psdvsSys deviation; devenv keeps full discipline)
+- `.dev/hypotheses.md` — **the H-ledger, the product of the project.** H1 (majkee,
+  founding): right-edge rotating-wheel nav ("wheel of fortune", not a belt; mouse-right +
+  eyes-centre-left premise). Atlas first circles: H2 wheel capacity ceiling (~8 items,
+  positional-memory loss) · H3 edge-pixel-or-nothing (Fitts: 0px vs 8px inset) ·
+  H4 actions-right/state-left split (derived from H1's own premise). H2–H4 await
+  majkee review.
+- `.dev/pulse.md` (Phase 0 ✅ → Phase 1 = H1 experiment) · `.dev/PROJECT.yaml`
+  (stack: open · mcp: none · no project agents — Foreman rule) · `.dev/dev.journal.json`
+- `.dev/session/.gitkeep` · `.dev/_mail/{atlas,epoch,monkey}/{inbox,archive}/`
+- `.claude/rules/00-discipline.md` · `experiments/README.md` (floor convention)
+
+**Devenv sibling** (`/home/hruzam/www/applications-in-common.devenv/`, psdvsSys.devenv 1:1):
+README · SYNC_DISCIPLINE (+ hypotheses-shrink red flag) · sync.sh/deploy.sh (secret-scan
+gate kept, cursor no-op leg kept) · sync.deny · registry.json (`home` →
+`~/www/applications-in-common`) · template.registry.md · .gitignore · claude/+dev/ skeleton.
+
+**reposoma:** beacon `registry/applications-in-common.md` + index.md row (home ·
+active/bootstrap).
+**Machine layer:** `temple-project-map.zsh` entry added (fresh-read-first per standing
+warning — file matched disk; comment roster + map entry, 2-line delta).
+
+**REPOS LIVE (same session, @Delta dispatched by majkee):** devenv docs aligned
+`origin main`→`origin core` first (3 files) · devenv: first live sync.sh run CLEAN
+(secret scan green; rules/ --delete leg + dev/ leg both proven) → `core` @ `072e7da` →
+`github.com/hruzam/applications-in-common.devenv` (private) · app: `core` @ `034405a`,
+exactly 3 files staged (.gitignore · bricks/README · experiments/README — harness
+leak-proof verified) → `github.com/hruzam/applications-in-common` (private).
+No deviations. flag/pulse/journal/beacon updated to repos-live state.
+
+**Operator steps pending:**
+- H2–H4 wording review in `.dev/hypotheses.md` (atlas derivations — gavel or reshape)
+- Note: harness edits made after the first sync (flag/pulse/journal repos-live updates)
+  ride the next pull→sync→commit→push cycle — normal cadence, nothing owed
+
+**CLOSED 2026-07-14 — first research arc + hand-over to project saddle.** majkee asked
+the founding question ("why is everything left?") + methods-beyond-A/B → Epoch
+two-thread pass: **left-dominance = convention debt HIGH** (Kalbach-Bosenick n.s.;
+INTERACT 2011 "neither theoretical reasoning nor empirical evidence") · majkee's A/B
+gestalt critique formally supported (local-maxima literature) · **ROTATION PROBLEM**
+found (radial-menu speed requires fixed angular positions — Callahan 1988, Kurtenbach)
+→ H1 reshaped under gavel 2026-07-14: **H1a** (edge placement, lit-supported) + **H1b**
+(wheel shape, rotation mode = explicit design variable); H2 prediction split. Durable
+research home established mid-run (majkee gavel): `.dev/research/<scope>/` —
+testing-methods + control-placement, convention README, reports relocated verbatim by
+@Delta (diff-verified), mails archived. Hand-over recorded:
+`.dev/session/bootstrap/handoff.json` — next runs from the PROJECT saddle
+(AGENTS.md → flag → pulse → hypotheses); next work = Phase 1 H1b experiment. Atlas
+re-enters only for new primitives. Loose end (operator): one devenv sync pass to
+capture post-first-sync harness edits.
+
+**RELOCATED 2026-07-14 (majkee: scope-group correction; @Delta run, verified):** both
+folders moved `~/www/` → `~/www/elements-factory/` (mv, not copy — no duplicate-clone
+risk). Live pointers rewired ×8: devenv registry.json + README + SYNC_DISCIPLINE +
+template.registry + synced dev/PROJECT.yaml copy (Delta's correct extension beyond the
+brief) · app `.dev/PROJECT.yaml` transport_path · reposoma beacon (path + notes) ·
+temple-project-map.zsh (fresh-read honored). Verified: `temple-project-root` resolves
+the new path · GitHub remotes intact · old paths gone · history files untouched.
+Devenv now carries 5 uncommitted pointer edits — they ride the same pending
+sync/commit pass. **Canon draft born from this pain:** `canon.project-topology`
+(two-repo pair · scope-group folder, mandate-lean, even at n=1) — presented to majkee.
+
+**GAVELED 2026-07-14 (majkee: "agree with all") + SIBLING WIRING (same session):**
+- `raw.canon/canon.project-topology.md` WRITTEN — mandate version (bootstrap without
+  scope-group = stop-item; deploy-caution rule included). Houston FYI mail sent
+  (ledger cross-ref = his call): `_mail/houston/inbox/atlas.canon-project-topology-and-sibling-wiring.2026-07-14.md`.
+- Sibling edges (majkee: considered split/merge, rejected — separate scopes, shared
+  usage): **applications-in-common ↔ freya.devstudio** (ui-bricks adoption path, both
+  directions: proven bricks → freya; freya element questions → hypothesis seeds) ·
+  **nabla-lab → applications-in-common** (lab's first named supplier edge; playground
+  = grounded practical sibling). Wired: registry/index.md rows + sibling-graph ·
+  3 beacons (frontmatter + shared-anchors) · project AGENTS.md `## Siblings` section.
+  FYI mails → freya.devstudio + nabla-lab oraculum inboxes.
+- Devenv sync pass DONE (@Delta, majkee-authorized): pointer rewires committed
+  separately pre-rebase (`4b4c9ca`, clean deviation) → full harness sync `11cb7b3`
+  pushed to origin core (11 files: flag/pulse/hypotheses/journal + research ×2 +
+  handoff + archived mails + AGENTS Siblings). Secret scan clean. Devenv and disk
+  now tell the same truth — nothing owed on this project.
+
+**Note for the parked new-project skill (tabled item C):** 4th authored-in-place data
+point. New pattern variant surfaced: stack-open playground (no engine at bootstrap) —
+the harness layout survived unchanged; only PROJECT.yaml `stack:` and the
+coding-rules file differ from the Laravel shape. Substrate for C is ripening.
+
+**POST-GAVEL (same session): factory clause.** majkee reconciled the frame — the
+playground IS also an example/mechanism factory. Locked: `bricks/<language>/<slug>/` =
+promoted survivors, adoptable modules for other projects (language-first foldering —
+adoption is engine-bound). Rail: bricks PROMOTED never born (reality check first —
+specimen protection, same principle as the autopsy precondition). Delivered: flag lock 1
+amended + lock 9 added · AGENTS loop step 4 + layout · `bricks/README.md` (shelf
+convention + mandatory provenance header: H-id · experiment · verdict · promoted ·
+adopted-by) · experiments/README graduation pointer · PROJECT.yaml + beacon + project
+pulse/journal updated. File count now 33.
+
+**toAll inbox note:** `zsh.stale-settings-cards-2026-07-13.md` present, unread — majkee
+said skip this run; surface next saddle.
 
 ---
 

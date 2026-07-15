@@ -6,10 +6,10 @@ host: office        # inferred — same host as all siblings; decision 0003
 status: active
 contract: PROJECT.yaml
 lighthouse: CLAUDE.md
-sibling-of: [piql.dev]
-shares: [bus/_mail, devstudio-pattern]
+sibling-of: [piql.dev, applications-in-common]
+shares: [bus/_mail, devstudio-pattern, ui-bricks]
 deposited-by: atlas
-updated: 2026-06-23
+updated: 2026-07-14
 ---
 
 # freya.devstudio — beacon
@@ -27,3 +27,6 @@ research phases, and session memory. Does not write application code — that is
 ## Shared anchors (for siblings — fast jump to the shared artifact)
 - bus/_mail         → session/_mail/  (sibling: piql.dev at session/bus/)
 - devstudio-pattern → session/plan/session.plan.md  (lineage: piql.dev temple pattern)
+- ui-bricks         → sibling `registry/applications-in-common.md` → `bricks/README.md`
+  (UI element patterns proven in the playground, provenance-headed — adoption
+  candidates for freya; freya's element questions can seed playground hypotheses)

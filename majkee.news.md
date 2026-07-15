@@ -15,6 +15,15 @@ Items parked too long — give these eyes.
 ## Fresh
 Actualities — what changed, what's in motion.
 
+- [2026-07-14] **Canon gaveled: project topology.** Two-repo pair (`<project>/` +
+  `<project>.devenv/`) inside one scope-group folder — MANDATE, even at n=1.
+  `raw.canon/canon.project-topology.md`. Every future bootstrap follows it;
+  new-project skill (Atlas tabled C) is trigger-ready.
+- [2026-07-14] **New project live: applications-in-common** (`~/www/elements-factory/`)
+  — UI hypothesis playground + brick factory. Sibling edges wired: freya.devstudio
+  (ui-bricks adoption) · nabla-lab (first named supplier edge). First research already
+  in: left-side UI convention = debt, not evidence; H1 reshaped (H1a/H1b) pre-build.
+
 - [2026-07-12] Fable safeguard research done. Verdict: no wordlist, no card.
   One architectural note: Fable classifiers scan tool outputs + retrieved docs,
   not just direct input — route sensitive-domain external retrieval through a
