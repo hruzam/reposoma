@@ -13,3 +13,6 @@ raw.research/*/report/*
 # Photo inboxes — binary assets, never committed. processed/ subfolder follows same rule.
 raw.research/*/photos/*
 !raw.research/*/photos/.gitkeep
+
+#another repo
+maintenance/gemini-line

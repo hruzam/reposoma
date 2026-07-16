@@ -1,6 +1,8 @@
 # Project intake — reposoma.devenv (per-project copy)
 
-`tier: raw.guides/intake · the architect's own copy (never the shared template)`
+`tier: raw.guides/intake · founding record · READ-ONLY — do not maintain here`
+`canonical card: reposoma/raw.settings/raw.card.reposoma.devenv.md (create via /project-regular-self-report reposoma.devenv)`
+`this file is the A–G source for Phase 2 (new card) — once the card exists this file becomes historical`
 `project: reposoma.devenv · path (office box): /home/hruzam/www/ovum/reposoma.devenv`
 `one head: @Houston (reposoma basement) · temple architect: @Houston (reposoma basement) — same seat (reposoma IS the temple's home)`
 `rule: answer short. a blank means "not promised yet", not a bug. field work refines it.`

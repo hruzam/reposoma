@@ -1,6 +1,6 @@
 # Agentive System — the bigger picture (v3)
 
-_Drawn from `doctrine.md` (archetypes) + `roster.md` (live cast). Orange = deltas not yet in canon. v3: @Vara activated (execution coordinator between Houston and implementation layer); @Vector added (mid-tier implementer); @Agol model corrected Fable→Opus. Decision 0006 (2026-06-25). v4: @Flight seated — tactical planner, Houston-family lightweight seat, 2026-06-27. v5: @Hypatia retired → @Oraculum seated — scientist-tier, user-invoked Houston alternative, 2026-07-02. v7: G9 fact-kind taxonomy — node-labels stripped to name only; model/effort defaults consolidated in roster.md; 2026-07-07._
+_Drawn from `doctrine.md` (archetypes) + `roster.md` (live cast). Orange = deltas not yet in canon. v3: @Vara activated (execution coordinator between Houston and implementation layer); @Vector added (mid-tier implementer); @Agol model corrected Fable→Opus. Decision 0006 (2026-06-25). v4: @Flight seated — tactical planner, Houston-family lightweight seat, 2026-06-27. v5: @Hypatia retired → @Oraculum seated — scientist-tier, user-invoked Houston alternative, 2026-07-02. v7: G9 fact-kind taxonomy — node-labels stripped to name only; model/effort defaults consolidated in roster.md; 2026-07-07. v8: @Assay seated — fresh-eyes verifier / test-review gate under Vara; vara.md @Hooke→@Vector drift corrected; decision 0012 (program-pulse); 2026-07-16._
 
 > **Fact-kind taxonomy:** node facts live in `roster.md` (join by file-stem); edges = who-dispatches-whom; an edge may carry an effort/model override annotation which wins over the roster default.
 
@@ -29,6 +29,7 @@ flowchart TD
         TRA["SENIOR IMPL // @Trajectory<br/>writes code · runs shell<br/>self-clones for hard tasks"]
         VEC["IMPLEMENTER // @Vector<br/>context ceiling above Haiku<br/>no opinions · no subagent spawning"]
         DEL["EXECUTOR // @Delta<br/>surgical · zero judgment"]
+        ASS["VERIFIER // @Assay<br/>fresh-eyes test/review gate<br/>reads task+handoff · PASS/FAIL"]
         ATL["CREATOR // @Atlas<br/>builds native primitives"]
         ZEN["READER // @Zenith<br/>targeted heavy-doc reader"]
         ORA["SCIENTIST-TIER // @Oraculum<br/>deep modeling · user-invoked alt to Houston"]
@@ -53,6 +54,8 @@ flowchart TD
     VARA --> TRA
     VARA --> VEC
     VARA --> DEL
+    VARA --> ASS
+    ASS -.PASS/FAIL report-up.-> VARA
     TRA --> DEL
     TRA -.self-clone.-> TRA
     ATL --> ZEN
@@ -125,7 +128,9 @@ majkee
                  │         [fallback: if Delta is not strong enough, Trajectory takes over directly]
                  ├─ @Vector       ← mid-tier impl; spawned when context > ~40K or
                  │                   medium-complexity new code, no judgment needed
-                 └─ @Delta        ← direct dispatch for simple surgical tasks
+                 ├─ @Delta        ← direct dispatch for simple surgical tasks
+                 └─ @Assay        ← verification gate; released after a coder marks `review`
+                                     (0012 L7): reads task + handoff, runs suite, PASS/FAIL
 ```
 
 **Fallback rules:**
@@ -169,3 +174,8 @@ When you dispatch a seat that has **no `Write` tool** (a read-only / query seat 
 - **Node-labels stripped** — all `· Model · effort:Level` suffixes removed from mermaid node labels and dispatch hierarchy. Map carries edges (who-dispatches-whom) only.
 - **Model/effort defaults live in roster.md** — `roster.md` is the single live home (0006 Amendment A1); join by file-stem. Map-only facts ported to roster before strip: @Agol effort:high · @Color effort:xhigh · @Epoch effort:medium · @Atlas effort:high (dispatch hierarchy); @Janus already correct at xhigh.
 - **Taxonomy header added** — one-line callout above the diagram names the three fact homes (roster · edges · ADR 0006-L5) and the join key.
+
+**v8 (2026-07-16 · decision 0012 — program-pulse):**
+- **`@Assay` seated** — VERIFIER; fresh-eyes test/review gate. Spawned by Vara (or a coder) after a `review` mark; reads only {task, coder-handoff, changed files}, runs the declared suite via Bash, returns PASS/FAIL. Sonnet by role — the writer's-blindness circuit breaker (0012 L7). Does not fix code; NOK returns to the coder.
+- **`@Vector` drift corrected** — `vara.md` routing said `@Hooke` (a ghost); roster + this map say `@Vector`. Converged to `@Vector` (Oliver Heaviside — the engineer who made Maxwell's equations usable). No new seat.
+- **Review-companion → @Recorder (proposed, not applied)** — the human re-entry role after a program run converges into @Recorder, extended to read `program.pulse.md`. Awaiting gavel.

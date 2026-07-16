@@ -1,6 +1,8 @@
 # Project intake — subai.devenv (per-project copy)
 
-`tier: raw.guides/intake · the architect's own copy (onboarding-kit R1 — never the shared template)`
+`tier: raw.guides/intake · founding record · READ-ONLY — do not maintain here`
+`canonical card: reposoma/raw.settings/raw.card.subai.devenv.md (create via /project-regular-self-report subai.devenv)`
+`this file is the A–G source for Phase 2 (new card) — once the card exists this file becomes historical`
 `project: subai.devenv · path (office box): /home/hruzam/www/ovum/subai.devenv`
 `one head: @Houston (subai.devenv claude basement) · temple architect: @Houston (reposoma basement)`
 `rule: answer short. a blank means "not promised yet", not a bug. field work refines it.`

@@ -1,6 +1,8 @@
 # Project intake — piql.dev (per-project copy)
 
-`tier: raw.guides/intake · the architect's own copy (onboarding-kit R1 — never the shared template)`
+`tier: raw.guides/intake · founding record · READ-ONLY — do not maintain here`
+`canonical card: reposoma/raw.settings/raw.card.piql.dev.md (create via /project-regular-self-report piql.dev)`
+`this file is the A–G source for Phase 2 (new card) — once the card exists this file becomes historical`
 `project: piql.dev · path (office box): /home/hruzam/www/piql/piql.dev`
 `one head: @Houston (piql.dev claude basement) · temple architect: @majkee / reposoma basement`
 `filled by: @Epoch (piql researcher) · 2026-06-18`

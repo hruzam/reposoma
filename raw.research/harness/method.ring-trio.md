@@ -13,7 +13,7 @@ what dies, and what the next ring should be.
 ## When to use — and not
 - **Use:** pre-hypothesis. Axes are guesses; the frame itself is under test.
 - **Don't:** a hypothesis exists → `research-pattern.md`. Executing a gated task list →
-  `/run-task`. Synthesizing a planned multi-leg run → `/run-synthesis`.
+  `/program-pulse` (operator-absent; direct head→coder if you're in the chair). Synthesizing a planned multi-leg run → `/run-synthesis`.
 - **Ring separation (fixed):** *frame ring* (this) ≠ *test ring* (probes on the hypotheses
   the frame produced) ≠ *deliverable ring* (cards, specs). Probes belong to a test ring —
   never smuggle them into a frame ring. Never collapse rings into one pass.

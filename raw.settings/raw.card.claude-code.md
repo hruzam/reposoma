@@ -2,9 +2,9 @@
 card: card.claude-code
 brand: Anthropic — Claude Code (CLI)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-07-02
+verified: 2026-07-16
 half_life: ~2-4 weeks (ships ~10 versions/month)
-half_life_days: 30
+half_life_days: 21
 recheck:
   - https://code.claude.com/docs/en/changelog        # generated from repo CHANGELOG.md
   - https://github.com/anthropics/claude-code
@@ -27,7 +27,7 @@ model_floor: claude-sonnet-5   # CONFIRM current string via changelog; do NOT ha
    - Resolution precedence: session > project > user > plugin.
    - Invoked via the Agent tool (renamed from Task in v2.1.63; `Task(...)` aliases still work); own context window; returns a summary.
    - `background: true`, `maxTurns: N`. **Manage: ask Claude to create/edit, or edit `.claude/agents/*.md` directly.**
-   - ⚠ `/agents` wizard removed v2.1.198. `/agents` command still opens the management TUI (Running/Library tabs), but creation wizard is gone.
+   - `/agents` wizard removed v2.1.198. `/agents` command still opens the management TUI (Running/Library tabs), but creation wizard is gone.
    - Nested spawning up to **5 levels deep** (v2.1.172). Fork (`/fork`) inherits full parent conversation — expensive; use sparingly.
 2. **Skill** (on-demand expertise) — `<.claude|~/.claude>/skills/<name>/SKILL.md`  (Agent Skills open standard)
    - Slash commands MERGED into skills: `.claude/commands/x.md` and `skills/x/SKILL.md` both create `/x`.
@@ -84,7 +84,7 @@ Context received = CWD stack at invocation — NOT the agent's original project.
 *Synthesizing agents: read this section when reasoning about what context a subagent actually received,
 or why an agent behaved as if it didn't know its home project's rules.*
 
-## Hooks — events (updated 2026-07-02); the ones you'll use
+## Hooks — events (updated 2026-07-16); the ones you'll use
 PostToolUse(Edit|Write)=format/lint · PreToolUse(Bash)=deny rm -rf/sudo · PreToolUse(Edit|Write)=scope-leash ·
 SessionStart=inject context · SessionEnd=journal · UserPromptSubmit=enrich prompt · Stop/StopFailure=gate "done" ·
 SubagentStart/Stop · TeammateIdle=lifecycle · PreCompact=backup transcript · PostCompact · PermissionRequest=auto-approve ·
@@ -101,30 +101,39 @@ Use `terminalSequence` field instead (requires v2.1.141+).
 
 **New env vars in hooks:** `CLAUDE_EFFORT` · `CLAUDE_CODE_SESSION_ID` (stdio MCP servers also receive these).
 
-## Permission rules — key syntax (updated 2026-07-02)
+## Permission rules — key syntax (updated 2026-07-16)
 - `permissions.allow|deny|ask` in `settings.json`. Deny-first is the safe default.
 - Standard: `Tool(name)`, `Bash(npm run *)`, `Read(/path/**)`, `Write(src/**)`.
 - **New (v2.1.178): `Tool(param:value)` parameter matching** — e.g., `Agent(model:opus)` blocks Opus subagents, `Agent(type:researcher)` blocks by type. WebFetch domain wildcards: `domain:*.example.com` (v2.1.172).
 - **Destructive git now blocked by default** (v2.1.183): `git reset --hard`, `git checkout -- .`, `git clean -fd`, `git stash drop`, `git commit --amend` (when not agent-authored this session).
 - `terraform destroy` / `pulumi destroy` / `cdk destroy` blocked unless specific stack requested (v2.1.183).
 - **`sandbox.credentials` setting** — block sandboxed commands from reading credential files and secret env vars (v2.1.187).
-- **Auto mode:** GA on Bedrock/Vertex/Foundry; no longer requires opt-in consent (v2.1.157); subagent spawns evaluated by classifier before launch (v2.1.178).
+- **v2.1.210 warning:** `Write()`, `NotebookEdit()`, `Glob()` permission rules now emit startup warnings — use `Edit()` or `Read()` instead.
+- **Auto mode:** GA on Bedrock/Vertex/Foundry; classifier defaults to Sonnet 5 for external sessions (v2.1.210).
 
-## VOLATILE / watch
-- **Sonnet 5 is now default** (v2.1.197, released 2026-06-30). Model strings rotate fast — never hardcode dated strings; set a floor.
+## Claude Code Artifacts (launched Jun 18, 2026)
+A session's output becomes a self-contained HTML page published to a private URL on claude.ai, updating
+in place as the session continues. Available on Team/Enterprise (launched) and Pro/Max (expanded July 2026).
+16 MB cap. All CSS/JS inlined. Cannot call external APIs or serve multiple routes. Public sharing
+off by default on Team/Enterprise — Owner must enable external sharing. See `code.claude.com/docs/en/artifacts`.
+
+## VOLATILE / watch (updated 2026-07-16)
+- **Latest version: v2.1.210** (July 14, 2026). Changelog at `code.claude.com/docs/en/changelog`.
+- **Sonnet 5 is default** (v2.1.197, released 2026-06-30). Model strings rotate fast — never hardcode dated strings; set a floor.
+- **v2.1.210:** live elapsed-time counter on collapsed tool summaries; startup warnings for Write()/NotebookEdit()/Glob() permission rules; fixed `isolation: 'worktree'` subagents mutating main repo; fixed `ultracode` keyword firing on non-human input (webhooks, PR comments).
+- **v2.1.208:** screen reader mode (`--ax-screen-reader` or `CLAUDE_AX_SCREEN_READER=1` or `"axScreenReader": true`); `vimInsertModeRemaps` setting; `CLAUDE_CODE_PROCESS_WRAPPER` env var for corporate launchers; background agent reply queuing on delivery failure; memory leak fixes (MCP stderr, LSP docs, async hook output).
 - **Explore agent model changed (v2.1.198):** now inherits main session model (capped at Opus) — was Haiku. Exploration passes are no longer Haiku-cheap; factor into context budgets.
 - **`/agents` wizard removed (v2.1.198):** create/manage subagents by asking Claude or editing `.claude/agents/` files directly.
 - **`ultracode` keyword (v2.1.160):** replaces `workflow` as the trigger word. "workflow" no longer triggers.
 - Moving fast: background sessions (Ctrl+T pin), `--fallback-model`, `--bg --exec <cmd>`, implicit agent teams.
-- Also in `~/.claude`: rules, workflows, auto-memory — exist, not yet load-bearing here; inspect before relying.
 
-## Rate caps & fallback strategy (2026-07-02)
+## Rate caps & fallback strategy (2026-07-16)
 
 **Current status:** Good rate — ceiling not a day-to-day constraint. Token spend
 can be used aggressively for big-brain tasks.
 
-**Model tier as of 2026-07-02:**
-Fable 5 (`claude-fable-5` / alias `"fable"`) > Opus 4.8 > **Sonnet 5** (default; alias `"sonnet"`) > Sonnet 4.6 (legacy) > Haiku 4.5.
+**Model tier as of 2026-07-16:**
+Mythos 5 (vetted partners only) > Fable 5 (`claude-fable-5` / alias `"fable"`) > Opus 4.8 > **Sonnet 5** (default; alias `"sonnet"`) > Sonnet 4.6 (legacy) > Haiku 4.5.
 Sonnet 5 promotional pricing: $2/$10 per Mtok through 2026-08-31.
 
 **Fallback ladder when Fable ceiling is hit:**

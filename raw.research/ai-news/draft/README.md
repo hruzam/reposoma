@@ -2,7 +2,7 @@
 scope: ai-news
 sources_file: raw.research/ai-news/draft/sources.jsonl
 output_path: raw.research/ai-news/report/raw.ai-news.<YYYY-MM-DD>.md
-card: raw.settings/raw.card.refresh.ai-news.md
+card: raw.settings/raw.card.ai-news.md
 output_mode: briefing
 window_days: 7
 persist: ephemeral
@@ -26,4 +26,4 @@ docs scopes (agent-docs, ollama-docs, openrouter) use `output_mode: snapshot` an
 `persist: ephemeral` or `canonical` per scope README.
 
 Skill: `/refresh ai-news`
-Card: `raw.settings/raw.card.refresh.ai-news.md`
+Card: `raw.settings/raw.card.ai-news.md`

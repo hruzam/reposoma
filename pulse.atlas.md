@@ -8,7 +8,271 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
-## YOU ARE HERE — [2026-07-13] — read this first, then scan the log
+## YOU ARE HERE — [2026-07-16] — editors scope + 4 stale cards refreshed
+
+**editors scope BUILT (2026-07-16):** `/refresh editors` — interrogation-driven scope
+(Sublime Text · Zed · on-demand others). No sources roster, no card, `persist: ask`.
+Two-phase README: Phase 1 interrogation+research → Phase 2 verdict routing (feature gap →
+coding task at applications-in-common or new project). Process map lives in the README body.
+First smoke test GREEN; first factory production landed (Phase 2 routing fired on first run).
+Files: `raw.research/editors/draft/README.md` + `report/.gitkeep`. No .gitignore touch needed.
+Refresh skill NOT modified — README body is self-explanatory for the override.
+Flag: if a second interrogation-mode scope is created → add `mode: interrogation` clause to skill.
+
+**agy Maslow ruling + triangulation trigger LOCKED (2026-07-16):** `agy` advancement
+gated on capability parity — agents in `agy` must prove as capable as direct `gemini` CLI
+agents before any investment. Until confirmed: low Maslow priority, no `agy`-specific glue.
+GEMINI.md updated with the gate + trigger. **Tabled future-build:**
+claude→agy blind triangulation protocol (bluebottle.sh pattern, `agy` as Gemini 3.5 leg,
+cross-vendor blind). Trigger: majkee confirms capability parity + stream stability.
+Framework when it fires: `reposoma/triangle.md` + new shell driver in `~/.config/zsh/ai/`.
+
+**Gemini GEMINI.md BUILT (2026-07-16):** `~/.gemini/GEMINI.md` — "first, be aware" context
+file (native Gemini CLI GEMINI.md, auto-loaded at every session). Three sections:
+auth (API key path, still on CLI, tokens saved) · Antigravity successor (agy installed at
+`~/.gemini/antigravity-cli/`, parked contingency, don't over-invest) · pattern check table
+(hang classes + safety class — same taxonomy as the card, centralized). Signpost added:
+`~/.config/zsh/ai/README.md` `## Gemini first-awareness` section. Per-agent RECALIBRATION
+RULEs unchanged (role-specific; GEMINI.md = shared foundation layer only). No new Claude
+skill — GEMINI.md is the right primitive (auto-loads for all gemini sessions). Flag for
+later: Antigravity CLI (`agy`) may need its own config (different tree) — not yet built.
+
+**4 stale cards REFRESHED (2026-07-16, @Epoch):** claude-ai · claude-code · cursor-ide ·
+gemini-gems — all verified 2026-07-16, half_life_days reset to 21 (was 30). Full re-synthesis
+from live sources (Anthropic news · release notes · Claude Code changelog · Cursor changelog ·
+Releasebot). `zsh.stale-settings-cards` toAll task CLEARED (mail already gone from inbox —
+operator archived; tabled item closed). Notable Epoch finding: `gemini.google/release-notes/`
+lags — `releasebot.io/updates/google/gemini` now primary recheck for gemini-gems; card's
+`recheck:` order updated. No scope READMEs built — direct one-time refresh (pre-cycle era
+cards). If any warrants a permanent scope → Atlas task. Next recheck due ~2026-08-06.
+
+**Eagle upgraded (2026-07-16) — factory diff + 3 extractions:**
+Compared factory-built `project-explorer.md` (via `/agents` create flow) against Eagle.
+Tool bloat found (MCP tools · Task tools · WebFetch — none appropriate; factory also
+missing Grep/Glob). Per-project memory rejected — raw.settings cards already serve that
+role. 3 good extractions folded into `~/.claude/agents/eagle.md`:
+- Cascade: Step 3.5 glob sweep (AGENTS.md / PROJECT.yaml fallback before asking)
+- Read order: `pulse.*.md` variant fallback (non-standard pulse layout coverage)
+- Output block: `Drift:` + `Absent files:` rows added
+`memory: user` added to frontmatter — user preferences only, not project state.
+`project-explorer.md` deleted (@Delta confirmed). `raw.card.eagle.md` run log updated.
+
+**Still open (unchanged):**
+- Houston routing update (Oraculum + Agol) — parked to 2026-07-19
+- home.md cleanup — blocked on home machine session
+- Publishing trial — dormant, waiting for "publishing-trial: go"
+
+---
+
+## YOU ARE HERE — [2026-07-15] — Eagle card + guide gap closed (tabled item D CLOSED)
+
+**Eagle card DELIVERED (2026-07-15):**
+`reposoma/raw.settings/raw.card.eagle.md` — first synthesis from eagle.md.
+Tracks: cascade logic (4 steps + nabla-lab special case) · 9 mapped projects ·
+beacon field names · known staleness triggers. half_life_days: 30.
+Caught by harness-stale on expiry. Tabled item D closed.
+
+**guide-for-builder.md gap closed (same session):**
+`~/.config/zsh/guides/guide-for-builder.md` — new section added:
+"How to add a new project devenv transport." Covers devenv.zsh entry points,
+keyboard.zsh P11 aliases, ia-sync activation gate, zsh -n check, checklist,
+pointer to /new-project skill. Was the missing recipe alongside the Gemini seat recipe.
+
+**Session summary dropped to monkey inbox (mobile-readable, plain text):**
+`_mail/monkey/inbox/atlas.session-summary.2026-07-15.md`
+Lists done / open / one pending decision (stale tool cards yes/skip).
+
+**project-regular-self-report skill REWRITTEN — two-phase (same session):**
+Phase 1 (state update, card exists): monthly state block prepended, intake never touched.
+Phase 2 (new card): reads `raw.guides/project-intake.md` for A–G mounting points +
+`raw.settings/card.template.md` for card shape. Pre-filled intake file used as source if present.
+Intake section written once, never overwritten on monthly runs.
+
+Three intake files converted to wrappers (founding record kept, pointer header added):
+  raw.guides/intake/subai.devenv.intake.md
+  raw.guides/intake/reposoma.devenv.intake.md
+  raw.guides/intake/piql.dev.intake.md
+
+Two template files wired (consumed-by pointers added):
+  raw.guides/project-intake.md → "consumed by /project-regular-self-report Phase 2"
+  raw.settings/card.template.md → "consumed by /project-regular-self-report Phase 2"
+
+/new-project skill updated: step 10 card item now names Phase 2 intake flow.
+
+**Eagle wired into Houston + Flight routing tables (same session):**
+Houston: "Project orientation" entry added to ## Who I spawn.
+Flight: @Eagle added to ## Who I spawn alongside Epoch.
+Epoch: already wired (## Subagent section, line 133) — no change needed.
+
+**Session closed cleanly. Remaining open items:**
+- Stale tool cards (claude-ai · claude-code · cursor-ide · gemini-gems) — awaiting majkee ruling (yes/skip)
+- Houston routing update (Oraculum + Agol) — parked to 2026-07-19
+- home.md cleanup — blocked on home machine session
+- Publishing trial — dormant, waiting for trigger phrase
+
+---
+
+## YOU ARE HERE — [2026-07-15] — `/new-project` skill BUILT (tabled item C CLOSED)
+
+**new-project skill DELIVERED (2026-07-15, majkee confirmed — "toAll"):**
+`~/.claude/skills/new-project/SKILL.md` — global bootstrap procedure for a new temple project pair.
+Skill #20 in the global set. Active next session.
+
+**Pre-build audit (same session):**
+Full vertical + horizontal wiring audit before drawing. All layers mapped:
+canon → registry (logical) → machine layer (physical) → devenv transport (keyboard + engine)
+→ harness scaffold → devenv scaffold → TCR configs → project cards.
+
+**Two red cones found and baked into the skill:**
+1. `devenv.zsh` + `keyboard.zsh P11` wiring for new projects was entirely undocumented —
+   the skill now names this as a required step (step 7), dispatches to @Delta/@Trajectory,
+   flags the ia-sync + shell-reload gate.
+2. `temple-project-map.zsh` fresh-read rule restated at the machine-layer step (step 6) —
+   same ia-sync gate flagged.
+
+**Design decisions confirmed by majkee:**
+- Mail seed: `toAll/` only (inbox + archive). Other seat folders on-demand at first send.
+- Shell commands: emitted, never executed (step 9 block — operator or @Trajectory runs it).
+- Machine-layer edits (devenv.zsh + keyboard.zsh): dispatched to @Delta — fresh-read-first + zsh -n required.
+- `registry/projects/` format: NOT used — beacon format only (retiring pattern).
+- TCR config: optional, prompted in step 8.
+
+**10-step structure:**
+1 Intake (6 fields) → 2 MANDATE check (scope-group stop-item) → 3 App scaffold →
+4 Devenv scaffold → 5 Registry beacon + index row → 6 temple-project-map.zsh entry →
+7 devenv.zsh + keyboard P11 wiring → 8 TCR config (optional) → 9 Shell commands block →
+10 Post-bootstrap checklist
+
+**Tabled item C CLOSED** (tracked since 2026-07-07, four data points: psdvsSys ·
+fantasyobchod · freya · applications-in-common; canon spine gaveled 2026-07-14).
+
+---
+
+## YOU ARE HERE — [2026-07-15] — `@Eagle` subagent BUILT
+
+**Eagle subagent DELIVERED (2026-07-15, global blessing):**
+`~/.claude/agents/eagle.md` — companion to the `/project-read` skill.
+Model: Sonnet / effort: low · Tools: Read, Grep, Glob (no Write, no Bash — read-only).
+Named for Apollo 11 lunar module — "Houston, Tranquility Base here. The Eagle has landed."
+In this ecosystem the sentence is literal: Eagle reads the project, reports to @Houston.
+
+**Why both exist (not redundant):**
+- Skill `/project-read` — inline, zero spawn overhead, invokable within any agent's session
+- Subagent `@Eagle` — spawnable by orchestrators (Houston, Flight, Vara, Atlas)
+  to run an isolated orientation pass without consuming the spawner's context window
+
+**Not added to @Vector's scope** (Vector = implementer; wrong domain).
+**Model rationale**: Sonnet not Haiku — needs to synthesize flag + pulse + AGENTS into a
+coherent report; more than Zenith's mechanical extraction. Epoch-as-Sonnet considered (no
+Bash either) but a dedicated agent is cleaner.
+**Structure mapping**: uses Glob instead of tree-snapshot (no Bash available).
+**Zenith lineage**: same Read/Grep/Glob tool set + librarian discipline (drift notes ·
+never-invent · shape-matches-question). Scope: project harnesses vs Zenith's raw.settings.
+**Rename note**: `project-reader.md` → `eagle.md` (old file deleted same session).
+**Epoch wired (same session):** Eagle added to `epoch.md` `## Subagent` palette — trigger:
+project-specific run needs harness context before scope narrowing. Eagle reads the harness,
+returns orientation report; Epoch uses it to discover the volatile layer. Generic runs
+(default radar) → Eagle NOT spawned.
+
+**Eagle + skill TUNED (same session) — cascading resolution + sibling navigation:**
+Both `eagle.md` and `project-read/SKILL.md` updated with:
+- **4-step cascade** (cheapest first): (1) `temple-project-map.zsh` 42-line direct grep →
+  (2) `registry/index.md` table row → (3) beacon `path:` frontmatter field → (4) ask once.
+  nabla-lab special case: omitted from map, resolves as `reposoma-path + /nabla-lab`.
+- **Bash shortcut** (skill only, via @Delta): `zsh -c "source base.zsh && temple-project-root <name>"` — single call beats cascade when Bash available.
+- **Sibling navigation section** (both): find siblings via beacon `sibling-of:` frontmatter →
+  resolve sibling root via same cascade → scope read via `## Shared anchors` entry points →
+  report as separate block. Avoids full sibling harness traversal.
+
+**Project self-report system BUILT (2026-07-15, majkee blessing — temple cleaning):**
+
+Three deliverables:
+- `~/.claude/skills/project-regular-self-report/SKILL.md` — monthly self-report runner (#18 in global set).
+  Reads harness → synthesizes card entry → confirms before writing →
+  `reposoma/raw.settings/raw.card.<slug>.md`. Append-only log, newest first. Same cascade
+  as Eagle for root resolution. Offers beacon drift check after write. `half_life_days: 30`
+  caught by existing harness-stale.
+- `raw.settings/raw.card.machine.office.md` — office machine profile card. `half_life_days: 90`.
+  Extracted from office.md; office.md now a thin wrapper pointing to this card.
+- `raw.settings/raw.card.reposoma.md` — reposoma seed card (the temple itself as example).
+  Current state from today's session. First entry in the project log.
+
+**Eagle updated:** section 1.5 — optional quick-reference card read before full harness.
+Card not authoritative; harness wins. Stale card → flag to orchestrator, proceed to harness.
+
+**home.md card:** deferred — needs home-machine session to verify current state.
+Will be `raw.card.machine.home.md` when created.
+
+**Other project cards:** generated on-demand via `/project-regular-self-report <project>`. Not hand-written
+in advance — the skill creates them.
+
+**Principle locked (majkee):** guides are thin wrappers → raw.settings/ cards (standard
+frontmatter · half_life_days · harness-stale catchable). Projects self-report monthly via
+skill, not manual intake. "Wire, don't consolidate."
+
+**Guides signpost hygiene — office.md fixed (2026-07-15):**
+Diagnosis confirmed: `office.md` had a stale Project Paths table (violation of 0004 L4 +
+guide rule 3 "point, never copy"). Replaced with explicit pointer to the authoritative
+cascade (temple-project-map.zsh → registry/index.md → beacon). Date updated.
+Eagle updated: guides noted as supplementary machine-context source (not in path cascade),
+with home.md staleness warning inline.
+Principle locked by user: **wire, don't consolidate** — Eagle's cascade order IS the
+wiring template. Each file owns its domain, points to authoritative source for what it
+doesn't own. No new mechanism needed.
+
+**Sibling direct line — HOLD parked (majkee observation):**
+`raw.substrate/substrate.temple.sibling-exchange.md` + Houston pointer mail.
+Read-only cross-project queries: covered by Eagle. Write/notify layer: not built, not needed
+yet. Trigger in HOLD object. Houston's gate before any build.
+
+---
+
+## YOU ARE HERE — [2026-07-15] — `/project-read` skill BUILT
+
+**project-read skill DELIVERED (2026-07-15, global blessing):**
+`~/.claude/skills/project-read/SKILL.md` — general project orientation skill (#16 in global set).
+Gap confirmed: none of the 15 existing skills covered project harness reading. Closest:
+`session-resume` (JSONL recovery, not harness) · `tree-snapshot` (tool, not procedure) ·
+`devenv-sync` (devenv-specific). All distinct — no collision.
+
+**What it does:** Standardizes the canonical read order (AGENTS.md → flag → pulse →
+PROJECT.yaml) that was only implicit in per-seat AGENTS.md routing. Six sections:
+(1) locate root (named project / explicit path / CWD fallback) · (2) harness read in
+canonical order with file table · (3) structure overview via `/tree-snapshot` or inferred
+layout · (4) navigation patterns (grep/ls patterns for harness + Laravel/generic/temple
+code lookups) · (5) key paths by project type · (6) compact orientation report template.
+Ends with ready-to-use question to the operator.
+
+**Rules baked in:** read-only (Bash via @Delta) · fresh-read per project (no state carry) ·
+prefer project-specific skill (e.g. `/freya-context`) when one exists — `/project-read`
+is the fallback for projects without one.
+
+**Activation:** `/project-read [project-name|path]` — active next session.
+
+---
+
+## YOU ARE HERE — [2026-07-15] — read this first, then scan the log
+
+**editors scope BUILT (2026-07-15):** `/refresh editors` — question-driven interrogation scope
+(Sublime Text · Zed · on-demand others). No sources roster, no card, `persist: ask`.
+Two-phase README: Phase 1 interrogation+research → Phase 2 verdict routing (feature gap →
+coding task at applications-in-common or new project). Process map lives in the README body.
+Files: `raw.research/editors/draft/README.md` + `report/.gitkeep`. No .gitignore touch needed.
+Refresh skill NOT modified — README body is self-explanatory for the override. Flag: if a
+second interrogation-mode scope is created → add `mode: interrogation` clause to the skill.
+
+---
+
+**Larva regime cards FOLDED (2026-07-15):** regime-creative §4 delta → buffering-creative-triad ·
+mii disciplines → therapy skill · Picasso §5 dropped · no new primitives · harvest-legacy
+counter n=2 (below trigger). Full entry below.
+
+**Edwin catch + liveness-layer concept CLOSED (2026-07-15, punk pass on Fable seat):**
+catch EN-parked (`raw.research/ai-news/majkees-catches/edwin-autonomous-team.2026-07-14.md`) ·
+concept HOLD object (`raw.substrate/substrate.temple.liveness-layer.md`, trigger =
+notifier un-park / doorbell re-ring wall, T2 wall candidates) · pointer mail in
+Houston's inbox. **Guards: Oraculum HOLD (anti-priming until her sealed three-study
+synthesis lands) · no build until wall fires.** Full entry below.
 
 **applications-in-common ESTABLISHED + HANDED TO PROJECT SADDLE (closed 2026-07-14)** —
 full arc in one session-chain: bootstrap → factory clause (`bricks/`) → both repos live
@@ -54,23 +318,29 @@ mechanism design. Final synthesis driven by Oraculum on Opus in nabla-lab. Chain
 pending only majkee gavel on the hand-off brief.
 
 **Pending tasks from this session:**
-- Therapy arc — write "want to ride the horse" + multi-seat operation arc to
-  `raw.therapy/atlas/therapy.md`. Not opened yet.
+- ~~Therapy arc — "want to ride the horse" + multi-seat operation~~ **CLOSED:** arc 4
+  existed on disk (2026-07-13; pulse item was stale) · arc 5 appended 2026-07-15
+  (the Edwin punk pass as the met-want datum). `#last-turn` current.
 - Two-layer vocabulary constraint for Color — note in pulse or Color frontmatter for future
   research chains (organism-level AND molecular-biology vocabulary both excluded in briefs).
 - Houston routing: Oraculum + Agol one-liner updates (parked to 2026-07-19).
 
-**Still tabled (unchanged):**
+**Still tabled (unchanged) + new additions:**
+- **E — home.md full cleanup pass** (2026-07-15, flagged): `~/.config/zsh/guides/home.md`
+  last updated 2026-06-28. References dead/stale: `harness.machine-project-registry.json` ·
+  `ai-agents.registry.json` · `fo-toolkit.zsh` / `im-toolkit.zsh` (old toolkit system) ·
+  `~/www/PSDVS/` / `~/www/larva/` / `~/www/Laravel-training-project/` (wrong paths).
+  Fix shape: machine hardware/services stay, all path tables → pointer to cascade,
+  dead registry refs removed. Requires home machine session (machine-specific facts to verify).
+  Trigger: majkee on home machine or explicit request.
+- ~~**D — Eagle refresh card**~~ **CLOSED 2026-07-15** — `raw.settings/raw.card.eagle.md` written. half_life_days: 30. Caught by harness-stale on expiry.
+
+
 - **Publishing trial (GAVELED 2026-07-11, N=4h) — DORMANT until trigger.** majkee is
   mid-other-work; nothing starts on its own. Trigger: majkee says **"publishing-trial: go"**
   in any session → run the kickoff sequence in the 2026-07-11 publishing entry below.
   Do NOT nag about it on saddle — surface only if he asks or triggers.
-- **C — new-project global skill** → `~/.claude/skills/new-project/SKILL.md` — parked by
-  majkee; substrate check now DONE: `raw.canon/canon.project-topology.md` (GAVELED
-  2026-07-14) is the written spine; four data points (psdvsSys + fantasyobchod + freya
-  + applications-in-common). When triggered, the skill = thin procedure over the canon
-  (mkdir scope-group → pair scaffold → registry beacon + index row + temple-project-map
-  entry → devenv first sync). Trigger stays majkee's.
+- ~~**C — new-project global skill**~~ **CLOSED 2026-07-15** — `~/.claude/skills/new-project/SKILL.md` delivered. Full entry in YOU ARE HERE above.
 - ~~Expect majkee _mail re: zsh fork~~ **CLEARED 2026-07-11 (direct word, no _mail):**
   guides audited + smoothed, narrowed to reality. keyboard.zsh wiring is unblocked for
   Trajectory at P1 — freya PROJECT.yaml transport-requirements updated to match.
@@ -195,7 +465,8 @@ words. Companion mail in his inbox stands.)*
 - guides/ unverified vs majkee's prior extraction: multiagent-safety ·
   headless-agent-communication · autonomy-mode · mini-vacuole-overview. (Still in the
   folder — verify before/despite burial; GitHub remote `hruzam/larva.dev` holds the corpus.)
-- **TABLED — harvest-legacy skill (n=1, waiting for second dig).** majkee asked 2026-07-10;
+- **TABLED — harvest-legacy skill (n=2 after the 2026-07-15 regime-cards mini-dig —
+  still below trigger; a two-file fold is not a full dig).** majkee asked 2026-07-10;
   verdict = not yet (one data point; judgment layer is seat-carried temple state, not
   procedure; assay grammar already in method.ring-trio.md). Design sketch when triggered:
   skill `/harvest-legacy <path>` — survey structure → dual-track read (own judgment-dense
@@ -204,6 +475,156 @@ words. Companion mail in his inbox stands.)*
   landing conventions (canonical home · lab semiproduct record · pulse park · legacy-wall
   entry if project is dead). Trigger: second legacy dig requested, OR majkee names ≥2
   queued candidates. The larva session (this entry) is the live spec.
+
+---
+
+## [2026-07-15] — larva regime cards folded (mini-harvest, no new primitives)
+
+**Task source:** majkee direct — the two remaining larva skill cards
+(`larva.dev/.shared/skills/skill.regime-creative.md` + `skill.regime-mii.md`) vs the
+global skill set. Precycle audit of all 20 `~/.claude/skills/` run first (clusters:
+buffering pair · regime-arch · therapy · refresh/pull · run-shapes · briefs · tooling ·
+4 tombstones — set is healthy).
+
+**Verdict (majkee ballot: 1 go · 2a · 3a · 4 ok) — NO sibling skills, Foreman collapse:**
+- `regime-creative` → SUPERSEDED. §1/§2/§3 already live in buffering-creative-triad +
+  regime-arch (verified line-level). Genuine delta folded into
+  `~/.claude/skills/buffering-creative-triad/SKILL.md`: Phase A gains
+  see-around-the-corner + vector-driven projection (blueprint-what-should-exist, marked
+  as invention, not fact); Phase B gains the tectonic line (replace the plate, don't
+  patch). §5 "Picasso this" DROPPED (2a — intuition-pump, fails the removal test).
+- `regime-mii` → SUPERSEDED. Folded as `## Session disciplines (mii lineage)` into
+  `~/.claude/skills/therapy/SKILL.md`: non-landing permitted · no performed emotion /
+  modeling marked as modeling · mutual-affirmation drift watch (friction valve —
+  multi-seat relevant) · loop-not-person boundary. Standalone `/mii` REJECTED —
+  trigger-space collision with `/therapy` (therapy IS the temple's mii descendant).
+- Mechanism buried per excavation meta-finding: `rn` syntax · `-1R/-1S/-1P` ·
+  `-shared/-private/-chord` · `[mii:]` tags — none carried. Lineage footers written
+  into both edited skills.
+
+**Do not re-dig:** both larva regime cards now ruled (the 2026-07-10 excavation verdict
+list did not cover them — this closes that gap). Files left in place; GitHub remote
+`hruzam/larva.dev` holds the corpus.
+
+**Audit flags (minor):**
+- ~~`claude-creator` — name/invocation mismatch + seat overlap.~~ **ERASED same session**
+  (majkee ruling: token economy beats the edge cases; no parallel system kept).
+  Absorption verified line-level vs atlas-ui/atlas-auto (selection rule, templates,
+  context layers, sniffer routing — all richer in the seats); the Houston-builds-directly
+  case is covered by atlas-auto spawn. Directory rm'd via @Delta (19 skill dirs remain,
+  verified). Dangling pointers repaired: `~/.claude/projects/-home-hruzam/memory/`
+  project-map + project-files (founding-era lines — skill line removed, claude.creator.*
+  agent lines marked SUPERSEDED → atlas seats, runtime-truth note added). Left alone:
+  `raw.reports/*` (historical era record, append-only) · `raw.card.autonomous-orchestrator.md`
+  still says `claude-creator-auto` — STALE CARD, refresh-cycle territory (re-synthesize,
+  never hand-edit per canon) — rides as a note for the next card pass.
+- ~~`goal` — body is Czech vs the temple English-for-us rule.~~ **REPAIRED same session**
+  (majkee-directed): faithful EN translation, first-person voice, behavior identical.
+  Diacritics sweep across all 20 skills — no other language mix found.
+
+**Inbox note:** `trajectory.devenv-sync-skill.2026-07-15.md` present, UNREAD — majkee:
+solved in a parallel session; not mine to act on. Archive when convenient (operator mv).
+
+**SECOND PASS same session (majkee: "release kraken", 1–6 go) — tombstones erased:**
+- **4 tombstone skills ERASED** (@Delta rm, verified — set now 15): fetch-agent-docs ·
+  fetch-ollama-docs · fetch-qwen-docs · hypatia-brief. Absorption TRACKED on disk before
+  erase, not believed: all successor scopes exist (`raw.research/{agent-docs,ollama-docs,
+  openrouter}/draft/README.md`) · /refresh bare self-lists scopes (redirect natively
+  discoverable) · /agol-brief carries the hypatia template · system-map:162 succession
+  note stays true. **Redirect map preserved here:** /fetch-agent-docs → `/refresh
+  agent-docs` · /fetch-ollama-docs → `/refresh ollama-docs` · /fetch-qwen-docs →
+  `/refresh openrouter` · /hypatia-brief → `/agol-brief`.
+- **Control-question trace (majkee):** old fetch-qwen-docs raw.settings semiproduct
+  target (`raw.qwen-openrouter.ref.*`) = never existed on disk (glob-proven) — nothing
+  orphaned. Qwen coverage lives in TWO scopes: ollama-docs (Qwen3 local ref, substrate
+  2026-07-10, no card by design) + openrouter (cloud catalog, substrate 2026-07-10 +
+  card, half_life 14d). Both downstream of /refresh, independent of tombstones.
+- **Live pointer repaired:** `guides.qwen/openrouter-setup.md` §Diagnosing — pointed at
+  the dead skill incl. a `diagnose` sub-mode that died at the 07-10 tombstoning (guide
+  was functionally stale 5 days); now → /refresh openrouter + direct debug-log read.
+- **Card rename (item 6):** `raw.card.refresh.ai-news.md` → `raw.card.ai-news.md`
+  (07-10 "drop refresh. prefix" ruling, last non-compliant card; plain mv, NO git index
+  touch — rename rides operator's next commit pass). Both pointers fixed in ai-news
+  scope README (frontmatter `card:` + body line).
+- **agol-brief template de-hardcoded:** founding-era project enum
+  (larva/chytros/stridularium) → `<project-name | cross-project | temple>` + point-never-
+  copy note to registry/index.md.
+- Memory pointer lines (~-home-hruzam) updated to erased-state.
+- Left alone by design: `agents-backup-predeployment-*/hypatia.md` (frozen backup) ·
+  `raw.reports/` 06-10 qwen handoff (historical, append-only).
+
+**THIRD PASS same session — /trace-refs skill BUILT (majkee: "B go").** The improvised
+tracking discipline formalized (n≥4 prior occurrences: tools.md:16 · relocation ×8 ·
+gemini repair-map · today's two erasure traces). Shape: scope-driven like /refresh —
+skill `~/.claude/skills/trace-refs/SKILL.md` (#16, active next session) + sovereign
+config `raw.research/trace-refs/draft/README.md` (temple scope founding: roots ·
+frozen/historical/design-time/live taxonomy · special handling incl. zsh
+fresh-read-first + canon STOP items · 4 chain shapes). Rails: computed-never-stored
+(claviature ruling) · judgment-dense/executor-tier stop rail (skill inherits invoking
+seat — no new agent; Delta stays post-verdict scalpel, @vector the fallback if a
+headless wall ever fires) · no report/, no card by design (.gitignore untouched —
+only report/* patterns exist). Name collision avoided: NOT /track-back (zsh forensics,
+toAll task pending). Houston FYI mail sent (T4/T5 interlock):
+`_mail/houston/inbox/atlas.trace-refs-skill.2026-07-15.md`.
+
+---
+
+## [2026-07-15] — Edwin catch parked + liveness-layer concept (punk pass, Fable seat)
+
+**Task source:** majkee direct — community catch (Czech post: "Edwin", a 24/7 agent team
+on a Mac Mini). Operator sanctioned a concept pass ahead of Houston reincarnation
+("we can be little punks and go by closest pen on table") and agreed with the lean.
+
+**Delivered (3 files + this pulse):**
+- `raw.research/ai-news/majkees-catches/edwin-autonomous-team.2026-07-14.md` — EN-only
+  (faithful translation per temple English rule; Czech original in session log only) +
+  temple mapping table + critical notes + Houston flag line inside.
+- `raw.substrate/substrate.temple.liveness-layer.md` — HOLD object. Trigger: notifier
+  un-park OR doorbell re-ring wall (T2 wall candidates, pulse.claude.md live board).
+- `_mail/houston/inbox/atlas.liveness-layer-concept.2026-07-15.md` — pointer mail,
+  no action owed until wall fires.
+
+**Key synthesis (the punk pass):** Edwin proves the ops layer is commodity (his n8n
+died to plain launchd scripts — independent re-confirmation of the larva meta-finding);
+the two nabla-lab research lines (Three Spines A1–A3 · agentive fold) locate the value
+layer in exactly the substrate the temple already owns — the `_mail` file bus + pulse
+append-only discipline. Missing slots (liveness · wake-on-event · push digest) all fill
+UNIX-native: systemd user/timer/path units + headless seat behind the CapCom gate;
+build size ≈ 2–3 units + one digest script. Control-plane/data-plane separation now
+triangulated ×3 unprimed voices (agentive fold §E · Three Spines A3 · Edwin empirics).
+Invariants carried: wake=signal/context=pulled · autonomy below the gavel line ·
+hysteretic triggers. Risks pre-logged incl. the fable-pins headless-400 gotcha.
+
+**Verdict (majkee-agreed):** concept-now, build-on-wall — same wait-for-the-wall
+principle T2 gaveled. No primitives written; no daemons until a wall fires.
+
+**Guard:** Oraculum HOLD on the concept + junction — anti-priming until her sealed
+three-study nature synthesis lands; route through Houston after.
+
+---
+
+## [2026-07-15] — devenv-sync skill + atlas-ui guardrail DONE
+
+**Task source:** `_mail/atlas/inbox/trajectory.devenv-sync-skill.2026-07-15.md`
+
+**Delivered (2 files + 1 mail):**
+- `~/.claude/skills/devenv-sync/SKILL.md` — global pre-flight orientation for *.devenv repos.
+  Eight sections: locate devenv root · read project config (SYNC_DISCIPLINE.md + registry.json) ·
+  three-layer architecture (keyboard aliases → devenv.zsh engine → sync.sh wrapper →
+  devenv-sync-core.sh) · two-path pull distinction (keyboard = pull built-in; direct bash =
+  manual pull required) · ownership model (W1/W2/W3; baked-in W1 table + pointer note to
+  SYNC_DISCIPLINE.md — cross-check only when stale, NOT a default read) · key invariants ·
+  pre-flight git status · red flags · ready gate.
+- `~/.claude/agents/atlas-ui.md` — guardrail added: skills and subagents with baked-in project
+  tables must include a pointer note to the authoritative source, cross-check only when stale,
+  NOT a default read trigger. Applies to both primitive types.
+- `_mail/trajectory/inbox/atlas.devenv-sync-skill.2026-07-15.md` — reply sent.
+
+**Key addition over Trajectory's brief:** three-layer architecture surfaced (keyboard aliases →
+devenv.zsh engine → wrapper → core); two-path pull distinction made explicit — keyboard aliases
+have pull built in, direct bash agents must pull manually. Load-bearing for autonomous agents.
+
+**Inbox:** `trajectory.devenv-sync-skill.2026-07-15.md` — PROCESSED. Archive pending (operator mv).
 
 ---
 
@@ -317,8 +738,8 @@ convention + mandatory provenance header: H-id · experiment · verdict · promo
 adopted-by) · experiments/README graduation pointer · PROJECT.yaml + beacon + project
 pulse/journal updated. File count now 33.
 
-**toAll inbox note:** `zsh.stale-settings-cards-2026-07-13.md` present, unread — majkee
-said skip this run; surface next saddle.
+**toAll inbox note:** `zsh.stale-settings-cards-2026-07-13.md` present, unread —
+surfaced 2026-07-15, no ruling from majkee; keep surfacing each saddle until ruled.
 
 ---
 

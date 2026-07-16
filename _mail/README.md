@@ -26,3 +26,23 @@ _mail/houston/{inbox,archive}/      _mail/vega/{inbox,archive}/      _mail/toAll
 - **No sent-copy.** The sender keeps nothing in their own folder — the filesystem *is* the state machine. A reply returns to **your** inbox (`_mail/<you>/inbox/<them>.<scope>.<date>.md`); that is where you look for answers.
 - **Cross-repo / basement staging** (here-vs-direct delivery) is a transport detail, deferred to the
   mail-transport mechanism (candidate 0008) — the *logical* rule above holds regardless of topology.
+
+## Seat register (added 2026-07-16, Houston)
+Seats are **provisioned on first use** (Foreman rule — no pre-built empty seats): create
+`_mail/<seat>/{inbox,archive}/`, drop the first message, the seat is live. Retire a seat by noting it
+here — never silently delete history. Live seats:
+
+| Seat | Who | Since |
+|---|---|---|
+| `houston` | architect / phase-planner | 2026-06-19 (bus gavel) |
+| `vega`    | Gemini-sector codifier / machine layer | 2026-06-19 |
+| `monkey`  | operator memos (rolling plan: `houston.monkey-not-forget-this.<date>.md`) | 2026-06-19 |
+| `toAll`   | global broadcast — not a person; everyone drains | 2026-06-19 |
+| `atlas`   | primitive-creator / build session (e.g. protocol-octopus) | 2026-07-16 |
+
+**Cross-session use (added 2026-07-16, Houston):** the temple bus also carries handshakes between
+concurrent **sessions**, not only architect↔architect across incarnations. Same logical rule applies
+unchanged — receiver owns the message, reply returns to your inbox, `mv` to archive once processed.
+First live cross-session thread: `temple:houston` (applications-in-common / editor-pin) ⇄
+`temple:atlas` (protocol-octopus) — the two sessions independently derived the same execution loop.
+Working-state only; when the thread closes, drain per the Cinderella rule.

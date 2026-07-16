@@ -145,8 +145,11 @@ ls -t ~/.qwen/debug/ | head -1 | xargs -I{} tail -20 ~/.qwen/debug/{}
 
 ## Diagnosing from Claude Code
 
-Run `/fetch-qwen-docs diagnose` — reads the latest debug log and reports root cause + fix.
-Run `/fetch-qwen-docs` — refreshes the OpenRouter + qwen-code reference in raw.settings/.
+`/fetch-qwen-docs` was erased 2026-07-15 (absorbed by the /refresh mechanism).
+Run `/refresh openrouter` — refreshes the OpenRouter model catalog
+(scope: `raw.research/openrouter/`, card: `raw.settings/raw.card.openrouter.md`).
+Diagnosis: no dedicated skill — read the latest debug log directly (the zsh block in
+"Quick health check" above); any Claude seat with Bash can run it.
 
 ---
 

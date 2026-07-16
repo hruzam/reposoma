@@ -1,6 +1,8 @@
 # Project intake — the scope I need to draw your per-project bones
 
 `tier: raw.guides · fill one per project · the architect turns this into the team skeleton`
+`consumed by: /project-regular-self-report (Phase 2 — new card) · defines the A–G mounting points`
+`per-project copies: raw.guides/intake/<project>.intake.md · card output: raw.settings/raw.card.<slug>.md`
 `fill: COPY this to raw.guides/intake/<project>.intake.md and fill the COPY — never write into this template.`
 `produces: the seat list · the vendor-team allocation · the PROJECT.yaml contract ·`
 `the durable files (plan/flag/pulse/decisions) · the gate · the named deferral thresholds.`

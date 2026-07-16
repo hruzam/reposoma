@@ -4,7 +4,7 @@
 `2026-07-10 (pre-burial salvage) · verdict at dig: HOLD under observation (review) /`
 `IDEA (creation) · dig record: pulse.atlas.md [2026-07-10]`
 `trigger: a live run wants a formalized fast-review topology — the potential 4th run-shape`
-`sibling to run-task / run-synthesis / research-pattern · destination:`
+`sibling to /program-pulse (ex run-task, retired 2026-07-16) / run-synthesis / research-pattern · destination:`
 `~/.claude/skills/run-review/ or a harness doc, IF the pain recurs (Foreman rule)`
 
 ## Atlas commentary

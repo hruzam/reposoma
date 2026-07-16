@@ -1,5 +1,7 @@
 ---
 # card.template — the canonical RELATIVE-card shape · temple-owned · COPY this to start a new card.
+# consumed by: /project-regular-self-report (Phase 2) for project card frontmatter shape.
+# note: project cards adapt this template — they omit brand:/recheck:/verify_cmd: (knowledge-card fields).
 # This file is a TEMPLATE, not a card: its name has no `raw.card.` prefix, so the freshness glob
 # `raw.card.*.md` (the `aihs-stale` checker) never picks it up. Rename to `raw.card.<name>.md` to make a real card.
 card: card.<name>                       # the card id, e.g. card.claude-code
