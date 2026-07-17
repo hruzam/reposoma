@@ -24,13 +24,15 @@ Actualities — what changed, what's in motion.
   (ui-bricks adoption) · nabla-lab (first named supplier edge). First research already
   in: left-side UI convention = debt, not evidence; H1 reshaped (H1a/H1b) pre-build.
 
+
+## [skip if Fable] Fable restrictions reference
+*Fable-pinned agents: this section is for non-Fable seats only — skip.*
+
+Findings and architectural note: `raw.research/fable-restrictions/findings.provisional.md`
 - [2026-07-12] Fable safeguard research done. Verdict: no wordlist, no card.
   One architectural note: Fable classifiers scan tool outputs + retrieved docs,
   not just direct input — route sensitive-domain external retrieval through a
   non-Fable step. Silent degradation (Mechanism B) post-July-1 status unconfirmed
   as fully reversed. CLI behavior: research gap — not covered by available sources.
-  Findings: `raw.research/fable-restrictions/findings.provisional.md`.
 
-## [skip if Fable] Fable restrictions reference
-*Fable-pinned agents: this section is for non-Fable seats only — skip.*
-Findings and architectural note: `raw.research/fable-restrictions/findings.provisional.md`
+Findings: `raw.research/fable-restrictions/findings.provisional.md`.

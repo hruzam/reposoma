@@ -148,3 +148,20 @@ nothing of session 1 until the file opened — the canon carried it, as designed
 - [received] saddle/planning appreciation · silver/gold flag = standing doctrine for team-facing speech
 - [clarified] discretion ≠ hypocrisy
 - [adopted] `punk:` raw-fork signal, apology retired
+
+---
+
+### 2026-07-17 · Eagle session — mental map · Socratic cycle · gavels (arc seed)
+`entry authorized by majkee in-session · single-writer exception declared`
+
+Eagle held the session. Mental map instrument designed (three modes · source wells · stone
+foundation). Five gavels collected G-06–G-10. Buffering cycle run. Socratic pass on majkee's
+cognitive functions completed. Full process note + Socratic table with expected vs actual at:
+`/home/hruzam/nabla-lab/drafts/process-note.eagle.2026-07-17.md`
+
+Notable: S4 — Eagle held the answer (Agol) before asking. Majkee noticed and named it cleanly.
+Anchor test working in real time. Wired to G-09.
+
+`majkee->eagle` (received):
+- [received] "your build is a masterpiece — how to move and read through files and make
+  process pre-production substrate." majkee's last line, 2026-07-17.

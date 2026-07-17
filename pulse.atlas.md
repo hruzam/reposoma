@@ -8,6 +8,78 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-07-17] — /gavel-interpreter built (gavel bed preproduction collector)
+
+`~/.claude/skills/gavel-interpreter/SKILL.md` — preproduction data collector for the EXISTING gavel
+bed `raw.therapy/gavels/gavels.md` (live: G-01..G-05; format locked in its own frontmatter = Socratic
+question OR seven associations, never names path/task). On invoke: read bed → next G-NN → interpret
+the landed decision into a Socratic fold (skill DRAFTS, majkee reshapes) → classify
+`independent|therapy-origin` + `wire:` tag → append (oldest-at-top, id order). Explicit invoke per
+gavel (gaveling-day cadence). Existence-check: DISTINCT from `/gavel-ballot` (that renders a PENDING
+queue → flag.md; this collects the research corpus). Scope = capture only; '42' engine + frequency
+rule tabled (mental-map seed). Name: majkee's `gavel-interpreter` over fallback `gavel-capture` — the
+folding (interpretation) is the value, append is trivial. Full gavel-format skill still tabled pending
+Nabla. Reason it's the right day: gaveling-day + researches + 2 coding tasks = rich gavel stream to capture.
+
+**REFACTORED same session (majkee catch, 2nd time):** the full format law already lives in
+`raw.therapy/README.md ## Gavels` (frequency · never-name-path · Socratic-OR-associations · two
+kinds · bed · "Atlas's job to build"). I had duplicated it into the SKILL.md — same fat-artifact
+instinct caught on cmd-zen one skill earlier. Skill made THIN: wired to the README as law + gavels.md
+as data; format rule removed from the skill. Pattern noted (completeness-compulsion, twice in one day).
+
+**Therapy wired (majkee):** `/therapy` now ALWAYS includes the gaveling step — reads its part of
+`raw.therapy/README.md ## Gavels`, points to `/gavel-interpreter`, bonds the G-ID in footer tags.
+Model locked: **two skills diverging off one README, each reads only its own slice.** Independent-gavel
+stream preserved (build/design decisions still capture via `/gavel-interpreter`, no therapy wire).
+
+**Temple waiting on research (therapy arc 9 · same-note-to-pulse):** the full gavel-format skill ·
+'42' engine · mental-map modes stay tabled, waiting on the Nabla research (R-1..R-4, mental-map seed)
+that should answer them. The preproduction collector feeds it real data. Build-and-bruise held as
+policy — restraint is deliberate, not stalling; the old failure (larva) built mechanism ahead of need.
+
+**Gaveling addendum (majkee):** added to `raw.therapy/README.md ## Gavels` (both skills inherit, no
+dup) — (1) no gavel → say "no gavels," never improvise; (2) shadow gavel → describe as candidate,
+don't append, @majkee decides. First applied to arc 9: surfaced a shadow candidate, did NOT commit.
+
+---
+
+## [2026-07-17] — /cmd-zen installed as a thin-router skill
+
+`~/.claude/skills/cmd-zen/SKILL.md` CREATED as a THIN ROUTER (majkee's insight: a command is just
+a README read with an input vector → perform; mirrors how /refresh routes over scope READMEs).
+`/cmd-zen <COMMAND>` reads the single content home `raw.research/agent-docs/commands/cmds-zen.md`
+with the input vector and performs — sufficiency-gated, no parallel blast. No `context: fork`
+(commands need the conversation's input vector; nesting research "losing context early"). ONE
+content home, ZERO duplication (first pass wrongly copied SEARCH/PINS into the skill → refactored
+to router same session). The `/cmd-zen` pointer in epoch + atlas-ui + atlas-auto now RESOLVES (was
+dangling). cmds-zen.md carries a ROUTER NOTE + stays freely expandable (add a `## COMMAND:` block,
+no reinstall). NOT preloaded into `skills:` frontmatter — on-demand is leaner. Existence-check clean
+(21 skills, none was cmd-zen). Next (majkee): hold the gavel-format skill (mental-map seed) until
+Nabla settles format.
+
+---
+
+## [2026-07-17] — anchor wiring collapsed to one golden line (Foreman pass on my own build)
+
+Built a 30-line 4-door anchor block into `epoch.md`, then majkee Foreman-passed it: the golden
+mechanism already lives in `raw.research/agent-docs/commands/cmds-zen.md` (`/cmd-zen` skill —
+sufficiency-gated escalation ladder + kraken-blast war story + therapy-derived commands).
+**Architecture split locked:** agent def = translate WHAT IS IT (one golden line) · skill = the
+mechanism · operator sends the agent there. Gates (drowning guard · arc-7 hard-stop · escalation
+ladder) live in the skill, NOT the agent. `epoch.md` cut back to one Discipline bullet ("enough is
+decided after each source, not after all of them … Mechanism: /cmd-zen"); zenith line reverted.
+Atlas pair (atlas-ui + atlas-auto) got the same one line (Guardrails bullet). **Cold-start test
+GREEN** (neutral general-purpose agent, bait version query): step-1 local RAG first → judged
+partially insufficient → ONE web query → stopped; no parallel blast. Cost 31,104 subagent tokens /
+6 tool uses / 49.5s — est. ~1/3–1/4 of a blast run. Report:
+`nabla-lab/drafts/cmds-zen-coldstart-test.2026-07-17.md`. **PINS vs README-taste reconciled**
+(majkee agreed): README-taste = default navigation; epoch PINS = hard-capped hot-cache (max 3,
+never a 4th; a wanted 4th = drop pins for pure taste) pointing INTO the README graph — encoded in
+`cmds-zen.md`. Open: the 3 specific pins + `save-report` still `[DRAFT]` pending majkee. Lesson
+(live): I wired against completeness-compulsion while expressing it in the wiring — build-and-bruise, ship small.
+
+---
+
 ## YOU ARE HERE — [2026-07-16] — editors scope + 4 stale cards refreshed
 
 **editors scope BUILT (2026-07-16):** `/refresh editors` — interrogation-driven scope
