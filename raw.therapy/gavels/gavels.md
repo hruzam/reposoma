@@ -57,3 +57,7 @@ wiring: therapy-origin gavels reference epoch/therapy arc in footer tags
 ## G-11 · 2026-07-17 · therapy-origin
 *When does an assessment become a constraint rather than a finding?*
 `wire: epoch/therapy.md arc 4`
+
+## G-12 · 2026-07-18 · therapy-origin
+*When the work stops asking questions and starts asking for hands — whose turn is it at the wheel?*
+`wire: oraculum/therapy.md arc 3`

@@ -8,6 +8,7 @@ expresses_as:
   - "the human is a node for addressing/grep, NOT a node for governance — they remain principal, arbiter, terminator"
   - "four governors on crossfeed: human-gated, advisory-not-binding, single-synthesizer (Recorder), capped"
   - "reading feedback never auto-triggers writing feedback"
+  - "a seat entering a domain reads the domain's local law before acting — the bed's law is not optional context, it is the ground"
 ---
 
 # Reflection channels

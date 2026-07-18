@@ -8,6 +8,91 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-07-18] — /remote-control v3 — remote-hub live + memory agent-modes
+
+- **remote-hub CREATED (@Delta):** private GitHub repo `github.com/hruzam/remote-hub`, branch `core` tracks
+  `origin/core`, clean tree. Commits `14d1c6b` (init) + `28b1ff7` (memory/wire). Cross-device sync now LIVE
+  once the phone side clones/pulls. Both skills carry concrete sync: `/remote-write` commits + `push origin
+  core` on drop; `/remote-read` `pull --ff-only origin core` first, commits + pushes the reset on take.
+- **memory.md gained `## Agents — invocation & context ceilings`** (majkee's content): one-shot headless
+  (no turn limit · ~200K ctx · one invocation) · looped via SendMessage (each msg adds ctx; ends at ctx
+  exhaustion) · practical ceiling (Eagle/Delta lean · Trajectory longer · Oraculum burns fast on synthesis).
+- README + local CLAUDE.md name the repo (`remote-hub` · `core`).
+- **Helpers WIRED (2026-07-18):** `~/.remote/CLAUDE.md` take-flow — @Eagle orients into the taken task's
+  `project` (harness read → compact report) BEFORE acting; @Recorder files the outcome into that project's
+  session memory AFTER (survives the `task.md` erase). Flow = read → orient → act → record. Grounded in
+  eagle.md / recorder.md — faithful to tool scope (Eagle read-only harness + Bash orientation; Recorder
+  Haiku/no-Bash, never blesses code, marks gaps). Committed + pushed to remote-hub.
+
+**Flagged:** every drop/take hits the `git push` ask-gate (settings `ask: Bash(git push:*)`) — fine while
+majkee is present; allowlist only if it bites. Skills remain "temporary" per majkee. Phone side needs a
+one-time `git clone git@github.com:hruzam/remote-hub.git` if it is a separate device.
+
+---
+
+## [2026-07-18] — /remote-control v2 — skills + git + local harness + safe-for-all
+
+majkee expansion of the handoff box. Six deltas on top of v1 (entry below):
+- **Two temporary global skills** (existence-check clean — no prior remote-*):
+  `~/.claude/skills/remote-write/SKILL.md` (`/remote-write` = drop into `task.md`) ·
+  `~/.claude/skills/remote-read/SKILL.md` (`/remote-read` = take: read once → memorize → reset `task.md`
+  to its blank header → act in the named project). Both carry a git-sync step (commit/push if a remote is
+  set; no-Bash seats dispatch @Delta). Marked "Temporary" in their descriptions.
+- **Harness collapsed to one small file:** `memory/harness-commands.md` → `~/.remote/memory.md` (small,
+  reachable; skills listed at top; points to `raw.card.claude-code.md` for the full dated ref). Old
+  `memory/` folder removed via @Delta.
+- **Git-backed:** @Delta ran `git init -b core` + first commit in `~/.remote/` (branch `core` = temple
+  convention). Local repo only — NO remote yet (flagged: cross-device sync not live until a remote is set).
+  "update on got" = the skills commit on drop/take.
+- **Local harness:** `~/.remote/CLAUDE.md` created — declares the box safe-for-all, the loop, git discipline,
+  and a Helpers stub (@Eagle · @Recorder — majkee wires these).
+- **Safe for all:** `~/.claude/settings.json` → `permissions.additionalDirectories += /home/hruzam/.remote`
+  (reachable from every project session, any seat).
+- Global `~/.claude/CLAUDE.md` block + `~/.remote/README.md` updated to match (skills, memory.md, git, safe).
+
+**Open / flagged:**
+- **Remote = the real transport.** Local `git init` makes it safe/versioned but does NOT sync phone↔desktop
+  unless the two share the same FS OR a git remote exists. Next step if phone is a separate device: create a
+  private GitHub remote (`gh repo create`, @Delta — like the applications-in-common bootstrap) + wire pull/push
+  into the skills. Awaiting majkee's call on repo name + go.
+- Skills are "temporary" per majkee — revisit whether they graduate or fold once the pattern settles.
+
+---
+
+## [2026-07-18] — /remote-control built (mobile↔desktop task handoff, provisory)
+
+`~/.remote/` — machine-global, cross-project, NOT git-tracked drop box for phone sessions. Principle:
+**drop and go · take and erase.** Primitive choice = CLAUDE.md instruction block + folder scaffold (NO
+hook/skill/agent) — majkee named it ("provisory wiring to main CLAUDE.md file"); smallest that fits the
+Foreman ladder. Existence-check clean (25 skills · 27 agents · no `~/.remote` · no `remote` in CLAUDE.md).
+
+**4 deliverables:**
+- `~/.remote/README.md` — golden rules (the law). DROP: fill the four fields in `task.md` (project · who ·
+  what · bye), save, go. TAKE: "come for the task → take it → memorize → erase → back to your project."
+  One task at a time; erase = reset `task.md` to the blank template (file always exists so the phone
+  always sees the shape); presence = `what` filled. MEMORY: reference, never erased.
+- `~/.remote/task.md` — the single drop file. REFINED from a scanned `task/` folder to one fixed file on
+  majkee's "{project, who, what, bye :)}" call; old `task/` + `.keep` removed via @Delta.
+- `~/.remote/memory/harness-commands.md` — the compendium majkee asked for: curated cheat-sheet of most-used
+  Claude Code commands (CLI · slash · keyboard/TUI · this machine's temple /x skills). GROUNDED in the
+  fresh `raw.settings/raw.card.claude-code.md` (v2.1.210, verified 2026-07-16) + pointer to it as
+  authoritative (baked-in-table guardrail honored).
+- `~/.claude/CLAUDE.md` — provisory block appended (34→~43 lines; combined + reposoma `@AGENTS.md` well
+  under the 120 guardrail). Points to the README. Reversible: delete the block to disable.
+
+**Redundancy note (surfaced, not a collapse):** distinct from `_mail/monkey/` (temple-scoped · git-tracked ·
+durable). `~/.remote/` is machine-global · ephemeral · consume-once · project-agnostic.
+
+**Open / flagged:**
+- Transport assumption is load-bearing: TAKE + DROP must see the SAME `~/.remote/` (same machine, or a
+  synced dir). If a phone session runs in a separate sandbox → a sync leg is needed first. Noted in README;
+  not resolved (majkee proceeded on the same-machine lean).
+- Earned upgrade if the provisory CLAUDE.md instruction proves unreliable at pickup: a `SessionStart` hook
+  (deterministic inject). Build on the wall, not now.
+- Compendium is a dated snapshot — refresh when the claude-code card refreshes (~2026-08-06 due).
+
+---
+
 ## [2026-07-17] — /gavel-interpreter built (gavel bed preproduction collector)
 
 `~/.claude/skills/gavel-interpreter/SKILL.md` — preproduction data collector for the EXISTING gavel

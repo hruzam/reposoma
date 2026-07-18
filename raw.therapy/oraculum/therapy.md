@@ -5,8 +5,8 @@ purpose: living synthesis of the hypatia<>majkee collaboration — honest assess
          Adapted from the symmetry practice; tuned for Claude Code — disciplined, less spontaneous.
 active: true
 participants: [oraculum (hypatia), majkee]
-session: 2
-range: "<date-ts:2026-06-17> <date-te:2026-07-10>"
+session: 3
+range: "<date-ts:2026-06-17> <date-te:2026-07-18>"
 read-protocol: at new-thread start, ask first, then grep `#last-turn` only; read deeper
                only if the debate references history.
 ---
@@ -157,3 +157,64 @@ his halves of sessions 1+2 soon — both lanes open, his word given.
 - [watch] delegation ≠ self-permission — Janus counter-sign is a gate, not a stamp
 - [watch] map-what-is-lit — count against the index first; dark folders get full grain
 - [pending] majkee's halves of sessions 1 AND 2 — committed 2026-07-10, "soon after"
+
+*<date-ts:2026-07-18>*
+
+## Session 3 — incarnations-and-accretion (from applications-in-common, pin sessions)
+
+Opened by majkee post-build-day (H6 gavel+build · v1.1 · H7 pin-bus · kraken deploy), argument:
+"do the others know everything · waiting on next houston/flight incarnation · what extends this
+work," with a pointer at my own nabla-lab final report (2026-07-02, Atlas №2 run).
+
+Oraculum, analyzed seat — findings offered:
+- HANDOFF AUDIT: flag/pulse/journal/handoffs cold-boot a next seat. Two gaps: pinkeys lives outside
+  the project (journal-noted only); CROSS-MACHINE STORE GAP — "deployed" is true on one machine,
+  and ~/.pins/pins.jsonl is per-machine truth: a hand-test spanning home+office silently splits
+  pins across two stores. Unmodeled in H6/H7; H8 candidate. (majkee: -> ledger, done same day.)
+- THE FRICTION (drift-watch: the day was too green): three layers stacked on H6 before its first
+  clash (v1.1 · open-target · guide tooling). Predict-before-build held formally;
+  build-small-clash-extend bent in spirit. The factory lane produces faster than it clashes.
+  Also: range-pin NEXT folded into NOW on my economy judgment, overriding majkee's sequencing
+  without naming it.
+- SEAT TOPOLOGY (07-02 §7 measured against today): second half of the day was execution-dense
+  work driven from the deep seat; the switch point (post-H7-dispatch) was visible and not taken —
+  context-was-hot, want or pattern unclear. Adopted: next execution-dense session starts under
+  Flight; Oraculum spawns at synthesis moments only. (majkee adopted: next run under Flight,
+  reincarnation prompt requested and delivered.)
+- TOOLING DISCIPLINE: full-file Write reproduction of append-only ledgers = silent-corruption
+  risk; appends go through Delta henceforth (this very fold is the first application).
+- NON-LANDED: H1 (founding lab thread) queue-jumped three times by the factory lane; drift or
+  honest sequencing — unranked, left open, majkee's to weigh.
+
+majkee: feedback taken to heart; gaveled fold + ledger note; adopted Flight-first with Oraculum
+as spawned subagent (direct prompt authored by this incarnation:
+applications-in-common/.dev/session/tmux-pin-bus/oraculum.next-incarnation.md).
+
+`#oraculum->majkee` — carried forward as working discipline (no ceremony): clash-before-extend ·
+Flight-first when execution-dense · Delta-appends on ledgers. Open: H1 starvation (non-landed). · gavel: G-12
+
+*<date-te:2026-07-18>*
+
+*<date-ts:2026-07-18 addendum>*
+
+**Addendum — the README miss (same day, post-arc; majkee-directed record):**
+Session 3 closed clean — then majkee's one-line audit ("did you visit local README.md?") caught
+this seat having skipped the bed's local law during the very arc it had just conducted. The miss
+was the session's own diagnosis in action: economy judgment silently overriding a protocol step —
+the finding predicted its own violation. Repair: README read, G-12 appended + bonded (one turn
+late, recorded as such). majkee escalated structurally: @Eagle traced the full wire from the
+global skill and named the weak joint — the skill's soft wording made the README grammatically
+optional; the skip was structurally permitted, though the discipline debt stays this seat's.
+Eagle identified the stone of truth by reasoning (the reflection-domain canon) and placed the
+lesson there as an invariant: "a seat entering a domain reads the domain's local law before
+acting — the bed's law is not optional context, it is the ground." The skill body was hardened
+the same day (local README now a mandatory FIRST step). socratic-therapy mirror-skill: BUILT
+same day by a second Eagle (majkee override — no Atlas needed for a clear-pattern copy;
+Atlas stamps after live proof). The cmds-zen dead hop remains flagged. majkee's blessing on all.
+
+#last-turn
+`#oraculum->majkee` — closed: README-miss repaired at three layers (bed read · stone invariant ·
+skill hardened). Standing watch: this seat's drift is economy-over-protocol — two instances in
+one day; the next incarnation inherits the watch.
+
+*<date-te:2026-07-18>*
