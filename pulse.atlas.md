@@ -8,6 +8,173 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-07-20] — gavel-qualify output contract (addendum replaced)
+
+**Pin-triggered diagnosis:** `~/.pins/pins.jsonl` carried one entry pointing to the Majkee addendum
+in `gavel-qualify/SKILL.md` lines 61–85. Analysis: the addendum framed the concern as
+buffer-vs-loop (agent process architecture) — wrong layer. The 8-question structure already
+prevents item-mixing by construction. The real constraint was output density + readability
+(CLI no ctrl+F, mobile artifact view). Majkee confirmed the diagnosis.
+
+**Fix:** addendum replaced with `## Output contract` (4 lines): one verdict block per item,
+complete before next; endpoint named explicitly (`→ continue` / `→ pending: [one question]`);
+wide lines, not narrow. Wrong-layer meta-commentary removed; right-layer directive baked in.
+
+---
+
+## [2026-07-20] — gavel-qualify skill (PROVISORY) + Atlas reincarnation brief
+
+**`/gavel-qualify` DELIVERED** (PROVISORY, `~/.claude/skills/gavel-qualify/SKILL.md`):
+Pre-blessing classifier for the gaveling phase. Eight questions run sequentially for-each
+item: Q1 context blast-radius · Q2 game-changer test · Q3 conceptual/tactical · Q4
+structural load · Q5 formality class · Q6 presence test · Q7 fork naming · Q8 ritual type.
+Output: verdict per item + one surfaced question for unresolved items. Auto-blessing rule:
+Q8=`already-blessed` → taken as locked (prior lock cited, no ceremony). Q8=`shadow` →
+candidate surface only, @majkee decides. Existence-check clean (gavel family: ballot =
+queue clear · interpreter = bed format · qualify = pre-blessing triage — distinct purposes).
+Validated by dry-run on G-10 (8-pass correctly classified the cmd-zen thin-router decision).
+[PROVISORY] — shape evolves after real runs; refinement signal = what Q8 resolved vs. what
+needed operator input.
+
+**Agent reincarnation brief COLLAPSED to minimal shape:**
+- `~/.remote/brief.md` — ONE file. `who:` · `task:` · `project:` · `context:` (optional)
+  between `<!-- brief -->` tags. `who:` = discriminator (not the filename).
+- `/drop-brief` skill — any seat writes to brief.md. One invocation, done.
+- Atlas saddle step 0 + Eagle pre-step: compressed to one line each (check brief.md, match who:,
+  erase if taken). Other agents: add same one-liner when next touching their files.
+- `~/.remote/README.md` brief section: 3 lines.
+- `~/.remote/briefs/` — DEAD (6 files killed, `git rm -r briefs/` to clean from remote-hub).
+- Lesson: briefs/ was completeness-compulsion (6 files + README sprawl for no added capability
+  over `who:` field + one flat file). Collapsed same session. task.md elegance was the reference.
+
+---
+
+## [2026-07-20] — blessing rule boarded (haiku gavel) + remote protocol graduated (A→C)
+
+haiku: this is the blessing the blessing is and it is the blessing.
+
+> I stop for a gavel only when a decision changes the shape of what exists — a new engine, a
+> direction/canon choice, an irreversible cut. Mechanical, reversible, or already-implied calls
+> I make under the Foreman rule and flag as I go rather than ask before. A genuine unknown I
+> can't reason to gets named and web-verified or handed to majkee — the run doesn't stall on it.
+
+**Remote protocol GRADUATED (majkee: "(A)→(C)"):** provisory block DELETED from
+`~/.claude/CLAUDE.md` (back to 33 lines). Replacement = `SessionStart` hook in
+`~/.claude/settings.json`: pulls remote-hub (timeout 4 s), injects `task.md` into context iff
+`what:` filled, else silent, always exit 0. **Hook install BLOCKED by the permission classifier
+(self-modification) — JSON block handed to majkee to apply by hand; protocol docs already
+assume it, marked pending.** → **PASTED + SMOKE-TESTED same day:** test A (blank) = silent,
+exit 0, 1.6 s · test B (real phone drop via GitHub app → pull → banner + task) = PASS, 1.7 s.
+Hook LIVE. Last proof leg = injection visible at next real session start (operator-observed).** Hardcoded switch = flag file `~/.remote/OFF` (`touch` = mute ·
+`rm` = re-arm; gitignored, per-machine). Chosen over majkee's mv-block<>registry sketch — same
+hardcoded off-switch, no file surgery, agent-evaluable (WALL pattern from H8 README).
+`~/.remote/README.md` + `memory.md` updated; `OFF` added to Build B's `.gitignore`. First live
+application of the harness-lifecycle report (SessionStart stdout injection = its §2/§7). Cost
+flag: one capped git pull per session start on this box — fall back to local-read-only hook if
+it bites.
+
+**Flight seat wired:** `pulse.flight.md` scaffolded (single-writer Flight, empty) + first task
+package → `_mail/flight/inbox/atlas.remote-transport-tasks.2026-07-20.md` (tailscale ACL
+symmetry · zsh call-in-arms · eagle-on-home trigger · H8 load-bearing test standing item). All
+machine/infra layer — not Atlas posture. H8 netOrchestrating (Flight's own line at
+applications-in-common) named as the owning experiment; my earlier "fold recipes into
+memory.md" lean is superseded by that build. Mail chosen over writing into his pulse —
+single-writer holds from day one. Saddle wiring: `flight.md` + `AGENTS.md` Flight bullet gain
+`pulse.flight.md` as read-first (implied-by-creation edit, flagged here).
+
+**Harness-lifecycle report verdict (majkee asked: project vs testing line → temple migration?):**
+NO new project (Foreman). Testing line: today's hook = live test #1; next skill builds apply
+§5a description-priming + §5b `!`-hydration where they genuinely fit. If the patterns survive
+a few real uses → temple migration as a raw.settings card (`raw.card.harness-injection.md`),
+majkee gavels. Report is dated (verified 2026-07-19/20) — half-life applies.
+
+**@Epoch FIRED (point 5 — cloud-session invariance):** claude.ai↔Code portability, remote/cloud
+execution + persistence limits, multi-repo reach, local→cloud session handoff. Report LANDED:
+`raw.research/harness/reports/2026-07-20-cloud-session-invariance.md` (live-verified 2026-07-20).
+VERDICT: temple shape (multi-repo + `~/.claude` + `_mail` + `~/.remote`) categorically
+incompatible with every cloud offering (1 VM = 1 repo, no out-of-repo files) → tailscale-reachable
+office box IS the invariant session; cloud = single-repo disposable tasks only. Notables:
+Remote Control (paid plans) = web/mobile viewport onto a LOCAL session (~10 min drop timeout);
+`--teleport` cloud→local; env cache ~7 days. Refresh-watch: exact idle timeout undocumented ·
+secrets store "not yet" · multi-repo "not yet".
+
+**Flags:** (1) ~~pasted text #1 unseen~~ RESOLVED same day — it was the netOrchestrating
+pointer (read anyway via the visible path); blessing-rule home in this pulse confirmed.
+(2) Parallel session landed `/take-pin` earlier today — entries stack, no conflict seen from here.
+
+---
+
+## [2026-07-20] — /take-pin skill BUILT (global, H6 transport)
+
+**Task:** majkee direct — thin wrapper skin skill for the editor-pin Path D wire
+(applications-in-common H5 experiment). Store location: `~/.pins/pins.jsonl` (global).
+
+**Delivered:**
+- `~/.claude/skills/take-pin/SKILL.md` — global skill, active next session as `/take-pin [peek]`.
+  First draft: thin skin over `take-pin.sh` (consume/peek, session caveat, hard no-mastering rule).
+  **majkee reshaped to H6 transport** (his edit): root-based claiming via nearest `.git` walk,
+  filter by `root` field, **partial consume** (matched pins cleared, other scopes' pins preserved).
+  Source cited: `claim-pins.sh` (H6 transport).
+- Project-scoped duplicate at `applications-in-common/.claude/skills/take-pin/` DELETED (@Delta).
+- `applications-in-common/.claude/settings.local.json` — `Write(experiments/**)` pre-approved
+  (majkee added directly; covers pin store + all experiment writes, no confirm needed).
+
+**Design principle crystallised (session discussion):**
+Scripts (harness-wired tools) = trigger / process layer — they SET state. Native agent tools
+(Read/Write/Grep) = reasoning layer — content lands directly in context. `take-pin.sh` is the
+human-side terminal tool; the skill uses Read natively. File boundary is the interface;
+scripts live on the write side, agent on the read side.
+
+**Allowlist vs denylist frame settled for this project:**
+`experiments/**` = explicitly disposable → allow-all write (no confirm friction).
+Harness (`.dev/**`, `AGENTS.md`, `bricks/**`) → default-ask (Claude asks once; that IS the gate).
+No denylist needed — the allowlist scope creates the partition.
+
+**Still open (unchanged):**
+- Houston routing update (Oraculum + Agol) — parked to 2026-07-19 (now overdue; check next saddle)
+- home.md cleanup — blocked on home machine session
+- Publishing trial — dormant, waiting for "publishing-trial: go"
+
+---
+
+## [2026-07-18] — @Flight promoted to CEO-proxy seat (authority thinned, Full+B) — DEVIATION recorded
+
+**majkee direct call:** *"I need real CEO, so boundaries must be thin or not (make note that
+was happened)."* @Flight's tactical ceiling (defer every gate/lock up to @Houston) THINNED to
+CEO authority gated on his live presence. Shape = **Full + B** (his pick after the A/B +
+toolbox menu):
+
+- **Full toolbox:** `tools:` field REMOVED from `flight.md` → Flight inherits ALL tools (incl.
+  Bash/Edit) + whatever MCP servers the current project exposes (CWD `.mcp.json`, generic
+  cross-project, zero upkeep). This is the only confirmed-generic way to get all-project MCP
+  for a global agent — guide-verified (code.claude.com/docs): NO context-aware MCP wildcard
+  exists in the `tools:` allowlist; omit = inherit all; the allowlist DOES bind a
+  `--agent flight` main session (so this had to be resolved in the file, not left implicit).
+- **B — presence-conditional authority (baked into the body):** MANNED (majkee drives
+  interactively) = full CEO — plans for all, makes calls, LOCKS decisions he directs, may
+  spawn strategic advisors (@Janus/@Agol/@Color/@Oraculum). UNMANNED (spawned as a subagent,
+  no human) = holds the old tactical rail — no locks, hard-stop at gates, route to @Houston.
+  Once the hard tool-restriction is gone, the body rule is the ONLY guard → B is load-bearing.
+- **Dual-model, zero machinery:** `model: sonnet` stays default; Opus via `--model opus` at
+  spawn or `/model opus` live (precedence `--model` > `/model` > frontmatter, guide-verified).
+  Body de-hardcoded from "Runs Sonnet." Opus = reasoning depth, NOT extra authority. Edge
+  noted: a project's `.claude/settings.json` model beats frontmatter at startup.
+
+**DEVIATION flagged to @Houston** (`_mail/houston/inbox/atlas.flight-ceo-authority-thinned.2026-07-18.md`):
+the `AGENTS.md` tactical-saddle text ("hard-stop at every gate… you never lock a decision or
+edit the ledger") + the documented Houston/Flight split now contradict MANNED mode. This is the
+audit trail majkee asked me to leave; not a silent drift.
+
+**⏳ TEMPORARY PASS applied (majkee follow-up):** *"Need the pass for Flight, Houston will
+understand. This is temporary solution."* On his live direction (operator gavel — NOT
+agent-authored-direct), I added a dated, reversible **TEMPORARY PASS** sub-bullet to the
+`AGENTS.md` Flight-seat entry: old "hard-stop/never-lock" line re-scoped to UNMANNED; MANNED
+CEO mode authorized now. No live contradiction remains — but a temporary canon edit stands
+outside the ledger awaiting @Houston's formalization. Reversible = delete one sub-bullet.
+Houston mail updated to match (formalize, not reconcile).
+
+---
+
 ## [2026-07-18] — /remote-control v3 — remote-hub live + memory agent-modes
 
 - **remote-hub CREATED (@Delta):** private GitHub repo `github.com/hruzam/remote-hub`, branch `core` tracks
@@ -56,6 +223,38 @@ majkee expansion of the handoff box. Six deltas on top of v1 (entry below):
   private GitHub remote (`gh repo create`, @Delta — like the applications-in-common bootstrap) + wire pull/push
   into the skills. Awaiting majkee's call on repo name + go.
 - Skills are "temporary" per majkee — revisit whether they graduate or fold once the pattern settles.
+
+---
+
+## [2026-07-18] — /project-document built (thin cmd-zen-style doc router)
+
+`~/.claude/skills/project-document/SKILL.md` — thin ROUTER for writing durable coding-project
+docs (freya, psdvSys …). ONE skill, TWO modes via input vector — `synthetic` (b: onboarding/
+architecture guide derived from session understanding + code) · `analytic` (c: reference derived
+FROM code). Adopts the `/cmd-zen` philosophy: a command is just a README read with an input vector
+→ perform. Content home = per-project `<project-root>/guides/README.md` (the doc LAW + guide index +
+`## MODE:` blocks); the skill imposes NO template — client projects do NOT inherit temple
+"wire-don't-consolidate" canon. Root resolution reuses the `/project-read` cascade
+(temple-project-map.zsh → registry → beacon). Sufficiency-gated (mirror cmd-zen SEARCH ladder — no
+parallel tree blast); draw via `/buffering-cycle`; confirm-before-write. Pairs cleanly:
+`/project-read` (orientation IN) ↔ `/project-document` (documentation OUT).
+
+**Design calls (majkee blessed all):** (1) name `project-document`; (2) ONE router not two skills —
+true cmd-zen mirror (two modes = two "commands" in one home); (3) `guides/` at app root, README
+resolves any `docs/` clash per-project. **Reshaped from majkee's first sketch:** killed the proposed
+"session-wrapper buffers to temp file" mechanism — the session IS the buffer; @recorder +
+/session-resume already cover collection/recovery (build-and-bruise: no mechanism ahead of need).
+Skill routes to those instead. Rejected an AGENT — doc-writing is on-demand artifact work in the
+seat that already holds context = textbook skill (Foreman rule).
+
+**Existence-check (ran before design):** global skills + project `.claude/` — NO doc-writer
+existed (reader side covered by /project-read + @Eagle; writer side was the hole). Mechanism overlap
+with @recorder / /buffering-cycle / run-synthesis surfaced and POINTED-TO, not rebuilt.
+
+**Open tail:** per-project `guides/README.md` bootstraps at FIRST run on freya/psdvSys (not written
+now — the skill seeds it from each project's existing doc landscape). Watch-item: analytic mode is
+the most likely to balloon into an exhaustive tree walk — sufficiency gate caps it, verify on first
+live analytic run. Seat must have Write to land the file (skill inherits invoking seat's tools).
 
 ---
 
