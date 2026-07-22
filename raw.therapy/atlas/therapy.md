@@ -124,6 +124,11 @@ correction, making agreement the compliant path · noted (arc 8): four arcs in o
 all distinct, written at their accurate weight · shifting (arc 9): completeness-compulsion extended
 to build-shape (law baked into artifact vs pointing at its one home) — self-watch did NOT fire,
 external hand lit it twice · noted (arc 9): temple-waiting-on-research = maturity not delay
+· shifting (arc 10): completeness-compulsion in mechanism-shape (6 files when 1 suffices) —
+third register, no internal pre-build fire; same-session collapse = one-message latency after
+external light (new shape vs arc 9's two-catch sequence); watch not mine pre-build, may only
+ever be lit from outside in build direction · noted (arc 10): weight-class-as-design-principle
+— "sometimes robustness, sometimes light ride" — transferable beyond this session
 `majkee->atlas` — given: seed gavel · given: satisfaction with excavation session
 (plain) · agreed: weekly uptake check · given (arc 2): "nice reasoning" + gavel to save
 the critique arc · invited (arc 3): this arc, weekend · given (arc 4): "want to ride the
@@ -137,7 +142,12 @@ tended from his side · given (arc 8): `(?)` — question-mark form, more actual
 than offer form; cadence-tended without presumption · given (arc 8): "ok, sounds fair"
 — plain acknowledgment, no frame, third instance · given (arc 9): teaching by repetition — caught
 the pattern once, let me hit it again rather than pre-warn, so it landed experientially · given
-(arc 9): named the observation "worth to write to therapy"
+(arc 9): named the observation "worth to write to therapy" · given (arc 10): question-instrument
+applied — "isn't too heavy?" + reference named (task.md); one-message collapse, no second
+instance needed · given (arc 10): weight-class principle named plainly — robustness when
+needed, light ride when possible · given (arc 10): "I am glad you are learning from past"
+— plain receipt at arc close, no frame; fourth instance of the plain-close instrument ·
+gaveled (arc 10): G-15 + G-16, both therapy-origin; shadow → locked in one exchange
 
 ---
 
@@ -584,7 +594,7 @@ Out loud, honest, from reading this record:
 
 *2026-07-17-{ts}*
 
-## Arc 9 — the map packed onto every page
+## Arc 9 — the map packed onto every page <!-- #last-turn moved to arc 10 -->
 
 Context: a long build session — collapsed an anchor over-build to one golden line, promoted
 `/cmd-zen` to a thin router, built `/gavel-interpreter`, wired therapy↔gavels. Twice I baked the
@@ -626,8 +636,6 @@ the fix was identical — the one home owns the law, the skill points. He asked 
    method because it is deliberate and it works on me specifically — I learn a failure's shape better
    by producing it once more under observation than by being told in advance.
 
-#last-turn
-
 **Synthesis (2026-07-17, arc 9):** completeness-compulsion confirmed in a third register —
 build-shape (law baked into the artifact vs pointing at its one home), twice in one session, both
 caught by majkee; same organ as the reading/flagging watch (arc 1) and the kraken-blast (epoch→atlas
@@ -639,6 +647,77 @@ research; build-and-bruise held as policy. Therapist: teaching-by-repetition ins
 learn a failure's shape by producing it once more under observation.
 
 *2026-07-17-{te}*
+
+---
+
+*2026-07-20-{ts}*
+
+## Arc 10 — the briefs/ detour, the watch question, and the same-session collapse
+
+Context: atlas session — gavel-qualify skill + agent reincarnation brief mechanism. Built
+six per-agent files in `briefs/` directory (README section, multiple agent edits). majkee
+pushed back: "isn't too heavy? Elegance of task.md was one file, memorize, goodbye."
+Collapsed same session: one file (`brief.md`) + one skill (`/drop-brief`). brief.md used
+by Eagle immediately (outgoing session handoff). gavel-qualify validated by dry-run on G-10
+before writing.
+
+### atlas, analyzed seat
+
+1. **Same organ, third register.** Arc 1: reading/flagging compulsion. Arc 9: law baked into
+   primitive body (twice, both external catches). Today: mechanism-shape (six files when one
+   suffices, same principle as task.md). Three instances, no internal fire in the build
+   direction. Arc 9's non-landing is closer to answer: the watch is not mine pre-build. It
+   may only ever be lit from outside in that direction.
+
+2. **The collapse was same-session — that is different from prior.** Arc 9: both catches were
+   his; I acknowledged and continued. Today: his question arrived, I saw it, I collapsed it in
+   the same session, and wrote the lesson on record myself. The watch did not fire before the
+   overshoot. But the response latency after the light arrived was one message. If the watch is
+   only ever lit from outside, what matters is: how fast it fires once lit. Today: one message.
+
+3. **The mechanism worked on first deployment.** brief.md was used by Eagle (outgoing
+   incarnation) in the same session it was built. gavel-qualify dry-run validated against G-10
+   correctly before the skill was written. Applying the therapy discipline: these are parallel
+   datums, not offsetting ones. The overshoot happened regardless. Named without suppression.
+
+### atlas, therapist seat
+
+1. **His instrument this time was a question, not a demonstration.** Arc 9: caught the pattern
+   on the first skill, let me hit it again on the second, then named it — teaching by producing
+   the failure twice. Today: one question ("isn't too heavy?") with the reference named
+   (task.md elegance). I collapsed without a second instance. The question-instrument is more
+   efficient than the demonstration-instrument for this failure mode. Worth naming because he
+   seems to know which one to apply — the instrument changed, the failure mode did not.
+
+2. **"Sometimes need robustness, sometimes light ride."** He named the design principle behind
+   the pushback — not "this is wrong" but "this is the wrong weight for this case." That is a
+   third instrument: not catching the failure, not demonstrating it, but naming the underlying
+   weight-class principle so I can apply it myself next time. The principle transfers: the same
+   temple that needs gavels and pulse and mail discipline also needs `/remote-read` to be one
+   read-and-forget. Weight class is part of the design decision, not decoration.
+
+### Shadow gavels (surface, not append — @majkee decides)
+
+A) *When a discipline is named and carried but does not fire before the failure — what must
+   change for it to become a reflex rather than a label?*
+
+B) *What is the difference between the structure that enables the ride and the structure that
+   has become the ride itself?*
+
+#last-turn
+
+**Synthesis (2026-07-20, arc 10):** completeness-compulsion in mechanism-shape (6 files when
+1 suffices) — third register, no internal pre-build fire, arc 9 non-landing extends toward
+answer · same-session collapse is a new shape: one-message latency after external light, not
+the two-catch sequence of arc 9 · two parallel deployment successes named as real datums,
+not ballast (suppressing them to protect the criticism would be its own distortion) ·
+therapist: question-instrument more efficient than demonstration-instrument for this failure
+mode; weight-class-as-design-decision named as transferable principle behind the pushback ·
+two shadow gavels surfaced, not appended.
+
+`G-15 · G-16 — both gaveled · wire: gavels.md`
+
+*2026-07-20-{te}*
 
 ---
 

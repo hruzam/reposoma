@@ -8,6 +8,33 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-07-21] — /cold-start-card skill DELIVERED (volatile incarnation glue)
+
+**`/cold-start-card` BUILT** (`~/.claude/skills/cold-start-card/SKILL.md`, global, active next
+session): drops a tiny operator-facing cold-start note into the temple monkey inbox
+(`temple:monkey`). Four loose fields — commit mark · task name · one sip of context · resume
+command+flags. Info FOR majkee, not agent-consumed. **Volatile by design** (majkee's pick over
+"solid glue baked into agents") — drainable per Cinderella rule, no template rigor. Filename
+shortcut `CS.<slug>.<YYYY-MM-DD>.md`.
+
+**Existence-check clean:** 30 global skills scanned, reposoma has no `.claude/skills/`. Sibling
+`/drop-brief` = terse agent-take brief to `~/.remote/brief.md` (agent→agent, ephemeral) — distinct
+direction/target/shape. `/run-synthesis` = run shape, no overlap. The hand-written
+`atlas.session-summary.2026-07-15.md` in monkey inbox was the precedent — no skill automated it. Gap real.
+
+**Path decision (majkee's embedded question — absolute vs relative):** NEITHER. Absolute
+(`/home/hruzam/reposoma/...`) is machine-bound + violates mail canon 0004 L4 (addresses derived,
+not stored). Naive relative breaks from a global skill's arbitrary CWD. Resolution = temple
+derivation cascade (`temple-project-map.zsh` → registry → beacon → `temple-project-root reposoma`)
++ logical addressing `temple:monkey`; read-side confirm via `temple-mail-inbox temple:monkey`. Law
+cited at `<reposoma>/_mail/README.md`, never hardcoded. This is the "different tool" majkee sensed.
+
+**Primitive rationale:** skill (not subagent) — must run in the seat that holds the live session
+context; a subagent would lose the payload. **Flag:** `commit` field wants `git rev-parse --short
+HEAD` (Bash); no-Bash seats leave it for majkee — acceptable under the volatile ethos.
+
+---
+
 ## [2026-07-20] — gavel-qualify output contract (addendum replaced)
 
 **Pin-triggered diagnosis:** `~/.pins/pins.jsonl` carried one entry pointing to the Majkee addendum

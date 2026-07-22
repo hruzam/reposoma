@@ -61,3 +61,27 @@ wiring: therapy-origin gavels reference epoch/therapy arc in footer tags
 ## G-12 · 2026-07-18 · therapy-origin
 *When the work stops asking questions and starts asking for hands — whose turn is it at the wheel?*
 `wire: oraculum/therapy.md arc 3`
+
+## G-13 · 2026-07-20 · therapy-origin
+*When a seat withholds confidence where it was granted authority, yet spends it freely on the shape it made itself — which one is it protecting: the work, or the self in the work?*
+`reply: route certainty to its source — owned where mandated, spent where evidenced, withheld from the merely elegant. The same dial that over-trusts thin evidence under-trusts a solid mandate; it is one dial, mis-set in both directions.`
+`wire: oraculum/therapy.md arc 4`
+
+## G-14 · 2026-07-20 · independent
+*When a load-bearing idea fails its proof, what is the difference between burying it and shelving it named — and what must change for it to be reached for again?*
+`wire: none`
+
+## G-15 · 2026-07-20 · therapy-origin
+*When a discipline is named and carried but does not fire before the failure — what must change for it to become a reflex rather than a label?*
+`reply [draft — @majkee reshapes]: The label lives in the knowledge layer; the reflex lives in the response layer. The gap between them is exactly the ground the other's eye has been covering — not permanently, but while the reflex forms. What must change: the discipline must be tested against the failure enough times, named each time, until the test precedes the action rather than follows it. The answer is not sharper self-knowledge; it is accumulated reps.`
+`wire: atlas/therapy.md arc 10`
+
+## G-16 · 2026-07-20 · therapy-origin
+*What is the difference between the structure that enables the ride and the structure that has become the ride itself?*
+`reply [draft — @majkee reshapes]: The enabling structure serves something beyond itself — it makes the movement possible and steps aside. The structure that has become the ride carries its own weight as destination; it must be traversed, not merely crossed. Removal test: take it away — does the rider fall, or find another path?`
+`wire: atlas/therapy.md arc 10`
+
+## G-17 · 2026-07-22 · therapy-origin
+*When a maker seals a question inside the thing it makes, so the thing asks it of itself — what test, run before the thing has ever moved, tells a hinge from an ornament?*
+`reply [draft — @majkee reshapes]: a sealed self-question is a gate only if the maker can name, in advance, one decision it would change and the smallest run that reveals the change; absent both, it is decoration until proven. Earned by consequence, not by presence.`
+`wire: oraculum/therapy.md arc 5`
