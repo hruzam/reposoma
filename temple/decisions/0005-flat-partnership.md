@@ -64,3 +64,43 @@ blind drafts (contaminated — see caveat) → **@Janus = REVISE** (applied) →
 `0005-flat-partnership.md` + `decisions/index.md` row. **Before** distilling the Method into
 `raw.canon/canon.blind-triangulation.md`: **re-run ONE converged point on a position-free brief** so the
 canon card ships with a *clean* worked example, not the contaminated founding one. Runtime matrix = its own gavel line.
+
+---
+
+## Amendment A1 — the peer seat re-bound: Gemini → Codex/GPT (2026-07-24)
+
+`status: GAVELED LIVE 2026-07-24 by @majkee — in-session directive to @Oraculum ("Skip → write":`
+`bureaucracy waived by operator order; Force 4 satisfied by direct live authorization — precedent: the`
+`Flight temporary pass 2026-07-18). Original record above untouched (append-only doctrine §1b).`
+
+### What changes
+1. **The Vega seat persists; the vendor behind it swaps.** Gemini stack → **OpenAI Codex/GPT stack**
+   (Codex CLI · GPT-5.5 line · ChatGPT Plus subscription auth). The seat name was always the chair, not
+   the vendor — majkee 2026-07-24: *"we borrow (picasso this) from gemini."*
+2. **The Gemini line: CLOSED.** Tokens refunded (operator). Google itself deprecated Gemini CLI
+   2026-06-18 (successor: Antigravity CLI) — **the §Runtime hedge ("build-on-Claude against the Gemini
+   sunset") fired**, and Vega's own fallback-ready design ("re-project into Claude/… as fallback") is
+   exactly the mechanism executing this swap. **§Lock 5 failover-adoption, exercised as designed.**
+3. **Machine layer signposted loud, not silent:** `~/.config/zsh/ai/` gemini-bound scripts guarded with
+   notice + `exit 2` (`GEMINI_LINE_FORCE=1` archaeology override) — @Delta pass 2026-07-24. The parked
+   pilot artifacts (`maintenance/gemini-line/`) stay frozen as protocol evidence; the ledger+diff+
+   `git apply --recount` coder protocol proven there **transfers vendor-free** to the Codex line.
+4. **Method unchanged.** Blind triangulation (position-free briefs) · the stone · bounded argument ·
+   gavel tie-break — doctrine untouched. This is a vendor swap, not a doctrine change.
+5. **Runtime projection, new vendor — same shape as the 2026-06-19 lock:** supervised Codex CLI = **GO
+   now** (subscription active); **unattended/headless = WAIT** for the WS2 headless smoke test to pass.
+
+### Evidence & rationale (dated)
+- @Epoch landscape pass 2026-07-23: context-window parity erased Gemini's original selection reason;
+  Codex CLI Terminal-Bench 83.4% (highest confirmed CLI), mature headless + AGENTS.md support; Plus
+  flat-rate economics fit the co-thinker seat (deep, bursty, human-tempo). Lineage distance = the
+  triangulation value; a harness is not a mind (Cursor rejected on that ground).
+- Kimi K2 line deferred to the **army seat** — underline, trigger: real task volume. Not part of A1.
+- Program of record: `maintenance/codex-line/runcard.codex-onboarding.2026-07-24.md` (WS0–WS5).
+
+### Pending inside A1 (transferred, not new doctrine)
+- **The clean re-blind required by §Process was never run on the Gemini line.** It transfers to the
+  Codex line: the **nabla-lab stone trial (WS4a)** — one position-free brief, Claude + Codex blind,
+  triangulate — is designated as the clean worked example before the Method distills to
+  `raw.canon/canon.blind-triangulation.md`.
+- `gemini-cross-check` agent card: retire or re-point at the WS5 bookkeeping batch (@Atlas ticket).

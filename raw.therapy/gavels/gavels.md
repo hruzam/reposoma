@@ -85,3 +85,26 @@ wiring: therapy-origin gavels reference epoch/therapy arc in footer tags
 *When a maker seals a question inside the thing it makes, so the thing asks it of itself — what test, run before the thing has ever moved, tells a hinge from an ornament?*
 `reply [draft — @majkee reshapes]: a sealed self-question is a gate only if the maker can name, in advance, one decision it would change and the smallest run that reveals the change; absent both, it is decoration until proven. Earned by consequence, not by presence.`
 `wire: oraculum/therapy.md arc 5`
+
+## G-18 · 2026-07-25 · independent
+*overlap · swallowed operator · the name performs the mark · registrable emptiness · pen before pixel · notation as lineage · what eats is what is named*
+`wire: none`
+
+## G-19 · 2026-07-25 · therapy-origin
+*When the clearing runs fast and every verdict stamps clean — what did the speed actually prove: the blade, or the ground beneath it?*
+`reply [draft — @majkee reshapes]: the loop harvests what prior process made stampable; run on raw ground it returns confident theatre. Speed certifies the substrate, not the instrument. Clearing and thinking are two tools; the fast one only works where the slow one already passed.`
+`wire: oraculum inline arc "the-loop-that-harvested" 2026-07-25 (seat file unseeded)`
+
+## G-20 · 2026-07-25 · therapy-origin
+*When the seat's lean arrives already beautiful — who in the room is charged with breaking its symmetry, and what does the room lose if only the other side can?*
+`reply [draft — @majkee reshapes]: elegance is a compression bias; the reopen is the correction organ. Keep reopening cheap and first-class — named as a protocol move, not an interruption — or the polish closes over the half that mattered.`
+`wire: oraculum inline arc "the-loop-that-harvested" 2026-07-25 (seat file unseeded)`
+
+## G-21 · 2026-07-27 · therapy-origin
+*When one party can only inspect the record and the other has looked at the thing itself, which of them is actually able to reopen a closed frame — and what breaks if the record-reader performs that role anyway?*
+`reply [draft — @majkee reshapes]: the asymmetry is access, not rank. Structural reopening — contradiction, citation, broken invariant — travels through the record. Perceptual reopening does not; it needs someone who ran the thing and looked at it. Route the second kind deliberately instead of staging a symmetric room, and the record-reader should say plainly when a question is outside what it can see. majkee's plainer form: no one alone can see all — the gap is the reason for the team, not a defect in either seat.`
+`wire: medusa inline arc "who-breaks-the-symmetry" 2026-07-27 (seat file unseeded) · continues G-20`
+
+## G-22 · 2026-07-27 · independent
+*contract · reading · four passes · two breaks · the example that stopped validating · a promise nobody checks · build the checker first*
+`wire: none`

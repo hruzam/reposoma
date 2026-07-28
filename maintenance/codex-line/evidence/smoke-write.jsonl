@@ -1,0 +1,10 @@
+Reading additional input from stdin...
+{"type":"thread.started","thread_id":"019f96d7-7775-7023-a7ab-ca46ce038284"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"I’ll create the file with the exact requested bytes, then verify it."}}
+{"type":"item.started","item":{"id":"item_1","type":"file_change","changes":[{"path":"/tmp/codex-smoke/proof.txt","kind":"add"}],"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"file_change","changes":[{"path":"/tmp/codex-smoke/proof.txt","kind":"add"}],"status":"completed"}}
+{"type":"item.started","item":{"id":"item_2","type":"command_execution","command":"/bin/bash -lc 'wc -c proof.txt && od -An -tx1 -c proof.txt'","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_2","type":"command_execution","command":"/bin/bash -lc 'wc -c proof.txt && od -An -tx1 -c proof.txt'","aggregated_output":"13 proof.txt\n  43  4f  44  45  58  2d  57  52  49  54  45  53  0a\n   C   O   D   E   X   -   W   R   I   T   E   S  \\n\n","exit_code":0,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_3","type":"agent_message","text":"Created [proof.txt](/tmp/codex-smoke/proof.txt) containing exactly `CODEX-WRITES` followed by a newline."}}
+{"type":"turn.completed","usage":{"input_tokens":45162,"cached_input_tokens":38144,"cache_write_input_tokens":0,"output_tokens":147,"reasoning_output_tokens":0}}

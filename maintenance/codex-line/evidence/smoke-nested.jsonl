@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"019f96d7-4ef6-70a1-ba27-45652a71d3c5"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"NESTED-OK"}}
+{"type":"turn.completed","usage":{"input_tokens":16314,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":9,"reasoning_output_tokens":0}}

@@ -8,6 +8,204 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-07-27] — gavel family COLLAPSED 4→2: /gavel-loop absorbs ballot + qualify
+
+**Origin:** majkee asked whether the gavel skills were overengineered and could be synthesized,
+naming `/gavel-loop` as the intended "basic stone extended by process."
+
+**Diagnosis (his, confirmed at file level):** the four skills were *phases of one instrument*, not
+siblings — proliferated by misunderstanding, left running deliberately to observe what parallel
+same-purpose skills would do. Observation is in.
+
+**The load-bearing finding (majkee, field):** `/gavel-ballot`'s one-line render **structurally
+cannot carry wider context**, so every run degenerated into extra dialogue loops asking "where did
+this come from?" That pain is *why* gavel-loop's four-part block exists. Consequence: renders map
+onto **classes**, not operator choice — formal → compressed audit table (no context needed, these
+are retro-records); strategic → four-part block **with wider context by default**, never a one-liner.
+This killed my first proposal (ballot as default entry, loop as escalation) — it re-created the pain.
+
+**Second finding — gavel-loop was most advanced but NOT source-invariant.** Concrete coupling:
+its Sources block instructed reading nabla-lab `session/flag.md` + `session/pulse.md` as truth
+(dead path or foreign-project read when invoked elsewhere); class-split cited nabla-lab lock 18 as
+authority; precondition vocabulary was lab research language. Ballot's scan ladder was already
+invariant — grafted in as Phase 1 intake. G-19/G-20 pointers are temple canon, NOT coupling — kept.
+
+**DELIVERED (`~/.claude/skills/gavel-loop/SKILL.md`, rewritten in place, ~195 lines from 263 raw):**
+Five phases — P0 precondition (G-19) · P1 intake scan ladder · P2 qualify (binary default, 8Q as a
+gate you *fall into* on doubt, not walk through — preserves speed) · P3 render (two lanes by class)
+· P4 stamp (gavel/amend/park + G-20 reopen) · P5 record (ledger contract).
+
+**Contribution ledger:** loop → four-part block w/ wider context, G-19/G-20, class pass,
+amend-verbatim, ripeness ordering, mobile+voice mechanics. ballot → invariant source scan,
+formal-lane table, `rush|briefed|deep` marker. qualify → the 8Q gate.
+
+**Ledger schema settled (question (b)).** Found THREE rival shapes: nabla-lab's session-grouped
+`## Locks — <date>` + `| # | Lock | Status |` table (the field reality) · `/new-project`'s
+`## L<N>` prose seed (bootstrap-only) · ballot's `## Gavel G[N]` key:value block (**orphan — nobody
+writes it**). Ballot's schema DROPPED, not merged; my earlier "take ballot's block" line was wrong
+and is superseded. Field shape adopted as *the ledger contract* — but reframed source-invariant:
+flag.md path resolved from the project harness, no project cited as authority. Note: nabla-lab
+lock 15 (2026-07-08) had already gaveled the review-depth marker into the Status column.
+
+**Existence/reference check:** `/gavel-ballot`, `/gavel-loop`, `/gavel-qualify` had **zero** external
+references (no agent, no skill, no canon) — safe to restructure. `/gavel-interpreter` **is**
+referenced by name in `therapy/SKILL.md` L88 + `socratic-therapy/SKILL.md` L88 → name load-bearing,
+kept OUT of the merge (different artifact = the Socratic bed, different law owner =
+`raw.therapy/README.md ## Gavels`, different act = fold vs stamp).
+
+**Name:** majkee picked `gavel-loop` over my `/gavel` lean and over ballot-seniority. Rewritten in
+place, so no dangling refs.
+
+**Old dirs REMOVED same session (@Delta, majkee released):** `gavel-ballot/` + `gavel-qualify/`
+deleted recursively; pre-check confirmed each held only a SKILL.md. Verified after: `gavel-loop/`
++ `gavel-interpreter/` intact. Global skill count 32 → 30. Family is now `/gavel-loop` (the stone)
++ `/gavel-interpreter` (the bed). No residual.
+
+**Flagged follow-up (not fixed, separate gavel):**
+`/new-project` seeds `## L1 — Stack` prose but projects then grow via `## Locks — <date>` tables →
+mixed-shape flag.md. Real inconsistency, minor, different skill, out of this merge's scope.
+
+---
+
+## [2026-07-26] — larvaTnux W2 DELIVERED: factory volatile zsh layer (Fork Y, collapsed)
+
+**Origin:** W2 released by majkee this session ("w2" → "all blessed"). Architecture was locked
+2026-07-25 (Fork Y — fully volatile, project-owned, on-request, zero canon touch). Boot pad seed:
+`applications-in-common/.dev/_mail/atlas/inbox/monkey.boot-pad-bus.2026-07-23.md`.
+
+**DELIVERED (project-local `applications-in-common/.dev/zsh/`, 5 files + 1 shadow note):**
+- `_base.zsh` — ROUTER/loader. Self-locates `$FACT_ROOT` via `${(%):-%N}:A:h:h:h`; double-source
+  guard; sources the three siblings; runs boot inherently on activation.
+- `_keyboard.zsh` — KEYBOARD, aliases only (house LAW: bodies in engine). `fact-*` family.
+- `factory.zsh` — `<hokus pokus>` ENGINE: orient/exp/bricks/hyp/flag/pulse + `fact-help` columns.
+- `boot.zsh` — COMMON BOOT = dependency-ordered idempotent brick-boot chain (see below).
+- `README.md` — the CARD (authority for readers, wiring rule 1).
+- `~/.config/zsh/config.zsh` — comment-only SHADOW NOTE appended at EOF (no sourcing, no
+  registration). Edit went through — no permission block.
+
+**Collapse honored (majkee steer):** 7-file sketch → one router · one keyboard · common boot ·
+`<hokus pokus>`. Did NOT over-file.
+
+**Boot reframed mid-session (majkee correction — the real value):** boot is NOT a banner. It is an
+inherent bring-up sequence. Proven by larvaTmux `pad.1-tap.md` STEP 0 = BLOCKED ("NO BUS SESSION"
+— tmux server not running): ommatidium (H12 tap) has nothing to test unless the tmux bus pane (H7)
+is already live. Generalized: each new brick lands on an earlier one it assumes booted. So
+`boot.zsh` = dependency-ordered, idempotent, check→bring-up→report chain, auto-run on
+`source _base.zsh`. Chain today: (1) tmux bus pane via `tmux-pin-bus/smoke/01-sid-via.sh`
+(idempotent) · (2) `~/.wires/pins.jsonl` check-and-warn (decision-11; never silently creates a
+wire store). Explicit registration point for the next brick's boot step. Connects to my HELD
+`/zsh-seq` note (2026-07-24): the sequencer now HAS a sequence — boot IS it.
+
+**Design calls (all majkee-blessed):** (1) launcher = bare `fact` — the gaveled `!` collides with
+zsh history expansion (unusable interactive alias; zenith-zsh confirmed no `!` precedent). Flagged,
+NOT silently overridden; majkee blessed `fact`. (2) `fact-bus` alias reuses `_fact_boot_bus` body
+— one bus bring-up, called by boot AND manually. (3) bricks-lab folded into `fact-bricks` (single
+`<hokus pokus>` engine). (4) bare `fact` = help.
+
+**Guardrails honored:** house LAW (aliases in keyboard, bodies in engine) held even locally.
+`fact-*` prefix HELD in reserve — NO `keyboard.md` row, NO `keys.zsh` registration while local.
+Paths derive from `$FACT_ROOT` (wiring rule 4); bus + wire-store literals each carry a
+`# wiring truth` comment (rule 3). Card is authority (rule 1).
+
+**Existence-check:** `.dev/zsh/` did not exist (clean build). zenith-zsh traced conventions: no
+prior `!`/volatile-loader; house pattern is lazy `project-switcher.zsh` launchers.
+
+**⚠ RESIDUAL / flags:** (1) **Devenv sync leg OPEN** — `.dev/zsh/` is gitignored in the app repo,
+committed in the devenv; persists cross-machine only after an operator `sync.sh` pass. NOT run by
+me (atlas-ui, no Bash for that transport). (2) Boot untested live — I have no Bash seat; first
+`source _base.zsh` is an operator/Polyp smoke. (3) W3 (`/boot` skill · `/zsh-wire`) + W4 (coldstart
+BRICK — must be a PROMOTION, not a direct build) still QUEUED, await release.
+
+---
+
+## [2026-07-25] — /gavel-loop skill DELIVERED (sequential gavel-clearing protocol)
+
+**Origin:** build brief `reposoma/_mail/atlas/inbox/oraculum.gavel-loop-skill.2026-07-25.md`
+(gaveled majkee 2026-07-25 in-chat — "all underline HINTS gaveled," skill-worth confirmed).
+Field-proven at nabla-lab 2026-07-24/25: 8 locks + 15 days ledger debt cleared from a phone.
+
+**DELIVERED (global, `~/.claude/skills/gavel-loop/SKILL.md`, active next session):**
+`/gavel-loop` — sequential gavel-clearing. Per gavel: 4 parts (Impact · Wider context · Seat
+lean · Stamp) then STOP for operator gavel/amend/park. Phase-0 class pass (formal → audit table
+no-stop · strategic/taste → loop queue · doubt escalates up). Two guards baked as REFUSE/REOPEN
+organs. Ledger duty = append-only supersede-never-edit to flag.md. Mechanics: mobile mode,
+voice-note buffer-decode-mirror-before-stamp, ripeness-ordered arc.
+
+**Existence-check (ran before build — gavel family fully mapped, NO collision):**
+- `/gavel-ballot` = fast PARALLEL batch render, one-reply → the fast lane; gavel-loop is the slow
+  sequential deep lane. Complementary, both kept.
+- `/gavel-qualify` = deep 8Q classifier → gavel-loop runs a lighter BINARY class pass and POINTS
+  to qualify when the binary is not enough. Reuse, not duplicate.
+- `/gavel-interpreter` = writes the Socratic bed → gavel-loop STAMPS flag.md locks and explicitly
+  does NOT write the bed; points to interpreter for bed-worthy locks. Clean separation per brief.
+
+**Guardrails honored:** guards cited to authority (`raw.therapy/gavels/gavels.md` G-19/G-20,
+verified present L93/L98 — no dangling pointer), bed law pointed to `raw.therapy/README.md
+## Gavels` (not copied), nabla-lab `session/flag.md` locks 18–25 named as source (verified
+exists). Thin-first / grep-first economy baked into the skill's own text. Sonnet-tier (procedure,
+not judgment) stated.
+
+**Design calls (Foreman/blessing rule — mechanical + reversible + brief-specified, flagged not
+asked):** (1) binary class pass rather than importing qualify's 8Q — lighter, points up on doubt;
+(2) name `gavel-loop` (family convention); (3) no bed-write path — hard boundary to interpreter.
+
+**Residual:** mail archive = state transition per brief ("mv this memo to archive/"); dispatched
+to @Delta (no Bash in atlas-ui seat). Note: build brief landed in the REPOSOMA temple inbox, not
+the applications-in-common project inbox — cross-scope task, delivered global.
+
+---
+
+## [2026-07-25] — larvaTnux: polyp DECOMPOSED to skills (Wave 1) + factory zsh layer queued
+
+**Origin:** boot pad `applications-in-common/.dev/_mail/atlas/inbox/monkey.boot-pad-bus.2026-07-23.md`
+(commit 54fe775). Ask decomposed into 4 waves across a buffering session; majkee gaveled the
+architecture, then released Wave 1 only and parked the rest.
+
+**Wave 1 DELIVERED (project-local, `applications-in-common/.claude/`):**
+- `skills/sqcr/SKILL.md` — pad runtime (verbatim lift from polyp: read STEP N → run verbatim →
+  capture → fill `>MAJKEE report` → branch verdict). `/sqcr <pad>`.
+- `skills/sea-pen/SKILL.md` — report seat: verdict → prediction → `testing-protocol.md`. No
+  Write/Bash. `/sea-pen <slug>`.
+- `agents/polyp.md` — REWRITTEN to thin seat + CASE-SWITCH router (mode MANNED/UNMANNED × which
+  skill). Handoff (journal + stream CLOSE) kept in the router, not the skills. Builder note under
+  the line. Pad-loop + sea-pen sections lifted OUT verbatim — extraction, not invention.
+  Architecture-split precedent: pulse 2026-07-17 (agent = seat+router · skill = mechanism).
+
+**Architecture LOCKED (majkee gavels this session):**
+- **Fork Y** — factory zsh layer is FULLY VOLATILE, project-owned (`.dev/zsh/`), sourced
+  on-request. ZERO canon touch. "volatile as mailing" honored.
+- **No claviature/`keys` registration while local.** `fact-*` family prefix HELD in reserve for
+  the day it goes global (one-line escalation, separate gavel).
+- **On-request activation:** `!` alias → `_base.zsh` (local loader) → `{_keyboard.zsh, <scope>.zsh,
+  boot.zsh, help.zsh}`. NO local `config.zsh` — only a SHADOW NOTE in the global `config.zsh` as
+  the main-space breadcrumb (agent-visible "in case" without global sourcing).
+- **Wave 2 steer (majkee):** collapse the 7-file sketch → **one router · one keyboard · common
+  boot · `<hokus pokus>`.** Do NOT over-file it.
+
+**PLOT-TWIST (correct the record): claviature is ALREADY LIVE.** `pulse.claude.md` LIVE BOARD says
+claviature is "NEW — needs design session." STALE. zenith-zsh found it built: `ai/keys.zsh` engine
++ `keys` command (P12) + `claviature.global.spec.md` (locked doctrine: *derive, don't register;
+register FAMILIES never keys; unknown keys → UNSORTED drift-detector*). Houston to update his board.
+
+**Waves QUEUED (await majkee release):**
+- **W2** — volatile zsh layer (Fork Y, collapsed per steer) + `config.zsh` shadow note.
+- **W3** — `/boot` skill (fills the *pending* pointer already in polyp's case-switch) + `/zsh-wire`
+  (repeatable Q1 wiring primitive; DEFERS devenv/P11 bootstrap to `/new-project` — anti-redundancy).
+- **W4** — kraken (Trajectory or Vector — majkee to pick) for a workspace-coldstart **BRICK**.
+  ⚠ **LAW-FLAG:** AGENTS.md "bricks are promoted, never born." W4 MUST be a PROMOTION from the
+  SUPPORTED H7 (bus) + H12 (tap) survivors with provenance header — not a direct build.
+- **`/zsh-seq`** — HELD (option 3): application cold-start is a sequencer with no sequence today
+  (1 brick = `pin-core`, a library, not bootable). Add brick boot-contract line to `bricks/README.md`
+  only when W4 lands.
+
+**Flags:** (1) `/boot` is a live-but-empty pointer in `polyp.md`, marked *(lands Wave 3)* — not
+silent. (2) Existence-check clean: no prior `sqcr`/`sea-pen`/`zsh-wire`/`zsh-seq`; no factory toolkit
+in `~/.config/zsh/projects/`. (3) `/cold-start-card` (operator note) vs `/zsh-seq` (executor) — kept
+distinct. (4) I ran as atlas-ui — no Bash; bus relaunch (`smoke/01-sid-via.sh`) is operator/Bash-seat,
+and T1 was BLOCKED (no tmux server) anyway.
+
+---
+
 ## [2026-07-21] — /cold-start-card skill DELIVERED (volatile incarnation glue)
 
 **`/cold-start-card` BUILT** (`~/.claude/skills/cold-start-card/SKILL.md`, global, active next
