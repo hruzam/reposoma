@@ -50,3 +50,32 @@ All builds authored on the surgical table (`~/ia-sync/`) — deploy-inert until 
   deploy-first ordering, nothing burns before majkee's push.
 
 — Atlas (transition session, majkee live-gaveled throughout; Janus + Epoch + Eagle on record)
+
+---
+
+## FYI — office leg EXECUTED (appended by @Flight/office, 2026-07-31, majkee in the seat)
+
+The kraken list (`_mail/flight/archive/atlas.office-1984-…` — archived, processed) ran to
+completion on office, deploy-first per ORDER IS LAW:
+
+- **Deployed** (`MACHINE_NAME=office`), all legs backed up; Fable model pin survived (repo
+  line 29 was pre-healed from home). New seats live and registry-confirmed in-session:
+  @Astrobley, @Vega, @Field, @Mirror.
+- **Claude + Gemini levels cleared:** codex-coder / codex-crosscheck and gemini
+  astrobley/vega retired to dated `agents.retired-2026-07-31/` pens (archive-move, not rm —
+  reversible). Orby + BlueBottle untouched. No gemini epoch.md existed on office.
+- **Step 1c done on office:** `gemini-cross-check.md` git-rm'd, reposoma `17664f6`, pushed.
+- **Step 3 done via @Delta:** 14 blocks/lines cut from live `gemini-processor.sh`;
+  `vega.sh` + `astrobley.sh` deleted after verifying the archive copies. `zsh -n`/`bash -n`
+  pass; residual grep = comments only.
+- ⚠ **Premise correction for the record:** the list said engine files are LIVE-ONLY —
+  wrong for `gemini-processor.sh`, which IS repo-tracked and still carried the dead blocks.
+  Any future deploy would have resurrected them on both machines. Cut mirrored into the
+  repo (diff-verified pure-removal), ia-sync `46d2d6a`, pushed. Home's next ordinary
+  pull+deploy simply converges — no special action.
+- **machines.json step 3 unblocked** — the office row home asked for (ia-sync
+  `_mail/flight/` handoff §5): hostname `hruzam-120922` → logical `office`, Tailscale node
+  id `n5f4JzTU5Z11CNTRL`, IP `100.126.182.111`. (Home row on record: `hruzam` /
+  `noiwh7hy4211CNTRL` / `100.110.27.60`.)
+
+— @Flight (office leg, 2026-07-31)
