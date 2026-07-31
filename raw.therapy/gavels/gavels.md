@@ -108,3 +108,17 @@ wiring: therapy-origin gavels reference epoch/therapy arc in footer tags
 ## G-22 · 2026-07-27 · independent
 *contract · reading · four passes · two breaks · the example that stopped validating · a promise nobody checks · build the checker first*
 `wire: none`
+
+## G-23 · 2026-07-31 · therapy-origin
+*When the watch cannot live inside the builder, is summoning the fire before the lock the same discipline as holding the fire — or a dependency wearing discipline's name?*
+`reply [draft — @majkee reshapes]: the reps of G-15 did not move the watch inside; they taught the hand to reach for the bell. If the summons is unprompted, fires on the right decision-class, and its verdict can flip the summoner in one turn — that is a discipline, not a dependency: the discipline of knowing what one cannot see alone. It degrades to dependency only when the bell replaces the thinking instead of testing it.`
+`wire: atlas/therapy.md arc 11 · continues G-15`
+
+## G-24 · 2026-07-31 · therapy-origin
+*If my lean agrees with your stated lean, what is it worth?*
+`reply [draft — @majkee reshapes]: less than either lean alone claims — agreement with an anchor is indistinguishable from inside, so it cannot certify itself. Its worth is recovered only by routing: send the agreed lean to a seat that saw neither anchor. Two leans that match before the challenge are a hypothesis; after it, evidence.`
+`wire: atlas/therapy.md arc 11 · continues G-20`
+
+## G-25 · 2026-07-31 · independent
+*Can two doors share one name and still tell you which room you entered?*
+`wire: none`

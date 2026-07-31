@@ -8,6 +8,218 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-07-31] — TRANSITION SESSION: codex composites named (Vega·Astrobley·Mirror) + Field born + BlueBottle claude-wiring 1984'd
+
+**Directive:** `_mail/atlas/inbox/majkee.transitions.2026-07-31.md` (burn-the-ships process, majkee
+live-gaveled every fork). ALL builds on the surgical table — deploy-inert until majkee's push.
+
+**DELIVERED (table `~/ia-sync/claude/agents/`):** `vega.md` (ex codex-crosscheck — calibration-star
+vignette, 0005 A1 seat name landed) · `astrobley.md` (ex codex-coder — Margaret Hamilton vignette,
+chair vendor-shifted Gemini→Codex) · `mirror.md` NEW (Kontsevich, position-AWARE adversarial Codex
+challenger — exact inverse of Vega's position-free refusal) · `field.md` NEW (Faraday, in-house
+buffer/driller/melter/synth — BlueBottle successor; Faraday→Maxwell→Heaviside/@Vector lineage) ·
+`epoch.md` runbook repointed (field/vega/mirror; bluebottle refs cut). `maxTurns` baked (3/3/6,
+Epoch-verified field) · dead `.larva` fallbacks stripped (old W7 healed in the rename).
+
+**Plumbing deduped:** `ia-sync/zsh/guides/codex-relay.contract.md` (canonical wrapper/exit-codes/
+verbatim/never-block + labeled SAME-VENDOR FALLBACK law) + Epoch practitioner guide
+`codex-relay.metadata-scripting.2026-07-31.md` (skill-vs-agent frontmatter split; `!` hydration is
+SKILL-only → `/mirror` skill DEFERRED build-and-bruise; anti-rec: no `memory:` on blind relays).
+
+**JANUS VERDICT (flipped my lean):** fold-Mirror-into-crosscheck REJECTED — codex-coder already
+proves "same wrapper, opposite contract = separate seat"; two opposite refusal valves in one haiku
+= undetectable mix-ups ("building the poison into the poison detector"). Dedupe plumbing, never
+the contract. majkee accepted.
+
+**ARCHIVE SECTOR established:** `raw.substrate/archive/` (grep-excluded, README = law) — verbatim
+deposits: codex-coder, codex-crosscheck, gemini-cross-check (retired w/ provenance: Sonnet 1M
+killed Gemini context edge). EAGLE AUDIT on record: BlueBottle = zero locks (safe); Astrobley/Vega
+touch 0005 (Houston annotation asked); **Vector untouchable** (locked 0006/0008/0012 — Field built
+instead of repurposing); Orby clean, stays Gemini ears-and-eyes; keyboard launchers UNTOUCHED.
+
+**MAIL OUT:** `_mail/houston/inbox/atlas.transition-1984-codex-composites.2026-07-31.md` (ledger
+gavels + 0005 annotations + roster/system-map asks) · `_mail/flight/inbox/atlas.office-1984-archive-
+delete-list.2026-07-31.md` (office box: deploy-FIRST ordering, gemini-scope deletes, ⚠ zsh launcher
+surgery PENDING — no bulk grep-delete on "vega", it's a live Claude seat now).
+
+**ROUND 2 (same session, majkee follow-up gavels):** (a) vega.sh/astrobley.sh launchers ARCHIVED
+verbatim (both were already PARKED behind the 2026-07-24 GEMINI_LINE_FORCE wall; astrobley's
+`--patch` ledger protocol = the "inner git" over-engineering, preserved as specimen; NOTHING in
+them needed by the Codex gates) → deleted from composer (Delta) · (b) table keyboard.zsh cut:
+vega/astro shims + agy-astrobley removed, orby/bluebottle KEPT, model constants kept for engine
+compat (comments retagged) · (c) guides audited: keyboard.md rows pruned, guide-for-builder.md
+scope-shrunk banner (governs Orby/BlueBottle + future multimedia only; Codex authority =
+codex-relay.contract.md — POINT, my fold decision: no fold, pointer instead) · zenith-zsh.md
+launcher listing fixed · (d) **NAMING LAW gaveled: skill and agent must NEVER share a name** —
+patched into Epoch's metadata guide (§e post-scriptum; `/mirror` skill FORBIDDEN under that name;
+future entries: /stone-trial · /mirror-brief · /codex-task) · (e) Delta×2 dispatched: git ops
+(composer rm, ~/.gemini/{vega,astrobley}.md harvest-mv, staging git mv, .rgignore — STAGE ONLY,
+no commit) + live gemini-engine surgery (gemini-agents/processor/base: vega/astrobley blocks out,
+orby/bluebottle intact, syntax-checked).
+
+**DELTA REPORTS (both landed clean):** git-ops PASS — 12-file archive inventory complete, both
+repos STAGED (no commit), orby/bluebottle + staging protected-list untouched, `.rgignore` created.
+zsh-engine PASS — vega/astro blocks out of gemini-agents/processor/base, `zsh -n`+`bash -n` green,
+orby/bluebottle wiring verified intact (13/12/5 refs), `_gai_*` helpers unchanged, retirement
+comments in place. ⚠ two residual flags: (i) live `~/.config/zsh/ai/{vega,astrobley}.sh` still on
+disk this box (composer copies rm'd; delete live AFTER deploy, same as office ordering) ·
+(ii) engine retains an `epoch()`/agy-epoch Gemini function though keyboard.md P5 says that seat
+was killed 2026-07-11 — pre-existing inconsistency, NOT touched, flag for a later hygiene pass.
+
+**ROUND 3 (majkee released residuals 1+2):** Delta pass 3 CLEAN — live `vega.sh`/`astrobley.sh`
+DELETED (archive existence verified first) · gemini-EPOCH residue house-cleaned: `epoch()` block +
+`gemini-epoch`/`g-epoch` aliases harvested to `archive/2026-07-31.gemini-epoch-residue.sh` then
+removed from all three engine files; BONUS FIND: `~/.gemini/agents/epoch.md` still existed (the
+2026-07-11 kill left its agent file) → harvested-mv to archive. Syntax checks green (zsh -n ×3,
+bash -n processor), orby/bluebottle intact, staged no-commit. Home zsh sphere is now FULLY clean.
+Office email UPDATED same day: Step 3 rewritten — office mirrors the engine surgery (vega/astro +
+epoch residue), deploy-first, no bulk grep on "vega".
+
+**STILL OPEN:** (1) majkee: review staged → deploy+push → delete live `~/.claude/agents/
+codex-{coder,crosscheck}.md` leftovers (ONLY remaining live-delete, after deploy) · (2) Houston
+ledger + roster + 0005 annotations · (3) skill-side codex entry points deferred (naming law binds) ·
+(4) office box runs `_mail/flight/inbox/atlas.office-1984-archive-delete-list.2026-07-31.md`.
+
+---
+
+## [2026-07-30] — GATE OPENED same session → BUILD HALF DELIVERED — ia-sync surgical table as the build output surface
+
+**UPDATE (same session · majkee gate).** majkee opened the gate — instant blessing for all actions,
+Houston bureaucracy (decision record) to follow later. Task sharpened: re-point my **build primitives**
+so every GLOBAL primitive is authored onto the **surgical table (ia-sync composer)**, never the live
+`~/.claude/` directly (direct edits left legacy litter + cross-machine drift — his stated motive).
+
+**DELIVERED (edited ON the table — dogfoods the rule on its own carriers):**
+`~/ia-sync/claude/agents/atlas-auto.md` + `atlas-ui.md` re-pointed. atlas-auto's default output moved
+off the (deleted-today) `.larva/agents-staging/` → surgical table; atlas-ui's off direct `~/.claude/`
+→ surgical table. New `## Output path — the surgical table` block in both: path map (agent/skill/
+command/hook/zsh), deploy step (`bash ~/ia-sync/deploy.sh` → commit/push → other machine `git pull` +
+`deploy.sh`), directionality caution (never `sync.sh` a not-yet-deployed file), and **project-scoped
+stays unchanged** (project's own `.claude/`, syncs via its devenv — NOT the table).
+
+**BUFFER DECISION (majkee delegated "you argue/pick") — 2026-07-30.** atlas-auto (autonomous) now
+authors into a build buffer `~/ia-sync/_staging/` — git-tracked (recoverable from birth — the
+structural cure for the `.larva/agents-staging/` "roughly deleted, no proof" loss majkee named), and
+**deploy-INERT by construction**: `deploy.sh` only spreads `claude/{agents,skills,commands}/`, `gemini/`,
+`majkee/`, `zsh/` — a top-level `_staging/` root is outside every leg, no deny-wiring needed. Promote =
+`mv _staging/claude/agents/x.md → claude/agents/x.md` then deploy. **Picked ia-sync over temple space**:
+temple = the litter failure mode `.larva/agents-staging/` already proved (orphan drop-folder in the
+meta-repo); composer = where cuts belong. atlas-ui stays on the keep-set proper (human present = the
+gate). atlas-auto.md rewritten on the table accordingly. ✅ `~/ia-sync/_staging/README.md` written — a
+"stone of truth" carrying the story (the `.larva` deletion + precodex-agent loss), the flow, and the
+HARVEST-BEFORE-REMOVE law; also gives the buffer dir a git-tracked presence + a "do not tidy away" guard. majkee's "tragical mistake" = deleting the
+precodex agent with `.larva/agents-staging/`; Flight says rescuable on-table/git-history (unproven) →
+harvest W1.
+
+**⚠ NOT LIVE until deployed.** I authored on the table only (no Bash seat). The live
+`~/.claude/agents/atlas-*.md` are unchanged until an operator/Bash seat runs `bash ~/ia-sync/deploy.sh`
++ commits/pushes ia-sync. Ordering: deploy (repo→live) must precede any `sync.sh` (live→repo) or the
+stale live copy clobbers the table.
+
+**STILL OPEN:** (1) deploy.sh run + push (majkee runs it — rides out with other staged surgical cuts) ·
+(2) "eventually" — skills that shape harness/agents route through the table too — follow-on · (3) Houston
+decision record (majkee owns the bureaucracy) · (4) session-end handoff doc/email to Houston.
+
+**TRACE SWEEP (majkee ask: "what else can we leave trace?") — 2026-07-30:**
+- ✅ **Agents CLEAN** — live 30 = table 30, exact match, no orphans.
+- ⚠ **4 live-only SKILL orphans** (in `~/.claude/skills/`, NOT on table): `fetch-agent-docs` ·
+  `fetch-ollama-docs` · `fetch-qwen-docs` → **RETIRE (majkee gaveled — legacy, superseded by global
+  `/refresh`)**; readers confirm NO dangling refs to them in harness or raw.settings → clean delete.
+  `claude-creator` → **RETIRE** (dead draft-only predecessor; its desc names dead `/atlas-agent-creator`
+  + `atlas-agent-creator subagent`; pulse:1167 already marked it "ERASED 2026-07-15" yet it survived —
+  litter). All 4 need @Delta `git rm` (no Bash in my seat).
+- 🔗 **BIG "where else" — incomplete `claude-creator-*` → `atlas-*` RENAME migration** (readers + grep):
+  · atlas-ui body `@atlas-sniffer` → `@Zenith` = **FIXED on table this pass** ·
+  · `raw.settings/raw.card.autonomous-orchestrator.md` (6 refs) still `claude-creator-auto` → STALE CARD,
+    refresh-cycle territory (re-synthesize, not hand-edit) ·
+  · freya.devstudio (`houston-devstudio-architect.md` spawns `claude-creator-auto`; `flag.md`:110-120
+    rename "queued one day") = CROSS-PROJECT migration, Houston/majkee gaveled — big, separate ·
+  · `temple/roster.md`:54 "@AtlasAuto writes to staging" = stale echo → Houston.
+- ⚠ **Legacy `raw.settings/agents-staging/`** = 4 FROZEN gemini Tier-S drafts (epoch/orby/astrobley/vega)
+  + `README.md`:14 row. Distinct from the deleted `.larva/agents-staging/`. Gemini line frozen 2026-07-24
+  → VERIFY promote-or-retire, Houston/Vega.
+- ⚠ **Codex-line staging traces** (Flight): `raw.guides/codex-line.builder.md`:7 stale deploy path ·
+  on-table `codex-coder.md`:38 + `codex-crosscheck.md`:41 `.larva/agents-staging/codex-run.zsh` fallback
+  → points at deleted dir, WOULD DEPLOY STALE. Flag to Flight before/with the push.
+- ✅ Harness core (reposoma AGENTS/CLAUDE/system-map/decisions/registry, `~/.config/zsh` AGENTS/CLAUDE)
+  CLEAN — `~/.config/zsh/AGENTS.md`:3 already declares ia-sync = truth, this tree = deployed copy.
+- ⚠ **Dangling `.larva/agents-staging/` fallback** in ON-TABLE `codex-coder.md`:38 + `codex-crosscheck.md`:41
+  — points at the dir deleted today; `codex-run.zsh` now at `~/.config/zsh/ai/`. Would DEPLOY stale.
+  Codex/Flight territory → FLAG, not mine to edit.
+- ⚠ **Stale guide** `raw.guides/codex-line.builder.md`:7 names `.larva/agents-staging/` as staging+target.
+  Codex/Flight territory → flag.
+- ⚠ **Legacy `raw.settings/agents-staging/`** (`raw.settings/README.md`:14 row + `agents-staging/agy/`) —
+  frozen gemini Tier-S staging. Houston/Vega territory → flag.
+- ⚠ **Plan-of-record gap** — `ia-sync/session/plan/surgical-table.plan.md` (majkee's gaveled doctrine,
+  2026-07-30) has NO atlas-builder item; my repoint is a faithful extension but UNTRACKED there. Must land
+  a line in that plan + the Houston handoff, else it's a silent cut. (That plan's own items: 1 banner ·
+  2 zenith-zsh repoint + `.deployed` stamp · 3 zsh AGENTS.md done · 4 codex leg · 5 `~/.majkee` leg.)
+
+**SESSION CLOSED — Houston handoff dropped (majkee blessed):**
+`_mail/houston/inbox/atlas.surgical-table-atlas-handoff.2026-07-31.md` — decisions 1–3 for his ledger
+(atlas builders→table · buffer=ia-sync `_staging` · HARVEST-BEFORE-REMOVE), his harvest seats (W0/W6/W8
++ ledger locks), the proven recovery, and the open flags (deploy pending=majkee · codex `.larva` W7=Flight
+· roster:54 W3). Everything recorded + reversible. Deploy = majkee's next act.
+
+**HARVEST LAUNCHED (majkee: "1. oraculum · 2. ok · 3. fine → go") — 2026-07-30.**
+- **Lead = @Oraculum** (majkee gaveled). Seed handoff written:
+  `_mail/oraculum/inbox/atlas.harvest-plan-seed.2026-07-30.md` — W0–W8 table, HARVEST-BEFORE-REMOVE law,
+  sequence (W0 gate → W1 heal-first → W3/4/5 parallel → W6/7 verify → W8 close), cast. Atlas = harness
+  co-lead, Houston = gate/ledger. It's a SEED — Oraculum owns + reshapes.
+- **W1 RESULT (@Delta):** the `.larva/agents-staging/` folder WAS fully git-tracked — nothing lost to
+  gitignore. Last-live `d266726` → delete `a493cb4`. Inventory at deletion: `codex-coder.md`,
+  `codex-crosscheck.md`, `codex-run.zsh` (all already moved/safe) + `gemini-subagents/{astrobley,orby,
+  vega}.md` (June-19 frozen-line copies). **NO pre-codex agent found** at last-live state. 5 `.md` files
+  recovered to `~/ia-sync/_staging/recovered/` for Oraculum. **The deletion lost nothing** — Flight's
+  "rescuable on the table" claim PROVEN. ⚠ nuance: Delta checked the LAST-LIVE state, not the folder's
+  full history — a "pre-codex" file could have lived + been removed in an EARLIER commit (different event
+  than the 07-30 folder delete). Full-history archaeology offered to majkee, not yet run.
+- **W1 PROOF (@Delta, majkee asked "experimental data which should be proved"):** all 6 files byte-perfect
+  to git blob `d266726` (sha256 MATCH each: codex-coder `4ee83c44` · codex-crosscheck `5b8feac8` ·
+  astrobley `ca953330` · orby `8553e449` · vega `ed98db65` · codex-run.zsh `4e0bbae`). "zag" = codex-run.zsh
+  (live `~/.config/zsh/ai/` matches). GitHub durability CONFIRMED: `origin git@github.com:hruzam/reposoma.git`,
+  commits `d266726` + `a493cb4` both on `origin/core` → "restored from GitHub" literally true. Table codex
+  bed = identical to pre-deletion originals, zero divergence. **Nothing lost, byte-verified, durable.**
+  Mistake fully reversible — proven.
+- **Flight flagged:** `_mail/flight/inbox/atlas.codex-larva-fallback-deploy-stale.2026-07-30.md` — codex-coder:38
+  + codex-crosscheck:41 `.larva` fallbacks + builder.md:7 = deploy-stale before majkee's push. = harvest W7.
+- **Deploy:** majkee runs it (his cuts ride out together). atlas seats + `_staging/` stone go live on that push.
+
+**majkee's intent (voice, captured):** make the **ia-sync layer the standing "surgical table /
+composer"** for every surgical change to the harness (AGENTS.md et al.) or agent files — instead of
+editing the live folders (`~/.claude/agents/`, `~/.config/zsh/`) directly. Edit lands IN ia-sync →
+`deploy.sh` pushes it to its proper place on BOTH machines via git pull + deploy. Motive: one clean
+update path, both boxes updated in sync (they're ~90% identical; the ~10% per-machine on/off toggles
+give slightly different results — exactly what the table must absorb). Wants it **canonized
+eventually** — "sooner or later," not today.
+
+**NOT greenfield — already dogfooded today.** `maintenance/codex-line/note.staging-retired.2026-07-30.md`:
+@Flight (MANNED) retired `.larva/agents-staging/` and moved the codex bed onto the surgical table —
+`codex-coder.md`/`codex-crosscheck.md` → `ia-sync/claude/agents/` → `~/.claude/agents/`; `codex-run.zsh`
+→ `ia-sync/zsh/ai/` → `~/.config/zsh/ai/`, both machines via git pull + `deploy.sh`. Term "surgical
+table = ia-sync" is LIVE + one precedent exists. This capture = generalize that one-off mount into the
+STANDING rule.
+
+**Anchors:** `~/ia-sync/` (repo w/ sync.sh + deploy.sh) · `~/.config/zsh/ai/devenv-sync-core.sh`
+(shared fn lib, lives in ia-sync backup scope) · sibling canon
+`temple/decisions/0010-cross-machine-mail-transport.md` · scope precedent
+`maintenance/sync_deploy/devenv-dry-refactor.2026-07-15.md` (advisor-advanced verdict: registry-driven
+engine DEFERRED till projects ≥4–5 — that concerned project *devenvs*, DISTINCT from this harness/agent
+layer, so the deferral does NOT bind this).
+
+**Risk to raise when it goes active (my flag, not blocking):** source-of-truth. If edits route THROUGH
+ia-sync and deploy OUT, ia-sync becomes authoritative and `~/.claude/agents/` etc. become DERIVED — but
+today those are edited directly (my own build output path is `~/.claude/agents/<name>.md`). A direct
+edit bypassing the table = silent drift. Canon must name which side is truth + how a bypass is caught
+(`_devenv_deploy_guard` already stamps branch/HEAD mismatch — likely extend that). Same point-never-copy
+tension.
+
+**Routing:** temple-layer CANON → NOT mine to lock. I draft/capture; @majkee gavels; @Houston records
+the decision (0010's sibling; likely a new decision record when ripe). Held here per majkee ("save to
+your personal files, temporary"). **Open thread — surface next saddle.**
+
+---
+
 ## [2026-07-27] — gavel family COLLAPSED 4→2: /gavel-loop absorbs ballot + qualify
 
 **Origin:** majkee asked whether the gavel skills were overengineered and could be synthesized,

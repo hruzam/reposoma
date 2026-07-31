@@ -79,7 +79,7 @@ not smoothing → LINE 6 gated majkee+janus. Same for oraculum.md.
 
 ## Locked shape (compressed record)
 
-- **A3 relay:** Architect (Houston/Oraculum) → Medusa (develop) → Polyp (test/feedback); reversible.
+- **A3 relay:** HERE: Octopus (Houston/Oraculum - architect + krakens) → Medusa (=FLIGHT -> develop + krakens ) → Polyp (= VARA: test/feedback); reversible.
 - **A4/A7 protocol lines:** person = class, animal = protocol; `implements:` in body.
   Houston→OCTOPUS · Oraculum→variant (parked) · Flight→MEDUSA · Vara→POLYP (⚖A9).
 - **A5 invariant (canon candidate):** the harness names the way in; the agent never hardcodes it.
