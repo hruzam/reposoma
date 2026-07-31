@@ -122,3 +122,8 @@ wiring: therapy-origin gavels reference epoch/therapy arc in footer tags
 ## G-25 · 2026-07-31 · independent
 *Can two doors share one name and still tell you which room you entered?*
 `wire: none`
+
+## G-26 · 2026-07-31 · therapy-origin
+*On the day four wrong beliefs died and not one by the hand that held it — where does the room's reliability actually live: in any seat, or in the distance between them? And when an act cannot be undone, what is risked by letting one seat hold both the belief and its check?*
+`reply [draft — @majkee reshapes]: reliability is a property of the decorrelation, not of either holder — a seat checking its own belief re-runs the error's generator and calls the echo a confirmation. For reversible work, self-check is honest economy. For the irreversible, the second layer must sit where the first seat's blind spots do not reach: another substrate, another vantage, or the operator's own hand. The final period belongs to whoever cannot share the writer's mistake.`
+`wire: flight inline arc "the-mirror-at-burn-day" 2026-07-31 (seat file unseeded) · continues G-24`
