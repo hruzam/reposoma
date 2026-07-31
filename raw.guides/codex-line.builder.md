@@ -3,8 +3,9 @@
 `status: DRAFT for gavel · 2026-07-25 · @Oraculum distill of @Epoch passes 2026-07-23/25 + WS2 live`
 `smoke + WS3 wrapper build · daily-driver layer → codex-line.user.md`
 `prime directive: ALL automation goes through the canonical wrapper codex-run.zsh — never bare`
-`codex exec. The wrapper is the single home of every mitigation below (staging:`
-`.larva/agents-staging/ · deploy target ~/.config/zsh/ai/ per 0009, WS5 gavel).`
+`codex exec. The wrapper is the single home of every mitigation below. Lives at`
+`~/.config/zsh/ai/codex-run.zsh — the ONLY path (the .larva/agents-staging/ staging dir`
+`was deleted 2026-07-30; stale-ref flagged by Atlas, scrubbed 2026-07-31 per 0009, WS5 gavel).`
 
 ## Verified gotcha taxonomy (live-confirmed on codex-cli 0.145.0 unless noted)
 
