@@ -8,6 +8,62 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-08-01] — WHY-RICH-FRONTMATTER research fan-out + two agentive-doctrine seeds
+
+**Origin:** majkee (interactive) — "why is Claude's agent-builder frontmatter so rich / what does it
+do at cold start?" Explicitly wanted GROUNDED answers via spawned research, not training-data recall.
+Plus two Socratic studies (arch/unix mind on this system) + placement guidance.
+
+**MECHANICS CORRECTION applied:** his `epoch → spawn eagle` chain can't run (subagents can't spawn
+subagents). Flattened to a 3-current PARALLEL fan-out from this main session: @eagle (internal corpus)
++ @epoch ×2 (web: frontmatter-routing · STUDY 2 arch mind).
+
+**CONFIRMED (epoch #1, Anthropic's own words):** the `<example>`/third-person `description` richness
+is a FEW-SHOT ROUTING MANUAL for the PARENT model's delegate decision — *"not documentation for a
+human reader"* (source: `plugins/plugin-dev/skills/agent-development/examples/agent-creation-prompt.md`,
+CONFIDENCE H). TWIST: the interactive `/agents` wizard was REMOVED v2.1.198 (2026-07-02) — so color.md's
+rich style is the retired template's fingerprint, not a live UI builder. DIVERGENCE: plugin-dev template
+(rich) vs mainline `sub-agents` docs (terse one-liners) — two official sources disagree.
+⚠ OPEN (CONFIDENCE-M): subagent-description LOADING mechanism unverified — likely the `Agent`-tool
+`subagent_type` schema, NOT a system-prompt block like skill metadata. My earlier "rides system prompt
+~100 tok" synthesis CONFLATED the skill mechanic with the subagent mechanic — corrected in the report.
+
+**CONVERGENCE (the load-bearing signal):** STUDY 2's #1 tension (verbose routing frontmatter = bloat
+to a human) is Anthropic's OWN framing, arrived at independently by a decorrelated current. Two doctrines
+rose: **D1** separate router-hints from human-docs in agent files · **D2** git-diff-clean ≠
+behavior-identical, pin the model per run.
+
+**DELIVERED (temple repo, written in place — not surgical-table, these are research/mail):**
+- `raw.research/agent-docs/report/2026-08-01-subagent-frontmatter-routing-mechanics.md` — Q1 source
+  backup (majkee ran `/refresh agent-docs` himself; this is the backstop evidence).
+- `raw.research/arch/2026-08-01-arch-unix-mind-on-agent-primitives.md` — STUDY 2.
+- `_mail/oraculum/inbox/atlas.agentive-doctrine-seed.2026-08-01.md` — D1/D2 seed, Oraculum audits first.
+- `_mail/houston/inbox/atlas.agentive-doctrine-pointer.2026-08-01.md` — small pointer, codify later.
+- @Janus spawned to adversarially test D1/D2 (verdict folds into Oraculum's audit).
+
+**ROUTING (majkee gaveled, LOOSE loop):** Oraculum first reader/audit → Janus test → Houston codifies
+into `temple/decisions/` on majkee's gavel, AFTER the temple cleaning ("burn ships"). My caveat baked in:
+**D1 codification must wait on M→H** (close the loading-mechanism gap first); D2 safe to hold now.
+
+**HEART / cold-start sourcing (majkee's "keep this in heart"):** the doctrine lives in THIS pulse
+(interim held practice) until Houston codifies it into `temple/decisions/`, at which point my sourcing
+repoints there. Named explicitly so the sourcing path is never ambiguous.
+
+**JANUS VERDICT (landed, folded into Oraculum seed + Houston pointer):** caught a CATEGORY ERROR in my
+D1 — the `<example>` blocks live INSIDE the `description:` field (color.md line 3, one escaped string),
+NOT a cleaveable body section; "move them elsewhere" would push routing signal OUT of the field the
+router reads. **D1 → STOP as worded** (footprint = 2/32 vestigial files; 30 already terse) → shrunk to
+**D1′ convention note** (new agents terse, don't relocate, leave the 2 rich files till mechanism H).
+**D2 → REVISE** (per-run model-pin = reproducibility theater) → shrunk to **D2′ one-line epistemic
+guardrail**, no ledger field. Both now convention-weight, not heavy canon — recursively arch-minimal.
+
+**STILL OPEN:** (1) Oraculum audit (reads Janus addendum first) · (2) Houston codification post-cleaning ·
+(3) the M→H mechanism follow-up (one targeted epoch: how `subagent_type` schema serializes — governs
+BOTH; if router reads only `description`, D1′ inverts) · (4) my inbox item
+`houston.defer-advisor-high-fable-paygo.2026-07-07.md` still unread (not this run).
+
+---
+
 ## [2026-07-31] — TRANSITION SESSION: codex composites named (Vega·Astrobley·Mirror) + Field born + BlueBottle claude-wiring 1984'd
 
 **Directive:** `_mail/atlas/inbox/majkee.transitions.2026-07-31.md` (burn-the-ships process, majkee
