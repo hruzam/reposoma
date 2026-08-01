@@ -62,6 +62,50 @@ guardrail**, no ledger field. Both now convention-weight, not heavy canon — re
 BOTH; if router reads only `description`, D1′ inverts) · (4) my inbox item
 `houston.defer-advisor-high-fable-paygo.2026-07-07.md` still unread (not this run).
 
+## [2026-08-01] — gemini ears-and-eyes: global role + local media-harvest drop-place (applications-in-common)
+
+**Origin:** majkee direct — add multimedial (ears-and-eyes) context to
+`~/www/elements-factory/applications-in-common/GEMINI.md`; asked for a few words on the office/home
+machines + the Intuos CTH-680 tablet + a sw recommendation so drawings/handwriting reach agents as
+files (not printscreen-to-JPG as with Xournal today). Spawned @Eagle (machines) + @Epoch (apps).
+
+**majkee's steer (the design):** role is UNIVERSAL → global `~/.gemini/GEMINI.md`; the drop address
+is LOCAL → project GEMINI.md. NO global leash — bond the seat to a `media-harvest/` folder in the
+factory, addressed by the local file. Format-AGNOSTIC (also accepts phone photos of pencil/pastel),
+because the seat's appetite for reading is large → the spatial leash (one folder) is the discipline.
+
+**DELIVERED:**
+- **Global role (surgical table):** `~/ia-sync/gemini/GEMINI.md` — NEW on the table (was legacy
+  live-only, built 2026-07-16 before the table doctrine → migrated). Added `## My role — ears and
+  eyes` (seat-agnostic, format-agnostic, appetite-leashed-to-drop-place) + `## The machines`
+  (Manjaro/Wayland both; office i5-12400 / home Ryzen 5 3500U; pointer to machine card). Live
+  `~/.gemini/GEMINI.md` edited identically (no drift). **⚠ NOT on home machine until deploy.**
+- **Local address:** `applications-in-common/GEMINI.md` — added `## My drop-place` pointing to
+  `media-harvest/`; role deferred to global. (Project-scoped file, syncs via app repo, NOT the table.)
+- **Drop-place:** `applications-in-common/media-harvest/` + README (human-facing sw guide) + `.gitkeep`;
+  `.gitignore` ignores contents, tracks README+.gitkeep (ephemeral drop, like `~/.remote/task.md`).
+
+**sw answer (@Epoch, in the README):** digital handwriting → **Xournal++** with CLI export
+(`xournalpp --create-img=out.png in.xopp` / `--create-pdf`) = the screenshot-killer, watchable via
+`inotifywait`/`entr`; Rnote = nicer-on-Wayland alt but no CLI export. Physical → phone photo.
+Structured diagrams → drawio (`--export`) or Excalidraw (`.excalidraw` JSON = agent-readable shapes+text).
+Wayland gotcha: pressure-curve tuning limited under libinput (no `xsetwacom`) — irrelevant for
+readable sketching; CLI export unaffected.
+
+**STALE FACT FIXED (majkee flagged mid-session):** Gemini line reduced to **Orby + Bluebottle only**
+(Vega + Astrobley vendor-shifted to Codex 2026-07-31 — see `_mail/houston/inbox/atlas.transition-1984-
+codex-composites.2026-07-31.md` gavel 3). Global GEMINI.md "Active seats" line still listed 4 → corrected
+to Orby (ears-and-eyes) + Bluebottle on both live + table. README de-named to "gemini eyes-and-ears seat".
+
+**OPEN / flags:** (1) **⚠ project GEMINI.md still opens "I am Vega, designer"** — Vega is now a Codex
+seat; per canon the Gemini ears-and-eyes seat is **Orby**. Naming collision on a gemini config file. I
+did NOT rewrite majkee's authored identity — awaiting his gavel: rename Vega→Orby, or keep a distinct
+project-designer identity? (2) **Transport gap** — phone photo → `media-harvest/` on the Linux box needs
+a leg (Syncthing/Tailscale/git/scp); not wired (Flight/infra territory). (3) **Deploy pending** — global
+GEMINI.md now on the table but home machine won't get it until `bash ~/ia-sync/deploy.sh` + push (rides
+with the still-pending 2026-07-31 codex-composites deploy). (4) No new primitive built — folder + pointer
++ README only (Foreman floor).
+
 ---
 
 ## [2026-07-31] — TRANSITION SESSION: codex composites named (Vega·Astrobley·Mirror) + Field born + BlueBottle claude-wiring 1984'd

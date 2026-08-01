@@ -195,3 +195,22 @@ gates are load-bearing — not just procedural discipline.
   mode-switch token-reset behavior, real-world 80% vs 12% comparison.
 - `card.gemini-cli` — verified 2026-06-27. Add: bug #8609 (unrecoverable session), `/compress`
   failure mode, subagent recursion guard.
+
+---
+
+## Remote session restore — SSH/tmux persistence + Remote Control resume
+
+**Verified 2026-08-01 (@Epoch). This section only; rest of card still dated 2026-07-02.**
+
+Fills the gap these cards assumed away: recovering a Claude Code session running on a *remote* box when the SSH client drops/freezes.
+
+- **Remote Control** (shipped 2026-02-25, preview; Pro/Max/Team/Enterprise, no API keys) is a sync layer, not cloud compute. The `claude` process stays on your machine (outbound HTTPS only, no inbound ports); claude.ai/code + mobile are a window into it. A session that stays green on the phone after your terminal dies = the host process is still alive and RC-connected.
+- **Recover the terminal:**
+  - Launched inside `tmux`/`screen` → SSH back, `tmux attach` (or `tmux attach -t <name>`). Clean path.
+  - Launched directly in the SSH shell → cannot re-grab the dead PTY. From the same project dir in a fresh shell: `claude -c` (`--continue`) or `claude --resume` — reconnects to the RC session recorded in that conversation (transcript is server-side). Server-mode variant: `claude remote-control -c` (v2.1.200+).
+- **`! claude --resume`** with a leading `!` is the run-shell-from-inside-a-session form — NOT the recovery path. Restore from a plain shell.
+- **Clocks:** host offline >~10 min → RC times out, process exits (restart + resume). No multiplexer → remote `sshd` can SIGHUP `claude` once keepalive declares the frozen client dead, so reconnect promptly or hold from phone. Ultraplan disconnects active RC.
+- **Prevent it:** `tmux new -s work` → then `claude` inside it. Official: "To keep a session running on a remote machine after you disconnect from SSH, start it inside tmux or screen."
+
+**Full guide (dated, sourced):** `raw.research/harness/reports/2026-08-01-remote-control-tmux-ssh-persistence.md`
+**Recheck source:** https://code.claude.com/docs/en/remote-control
