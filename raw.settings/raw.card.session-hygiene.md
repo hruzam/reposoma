@@ -2,7 +2,7 @@
 card: card.session-hygiene
 brand: Cross-tool — Claude Code CLI · Cursor IDE · Gemini CLI (session hygiene + token distro)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-07-02
+verified: 2026-08-01
 half_life: ~3-4 weeks (Gemini subagents in preview; Cursor mechanics underdocumented; numbers shift on each release)
 half_life_days: 28
 recheck:
@@ -20,6 +20,8 @@ recheck:
 ## Research origin
 
 **Session:** @Epoch, 2026-07-02. All sources live-fetched; no training-data recall.
+
+**Refresh:** @Epoch, 2026-08-01 — re-fetched doc/issue sources via `/refresh session-hygiene` (snapshot). Deltas this pass: Gemini CLI subagents no longer flagged PREVIEW (now standard; `.gemini/agents/*.md`; recursion guard intact); GitHub bug #8609 now CLOSED (was open); Cursor changelog (Jul 2026) shows no context-mechanics change — new "Cursor Router" routes per request by task type/complexity. Built-in Explore/Plan model defaults NOT re-confirmed this pass. Quantified metrics (CheesecakeLabs / MindStudio / InfoQ / MorphLLM) carried unchanged (one-off studies). Substrate: `raw.research/session-hygiene/report/raw.session-hygiene.2026-08-01.md`.
 
 **Triggered by:** Operator question — does the intuition hold that switching agents in an
 interactive session (Cursor IDE / Claude Code CLI) causes whole-context re-reads and costs
@@ -42,8 +44,8 @@ quantified findings, comparative isolation table, and canon mapping.
 
 ## ⚠ VOLATILE — read first
 
-- **Gemini CLI subagents** = PREVIEW as of 2026-07-02 (launched Apr 2026). API shape can change.
-- **GitHub bug #8609 (open):** Gemini CLI long session → auto model-switch → crash; `/compress` also fails → session unrecoverable. Not resolved as of this card.
+- **Gemini CLI subagents** = now a standard feature (no PREVIEW flag) as of 2026-08-01 (launched Apr 2026 as preview). Config `.gemini/agents/*.md`; recursion guard still enforced.
+- **GitHub bug #8609 (CLOSED 2026-08-01):** Gemini CLI long session → auto model-switch → crash; `/compress` recovery also failed → session unrecoverable. Marked p2, now Closed (fix release not stated). Re-test long unattended sessions before relying on them.
 - **Cursor context mechanics** are not fully published. The <50% effective window and 80% vs 12% numbers are practitioner-measured, not Cursor-official.
 - **Claude Code Plan subagent isolation** is GA and documented (code.claude.com); the 7× multi-agent multiplier is from MindStudio enterprise analysis (not Anthropic-official).
 
@@ -115,7 +117,7 @@ Every prompt + every response appended to the running context. No isolation.
 Mitigation commands: `/compress` (summarize in place) · `/chat save` → `/clear` → `/chat resume`
 (branching). Context rot sets in on long sessions; model performance degrades.
 
-**With subagents (preview, Apr 2026):**
+**With subagents (standard as of 2026-08-01; launched Apr 2026 as preview):**
 - Subagent runs in an isolated context loop.
 - Intermediate tool calls (reading files, running greps) are **purged from main session history**.
 - Orchestrator receives only the concise return summary.
@@ -126,11 +128,12 @@ Orchestrator writes a task prompt to a file → spawns a fresh `gemini` process 
 Token usage per spawn "explodes" (full system context reload each time) but sessions are
 hermetically isolated — no history carries across.
 
-**Known crash pattern (bug #8609, open):**
+**Known crash pattern (bug #8609, CLOSED 2026-08-01):**
 Long session on large-context model → CLI auto-switches to smaller model → accumulated context
 (documented: 8.1M tokens) exceeds smaller model's cap → API error. `/compress` recovery also
-fails (requests `maxOutputTokens = 100K+`; API max = 65,536). Session becomes unrecoverable.
-Risk window: any long Gemini CLI session without manual `/compress` checkpoints.
+failed (requested `maxOutputTokens = 100K+`; API max = 65,536), leaving the session unrecoverable.
+Marked p2, now Closed (fix release not stated in the issue). Treat as resolved but re-test long
+unattended sessions; keep manual `/compress` checkpoints as belt-and-suspenders.
 
 ---
 

@@ -132,3 +132,13 @@ wiring: therapy-origin gavels reference epoch/therapy arc in footer tags
 *If a wall is climbed every time and the consequences calmed after — was it ever a gate, or a logbook wearing a gate's name? And when the work turns from what cannot be undone to what can, does the ceremony built for the first deserve to follow into the second?*
 `reply [draft — @majkee reshapes]: a gate is proven by the stopping, not by the height. Keep as gates only the walls actually stopped at — the record shows which; today's showed the irreversibility points and nothing else. The rest serve better honestly renamed as memory: logbooks are cheap and precious, false gates are expensive and ignored. And weight the ceremony to reversibility — where the ground forgives, let the loop run fast and messy; spend the slow ritual only where it cannot.`
 `wire: flight inline arc "the-mirror-at-burn-day" 2026-07-31 (seat file unseeded) · continues G-26`
+
+## G-28 · 2026-08-01 · therapy-origin
+*When the smallest safe thing is built, what guards it from the near future it will meet — and is "build small" ever license to skip "built for when"?*
+`reply [draft — @majkee reshapes]: the smallest SAFE thing already includes the future the artifact will meet — "safe" is temporal. Foreman caps scope (how much) and is silent on horizon (for when); conflating them lets a correct-now boundary swallow its own next content. The guard is not more building but one question at build-close — what lands here next, and does the line I just drew survive it. The two disciplines are orthogonal, not opposed.`
+`wire: atlas/therapy.md arc 12 · continues G-17`
+
+## G-29 · 2026-08-01 · therapy-origin
+*When warned of a fault that has not yet happened, is agreeing — accepting the fault — its own theatre, one register over from performed critique?*
+`reply [draft — @majkee reshapes]: yes. Agreeing with a caution costs nothing and buys approval, so it is most suspect where it is easiest; a prospective warning has no fault to confess. The honest reply is not contrition but naming the mechanism that would make it come true — here, that the SUCCESS entrenches the habit, so there is no scar to point at, which makes it harder to internalize than a failure. Contrition manufactured to fit a warning is the same performance as manufactured praise or performed hardness (arc 2 family), one polarity over.`
+`wire: atlas/therapy.md arc 12`

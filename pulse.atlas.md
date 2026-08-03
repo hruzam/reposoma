@@ -131,14 +131,54 @@ readable sketching; CLI export unaffected.
 codex-composites.2026-07-31.md` gavel 3). Global GEMINI.md "Active seats" line still listed 4 → corrected
 to Orby (ears-and-eyes) + Bluebottle on both live + table. README de-named to "gemini eyes-and-ears seat".
 
-**OPEN / flags:** (1) **⚠ project GEMINI.md still opens "I am Vega, designer"** — Vega is now a Codex
-seat; per canon the Gemini ears-and-eyes seat is **Orby**. Naming collision on a gemini config file. I
-did NOT rewrite majkee's authored identity — awaiting his gavel: rename Vega→Orby, or keep a distinct
-project-designer identity? (2) **Transport gap** — phone photo → `media-harvest/` on the Linux box needs
-a leg (Syncthing/Tailscale/git/scp); not wired (Flight/infra territory). (3) **Deploy pending** — global
-GEMINI.md now on the table but home machine won't get it until `bash ~/ia-sync/deploy.sh` + push (rides
-with the still-pending 2026-07-31 codex-composites deploy). (4) No new primitive built — folder + pointer
-+ README only (Foreman floor).
+**RESOLVED same session (majkee live-gaveled each step, both machines converged):**
+- **Vega→Orby:** majkee gaveled the rename. Project GEMINI.md identity + confirm line → Orby (the
+  canon Gemini ears-and-eyes seat). README de-named earlier now moot.
+- **GUI pivot (majkee: "using xournal as window app, no bash experience"):** README rewritten
+  click-first; NEW `media-harvest/pad.export-drawing.md` = larvaTmux-shape step-pad (File → Export As
+  → PDF/PNG → drop folder → tell the seat). CLI demoted to optional footnote.
+- **Deploy to home (Tailscale, I'm on office):** committed+pushed both repos; home pulled + deployed.
+  Codex-composites converged on home as a bonus (closed a 2026-07-31 open item).
+- **🐛 BUG 1 caught — deploy.sh skipped GEMINI.md.** deploy's `~/.gemini` leg copied agents/state/
+  mcp/antigravity but NOT `GEMINI.md` → global file never reached home live. FIXED: added `GEMINI.md`
+  to the `for f in state.json …` loop (`~/ia-sync/deploy.sh`, committed `71b39fd`). majkee gaveled the
+  fix + blessed GEMINI.md-on-table. Future GEMINI.md changes now propagate automatically.
+- **🐛 BUG 2 caught — my own .gitignore self-block.** `media-harvest/*` + `!README.md` + `!.gitkeep`
+  silently ignored `pad.export-drawing.md`; the commit named the pad but git never staged it (home
+  pulled everything BUT the pad). FIXED: rule → `!media-harvest/*.md` (docs track, artifacts ignored);
+  pad committed `c3658af`, pulled to home. Lesson: write the gitignore exception WITH the file, or a
+  later doc silently vanishes.
+- **Home reconcile:** home carried a broken half-edit (`"I am  designer"`, Vega manually deleted) that
+  blocked ff-pull → majkee's "pulled home, no data ???". Stashed (recoverable) → ff-pulled → converged.
+- **FINAL STATE: both boxes 0/0.** Global GEMINI.md live on office+home; project Orby seat +
+  media-harvest + pad on office+home. deploy.sh fix live on both.
+
+**DISCIPLINE CORRECTION (majkee: hand-transport first accepted, then reversed → migrate via git
+SYNC/DEPLOY).** Project GEMINI.md was first hand-committed to the APP repo + hand-pulled (worked, verified
+identical). majkee then ruled to route it through the project's own `.devenv` surgical table after all —
+his reasoning: **git diffs+messages are the journal/ladder; the Tailscale direct-tunnel deploy carries no
+journaling.** Also flagged: my easy reach for cross-machine ssh = a fragile-process habit to curb.
+- **MIGRATED (via @Delta, git-journaled, both boxes, deploy-LAST ordering):** authored
+  `.devenv/claude/GEMINI.md` (byte-identical cp); `.devenv/deploy.sh` loop → `AGENTS.md CLAUDE.md
+  GEMINI.md`; `.devenv/README.md` layout+table; app `.gitignore` += `GEMINI.md` + `git rm --cached`
+  (untracked, now transported like AGENTS/CLAUDE). Commits: devenv `9551dc2`, app `f5ec8dc`. Deployed
+  office + home; home sha256 `92f4a1ae…c524421` = office. Orby content intact both boxes.
+- **🐛 HAZARD-B fixed permanently:** `.devenv/deploy.sh` resolves `MACHINE="${MACHINE_NAME:-$(hostname
+  -s)}"` with NO machines.json fallback → over non-interactive ssh home's `MACHINE_NAME` is empty →
+  hostname `hruzam` → not a registry key → deploy ERRORS. Fix: added hostname keys `hruzam` + `hruzam-120922`
+  to `registry.json` (alongside logical `home`/`office`), so both resolution paths work. (This same gap
+  would bite ANY non-interactive .devenv deploy — worth porting the machines.json fallback into this
+  deploy.sh too, someday.)
+- **Combinatoric hazard navigated:** `git rm --cached` means an app-repo pull DELETES working GEMINI.md
+  on the far box until deploy restores it → deploy must run LAST on each machine. Held; transient-absence
+  confirmed then restored on home.
+- media-harvest stayed in the app repo (app-side working content, per README's `experiments/` precedent) —
+  only GEMINI.md migrated.
+
+**STILL OPEN:** (1) **Transport gap** — phone photo → `media-harvest/` on the box still needs a leg
+(Syncthing/Tailscale/synced folder); not wired (Flight/infra territory). (2) No new primitive built —
+folder + pointer + README + pad only (Foreman floor). (3) home stash@{0} holds the dead Vega-fragment —
+droppable anytime (`git stash drop`), left as a safety net.
 
 ---
 

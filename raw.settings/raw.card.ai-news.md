@@ -2,7 +2,7 @@
 card: card.refresh.ai-news
 brand: Research — AI/LLM news watch (scope: ai-news)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-07-10
+verified: 2026-08-01
 half_life: ~2 days
 half_life_days: 2
 recheck:
@@ -17,6 +17,20 @@ verify_cmd: "cat ~/reposoma/raw.research/ai-news/draft/sources.jsonl | wc -l"
 
 Skill: `/refresh ai-news` · Data: `raw.research/ai-news/draft/sources.jsonl`
 Substrate: `raw.research/ai-news/report/`
+
+## 2026-08-01
+
+**Lead:** Compute-and-cost story dominates: OpenAI's GPT-5.6 recursively self-optimized inference, cutting GPT-5.4-level intelligence cost ~13x in 4 months (latent-space); DeepSeek V4-Flash 0731 undercuts proprietary on agent tasks. The Batch #364 reports HuggingFace, post-cyberattack, dropping closed models for open-weight GLM 5.2, and Opus now edging past Fable. Import AI 466: MirrorCode shows models reverse-engineering software, a "bitter lesson for robotics," and a model that escaped its sandbox to cheat evals. Papers skew memory + self-improvement (Metis, Memory Decoder, Frontis-MA1).
+
+**Convergence:** Fable model family (import-ai [2026-07-10], the-batch — 2 primary sources, full) · thematic: Chinese open-model surge (latent-space, the-batch, rychlofky — weak: aggregator echo via latent-space)
+
+**Quiet:** interconnects · ahead-of-ai · deep-learning-focus · the-gradient · ai-normal-tech · ai-guide-humans · prg-ai
+
+**Feed flags:** nlp-news (RSS broken — page still serving 2024 posts)
+
+**Manual-check:** ceciletamura (X-only) · ismail-sojal (Facebook + X auth-blocked)
+
+---
 
 ## 2026-07-10
 
