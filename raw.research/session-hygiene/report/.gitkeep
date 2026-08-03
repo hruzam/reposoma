@@ -1,0 +1,2 @@
+# Substrate output lands here (persist: ephemeral — gitignored by default).
+# `/refresh session-hygiene` writes raw.session-hygiene.<YYYY-MM-DD>.md into this dir.
