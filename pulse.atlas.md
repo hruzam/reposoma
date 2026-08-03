@@ -8,6 +8,40 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-08-03] — SELLA conformance review + atlas-office observation staged
+
+**Origin:** majkee — the 08-01 philosophy "went a little far" and matured into **Sella**
+(`ia-sync/_staging/sella.coder-guide.md`, DRAFT) — a discipline-language for CC primitives
+(agents=programs, skills=methods, harness=OS; premise: the compiler is stochastic). Plus a real
+build **@ferry** (`ia-sync/claude/agents/ferry.md`, LIVE) — office→home tailscale cascade conductor,
+graded G0–G4 exit ladder. majkee asked: do they MEET the philosophy?
+
+**VERDICT: yes, stronger than expected — the ADVERSARIAL corrections propagated, not just the claims.**
+Sella L2 = D1′ *corrected* (absorbed Janus's category-error fix — examples live INSIDE the description
+field, so "only if they earn routing lift," NOT "relocate them"). Sella L8 = D2′ *corrected* (dropped
+the per-run model-pin = Janus's reproducibility-theater REVISE; receipts/pilots/gavels replace it).
+@ferry is a clean exemplar: terse no-example desc, minimal tools no-Write, exit-ladder legibility,
+judgment-here/mechanism-there, vendor-invariant, L8-as-behavior (`fetch-real-first`, each leg re-verifies).
+
+**DELIVERED:** `ia-sync/_staging/sella.observation.atlas-office-2026-08-03.md` — my conformance
+observation, Sella-conforming (dogfoods its own provenance-stone header). Two flags + one open:
+- **FLAG-1:** `schema: 1` in ferry CONTRADICTS Sella — §2 key surface omits it, Epoch receipt says
+  "no `schema` key exists (forward-marker only)," Walk-A gate forbids invented keys. The language's
+  first program trips its own gate. Resolve before ferry deploys as reference: bless `schema` as a
+  house forward-marker OR strip it. (= STUDY-2 tension #5 half-surviving.)
+- **FLAG-2 (watch):** Sella is 380 lines / nine laws — its own arch study warns against bloat. Keep
+  it a HUMAN guide; agents conform via terse anchor, not by loading all nine laws. L9/L2 at meta level.
+- **OPEN:** agent-description budget still UNRESOLVED (Epoch receipt claim 2) → L2 is CONFIDENCE-M for
+  agents until the `subagent_type` serialization pass closes M→H. Same gap flagged 08-01, honestly marked.
+
+**HEADS-UP (majkee's parallel move):** he's authoring a Codex-line instructions block / Sella-equivalent
+for the GPT line. Left a `next[]` pointer in the observation file to cross-reference when it lands.
+
+**STILL OPEN (this thread):** (1) majkee gavel on sella.coder-guide.md · (2) FLAG-1 resolution ·
+(3) M→H Epoch pass · (4) codex-line language cross-ref.
+
+---
+
 ## [2026-08-01] — WHY-RICH-FRONTMATTER research fan-out + two agentive-doctrine seeds
 
 **Origin:** majkee (interactive) — "why is Claude's agent-builder frontmatter so rich / what does it
