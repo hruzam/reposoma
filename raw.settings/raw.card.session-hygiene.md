@@ -177,6 +177,28 @@ The durable MD file is the continuity mechanism; the fresh session is the cost-r
 
 ---
 
+## Session fork / branch / rewind — cross-tool (added 2026-08-05)
+
+`full study: raw.research/cli-fork-branch/report/raw.cli-fork-branch.2026-08-05.md · companion: card.codex-cli (seeded this pass)`
+
+Distinct axis from the subagent-context table above: this is **SESSION-level** branching (a whole conversation transcript forked to a new ID), not subagent context isolation. Claude Code and Codex CLI diverge sharply.
+
+| Axis | Claude Code (v2.1.212+) | Codex CLI (0.146.0) |
+|---|---|---|
+| Session fork | `/branch` (in-session) · `--fork-session` (new process) · `/fork` (→ background session) — TUI-first, **full transcript copy** | `codex fork [ID]/--last/--all` — standalone subcommand, headless-first, `forked_from_id` lineage; public RPC still **copies** history |
+| In-session branch | `/branch [name]` | none; edit-a-past-prompt **auto-creates a contextual branch** (Claude has no equivalent) |
+| Rewind / undo | `/rewind` + Esc-Esc, code+convo checkpoints per prompt | **NONE** — `/undo` shipped then removed; `/rewind` unshipped FR. Use git. |
+| On-disk | `~/.claude/projects/<slug>/<id>.jsonl` | `~/.codex/sessions/YYYY/MM/DD/rollout-<ts>-<uuid>.jsonl[.zst]` |
+| Remote/cross-machine | `--teleport` (cloud→local) · `--cloud` (local→cloud, fresh) · `remote-control` (steer local from web) | none in CLI (`codex cloud` = cloud chats only; SSH in separate Codex App alpha) |
+
+**⚠ v2.1.212 name swap (Claude):** `/fork` and `/subtask` swapped — `/subtask` = in-session subagent fork; `/fork` = background SESSION copy. Pre-2.1.212 tutorials have them backwards.
+
+**Hygiene implications (reinforce the plan→MD→fresh pattern):**
+- **`/rewind` is best-effort, NOT reliable** — leaves bash-made changes, subagent edits, symlinks on disk; fails in-scope on multi-file (#70727/#18516). Git remains source of truth. Verdict this study: *refuted* that rewind reliably restores.
+- **Fresh+brief beats resume for a context PIVOT; resume/continue wins for continuous same-file work** (holds-with-caveats). Resume tax on long thinking-heavy Claude sessions: ~156k tok replay, ~25% invisible thinking-signatures (#42260, not-planned).
+- **Fork is not cheap on either tool** — Claude `/branch` full-copies; Codex public `thread/fork` copies history (the `history_base` reference-fork is dormant for the JSONL store).
+- **After a crash, sanity-check `git status` before trusting a resumed Codex session** — stale-resume vs VCS (#31982).
+
 ## Canon mapping
 
 | This card's finding | Canon gate |

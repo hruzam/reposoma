@@ -8,6 +8,82 @@ Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first �
 
 ---
 
+## [2026-08-07] — PAD builder guide DELIVERED (general operator step-pad shape)
+
+**Origin:** majkee (interactive, `atals.office.PAD-creator`) — build a "PAD creator", offered as
+skill OR guide, asked me to pick; keep bureaucracy minimal (no orphan-file risk) but let the
+PAD→log process breathe; **style must be general/common, NOT project scope**. Context source:
+`applications-in-common/.dev/session/larvaTmux/` (pad.1-tap · pad.2-larva-studio · session.md ·
+report.L1). Mid-run correction absorbed: **Polyp is project-local + testing-phase, NOT global** →
+guide names no driver agent, says "the driver".
+
+**PRIMITIVE CHOICE — guide over skill (majkee agreed).** Foreman: a guide is the canonical home
+for a *shape/pattern*; a global `/pad` skill would need a file-drop target it can't own generally
+(pads land in project `session/<slug>/`, governed by each project's OWN rules) → coupling + orphan
+risk, exactly what majkee wanted to avoid. Guide writes nothing at runtime = zero orphan. Deferred:
+a thin `/pad` skill later IF hand-authoring friction proves real (premature now).
+
+**DELIVERED:** `raw.guides/PAD/pad-builder.md` — general pad-authoring guide. Anatomy (header +
+optional driver-rules + shared constant + precondition + STEP 0 safety/state-check + STEP N with
+copy-pasteable full-path command / expected output / branch verdicts / `>report N` empty fence +
+trailing verdict-map/parked sinks). **The breathing rule captured:** the pad breathes into itself
+(the empty ```` ```zsh ```` fence under each report = the raw run-log), then distilled verdicts
+graduate to AT MOST ONE downstream log — *one raw surface + one distilled log, never a file per
+step*. Orphan-safety baked (unran pad = just delete; moved pad = "safe to delete" stub). Placement
++ naming explicitly deferred to the consuming project's rules — guide owns SHAPE, project owns WHERE.
+
+**SCOPE NOTE:** temple guide in `raw.guides/` — NOT a surgical-table primitive → syncs via normal
+reposoma git, **no `deploy.sh`**. Sits beside `codex-line.builder.md` in the builder-guide family.
+
+**Existence check (ran, clean):** no `pad` skill on table or live (30/30 scanned); no pad guide in
+`raw.guides`. Project-local `applications-in-common/.claude/rules/20-sessions-pads.md` holds pad
+*rules* + `.claude/skills/{sqcr,sea-pen}` *run* pads — none CREATE a pad; global gap real.
+
+**STILL OPEN:** (1) majkee commit/push reposoma (my seat has no Bash) · (2) optional follow-on:
+thin `/pad` skill pointing at this guide, only if authoring friction shows up.
+
+---
+
+## [2026-08-03→05] — SELLA CROSS-VENDOR SESSION: Wave loop → errata → gavels → Probe B closed
+
+**The whole line ran in one session** (`atlas.office.paralele-sella-builder`). Trace + state:
+**`~/ia-sync/_staging/dev-journal.sella.md` — READ ITS HANDOFF FIRST, it outranks this entry.**
+
+**Arc:** Wave's radio (disputed hypothesis: Sella → thin core + vendor profiles) → my Epoch
+primary-source Codex receipt (`sella.receipt.codex.2026-08-03.md`) → architecture candidate
+(2026-08-04) → Wave's formal audit: CONDITIONAL PASS, 5 findings → my errata-r1 (all 5
+accepted; A3 demoted to experiment branch vs the real rival B1 = Claude-only + exchange
+contract) → majkee ruled G1–G5 sequentially → **Probe B executed live and CLOSED**: Jacquard
+(Wave's Codex agent) fixed the real ts-dash/lsof bug, reject→revise→accept on a
+card-corrected contract, operator gate passed, fix surgically promoted to
+`ia-sync/zsh/system/tailscale.zsh` (+ `&!` polish; `_ts_pull` was already table-side).
+
+**Key rulings (G1–G5):** layered shape adopted provisionally, probe-gated · home at
+promotion = `reposoma/raw.guides/` (core + profiles) + ONE sentinel card
+`raw.settings/raw.card.sella.md` on the stale-mail cycle · ferry `schema: 1` STRIPPED
+(FLAG-1 closed, executed) · guide retitle HELD until a real profile candidate exists ·
+probes released B→A→D · Sella name confirmed.
+
+**Load-bearing findings:** verifier-not-vocabulary hypothesis (both composition topologies'
+value came from the independent verifier — Jacquard parent-REJECT · astrobley→assay; D/E
+must test it) · environment-parity ceiling (agents validated in a world WITH lsof; operator's
+world lacks it — the 2-line operator diagnostic beat both AI runs to root cause) ·
+model-adopted ≠ harness-applied instructions (Codex REPORT 0 reported judgment as mechanics) ·
+J1: Codex project-local agent discovery works WITHOUT a git root (receipt, codex-cli 0.145.0).
+
+**DELIVERED (all `_staging/`, deploy-inert):** dev-journal.sella.md (drop-place + log, pattern
+adopted by Houston for astrobley) · receipt.codex · architecture.candidate 08-04 (history,
+untouched) · errata-r1 · observation.jacquard 08-05 · jacquard.toml (staged copy) · table
+edits: ferry schema-strip + tailscale.zsh fix. Old observation file → tombstone (needs git rm).
+
+**STILL OPEN:** (1) probes A · D · E (operator releases; D/E decide B1-vs-B2) · (2) profile
+candidates + core extraction only AFTER probes (no v2 written — Wave's gate held) ·
+(3) E3 URL-fact one-fetch · (4) parked micro-probe: AGENTS.md quote-test · (5) majkee deploy
++ push (tailscale fix, ferry, staging batch) · (6) cleanup in `~/.config/zsh`: .bak-jacquard,
+task card · (7) therapy arc 13 OPEN (G-33; "next step" majkee-pending) · (8) tombstone git rm.
+
+---
+
 ## [2026-08-03] — SELLA conformance review + atlas-office observation staged
 
 **Origin:** majkee — the 08-01 philosophy "went a little far" and matured into **Sella**

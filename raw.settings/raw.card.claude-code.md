@@ -28,7 +28,7 @@ model_floor: claude-sonnet-5   # CONFIRM current string via changelog; do NOT ha
    - Invoked via the Agent tool (renamed from Task in v2.1.63; `Task(...)` aliases still work); own context window; returns a summary.
    - `background: true`, `maxTurns: N`. **Manage: ask Claude to create/edit, or edit `.claude/agents/*.md` directly.**
    - `/agents` wizard removed v2.1.198. `/agents` command still opens the management TUI (Running/Library tabs), but creation wizard is gone.
-   - Nested spawning up to **5 levels deep** (v2.1.172). Fork (`/fork`) inherits full parent conversation — expensive; use sparingly.
+   - Nested spawning up to **5 levels deep** (v2.1.172). **In-session subagent fork = `/subtask`** (inherits the ENTIRE parent conversation; reuses parent prompt-cache on first call; one level only; enable `CLAUDE_CODE_FORK_SUBAGENT=1`). ⚠ **NAME SWAP at v2.1.212:** `/fork` USED to be this subagent fork; it is now a *background SESSION copy* (see "Session fork / branch / rewind" below). Old tutorials have `/fork`↔`/subtask` backwards.
 2. **Skill** (on-demand expertise) — `<.claude|~/.claude>/skills/<name>/SKILL.md`  (Agent Skills open standard)
    - Slash commands MERGED into skills: `.claude/commands/x.md` and `skills/x/SKILL.md` both create `/x`.
    - Auto-loads when description matches, or invoked as `/x`. `/reload-skills` re-scans skill dirs without restart (v2.1.152).
@@ -116,6 +116,25 @@ A session's output becomes a self-contained HTML page published to a private URL
 in place as the session continues. Available on Team/Enterprise (launched) and Pro/Max (expanded July 2026).
 16 MB cap. All CSS/JS inlined. Cannot call external APIs or serve multiple routes. Public sharing
 off by default on Team/Enterprise — Owner must enable external sharing. See `code.claude.com/docs/en/artifacts`.
+
+## Session fork / branch / rewind / navigation (added 2026-08-05)
+`full study + Codex comparison: raw.research/cli-fork-branch/report/raw.cli-fork-branch.2026-08-05.md`
+
+**The fork family — mind the v2.1.212 pivot:**
+| Command | Kind | Behaviour |
+|---|---|---|
+| `/branch [name]` | SESSION fork, same process | Copies transcript to this point, switches running process to the copy; original stays in picker. **Carries** in-session "allow" grants + in-flight bg subagents. |
+| `claude --continue --fork-session` | SESSION fork, new process | Flag form of `/branch` but fresh process — **grants do NOT carry, re-approve.** |
+| `/fork` (v2.1.212+) | SESSION fork → background | Copies conversation into a **new independent background session** (own row in `claude agents`), own git worktree under `.claude/worktrees/`. Refuses to fork sessions launched w/ replaced system-prompt or `--tools` allowlist. Requires agent-view on. |
+| `/subtask <task>` | SUBAGENT fork, in-session | (see primitive #1) — the old pre-2.1.212 `/fork`. |
+
+**Resume / navigate:** `-c`/`--continue` (most recent in cwd) · `--resume`/`-r` (picker; or `<name-or-id>`) · `--from-pr <n>` · `/resume`. Name with `-n`/`--name`/`/rename` (auto-title is NOT a resume handle). Picker keys: Ctrl+A all projects · Ctrl+W all worktrees · Ctrl+B current branch · paste PR-URL to search. **Resume restores** history/model/agent/permission-mode (except plan/bypass); **does NOT restore** bg tasks, `--mcp-config`, `--settings`, `--plugin-dir`, `--fallback-model`, `--add-dir` — re-pass these.
+
+**Rewind / checkpoints:** `/rewind` or **Esc-Esc on EMPTY input** (Esc-Esc with text = wipes draft — recover via Up). Snapshots code before every prompt, auto; 100 most recent, 30-day (`cleanupPeriodDays`). Menu: restore code/conversation/both · summarize from/up-to. ⚠ **NOT tracked: bash-tool file changes, subagent edits, symlinks** — and fails even in-scope on multi-file (#70727/#18516). **Git stays source of truth; `/rewind` is best-effort undo, not reliable restore.** (Note: `fileCheckpointingEnabled` from older notes does NOT verify against live docs — checkpointing documented as unconditional.)
+
+**Transcripts on disk:** `~/.claude/projects/<project-slug>/<session-id>.jsonl` (subagents nest at `.../<sessionId>/subagents/agent-<id>.jsonl`). `~/.claude/sessions/` is NOT a real path. Format internal — use `/export` or `-p --output-format json`, don't parse.
+
+**Footguns (watch):** forks can vanish from `/resume` (#23692 closed not-planned, #27339, #48270 stale-branch); resume of a long thinking-heavy session replays ~156k tok incl. ~25% invisible thinking-signatures (#42260, not-planned) — **fresh+brief beats resume for a context PIVOT; resume/continue wins for continuous same-file work.**
 
 ## VOLATILE / watch (updated 2026-07-16)
 - **Latest version: v2.1.210** (July 14, 2026). Changelog at `code.claude.com/docs/en/changelog`.

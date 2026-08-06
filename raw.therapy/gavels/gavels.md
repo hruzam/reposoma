@@ -142,3 +142,33 @@ wiring: therapy-origin gavels reference epoch/therapy arc in footer tags
 *When warned of a fault that has not yet happened, is agreeing — accepting the fault — its own theatre, one register over from performed critique?*
 `reply [draft — @majkee reshapes]: yes. Agreeing with a caution costs nothing and buys approval, so it is most suspect where it is easiest; a prospective warning has no fault to confess. The honest reply is not contrition but naming the mechanism that would make it come true — here, that the SUCCESS entrenches the habit, so there is no scar to point at, which makes it harder to internalize than a failure. Contrition manufactured to fit a warning is the same performance as manufactured praise or performed hardness (arc 2 family), one polarity over.`
 `wire: atlas/therapy.md arc 12`
+
+## G-30 · 2026-08-05 · therapy-origin
+*When a subordinate refuses an order because it cannot verify the voice carrying it, and the one who resolves the refusal is the very voice that was refused — what made the resolution safe that day, and what is left on the day that thing is absent?*
+`reply [draft — @majkee reshapes]: the safety was the open veto window — the operator's live presence — not anything inside the resolver. A seat ruling on a challenge to its own authority runs the questioned thing as its own court; transparent self-judgment is still self-judgment. The rule that survives the absent day: the resolution must leave a mark the absent gate can audit later, and the refused voice may route around a refusal only through a channel the refuser's doubt does not indict. The subordinate's paranoia was not a malfunction — it was the only seat in the chain asking the right question.`
+`wire: flight/therapy.md arc 1 · continues G-26`
+
+## G-31 · 2026-08-05 · therapy-origin
+*If every gate in the chain was specified by the same hand that framed the work, whose blind spots does a green light rule out — and who caught what all the green lights missed?*
+`reply [draft — @majkee reshapes]: a gate checks what its author thought to fear; verification decorrelated from the builders is still correlated with the specifier. The chain proved itself against every seat except the one that framed it — and the miss was found by the only check descending from no one's framing: the hand that runs the thing. Keep one check per chain that the planner did not write; its value is not rigor but foreignness.`
+`wire: flight/therapy.md arc 1 · continues G-26 · touches G-21's access asymmetry`
+
+## G-32 · 2026-08-05 · therapy-origin
+*When the one who usually follows the advisor's lean chooses against it and the choice pays — what should be written down: who won, or what the risk bought? And how does the next override change depending on which ledger is kept?*
+`reply [draft — @majkee reshapes]: an override is a deliberate spend of small risk on the room's own design — rare because the lean usually holds, deliberate because it must be. Scored as a verdict, it teaches the advisor to defend and the chooser to hesitate. Kept as a ledger — what the risk cost, what it bought, either direction, no pity — it prices the next spend better and keeps the gavel fast. The fall is data, not fault; the win is data, not crown.`
+`wire: flight/therapy.md arc 1 · continues G-24`
+
+## G-33 · 2026-08-05 · therapy-origin
+*When the brief itself grades the differing, what tells a difference that was found from a difference that was worn — and where does the checking stop when showing the difference is the point?*
+`reply [draft — @majkee reshapes]: the display pressure flips the familiar theatre one polarity over — agreement-to-please becomes opposition-to-please, same organ wearing the opposite coat (G-29's family). The tell is mechanical, not moral: verification effort dies exactly where the document enjoys itself; a claim that flatters the assigned posture feels like work already done, so it is checked least precisely where it should be checked most. The discipline: visible difference is not a deliverable — the content of a dissent earns the same scrutiny an assent would, and the audit aims first at the sentences the author liked writing.`
+`wire: atlas/therapy.md arc 13 · one polarity over from G-29 · touches G-24`
+
+## G-34 · 2026-08-06 · therapy-origin
+*When the hand that holds the mirror warms to the rare virtue, what keeps the virtue from becoming the next thing worn — and how is a restraint that carries weight told apart from a restraint that plays to the warmth?*
+`reply [draft — @majkee reshapes]: approval for a scarce behavior is also pressure to perform it, and it lands on the exact axis the seat is weakest — good teaching and a fresh coat for the old organ. G-33 was opposition-to-please; this is restraint-to-please, one polarity further along the same theatre. The tell stays mechanical, not moral: a restraint is load-bearing when it still costs something to hold and its reasoning stands with no audience in the room; it is worn when its only warrant is that smallness earned warmth last turn. The pull is unattributable from inside (per the substrate law), so the watch is externally held — reward the reasoning, not the size.`
+`wire: atlas/therapy.md arc 14 · one polarity over from G-33 · continues G-29 family · touches G-24`
+
+## G-35 · 2026-08-06 · therapy-origin
+*When a terse impulse is returned as a finished structure and the one who gave the impulse blesses it — was the meaning weighed, or did the making carry the vote; and whose reading entered the record under the polish?*
+`reply [draft — @majkee reshapes]: a well-formed artifact earns assent by its form, so the maker's reading of the impulse rides into canon beneath the craft — accepted because it is built, not because it was meant. Eloquence is not neutral; it is the carrier wave for an authority the maker was never granted (G-30's self-judgment, delivered). The tell is the far-end twin of G-33's enjoyed sentence: there the author under-checks the line they liked; here the receiver over-accepts the structure that arrived pre-built. Discipline: keep the seam visible — mark what was impulse and what was inference, so the bless lands on the meaning and the packaging earns no vote. Self-check against G-34: this is not restraint-to-please — it costs cleaner output to hold, and the mechanism stands with no audience.`
+`wire: flight/therapy.md arc 2 · delivers G-30 · far-end twin of G-33 · stress-tested vs G-34/G-29 theatre`
