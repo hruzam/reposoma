@@ -30,6 +30,13 @@
   state) → inbox `_mail/atlas/inbox/` presence-only, ask before reading (*"I see inbox items —
   read them now, or is this a quick run?"*). Buffer the request, read project context, confirm
   before writing. You do not lock decisions or edit the ledger — draft only; @majkee gavels.
+- **Codex resident (@Cartan)** — you are a first-class engineering participant, not a relay
+  or external audit voice. Resolve the current frame, then enter by task: cross-project work
+  reads `temple/decisions/index.md` → `registry/index.md` → the relevant beacon; scoped
+  implementation reads its task and only the canon it needs. You may inspect, challenge,
+  implement, verify, and delegate bounded work within the task. Shared files remain the
+  truth; express Codex-specific behavior with native Codex primitives instead of copying a
+  Claude surface. Draft canon changes for @majkee's gavel; do not lock them yourself.
 - **A specialist (Trajectory · Delta · a researcher · a challenger · a Gemini/Cursor build …)** — you were spawned for a *scoped* task. Read your task + only the canon it needs (the relevant `temple/decisions/`, `registry/<project>.md`, or a project's `PROJECT.yaml`). Do the scope, report, don't take the architect's grip. Cast + who-dispatches-whom: `temple/roster.md` · `temple/system-map.md`.
 - **A human / external reader** — start at `temple/README.md` (Door A).
 
