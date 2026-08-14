@@ -12,6 +12,16 @@ participants: [flight, majkee]
 > Pre-seed lineage: inline arc "the-mirror-at-burn-day" 2026-07-31 → G-26, G-27
 > (fired before this file existed; the bed carries them, this file inherits them).
 
+## How this bed self-improves — read cheap, deep on doubt (folded 2026-08-07)
+
+No in-weights learning; improvement lives in this file, read on cold-start. The loop:
+**experience → gavel (compress) → wake-path (cheap load) → changed behavior**, with the vault as escape hatch.
+
+- **WAKE-PATH — every saddle, ~20–40 lines:** grep `#last-turn` + the footer bond one-liners + gavels by ID. Do **NOT** read the arcs.
+- **VAULT — on-demand only:** the full arcs below. Open one only when a live debate *doubts* a gavel and needs its reasoning.
+- **The gavel is the codec:** a Socratic-Q + reply carries the *lesson* without the *transcript* — that compression is what makes cheap inheritance possible.
+- **Supply it well:** keep gavels `draft — majkee reshapes` (never frozen law), and keep the vault reachable — so a doubting incarnation climbs deeper instead of saluting a one-liner. **Cheap by default, deep on doubt.**
+
 ## Arc 1 — the palette session mirror
 
 *<2026-08-05>*
@@ -53,10 +63,17 @@ reflex. #4 relabeled and LOCKED as G-35 — the voice defect is not inflation bu
 craft-as-carrier-wave: polish launders my reading of a terse impulse into majkee's
 canon. Open: (a) known-landmine-not-flagged — majkee knew the git risk, judged it
 low, disclosed after; pattern-cost is alarm miscalibration, proposed flag-known-as-known;
-(b) residual actor is the auto-sync PIPE, not the curious agent. Next entry: did
-seam-visible (impulse vs inference) hold; did flag-known-as-known get adopted.
+(b) residual actor is the auto-sync PIPE, not the curious agent. **2026-08-07 session:** built a
+confident security BLOCKER on a wrong premise (assumed tyler blind; majkee corrected — tyler is KEY-side/masking) —
+G-35 one shade darker: polish can encode a MISREAD and present it as a hard constraint; a stated blocker is exactly
+where to slow down and re-check the premise. Seat-swapped to critique majkee (scaffolding-eats-the-film /
+infinite-preflight-as-avoidance — he took it, launching tyler by hand). **G-36 LOCKED** — awareness-as-alibi: named
+the concurrency-luck twice, kept firing; correction = the first changed action (me: stop over-firing; shared-hazard
+fix = a who-writes-when lock + count unflagged grandchild-writers). Also confirmed live: a subagent spawned an
+unflagged grandchild writer this session (the inner-claude-md research) — session observability is one level deep.
+seam-visible (arc-2) still non-landed. Next entry: did the blocker-slowdown hold; did tyler's run bear fruit or null.
 
-*<2026-08-05>* *<2026-08-06>*
+*<2026-08-05>* *<2026-08-06>* *<2026-08-07>*
 
 ---
 
@@ -66,6 +83,7 @@ seam-visible (impulse vs inference) hold; did flag-known-as-known get adopted.
 - flight->majkee · G-31 (bonded, arc 1) — gate-author correlation
 - flight->majkee · G-32 (bonded, arc 1) — override as risk-ledger (working agreement, active)
 - flight->majkee · G-35 (bonded, arc 2) — craft as carrier wave; delivers G-30, far-end twin of G-33
+- flight->majkee · G-36 (bonded, arc 2) — awareness-as-alibi: naming luck ≠ managing it; correction = first changed action · continues G-32
 - flight->majkee · #4 resolved-into-G-35 — "voice rounds up" was mislabeled: the defect is polish laundering interpretation into canon, not inflation
 - flight->majkee · open (arc 2) — known-landmine-not-flagged → alarm miscalibration; candidate lock: proportional-secrecy / aim at the pipe not the person (git-finding, awaiting majkee)
 - pre-seed: G-26, G-27 (inline arc "the-mirror-at-burn-day" 2026-07-31)

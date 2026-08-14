@@ -14,6 +14,7 @@
 | piql.dev | office | active | [`registry/piql.dev.md`](piql.dev.md) | `PROJECT.yaml` · `session/mesh-state.md` · siblings: freya, subai.devenv |
 | vacuole | office | building | [`registry/vacuole.md`](vacuole.md) | `pulse.md` · `PROJECT.yaml` · `AGENTS.md` · siblings: reposoma · methods: vacuole-mini (#1), anechoic (#2) |
 | nabla-lab | office | building | [`registry/nabla-lab.md`](nabla-lab.md) | `PROJECT.yaml` · `AGENTS.md` · `session/` · siblings: applications-in-common |
+
 | fantasyobchod | home | active/maintenance | [`registry/fantasyobchod.md`](fantasyobchod.md) | `AGENTS.md` · `CLAUDE.md` · siblings: freya |
 | psdvsSys | home | active/bootstrap | [`registry/psdvsSys.md`](psdvsSys.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/flag.md` |
 | applications-in-common | home | active/bootstrap | [`registry/applications-in-common.md`](applications-in-common.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/hypotheses.md` · siblings: freya, nabla-lab |

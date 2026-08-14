@@ -6,6 +6,44 @@ Atlas reads `pulse.claude.md` before starting — sees what Houston has tabled o
 
 Canon: `raw.canon/canon.mail-protocol.md` (single-writer-per-file · ask-first · everyone reads all).
 
+**How this file works (2026-08-07 restructure — majkee blessed).** Two zones + a roll rule:
+1. **`## OPEN LEDGER`** (below) — the living square. One `- [ ]` line per live thread, each
+   pointing DOWN to its dated entry (point, never copy). Closed → flip to `- [x]`; it graduates
+   out at the next roll. **This is the ONLY zone a saddle MUST read.** Machine-legible: `- [ ]`
+   = open, `- [x]` = done.
+2. **The dated log** (newest-on-top, under the ledger) — the narrative history. A saddle reads an
+   entry ONLY when the ledger points into it.
+3. **Archive-roll** — when an entry's items are all `- [x]` AND ~6mo old, roll it to
+   `raw.substrate/archive/pulse.atlas.<period>.archive.md` (grep-excluded): preserve the story,
+   lighten the working surface. Format stays **flat markdown — NO hand-edited JSON** (temple scar
+   tissue: brief.md collapse; pins.jsonl is tool-written-only). Checkboxes give the same
+   machine-checkable state without the hand-edit fragility.
+
+---
+
+## OPEN LEDGER — the living square
+
+Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem · stale mistake ·
+orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
+surfaces + age-stamps).
+
+- [ ] **Prove the ledger shape over a few saddles** — does eviction-on-close hold, does the square
+  stay honest? (restructure · step 2.)
+- [ ] **Roll the ledger shape to the other pulses IF it works** — offer OPEN LEDGER + archive-roll
+  to Houston/Flight for `pulse.claude.md` / `pulse.flight.md` (they own theirs). *"If it works,
+  apply everywhere" lives HERE so it can't orphan.* (step 3.)
+- [ ] **Read-only `ai/` pulse-audit reporter — DEFERRED** — build ONLY when the manual cross-pulse
+  audit hurts (N≥3 pulses). Scans every `pulse.*.md` OPEN LEDGER, lists unticked + age; agent
+  adjudicates. Surgical table `ia-sync/zsh/ai/` → `~/.config/zsh/ai/`. NO write-side tooling, NO
+  JSON, never automates the verdict. (step 4.)
+- [ ] **Back-audit the older `STILL OPEN` lines below** — pre-restructure entries carry unmigrated
+  open items (surgical-table deploy, Sella probes A/D/E, codex live-leftover deletes, phone→
+  media-harvest transport gap, therapy arc 13, inbox `houston.defer-advisor-high-fable-paygo`
+  unread…). Adjudicate each orphan-vs-real-vs-stale on a dedicated pass; promote the live ones up
+  here. (migration debt — not done now to avoid importing stale items as false-live signal.)
+- [ ] **majkee: commit + push reposoma** — carries this restructure + `raw.guides/PAD/pad-builder.md`
+  live (my seat has no Bash). → `[2026-08-07 PAD]` entry.
+
 ---
 
 ## [2026-08-07] — PAD builder guide DELIVERED (general operator step-pad shape)
