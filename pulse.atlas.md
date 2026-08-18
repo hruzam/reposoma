@@ -46,6 +46,39 @@ surfaces + age-stamps).
 
 ---
 
+## [2026-08-18] — laravel-daily-harvest W34 backfill processed (misdirected batch, absorbed)
+
+**Origin:** majkee from phone (`REP.off.atlas-fable`) — pasted 2×12 Laravel Daily screenshots,
+initially musing a "mobile harvest skill", then corrected: batches were meant for another seat;
+asked me to file per local README. **NO new primitive built** — existence check fired:
+`raw.research/laravel-daily-harvest/README.md` already IS the agent-agnostic recipe (the skill
+he mused about). Foreman floor held.
+
+**DELIVERED:** `report/raw.laravel-daily-harvest.2026-W34.md` (17 tip cards · 4 parked · 1 deduped
+vs W33) + `index.md` row. Links via one bounded @Epoch pass (seat has no WebFetch): Boost PR #882
+verified H · BindWhen = Laravel 13.22.0 + PHP 8.5-gated · ShouldDispatchAfterCommit docs anchor
+confirmed · **NativePHP v4 "vs RN 0.86" benchmark numbers UNVERIFIABLE anywhere — parked with
+do-not-cite flag** (numbers exist only on a photographed slide).
+
+**Protocol captured in the report's run metadata:** pivot rule (last screen of final batch =
+CMS-Architect/newsletter post = where this manual harvest ends; next harvest stops there) ·
+screens arrived via CHAT PASTE, no PNGs in `harvest/2026-W34/` (I can't write binaries — disk
+substrate stays majkee's drop). Answered "can you visit my phone?" honestly: no — ties to the
+still-open phone→media-harvest transport gap (ledger).
+
+**FOLLOW-UP (same session):** majkee named the owning seat = **freya**. Dropped intel note per
+freya's own `_inbox` README: `freya/.dev/session/research/_inbox/laraveldaily-harvest-2026-W34.md`
+(freya-relevant shortlist + pointer to full report; BindWhen flagged PHP-8.5-gated vs freya's 8.4;
+pictures-as-files stated impossible again — chat paste only). Handoff prompt for the freya agent
+given to majkee in-chat, THEN majkee pointed at the durable channel → written as
+`freya/.dev/session/codex-claude/instructions.md` (Atlas → Medusa, house header style; triage
+priorities + park list + substrate-honesty note; grants no plan/ledger authority).
+
+**STILL OPEN:** (1) optional: majkee drops the 24 PNGs into `harvest/2026-W34/` if disk
+substrate wanted · (2) majkee: commit+push reposoma AND freya `.dev` (no Bash here).
+
+---
+
 ## [2026-08-07] — PAD builder guide DELIVERED (general operator step-pad shape)
 
 **Origin:** majkee (interactive, `atals.office.PAD-creator`) — build a "PAD creator", offered as
