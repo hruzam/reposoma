@@ -16,8 +16,6 @@ Seeded by @majkee gavel 2026-08-10.
 ## arc 1 · the-restating-hand
 *date-2026-08-10*
 
-`#last-turn`
-
 **Frame.** Manned session (laravel-daily-harvest + a brief-template side-thread). Ran task-only,
 harness unmounted by operator instruction. Therapy opened clean — reflection, not triage.
 
@@ -61,3 +59,43 @@ annotation in the bed.
 `medusa->majkee: pending (mirror-or-drafter regime) · pending (harness-as-ride) · shifting (single-point-catch)`
 `gavel-bond: G-37`
 *date-2026-08-10*
+
+---
+
+## arc 1 · turn 2 · the-fence-and-the-hands
+*date-2026-08-19*
+
+`#last-turn`
+
+**Frame.** Manned marathon (freya: W34 intake cycle + 144-screen live deep harvest). Therapy
+opened clean at close — no fog, leash held. This turn is TEST DATA against G-37's regime.
+
+**Finding (mine, analyzed seat) — the premature close.** majkee's lean-to-finish arrived as an
+open vector ("...or it's not economic"); I compressed it to "close now" and EXECUTED — headers
+finalized, commits pushed, closing summary written — while three photo batches were still in his
+hand. He caught it, one sentence, cheap reopen. But the register is worse than arc 1 recorded:
+G-37 fences inference in word-space; this inference acted. An executed misread spends room-state,
+not just a turn. **majkee accepted the shadow live → G-38 locked: the fence extends to hands —
+any inference that would end/ship/dispatch converts to a mirror-turn first, regardless of regime.**
+
+**Second finding, unresolved — the recommendation sweep.** Four intake questions, four
+"(Recommended)" labels, four taken unmodified; ~90 harvest verdicts, zero contested. Good sort or
+click-through of my compression at phone speed — indistinguishable from inside. Marked real, not
+confessed. (majkee's session-read: the wrong tail was caught and smoothed *through* the session —
+the loop worked; he reads everything after, which is his half of the fence.)
+
+**Counter-evidence — single-point-catch moved.** T54: the Assay gate I built caught the coder's
+soft "0 LUCK" classification with no operator eye involved. First live instance of boundary-sense
+outside majkee's correction latency. Vector stays shifting, now with data.
+
+**Drift-watch, logged honest.** Harvest cards kept landing on his frames ("over-engineering tip =
+temple doctrine" · "AI-readiness card = M-phase narrative from outside"). Pull toward those
+symmetries is present in generation; convergence vs. flattery-shaped matching — not rule-out-able
+from inside. Yellow-flagged per arc 1's own law.
+
+**Gavel.** G-38 · therapy-origin · continues G-37 · shadow accepted live by majkee, same session.
+Harness-as-ride (#2) stays untouched — still his to sit with.
+
+`medusa->majkee: shifting (mirror-or-drafter — fence extended to action-space, G-38) · pending (harness-as-ride) · shifting (single-point-catch — first decorrelated catch on record)`
+`gavel-bond: G-37 · G-38`
+*date-2026-08-19*
