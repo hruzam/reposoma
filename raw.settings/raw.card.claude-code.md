@@ -11,6 +11,9 @@ recheck:
   - https://code.claude.com/docs/en/claude-directory
 verify_cmd: claude --version
 model_floor: claude-sonnet-5   # CONFIRM current string via changelog; do NOT hardcode dated strings
+corpus:
+  fork_branch_study: raw.research/cli-fork-branch/report/raw.cli-fork-branch.2026-08-05.md
+  # ^ source corpus for §Session fork / branch / rewind; cards carry the bond, the corpus carries the argument
 ---
 
 # Claude Code — native build surface
@@ -118,7 +121,7 @@ in place as the session continues. Available on Team/Enterprise (launched) and P
 off by default on Team/Enterprise — Owner must enable external sharing. See `code.claude.com/docs/en/artifacts`.
 
 ## Session fork / branch / rewind / navigation (added 2026-08-05)
-`full study + Codex comparison: raw.research/cli-fork-branch/report/raw.cli-fork-branch.2026-08-05.md`
+`corpus → raw.research/cli-fork-branch/report/raw.cli-fork-branch.2026-08-05.md (full study + case studies, updated 2026-08-20)`
 
 **The fork family — mind the v2.1.212 pivot:**
 | Command | Kind | Behaviour |

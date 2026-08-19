@@ -13,7 +13,9 @@ recheck:
 verify_cmd: codex --version
 model_floor: gpt-5-codex   # CONFIRM current string via changelog; do NOT hardcode dated strings
 # companion cards: card.claude-code · card.session-hygiene · card.gemini-cli · card.cursor-ide
-# seeded-from: raw.research/cli-fork-branch/report/raw.cli-fork-branch.2026-08-05.md (fork/branch study)
+corpus:
+  fork_branch_study: raw.research/cli-fork-branch/report/raw.cli-fork-branch.2026-08-05.md
+  # ^ source corpus for §Session model (fork/resume/parallel); cards carry the bond, the corpus carries the argument; updated 2026-08-20
 ---
 
 # OpenAI Codex CLI — native surface
@@ -61,4 +63,4 @@ OpenAI ships **no** quantified fork/resume/compaction cost docs. Third-party num
 - **No teleport/remote-control equivalent** — `codex cloud` handles cloud chats only; remote/SSH lives in the separate Codex App (alpha). CLI workaround: tmux + ssh, or a third-party wrapper (herdr, Codeman).
 
 ## Stubs — pending dedicated refresh
-Config system (`~/.codex/config.toml`, profiles), MCP support, sandbox/approval model, exec/non-interactive JSONL event protocol (`thread.started`/`turn.*`/`item.*`), sub-agent definition surface. Full study: `raw.research/cli-fork-branch/`.
+Config system (`~/.codex/config.toml`, profiles), MCP support, sandbox/approval model, exec/non-interactive JSONL event protocol (`thread.started`/`turn.*`/`item.*`), sub-agent definition surface. Full study + case studies: `raw.research/cli-fork-branch/report/raw.cli-fork-branch.2026-08-05.md` (updated 2026-08-20).
