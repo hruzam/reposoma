@@ -74,8 +74,15 @@ given to majkee in-chat, THEN majkee pointed at the durable channel → written 
 `freya/.dev/session/codex-claude/instructions.md` (Atlas → Medusa, house header style; triage
 priorities + park list + substrate-honesty note; grants no plan/ledger authority).
 
-**STILL OPEN:** (1) optional: majkee drops the 24 PNGs into `harvest/2026-W34/` if disk
-substrate wanted · (2) majkee: commit+push reposoma AND freya `.dev` (no Bash here).
+**CLOSED [2026-08-19]:** pictures materialized + shipped — majkee ordered it; @Delta extracted
+24 base64 images from this session's own JSONL transcript, decoded → `harvest/2026-W34/01–24.jpg`
+(6.8MB, verified real JPEGs), scoped commit `6bd7240` pushed to origin/core. Home obtains via
+`git pull` (git = the journaled lane, no tailscale ssh — 2026-08-01 discipline held). *Pattern
+worth remembering: chat-pasted images ARE recoverable — session JSONL is the substrate.* Verbatim
+home-Medusa handoff copy also given to majkee in-chat (freya `.dev/` doesn't cross machines).
+
+**STILL OPEN:** freya `.dev` files (intel note + instructions.md) live on the office clone only —
+majkee hand-carries or Medusa reconciles the `.dev/` transport (Cartan curvature gate 1).
 
 ---
 
