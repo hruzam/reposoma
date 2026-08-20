@@ -51,6 +51,9 @@ laravel-daily-harvest/
   repetition ≠ evidence.
 - **Next run:** the floor-hunt glue card = `NEXT-RUN.md` beside this README —
   hand it to any seat to continue the harvest below ~Sep–Nov 2025.
+- **Rogue intake:** non-LD tips (symmetry seat, Boost tips, external finds) are
+  dropped into `rogue-tips.md` and drained by every loop run through the same
+  trust law — same verdicts, honest `Source:` line (majkee gavel 2026-08-20).
 
 ## Future ideas (parked — not needed now)
 

@@ -39,6 +39,13 @@ T59, 2026-08-20)._
 - **Screens:** majkee pastes in chat (batches ≤12, merge multi-screen posts) —
   desktop screenshots this time if the desktop check happens anyway.
 
+## Rogue intake (every run, before the scroll work)
+
+Drain `rogue-tips.md` (this scope): each pending entry goes through the same
+trust law → verdict TAKEN/LEFT/DUP → card into the run's report with its honest
+`Source:` line → delete the drained entry. Boost/harness adoptables → freya T49
+feed. An empty Pending section = skip, zero cost.
+
 ## Close ritual
 
 1. Update `index.md` row (screens · taken · left · date · floor marker).
