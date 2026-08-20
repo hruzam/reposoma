@@ -46,8 +46,11 @@ laravel-daily-harvest/
 - Report filename: `report/raw.laravel-daily-harvest.<ISO-week>.md`.
 - Agent-agnostic: Claude or Codex can both run this recipe unmodified.
 - **Trust law:** this README owns the harvest RITUAL only. How tips are trusted,
-  verified, and adopted = `raw.guides/tip-epistemics/GUIDE.md` (gaveled 2026-08-20) —
-  a tip is a lead, not a fact; numbers untrusted by default; repetition ≠ evidence.
+  verified, and adopted = `raw.guides/laravel-daily-epistemics/GUIDE.md` (gaveled
+  2026-08-20) — a tip is a lead, not a fact; numbers untrusted by default;
+  repetition ≠ evidence.
+- **Next run:** the floor-hunt glue card = `NEXT-RUN.md` beside this README —
+  hand it to any seat to continue the harvest below ~Sep–Nov 2025.
 
 ## Future ideas (parked — not needed now)
 

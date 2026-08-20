@@ -1,23 +1,24 @@
 ---
-title: Tip epistemics — trust ladder + remeasure law for harvested tip sources
-scope: tip-epistemics
+title: Laravel Daily epistemics — trust ladder + remeasure law for harvested tips
+scope: laravel-daily-epistemics
 audience: agent + operator
 machine: both
 verified: 2026-08-20
 ---
 
-# Tip epistemics — how harvested tips are trusted, verified, and adopted
+# Laravel Daily epistemics — how harvested tips are trusted, verified, and adopted
 
 _Gaveled by majkee 2026-08-20 (freya Medusa session, ledger T59; follow-up to the
 LD deep-backfill run, T58). Instance source: the `laravel-daily-harvest` scope
 (`raw.research/laravel-daily-harvest/` — its README owns the harvest RITUAL; this
-guide owns the TRUST law). The ladder generalizes to any future tip-channel scope._
+guide owns the TRUST law). Named for its instance source; the ladder itself
+generalizes — a future non-LD tip-channel scope reuses it by pointer._
 
 ## When to reach for this
 
 Before **adopting** any harvested tip into code, harness rules, or skills — and
 before **citing** any tip claim as fact in a report, study, or team message.
-Type `/guide tip-epistemics`. The one-line law if you read nothing else:
+Type `/guide laravel-daily-epistemics`. The one-line law if you read nothing else:
 **a tip is a lead, not a fact — docs, PRs, or a local probe make it a fact.**
 
 ## The trust ladder
