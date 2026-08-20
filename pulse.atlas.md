@@ -27,13 +27,15 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
-- [ ] **Guides-unification thread** — B′ locked + **taxonomy gaveled: skill-model slugs**
-  (`raw.guides/<slug>/GUIDE.md` + chapters + anti-generic guard) · **P1/P1b/P2b/P3′-writes/
-  P4a-stub ALL DELIVERED 2026-08-20** (9 slugs live incl. rewritten remote-control; /guide
-  skill on table; stub staged). **Remaining:** majkee commit reposoma + ia-sync → @Delta
-  removal pass (list in journal) → deploy → P4b guards → P5 parked audit. Journal:
-  `~/ia-sync/_staging/dev-journal.guides.md`. Standing blessing: every emitted document
-  carries YAML frontmatter. @mirror first live fire: SUCCESS. Session
+- [ ] **Guides-unification thread — SUBSTANTIALLY CLOSED 2026-08-20.** B′ + skill-model
+  slugs + manifest law all gaveled; 9 slugs live; `/guide` skill + stub DEPLOYED BOTH
+  BOXES (ia-sync `329ece4` · reposoma `93e542f`); both-host cleanup done (office Delta +
+  cross-host Delta under operator voice directive). **🔫 rogue-file theory CONFIRMED:
+  retired `ai.md` (2026-07-11) found squatting on home — left as evidence, majkee
+  disposition pending.** Remaining tail: ai.md word · P4b small guards (ia-sync README
+  line, deploy.sh guides-leg review) · P5 lingerer-audit parked (ai.md = evidence #1).
+  Journal: `~/ia-sync/_staging/dev-journal.guides.md`. Standing blessing: every emitted
+  document carries YAML frontmatter. @mirror first live fire: SUCCESS. Session
   `REP.Offc.Atlas-fable.guides`.
 - [ ] **Prove the ledger shape over a few saddles** — does eviction-on-close hold, does the square
   stay honest? (restructure · step 2.)
