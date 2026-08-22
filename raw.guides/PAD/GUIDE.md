@@ -66,7 +66,7 @@ step 0. It also proves the environment before any real move.
 
 ```bash
 <copy-pasteable command — full paths, no cd assumptions>
-```
+*(```)*
 
 <expected output, one or two lines>
 
@@ -77,7 +77,7 @@ step 0. It also proves the environment before any real move.
 >MAJKEE report N
 ```zsh
 
-```
+*(```)*
 ```
 
 **7 — Trailing sinks (optional).** A verdict-mapping table (step → prediction → SUPPORTED-when /

@@ -307,28 +307,6 @@ tailscale peers
 
 ---
 
-## 📁 Project Directory Structure
-
-### Standard Paths
-```
-~/www/                          # Main project directory
-├── fantasyobchod/             # FO project
-├── freya/                      # IM (Imago) project
-├── PSDVS/                      # PSDVS project
-├── Laravel-training-project/   # LTP project
-└── larva/                      # Larva orchestrator
-```
-
-### Configuration Mappings
-See `~/.config/zsh/harness.machine-project-registry.json` for exact paths and per-project settings.
-
-### Environment Backups
-```
-~/www/PSDVS/env/               # PSDVS environment backups
-```
-
----
-
 ## 🛠️ Available Toolkits
 
 ### Loaded Automatically
