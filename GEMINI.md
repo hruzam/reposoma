@@ -82,3 +82,9 @@ participant_<N>:
 - what do with raw
 - resources / res
 
+**from where I can download clold-start cards**
+
+`~/reposoma/_mail/monkey/inbox`
+sually have shape like: `CS.<scope>.<date>.md` but can be pointed files not including `CS` in name, from older era or because missunderstanding.
+
+***reference:*** `~/ia-sync/claude/skills/cold-start-card/SKILL.md`
