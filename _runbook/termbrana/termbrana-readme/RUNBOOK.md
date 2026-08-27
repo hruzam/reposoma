@@ -1,7 +1,7 @@
 ---
 goal: Review and close the evidence-backed Termbrana README without changing the M0 gate, ensuring all claims match the captured evidence and the open M0 status.
 state: fresh
-participant_1: [claude-code, {brand: "Claude Code CLI", model: "claude-3-7-sonnet", effort: "high"}, host: "office"]
+participant_1: [claude-code, {brand: "Claude Code CLI", model: "fable", effort: "high"}, host: "office"]
 participant_2: [codex, {brand: "Codex CLI", model: "gpt-5.6-sol", effort: "high"}, host: "office"]
 ---
 
@@ -58,40 +58,61 @@ Upon successful review and any needed edits, update the active Nablarva pulse fi
 ###### prompt
 
 ```text
-You are executing the Termbrana README handoff and closure task.
-Read-only source context and active state:
-- Cold-Start Card: /home/hruzam/reposoma/_runbook/termbrana/termbrana-readme/raw/CS.termbrana-readme.2026-08-24.md
-- Active Nablarva Pulse: /home/hruzam/unikuklatrix/nablarva/.dev/session/pulse.md
-- Session-02 Status: /home/hruzam/unikuklatrix/nablarva/.dev/session/toolbox-termbrana-02-m0-truthspike/status.md
-- M0 Evidence: /home/hruzam/unikuklatrix/termbrana/research/evidence/
+Termbrana M0 closure — office session.                                                        
 
-Your primary directive:
-Review the Termbrana README (/home/hruzam/unikuklatrix/termbrana/README.md) against the captured evidence files and status.md. Make sure every single claim is strictly evidence-backed and aligns with the open, non-frozen M0 gate.
+ 0 · Verify host before anything. Run ls /usr/bin/php74 && command -v valet. Both present = office, 
+ proceed. Absent = you are on home, where zellij is ABSENT and termbrana cannot build — stop and say
+ so. Do not trust any file's host: header; zsh/AGENTS.md, zsh/CLAUDE.md and the ai/temple-*.zsh 
+ headers all declare "office" regardless of where you actually are. See ~/ia-sync/AGENTS.md §"Which 
+ host am I on?".
 
-Allowed modifications:
-- ONLY /home/hruzam/unikuklatrix/termbrana/README.md (clarity, truthfulness, link correction)
-- ONLY /home/hruzam/unikuklatrix/nablarva/.dev/session/pulse.md (to document the accepted disposition once done)
+ 1 · Read, in this order. nablarva/AGENTS.md → .dev/session/flag.md (L6, L9, L11 — L11 governs 
+ termbrana entirely) → .dev/session/pulse.md top entry → 
+ toolbox-termbrana-02-m0-truthspike/status.md → pad.1-m0-runtime-confirm.md.
 
-GATED:
-- Do NOT perform git commit or push.
-- Do NOT alter any other file, flag, or topology.
+ 2 · The only legal path. L11: "One integration owner; no parallel coding before M0 freezes the host
+ contract." Do not open M1 work, do not touch termbrana-core, do not plan lanes. Close M0 or do 
+ nothing.
 
-Steps to execute:
-1. Run "git -C /home/hruzam/unikuklatrix/termbrana diff e319ed4 HEAD -- README.md" to see the full set of modifications made to the README.
-2. Read the evidence files in "/home/hruzam/unikuklatrix/termbrana/research/evidence/" and compare the README's technical assertions. Look for discrepancies, specifically around:
-   - Zellij PTY and rendering limitations.
-   - Pinned host tooling versions (Zellij 0.44.3, Rust 1.95.0, wasm32-wasip1).
-   - Expected permissions and permissions granted logic.
-3. Apply any necessary surgical updates to README.md using your file editing tools to align claims perfectly with truth and evidence.
-4. Run "git -C /home/hruzam/unikuklatrix/termbrana diff --check" and verify all local links.
-5. Compile the cargo target to ensure no build instructions were broken:
-   "cargo -C /home/hruzam/unikuklatrix/termbrana build --release --target wasm32-wasip1 -p termbrana-zellij"
-6. Prepare a concise summary report of your findings, corrections made, and the diff.
+ 3 · First action — check the pad's >MAJKEE report fences. STEP 0 was sat 2026-08-16 (<MATCH>). 
+ STEPS 1–5 were still empty as of 2026-08-25.
+ - Empty → hand majkee the pad. One step, one concept, wait for his report, then the next. You 
+ drive, he is the hands. Never run ahead. Steps 2–3 are zellij action pipe probes; step 4 judges 
+ resize/flicker; step 5 is the largest evidence gap.
+ - Filled → fold results into the PENDING-OPERATOR rows of research/evidence/t02–t05 + 
+ pane-content-matrix.md, then @Assay fresh-eyes over the full evidence set (handoff gate law — the 
+ writer does not verify their own work), then freeze.
+
+ 4 · Two things to resolve before freezing.
+ a) termbrana/README.md carries an uncommitted +153/−3 expansion by @Cartan. It is not stashed. 
+ Review it against CS.termbrana-readme.2026-08-24.md. Do not git checkout it away.
+ b) The machines are Manjaro (ID=manjaro), not Arch. research.epoch.host-versions.2026-08-15.md 
+ justified the M0 pins on "Arch extra in sync with upstream" — wrong repo; Manjaro holds packages 
+ behind Arch on staged branches. PAD-01 confirmed the pins empirically so they probably hold, but 
+ decide explicitly whether to accept or re-verify before freezing a contract whose stated reasoning 
+ cites the wrong distro.
+ c) · Before freezing, re-verify the pins on office and record the distro. The host contract is a 
+ machine-layer commitment. Run zellij --version && rustc --version && cargo --version on office and 
+ compare against research/evidence/host-versions.md. Record ID=manjaro in the evidence file — the 
+ pins came from Manjaro repos, not Arch, and the frozen contract should say which.
+
+ 5 · Gates. majkee owns commit, push, flag locks, and the M0 freeze itself. No termbrana-local 
+ agent, harness, devenv twin, pulse, or beacon (L11). DECISIONS.md = product-technical ADRs only, 
+ each citing its authorizing flag line.
+
+ 6 · After freeze. Session 03 (m1-core) opens, parallel lanes become legal, @Flight branch group 
+ eligible. The A5 benchmark corpus (5 frozen sessions / 15 retrieval tasks) freezes during M1 — do 
+ not forget it when 03 opens.
+                                                            
+ 7 · Machine-layer carry. Read the HOME — 2026-08-25 entry in ~/ia-sync/journal.host-cleanup.md. 
+ Office's zsh tree has never been drift-audited; home had 37 orphans. Run zsh 
+ ~/ia-sync/zsh/blessings/zsh-orphans.zsh when convenient — report-only, no delete path.
+
 ```
 
 ---
 
-## prompt-2
+## prompt-1
 
 ###### prompt
 
