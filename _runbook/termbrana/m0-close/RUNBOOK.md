@@ -3,7 +3,6 @@
 ```yaml
 goal: Close termbrana M0 — sit pad.1, fold evidence into t02–t05, @Assay fresh-eyes pass, freeze the host contract.
 gate: M0 deliverables on disk + an @Assay-class fresh-eyes pass → host contract FROZEN.
-state: fresh
 participant_1: [oraculum, {brand: "Claude Code", model: opus, effort: high}, host: "office"]
 participant_2: [majkee, {role: "operator — pad.1 requires real hands at a real terminal"}, host: "office"]
 ```
@@ -16,7 +15,7 @@ participant_2: [majkee, {role: "operator — pad.1 requires real hands at a real
 
 The one artefact that bed lacks is a master prompt. **Promotion = copy `prompt-0` below into that
 bed as `prompt-0.md`.** Do not rename `handoff.md` there — its gate is still open, and renaming
-inside an open bed is how work gets lost (`raw.guides/handoff/GUIDE.md`, migration hazard).
+inside an open bed is how work gets lost (`raw.guides/status/GUIDE.md` — the HANDOFF name was retired before first use; never rename inside an open bed).
 
 ## Scope
 

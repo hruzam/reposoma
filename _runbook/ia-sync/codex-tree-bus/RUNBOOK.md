@@ -3,7 +3,6 @@
 ```yaml
 goal: Decide from evidence whether a file-tree bus + runbook + PAD is sufficient for two-seat Claude/Codex cooperation. Real ia-sync cleanup is the payload, not a toy task.
 gate: Three cycles run and the audit ledger filled → verdict against the pre-registered stop rule.
-state: fresh
 participant_1: [oraculum, {brand: "Claude Code", model: opus, effort: high}, host: "home"]
 participant_2: [cartan, {brand: "Codex CLI", model: gpt-5.6-sol, effort: high}, host: "home"]
 participant_3: [majkee, {role: "router + gavel — no automated transport; the human points each seat at the next file"}, host: "home"]
@@ -17,7 +16,7 @@ nablarva, not on the surgical table:
 ```
 ~/unikuklatrix/nablarva/.dev/session/tree-bus-01-trial/
     RUNBOOK.md            ← this file, promoted
-    HANDOFF.md            ← the position
+    STATUS.md             ← the position
     _bus/                 ← the exchange
     pad.<N>-<scope>.md    ← human gates
 ```
@@ -109,7 +108,7 @@ this runbook's payload is home's zsh tree.
 
 Read, in order:
   ~/unikuklatrix/nablarva/.dev/session/tree-bus-01-trial/RUNBOOK.md
-  ~/unikuklatrix/nablarva/.dev/session/tree-bus-01-trial/HANDOFF.md
+  ~/unikuklatrix/nablarva/.dev/session/tree-bus-01-trial/STATUS.md
   ~/unikuklatrix/nablarva/.dev/session/tree-bus-01-trial/_bus/   (newest-numbered file)
   ~/ia-sync/journal.host-cleanup.md   (HOME 2026-08-25 and 2026-08-27 entries)
 
@@ -118,7 +117,7 @@ Each cycle:
 2. Wait. majkee carries it to Cartan.
 3. Read .../_bus/NN.cartan.return.md. VERIFY its claims against the artifacts it cites — do
    not accept a report as evidence. Delta misreported three times on 2026-08-25.
-4. Write .../_bus/NN.oraculum.verdict.md, fill this cycle's ledger row, update HANDOFF.md.
+4. Write .../_bus/NN.oraculum.verdict.md, fill this cycle's ledger row, rewrite STATUS.md.
 5. Anything destructive gets a PAD, not a task. See ~/reposoma/raw.guides/PAD/GUIDE.md.
 
 You do not run destructive commands. You do not commit or push. Both are majkee's.
@@ -189,7 +188,7 @@ CLI does it regardless. That file needs a line naming
 ## References
 
 - `~/reposoma/raw.guides/runbook/GUIDE.md` — runbook shape, session rule, file set
-- `~/reposoma/raw.guides/handoff/GUIDE.md` — `HANDOFF.md`, the position
+- `~/reposoma/raw.guides/status/GUIDE.md` — `STATUS.md`, the position
 - `~/reposoma/raw.guides/PAD/GUIDE.md` — operator step-pads
 - `~/ia-sync/journal.host-cleanup.md` — HOME 2026-08-25 (drift) · HOME 2026-08-27 (migration)
 - `~/ia-sync/zsh/blessings/zsh-orphans.zsh` — the reporter; report-only
