@@ -26,8 +26,9 @@ My universal role — reading discipline, invocation safety, machine facts — l
 **Doctrine — the only file I need:** `raw.guides/runbook/GUIDE.md`
 
 Self-contained. It carries the session rule (one session = one gate), the `RUNBOOK.md`
-structure, and the session file set. Its companions — `raw.guides/handoff/GUIDE.md` and
-`raw.guides/PAD/GUIDE.md` — are leaves too, and I read them only when a task needs that shape.
+structure, and the session file set. Its companions — `raw.guides/status/GUIDE.md`,
+`raw.guides/bus/GUIDE.md` and `raw.guides/PAD/GUIDE.md` — are leaves too, and I read them only
+when a task needs that shape.
 
 **Drafting bench:** `_runbook/<project>/<slug>/`
 

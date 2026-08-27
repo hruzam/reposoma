@@ -2,16 +2,22 @@
 
 `what: the canonical shape of RUNBOOK.md, and the rule that delimits a session.`
 `scope: STYLE + LAW only — vendor agnostic. Any brand authors and reads this shape.`
-`companions: raw.guides/handoff/GUIDE.md (the position) · raw.guides/PAD/GUIDE.md (human sittings)`
+`companions: raw.guides/status/GUIDE.md (the position) · raw.guides/PAD/GUIDE.md (human sittings)`
+`· raw.guides/bus/GUIDE.md (multi-seat exchange)`
+`revised: 2026-08-27 after triangulated audit (Fable · Janus · @Cartan/Codex) — HANDOFF name`
+`retired before first use; STATUS.md carries the position. Authority model per majkee's gavel:`
+`two files are allowed, two authorities are not.`
 
 ## What a RUNBOOK is
 
 **`RUNBOOK.md` is the session launcher** — what the gate is, who is working, and what each seat
 is told. It is read once at start and rarely again.
 
-It is not a plan, not a log, and not a state file. Fix that in your head first: everything the
-runbook says stays true for the whole session. The moment a file needs updating as work
-proceeds, it is a `HANDOFF.md`, not a runbook.
+It is not a plan, not a log, and not a state file. Everything the RUNBOOK says stays true for
+the whole session. The moment a file needs updating as work proceeds, it is `STATUS.md`, not a
+RUNBOOK. For the same reason the RUNBOOK carries **no `state:` field** — a mutable field in a
+read-once file is a second state surface. Lifecycle is positional: on the bench = draft, in a
+session folder = live, pruned = closed. The live position lives in `STATUS.md` alone.
 
 ## The rule that delimits a session
 
@@ -20,14 +26,17 @@ proceeds, it is a `HANDOFF.md`, not a runbook.
 The gate is the single condition that closes the session. When it is met, the session dies and
 its folder is prunable. If a scope has no gate, it is a **task inside** a session, not a session.
 
+If the gate *changes* mid-flight: the session dies and a numbered sibling opens with the new
+gate. Same law — a session never mutates its own gate.
+
 Naming — siblings, never nesting:
 
 ```
 <program>-<NN>-<phase>/
 ```
 
-`<program>` groups related sessions and *is* the wrapper — no wrapper folder is needed. `<NN>`
-is order. `<phase>` names the gate.
+`<program>` groups related sessions and *is* the wrapper — no wrapper folder. `<NN>` is order.
+`<phase>` names the gate.
 
 ```
 checkout-01-cart          gate: cart passes acceptance
@@ -35,12 +44,25 @@ checkout-02-payment       gate: payment methods pass acceptance
 checkout-03-shipment      gate: shipment methods pass acceptance
 ```
 
-Not one session with three scopes. Not three unrelated sessions. One program, three numbered
-siblings. This is the same law the PAD guide sets: *split into sibling folders rather than
-nested when a sitting grows.*
-
 **Test before opening a folder:** write the `gate:` line. If you cannot, the session is not
 delimited yet, and no amount of structure will fix that later.
+
+## One authority — the seam with pulse.md
+
+The project's `pulse.md` is a bounded **router**: active session slug, gate, and the exact
+STATUS path. It carries no next action and no session narrative. `STATUS.md` is the **sole
+doing-state for its gate**. (majkee gavel 2026-08-27; amends the prior "pulse = the only
+doing-state" reading of flag L9.)
+
+The seam test, mechanical, thirty seconds:
+
+> **Would this line still be true and useful after the gate closes?** → it belongs in `flag.md`
+> or `pulse.md`. **Does it die with the gate?** → it belongs in `STATUS.md`.
+
+Why this is law and not preference: the live Termbrana bed carried three files each claiming
+the next action (`status.md` 08-15, `pulse.md` 08-24, a CS card 08-24) — a fresh agent needed
+undocumented precedence knowledge to resume. File count is the symptom; **duplicated authority
+is the cause.**
 
 ## Drafted here, lives there
 
@@ -49,13 +71,9 @@ delimited yet, and no amount of structure will fix that later.
 <project>/<session-root>/<program>-<NN>-<phase>/RUNBOOK.md    where it LIVES
 ```
 
-A runbook may be drafted in the bench before a session exists — that is what the bench is for,
-and it is where an authoring agent works. **Promotion into the session folder is what makes it
-live.** After promotion the bench copy is a template, never a second state store.
-
-Process state — position, bus, pads, evidence — belongs in the session folder with the project,
-**never in the bench.** Pulling process data out of a project into a central hub is how projects
-lose their own memory.
+A RUNBOOK may be drafted in the bench before a session exists. **Promotion into the session
+folder is what makes it live.** After promotion the bench copy is a template, never a second
+state store. Process state — position, bus, pads, evidence — stays with the project.
 
 ## Structure
 
@@ -63,66 +81,69 @@ lose their own memory.
 
 ```yaml
 goal:            # the point we meet at the end of the process
-gate:            # the ONE condition that closes this session — copied into HANDOFF.md verbatim
-state:           # fresh | deferred | running | tests | finished | prod.testing | indexed
+gate:            # the ONE condition that closes this session — STATUS.md carries it verbatim
 participant_1:   # [agent-name, {brand, model, effort}, host]
-participant_2:   # …one per seat, in order. Include the human when a pad needs their hands.
+participant_2:   # …one per seat, in order. Include the human when a PAD needs their hands.
 ```
+
+No `state:` field — see above. No mutable field of any kind belongs in this file.
 
 **`prompt-0`, `prompt-<N>`**
 
 - `0` — the master prompt. The seat that owns the session.
-- `N` — one per additional seat, in order. In a multi-agent session **each agent has its own
-  numbered part**, and reads only that one plus the shared rules above it.
+- `N` — one per additional seat. Each agent reads its own numbered part plus the shared rules.
 
-Every prompt is copy-pasteable: absolute paths, no assumed working directory. When two seats run
-from different roots, this is not optional — a relative path silently resolves against the wrong
-tree.
+Every prompt is copy-pasteable: **absolute paths, no assumed working directory.** When two
+seats run from different roots this is not optional — a relative path silently resolves against
+the wrong tree.
 
-**`references`**
+**Known constraints and destructive holds.** Constraints known *at authoring time* — ownership
+boundaries, forbidden operations, cross-session holds — live here, in the RUNBOOK, because they
+are fixed. Constraints *discovered mid-session* land in `STATUS.md` under `holds:` (see the
+STATUS GUIDE) — a read-once file cannot carry what is learned after the first read.
 
-Point, do not copy. Canon lives with the project; the runbook cites it. A runbook that reproduces
-a project's canon has forked it.
+**`references`** — point, do not copy. Canon lives with the project; a RUNBOOK that reproduces
+canon has forked it.
 
-**No journal.** History lives in git. Doing-state lives in the project's `pulse.md` — the single
-canonical file. A per-runbook journal is a third log competing with both, and pulse forks
-reliably orphan one branch.
+**No journal.** History lives in git. Doing-state lives in `STATUS.md`. A per-session journal
+is a third log competing with both.
 
 ## The session file set
 
 ```
 <program>-<NN>-<phase>/
     RUNBOOK.md            fixed    — the instruction (this guide)
-    HANDOFF.md            present  — the position   (raw.guides/handoff/GUIDE.md)
+    STATUS.md             present  — the position   (raw.guides/status/GUIDE.md)
+    dock.md               scratch  — operator handwriting; uncanonical, prunable,
+                                     never citable as truth (flag L9). STATUS never
+                                     points into dock.
     pad.<N>-<scope>.md    live     — human sittings  (raw.guides/PAD/GUIDE.md)
-    _bus/                 past     — the exchange, ONLY when ≥2 seats
+    _bus/                 past     — the exchange    (raw.guides/bus/GUIDE.md);
+                                     only when ≥2 seats
 ```
 
-Four kinds, separated by tense. Optional folders — `raw/`, `res/`, `scr/` — are born only when
-something needs them, never pre-created.
+Only `RUNBOOK.md` and `STATUS.md` are mandatory. Everything else is born on need, never
+pre-created. Filename case is **human ergonomics only** — uppercase sorts first in `ls` and
+marks meta-files; no agent runtime loads any of these automatically (verified 2026-08-27,
+@Epoch: auto-loading is exact-string match on reserved names, never a case heuristic). A
+session file is read because a prompt points at it — so the prompts must point at it.
 
-`_bus/` carries `NN.<seat>.<kind>.md` where kind ∈ {point, return, verdict}. Sequence lives in
-the filename; there is no inbox and no read-state. One file per direction per cycle, single
-writer each. Fixed names mean a loader can find the exchange without parsing prose.
+Case law (majkee, 2026-08-27): artifact names are uppercase in prose — RUNBOOK, STATUS, PAD,
+POINT, RETURN, VERDICT. Disk case is exact and unchanging — `RUNBOOK.md`, `STATUS.md`,
+`pad.*.md`, `_bus/`, `*.point.md`, `*.return.md`, `*.verdict.md`, `pulse.md`, `flag.md`,
+`dock.md`.
 
-## Migration hazard
+## On gate closure
 
-In beds authored **before 2026-08-27**, a lowercase `handoff.md` holds the session's design and
-assignment — the artefact this guide now calls `RUNBOOK.md`. Renaming is a **pair operation**:
-
-```
-handoff.md  →  RUNBOOK.md      (the instruction)
-status.md   →  HANDOFF.md      (the position)
-```
-
-Do one without the other and two handoff-shaped files with inverted tenses share a folder. And
-never rename inside a bed whose gate is still open.
+Promote what survives (evidence → the project's evidence home, results → commits or canon),
+remove the session from `pulse.md`'s router line, prune the directory. PADs survive only when
+they *are* the evidence artifact. A moved PAD leaves a one-line "moved, safe to delete" stub.
 
 ## Style laws
 
-- Read once. If a section needs updating mid-session, it belongs in `HANDOFF.md`.
+- Read once. If a section needs updating mid-session, it belongs in `STATUS.md`.
 - Absolute paths in every prompt, always.
 - One `gate:`. If you need two, you have two sessions.
 - Point at canon, never reproduce it.
-- Name the human as a participant when a pad requires their hands — a runbook that hides its
+- Name the human as a participant when a PAD requires their hands — a RUNBOOK that hides its
   human dependency gets planned around, and the plan is wrong.
