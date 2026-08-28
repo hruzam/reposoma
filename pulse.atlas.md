@@ -27,6 +27,15 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **atlas-ui read-only Bash — AUTHORED ON TABLE 2026-08-28, deploy pending (majkee).** Runbook
+  `_runbook/ia-sync/atlas-bash/` consumed → folded into the seat. atlas-ui `tools:` += `Bash`;
+  new `## Read-only Bash contract` section (verify-only: `git rev-parse/status/log/diff`, `ls`,
+  `wc`; refuses write-side git / `deploy.sh` / `push` / `ssh`); `settings.json` `allow` += `git
+  rev-parse` · `ls` · `wc`. Gate preserved by the global permission filter (write-side not in allow →
+  `ask` prompt, not silent exec — confirmed no per-agent scoping exists, claude-code-guide). atlas-auto
+  left Bash-free (no human to answer the gate). Runbook folder DELETED (@Delta, verified gone).
+  → `[2026-08-28]` entry. OPEN: majkee deploy + commit/push (carries office work landing same time —
+  settings.json hunk is add-only, clean merge). STAGED, NOT LIVE until `deploy.sh`.
 - [ ] **Cold-start vault thread — SHIPPED OFFICE 2026-08-28, tails open.** Vault + guide law +
   both-brand skills LIVE this box (→ `[2026-08-27]` entry; status/runbook canon reconciled —
   STATUS name surrendered, one-authority card boundary absorbed). Delta executed under majkee's
@@ -72,6 +81,45 @@ surfaces + age-stamps).
   here. (migration debt — not done now to avoid importing stale items as false-live signal.)
 - [ ] **majkee: commit + push reposoma** — carries this restructure + `raw.guides/PAD/pad-builder.md`
   live (my seat has no Bash). → `[2026-08-07 PAD]` entry.
+
+---
+
+## [2026-08-28] — atlas-ui gains READ-ONLY Bash: runbook consumed, seat + settings edited on table
+
+**Origin:** majkee interactive — "read this runbook, think what we can add to the portfolio via
+surgical table," then "after task completion let delta delete whole folder with runbook." Source:
+`_runbook/ia-sync/atlas-bash/RUNBOOK.md` — my own prior split verdict on "Bash for atlas? YAY/NAY."
+
+**The runbook's verdict (mine, now enacted):** YES to a narrow read-only whitelist (`git status/log/
+rev-parse/diff`, `ls`, `wc`) — closes two documented gaps: the `commit:` card field ("leave for
+majkee" because I can't `git rev-parse`) and the HANDOFF→STATUS rename tombstone litter (verification
+friction). NO to write-side git (`commit`/`mv`/`rm`), `deploy.sh`, `push`, `ssh` — that is exactly
+where the surgical-table gate lives; the tombstones came from write-side git, so I keep it out.
+
+**Mechanism confirmed (claude-code-guide):** agent `.md` frontmatter has NO per-agent `permissions`
+block — only `tools:` / `disallowedTools:` / `permissionMode:`. Bash command allow/deny patterns are
+GLOBAL-ONLY in `settings.json`. So the gate can't be per-agent — it's the global filter: read-only
+git already in `allow` (executes), write-side NOT in allow → falls to `ask` (a majkee prompt on this
+human-present seat, acceptable). Rejected the guide's PreToolUse-hook alternative — more machinery
+than the narrow gap justifies.
+
+**DELIVERED (surgical table, STAGED — not live until deploy):**
+- `~/ia-sync/claude/agents/atlas-ui.md` — `tools:` += `Bash`; new `## Read-only Bash contract`
+  section (verify-only list + the four refusals + the "gate is what I refuse, not a missing tool"
+  framing); fixed two stale "I have no Bash" lines (Layer-2 note + deploy step).
+- `~/ia-sync/claude/settings.json` — `permissions.allow` += `Bash(git rev-parse:*)`, `Bash(ls:*)`,
+  `Bash(wc:*)` (add-only hunk; benefits all agents, all read-only).
+- **atlas-auto deliberately UNTOUCHED** — automated seat, no human to answer the `ask` gate → the
+  missing-tool enforcement stays there.
+- **NOT done:** no global `deny` on write-side git — would break Delta/Maxwell/Trajectory who need it.
+
+**Runbook folder DELETED** (@Delta, `rm -rf _runbook/ia-sync/atlas-bash/`, verified gone; parent now
+holds only cli-metadata-tracker / codex-tree-bus / ox-aplpha). Security-classifier flag on the
+notification = generic `rm -rf` warning; action was exactly the scoped single-folder delete.
+
+**STILL OPEN:** majkee deploys (`bash ~/ia-sync/deploy.sh` → commit/push ia-sync; office work landed
+same time — settings.json add-only, should merge clean). Do NOT run `sync.sh` before deploy or the
+stale live copies clobber these table edits. Read-only Bash is INERT on every seat until deploy runs.
 
 ---
 
