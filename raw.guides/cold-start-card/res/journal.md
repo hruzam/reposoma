@@ -17,6 +17,25 @@ Pending actionable work lives in the vault:
 
 ---
 
+## 2026-08-28 — Codex smoke test PASS (@Cartan; entry approved by majkee)
+
+@Cartan wrote and re-read the first Codex card in the rebuilt central vault
+(`~/reposoma/_cold-start/card/CS.codex-smoke.2026-08-28.md`, drained to `archive/` after
+reading per its own instruction). The shared YAML contract, ~-anchored paths, local
+pointers, filename law, prompt-0 grammar, shipped `cs_vault` parser, AND the actual
+cs-palette D3 renderer all passed — cross-brand proof complete (Claude + Codex cards
+both reveal in D3). Codex evidence keys sat flat below the shared block without
+disturbing the shared parser. No guide/skill conflict; no shared key invented or omitted.
+
+**Friction captured (minor, both non-blocking):**
+1. "Codex extras below the shared block" has no explicit separator — Cartan interpreted
+   it as additional top-level keys after `pointers:` before the closing fence; that
+   interpretation PASSED and is hereby the convention (a `# codex evidence` YAML comment
+   line is welcome but not required).
+2. The bonded capture script emits literal `/home/hruzam` paths — authors must normalize
+   captured evidence to `~/` manually. Open micro-item: teach the script to emit
+   ~-anchored paths (Codex skill `scripts/`, low priority).
+
 ## 2026-08-28 (third pass) — Phase-2 SHIPPED: cs-palette + temple-cs-manage built, blessed all-pass
 
 Trajectory built the zsh pair on the surgical table per the first-citizen card:

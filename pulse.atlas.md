@@ -39,8 +39,11 @@ surfaces + age-stamps).
   blessing cold-start 14/14 ALL PASS (majkee gavel) → office deploy + push released;
   first-citizen card drained to archive (first full self-lifecycle: write → brief its own build →
   D3 reveals its prompt-0 → drain). ⚠ HOME LEG NOW MAJKEE'S OWN — stashed work there, he controls
-  pull/deploy; do NOT remote-converge again without his release. OPEN: (1) majkee: home pull +
-  deploy post-Phase-2 · (2) majkee Codex smoke write/read → findings
+  pull/deploy; do NOT remote-converge again without his release. CODEX SMOKE PASS 2026-08-28 (@Cartan:
+  shared contract + prompt-0 + cs_vault parser + real D3 render all green cross-brand; friction:
+  extras-separator convention settled, capture script emits literal /home paths — micro-item;
+  smoke card drained). OPEN: (1) majkee: home pull +
+  deploy post-Phase-2 · (2) ~~Codex smoke~~ PASS — findings
   into journal.md · (4) Proxima/majkee refresh `GEMINI.md` (§cold-start path + retired RUNBOOK
   `state:` field).
 - [ ] **Guides-unification thread — SUBSTANTIALLY CLOSED 2026-08-20.** B′ + skill-model
