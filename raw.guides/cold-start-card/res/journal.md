@@ -17,7 +17,22 @@ Pending actionable work lives in the vault:
 
 ---
 
-## 2026-08-28 (second pass) — status/runbook canon landed; STATUS name surrendered; one-authority boundary absorbed
+## 2026-08-28 (third pass) — Phase-2 SHIPPED: cs-palette + temple-cs-manage built, blessed all-pass
+
+Trajectory built the zsh pair on the surgical table per the first-citizen card:
+`cs-palette.{zsh,py}` (D1/D2/D3 explorer, archive toggle, Enter-prints-resume) ·
+`temple-cs-manage.zsh` + `cs-manage-palette.py` (three-state mover, mv-only) ·
+shared `cs_vault.py` parser · house wiring (keyboard P9 / claude.zsh help / keys.zsh
+`cs` family). Root via `temple-project-root reposoma` — only `_cold-start` baked (the
+no-registry verdict held in code). Legacy 22-card corpus served as the degradation test
+(D2 renders `— no frontmatter (legacy) —`). Build bug caught: zsh `local f`
+re-declaration inside a multi-loop function leaks values to stdout — fixed by matching
+the reference implementation. **Blessing card 14 checks: ALL PASS (majkee, 2026-08-28)**
+→ gate open, deploy released. First-citizen card drained to `archive/` — the system's
+first complete lifecycle (write → brief a build → reveal its own prompt-0 in D3 → drain)
+ran on itself. Wired-surfaces rows in GUIDE.md updated from planned → built.
+
+
 
 The other session's gaveled guides arrived (`raw.guides/status/GUIDE.md` ·
 `runbook/GUIDE.md` · `bus/GUIDE.md`, triangulated Fable · Janus · @Cartan, majkee gavel

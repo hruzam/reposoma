@@ -33,9 +33,14 @@ surfaces + age-stamps).
   "go on it": 22 legacy `CS.*` → `archive/` (23 at 08-27 glob — 1 drained in between, benign) ·
   tombstones git-rm'd · reposoma `6f002a3` pushed · ia-sync `fae1362` + rebase over 5 home
   commits → `da69045` pushed · deploy.sh ran ×2, live skill verified (5× `_cold-start`).
-  OPEN: (1) home box converge: `git pull` reposoma + ia-sync, `deploy.sh` · (2) Phase-2 zsh pair
-  (spec = vault's first citizen `_cold-start/card/CS.cold-start-phase2.2026-08-28.md`; why =
-  `raw.guides/cold-start-card/res/journal.md`) · (3) majkee Codex smoke write/read → findings
+  HOME CONVERGED 2026-08-28 (Delta over tailscale, ff-only + deploy: both HEADs match, live skill
+  5×, archive 22, first-citizen card present — 1:1 verified). PHASE-2 SHIPPED 2026-08-28:
+  Trajectory built cs-palette + temple-cs-manage + cs_vault.py on table, wired per house law;
+  blessing cold-start 14/14 ALL PASS (majkee gavel) → office deploy + push released;
+  first-citizen card drained to archive (first full self-lifecycle: write → brief its own build →
+  D3 reveals its prompt-0 → drain). ⚠ HOME LEG NOW MAJKEE'S OWN — stashed work there, he controls
+  pull/deploy; do NOT remote-converge again without his release. OPEN: (1) majkee: home pull +
+  deploy post-Phase-2 · (2) majkee Codex smoke write/read → findings
   into journal.md · (4) Proxima/majkee refresh `GEMINI.md` (§cold-start path + retired RUNBOOK
   `state:` field).
 - [ ] **Guides-unification thread — SUBSTANTIALLY CLOSED 2026-08-20.** B′ + skill-model

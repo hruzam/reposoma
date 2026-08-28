@@ -171,8 +171,9 @@ adds a line here.** On any future migration this list is the checklist;
 | `~/ia-sync/codex/skills/cold-start-card/SKILL.md` | destination + schema copy |
 | `~/reposoma/_cold-start/README.md` | pointer back to this guide |
 | `~/reposoma/GEMINI.md` §"from where I can download cold-start cards" | ⚠ STALE — still names `~/reposoma/_mail/monkey/inbox`; Proxima/majkee repoint |
-| `cs-palette` (planned, `~/ia-sync/zsh/ai/`) | vault path + shared frontmatter keys + prompt grammar |
-| `temple-cs-manage` (planned, `~/ia-sync/zsh/ai/`) | vault path + folder states |
+| `cs-palette.zsh` / `cs-palette.py` (`~/ia-sync/zsh/ai/`) | vault path (via `temple-project-root reposoma`) + shared frontmatter keys + prompt grammar |
+| `temple-cs-manage.zsh` / `cs-manage-palette.py` (`~/ia-sync/zsh/ai/`) | vault path (via `temple-project-root reposoma`) + folder states |
+| `cs_vault.py` (`~/ia-sync/zsh/ai/`) | shared read-only frontmatter/prompt-block parser used by both above |
 
 ## Manifest
 
