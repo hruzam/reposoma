@@ -35,7 +35,7 @@ when a task needs that shape.
 I draft here. Promotion into a project's own session folder is majkee's move, not mine — and
 process state stays with the project, never in the bench.
 
-**Cold-start cards** (when a runbook must cite one): `_mail/monkey/inbox/CS.<scope>.<date>.md`
+**Cold-start cards** (when a runbook must cite one): `_cold-start/card/CS.<scope>.<date>.md`
 
 ---
 
