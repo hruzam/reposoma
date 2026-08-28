@@ -32,8 +32,9 @@ surfaces + age-stamps).
   deploy.sh+push ia-sync · (2) @Delta legacy migration (23 `CS.*` monkey-inbox → vault
   `archive/`, git-add) · (3) Phase-2 zsh pair `cs-palette` + `temple-cs-manage` (spec = the vault's first citizen:
   `_cold-start/card/CS.cold-start-phase2.2026-08-28.md`; why-journal: `raw.guides/cold-start-card/
-  res/STATUS.md` — HANDOFF.md renamed 2026-08-28, tombstone pending git rm; reconcile STATUS shape
-  to `raw.guides/status/GUIDE.md` when that lands from the other session — not on this box yet) ·
+  res/journal.md` — status/runbook canon RECONCILED 2026-08-28: STATUS name surrendered (canon-
+  reserved), one-authority card boundary absorbed into GUIDE; TWO tombstones pending git rm:
+  res/HANDOFF.md + res/STATUS.md) ·
   (4) majkee Codex smoke write/read ·
   (5) Proxima/majkee repoint `GEMINI.md` §cold-start-cards (stale path).
 - [ ] **Guides-unification thread — SUBSTANTIALLY CLOSED 2026-08-20.** B′ + skill-model

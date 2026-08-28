@@ -13,14 +13,16 @@ dedicated: flight (regime-session coordinator) + delta/vector krakens; atlas-ui 
 recommend: migration FIRST — the archived legacy corpus is the palette's test data; bless before any ia-sync
 pointers:
   - ~/reposoma/raw.guides/cold-start-card/GUIDE.md
-  - ~/reposoma/raw.guides/cold-start-card/res/STATUS.md
+  - ~/reposoma/raw.guides/cold-start-card/res/journal.md
   - ~/reposoma/raw.guides/regime-session/GUIDE.md
   - ~/ia-sync/zsh/ai/mail-palette.py
   - ~/ia-sync/zsh/ai/temple-mail-manage.zsh
 ---
 
 The vault's first citizen: its own next step. This card is also the Claude-side write
-smoke test (Codex smoke pending — majkee runs it).
+smoke test (Codex smoke pending — majkee runs it). It carries its own queue LEGALLY:
+no live session bed (RUNBOOK/STATUS) exists for Phase-2 yet — if one opens, that bed's
+STATUS.md takes the position and this card degrades to pointers (one-authority law).
 
 ## Pending, in order
 
@@ -57,7 +59,7 @@ smoke test (Codex smoke pending — majkee runs it).
 You are building Phase-2 of the cold-start vault (session glue system).
 Read first, in order:
 - ~/reposoma/raw.guides/cold-start-card/GUIDE.md   (the law: vault, schema, prompt grammar)
-- ~/reposoma/raw.guides/cold-start-card/res/STATUS.md   (why each decision was made)
+- ~/reposoma/raw.guides/cold-start-card/res/journal.md   (why each decision was made)
 - ~/reposoma/raw.guides/regime-session/GUIDE.md    (build protocol: _drop, blessing card)
 Then execute the "Pending, in order" list from this card:
 migration -> cs-palette -> temple-cs-manage -> blessing card.

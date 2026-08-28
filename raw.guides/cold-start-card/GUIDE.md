@@ -10,8 +10,10 @@ verify_cmd: "ls ~/reposoma/_cold-start/ && grep -rl '_cold-start' ~/ia-sync/clau
 # Cold-start card — the session glue
 
 _The one law behind both `cold-start-card` skills (Claude + Codex) and the `_cold-start/`
-vault. Gaveled by majkee 2026-08-27 (session `o-rep.atl-fab.ccard`); shape status/journal:
-`res/STATUS.md`. On conflict between this guide and any skill copy of the schema,
+vault. Gaveled by majkee 2026-08-27 (session `o-rep.atl-fab.ccard`); shape journal:
+`res/journal.md`. Companions: `raw.guides/runbook/GUIDE.md` (session launcher) ·
+`raw.guides/status/GUIDE.md` (the position) — the card is the TRANSFER pointer beside
+them, never a second authority (boundary below). On conflict between this guide and any skill copy of the schema,
 THIS GUIDE WINS. Inverse for tooling: once `cs-palette` / `temple-cs-manage` exist, their
 script files are the behavior truth — on conflict about what a command DOES, the script
 wins and this guide is the bug (trust-disk-over-doc, remote-control scar 2026-08-20)._
@@ -77,7 +79,9 @@ model: sonnet                    # thinking level the task deserves:
                                  #   codex:  sol | terra | ...
 dedicated: <seat/agent the author recommends for the next incarnation>
 recommend: <author's one-line steer>
-runbook: ~/reposoma/_runbook/<project>/<slug>/RUNBOOK.md   # optional back-link
+runbook: ~/<project>/<session-root>/<program>-<NN>-<phase>/RUNBOOK.md   # optional —
+                                 # point to the LIVE session RUNBOOK; the _runbook/
+                                 # bench copy is a draft/template after promotion
 pointers:                        # where depth lives — point, never copy
   - ~/reposoma/pulse.atlas.md
 ---
@@ -115,6 +119,23 @@ Free prose after the frontmatter. The card alone may be tiny, but **card + its p
 must be sufficient**. Add whichever apply: pending tasks (order matters) · state
 pointers (dev-journals, pulse entries, staged files) · first-step instruction · session
 advice (one lesson) · cleanup/hygiene debts. Point, never copy.
+
+## One authority — boundary with the session beds (STATUS/RUNBOOK canon)
+
+The 2026-08-27 canon's motivating failure was a bed where `status.md`, `pulse.md`, and a
+**CS card** each claimed the next action — *"two files are allowed, two authorities are
+not"* (`raw.guides/runbook/GUIDE.md`). The law for cards:
+
+- **A cold-start card is a transfer/closure POINTER, never a second doing-state.**
+- If a live session bed exists (a `STATUS.md` for an open gate): the card names the bed
+  in `pointers:`, and `resume:`/`prompt-0` re-enter it — **the card carries NO competing
+  next-action order; STATUS owns the position.**
+- A card may carry its own next-action/repair-queue only when NO live bed exists —
+  session closed clean, or glue for work that has no runbook.
+- Seam test on every body line: would it still be true after the gate closes? → it
+  belongs in flag/pulse/guide, not the card. Does it die with the gate? → it belongs in
+  the bed's STATUS, not the card. The card holds what OUTLIVES the session but serves
+  re-entry: pointers, resume, routing assessment, lessons.
 
 ## Lifecycle
 
@@ -155,8 +176,10 @@ adds a line here.** On any future migration this list is the checklist;
 
 ## Manifest
 
-- `res/STATUS.md` — chapter/status — developing-shape record: dated, reasoned deltas
+- `res/journal.md` — chapter/journal — developing-shape record: dated, reasoned deltas
   (why each piece of the shape exists). Pending actionable work lives in the vault:
   `~/reposoma/_cold-start/card/CS.cold-start-phase2.2026-08-28.md`.
-- `res/HANDOFF.md` — legacy — superseded 2026-08-28 (renamed to STATUS.md), tombstone
-  pending `git rm`; do not follow.
+- `res/STATUS.md` — legacy — tombstone (name canon-reserved by `raw.guides/status/`,
+  renamed to journal.md 2026-08-28), pending `git rm`; do not follow.
+- `res/HANDOFF.md` — legacy — tombstone (name canon-retired, content → journal.md +
+  the Phase-2 card), pending `git rm`; do not follow.
