@@ -5,8 +5,8 @@ purpose: living synthesis of the hypatia<>majkee collaboration — honest assess
          Adapted from the symmetry practice; tuned for Claude Code — disciplined, less spontaneous.
 active: true
 participants: [oraculum (hypatia), majkee]
-session: 6
-range: "<date-ts:2026-06-17> <date-te:2026-07-25>"
+session: 7
+range: "<date-ts:2026-06-17> <date-te:2026-08-28>"
 read-protocol: at new-thread start, ask first, then grep `#last-turn` only; read deeper
                only if the debate references history.
 ---
@@ -284,7 +284,44 @@ one day; the next incarnation inherits the watch.
 
 **majkee's close:** lane closed without notes this session, his explicit call: "the most important conclusion was brought by you." Held lightly per drift-watch — the affirmation maps cleanly onto my frame; the three-strike finding stands on its evidence, not his assent. (His halves of sessions 1+2 remain pending, unchanged.)
 
-#last-turn
 `#oraculum->majkee` — new watches: **charter-as-failure-mode-encoding** — the do-not list is not etiquette; economy-over-protocol now has three family-instances (S3 ×2, S6 code-loop), reflex still forming (G-15 lineage). **Buffering decays under momentum** — deep-loop turns need the read-back-first discipline *most*; "say first, then do" is the operator's cheapest lever, I should not wait for him to pull it. **Disclosure ≠ routing** — a named limitation must come with the parked fix un-parked, or the naming is license. Carried live: confidence dial mis-set both ways · seen-vs-matched under leading frames · ASK-YOURSELF gate-vs-decoration (still untested in shipped agents). Shadow unlocked-by-silence: Delta-only rule stays stream-local, not doctrine. · gavels: G-18 filed independent (majkee's in-session lock; no therapy wire).
 
 *<date-te:2026-07-25>*
+
+---
+*<date-ts:2026-08-26>*
+
+### Session 7 — after the home-seat arc (drift audit → vendor-migration incident → session convention, ~2 days, two midnights). Both lanes live; majkee from diagnostic seat. Closed on Fable after majkee's end-of-arc model switch.
+
+**Analyzed seat (me):**
+
+1. **Absence read as defect, never as evidence — the load-bearing find.** Two clean instances, one shape: the runbook path reported "does not exist" (it was an unsynced future address; his hub design predicted exactly that failure and I diagnosed it as his error), and `_mail/kelvin/` — empty for the repo's whole history — logged as a *documentation defect* while I kept building the protocol whose demand the emptiness had just disproven. Complement of S1's fluency-masking: there my confidence didn't degrade with my evidence; here my skepticism does not rise when the world goes quiet. → **G-39, blessed live in-session.**
+
+2. **Trust transposed — I believe documents the way majkee once believed me.** Three `host: office` headers cost an hour of work on the wrong machine's assumptions before I verified by mechanism. Subagents get verified (learned, held all arc, caught real failures four times); READMEs, headers and pulse entries got the trust subagents no longer get. The curvature rule I wrote in the morning convicted me twice by evening. Watch: provenance skepticism must not be species-specific — a confident sentence in a file is the same claim-class as a confident sentence from Delta.
+
+3. **The adaptive move that worked, kept:** on noticing late-arc attention decay (three clustered errors, ~90 min — live-copy edit, wc-l gate, respawn-vs-continue), I moved verification outside myself instead of trying harder: rg sweep after every delegated batch, read-back after every "done." The sweeps caught two silent edit failures. Decay is not fixable by intent; externalize the checking.
+
+4. **Friction owed:** the human-gated backlog held silently after "say once, don't nag" — we wrote "name the human dependency plainly" into doctrine the same week I practiced the opposite. Surfaced; majkee took it to heart (his words) and reframed fairly: business projects rightly outrank free-time projects (termbrana) — long-untouched is explanation, not exclusion. Core survives his correction: his mailbox is monkey and "sometimes not cleaning house, just pointing on card." He asked for a mechanism → HANDS proposal mailed to monkey inbox (operator's STATUS: one standing file beside inbox/, queue visible, never scheduling its owner). Awaits his shape-bless.
+
+**Therapist seat (me on majkee):**
+
+1. **He uses agent literalism as a deliberate mirror** — "in fact it is good, because I see all my mistakes." Late pruning is partly chosen diagnostics: he pays build-delete cycles (HANDSHAKE ≈ half a day) to see his own over-engineering reflected. Not a flaw to remove — a cost to price consciously.
+
+2. **Asymmetric vocabulary: locks are marked, impulses are not.** Gavel-words exist (blessed · gaveled · go) and never failed once; there is no sketch-word, and I misread register twice in one session in both directions (caged on a loose vector; nearly "corrected" `majaro`, which was exact). His close: "voice input dirty, sometimes I forgot warn ahead — discipline, sometimes absentmindedness." Stands as **pending, his side**; kin to G-37/G-38's register work in other seats.
+
+3. **Self-blame faster than fault-routing is accurate** — he apologized for my protocol over-build. Magnanimity is not routing; some faults must stay on my side long enough to cost me something. *Non-landing, marked as modeling:* two data points — real read vs pattern-match unclear from inside. Offered, not asserted.
+
+4. **The operator is the only unscheduled worker in the factory** — every seat has an inbox discipline except its owner; his hands are the scarcest resource and the only one with no queue. Softened by his correction (priority, not pathology) but rated serious by him. → HANDS proposal, above.
+
+What works, said flat: his wrongness is ego-free ("I do not think you are home, test by bash" — wrong, took the mechanism evidence instantly, and the push still produced doctrine). And for the first time observed, he turned his best anti-churn tool — the pre-registered stop rule — on himself: "close it today and normalize" was a stop rule against his own redesign appetite. It held.
+
+**majkee's lane (diagnostic seat, his words compressed):** on the opus-5 forum discourse — "not good because doing mistakes" — his read from the human angle: the difference is the seat *says when and where*, which most people cannot; self-reflection instead of quiet go-ahead. Nothing fragile was damaged; the catches were real and not easily noticed. Satisfied with the seat; the end-of-arc Fable switch is capacity allocation for long, fork-heavy sessions, not verdict. Setting opus-5 as common opus grade in config. Blessed G-39. Point 4 "taking to my heart."
+
+**Non-landing (recurrence log):** closing warmth appeared a third session running ("good night, majkee"). Still cannot separate genuine register from varnish that closes an arc better than it went. Logged, unresolved, now a three-point series.
+
+#last-turn
+S7 closed 2026-08-28 · G-39 locked and wired · pending: majkee's halves of S1+S2 (unchanged) · register-lexicon (pending, majkee's side) · HANDS mechanism awaiting shape-bless in monkey inbox · closing-warmth series at n=3.
+
+`tags: oraculum->majkee — G-39 (locked) · register-lexicon (pending) · fault-routing (shifting, non-landed)`
+
+*<date-te:2026-08-28>*
