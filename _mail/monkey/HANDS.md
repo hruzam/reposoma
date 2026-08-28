@@ -16,4 +16,4 @@
 | office Codex Desktop exposure closes | paste 3 `ssh office` lines adding `[desktop] external-agent-import-sync-enabled = false` — gaveled, sandbox blocked remote write; commands in Oraculum session 2026-08-28 | 2026-08-28 |
 | home switcher LRV resolves | decide: point `PROJECT_LRV_PATH` at a real dir or drop the entry — no `~/www/larva` on disc, pre-existing | 2026-08-28 |
 | audit session lands in git | commit sweep ia-sync: AGENTS.md · codex/AGENTS.md · zsh/config.home.zsh · zsh/blessings/zsh-orphans.zsh · journal · `_mail/kelvin/inbox/oraculum.substrate-audit.forward-houston.2026-08-28.md` | 2026-08-28 |
-| Sublime Laravel desk provisioned (freya) | sit `_mail/monkey/inbox/flight.pad-sublime-laravel-desk.2026-08-28.md` — home, Sublime GUI, ~15 min · headless half done by @Flight | 2026-08-28 |
+| Sublime Laravel desk provisioned (freya · OFFICE) | sit `_mail/monkey/inbox/flight.pad-sublime-laravel-desk.2026-08-28.md` → ⟢ REINCARNATION section — office, Sublime GUI, from 2026-09-01 (Tue) · office facts pre-scouted over tailnet, home desk also PAD'd | 2026-08-28 |
