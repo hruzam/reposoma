@@ -27,6 +27,15 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **Cold-start vault thread — CORE DELIVERED 2026-08-27, tails open.** Vault + guide +
+  both-brand skill rewrites done (→ `[2026-08-27]` entry). Open: (1) majkee commit reposoma +
+  deploy.sh+push ia-sync · (2) @Delta legacy migration (23 `CS.*` monkey-inbox → vault
+  `archive/`, git-add) · (3) Phase-2 zsh pair `cs-palette` + `temple-cs-manage` (spec = the vault's first citizen:
+  `_cold-start/card/CS.cold-start-phase2.2026-08-28.md`; why-journal: `raw.guides/cold-start-card/
+  res/STATUS.md` — HANDOFF.md renamed 2026-08-28, tombstone pending git rm; reconcile STATUS shape
+  to `raw.guides/status/GUIDE.md` when that lands from the other session — not on this box yet) ·
+  (4) majkee Codex smoke write/read ·
+  (5) Proxima/majkee repoint `GEMINI.md` §cold-start-cards (stale path).
 - [ ] **Guides-unification thread — SUBSTANTIALLY CLOSED 2026-08-20.** B′ + skill-model
   slugs + manifest law all gaveled; 9 slugs live; `/guide` skill + stub DEPLOYED BOTH
   BOXES (ia-sync `329ece4` · reposoma `93e542f`); both-host cleanup done (office Delta +
@@ -53,6 +62,40 @@ surfaces + age-stamps).
   here. (migration debt — not done now to avoid importing stale items as false-live signal.)
 - [ ] **majkee: commit + push reposoma** — carries this restructure + `raw.guides/PAD/pad-builder.md`
   live (my seat has no Bash). → `[2026-08-07 PAD]` entry.
+
+---
+
+## [2026-08-27] — COLD-START VAULT delivered: central `_cold-start/` + one law + both-brand skills rehomed
+
+**Origin:** majkee interactive (`o-rep.atl-fab.ccard`, voice — "Starcard" = cold-start-card).
+Ask: move card placement out of `_mail/monkey/inbox` into a proper bed; one CENTRAL vault (not
+per-project — cross-project runs are the common case); frontmatter = source of truth incl. origin
+project + whole paths; same shape for Claude AND Codex; palette browser like the mail/command
+palettes. Sequential gavel turns; existence check fired (extend, not new build).
+
+**DELIVERED:**
+- **Vault (reposoma, git-tracked):** `_cold-start/{card,routines,archive}/` + 3-line README
+  pointer + .gitkeeps. Folder = state (no `status:` key). `CS.<slug>.<date>.md` dated /
+  `RT.<slug>.md` dateless; `kind:` = machine truth.
+- **The law:** `raw.guides/cold-start-card/GUIDE.md` (B′-conformant slug; manifest section) —
+  shared flat cross-brand frontmatter contract (incl. routing assessment `model`/`dedicated`/
+  `recommend`, optional `runbook:` back-link), whole `~`-anchored paths (conscious REVERSAL of
+  old "never absolute" cascade rule — gaveled), prompt grammar ADOPTED from runbook shape
+  (`## prompt-0` → `###### prompt` → ```text — lifts verbatim card↔RUNBOOK, one revealer serves
+  both), Codex brand-note in contract register, `## Wired surfaces` migration manifest
+  (anti-Rube-Goldberg verdict: no registry machine — design-time checklist + temple-project-map
+  carries location, only folder name is baked).
+- **Journal:** `raw.guides/cold-start-card/res/HANDOFF.md` — 11 dated decisions w/ reasons +
+  Phase-2 spec: `cs-palette` (D1 cards · D2 raw frontmatter · D3 prompt-0/runbook reveal;
+  explorer-NOT-editor doctrine, keybinds hand off to $EDITOR) + `temple-cs-manage` (mail-manage
+  grammar) + @Delta legacy migration plan.
+- **Skills (surgical table):** `~/ia-sync/claude/skills/cold-start-card/SKILL.md` rewritten
+  (vault target, contract, guide-wins pointer note) · `~/ia-sync/codex/skills/cold-start-card/
+  SKILL.md` aligned (evidence discipline + bonded capture script KEPT; shared block first,
+  codex extras below; vault default, project-local = explicit exception).
+
+**STILL OPEN:** see OPEN LEDGER cold-start line — commit/deploy (majkee), Delta migration,
+Phase-2 zsh pair, Codex smoke test, GEMINI.md repoint (Proxima's file — flagged, not edited).
 
 ---
 
