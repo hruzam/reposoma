@@ -27,15 +27,15 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
-- [ ] **atlas-ui read-only Bash — AUTHORED ON TABLE 2026-08-28, deploy pending (majkee).** Runbook
+- [x] **atlas-ui read-only Bash — SHIPPED + CONVERGED BOTH MACHINES 2026-08-28.** Runbook
   `_runbook/ia-sync/atlas-bash/` consumed → folded into the seat. atlas-ui `tools:` += `Bash`;
   new `## Read-only Bash contract` section (verify-only: `git rev-parse/status/log/diff`, `ls`,
   `wc`; refuses write-side git / `deploy.sh` / `push` / `ssh`); `settings.json` `allow` += `git
   rev-parse` · `ls` · `wc`. Gate preserved by the global permission filter (write-side not in allow →
   `ask` prompt, not silent exec — confirmed no per-agent scoping exists, claude-code-guide). atlas-auto
   left Bash-free (no human to answer the gate). Runbook folder DELETED (@Delta, verified gone).
-  → `[2026-08-28]` entry. OPEN: majkee deploy + commit/push (carries office work landing same time —
-  settings.json hunk is add-only, clean merge). STAGED, NOT LIVE until `deploy.sh`.
+  → `[2026-08-28]` entry. majkee deployed + pushed alongside office work; both boxes converged. LIVE.
+  (Graduates out at next ledger roll.)
 - [ ] **Cold-start vault thread — SHIPPED OFFICE 2026-08-28, tails open.** Vault + guide law +
   both-brand skills LIVE this box (→ `[2026-08-27]` entry; status/runbook canon reconciled —
   STATUS name surrendered, one-authority card boundary absorbed). Delta executed under majkee's
