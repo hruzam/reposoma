@@ -36,7 +36,10 @@ surfaces + age-stamps).
   left Bash-free (no human to answer the gate). Runbook folder DELETED (@Delta, verified gone).
   → `[2026-08-28]` entry. majkee deployed + pushed alongside office work; both boxes converged. LIVE.
   (Graduates out at next ledger roll.)
-- [ ] **Cold-start vault thread — SHIPPED OFFICE 2026-08-28, tails open.** Vault + guide law +
+- [x] **Cold-start vault thread — CLOSED 2026-08-28.** Home pulled+deployed by majkee, tested
+  fine — last open item done. Full arc in the entries below + `raw.guides/cold-start-card/`
+  (GUIDE + journal). Closure card: `_cold-start/card/CS.o-rep-atl-fab-ccard.2026-08-28.md`.
+  Residual micro-seeds live in journal.md only (capture-script ~-paths · D3 runbook brick). Vault + guide law +
   both-brand skills LIVE this box (→ `[2026-08-27]` entry; status/runbook canon reconciled —
   STATUS name surrendered, one-authority card boundary absorbed). Delta executed under majkee's
   "go on it": 22 legacy `CS.*` → `archive/` (23 at 08-27 glob — 1 drained in between, benign) ·
