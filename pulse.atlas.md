@@ -27,16 +27,17 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
-- [ ] **Cold-start vault thread — CORE DELIVERED 2026-08-27, tails open.** Vault + guide +
-  both-brand skill rewrites done (→ `[2026-08-27]` entry). Open: (1) majkee commit reposoma +
-  deploy.sh+push ia-sync · (2) @Delta legacy migration (23 `CS.*` monkey-inbox → vault
-  `archive/`, git-add) · (3) Phase-2 zsh pair `cs-palette` + `temple-cs-manage` (spec = the vault's first citizen:
-  `_cold-start/card/CS.cold-start-phase2.2026-08-28.md`; why-journal: `raw.guides/cold-start-card/
-  res/journal.md` — status/runbook canon RECONCILED 2026-08-28: STATUS name surrendered (canon-
-  reserved), one-authority card boundary absorbed into GUIDE; TWO tombstones pending git rm:
-  res/HANDOFF.md + res/STATUS.md) ·
-  (4) majkee Codex smoke write/read ·
-  (5) Proxima/majkee repoint `GEMINI.md` §cold-start-cards (stale path).
+- [ ] **Cold-start vault thread — SHIPPED OFFICE 2026-08-28, tails open.** Vault + guide law +
+  both-brand skills LIVE this box (→ `[2026-08-27]` entry; status/runbook canon reconciled —
+  STATUS name surrendered, one-authority card boundary absorbed). Delta executed under majkee's
+  "go on it": 22 legacy `CS.*` → `archive/` (23 at 08-27 glob — 1 drained in between, benign) ·
+  tombstones git-rm'd · reposoma `6f002a3` pushed · ia-sync `fae1362` + rebase over 5 home
+  commits → `da69045` pushed · deploy.sh ran ×2, live skill verified (5× `_cold-start`).
+  OPEN: (1) home box converge: `git pull` reposoma + ia-sync, `deploy.sh` · (2) Phase-2 zsh pair
+  (spec = vault's first citizen `_cold-start/card/CS.cold-start-phase2.2026-08-28.md`; why =
+  `raw.guides/cold-start-card/res/journal.md`) · (3) majkee Codex smoke write/read → findings
+  into journal.md · (4) Proxima/majkee refresh `GEMINI.md` (§cold-start path + retired RUNBOOK
+  `state:` field).
 - [ ] **Guides-unification thread — SUBSTANTIALLY CLOSED 2026-08-20.** B′ + skill-model
   slugs + manifest law all gaveled; 9 slugs live; `/guide` skill + stub DEPLOYED BOTH
   BOXES (ia-sync `329ece4` · reposoma `93e542f`); both-host cleanup done (office Delta +
