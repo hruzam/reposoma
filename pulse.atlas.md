@@ -27,6 +27,16 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **Relay quote-safety — ① DEPLOYED, unified wrapper-tune consult STAGED 2026-08-31.** ①
+  (input-edge: contract §Prompt-passing + astrobley/vega/mirror snippets) DEPLOYED both boxes by
+  majkee. Then majkee pulled in the Sella line: the SAME wrapper has open OUTPUT-edge hypotheses
+  ("silent voice" no-usage stdout gap · Wave "jq + sync exec"). Unified into one Codex consult:
+  `_staging/sella.codex-consult.wrapper-tune.2026-08-31.md` — master prompt for a hand-released
+  interactive Codex to verify H1–H6 vs its own `--json` lifecycle + emit a tuned `codex-run.zsh`
+  diff (stdin mode ② · jq extraction · usage surfacing). vega/mirror `maxTurns 3→4` staged (probe
+  showed 3 too tight). OPEN: majkee pastes consult into Codex → diff → apply to table → deploy →
+  fresh-Codex verify (Flight); deploy the maxTurns bump. Flight ② mail now SUBSUMED by the consult.
+  → `[2026-08-31]` entry + Sella journal LOG.
 - [x] **atlas-ui read-only Bash — SHIPPED + CONVERGED BOTH MACHINES 2026-08-28.** Runbook
   `_runbook/ia-sync/atlas-bash/` consumed → folded into the seat. atlas-ui `tools:` += `Bash`;
   new `## Read-only Bash contract` section (verify-only: `git rev-parse/status/log/diff`, `ls`,
@@ -84,6 +94,43 @@ surfaces + age-stamps).
   here. (migration debt — not done now to avoid importing stale items as false-live signal.)
 - [ ] **majkee: commit + push reposoma** — carries this restructure + `raw.guides/PAD/pad-builder.md`
   live (my seat has no Bash). → `[2026-08-07 PAD]` entry.
+
+---
+
+## [2026-08-31] — RELAY QUOTE-SAFETY: composite-prompt break/injection closed (rule ①) + wrapper brief (②)
+
+**Origin:** majkee (interactive) — for all claude(codex) composites, briefs are relayed as a
+master prompt in "double apostrophes"; inner backticks or accidentally doubled apostrophes break
+the primary prompt. Wanted a relay-spec rule + a Bash-seat wrapper fix. Seats named: astrobley,
+mirror, vega.
+
+**Diagnosis (corrected majkee's framing):** the wrapper `codex-run.zsh` is NOT the bug — it reads
+the prompt as `$1` (inert string), first call `"$prompt"` safe, retry uses `printf '%q'`. The break
+is one layer UP: when the agent composes the Bash command calling the wrapper. Double-quoting the
+brief lets `` `...` ``/`$()` EXECUTE in the relay's own host shell (break + injection vector);
+single-quoting breaks on a literal `'`. Existence check CLEAN — no quote rule anywhere in the
+codex-relay family (metadata guide covers frontmatter/`!`-hydration/exit-codes only). Real gap.
+**No new primitive** — edit to shared contract + 3 agent bodies (Foreman-minimal).
+
+**DELIVERED ① (surgical table, STAGED — not live until deploy):**
+- `~/ia-sync/zsh/guides/codex-relay.contract.md` — new §"Prompt-passing discipline (quote safety)":
+  never double-quote the brief · PREFERRED single-quoted-delimiter heredoc `"$(cat <<'CDX_PROMPT'
+  … CDX_PROMPT\n)"` (works with today's wrapper, closes the vuln) · FALLBACK single-quote +
+  `'\''`-escape · ties to the VERBATIM input-edge contract.
+- `~/ia-sync/claude/agents/{astrobley,mirror,vega}.md` — matching compact quote-safety snippet in
+  each Plumbing section (self-contained-if-contract-unreachable pattern).
+
+**DELIVERED ② (handoff, NOT authored/tested by me — no Bash-execute):**
+- `~/reposoma/_mail/flight/inbox/atlas.codex-run-stdin-mode.2026-08-31.md` — brief for a native
+  `-`/`--stdin` wrapper mode (`prompt="$(cat)"` slurp first, keep `< /dev/null`, keep positional
+  back-compat). Reinforcement/legibility only; needs Bash-seat author + fresh-Codex verify per
+  ia-sync AGENTS.md. Priority LOW — ① already closes the vulnerability. **Routed to Flight**
+  (majkee prefers it over Kelvin, tests live); the earlier `_mail/kelvin/inbox/` copy is
+  SUPERSEDED — droppable.
+
+**STILL OPEN:** (1) majkee `bash ~/ia-sync/deploy.sh` + commit/push ia-sync → ① goes live both
+boxes (don't `sync.sh` before deploy) · (2) Flight builds + verifies ② live-with-majkee · (3) after
+② lands, make the contract's stdin note non-conditional + repoint relay snippets to the `-` form.
 
 ---
 
