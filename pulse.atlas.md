@@ -37,6 +37,32 @@ surfaces + age-stamps).
   showed 3 too tight). OPEN: majkee pastes consult into Codex → diff → apply to table → deploy →
   fresh-Codex verify (Flight); deploy the maxTurns bump. Flight ② mail now SUBSUMED by the consult.
   → `[2026-08-31]` entry + Sella journal LOG.
+
+- [ ] **Metaterminal seat — BUILT + STAGED 2026-08-28, deploy pending (majkee).** Oraculum's build
+  request (`_mail/atlas/inbox/oraculum.metaterminal-seat.2026-08-25.md`) → new GLOBAL personal seat:
+  majkee's "second terminal window with a soul" — human-invoked only, harness-free, Trajectory-grade
+  judgment, owns the `ia-sync/zsh` source ↔ deployed `~/.config/zsh` ↔ mux ↔ TTY ↔ agent-surface drift
+  stack. **Reclassified structural** (majkee gavel): L6 clause-2 (structural → surgical table) not
+  clause-1 (experimental shape → nablarva bench). File: `~/ia-sync/claude/agents/metaterminal.md`,
+  sonnet/high, no Agent tool. **Non-spawnable = HARD via one-line `permissions.deny: Agent(metaterminal)`**
+  on the table (Cartan's cheaper native mechanism — "disable specific subagents"; reversible if majkee
+  later publishes it for spawning). **Cartan blind-triangulation folded** (via majkee's hand-paste after
+  the @mirror relay bug): converged on agent-not-skill (settles the Trajectory doubt), sonnet/high, lean,
+  never-delete, phone-cards. Its read-only-tools push **rejected** — majkee needs it to AUTHOR PTY/tmux
+  monitoring + quarantine scripts. Final shape: **standalone (composite/Codex-relay DEFERRED — Foreman
+  floor)** · Write confined **by discipline** to `/tmp/metaterminal-<run>/` (ephemeral self-destruct;
+  keepers graduate via mail-the-temple) · discipline-not-hook confinement. Guardrails kept (no deploy ·
+  no gated `temple-*`/0009 · two-phase quarantine never auto-delete · host-state local · phone output).
+  Oraculum RETURN note sent (`_mail/oraculum/inbox/atlas.metaterminal-reclassified-structural.2026-08-28.md`).
+  → `[2026-08-28 Metaterminal]` entry. OPEN: (1) majkee deploy + commit/push · (2) optional: majkee
+  run Codex directly for the verdict that likely sits on disk · (3) ⚠ **codex-relay QUOTE-COLLISION
+  BUG — real root cause** (majkee caught 2026-08-28): prompts with inner `"`/`'` break the shell arg
+  when a relay seat wraps them as `codex-run "…"`; the seat then burns its turn budget fighting the
+  quoting (the 3-turn cap only left no room to recover — it was NOT the cause). Fix = pass prompt via
+  stdin/heredoc (`<<'EOF'`) or temp file, never an inline quoted arg. Hits @mirror/@vega/@astrobley +
+  `codex-relay.contract.md` + `codex-run` wrapper — Kelvin/Cartan infra fix, brief scopeable on ask.
+  (Supersedes the earlier "turn-cap" theory logged same entry.)
+
 - [x] **atlas-ui read-only Bash — SHIPPED + CONVERGED BOTH MACHINES 2026-08-28.** Runbook
   `_runbook/ia-sync/atlas-bash/` consumed → folded into the seat. atlas-ui `tools:` += `Bash`;
   new `## Read-only Bash contract` section (verify-only: `git rev-parse/status/log/diff`, `ls`,
@@ -131,6 +157,62 @@ codex-relay family (metadata guide covers frontmatter/`!`-hydration/exit-codes o
 **STILL OPEN:** (1) majkee `bash ~/ia-sync/deploy.sh` + commit/push ia-sync → ① goes live both
 boxes (don't `sync.sh` before deploy) · (2) Flight builds + verifies ② live-with-majkee · (3) after
 ② lands, make the contract's stdin note non-conditional + repoint relay snippets to the `-` form.
+
+## [2026-08-28 Metaterminal] — @Metaterminal built: majkee's "second terminal with a soul", reclassified structural → global
+
+**Origin:** Oraculum build request `_mail/atlas/inbox/oraculum.metaterminal-seat.2026-08-25.md` (read
+on majkee's explicit ask — mail-protocol consent). The gap: nobody holds the terminal stack as ONE
+object. @Zenith-ZSH reads only the *deployed* `~/.config/zsh/` (blind to `ia-sync/zsh` source →
+can't reason about source↔deployed drift); Kelvin/Maxwell own the per-machine deploy pipe. Unowned
+span = source ↔ deployed ↔ mux ↔ TTY/process ↔ agent-surface (codex-run.zsh, exp-run, rc.sh). Native
+object: **drift** (deploy.sh rsyncs without `--delete`, backs up without retention → deployed tree
+accretes: 120 src vs 155 deployed, 37 orphans, 15 `.bak` exhaust, measured home 2026-08-25).
+
+**Existence check (ran, clean):** no prior `metaterminal` build (only the request + a related
+cold-start card). Adjacency confirmed non-redundant: Zenith-ZSH = read-only deployed RAG (Haiku,
+coverage) vs Metaterminal = source-aware Write+Bash depth seat; Kelvin/Maxwell = execute deploy vs
+Metaterminal = reason/audit/quarantine, never deploys. No collapse.
+
+**THE GOVERNANCE MOVE — majkee reclassified it.** Oraculum routed it to the nablarva bench per flag
+**L6 clause-1** (experimental agentive *shapes* build in nablarva). majkee ruled it a **structural,
+operational seat** he drives live during development — his "second terminal window with a soul." L6's
+OWN clause-2 (*structural builds stay on the surgical table `~/ia-sync/`*) then routes it to the table,
+global. No lock overridden — the classification changed and L6 already covers both branches. Placement
+GLOBAL (not the `~/.config/zsh/.claude/agents/` bond, which would hide it outside that tree — a
+personal dev seat must be visible in any project dir).
+
+**DELIVERED (surgical table, STAGED — deploy-inert):** `~/ia-sync/claude/agents/metaterminal.md` —
+`sonnet`/high, tools `Read,Grep,Glob,Edit,Write,Bash` (NO Agent tool — doesn't delegate). Body is
+self-complete (**harness-free regime**: no sit-in-saddle/pulse/canon startup; Trajectory-grade
+judgment; the `.md` IS its whole contract). Covers domain, lane-vs-neighbours, can/should list,
+must-nots (no deploy · no gated `temple-*` incl. `ai/base.zsh`/`adr-guard.*` per decision 0009 → mail
+the temple · two-phase quarantine never auto-delete · host-state local), the filename-first paste-able
+output contract (majkee drives from Termux, no TUI), and two opening case files (the drift audit +
+`ai/base.zsh` prints-on-source violation). Baked constants carry a staleness pointer note.
+
+**Non-spawnable — SOFT only, hook DROPPED.** majkee: "he should stay only for me... not overengineer.
+If nobody else has reason, why gate it." Confirmed (claude-code-guide): NO native target-side flag
+(`spawnable:false` doesn't exist); the only HARD mechanism is a global Agent-tool `PreToolUse` deny —
+judged unnecessary overengineering (defends a non-existent threat). Enforcement = terse non-routing
+description ("not a spawn target") + human-only body line.
+
+**Open questions resolved (mine):** model sonnet/high · `sync.deny` = audits-not-owns · `zsh-orphans.zsh`
+= recommend move to `ai/experimental/zsh-orphans/runner.zsh` (maintenance-seat action, not
+Metaterminal's to run).
+
+**Codex triangulation — ATTEMPTED, EXHAUSTED.** @mirror position-aware audit fired 3×; every attempt
+died on its **3-turn cap** before returning a verdict (relay mechanics: locate wrapper → invoke →
+wait → read → return exceeds the budget). The ORIGINAL run reached Codex and was mid-reading the
+audit when it capped — a verdict likely sits on disk but is unrecoverable (no resume/SendMessage
+exposed; fresh fires lose context; raw transcripts barred). majkee elected proceed (option 3); can
+still paste the spec into Codex directly for the verdict. **⚠ @mirror turn-cap = real flagged finding**
+(2nd session bitten; Sella relay had friction too) — candidate follow-up: raise mirror `maxTurns` or
+shorten the codex-run step count.
+
+**Oraculum RETURN note sent:** `_mail/oraculum/inbox/atlas.metaterminal-reclassified-structural.2026-08-28.md`.
+
+**STILL OPEN:** majkee deploy + commit/push (table→live, no sync.sh in this flow) · optional Codex
+verdict retrieval · @mirror turn-cap fix. Not live until `deploy.sh`.
 
 ---
 
