@@ -1,3 +1,9 @@
+**paths moved 2026-09-02:** termbrana → nablarva/toolbox/termbrana (repo unification,
+majkee gavel — termbrana's own repo retired, subtree-merged into nablarva with history
+preserved; local clone quarantined to /tmp/repo-merge-2026-09-02/). Below, every bare
+`termbrana/...` reference resolves under `~/unikuklatrix/nablarva/toolbox/termbrana/`.
+Details: `nablarva/docs/repo-unification.2026-09-02.md`.
+
 CS · 2026-08-15 · toolbox-termbrana — founding + M0 spike
 
 commit : e319ed4 (termbrana core) · nablarva = your hand-commit
