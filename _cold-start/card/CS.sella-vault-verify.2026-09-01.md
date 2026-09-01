@@ -32,13 +32,23 @@ Read, in order:
 1. ~/reposoma/raw.guides/sella/GUIDE.md — vault authority (header + manifest + precedence + body).
 2. ~/reposoma/raw.guides/sella/res/RUNBOOK.migration.2026-09-01.md — what was done + the Done-when checklist.
 3. ~/reposoma/raw.guides/sella/dev-journal.sella.md — the line's journal (HANDOFF first, then LOG).
-4. git -C ~/reposoma status --short  and  git -C ~/ia-sync status --short — the unstaged change surface.
+4. git -C ~/reposoma log --oneline -3  and  git -C ~/ia-sync log --oneline -3 — the migration is
+   already COMMITTED + deployed (both trees are CLEAN; do NOT expect an unstaged surface). Verify the
+   LANDED state by files-present + anchors-live (grep the live ~/.claude/agents/{atlas-ui,atlas-auto}.md
+   for "Harness-build doctrine"), not by a working-tree diff.
 
 Your job:
 - VERIFY against Done-when: vault present; GUIDE.md = header+body (no dup YAML/H1); journal rule 6
   amended; 13 stubs in _staging/ (12 corpus + the journal); reconciliation-pad gone; source-map.md
   repointed; BOTH anchors (atlas-ui + atlas-auto) inserted; Cartan notification present at
   ~/ia-sync/session/rellays-calude-codex/ATLAS-CARTAN-sella-mount.2026-09-01.md. Do NOT re-execute.
+- WIDER HOUSECLEANING AUDIT (beyond the Done-when checklist): (a) confirm every _staging/ stub-
+  redirect actually resolves to a present vault file; (b) spot-check the intra-corpus refs left
+  pointing at old _staging/ paths (runbook STEP 9 left them for the stubs to redirect) — do they
+  land?; (c) the archived mail cards reposoma/_mail/monkey/archive/CS.sella-*.md still name old
+  paths — historical, so FLAG, do not rewrite; (d) confirm source-map.md was the ONLY live (non-doc)
+  consumer — no zsh/hook/systemd ref to any Sella file survived (Eagle found none; re-confirm). List
+  findings; fix nothing silently.
 - NOTE: journal.host-cleanup.md was intentionally reverted by Atlas (a STEP-7 over-reach that
   rewrote a historical git-status snapshot) — leave it reverted, do not "re-fix" it.
 - If clean: advise majkee on commit grouping — reposoma vault first (agents read reposoma directly),
