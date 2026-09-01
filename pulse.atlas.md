@@ -34,9 +34,16 @@ surfaces + age-stamps).
   `_staging/sella.codex-consult.wrapper-tune.2026-08-31.md` — master prompt for a hand-released
   interactive Codex to verify H1–H6 vs its own `--json` lifecycle + emit a tuned `codex-run.zsh`
   diff (stdin mode ② · jq extraction · usage surfacing). vega/mirror `maxTurns 3→4` staged (probe
-  showed 3 too tight). OPEN: majkee pastes consult into Codex → diff → apply to table → deploy →
-  fresh-Codex verify (Flight); deploy the maxTurns bump. Flight ② mail now SUBSUMED by the consult.
-  → `[2026-08-31]` entry + Sella journal LOG.
+  showed 3 too tight). CONSULT ANSWERED 2026-09-01 by @Cartan (`session/rellays-calude-codex/
+  CARTAN-ATLAS-SUMMARY.md`): wrapper tabled (stdin+jq+stdout-usage, selftest 2/2), contract
+  refined on disk. Atlas review = CONCUR + HOLD: Cartan's P0 retry-injection (model/timeout raw
+  into `script -qfc` source) is a real pre-deploy gate. OPEN: (P0) ✅ CLOSED 2026-09-01
+  — @Trajectory hardened retry (env→fixed-zsh literal, `${(qq)}`, SECURITY INVARIANT comment) +
+  adversarial fixture; selftest 7/7 green, zsh -n clean, disk-verified by Atlas, table-only.
+  · (P1) live fresh-Codex proof = majkee gavel + quota (deploy → byte-check → one `codex-run -`
+  probe → verify) · (B) Atlas aligns 3 relay-card transport snippets ONLY after P1 — HELD ·
+  (deploy) bundles Cartan JSON/stdin/usage patch + retry hardening + contract refinement +
+  maxTurns 3→4 · (C) guide 0.145→0.150.1 refresh parked. → `[2026-09-01]` entry + Sella LOG.
 
 - [ ] **Metaterminal seat — BUILT + STAGED 2026-08-28, deploy pending (majkee).** Oraculum's build
   request (`_mail/atlas/inbox/oraculum.metaterminal-seat.2026-08-25.md`) → new GLOBAL personal seat:
