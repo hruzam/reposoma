@@ -46,7 +46,7 @@ it earns lift. It is advisory guidance until gaveled canon, never a gate you mus
 **Pointed to (live elsewhere for good reason — never copied here):**
 - `raw.research/harness/reports/2026-07-20-harness-lifecycle-skill-injection-safe-protocol.md`
   — [S3], the authority-stack / cold-start-order / §7 layer rule. **The load-bearing external
-  source.** Lives in its proper `raw.research/` home → data-resource link, no copy.
+  source.** Lives in its proper `raw.research/` home → data-resource link, no copy. ⚠ Read its §5d through THIS guide's §2 corrected tables — §5d predates the agent-vs-skill frontmatter split correction.
 - `raw.research/agent-docs/report/raw.agent-docs.2026-08-01.md` — [S1] platform ground truth.
 - `raw.research/arch/2026-08-01-arch-unix-mind-on-agent-primitives.md` — [S2] Unix cognates.
 - `raw.research/agent-docs/report/2026-07-17-claude-skills-nesting-rube-goldberg.md` — [S4].
@@ -58,8 +58,7 @@ it earns lift. It is advisory guidance until gaveled canon, never a gate you mus
 **Companions (sibling guides):**
 - `raw.guides/codex-builder-user/{codex-line.builder.md, codex-line.user.md}` — the Codex-line
   builder/user guides. **Kept in evidence; on doctrine contradiction, Sella wins** (per
-  `precedence:` — volatile CLI facts excepted). NOTE: these carry a known 0.145→0.150.1 drift
-  (separate dated refresh task).
+  `precedence:` — volatile CLI facts excepted). NOTE: these carry version-bound claims — weather per L8; verify against the dated live source before acting on one (dated refresh task parked).
 - `raw.guides/cold-start-card/GUIDE.md` · `raw.guides/runbook/GUIDE.md` ·
   `raw.guides/status/GUIDE.md` — session-glue siblings.
 - `~/.config/zsh/guides/codex-relay.contract.md` — the Claude↔Codex relay plumbing contract
@@ -68,6 +67,16 @@ it earns lift. It is advisory guidance until gaveled canon, never a gate you mus
 **Dropped on migration:** `sella.reconciliation-pad.md` (a transient working pad carrying a literal
 self-`rm` — never enshrined). **Future:** a `raw.settings/raw.card.sella.md` stale-cycle sentinel
 (G1-planned "at promotion time"; build when Sella earns a stale-cards slot — not yet).
+
+## Read-order — next incarnation, Claude↔Codex common line
+
+1. This GUIDE — manifest + discipline body; the authority hierarchy; everything else is pointed from here.
+2. `~/.config/zsh/guides/codex-relay.contract.md` — the live relay plumbing contract (authoring source: `ia-sync/zsh/guides/`).
+3. [S3] `raw.research/harness/reports/2026-07-20-harness-lifecycle-skill-injection-safe-protocol.md` — authority stack + cold-start order (§5d via this GUIDE's §2).
+4. `raw.guides/codex-builder-user/codex-line.builder.md` — Codex CLI mechanics for automation.
+5. `raw.guides/codex-builder-user/codex-line.user.md` — daily-driver orientation.
+
+Version facts anywhere in these are WEATHER (L8): never trust a pinned version; verify against the dated live source. Update path: refresh the dated file, stamp the date, amend this manifest only if authority shifts.
 
 <!-- ─────────────────────────────────────────────────────────────────────────── -->
 <!-- DISCIPLINE BODY BELOW — appended verbatim from the former sella.coder-guide.md -->

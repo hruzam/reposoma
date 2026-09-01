@@ -40,6 +40,10 @@ majkee.
 
 ## LOG (newest on top · append-only · stamped)
 
+### [2026-09-01 · claude/oraculum · opus · office · ref: session fc-sync.oraculum.sella · majkee housecleaning gavel] — HOUSECLEANING CUT: 19 files retired, one-source enforced, read-order added to GUIDE
+
+majkee gaveled the reduction: process data dies with a log line; evidence keeps full context; versions are weather — never pin. Cut: 13 `_staging/` stubs (vault pushed; git = the redirect; 2 refs in `src/sella-sibling.codex.coldstart.md` repointed to vault paths first) · `dev-journal.astrobley.md` + `recovered/gemini-subagents/` digested into `ia-sync/journal.host-cleanup.md` · `report-R2-gemini.md` (only true draft/final pair in harness/reports; `-grounded` supersedes) · `codex-relay.metadata-scripting.2026-07-31.md` absorbed (§d relay anti-patterns + §e naming law → `codex-relay.contract.md`; §a field-split already lives in GUIDE §2). GUIDE gains: a 5-file read-order block for next incarnations + §5d inoculation on the [S3] pointer (the audit's single ⚡ conflict — S3 §5d's undifferentiated frontmatter vocabulary — defused at the pointer, evidence untouched) + the companions drift note de-versioned per the weather rule. Audit trail: Eagle sweep (_staging line-state + consumers) + Field melt (harness/reports pairs, codex-builder drift, zsh/guides supersession, orphan map) — both this session. Ruled OUT of scope by majkee: ferry/pilot3/nablarva/guides-journal (not Sella-associated). Open: majkee runs the deletion block + deploy pass (deployed metadata-scripting copy); codex-builder dated refresh parked; probe queue unchanged (A-eco next).
+
 ### [2026-09-01 · claude/oraculum · opus · office · ref: _cold-start/archive/CS.sella-vault-verify.2026-09-01.md] — MIGRATION VERIFIED LANDED; audit clean; card drained; line resumes on the probe queue
 
 Verification (not re-execution) of the Trajectory-cut, majkee-committed migration, per the

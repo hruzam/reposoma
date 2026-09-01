@@ -50,8 +50,8 @@ applied to the OpenAI Codex CLI's primitive surface.
 
 ## Read in full before writing
 
-1. `~/ia-sync/_staging/sella.coder-guide.md` — the language (READ-ONLY)
-2. `~/ia-sync/_staging/sella.receipt.epoch-2026-08-02.md` — how receipts look
+1. `~/reposoma/raw.guides/sella/GUIDE.md` — the language (READ-ONLY)
+2. `~/reposoma/raw.guides/sella/raw/sella.receipt.epoch-2026-08-02.md` — how receipts look
 3. reposoma sources if depth needed (READ-ONLY, merge-frozen):
    `raw.research/harness/reports/2026-07-20-harness-lifecycle-skill-injection-safe-protocol.md`
    · `raw.research/arch/2026-08-01-arch-unix-mind-on-agent-primitives.md`
