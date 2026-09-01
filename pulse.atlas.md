@@ -27,6 +27,28 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **Sella vault + atlas-ui workshop wiring — AUTHORED, handed to Oraculum 2026-09-01.** majkee:
+  atlas-ui needs its own manual/workshop wiring (Sella-first + journaling + where it meets Cartan);
+  promote Sella from `ia-sync/_staging/` → central `reposoma/raw.guides/sella/` vault. Eagle swept
+  (19 files); dispositions gaveled (stubs-not-symlinks · move coder-guide+journal+src+receipts ·
+  copy unikuklatrix Asymmetry · point raw.research+Cartan-obs+jacquard.toml · drop reconciliation-pad
+  · codex-builder-user companion w/ Sella-wins-on-doctrine). AUTHORED + EXECUTED 2026-09-01:
+  `raw.guides/sella/GUIDE.md` (header+manifest+body), `res/RUNBOOK.migration.2026-09-01.md`.
+  @Trajectory ran STEP 0–10b in-session (Atlas drove; Oraculum-as-subagent was a dead-end — no
+  Bash/Edit, can't spawn Delta): vault built (GUIDE·journal·src9·raw3·res), 13 stubs, Asymmetry
+  copied w/ provenance, pad rm'd, source-map + BOTH anchors (atlas-ui + atlas-auto twin) inserted,
+  NOTHING staged. Atlas reverted one over-broad STEP-7 edit (Trajectory rewrote a HISTORICAL
+  git-status snapshot in journal.host-cleanup.md → restored; live source-map repoint kept). NOTE:
+  wrapper/cards arc was ALREADY committed by majkee (tree clean of it) — no ordering tangle. DEPLOYED 2026-09-01:
+  majkee committed + `deploy.sh`; anchors LIVE both creators (atlas-ui.md:81 + vault pointer :85 ·
+  atlas-auto.md:52), Atlas verified live==table. Original ask CLOSED — fresh atlas self-navigates to
+  Sella vault + workshop + Cartan meeting-point. CS card `_cold-start/card/CS.sella-vault-verify.
+  2026-09-01.md` saved (dogfoods vault) for hand-spawning Oraculum. OPEN (handed off): Oraculum
+  VERIFIES the vault vs runbook Done-when + carries Sella forward (Probe A/D/E; profiles G3-HELD) →
+  drains the CS card to archive/. CARTAN NOTIFIED: session-final instruction
+  authored `session/rellays-calude-codex/ATLAS-CARTAN-sella-mount.2026-09-01.md` (his mount: READ
+  vault · DRAFT `_staging/codex/` · GRADUATE to vault · JOURNAL moved dev-journal; effective on
+  reposoma push) + runbook STEP 12. → `[2026-09-01 Sella-vault]` entry + Sella LOG.
 - [ ] **Relay quote-safety — ① DEPLOYED, unified wrapper-tune consult STAGED 2026-08-31.** ①
   (input-edge: contract §Prompt-passing + astrobley/vega/mirror snippets) DEPLOYED both boxes by
   majkee. Then majkee pulled in the Sella line: the SAME wrapper has open OUTPUT-edge hypotheses
@@ -40,10 +62,14 @@ surfaces + age-stamps).
   into `script -qfc` source) is a real pre-deploy gate. OPEN: (P0) ✅ CLOSED 2026-09-01
   — @Trajectory hardened retry (env→fixed-zsh literal, `${(qq)}`, SECURITY INVARIANT comment) +
   adversarial fixture; selftest 7/7 green, zsh -n clean, disk-verified by Atlas, table-only.
-  · (P1) live fresh-Codex proof = majkee gavel + quota (deploy → byte-check → one `codex-run -`
-  probe → verify) · (B) Atlas aligns 3 relay-card transport snippets ONLY after P1 — HELD ·
-  (deploy) bundles Cartan JSON/stdin/usage patch + retry hardening + contract refinement +
-  maxTurns 3→4 · (C) guide 0.145→0.150.1 refresh parked. → `[2026-09-01]` entry + Sella LOG.
+  · (P1) ✅ PASSED 2026-09-01 (majkee: deploy clean, byte-identical, live `codex-run -` probe
+  echoed all 4 hazards byte-literal + clean `[usage:]` stdout line, 39→39 sessions = ephemeral
+  held) · (B) ✅ DONE — Atlas aligned astrobley/vega/mirror transport snippets (stdin `-` form ·
+  column-0 heredoc caveat · usage-is-final-stdout not stderr · foreground explicit; refusal
+  contracts untouched) + column-0 note into contract · (C) guide 0.145→0.150.1 refresh parked.
+  REMAINING: majkee 2nd small deploy of the task-B card + contract-note delta, then commit+push
+  ia-sync for the whole session (wrapper+retry+contract+cards+selftest+maxTurns). → `[2026-09-01]`
+  entry + Sella LOG.
 
 - [ ] **Metaterminal seat — BUILT + STAGED 2026-08-28, deploy pending (majkee).** Oraculum's build
   request (`_mail/atlas/inbox/oraculum.metaterminal-seat.2026-08-25.md`) → new GLOBAL personal seat:
