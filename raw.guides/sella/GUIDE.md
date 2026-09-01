@@ -421,6 +421,12 @@ a REVIEWED MERGE, never auto-deploy [S5·L6]. Nothing an agent wrote reaches a l
 surface (`~/.claude/`, a deploy target) without passing a human or gate review. This is
 L8 operationalized: selection pressure applied at the boundary, with a receipt.
 
+**Operator vault — the `.hlm` pattern (named 2026-09-02, majkee).** A project may carry an
+operator-private directory (`.hlm/`). The seal is about READING, not tracking: no agent
+opens, reads, or writes its interior — undocumented by design; its existence may be named
+in a manifest. Whether it is git-tracked is the operator's call (nablarva: tracked — it
+travels between machines by plain pull). An agent that finds one walks past it.
+
 ---
 
 ## 6 · GLOSSARY

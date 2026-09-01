@@ -1,3 +1,5 @@
+> ADDENDUM 2026-09-02: paths moved — termbrana merged into `~/unikuklatrix/nablarva/toolbox/termbrana/` (repo unification; see nablarva `docs/repo-unification.2026-09-02.md` + flag L12). Read any `~/unikuklatrix/termbrana/...` path in this card accordingly.
+
 **paths moved 2026-09-02:** termbrana → nablarva/toolbox/termbrana (repo unification,
 majkee gavel — termbrana's own repo retired, subtree-merged into nablarva with history
 preserved; local clone quarantined to /tmp/repo-merge-2026-09-02/). Below, every bare
