@@ -19,35 +19,48 @@
 
 ## HANDOFF — last (overwrite when consumed)
 
-`[2026-08-05 · claude/atlas-ui · opus · office · session: atlas.office.paralel]`
+`[2026-09-01 · claude/oraculum · opus · office · ref: CS.sella-vault-verify.2026-09-01 (drained to _cold-start/archive/) + res/RUNBOOK.migration.2026-09-01.md]`
 
-**State:** G1–G5 RULED · PROBE B CLOSED (unchanged from prior handoff) ·
-**PROBE A PROTOCOL STAGED** → `sella.probe-a.protocol.md` (two lanes: A-eco
-ecological + A-norm normalized). Wave consultation landed and absorbed:
-`radio.wave-to-atlas.sella-consultation.2026-08-05.md` — key corrections folded
-(Codex surface is NOT thin; one manager + two renderers; AGENTS.md = shared
-executable truths only; wrapper needs both jq extract + sync exec). Wave reviewed
-the probe A protocol and added four amendments (all folded): A-norm CLAUDE.md
-stripped to `@AGENTS.md` only, per-run identical snapshots not sequential mutable
-copy, three-layer evidence separation (model-claimed / externally-observed /
-canary-adoption), exact global config spec not "equivalent". Astrobley journal
-absorbed (n=4 decisive: capable hands, silent voice, verifier load-bearing).
+**State:** VAULT LANDED + VERIFIED. The Sella corpus lives at `reposoma/raw.guides/sella/`
+(GUIDE.md header+body · this journal · src/(9) · raw/(3) · res/RUNBOOK). Migration committed
+in both repos (reposoma `0d65b0b`, ia-sync `604103d`), both trees clean at verify time; deploy
+carried both anchors live (`~/.claude/agents/{atlas-ui,atlas-auto}.md` — "Harness-build
+doctrine"). All 13 `_staging/` stubs resolve; `source-map.md` repointed; zero live (non-doc)
+consumers re-confirmed. Wrapper/relay arc CLOSED (P1 passed live; Atlas task B done — see the
+2026-09-01 LOG entries below).
 
-**Corrections applied to my lean this session:** (1) "Codex surface is thin" was
-wrong — 10 primitive classes documented in builder guide + Wave's table; (2) my
-drafted Wave consultation list was superseded — he already responded with a full
-advisory; (3) `sella-sibling.codex.coldstart.md` exists (08-03) — I didn't know.
-
-**Next:** majkee executes A-eco (two snapshot copies of the factory, fresh
-sessions, silent observation), then A-norm. Probe D follows A. Parked items
-unchanged: micro-probe (AGENTS.md quote-test) · E3 URL-fact · cleanup
-(.bak-jacquard + task card) · deploy (tailscale fix + ferry schema-strip).
-Atlas-ui Codex r0 expansion: design AFTER Probe A results + proper ingestion
-of Codex research (receipt, guides, Wave's 10-row table). Wrapper fix
-(codex-run.zsh:88 jq + sync): Flight/Delta territory, Wave's run-directory
-structure proposed.
+**Next:** the probe queue, unchanged in substance since 2026-08-05: majkee executes Probe
+A-eco (two identical factory snapshots, fresh sessions, silent observation) → A-norm →
+Probe D → E. Profiles remain **G3-HELD** (a real vendor-profile candidate + majkee gavel
+before conformance-as-canon). Parked: guide 0.145→0.150.1 dated refresh · micro-probe
+(AGENTS.md quote-test) · E3 URL-fact · `raw.settings/raw.card.sella.md` stale-cycle sentinel
+(build only when Sella earns a stale-cards slot). Cartan's vault mount is effective
+(reposoma pushed) — expect Codex-side drafts in `_staging/codex/`, graduating to `src/` via
+majkee.
 
 ## LOG (newest on top · append-only · stamped)
+
+### [2026-09-01 · claude/oraculum · opus · office · ref: _cold-start/archive/CS.sella-vault-verify.2026-09-01.md] — MIGRATION VERIFIED LANDED; audit clean; card drained; line resumes on the probe queue
+
+Verification (not re-execution) of the Trajectory-cut, majkee-committed migration, per the
+cold-start card. **Done-when: ALL GREEN** — vault present; GUIDE.md single frontmatter +
+single H1, body verbatim from `## Receipts` onward; journal rule 6 amended; 13/13 stubs in
+`_staging/` (12 corpus + this journal); reconciliation-pad gone; `source-map.md` repointed;
+BOTH anchors live in `~/.claude/agents/` (atlas-ui:81 · atlas-auto:52); Cartan notification
+present at `session/rellays-calude-codex/ATLAS-CARTAN-sella-mount.2026-09-01.md`. Wider
+audit: (a) every stub's MOVED-target cross-matches a present vault file, 13/13; (b) intra-
+corpus old-path refs reduce to the RUNBOOK (self-describing) + two refs in
+`src/sella-sibling.codex.coldstart.md` — both land via stubs in one hop; STEP-9
+fix-on-touch holds; (c) FLAGGED, not rewritten: archived mail cards
+`_mail/monkey/archive/CS.sella-{line,probe-a-staged}.2026-08-05.md` name old `_staging/`
+paths — historical, stubs redirect; (d) zero zsh/hook/systemd consumers re-confirmed
+(ia-sync/zsh grep clean) — `source-map.md` was the only live consumer and is repointed.
+`journal.host-cleanup.md` left in its Atlas-reverted state per card (lines 86-87 are a
+historical git-status snapshot, not a live ref). Commits verified via @Delta: reposoma
+`0d65b0b` · ia-sync `604103d` · both trees CLEAN — commit-grouping advice moot; majkee
+landed it in the runbook's order (vault first, then stubs/anchors + deploy). Card moved
+`_cold-start/card/` → `archive/` (Cinderella). This entry + the HANDOFF overwrite above are
+the only new uncommitted changes in reposoma.
 
 ### [2026-09-01 · claude/atlas-ui · office · ref: raw.guides/sella/GUIDE.md + res/RUNBOOK.migration.2026-09-01.md + Eagle sweep] — SELLA PROMOTED to a central vault; this journal is migrating out of _staging
 

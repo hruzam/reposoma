@@ -64,14 +64,14 @@ embedding.php | text.html.blade
  - Settings
 ```json
 {
-  "auto_complete_selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+  "auto_complete_selector": "( meta.tag | meta.embedded.directive ) - comment",
   "lsp_active": true,
-  "syntax": "Packages/PHP/PHP.sublime-syntax"
+  "syntax": "Packages/Laravel Blade/Syntaxes/HTML (Blade).sublime-syntax"
 }
 ```
  - base scope
 ```
-embedding.php
+text.html.blade
 ```
 
 ## Project / Workspace
