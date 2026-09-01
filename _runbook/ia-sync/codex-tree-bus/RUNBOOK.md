@@ -1,5 +1,13 @@
 # RUNBOOK: Claude ↔ Codex tree-bus trial
 
+**Addendum 2026-09-02 (repo unification, majkee gavel):** the "devenv transport" promotion
+note below is obsolete — `nablarva.devenv` is retired, merged into `nablarva`. `nablarva`
+now tracks `.dev/session/` directly (plain `git add`/`commit`), so promoting the bench copy
+to `~/unikuklatrix/nablarva/.dev/session/tree-bus-01-trial/` is a plain copy + commit, not a
+two-repo move. Also note: `termbrana` merged into `nablarva/toolbox/termbrana/` (subtree,
+history preserved) — not referenced by name below, but relevant if this trial's payload ever
+touches it. Details: `nablarva/docs/repo-unification.2026-09-02.md`.
+
 ```yaml
 goal: Decide from evidence whether a file-tree bus + runbook + PAD is sufficient for two-seat Claude/Codex cooperation. Real ia-sync cleanup is the payload, not a toy task.
 gate: Three cycles run and the audit ledger filled → verdict against the pre-registered stop rule.

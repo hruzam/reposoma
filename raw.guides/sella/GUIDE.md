@@ -50,7 +50,8 @@ it earns lift. It is advisory guidance until gaveled canon, never a gate you mus
 - `raw.research/agent-docs/report/raw.agent-docs.2026-08-01.md` — [S1] platform ground truth.
 - `raw.research/arch/2026-08-01-arch-unix-mind-on-agent-primitives.md` — [S2] Unix cognates.
 - `raw.research/agent-docs/report/2026-07-17-claude-skills-nesting-rube-goldberg.md` — [S4].
-- `~/unikuklatrix/nablarva/session/flag.md` — [S5] the conforming-application precedent.
+- `~/unikuklatrix/nablarva/.dev/session/flag.md` — [S5] the conforming-application precedent.
+  (path drift fixed 2026-09-02: was `session/flag.md`, actual live path is `.dev/session/flag.md`.)
 - `ia-sync/_staging/codex/cartan.observation.codex-relay-wrapper-boundary.2026-09-01.md`
   — Cartan's own observation; stays on Codex-resident turf (`_staging/codex/`), pointed not moved.
 - `ia-sync/_staging/jacquard.toml` — the Jacquard probe's Codex agent config (a `.toml`, not doc).
@@ -93,7 +94,7 @@ Version facts anywhere in these are WEATHER (L8): never trust a pinned version; 
   — the authority stack, cold-start order, EXIF frame, §7 layer rule
 - [S4] `raw.research/agent-docs/report/2026-07-17-claude-skills-nesting-rube-goldberg.md`
   — inverted precedence, fork contract, nesting verdicts
-- [S5] `~/unikuklatrix/nablarva/session/flag.md` — L6/L7/L9: promotion protocol,
+- [S5] `~/unikuklatrix/nablarva/.dev/session/flag.md` — L6/L7/L9: promotion protocol,
   moving-target guardrail, session-surfaces law (the conforming-application precedent)
 
 ---

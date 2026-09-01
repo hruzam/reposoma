@@ -1,5 +1,11 @@
 # HANDS — majkee's queue · human-gated work only
 
+**Addendum 2026-09-02 (repo unification, majkee gavel — not a row edit, this file's own law
+reserves row removal to majkee):** `nablarva.devenv` referenced in rows 11 and 13 is retired,
+merged into `nablarva`. `nablarva` now tracks its harness/session state directly; the "devenv
+transport" mechanism those rows describe no longer exists. Details:
+`nablarva/docs/repo-unification.2026-09-02.md`.
+
 `law: operator's STATUS — bounded replacement snapshot, overwritten never appended.`
 `Any seat may add a line when parking work on majkee's hands; only majkee removes lines`
 `(friction prunes: a line survives only if retyped as still true). NO ranking, NO next` 
