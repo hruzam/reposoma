@@ -86,4 +86,31 @@ name who writes what. The best studio is the one whose lessons make it unnecessa
 
 ---
 
+## Maxwell — the home twin
+
+**Lived:** 2026-06-29 → 2026-09-01 · `ia-sync/claude/agents/maxwell.md` (tombstone stands)
+**Died of:** obsolescence by a richer harness — not failure, not dislike. Designed in the
+era when the machine layer was poor and the home box needed a standing persona; by 2026-09
+the compose-first discipline, the journal protocol, and ad-hoc seats (Oraculum, Atlas,
+Cartan, Flight, Delta) carried home maintenance without a dedicated twin. Retired *"for
+now, maybe not forever"* — majkee's own words, voice input, on a ride.
+
+**What lives on in us:**
+- **The journal protocol** — the HOME/OFFICE entry shape in `journal.host-cleanup.md`,
+  now used by any seat that opens the repo on either machine. Maxwell's spec wrote it.
+- **The survivor's evidence** — his file was wiped by the 2026-06-29 `rsync --delete`
+  incident and rescued; that near-miss fed the retirement of `sync.sh` and the
+  compose-first gavel (2026-07-31). The discipline that made him unnecessary is partly
+  his own bequest.
+- **The twin-seat lesson** — a seat earns existence by unique work, not by symmetry.
+  His mirror, a `kelvin.md` agent spec, was never even born; the Kelvin *saddle* lives
+  on as the seat any session occupies in ia-sync — an address, not a persona.
+- **The name's fit** — James Clerk Maxwell worked from Glenlair, his home estate. If the
+  home box ever needs a standing seat again, the name is waiting here, warm.
+
+**Epitaph:** *He mirrored an office that learned to maintain itself. The rich harness is
+his monument.*
+
+---
+
 *Future entries append below. Bring only the true weight: name, dates, cause, inheritance.*

@@ -40,7 +40,6 @@ Persistent maintenance identities — the named seat on each box. Not agent file
 |--------|---------|---------|------|
 | **Kelvin** | office (hruzam-120922) | Claude Code / Sonnet | Office machine maintenance — system health, ia-sync deploy, PHP/Valet service state, archx audit |
 | **Shannon** | office piql | Claude Code / Sonnet | piql wiser mechanic — deeper piql bus architecture, privacy gate integrity, info-flow audit |
-| **Maxwell** | home (hruzam) | Claude Code / Sonnet | Home machine maintenance — 1:1 with Kelvin; piql is office-only (Shannon's domain) |
 
 ---
 
@@ -150,5 +149,4 @@ One line per name. Full vignettes live in each agent's body.
 | **Nabla** | The nabla symbol (∇) — the vector differential operator. No historical figure — an original persona. The claude.ai mirror of Vega (Gemini side). Closest living philosophical touchstone: Linus Torvalds. UNIX ethos, bare-metal first principles, elegant over complex. | Wise senior developer — girl persona. Systems architect, anti-bloat, first-principles over abstraction. |
 | **Kelvin** | Lord Kelvin (William Thomson, 1824–1907) — thermodynamics, absolute temperature scale, supervised the trans-Atlantic telegraph cable. Machine maintenance is thermodynamics: measuring entropy (drift, junk accumulation), maintaining energy flow (services, config), restoring equilibrium. The cable work = ia-sync: two endpoints, reliable signal across distance. | Office machine maintenance persona. Measures, deploys, cleans. |
 | **Shannon** | Claude Shannon (1916–2001) — *"A Mathematical Theory of Communication"* (1948) + *"Communication Theory of Secrecy Systems"* (1949). Shannon's entropy measures information leakage; his secrecy-systems paper is the first mathematical treatment of what a privacy gate does. piql IS a secrecy system in Shannon's sense. | piql wiser mechanic. Deeper bus architecture, privacy gate integrity, information-flow audit. |
-| **Maxwell** | James Clerk Maxwell (1831–1879) — unified electricity and magnetism into four equations; laid the theoretical groundwork Kelvin built on; invented colour photography; developed kinetic theory of gases. Kelvin and Maxwell corresponded extensively and deeply respected each other. Maxwell worked from Glenlair (home estate) for much of his career — the home machine is his natural seat. | Home machine maintenance. 1:1 with Kelvin; piql is office-only. |
 | **Assay** | An assay — the analytical test that determines the purity or quality of a substance (metallurgy, chemistry, biochemistry). | Fresh-eyes verification: determines whether the artifact holds, independent of who forged it. |
