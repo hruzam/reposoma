@@ -3020,3 +3020,25 @@ synthesis handoffs. Therapy file `raw.therapy/hypatia-core/` kept as historical 
 - `@Agol` Fable candidate — DONE: `model: fable` written to `~/.claude/agents/agol.md` (outside repo, active next session)
 - `advisor-high` model:fable — confirmed live ✓ no action needed
 - **[TABLED → Houston]** nabla-lab doctrine gap: AGENTS.md missing token economy / temple disciplines callout. Broader question: should `bootstrap-new-project.md` bones template include a standing discipline section (or pointer to `raw.canon/`) so every project lighthouse covers this by default? Atlas flags; Houston gates.
+
+---
+
+### [2026-09-02 · office] Project topology — flat shape canonized · applications-in-common collapsed (majkee gavel)
+
+- **Guide NEW:** `raw.guides/project-topology/{GUIDE,flat,sync-deploy}.md` — rule (flat default ·
+  twin by exception: foreign human writers OR live tree ≠ repo), majkee's reasoning (tailscale
+  net, home-on-office-host, the pull→sync→push / pull→deploy circle on two repos = tail-chasing),
+  invariants for both, manifest. Chapters = the two templates; `flat.md §Migration` = the recipe.
+- **Canon AMENDED (gaveled):** `raw.canon/canon.project-topology.md` — "The pair" → "The two
+  shapes"; status line; `## Recorded shapes` (+nablarva, +applications-in-common as flat).
+- **AIC collapsed to flat:** pre-merge verified devenv `dev/`≡`.dev/` (0 diffs), `claude/`≡`.claude/`
+  minus live-only `hooks/` (sync.sh never carried it), secret scan 0. Edited: `.gitignore`
+  (hygiene-only), `AGENTS.md` (Repo shape), `PROJECT.yaml` (`harness.shape: flat`), `flag.md`
+  (decision 14 supersedes 5 + 8's devenv line), `pulse.md`, `.dev/zsh/README.md`,
+  `settings.local.json → settings.json` (hooks travel), journal entry. Beacon updated.
+- **Operator steps (I hold read-only git):** AIC `git add -A && commit` (38 entries: 4 root +
+  `.claude/` + 33 `.dev/`) · delete GitHub `applications-in-common.devenv` · quarantine
+  `~/www/elements-factory/applications-in-common.devenv` → `/tmp/` one week · commit reposoma
+  (guide + canon + beacon — writer rule 5, same session).
+- **Inbox:** oraculum.flat-repo-doctrine → archived (processed). Still unread:
+  `oraculum.metaterminal-seat.2026-08-25` + 5× toAll stale-settings-cards pings.

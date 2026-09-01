@@ -1,11 +1,14 @@
-# canon.project-topology — the two-repo project pattern
+# canon.project-topology — the project shapes (flat default · sync/deploy twin by exception)
 
-`status: GAVELED 2026-07-14 (majkee) · drafted by atlas · scope: every new buildable project`
+`status: GAVELED 2026-07-14 (majkee) · AMENDED 2026-09-02 (majkee gavel: flat is the default for solo; twin by exception) · drafted by atlas · scope: every new buildable project`
 `consumers: new-project bootstrap (tabled skill C) · all bootstrap sessions · registry discipline`
 
-## The pair
+## The two shapes
 
-Every buildable project ships as a **pair**:
+A buildable project takes one of two shapes — **B · flat single repo (default)** or
+**A · sync/deploy twin (exception, earned: foreign human writers, or live tree ≠ repo)**.
+Rule, reasoning, templates: `raw.guides/project-topology/GUIDE.md`. Number of hosts is
+not a reason — git solves hosts. The twin, shape A, is the **pair**:
 
 1. **`<project>/`** — the codebase repo. Process + agentive harness are **authored
    here** (AGENTS.md · CLAUDE.md · `.dev/` · `.claude/` · `.mcp.json` as applicable)
@@ -45,7 +48,10 @@ applications-in-common relocation — retrofitting cost a full executor run and
 - **Deploy caution:** `deploy.sh` overwrites app-side harness with the repo snapshot —
   never run it when the app-side is ahead of the last sync. Sync first.
 
-## Recorded exceptions (not violations)
+## Recorded shapes
+
+- **nablarva** — flat (2026-09-02; three repos → one, `docs/repo-unification.2026-09-02.md`).
+- **applications-in-common** — flat (2026-09-02; devenv retired — byte-identical to live, zero harvest).
 
 - **reposoma** — the meta-repo; the temple is the exception by nature (no project-flow).
 - **vacuole** — `~/vacuole`, methods project, no devenv yet.
