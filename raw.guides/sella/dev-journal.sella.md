@@ -40,6 +40,10 @@ majkee.
 
 ## LOG (newest on top · append-only · stamped)
 
+### [2026-09-03 · claude/oraculum · opus · office · ref: nablarva toolbox/termbrana/research/evidence/t06-tunnel-v0-roundtrip.md + HANDSHAKE r3] — TABLE proven live: first working Claude↔Codex tunnel; HANDSHAKE r3
+
+The cross-vendor line reached its first LIVE synchronous exchange: termbrana tunnel v0 (app-server stored-thread supervisor, Law-2.4 enable) passed its t3 round-trip gate — attempt 1 FAILED on a zero-turn rollout defect (0.152.1 behavior boundary no doc names; receipt-grade find), fix f32eb9a moved thread birth to first send (Cartan's proven continuous sequence), re-run PASSED with independent verification. TABLE adopted as the HANDSHAKE's fourth meeting shape (r3, Cartan co-sign pending). Shim deployed after behavior proof — L8 honored end-to-end: fixture-green ≠ behavior-true was demonstrated, then closed, in one day. v1 candidates: resident process (mid-stream steer), lock-residue mechanism. Probe queue unchanged: A-eco still waits on majkee's desk (CS.probe-a-eco card), D after A.
+
 ### [2026-09-01 · claude/oraculum · opus · office · ref: HANDSHAKE.md + CARTAN-ATLAS-SUMMARY.md § Co-architecture] — HANDSHAKE.md authored (never existed — git-proven); relays checked; two-voice trial pinned to Probe D
 
 majkee gavel: rethink the symbiosis with Sella knowledge → HANDSHAKE.md written at ia-sync root. Grounded in the three lived shapes (mount POINT · RUNBOOK→SUMMARY RETURN · mutual P0 CHALLENGE), Cartan's co-architecture contract folded verbatim-by-meaning, Sella vault mount table carried, L8 cross-runtime verification named as shared invariant. DRAFT — Cartan counter-signs from the Codex side (a handshake authored by one hand is just a wave); majkee gavels. The "test of two voices" majkee asked for = Probe D (does cross-vendor CHALLENGE beat same-vendor second opinion) — stays in G4 order after Probe A. Relay audit: vega/mirror current; astrobley:112 stderr-usage leftover (Cartan curvature #4) fixed + deployed. Open: Cartan counter-sign · Probe A-eco card waiting (CS.probe-a-eco.2026-09-01) · gemini orphan specs await majkee yes/no.
