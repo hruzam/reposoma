@@ -1,21 +1,17 @@
-# Volatile now-file — local state, never committed (canon.pulse-heartbeat).
-pulse.md
-pulse*
-_tester/
+# reposoma — flat, fully synced across hosts (majkee gavel 2026-09-02: "open whole reposoma to git sync").
+# Everything is tracked — research substrate, pulses, testers. Hygiene floor only (raw.guides/project-topology/flat.md).
 
-# Research report output — ephemeral by default (persist: ephemeral in scope README).
-# Canonical scopes negate their folder with !raw.research/<scope>/report/ in this file.
-raw.research/*/report/*
-!raw.research/*/report/.gitkeep
-!raw.research/agent-docs/report/
-!raw.research/nature/report/
+# secrets — never
+.env
+.env.*
+*.key
+*.pem
+*.credentials
 
-# Photo inboxes — binary assets, never committed. processed/ subfolder follows same rule.
-raw.research/*/photos/*
-!raw.research/*/photos/.gitkeep
-
-#another repo
-maintenance/gemini-line
-
-#raw substrate gemini issue
-raw.substrate/archive/pilot-mailswitch.parked-folder-shit-repaired
+# noise
+*.log
+*.bak
+*.bak-*
+*.tmp
+.DS_Store
+__pycache__/

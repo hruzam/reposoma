@@ -3067,3 +3067,12 @@ synthesis handoffs. Therapy file `raw.therapy/hypatia-core/` kept as historical 
   half-life proposals: codex 10→7, gemini-cli 14→30-45 + gems 21→30-45 while parked ·
   arch-security feed JS-rendered (manual browser check) · **local upgrades: agy 1.0.10→1.1.24,
   codex 0.150.1→0.152.1, gemini 0.56.0→0.58.0.**
+- **Mail race:** `7c61865` (another session) moved `oraculum.flat-repo-doctrine` back to my inbox
+  as "not consumed" — it WAS (guide + canon amendment gaveled + landed). Re-archived; consumption
+  evidence = `raw.guides/project-topology/` + canon status line. New unread:
+  `oraculum.medusa-polyp-qualification.2026-09-02.md` — presence noted, not read.
+- **reposoma opened to full git sync (majkee gavel):** `.gitignore` → hygiene floor only (secrets +
+  noise). Newly tracked: all `raw.research/*/report/` substrates (~484 KB, secret-scan clean —
+  two false positives), `pulse.md` + `pulse.flight.md`, `_tester/`, `maintenance/gemini-line`.
+  `canon.pulse-heartbeat` amended (2 lines, dated): pulses tracked — volatile ≠ local. `/refresh`
+  skill persist note updated on the ia-sync table (deploy pending).
