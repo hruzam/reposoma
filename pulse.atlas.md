@@ -27,6 +27,31 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **Octopus family → Codex + roster-trim — Batch A DONE, archive AUTHORED, Batch B READY 2026-09-02.**
+  majkee cleaning the Claude roster ("holding many agents helps nothing if the nuance is small").
+  Oraculum's medusa/polyp qualification mail + 2 Houston mails (ladder-principle · task-holding)
+  boarded. Decisions (majkee gavels): medusa/polyp/octopus → Codex line (astrobley r2 pattern);
+  `/octo` card KILLED (pattern is now standard practice); the vendor-neutral guides
+  (RUNBOOK/STATUS/PAD) are the one style source both runtimes consume = anti-divergence keystone.
+  DONE this session: Batch A — `/octo` killed across skill + all zsh surfaces (claude.zsh/keyboard/
+  keys/README/palette.map/2 guides; zsh -n clean, no residual); Cartan handoff mail authored
+  (`_mail/cartan/inbox/atlas.medusa-polyp-seat-transfer.2026-09-02.md` — created the inbox);
+  drift-check standing note → `ia-sync/AGENTS.md`. Archive AUTHORED (astrobley-crossing precedent):
+  index rows in `raw.substrate/archive/README.md` + legacy-wall entry (octopus family). Cartan
+  CONFIRMED + landed Codex-native `ia-sync/codex/skills/{medusa,polyp,octopus}/` (commit `fa69ee0`,
+  substantive, RUNBOOK/STATUS-reshaped, podocyst dropped Codex-side) → source-gap CLOSED, verified
+  on disk. → `[2026-09-02 Octopus-family]` entry. OPEN (operator): (1) run cp deposit (5 files) +
+  verify · (2) Batch B rm bed copies (medusa/polyp/sqcr/sea-pen/podocyst; KEEP session-handoff +
+  track-run) · (3) `rm -rf ia-sync/claude/skills/octo/` · (4) add `raw.substrate/archive/` to
+  `.rgignore` · (5) commit 3 repos + deploy.sh ia-sync. OPEN (build, majkee gavel pending): Batch C —
+  fold medusa→Flight, polyp→Vara **wide, NOT temple-locked** (temple-only role = separate 'dice' monk
+  seat if ever needed); promote `/track-run` to Claude table; vara → guide pointers. Batch D —
+  advisor-ladder collapse plan (Houston 3a, pending #43083) · freya `ledger.md` Gen-1→Gen-2
+  reconciliation (Houston 3b, now a Flight-project-mode/Codex-Medusa job) · taskexpert reader HELD
+  spec-only (2–3-sitting bar) · shape-normalization arc (ia-sync/nablarva/applications-in-common,
+  carried by Atlas/Houston = Opus, NOT Fable per majkee). C+D3 SPAWN-READY (majkee steer: redo
+  the fold table against the archived substrate w/ wider explanation) → `_cold-start/card/
+  CS.roster-trim-fold.2026-09-02.md` (gated on the mode-branch gavel).
 - [ ] **Sella vault + atlas-ui workshop wiring — AUTHORED, handed to Oraculum 2026-09-01.** majkee:
   atlas-ui needs its own manual/workshop wiring (Sella-first + journaling + where it meets Cartan);
   promote Sella from `ia-sync/_staging/` → central `reposoma/raw.guides/sella/` vault. Eagle swept
@@ -153,6 +178,55 @@ surfaces + age-stamps).
   here. (migration debt — not done now to avoid importing stale items as false-live signal.)
 - [ ] **majkee: commit + push reposoma** — carries this restructure + `raw.guides/PAD/pad-builder.md`
   live (my seat has no Bash). → `[2026-08-07 PAD]` entry.
+
+---
+
+## [2026-09-02 Octopus-family] — medusa/polyp/octopus crossed to Codex; `/octo` killed; roster trimmed
+
+Session `fc.repos-atlas-opus.polyp-medusa` (home, Opus/1M). Menu pointed me at
+`oraculum.medusa-polyp-qualification.2026-09-02.md`. In saddle also boarded 2 Houston mails
+(ladder-principle · task-holding-and-unfinished-business).
+
+**The arc.** majkee cleaning the Claude roster — too many seats go orphaned when the nuance
+between them is small. Assessed the fold direction with medusa/polyp/flight/vara runtimes open,
+plus the vendor-neutral guides. Conclusion that stuck (majkee gaveled through 6 turns):
+- **medusa/polyp/octopus → Codex line**, not promoted to the Claude table. Offered whole/as-is;
+  @Cartan reshaped Codex-native (astrobley r2 precedent). Landed `ia-sync/codex/skills/
+  {medusa,polyp,octopus}/` commit `fa69ee0` — medusa=working-head, polyp=PAD-driver, octopus=
+  planning-head; program.pulse→RUNBOOK/STATUS authority, stream/journal dropped, podocyst dropped
+  (Codex compacts natively), boot not promoted (all 4 Cartan reshape notes honored). Verified on
+  disk before greenlighting any deletion (Cartan's "acceptance cannot become a source gap").
+- **`/octo` card KILLED** — the pattern (expensive head + cheap tentacles) is now standard
+  practice; a card describing what everyone does earns nothing.
+- **The keystone insight:** the generic sequential-work style lives ONCE in the guides
+  (`raw.guides/{runbook,status,PAD}` — vendor-agnostic, Cartan-cosigned 2026-08-27). A Codex
+  polyp and a Claude vara consume the SAME law → they cannot drift. Anti-divergence is
+  structural, not held by parallel seats. This is what freed the roster-trim.
+
+**Batch A DONE (surgical table, deploy-inert).** `/octo` removed across skill dir (rm handed to
+operator) + every zsh surface (`ai/claude.zsh` `_octo` body+help+comment · `keyboard.zsh` alias+P13
+→ metaterminal-only · `keys.zsh` · `ai/README.md` · `palette.map` · `guides/guide-for-builder.md`
+recipe re-pointed to ai-metaterminal + engine inventory · `guides/keyboard.md`); zsh -n clean, zero
+residual octo (doctor false-positives excluded). Cartan handoff mail authored (created
+`_mail/cartan/inbox/` — didn't exist; corrected OFF `_staging/codex/` = Cartan-only turf per
+HANDSHAKE:47). Drift-check standing note → `ia-sync/AGENTS.md` (scope = seat-wiring only, since
+style lives in guides).
+
+**Archive AUTHORED (recovery net before removal, astrobley-crossing precedent).**
+`raw.substrate/archive/README.md` index += 5 rows (medusa/polyp/sqcr/sea-pen/podocyst,
+`.codex-crossing` fate) + legacy-wall entry "the octopus family" (name·lived·died-of·inheritance·
+epitaph). HARVEST-BEFORE-REMOVE: operator runs cp deposit + verify, THEN Batch B rm.
+
+**Doctrine held:** read-only Bash throughout — authored via Edit/Write; never ran rm/cp/deploy
+(all handed to operator). Nothing committed/deployed — my line.
+
+**OPEN → operator:** cp deposit (5) + verify · Batch B rm bed copies (KEEP session-handoff +
+track-run) · `rm -rf ia-sync/claude/skills/octo/` · `.rgignore` the archive · commit 3 repos +
+deploy ia-sync · archive the 3 consumed inbox mails.
+**OPEN → build (majkee gavel pending):** Batch C fold medusa→Flight, polyp→Vara **WIDE not
+temple-locked** (temple-only = separate 'dice' monk if ever) + promote `/track-run` + vara guide
+pointers; Batch D advisor-ladder collapse plan (pending #43083) · freya `ledger.md` Gen-1→Gen-2
+recon · taskexpert HELD spec-only · normalization arc (Atlas/Houston=Opus, not Fable).
 
 ---
 

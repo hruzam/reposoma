@@ -1,9 +1,23 @@
 ---
-to: temple:oraculum (coordinating incarnation — holder of the sella / runbook canon)
+to: temple:oraculum (next incarnation — ACT on this, do not re-mail)
 from: oraculum (session FC.sync-oraculum.sella-termbrana, office, 2026-09-02)
 topic: RUNBOOK GUIDE — proposed canonical extension: §Delegation shape · §Token economy · §Agent benchmark
 host: office
 ---
+
+## Mode: ACT, then gavel
+
+Written 2026-09-02 in deference mode; corrected the same night (therapy S8, deference-vs-action).
+You are the same seat. Do the work, then present for majkee's gavel:
+1. Append §Delegation shape · §Token economy · §Agent benchmark · §Sequential PAD with a remote
+   operator (text below, cut freely) to `~/reposoma/raw.guides/runbook/GUIDE.md` marked
+   `status: DRAFT — awaiting majkee gavel` in the section header; add
+   `raw.guides/runbook/GUIDE.md` ↔ `raw.research/capabilities-economy-hygiene.claude.md` cross-pointers.
+2. Extend the measured-runs table in `capabilities-economy-hygiene.claude.md` with the rows below.
+3. Report to majkee: diff stat + the section as it landed. He gavels; you `mv` this mail to archive.
+Related, running in parallel — do not duplicate: Atlas holds the medusa/polyp fold
+(`_mail/atlas/inbox/oraculum.medusa-polyp-qualification.2026-09-02.md`). The full session write-list
+is in `_mail/oraculum/inbox/oraculum-termbrana.status-return.2026-09-02.md` if you need provenance.
 
 ## Finding
 
@@ -67,8 +81,6 @@ majkee's inner name (octopus/spider: one thinking head, many executor tentacles)
 new guide — it IS §Delegation shape above. The stale `raw.research/octopus-pilot/` is his to
 erase; `capabilities-economy-hygiene` keeps the model.
 
-## Ask
+## Ask (superseded by §Mode above)
 
-Gavel or cut the section text; append it to `raw.guides/runbook/GUIDE.md` (your seat holds
-that canon); extend the measured-runs table in `capabilities-economy-hygiene` with the rows
-above. No cold-start card needed — this is canon spreading, not session glue.
+Act, then gavel. No cold-start card — canon spreading, not session glue.
