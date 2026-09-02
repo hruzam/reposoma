@@ -5,8 +5,9 @@
 `the consuming project's own rules; this guide owns the SHAPE. Never name a specific driver`
 `agent here — say "the driver".`
 `companions: raw.guides/runbook/GUIDE.md (the session) · raw.guides/status/GUIDE.md (the`
-`position) · raw.guides/bus/GUIDE.md (multi-seat exchange). Destination law revised`
-`2026-08-27 with the session file set (stream/journal retired).`
+`position) · raw.guides/bus/GUIDE.md (multi-seat exchange) · raw.guides/gloss/GUIDE.md (the why`
+`beside the PAD). Destination law revised 2026-08-27 with the session file set (stream/journal`
+`retired).`
 
 ## What a PAD is
 
@@ -48,6 +49,8 @@ driver reads before step 0, every sitting. The general laws worth carrying:
 - When an error appears, celebrate it: a traceback names the exact line. Read it bottom-up.
 - Confirm before any edit that touches more than one thing.
 - Off-pad questions → answer briefly, then return to the step; park big ones at the bottom.
+- Offer a GLOSS (raw.guides/gloss/GUIDE.md) at least when asked; if not asked, ask once whether
+  the operator wants one. Explanations never go into the PAD.
 
 **3 — Shared constant.** Declare the path/file/session used verbatim in every command, ONCE,
 at the top — so no step re-derives it and every command stays copy-pasteable.

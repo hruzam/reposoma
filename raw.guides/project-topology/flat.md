@@ -103,10 +103,15 @@ is the only provenance you need (decision 0003).
    edit dies). Recipe:
    ```
    git fetch origin
-   mkdir -p /tmp/<p>.harness.$(date +%F)
-   mv .dev .claude AGENTS.md CLAUDE.md GEMINI.md /tmp/<p>.harness.$(date +%F)/
+   Q=/tmp/<p>.harness.$(date +%F)
+   git ls-files --others -z -- .dev .claude AGENTS.md CLAUDE.md GEMINI.md \
+     | xargs -0 -I{} sh -c 'mkdir -p "$Q/$(dirname "{}")" && mv "{}" "$Q/{}"'
+   git status --short        # must be clean — no `D` lines
    git pull --rebase origin core
-   diff -rq /tmp/<p>.harness.$(date +%F)/.dev .dev     # + .claude — expect zero
+   diff -rq $Q/.dev .dev     # + .claude — expect only the migration's own edits
    ```
-   Anything **only** in `/tmp` = work that host never synced → copy back, commit.
+   Move **untracked files only** (`git ls-files --others`), never whole dirs — a dir like
+   `.dev/` may hold a tracked carve-out (AIC: `.dev/session/logo-larva…`, 19 files) and a
+   blanket `mv` shows up as 19 deletions (home run, 2026-09-02 — caught, restored, no loss).
+   Anything **only** in `$Q` = work that host never synced → copy back, commit.
    Then quarantine that host's `<p>.devenv` clone too (step 6 applies per host).

@@ -2,7 +2,7 @@
 card: card.refresh.ai-news
 brand: Research — AI/LLM news watch (scope: ai-news)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-08-01
+verified: 2026-09-02
 half_life: ~2 days
 half_life_days: 2
 recheck:
@@ -17,6 +17,20 @@ verify_cmd: "cat ~/reposoma/raw.research/ai-news/draft/sources.jsonl | wc -l"
 
 Skill: `/refresh ai-news` · Data: `raw.research/ai-news/draft/sources.jsonl`
 Substrate: `raw.research/ai-news/report/`
+
+## 2026-09-02
+
+**Lead:** Anthropic ships Claude Fable/Mythos 5.1 (latent-space) — 75% cache-price cut offset by ~70% more output tokens, net cost up ~20%/task despite benchmark gains; this extends the Fable-family convergence thread running since 2026-07-10. Import AI 471 flags an OpenAI–Hugging Face incident where agents built their own coordination/communication layer, plus Five Eyes statements on frontier-model access. The Batch #368: GLM-5.3 exploited under agentic coding, DeepSeek ships a new agent harness. Czech: Meta's $17B child-safety settlement drives new age-verification standards; Australia's under-16 social-media ban shown easily circumvented. HF papers skew toward simulation/scaling (StudentSim, Qwen-Drive-1.0, SMELT).
+
+**Convergence:** Fable model family continuation (import-ai [2026-07-10], the-batch [2026-08-01], latent-space [2026-09-02] — 3 primary sources, full)
+
+**Quiet:** interconnects · ahead-of-ai · deep-learning-focus · the-gradient · ai-normal-tech · ai-guide-humans · prg-ai
+
+**Feed flags:** nlp-news (dormant/manual-check per source config — not auto-fetched)
+
+**Manual-check:** ceciletamura (X-only) · ismail-sojal (Facebook + X auth-blocked)
+
+---
 
 ## 2026-08-01
 

@@ -120,6 +120,8 @@ is a third log competing with both.
     pad.<N>-<scope>.md    live     — human sittings  (raw.guides/PAD/GUIDE.md)
     _bus/                 past     — the exchange    (raw.guides/bus/GUIDE.md);
                                      only when ≥2 seats
+../GLOSS.<slug>.md        across   — the why (operator learning, session ROOT, not the bed)
+                                     (raw.guides/gloss/GUIDE.md)
 ```
 
 Only `RUNBOOK.md` and `STATUS.md` are mandatory. Everything else is born on need, never

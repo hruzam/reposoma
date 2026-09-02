@@ -3042,3 +3042,10 @@ synthesis handoffs. Therapy file `raw.therapy/hypatia-core/` kept as historical 
   (guide + canon + beacon — writer rule 5, same session).
 - **Inbox:** oraculum.flat-repo-doctrine → archived (processed). Still unread:
   `oraculum.metaterminal-seat.2026-08-25` + 5× toAll stale-settings-cards pings.
+- **[later same day]** Home host pulled via @Trajectory over tailnet: fast-forward `cc1088a..0e74002`,
+  133 files; quarantine diff = only the migration's own edits, nothing home-only; home devenv clone →
+  `/tmp/applications-in-common.devenv.2026-09-02`; GitHub twin already deleted (operator). Recipe flaw
+  found + fixed in `flat.md §8`: move untracked files only (`git ls-files --others`), not whole dirs.
+  Flag for majkee: home has untracked, un-ignored `.agents/` + `.codex/` (Aug 26) beside the project.
+- **`ai-metaterminal` alias** — was specified in the 08-25 request, never wired. Added on the table
+  (`~/ia-sync/zsh/ai/{claude,keyboard,keys}.zsh`, P13, args pass through). `zsh -n` ok; deploy pending.
