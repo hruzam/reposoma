@@ -23,6 +23,11 @@ from the temple until its original rests here.
 | `2026-07-31.codex-coder.pre-astrobley.md` | `~/.claude/agents/codex-coder.md` (via ia-sync table) | renamed → @Astrobley (seat inherits Margaret Hamilton heritage) |
 | `2026-07-31.codex-crosscheck.pre-vega.md` | `~/.claude/agents/codex-crosscheck.md` (via ia-sync table) | renamed → @Vega (seat inherits calibration-star heritage, decision 0005 A1) |
 | `2026-07-31.gemini-cross-check.retired.md` | `reposoma/.claude/agents/gemini-cross-check.md` | RETIRED — BlueBottle claude-wiring 1984'd (Sonnet 1M killed the Gemini context edge; @Field succeeds the role) |
+| `2026-09-02.medusa.codex-crossing.md` | `applications-in-common/.claude/agents/medusa.md` | CROSSED to the Codex line → `ia-sync/codex/skills/medusa/` (working-head skill, Cartan-reshaped, commit `fa69ee0`). Claude muscle folds into @Flight |
+| `2026-09-02.polyp.codex-crossing.md` | `applications-in-common/.claude/agents/polyp.md` | CROSSED to the Codex line → `ia-sync/codex/skills/polyp/` (PAD-driver skill). Claude muscle folds into @Vara |
+| `2026-09-02.sqcr.SKILL.codex-crossing.md` | `applications-in-common/.claude/skills/sqcr/SKILL.md` | followed @Polyp to Codex (pad runtime) |
+| `2026-09-02.sea-pen.SKILL.codex-crossing.md` | `applications-in-common/.claude/skills/sea-pen/SKILL.md` | followed @Polyp to Codex (verdict report seat) |
+| `2026-09-02.podocyst.SKILL.codex-crossing.md` | `applications-in-common/.claude/skills/podocyst/SKILL.md` | followed @Polyp to Codex (session buffer — dropped Codex-side: Codex compacts natively, per Cartan) |
 
 Pending deposit (kraken `git mv`, needs Bash): `raw.settings/agents-staging/{astrobley,vega}.md`
 + `agy/{astrobley,vega}.SKILL.md` (frozen Gemini drafts — heritage source for the vignettes).

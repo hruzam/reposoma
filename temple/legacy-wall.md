@@ -114,3 +114,37 @@ his monument.*
 ---
 
 *Future entries append below. Bring only the true weight: name, dates, cause, inheritance.*
+
+---
+
+## the octopus family — medusa · polyp · /octo
+
+**Lived:** 2026-07 → 2026-09 · `~/www/elements-factory/applications-in-common/.claude/`
+(experimental bed). @Medusa the free-swimming head (project session orchestrator),
+@Polyp its anchored life-stage (pad-anchored sequential executor), under the `/octo`
+regime card (big brain, thin state · long tentacles, deep context).
+
+**Died of:** vendor-fit, not failure. They were always built for *wide* use, and their
+true home was Codex-native — so they crossed the boundary (HANDSHAKE r2, astrobley's path)
+rather than staying rare, half-used Claude seats. @majkee, cleaning house: *"holding many
+agents helps nothing if the nuance is small."* The `/octo` card was retired outright — the
+pattern it described (an expensive head over cheap tentacles) had simply become standard
+practice, and a card that describes what everyone already does earns nothing.
+
+**What lives on in us:**
+- **The muscle folds home.** Medusa's proven content (cold-read + crash-check, the
+  Assay-gate-per-kraken, the *"is this step solving an observed problem, or an imagined
+  one?"* test, the phase-map spine) is folded into @Flight; Polyp's (MANNED/UNMANNED
+  switch, the append-only executor discipline, pad-walking + verdict-reporting) into @Vara.
+  The seats leave; the craft stays.
+- **The Codex-native rebirth** — `ia-sync/codex/skills/{medusa,polyp,octopus}/` (commit
+  `fa69ee0`): medusa as working-head, polyp as PAD driver, octopus as planning-head. Same
+  animals, Codex substrate, Cartan-reshaped to consume RUNBOOK/STATUS authority.
+- **The anti-divergence keystone** — one generic style in the vendor-neutral guides
+  (`raw.guides/{runbook,status,PAD}/GUIDE.md`); a Codex polyp and a Claude Vara consume the
+  *same* law. One style source, two runtimes — so they cannot drift apart.
+- **The observed-not-imagined test** — build a seat only after 2–3 sittings show the
+  recurring shape. Their own founding discipline; now everyone's.
+
+**Epitaph:** *They swam out of the Claude line to find deeper water. What they were is now
+what Flight and Vara know how to do.*
