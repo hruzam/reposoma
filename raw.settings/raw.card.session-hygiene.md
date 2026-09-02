@@ -2,13 +2,13 @@
 card: card.session-hygiene
 brand: Cross-tool — Claude Code CLI · Cursor IDE · Gemini CLI (session hygiene + token distro)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-08-01
-half_life: ~3-4 weeks (Gemini subagents in preview; Cursor mechanics underdocumented; numbers shift on each release)
+verified: 2026-09-02
+half_life: ~3-4 weeks (Claude Code ships ~daily; Cursor mechanics underdocumented; numbers shift on each release)
 half_life_days: 28
 recheck:
   - https://code.claude.com/docs/en/sub-agents          # Claude Code — subagent isolation mechanics
   - https://code.claude.com/docs/en/context-window      # Claude Code — context window visualization
-  - https://geminicli.com/docs/core/subagents/          # Gemini CLI — subagent docs (preview API)
+  - https://geminicli.com/docs/core/subagents/          # Gemini CLI — subagent docs (standard since 2026-08; enterprise track only — individuals moved to agy)
   - https://github.com/google-gemini/gemini-cli/issues/8609  # known model-switch crash bug
   - https://cursor.com/changelog                         # Cursor — most opaque; changelog is primary signal
 # companion cards: card.claude-code · card.cursor-ide · card.gemini-cli
@@ -20,6 +20,8 @@ recheck:
 ## Research origin
 
 **Session:** @Epoch, 2026-07-02. All sources live-fetched; no training-data recall.
+
+**Refresh:** @Epoch substrate + @Atlas hand re-synthesis, 2026-09-02 (structured-card exception) — `/refresh session-hygiene` snapshot, 6/6 sources live. Deltas: Remote Control is **GA on all plans** (preview language gone); RC timeout **scoped to server mode** (interactive mode retries indefinitely); NEW Trusted Devices (beta, Team/Enterprise); NEW subagent model-resolution order (v2.1.251+); Cursor Cloud Agents subagent isolation (2026-08-19, different surface — coverage gap, not contradiction); Gemini subagents + #8609 hold. Substrate: `raw.research/session-hygiene/report/raw.session-hygiene.2026-09-02.md`.
 
 **Refresh:** @Epoch, 2026-08-01 — re-fetched doc/issue sources via `/refresh session-hygiene` (snapshot). Deltas this pass: Gemini CLI subagents no longer flagged PREVIEW (now standard; `.gemini/agents/*.md`; recursion guard intact); GitHub bug #8609 now CLOSED (was open); Cursor changelog (Jul 2026) shows no context-mechanics change — new "Cursor Router" routes per request by task type/complexity. Built-in Explore/Plan model defaults NOT re-confirmed this pass. Quantified metrics (CheesecakeLabs / MindStudio / InfoQ / MorphLLM) carried unchanged (one-off studies). Substrate: `raw.research/session-hygiene/report/raw.session-hygiene.2026-08-01.md`.
 
@@ -48,6 +50,8 @@ quantified findings, comparative isolation table, and canon mapping.
 - **GitHub bug #8609 (CLOSED 2026-08-01):** Gemini CLI long session → auto model-switch → crash; `/compress` recovery also failed → session unrecoverable. Marked p2, now Closed (fix release not stated). Re-test long unattended sessions before relying on them.
 - **Cursor context mechanics** are not fully published. The <50% effective window and 80% vs 12% numbers are practitioner-measured, not Cursor-official.
 - **Claude Code Plan subagent isolation** is GA and documented (code.claude.com); the 7× multi-agent multiplier is from MindStudio enterprise analysis (not Anthropic-official).
+- **Subagent model resolution order (v2.1.251+, 2026-09-02, H):** per-invocation `model` → subagent frontmatter `model` → `CLAUDE_CODE_SUBAGENT_MODEL` env → main-conversation model. Env var no longer outranks frontmatter. `CLAUDE_CODE_SUBAGENT_MODEL_FORCE=1` (v2.1.257) is the hard override. Explore stays "inherits main model, capped at Opus" (v2.1.198, confirmed).
+- **Cursor Cloud Agents (2026-08-19, M):** subagents run in an isolated project copy with clean context in their own cloud env (+ `/goal`, Custom Modes, mid-run steering). Different surface from the local-IDE mechanics in §Cursor below — not yet covered by this card.
 
 ---
 
@@ -172,7 +176,7 @@ The durable MD file is the continuity mechanism; the fresh session is the cost-r
 | Cursor — within one session | Accumulates per turn | — | Degrades past ~50 turns |
 | Cursor — after mode switch | Fresh (mode resets) | — | Continuity lost at reset |
 | Gemini CLI — no subagents | Accumulates per turn | — | Highest crash risk at scale |
-| Gemini CLI — subagents (preview) | Isolated per subagent | Return summary | Mirrors Claude Code clean pattern |
+| Gemini CLI — subagents (standard) | Isolated per subagent | Return summary | Mirrors Claude Code clean pattern |
 | Gemini CLI — shell-spawned | Per-spawn fresh | Explodes per spawn | Expensive/call, clean across |
 
 ---
@@ -225,16 +229,17 @@ gates are load-bearing — not just procedural discipline.
 
 ## Remote session restore — SSH/tmux persistence + Remote Control resume
 
-**Verified 2026-08-01 (@Epoch). This section only; rest of card still dated 2026-07-02.**
+**Verified 2026-09-02 (@Epoch substrate · @Atlas hand re-synthesis); first verified 2026-08-01.**
 
 Fills the gap these cards assumed away: recovering a Claude Code session running on a *remote* box when the SSH client drops/freezes.
 
-- **Remote Control** (shipped 2026-02-25, preview; Pro/Max/Team/Enterprise, no API keys) is a sync layer, not cloud compute. The `claude` process stays on your machine (outbound HTTPS only, no inbound ports); claude.ai/code + mobile are a window into it. A session that stays green on the phone after your terminal dies = the host process is still alive and RC-connected.
+- **Remote Control** (shipped 2026-02-25; **GA on all plans as of 2026-09-02** — Team/Enterprise behind an Owner-enabled toggle; no API keys) is a sync layer, not cloud compute. The `claude` process stays on your machine (outbound HTTPS only, no inbound ports); claude.ai/code + mobile are a window into it. A session that stays green on the phone after your terminal dies = the host process is still alive and RC-connected.
 - **Recover the terminal:**
   - Launched inside `tmux`/`screen` → SSH back, `tmux attach` (or `tmux attach -t <name>`). Clean path.
   - Launched directly in the SSH shell → cannot re-grab the dead PTY. From the same project dir in a fresh shell: `claude -c` (`--continue`) or `claude --resume` — reconnects to the RC session recorded in that conversation (transcript is server-side). Server-mode variant: `claude remote-control -c` (v2.1.200+).
 - **`! claude --resume`** with a leading `!` is the run-shell-from-inside-a-session form — NOT the recovery path. Restore from a plain shell.
-- **Clocks:** host offline >~10 min → RC times out, process exits (restart + resume). No multiplexer → remote `sshd` can SIGHUP `claude` once keepalive declares the frozen client dead, so reconnect promptly or hold from phone. Ultraplan disconnects active RC.
+- **Clocks (split, 2026-09-02):** *server mode* (`claude remote-control`) — host offline >~10 min → gives up, process exits (restart + resume). *Interactive mode* (`claude --remote-control`) — retries indefinitely and self-reconnects when the network returns. No multiplexer → remote `sshd` can SIGHUP `claude` once keepalive declares the frozen client dead, so reconnect promptly or hold from phone. Ultraplan disconnects active RC.
+- **Trusted Devices** (beta, Team/Enterprise only, off by default): RC viewing/steering bound to an enrolled device + sign-in ≤18 h old with biometric step-up. Orthogonal to recovery; matters only if the org toggles it on.
 - **Prevent it:** `tmux new -s work` → then `claude` inside it. Official: "To keep a session running on a remote machine after you disconnect from SSH, start it inside tmux or screen."
 
 **Full guide (dated, sourced):** `raw.research/harness/reports/2026-08-01-remote-control-tmux-ssh-persistence.md`

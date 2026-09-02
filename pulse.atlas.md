@@ -3049,3 +3049,21 @@ synthesis handoffs. Therapy file `raw.therapy/hypatia-core/` kept as historical 
   Flag for majkee: home has untracked, un-ignored `.agents/` + `.codex/` (Aug 26) beside the project.
 - **`ai-metaterminal` alias** — was specified in the 08-25 request, never wired. Added on the table
   (`~/ia-sync/zsh/ai/{claude,keyboard,keys}.zsh`, P13, args pass through). `zsh -n` ok; deploy pending.
+- **Stale-cards pass (majkee: "orchestrate epoch") — 17 rows triaged, 13 cards refreshed via 10
+  parallel @Epoch runs.** Vendor: claude-code (v2.1.258 = local; cadence ~daily → half_life 21→14;
+  fork-subagent default-on v2.1.232; Opus 5 / Fable 5.1 defaults) · claude-ai · cursor-ide ·
+  gemini-cli/models/gems (**individual track sunset 2026-06-18 → agy; enterprise track continues
+  v0.58.0**) · codex-cli (0.152.1 vs local 0.150.1; `model_floor` left as flagged conflict; proposes
+  half_life 10→7) · gty (**maintained, upstream 1.1.24 vs local 1.0.10; headless -p bug fixed ~1.1.18
+  — addendum workaround likely obsolete on upgrade**). Scopes via `/refresh` procedure: agent-docs ·
+  ai-news · arch · laravel · openrouter (Stripe acquiring OpenRouter, 08-19) · session-hygiene
+  substrate + **hand re-synthesis by me** (RC is GA; timeout scoped to server mode; +Trusted Devices,
+  +subagent model-resolution order, +Cursor Cloud Agents). All 13 frontmatters verified
+  (`verified: 2026-09-02`, both half-life fields). 7 cards got swept into majkee's `ced13b0` mid-run.
+  Inbox drained: 5 toAll pings + metaterminal mail archived.
+- **Tabled (not Epoch work):** eagle · reposoma self-report cards (`/project-regular-self-report`) ·
+  card.autonomous-orchestrator (internal, re-verify vs houston/capcom defs) · ai-news half_life 2d =
+  always stale without a cron rail · harness-check blank-brand rows (fall back to `card:`) ·
+  half-life proposals: codex 10→7, gemini-cli 14→30-45 + gems 21→30-45 while parked ·
+  arch-security feed JS-rendered (manual browser check) · **local upgrades: agy 1.0.10→1.1.24,
+  codex 0.150.1→0.152.1, gemini 0.56.0→0.58.0.**
