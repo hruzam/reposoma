@@ -238,8 +238,8 @@ in freya**, a Laravel devstudio that has no session-orchestrator seats.
 |---|---|---|---|
 | reposoma · core | `agents/delta-sql.toml` | **TRACKED** (committed `7dd6b02 home->office`) | **pulls to office** |
 | applications-in-common · core | `agents/{vara,medusa,polyp}.toml` + `hooks.json` | **TRACKED** (committed `8151641`, **already on origin/core**) | **already pushed** |
-| fantasyobchod · master | `agents/{delta-sql,medusa,polyp}.toml` + `hooks.json` | untracked (`??`) | local-only |
-| freya · majkee/pre-develop | `agents/{medusa,polyp}.toml` (+ `{assay,keystone,phonon,voyager}` Aug-21 = legit) | gitignored | local-only |
+| fantasyobchod · master | `agents/{medusa,polyp}.toml` + `hooks.json` (delta-sql = LEGIT, hold — SQL project) | untracked, **NOT ignored** | local-only unless `git add` |
+| freya · majkee/pre-develop | `agents/{medusa,polyp}.toml` (+ `{assay,keystone,phonon,voyager}` Aug-21 = legit) | ignored via `.git/info/exclude` | local-only |
 
 **Cartan's space is CLEAN.** `ia-sync/codex/agents/` mtimes are Aug-24 (architect·challenger·
 harness_builder·implementer·researcher·verifier) + Sep-2 (astrobley) — the Aug-26 app fingerprint
@@ -262,11 +262,24 @@ The app reached only into *project working trees*, not the authored surgical tab
 2. RECONCILE not purge: `applications-in-common/.codex/agents/vara.toml` vs `.claude/agents/vara.md`
    — pilot bed, majkee decides which form survives.
 3. ROOT-CAUSE FIX (stops recurrence + propagation): add `.codex/` to `.gitignore` in **reposoma**
-   and **applications-in-common** — the two that TRACK it. freya + fantasyobchod already ignore
-   `.codex/` (that is why their copies stayed local). This severs the app's silent writes from git.
+   and **applications-in-common** — the two that TRACK it. freya already ignores via
+   `.git/info/exclude`; **fantasyobchod does NOT ignore — merely untracked** (a `git add` would
+   pull it in) → it also needs the ignore line. CAVEAT (Cartan): gitignore does NOT protect the
+   ALREADY-tracked files (appl-in-common vara.toml + hooks.json) from future app rewrites — those
+   need `git rm --cached` once majkee rules on them.
 4. URGENCY: reposoma's delta-sql + applications-in-common's set are already committed (the latter
    already on origin/core) — they WILL reach office on next pull. Clean before that pull, or office
    inherits the app's over-control.
+
+**CARTAN CROSS-VENDOR VERIFY (2026-09-04, tunnel thread, readOnly sandbox).** Independent audit of
+the inventory against live repos. Corrections folded above: (a) fantasyobchod NOT ignored, just
+untracked; (b) fantasyobchod `delta-sql.toml` is LEGIT (fa69ee0 superseded medusa/polyp/octopus only;
+delta-sql belongs in SQL projects) → HOLD, only reposoma's temple-root delta-sql is misplaced.
+Cartan emitted a paste-ready cleanup script (clean-tree guard · pull --rebase · git rm · gitignore ·
+commit · push for reposoma + appl-in-common; local `rm` only for fantasyobchod [no commit to master]
++ freya, with legit-seat survival asserts). Execution is write-side → operator or @Delta, NOT my seat.
+NOTE: my own pulse.atlas.md edit makes reposoma's tree dirty → the script's clean-tree guard will
+halt reposoma until this incident-log commit lands first.
 
 ---
 
