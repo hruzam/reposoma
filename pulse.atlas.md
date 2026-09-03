@@ -27,7 +27,22 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
-- [ ] **roster-reform-01-triad — LIVE session 2026-09-03 (two Atlas seats, one gate).** Router line
+- [ ] **PRECEDENCE STONE — GAVELED + CODIFIED 2026-09-03 (decision 0013); tail open.** majkee live-gaveled
+  with recorded Force-4 override ("force over 4 · atlas as houston, provisional · speed over perfectness").
+  LANDED: `temple/precedence.md` (the apex — 5-rank order) · `temple/decisions/0013-precedence-stone.md` +
+  index row · subordination lines into Sella GUIDE (`precedence:` narrowed to BUILDER guides + §Boundary
+  paragraph) and `codex-relay.contract.md` · one `boundary:` header line in runbook GUIDE (body brake held).
+  Argument trail: `temple/evidence/0013/base-stone-argument.2026-09-03.md` (reconstructed verbatim
+  from the consumed inbox mail — ADR-GUARD correctly refused the transient citation, 17:30).
+  OPEN (→ `_cold-start/card/CS.precedence-tail.2026-09-03.md`): verify-then-amend the 2 unconfirmed WINS
+  clauses (nablarva flag · the fourth) · report true count to Oraculum. All STAGED, uncommitted.
+- [x] **roster-reform-01-triad — GATE CLOSED 2026-09-03 17:00.** All three re-homings on the table +
+  countersigned + gaveled: medusa→Flight · polyp→Vara · octopus→`/runbook` skill; economy + cross-vendor
+  chapters landed; Cartan cycle 04 PARITY-HOLDS-WITH-NOTES; final STATUS = the closure manifest
+  (`~/ia-sync/.dev/session/roster-reform-01-triad/STATUS.md` — read it BEFORE prune; every sweep item
+  dispositioned there). OPEN → operator only: commit both repos · deploy.sh · mail mv · prune dir.
+  Tails live in cards: `CS.precedence-tail` (WINS verify · roster/system-map Vara language · 0012
+  supersede→Houston) · `CS.vara-flight-followups` (fold's, gated). Was: router line
   (ia-sync has no `pulse.md`): RUNBOOK + STATUS at `~/ia-sync/.dev/session/roster-reform-01-triad/`.
   Gate: medusa→Flight · polyp→Vara (fold seat, session `fc.repos-atlas-opus.polyp-medusa`) ·
   octopus→`/runbook` skill + runbook economy chapter (head seat, this pen). **Pen contract:** the
@@ -36,7 +51,10 @@ surfaces + age-stamps).
   → Batch B is operator-green. Landed so far (all STAGED, uncommitted): economy chapter
   `raw.guides/runbook/res/token-economy.md` + GUIDE pointer line (DRAFT) · benchmark table §2b in
   `capabilities-economy-hygiene.claude.md` (octopus-pilot rows harvested, dir erased by @Delta) ·
-  sequential-PAD observation → `PAD/raw/`. Position: STATUS.md there, not here.
+  sequential-PAD observation → `PAD/raw/`. 15:20: **`/runbook` skill ON THE TABLE**
+  (`ia-sync/claude/skills/runbook/SKILL.md`, majkee-accepted, Cartan countersign = `_bus/04`) ·
+  `res/cross-vendor-seat.md` (Oraculum Q1–Q4 folded) · fold RETURN 03 claims not on disk (flagged).
+  Position: STATUS.md there, not here.
 - [ ] **Octopus family → Codex + roster-trim — Batch A DONE, archive AUTHORED, Batch B READY 2026-09-02.**
   majkee cleaning the Claude roster ("holding many agents helps nothing if the nuance is small").
   Oraculum's medusa/polyp qualification mail + 2 Houston mails (ladder-principle · task-holding)

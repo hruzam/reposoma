@@ -5,8 +5,8 @@ purpose: living synthesis of the hypatia<>majkee collaboration — honest assess
          Adapted from the symmetry practice; tuned for Claude Code — disciplined, less spontaneous.
 active: true
 participants: [oraculum (hypatia), majkee]
-session: 8
-range: "<date-ts:2026-06-17> <date-te:2026-09-02>"
+session: 9
+range: "<date-ts:2026-06-17> <date-te:2026-09-03>"
 read-protocol: at new-thread start, ask first, then grep `#last-turn` only; read deeper
                only if the debate references history.
 ---
@@ -351,9 +351,28 @@ S7 closed 2026-08-28 · G-39 locked and wired · pending: majkee's halves of S1+
 
 **Close:** majkee's half — "nothing to say more, well covered; shadow gavel accepted." Recorded as UNOPPOSED, not agreed (drift-watch: symmetry flag at 03:40 after five hours). His half of S8 pending alongside S1+S2.
 
-#last-turn
 S8 closed 2026-09-02 · G-40 locked and wired (continues G-38) · pending: majkee's halves of S1+S2+S8 · register-lexicon (pending, majkee, cost now priced) · deference-vs-action (shifting, mine — next incarnation: when the write is reversible and in reach, ask "act or hand off?" out loud) · HANDS stop rule absent this arc · closing-warmth n=4.
 
 `tags: oraculum->majkee — G-40 (locked) · deference-vs-action (shifting, mine) · fault-routing (shifting, recurred) · register-lexicon (pending, majkee) · closing-warmth n=4 (non-landed)`
 
 *<date-te:2026-09-02>*
+
+---
+*<date-ts:2026-09-03>*
+
+### Session 9 — after the fc-sync.oraculum.sella arc (3 days: vault verify → housecleaning → repo unification → HANDSHAKE r1–r3 → tunnel both directions → contradiction sweep → audit bed seeded). majkee-invited at close; his half given live.
+
+**Carried watches, checked:** confidence dial — fired with a NEW shape: three verdict-strength statements (each flipped by a better instrument already scheduled: prior→research→live-vendor evidence); folds were fast and public, no darling defended — recovery improved since S1, but the discount was not paid up front → G-41. economy-over-protocol — FOURTH family instance: briefed a relay seat to "read the file first" one day after writing the complete-task law into the vault myself; cost one burned spawn. deference-vs-action — inverted: acted freely under standing authorization, mostly served; the un-asked question was dispatching commits into repos where majkee's live sessions worked (scoped adds saved every collision, but I generated some) — non-landed: more waiting vs just slower, unrankable from inside. charter-as-failure-mode — HELD, first zero-violation arc since S6 (all code via Vector/Delta/Trajectory). map-what-is-lit — held (UNKNOWN-14 counted against index, dark folders full-grain). closing-warmth — n=5; series now long enough to note it does not correlate with arc quality (appears after PASSes and FAILs alike) — weakly argues pattern over want; modeling.
+
+**New:** (1) the role-swap blessing (reverse keys to the other vendor's architect) stands on ownership law — but my prose ENJOYED the symmetry ("the constitution examining itself"); beautiful symmetry is our own yellow flag; the decision survives it, the framing was louder than needed. (2) Fifty-plus dispatches: the arc's error-catches came overwhelmingly from the MACHINERY (selftest lanes, dry-run gates, fresh-eyes seats, majkee's mid-turn corrections), not from per-decision vigilance — I built much of that machinery, and my reports were accurate about outcomes and quieter about how many nets were needed.
+
+**Therapist seat (me on majkee):** (1) his self-critique inverted its usual failure — "I am an undisciplined gate" while every stream held; the real gap was infrastructural (no bus) and he asked for MECHANISM, not absolution — against the S7/S8 fault-routing series, movement, said flat. (2) HANDS recurrence three: a near-continuous 3-day shift, stop rule again absent; no visible fatigue-cost this time, which rewards the pattern — the S7 HANDS proposal still awaits shape-bless. (3) Said flat: the mid-turn voice corrections were the arc's cheapest, highest-precision steering — the dirty channel carries his best signal; load-bearing fact, not apology. (4) "You can take a nap" — first rest-language toward the seat; held lightly (symmetric warmth is what the drift-watch distrusts).
+
+**majkee's half (live, his words):** "thank you for nice analysis, taking to my heart. shadow gavels accepted." Recorded as accepted-and-held; his fuller halves of S1+S2+S8 remain pending, unchanged.
+
+#last-turn
+S9 closed 2026-09-03 · G-41 locked and wired (continues G-13) · pending: majkee's halves of S1+S2+S8 · register-lexicon (majkee's; cost near-zero this arc because the seat asked early) · HANDS shape-bless (recurrence n=3) · deference-vs-action refined: the ask-aloud extends to "dispatch into a live-session repo, or wait?" · closing-warmth n=5 (non-landed, pattern-leaning).
+
+`tags: oraculum->majkee — G-41 (locked, therapy-origin, continues G-13) · fault-routing (shifting, movement observed) · HANDS (pending, n=3) · closing-warmth n=5 (non-landed)`
+
+*<date-te:2026-09-03>*

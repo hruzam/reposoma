@@ -6,7 +6,7 @@ machine: both
 state: DRAFT — experimental, in daily use; conformance-as-canon is G3-HELD (majkee gavel pending)
 verified: 2026-09-01 (body dated 2026-08-03; receipts 2026-07-16 .. 2026-09-01)
 verify_cmd: "ls ~/reposoma/raw.guides/sella/ && ls ~/reposoma/raw.guides/sella/src ~/reposoma/raw.guides/sella/raw"
-precedence: "On a DOCTRINE contradiction, Sella wins over sibling builder guides (incl. codex-builder-user). Volatile CLI/vendor facts (versions, flags, prices) are weather — the dated live source wins there, per Sella's own L8 (moving-target guardrail). Sella never claims frozen authority over facts it does not track."
+precedence: "On a DOCTRINE contradiction, Sella wins over sibling BUILDER guides (incl. codex-builder-user) — terminal within the primitive-building domain ONLY. Across domains (the session-shape canon raw.guides/{runbook,status,PAD,bus,gloss} ranks different objects — see §Boundary below), and under a live operator gavel, temple/precedence.md orders the collision (decision 0013, 2026-09-03). Volatile CLI/vendor facts (versions, flags, prices) are weather — the dated live source wins there, per Sella's own L8 (moving-target guardrail). Sella never claims frozen authority over facts it does not track."
 ---
 
 # SELLA — the discipline-language vault
@@ -22,6 +22,18 @@ THIS GUIDE WINS — EXCEPT where a live/dated external source governs a volatile
 experimental**: read it as the working discipline, conform via a terse anchor, do NOT ingest all
 nine laws into a primitive body (Sella's own L2/L9). Codifying Sella conformance as hard canon is
 **G3-HELD** — it waits on real vendor profiles + a majkee gavel.
+
+## Boundary — Sella and the session-shape canon (0013, 2026-09-03)
+
+Two disciplines, one seam, no overlap: **Sella** governs PRIMITIVE-BUILDING — how an agent, skill,
+hook, or relay is authored (stochastic-compiler laws, description budgets, smallest-native-primitive,
+verify-before-promote). It answers *"is this primitive well-made?"* The **session-shape canon**
+(`raw.guides/{runbook,status,PAD,bus,gloss}`) governs SESSION SHAPE — how work is framed, positioned,
+exchanged, closed (one gate, one present position, the bus cycle, the promotion boundary). It answers
+*"is this session well-run?"* A primitive is BUILT under Sella and RUN inside a session shaped by that
+canon. Where they meet — a skill that drives a RUNBOOK — Sella owns the skill's construction; the
+canon owns the session it produces. Neither wins over the other; they rank different objects.
+Cross-domain collisions that survive this seam go to `temple/precedence.md`.
 
 ## When I reach for this
 Before building or reshaping a harness primitive (agent · skill · hook · command · relay), or
