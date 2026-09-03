@@ -29,7 +29,7 @@ _The full manual behind the `/guide` skill's 3-line writer law. Gaveled by majke
 
 ```
 raw.guides/<slug>/GUIDE.md          ← the guide (fixed entry filename — the contract)
-raw.guides/<slug>/<chapter>.md      ← optional chapters (fine taxonomy slices)
+raw.guides/<slug>/res/<free-chapter-name-by-slug-theme>.md      ← optional chapters (fine taxonomy slices)
 ```
 
 - **One topic = one slug.** Slug names are topic-specific (`remote-control`,

@@ -14,7 +14,7 @@ precedence: "On a DOCTRINE contradiction, Sella wins over sibling BUILDER guides
 _The founding discipline for how the temple builds Claude Code primitives — agents as programs,
 skills as methods, the harness as OS, on the premise that the compiler is stochastic. This is the
 central home; it was promoted here from the `ia-sync/_staging/` buffer on 2026-09-01 (migration
-runbook: `res/RUNBOOK.migration.2026-09-01.md`)._
+runbook: `src/RUNBOOK.migration.2026-09-01.md`)._
 
 **One-authority clause.** On conflict between this GUIDE and any copy of a Sella claim elsewhere,
 THIS GUIDE WINS — EXCEPT where a live/dated external source governs a volatile fact (see the
