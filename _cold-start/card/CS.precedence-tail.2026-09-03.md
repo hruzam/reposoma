@@ -28,9 +28,9 @@ its tail-work list, not a competing next-action.
 
 ## The tail (in order)
 
-1. **Verify WINS clause 3 — nablarva flag "sole authority".** Locate the file (candidates:
-   `~/nablarva/flag.md` · under `~/unikuklatrix/nablarva/` · ask majkee — a blind `find ~` times
-   out). Read the clause. If real → append the uniform subordination line (0013 §2). If absent →
+1. **Verify WINS clause 3 — nablarva flag "sole authority".** File LOCATED (background find
+   completed post-close, 2026-09-03): `~/unikuklatrix/nablarva/.dev/session/flag.md`. Read the
+   clause there. If real → append the uniform subordination line (0013 §2). If absent →
    correct the sweep's count in a dated note to Oraculum.
 2. **Verify WINS clause 4 — "the fourth".** Sweep said four; confirmed only three kinds on disk.
    Check: the session-shape guide-wins line (runbook GUIDE / `/runbook` skill "the guide wins") ·

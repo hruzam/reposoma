@@ -5,6 +5,7 @@
 `companions: raw.guides/status/GUIDE.md (the position) · raw.guides/PAD/GUIDE.md (human sittings)`
 `· raw.guides/bus/GUIDE.md (multi-seat exchange)`
 `extends: res/token-economy.md (delegation shape · spend record) · res/cross-vendor-seat.md (instrument tuple · tunnel handle · enable layers) — both DRAFT, awaiting majkee gavel, 2026-09-03`
+`extends: res/research.md (big-scope research gate — nablarva) · res/csharp-head.md (cSharp head posture · transfer ritual) — both GAVELED by majkee 2026-09-03 (session fc-sync.oraculum.reverse-tunnel.cSharp)`
 `boundary: Sella governs primitive-BUILDING; this canon governs session SHAPE — different objects, neither wins; temple/precedence.md orders cross-domain collisions (0013, 2026-09-03)`
 `revised: 2026-08-27 after triangulated audit (Fable · Janus · @Cartan/Codex) — HANDOFF name`
 `retired before first use; STATUS.md carries the position. Authority model per majkee's gavel:`
@@ -49,6 +50,21 @@ checkout-03-shipment      gate: shipment methods pass acceptance
 **Test before opening a folder:** write the `gate:` line. If you cannot, the session is not
 delimited yet, and no amount of structure will fix that later.
 
+## The golden rule — before any build
+
+> **Reinventing the wheel? Isn't it already part of the harness by vendor, or a smart lifehack?**
+
+Binding on every mechanism a session proposes, and blind to domain — paid client work and
+personal projects follow the same law. Check the native surface first (`/help`, changelog,
+existing shims/skills/applications); build only the delta; name the future native change that
+would retire it.
+
+At small scale this rule is a check inside authoring — the first RUNBOOK of a toolbox applies it
+inline, and no research session exists for it. At BIG scale — a complex application, a large
+task-group, a standalone system — the rule becomes a gate of its own **before any RUNBOOK
+exists**: a research session in nablarva whose verdict is *worth reinventing, or not*. Wiring,
+bounds, and the three checks: `res/research.md`.
+
 ## One authority — the seam with pulse.md
 
 The project's `pulse.md` is a bounded **router**: active session slug, gate, and the exact
@@ -89,6 +105,9 @@ participant_2:   # …one per seat, in order. Include the human when a PAD needs
 ```
 
 No `state:` field — see above. No mutable field of any kind belongs in this file.
+
+A multi-session arc's head seat may carry a `head_note:` (the cSharp posture — authors the
+RUNBOOK and stays as navigator/status_owner): `res/csharp-head.md`.
 
 **`prompt-0`, `prompt-<N>`**
 
