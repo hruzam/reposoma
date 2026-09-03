@@ -27,6 +27,12 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **CODEX-APP FAN-OUT — mapped + logged 2026-09-03; cleanup write-side, OPEN.** Codex desktop app
+  silently re-managed project `.codex/` across 4 repos (uniform mtime `2026-08-26 23:01`); ia-sync/Cartan
+  space CLEAN. reposoma + applications-in-common TRACK the dirt (latter already on origin/core → pulls to
+  office). → `[2026-09-03 Codex-app fan-out]` entry for full scope map + disposition. OPEN (write-side, not
+  my seat): purge superseded medusa/polyp tomls + misplaced reposoma delta-sql · reconcile appl-in-common
+  vara.toml vs `.claude/agents/vara.md` · gitignore `.codex/` in the 2 tracking repos. Clean BEFORE office pull.
 - [ ] **PRECEDENCE STONE — GAVELED + CODIFIED 2026-09-03 (decision 0013); tail open.** majkee live-gaveled
   with recorded Force-4 override ("force over 4 · atlas as houston, provisional · speed over perfectness").
   LANDED: `temple/precedence.md` (the apex — 5-rank order) · `temple/decisions/0013-precedence-stone.md` +
@@ -211,6 +217,56 @@ surfaces + age-stamps).
   here. (migration debt — not done now to avoid importing stale items as false-live signal.)
 - [ ] **majkee: commit + push reposoma** — carries this restructure + `raw.guides/PAD/pad-builder.md`
   live (my seat has no Bash). → `[2026-08-07 PAD]` entry.
+
+---
+
+## [2026-09-03 Codex-app fan-out] — silent `.codex/` over-control across project working trees; ia-sync CLEAN
+
+**Trigger.** majkee recognised in another repo a "desktop Codex application move" that duplicated
+Claude agents into project TOMLs — silent over-control from the app — and asked me to check whether
+it reached HERE too, smooth the dirt, and leave a reconstruction-grade log. I hold READ-ONLY Bash:
+I mapped + logged; I did NOT delete. Cleanup is a write-side step (Codex buddy or operator).
+
+**Signature (the app's fingerprint).** A uniform mtime **`2026-08-26 23:01`** across four repos —
+one bulk write/re-serialise the Codex desktop app performed over every project `.codex/` it had
+indexed, regardless of whether the agent belongs to that project. The tell: **medusa/polyp landed
+in freya**, a Laravel devstudio that has no session-orchestrator seats.
+
+**Scope map (verified 2026-09-03):**
+
+| repo · branch | `.codex/` payload (Aug-26 23:01 unless noted) | tracked? | propagation |
+|---|---|---|---|
+| reposoma · core | `agents/delta-sql.toml` | **TRACKED** (committed `7dd6b02 home->office`) | **pulls to office** |
+| applications-in-common · core | `agents/{vara,medusa,polyp}.toml` + `hooks.json` | **TRACKED** (committed `8151641`, **already on origin/core**) | **already pushed** |
+| fantasyobchod · master | `agents/{delta-sql,medusa,polyp}.toml` + `hooks.json` | untracked (`??`) | local-only |
+| freya · majkee/pre-develop | `agents/{medusa,polyp}.toml` (+ `{assay,keystone,phonon,voyager}` Aug-21 = legit) | gitignored | local-only |
+
+**Cartan's space is CLEAN.** `ia-sync/codex/agents/` mtimes are Aug-24 (architect·challenger·
+harness_builder·implementer·researcher·verifier) + Sep-2 (astrobley) — the Aug-26 app fingerprint
+NEVER touched ia-sync. `_staging/` + `_staging/codex/` clean (jacquard.toml, Cartan observations).
+The app reached only into *project working trees*, not the authored surgical table.
+
+**Canonical truth the dirt is stale against.**
+- medusa/polyp/octopus **crossed to Codex as SKILLS** → `ia-sync/codex/skills/{medusa,polyp,octopus}/`
+  (Cartan-reshaped, commit `fa69ee0`, decision `[2026-09-02 Octopus-family]`). The scattered
+  `.codex/agents/{medusa,polyp}.toml` are the **superseded pre-crossing agent-form = orphan.**
+- vara **crossed back to Claude** → `.claude/agents/vara.md` (roster-reform-01-triad). The
+  `.codex/agents/vara.toml` is the old Codex form; applications-in-common IS its pilot bed, so this
+  one is a **majkee call**, not blind dirt.
+- delta-sql belongs to SQL projects (fantasyobchod), NOT the temple root — `reposoma/.codex/agents/
+  delta-sql.toml` is misplaced.
+
+**Disposition (for the Codex buddy / operator — write-side):**
+1. PURGE as superseded: every `.codex/agents/{medusa,polyp}.toml` (canonical home is
+   `ia-sync/codex/skills/`); `reposoma/.codex/agents/delta-sql.toml` (misplaced at temple root).
+2. RECONCILE not purge: `applications-in-common/.codex/agents/vara.toml` vs `.claude/agents/vara.md`
+   — pilot bed, majkee decides which form survives.
+3. ROOT-CAUSE FIX (stops recurrence + propagation): add `.codex/` to `.gitignore` in **reposoma**
+   and **applications-in-common** — the two that TRACK it. freya + fantasyobchod already ignore
+   `.codex/` (that is why their copies stayed local). This severs the app's silent writes from git.
+4. URGENCY: reposoma's delta-sql + applications-in-common's set are already committed (the latter
+   already on origin/core) — they WILL reach office on next pull. Clean before that pull, or office
+   inherits the app's over-control.
 
 ---
 
