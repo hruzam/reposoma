@@ -4,6 +4,7 @@
 `scope: STYLE + LAW only — vendor agnostic. Any brand authors and reads this shape.`
 `companions: raw.guides/status/GUIDE.md (the position) · raw.guides/PAD/GUIDE.md (human sittings)`
 `· raw.guides/bus/GUIDE.md (multi-seat exchange)`
+`extends: res/token-economy.md — delegation shape · what a session records about spend (DRAFT — awaiting majkee gavel, 2026-09-03)`
 `revised: 2026-08-27 after triangulated audit (Fable · Janus · @Cartan/Codex) — HANDOFF name`
 `retired before first use; STATUS.md carries the position. Authority model per majkee's gavel:`
 `two files are allowed, two authorities are not.`

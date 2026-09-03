@@ -42,6 +42,29 @@ Estimated split of the 20,829: boot tax `B` ≈ 8–12k (base prompt + harness +
 def), real work `E` ≈ 9–13k. On a light 3-file orientation task, **roughly half the
 spend was fixed tax.**
 
+### 2b. Measured runs — the accumulating benchmark table
+
+ONE table, temple-wide. Rows accumulate across sessions; a RUNBOOK cites a row, never
+re-argues it. Re-grading a task class is a dated one-line append. Schema:
+`date · session · agent · model · task class · n · first-pass-correct · avg tokens/spawn · notable failure mode`.
+(Extended 2026-09-03 per Oraculum's economy-extension mail; two rows harvested from the
+retired `raw.research/octopus-pilot/` before its erase.)
+
+| date | session | agent | model | task class | n | first-pass | avg tok | failure mode / note |
+|---|---|---|---|---|---|---|---|---|
+| 2026-07-16 | eagle POC | @Eagle | sonnet | 3-file orientation, read-only | 1 | n/a | 20.8k | S/E ≈ 0.034; ~half spend = boot tax |
+| 2026-07-16 | octopus-pilot T1 | @Delta | haiku | zsh launcher install from exact brief (3 files) | 1 | 1/1 | 21.7k | none; Assay-gated |
+| 2026-07-16 | octopus-pilot T1 | @Assay | sonnet | fresh-eyes gate on T1 | 1 | PASS | 18.7k | none |
+| 2026-09-02 | FC.sync-oraculum.sella-termbrana | @Delta | haiku | surgical edits / fence scribing from exact brief | 27 | 26/27 | 20.7k | the one miss = nested-fence artifact in the HEAD's brief, not Delta's |
+| 2026-09-02 | FC.sync-oraculum.sella-termbrana | @Vector | sonnet | multi-file edits needing local judgement | 5 | 5/5 | 56k | 1 honest scope-limit flag instead of overreach |
+| 2026-09-02 | FC.sync-oraculum.sella-termbrana | @Assay | sonnet | gate | 1 | PASS | 58k | 4 WARNs, all actionable |
+
+Pattern (termbrana, head = Fable over SSH): ≈33 spawns for one gate; every fence, fold, verdict
+and cleanup went through an executor; the head never used Edit. Head cost not measured —
+session-specific note: 9 photos ingested as an evidence route when CLI echo failed (a
+condition of that session, NOT a general "images are the largest cost" finding — file reads
+dominate in the general case, `raw.research/session-hygiene/`).
+
 ## 3. Conclusions
 
 1. **Boot tax floor ≈ ~10k tokens per Sonnet-tier spawn.** Empirical, from a

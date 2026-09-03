@@ -27,6 +27,16 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **roster-reform-01-triad — LIVE session 2026-09-03 (two Atlas seats, one gate).** Router line
+  (ia-sync has no `pulse.md`): RUNBOOK + STATUS at `~/ia-sync/.dev/session/roster-reform-01-triad/`.
+  Gate: medusa→Flight · polyp→Vara (fold seat, session `fc.repos-atlas-opus.polyp-medusa`) ·
+  octopus→`/runbook` skill + runbook economy chapter (head seat, this pen). **Pen contract:** the
+  head seat is the ONLY writer of this file while the session lives; the fold seat delivers its
+  ledger text via `_bus/01.fold.return.md`. Cartan hold RELEASED 2026-09-03 (his acceptance mail)
+  → Batch B is operator-green. Landed so far (all STAGED, uncommitted): economy chapter
+  `raw.guides/runbook/res/token-economy.md` + GUIDE pointer line (DRAFT) · benchmark table §2b in
+  `capabilities-economy-hygiene.claude.md` (octopus-pilot rows harvested, dir erased by @Delta) ·
+  sequential-PAD observation → `PAD/raw/`. Position: STATUS.md there, not here.
 - [ ] **Octopus family → Codex + roster-trim — Batch A DONE, archive AUTHORED, Batch B READY 2026-09-02.**
   majkee cleaning the Claude roster ("holding many agents helps nothing if the nuance is small").
   Oraculum's medusa/polyp qualification mail + 2 Houston mails (ladder-principle · task-holding)
