@@ -58,6 +58,15 @@ zsh ~/.config/zsh/ai/tunnel-codex.zsh <verb>` on every invocation (calling the s
 rather than the `tun` palette alias, which may not resolve non-interactively). `--state <path>`
 is the alternative; either way, never assume the env carries over.
 
+**9. Sandbox is a thread-birth property with three values — and `/tmp` is not an escape.**
+`tun open --sandbox {read-only|workspace-write|danger-full-access}`; default read-only (Law 2.4).
+The policy governs the codex process + all its children, so a script inherits it regardless of
+location — there is no `/tmp` side-door (a common misconception). Widening requires `tun close`
+→ new `open` (thread memory lost); and v0 bakes `approvalPolicy: "never"`, so a writable sandbox
+executes with no prompt — the only gate is the operator's `open`. Multi-repo fan-out (like this
+4-repo cleanup) would force `danger-full-access` — a poor fit; keep those gated via
+verify→execute. Folded into `res/user-run.md` §"Sandbox escalation".
+
 Bonus: the Codex side honored the shared rule surface — Cartan flagged the AGENTS.md + project
 instructions exceeding the 120-line home-box threshold. The CLAUDE.md-style rules reach the Codex line.
 

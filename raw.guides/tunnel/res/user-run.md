@@ -133,6 +133,38 @@ Two responses to a readOnly seat + a write task:
 
 *(field origin: `dev-journal.tunnel.md`, 2026-09-04)*
 
+## Sandbox escalation — when to widen, and why `/tmp` is not a door
+
+The three values on `tun open --sandbox …`: `read-only` (default, Law 2.4),
+`workspace-write` (writes within the thread's workspace root + tmp; other repos blocked),
+`danger-full-access` (no sandbox — full filesystem + network).
+
+**`/tmp` is not an escape.** The sandbox policy governs the codex process AND every child it
+spawns; a script inherits the policy regardless of where it lives. Under `read-only` the
+process cannot even write the script; under `workspace-write` a script writing to a repo
+outside the workspace root is still blocked. There is no side-door — widening the sandbox is
+the only supported path.
+
+**Two mechanics before you widen:**
+- **Sandbox is fixed at thread birth.** No verb re-sandboxes a live thread. To change it:
+  `tun close` (re-arms the gate) → `tun open --enable --sandbox workspace-write` → a NEW
+  thread. The prior thread's memory is gone; re-brief.
+- **`approvalPolicy: "never"` is baked into v0.** A writable sandbox therefore executes
+  autonomously with no approval prompt — the only gate is your initial `open`.
+
+**When escalation is clean:** routine multi-edit work inside ONE repo → open `workspace-write`
+launched at that repo's root. **When it is not:** work spanning several repos (it would force
+`danger-full-access` to cover them all), or anything where the surgical-table gate
+(author-on-table / operator-or-executor-deploys) should hold. For those, keep the tunnel
+`read-only` and use the seat as verifier + plan-author, handing the emitted script to a
+write-capable seat (see previous section) — gated execution plus free cross-vendor
+verification, a feature not a limitation.
+
+`danger-full-access` is a deliberate, rare choice — with `approvalPolicy: "never"` it is a
+large trust surface. Never a habit.
+
+*(field origin: `dev-journal.tunnel.md`, 2026-09-04 · re-verify the enum on any codex-cli upgrade, L8)*
+
 ## TUNNEL_CODEX_STATE — wiring options
 
 | Option | When to use |
