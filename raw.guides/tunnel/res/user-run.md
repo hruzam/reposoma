@@ -8,7 +8,8 @@ verified: 2026-09-04
 # user-run — bring-up, session reset, multi-vault patterns
 
 Operational patterns for running the tunnel day-to-day: getting it live on a new host,
-clearing a bloated session, and running independent Codex threads per project.
+clearing a bloated session, running independent Codex threads per project, surviving long
+turns, and checking the sandbox before handing a seat write-side work.
 
 ---
 
@@ -99,6 +100,38 @@ Deploy via `ia-sync` after editing. After this, `fo` (or whichever switcher) set
 the project environment and the Codex vault in one move.
 
 ---
+
+## Long turns — never kill the driver
+
+A turn is NOT a fire-and-forget submission. Killing the local driver process mid-turn
+**interrupts** the server turn (`status: "interrupted"`, `completedAt: null`, no
+`final_answer`) — it does not survive to complete on its own. The stored-thread memory
+protects CONTEXT across turns, not an in-flight turn whose driver died.
+
+- Any turn expected to run long (multi-repo audit, script generation, deep reasoning) →
+  **run it detached / in the background**, or raise the client timeout well past the
+  model's thinking budget. A foreground call with a short timeout is the classic trap.
+- If a driver died AFTER the turn actually completed, recover the result with `tun read`
+  (re-fetch, no turn spent). `read` also returns an interrupted turn's partial
+  `commentary` items — free forensics on what the seat had started.
+- To continue after an interrupt, a one-line nudge is enough — the thread still holds the
+  original brief plus any partial findings; do not re-paste the whole task.
+
+*(field origin: `dev-journal.tunnel.md`, 2026-09-04)*
+
+## Sandbox check before write-side dispatch
+
+`tun status` reports `sandbox: {type, networkAccess}`. **Read it before handing the thread
+write-side work.** A `readOnly` sandbox means the Codex seat can inspect the repo but cannot
+delete / edit / commit / push.
+
+Two responses to a readOnly seat + a write task:
+1. Reopen the table with a writable sandbox (operator config).
+2. **Preferred:** use the readOnly seat as verifier + plan-author — it emits an exact,
+   paste-ready script — and hand execution to a write-capable seat. This keeps execution
+   gated AND buys a decorrelated cross-vendor verification of the plan for free.
+
+*(field origin: `dev-journal.tunnel.md`, 2026-09-04)*
 
 ## TUNNEL_CODEX_STATE — wiring options
 
