@@ -1,0 +1,113 @@
+---
+chapter-of: tunnel
+title: user-run — bring-up, session reset, multi-vault patterns
+audience: operator
+verified: 2026-09-04
+---
+
+# user-run — bring-up, session reset, multi-vault patterns
+
+Operational patterns for running the tunnel day-to-day: getting it live on a new host,
+clearing a bloated session, and running independent Codex threads per project.
+
+---
+
+## Bring-up on a new host (or after any version change)
+
+L8 applies on any codex-cli upgrade **or downgrade** — selftest + one live turn, in order:
+
+```zsh
+# 1. Fixture proof — no quota; proves shim wiring, not the real protocol
+zsh ~/.config/zsh/ai/tunnel-codex.selftest.zsh
+# expect: 64/64 ... passed
+
+# 2. Live probe — if an existing thread state file is present
+export TUNNEL_CODEX_STATE=<your vault path>
+tun resume
+# exit 0 + status line  → thread reachable on this host; proceed to step 3
+# exit 30 (no rollout)  → thread was born on another host's ~/.codex; close + new thread
+
+# 3. Verified live turn (the actual L8 proof)
+tun ask "ping"
+# exit 0 + reply        → protocol compatible on this version; tunnel is live
+# exit 40 (turn-error)  → turn status field shape changed; inspect and report
+```
+
+**Observed delta on codex-cli 0.149.0 vs 0.152.1 (home, 2026-09-04):**
+thread-level `status` arrives as an object `{type: 'idle'}` instead of the string
+`"idle"` — display-only, emitted by `resume`'s banner. Turn-level `status` (the gate
+inside `drive_turn` and `reconcile`) is still the string `"completed"`. No code change
+required. The round-trip is the proof; the version pin is the weather.
+
+**Cross-host threads:** Codex stored threads are reachable by threadId from any host
+that has the same API credentials — `tun resume` + `tun ask "ping"` confirms this.
+Local `~/.codex/thread-writer-locks/<threadId>.lock` is machine-local metadata, not a
+cross-host barrier.
+
+---
+
+## Clearing a session (token bloat)
+
+No in-thread context trim exists in the shim. Reset means a new thread:
+
+```zsh
+tun status               # record the threadId if you want to archive it
+tun close                # removes local state; re-arms Law 2.4
+codex delete <threadId>  # optional: retire server-side; omit to leave it archived
+tun open --enable        # fresh preflight (no thread yet)
+tun send "brief: ..."    # thread born here; hand-write Cartan a compact context summary
+```
+
+**Brief discipline:** 3–5 sentences on the first `send` cost far less than a week of
+accumulated turns. Name the project, the current task, and any standing decisions
+Cartan needs to honor. Do not narrate the old thread — summarize the live state.
+
+**Reset triggers:** context window approaching (~80 %+), project pivot, or deliberately
+starting a clean experimental branch without contaminating the main thread.
+
+---
+
+## Multiple vaults — per-project sessions
+
+One state file = one thread = one Cartan with that project's memory.
+Any number of independent vaults can coexist on the same machine:
+
+```zsh
+# Project A
+export TUNNEL_CODEX_STATE=~/projects/projectA/tunnel.state.json
+tun open --enable
+tun ask "you are Cartan on projectA — <brief>"
+
+# Project B — re-export in same shell, or use a separate terminal
+export TUNNEL_CODEX_STATE=~/projects/projectB/tunnel.state.json
+tun open --enable
+tun ask "you are Cartan on projectB — <brief>"
+```
+
+Each thread remembers only its own project context. Switching is a single re-export.
+`tun status` always shows which vault the current shell is pointing at.
+
+**Project-switcher integration** — so the vault follows the project switch automatically,
+add one export per project block in `ia-sync/zsh/project-switcher.zsh`:
+
+```zsh
+# inside the fo / im / lrv / … switch block:
+export TUNNEL_CODEX_STATE=~/path/to/project/tunnel.state.json
+```
+
+Deploy via `ia-sync` after editing. After this, `fo` (or whichever switcher) sets both
+the project environment and the Codex vault in one move.
+
+---
+
+## TUNNEL_CODEX_STATE — wiring options
+
+| Option | When to use |
+|---|---|
+| Per-session `export TUNNEL_CODEX_STATE=<path>` | Deliberate, explicit — the design intent; always correct |
+| Project-switcher block export (above) | One vault per project; switch carries it automatically |
+| `config.home.zsh` / `config.office.zsh` export | Only if one persistent vault spans all work on that machine |
+
+No global default is baked into the shim by design — a stray invocation must never
+silently resurrect an old thread. State selection is always an explicit operator or
+project-switch decision (exit 13 if neither `--state` nor the env var is present).

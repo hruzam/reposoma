@@ -62,84 +62,14 @@ error · 50 reconcile mismatch (streamed ≠ read-back — record, never silentl
 - Any Bash-capable seat may drive verbs AFTER the operator's `open --enable`; no seat
   enables itself.
 
-## Bring-up on a new host (or after a version change)
+→ chapter `user-run` — bring-up on a new host, session reset, multi-vault patterns,
+  TUNNEL_CODEX_STATE wiring (`/guide tunnel user-run`)
 
-L8 applies on any codex-cli upgrade **or downgrade** — selftest + one live turn, in order:
+## Manifest
 
-```zsh
-# 1. Fixture proof — no quota, proves shim wiring only
-zsh ~/.config/zsh/ai/tunnel-codex.selftest.zsh
-# expect: 64/64 ... passed
-
-# 2. Live probe — if a thread already exists
-export TUNNEL_CODEX_STATE=<your vault path>
-tun resume
-# exit 0 + status line  → thread reachable on this host; proceed to step 3
-# exit 30 (no rollout)  → thread lives on another host's ~/.codex; close + new thread
-
-# 3. Verified live turn
-tun ask "ping"
-# exit 0 + reply        → protocol compatible; tunnel is live
-# exit 40 (turn-error)  → status field shape changed between versions; report upstream
-```
-
-**Known 0.149.0 vs 0.152.1 delta (observed 2026-09-04):** thread-level `status` arrives
-as an object `{type: 'idle'}` rather than the string `"idle"` — display-only, printed
-by `resume`. Turn-level `status` (the gate inside `drive_turn`) is still the string
-`"completed"`. No code change required; the round-trip is the proof, not the version pin.
-
-## Clearing a session (token bloat)
-
-No in-thread trim exists. Reset = close + new thread:
-
-```zsh
-tun status               # note the threadId if you want to archive it first
-tun close                # removes local state; re-arms Law 2.4
-codex delete <threadId>  # optional: retire the thread server-side
-tun open --enable        # fresh preflight
-tun send "brief: ..."    # thread born here; give Cartan a compact context summary
-```
-
-Hand-write the context brief on the first `send` — 3-5 sentences cost far less than a
-week of accumulated turns. Reset when: context window approaching, project pivot, or a
-clean experimental branch is wanted.
-
-## Multiple vaults — per-project sessions
-
-One state file = one thread = one Cartan with that project's memory. Any number of
-independent vaults can coexist:
-
-```zsh
-# Project A
-export TUNNEL_CODEX_STATE=~/projects/projectA/tunnel.state.json
-tun open --enable && tun ask "you are on projectA — <brief>"
-
-# Project B — re-export in same shell or use a separate terminal
-export TUNNEL_CODEX_STATE=~/projects/projectB/tunnel.state.json
-tun open --enable && tun ask "you are on projectB — <brief>"
-```
-
-Each thread remembers only its own project; switching is a single re-export.
-`tun status` always shows which vault the current shell is pointing at.
-
-**Project-switcher integration** — add one line per switch block in
-`project-switcher.zsh` so the vault follows the project automatically:
-
-```zsh
-# inside the fo / im / lrv switch block:
-export TUNNEL_CODEX_STATE=~/path/to/project/tunnel.state.json
-```
-
-## TUNNEL_CODEX_STATE — wiring options
-
-| Option | When |
-|---|---|
-| Per-session `export TUNNEL_CODEX_STATE=<path>` | Deliberate, explicit — the design intent |
-| Project-switcher integration (above) | One vault per project; switch carries it |
-| `config.home.zsh` / `config.office.zsh` export | Only if one persistent vault spans all work |
-
-No global default is baked in by design — a stray invocation must never silently
-resurrect an old thread. State selection is always an explicit operator or switch decision.
+| file | class | title |
+|---|---|---|
+| `res/user-run.md` | chapter | user-run — bring-up, session reset, multi-vault patterns |
 
 ## Lineage — point, never copy
 
