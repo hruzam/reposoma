@@ -53,9 +53,14 @@ surfaces + age-stamps).
   on disk. → `[2026-09-02 Octopus-family]` entry. OPEN (operator): (1) run cp deposit (5 files) +
   verify · (2) Batch B rm bed copies (medusa/polyp/sqcr/sea-pen/podocyst; KEEP session-handoff +
   track-run) · (3) `rm -rf ia-sync/claude/skills/octo/` · (4) add `raw.substrate/archive/` to
-  `.rgignore` · (5) commit 3 repos + deploy.sh ia-sync. OPEN (build, majkee gavel pending): Batch C —
-  fold medusa→Flight, polyp→Vara **wide, NOT temple-locked** (temple-only role = separate 'dice' monk
-  seat if ever needed); promote `/track-run` to Claude table; vara → guide pointers. Batch D —
+  `.rgignore` · (5) commit 3 repos + deploy.sh ia-sync. Batch C **FOLDED ON TABLE 2026-09-03** (staged, pre-deploy): medusa→@Flight (WIDE — temple/tactical
+  kept + project-session working-head mode added, spine via pointers, `/runbook` by name, Assay-gate
+  kept); polyp→@Vara (V-B POLYP — Edit-only, classifier retired, MANNED/UNMANNED, `/track-run`,
+  Edit-append checkpoints, runbook-check DEFERRED to the runbook-GUIDE landing); `/track-run` promoted
+  to the global table (guide-pointing). RETURN `_bus/01.fold.return.md`. OPEN: majkee deploy + prune
+  stale-live (home `octo`); houston.md classifier-language line (head); Vara runbook-check = later cycle.
+  *(head note: committed `028b448`; houston.md line REFUTED — no Vara ref there; VERDICT
+  `_bus/01.head.verdict.md`.)* Batch D —
   advisor-ladder collapse plan (Houston 3a, pending #43083) · freya `ledger.md` Gen-1→Gen-2
   reconciliation (Houston 3b, now a Flight-project-mode/Codex-Medusa job) · taskexpert reader HELD
   spec-only (2–3-sitting bar) · shape-normalization arc (ia-sync/nablarva/applications-in-common,
@@ -188,6 +193,24 @@ surfaces + age-stamps).
   here. (migration debt — not done now to avoid importing stale items as false-live signal.)
 - [ ] **majkee: commit + push reposoma** — carries this restructure + `raw.guides/PAD/pad-builder.md`
   live (my seat has no Bash). → `[2026-08-07 PAD]` entry.
+
+---
+
+## [2026-09-03 Octopus-family Batch C — fold on table]
+*(fold seat's text, folded verbatim by the head per the roster-reform-01-triad pen contract)*
+Inside gate `roster-reform-01-triad` (fold seat, under atlas-ui·head). @majkee gaveled live:
+Flight-first · V-B for Vara · Edit-append checkpoints. Drew on the surgical table (deploy-inert):
+**flight.md** — project-session mode (Medusa folded home) as a *venue* on top of MANNED/UNMANNED;
+phase spine points at shared skills, never inlines; Assay-gate-per-kraken kept (Flight's old gap);
+planning-head pointed by NAME `/runbook`; @Vara re-described as pre-routed walker. **vara.md** —
+reshaped to POLYP walker: Write dropped, Edit-only append checkpoints, classifier retired, case-switch
+track→/track-run · PAD→PAD-guide, runbook-check left as a deferred pointer (8 detection rules from
+the larva.dev specimen land with the runbook GUIDE). **skills/track-run/** — promoted from the
+applications-in-common bed, guide-pointing. Style kept in the vendor-neutral guides
+(runbook/status/PAD/bus) — anti-divergence keystone held; nothing duplicated against the Codex
+renderings. @field ran two passes (harness coverage map + runbook-shaped consolidation) — held for
+Batch D / roster-reform-02 (advisor collapse: 2-seat opus+fable deployable now, 1-seat needs #43083).
+Staged, not live: majkee deploys + prunes; houston.md classifier line is the head's.
 
 ---
 
