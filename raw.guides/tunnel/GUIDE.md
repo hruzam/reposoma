@@ -35,6 +35,7 @@ export TUNNEL_CODEX_STATE=~/my-work/tunnel.state.json
 
 tun open --enable          # OPERATOR opens the table (law 2.4); preflight only, no thread yet
 tun send "task text"       # thread born on FIRST send; result on stdout
+tun ask "task text"        # send + reconcile + verified result, one command; exit 50 on mismatch
 tun read                   # reconcile / re-fetch last result (streamed == read-back)
 tun send "follow-up"       # same thread — it remembers
 tun close                  # re-arms the enable gate (local state removed)
@@ -45,6 +46,8 @@ tun close                  # re-arms the enable gate (local state removed)
 **Exit codes (man-page contract):** 0 ok · 10 not-enabled · 11 usage · 12 no-thread-yet
 (send first) · 13 state-not-specified · 20 spawn-fail · 30 protocol error · 40 turn
 error · 50 reconcile mismatch (streamed ≠ read-back — record, never silently retry).
+
+**Stdout contract:** open/close/status/resume → stdout EMPTY (banners on stderr) · send/ask/steer → result text + final [usage: {...}] line · read → raw thread JSON.
 
 ## Limits + lifecycle (v0, honest)
 
