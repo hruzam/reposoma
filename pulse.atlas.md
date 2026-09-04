@@ -35,12 +35,15 @@ surfaces + age-stamps).
   by promotion only. Both GUIDE citations repointed. Provenance cites the durable ia-sync bed original
   (`cb3cace`), not the disposable reposoma working copy — which is pruned. Brand-agnostic per gavel: the
   consultant/witness seat is described by role, never named.
-- [ ] **CODEX-APP FAN-OUT — mapped + logged 2026-09-03; cleanup write-side, OPEN.** Codex desktop app
-  silently re-managed project `.codex/` across 4 repos (uniform mtime `2026-08-26 23:01`); ia-sync/Cartan
-  space CLEAN. reposoma + applications-in-common TRACK the dirt (latter already on origin/core → pulls to
-  office). → `[2026-09-03 Codex-app fan-out]` entry for full scope map + disposition. OPEN (write-side, not
-  my seat): purge superseded medusa/polyp tomls + misplaced reposoma delta-sql · reconcile appl-in-common
-  vara.toml vs `.claude/agents/vara.md` · gitignore `.codex/` in the 2 tracking repos. Clean BEFORE office pull.
+- [x] **CODEX-APP FAN-OUT — CLOSED 2026-09-04.** Codex desktop app silently re-managed project `.codex/`
+  across 4 repos (uniform mtime `2026-08-26 23:01`); ia-sync/Cartan space was CLEAN. Cross-vendor verified
+  by Cartan over the readOnly tunnel (caught 2 inventory errors). CLEANUP DONE (write-side, operator by hand):
+  reposoma delta-sql `git rm` + `.codex/` gitignore (`3a21b0c`); applications-in-common medusa/polyp
+  (`c10d222`) then vara.toml + hooks.json full `git rm` (`c3bba24`) — both holds resolved branch-A (Vara is a
+  Claude seat now via `.claude/agents/vara.md` + global; podocyst hooks dead, 2/3 targets missing);
+  fantasyobchod/freya local rm (delta-sql HELD in fantasyobchod = legit SQL seat). Root-cause: `.codex/`
+  gitignored in the 2 tracking repos. All committed + pushed before office pull. → `[2026-09-03 Codex-app
+  fan-out]` entry for the full scope map. Byproduct: tunnel guide gained 3 field lessons + `dev-journal.tunnel.md`.
 - [ ] **PRECEDENCE STONE — GAVELED + CODIFIED 2026-09-03 (decision 0013); tail open.** majkee live-gaveled
   with recorded Force-4 override ("force over 4 · atlas as houston, provisional · speed over perfectness").
   LANDED: `temple/precedence.md` (the apex — 5-rank order) · `temple/decisions/0013-precedence-stone.md` +
