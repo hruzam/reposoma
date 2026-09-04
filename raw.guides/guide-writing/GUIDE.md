@@ -3,7 +3,7 @@ title: Guide writing & treatment — the single-surface law (B′ + skill-model 
 scope: guide-writing
 audience: agent + operator + builder
 machine: both
-verified: 2026-08-20
+verified: 2026-09-04
 ---
 
 # Guide writing — how every seat treats `raw.guides/`
@@ -12,6 +12,10 @@ _The full manual behind the `/guide` skill's 3-line writer law. Gaveled by majke
 2026-08-20 (session `REP.Offc.Atlas-fable.guides`); trace:
 `~/ia-sync/_staging/dev-journal.guides.md`. Supersedes the loose
 `raw.guides/guide-writing.md` (same session — dogfooded into its own slug)._
+
+## Manifest
+
+- `res/slug-directories.md` · chapter · GAVELED 2026-09-04 — codified slug side-directory taxonomy
 
 ## The law
 
@@ -30,6 +34,7 @@ _The full manual behind the `/guide` skill's 3-line writer law. Gaveled by majke
 ```
 raw.guides/<slug>/GUIDE.md          ← the guide (fixed entry filename — the contract)
 raw.guides/<slug>/res/<free-chapter-name-by-slug-theme>.md      ← optional chapters (fine taxonomy slices)
+raw.guides/<slug>/{raw,src,ast,cod}/…   ← codified side-directories — roles + rules: res/slug-directories.md
 ```
 
 - **One topic = one slug.** Slug names are topic-specific (`remote-control`,
@@ -66,6 +71,11 @@ of its GUIDE.md, one line each (name · class · role):
 **Orphan rule:** a file in the slug folder not named in the manifest = **drift** — flag
 it, don't silently adopt it. This is the audit's cheapest check and any cleanup pass's
 protect-list. A slug with only GUIDE.md needs no manifest section at all.
+
+**Side-directories (amended 2026-09-04, majkee gavel):** codified side-directories (`raw/`,
+`src/`, `ast/`, `cod/`) are manifest-listed as **one directory line each** (name · role), never
+per-file; only `res/` chapters are listed per file. Full taxonomy, the raw/↔src/ seam, and the
+openness rule: `res/slug-directories.md`.
 
 ## Frontmatter shape (required on every guide — and, per majkee's 2026-08-20 blessing, on every emitted document)
 
