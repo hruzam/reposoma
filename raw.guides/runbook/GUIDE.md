@@ -5,7 +5,7 @@
 `companions: raw.guides/status/GUIDE.md (the position) · raw.guides/PAD/GUIDE.md (human sittings)`
 `· raw.guides/bus/GUIDE.md (multi-seat exchange)`
 `extends: res/token-economy.md (delegation shape · spend record) · res/cross-vendor-seat.md (instrument tuple · tunnel handle · enable layers) — both DRAFT, awaiting majkee gavel, 2026-09-03`
-`extends: res/research.md (big-scope research gate — nablarva) · res/csharp-head.md (cSharp head posture · transfer ritual) — both GAVELED by majkee 2026-09-03 (session fc-sync.oraculum.reverse-tunnel.cSharp)`
+`extends: res/research.md (big-scope research gate — nablarva) · res/csharp-head-protocol.md (the cSharp protocol — head posture · transfer ritual · letter to successors) — both GAVELED by majkee 2026-09-03, protocol framing + successors letter 2026-09-04 (sessions fc-sync.oraculum.reverse-tunnel.cSharp · roster-reform-01-triad)`
 `boundary: Sella governs primitive-BUILDING; this canon governs session SHAPE — different objects, neither wins; temple/precedence.md orders cross-domain collisions (0013, 2026-09-03)`
 `revised: 2026-08-27 after triangulated audit (Fable · Janus · @Cartan/Codex) — HANDOFF name`
 `retired before first use; STATUS.md carries the position. Authority model per majkee's gavel:`
@@ -106,8 +106,11 @@ participant_2:   # …one per seat, in order. Include the human when a PAD needs
 
 No `state:` field — see above. No mutable field of any kind belongs in this file.
 
-A multi-session arc's head seat may carry a `head_note:` (the cSharp posture — authors the
-RUNBOOK and stays as navigator/status_owner): `res/csharp-head.md`.
+A multi-session arc's head seat may carry a `head_note:` naming its **protocol** — the head
+posture the arc runs under. Today exactly one is gaveled: the cSharp protocol (authors the
+RUNBOOK and stays as navigator/status_owner): `res/csharp-head-protocol.md`. A protocol is
+named for the posture, never for the seat that fills it; siblings open by promotion, never by
+design.
 
 **`prompt-0`, `prompt-<N>`**
 

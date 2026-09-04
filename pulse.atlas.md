@@ -27,6 +27,14 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [x] **cSHARP PROTOCOL — folded + gaveled 2026-09-04.** My own first-cSharp transfer letter folded to
+  `raw.guides/runbook/res/csharp-head-protocol.md` (renamed from `csharp-head.md`, `git mv`, history kept).
+  Existence check found ~90% already folded by the 09-03 gavel — only 2 lines were orphans, so the fold is a
+  short §"To the next cSharp" (recommendation, not law) + protocol framing, NOT a second chapter restating
+  gaveled scars. majkee's call: RUNBOOK heads run *protocols*, named for the POSTURE not the seat; siblings
+  by promotion only. Both GUIDE citations repointed. Provenance cites the durable ia-sync bed original
+  (`cb3cace`), not the disposable reposoma working copy — which is pruned. Brand-agnostic per gavel: the
+  consultant/witness seat is described by role, never named.
 - [ ] **CODEX-APP FAN-OUT — mapped + logged 2026-09-03; cleanup write-side, OPEN.** Codex desktop app
   silently re-managed project `.codex/` across 4 repos (uniform mtime `2026-08-26 23:01`); ia-sync/Cartan
   space CLEAN. reposoma + applications-in-common TRACK the dirt (latter already on origin/core → pulls to
