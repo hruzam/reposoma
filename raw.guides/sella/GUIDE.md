@@ -4,10 +4,14 @@ scope: sella
 audience: agent + operator + builder
 machine: both
 state: DRAFT — experimental, in daily use; conformance-as-canon is G3-HELD (majkee gavel pending)
-verified: 2026-09-01 (body dated 2026-08-03; receipts 2026-07-16 .. 2026-09-01)
+verified: 2026-09-01
+verified_note: "body dated 2026-08-03; receipts 2026-07-16 .. 2026-09-01"
+half_life: ~6 weeks — the discipline body is stable doctrine; the §2 platform key-surface tables are the volatile part (recheck against the live claude-code card / dated source, L8)
+half_life_days: 42
 verify_cmd: "ls ~/reposoma/raw.guides/sella/ && ls ~/reposoma/raw.guides/sella/src ~/reposoma/raw.guides/sella/raw"
 precedence: "On a DOCTRINE contradiction, Sella wins over sibling BUILDER guides (incl. codex-builder-user) — terminal within the primitive-building domain ONLY. Across domains (the session-shape canon raw.guides/{runbook,status,PAD,bus,gloss} ranks different objects — see §Boundary below), and under a live operator gavel, temple/precedence.md orders the collision (decision 0013, 2026-09-03). Volatile CLI/vendor facts (versions, flags, prices) are weather — the dated live source wins there, per Sella's own L8 (moving-target guardrail). Sella never claims frozen authority over facts it does not track."
----
+next:
+  - "harness-check has NO chapter-of: grouping — each res/ chapter is freshness-checked on its OWN clock, independent of this GUIDE (intended for weather chapters: a 90d vendor-doc chapter should decay faster than 42d doctrine). Cost = list fragmentation: harness-stale shows one row per tracked file, not one per slug. Livable while sella has ~2 tracked files. IF a slug crosses ~4-5 tracked chapters and the noise bites: add a chapter-of:-aware roll-up to harness-check (collapse child rows under the parent slug, report earliest-expiring as the slug signal). Parked 2026-09-04 · atlas-ui — build only on real pain, not now."
 
 # SELLA — the discipline-language vault
 
@@ -50,6 +54,11 @@ it earns lift. It is advisory guidance until gaveled canon, never a gate you mus
 - `src/` — working design corpus: cross-vendor architecture candidate + errata-r1, Probe-A
   protocol, the Jacquard + atlas-office observations, the two Wave↔Atlas radios, the
   Codex-sibling cold-start, and the 2026-08-31 codex-relay wrapper-tune consult.
+- `res/` — reader chapters (served by `/guide sella <chapter>`; each carries `chapter-of: sella`):
+  - `codex-subagent-call.md` — the exact-`agent_type` promptbook for spawning named Codex custom
+    agents (delegate, never role-play; PASS/FAIL contract). **Weather-flagged (L8)** — leans on
+    volatile OpenAI/Codex subagent-config docs; `/guide` auto-stales it at half-life. Source in
+    `raw/majkee-extend-guide-subchapter-codex-promptbook.2026-09-04.md`.
 - `raw/` — evidence: the Epoch receipt (2026-08-02), the Codex primary-source receipt (2026-08-03),
   and a COPY of the Asymmetry research (`asymmetry.codex-bonding-layer.research.2026-08-05.md`,
   original authoritative in `~/unikuklatrix/nablarva/meshup/natural-ladders-grounded-phase.a-sym/`
@@ -93,7 +102,7 @@ Version facts anywhere in these are WEATHER (L8): never trust a pinned version; 
 
 <!-- ─────────────────────────────────────────────────────────────────────────── -->
 <!-- DISCIPLINE BODY BELOW — appended verbatim from the former sella.coder-guide.md -->
-<!-- by res/RUNBOOK.migration.2026-09-01.md (from its "## Receipts" heading onward;  -->
+<!-- by src/RUNBOOK.migration.2026-09-01.md (from its "## Receipts" heading onward;  -->
 <!-- the old YAML frontmatter + old "# SELLA — coder guide" H1 are dropped).         -->
 <!-- ─────────────────────────────────────────────────────────────────────────── -->
 ## Receipts (cited as [S1]..[S5] throughout)

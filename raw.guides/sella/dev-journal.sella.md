@@ -40,6 +40,26 @@ majkee.
 
 ## LOG (newest on top · append-only · stamped)
 
+### [2026-09-04 · claude/atlas-ui · opus · office · ref: res/codex-subagent-call.md + raw/majkee-extend-guide-subchapter-codex-promptbook.2026-09-04.md] — first Sella `res/` chapter: Codex exact-`agent_type` promptbook, weather-flagged
+
+majkee dropped Cartan's Codex-subagent promptbook (`raw/`) to fold into Sella as a reader
+chapter. Authored `res/codex-subagent-call.md` — the first chapter under a `res/` class in
+this vault (only `src/`+`raw/` existed) — which is exactly what `/guide sella <chapter>`
+resolves against. Cartan's six templates kept VERBATIM (they're the deliverable); wrapped
+with Sella framing (the load-bearing catch = "delegate the exact `agent_type`, never
+prose-simulate; unavailable → FAIL" ties to L1/L4/L9) + a provenance-stone footer.
+Registered the chapter in GUIDE's manifest so the read doesn't orphan-flag it.
+
+**LESSON (majkee: "future give us lesson").** The chapter leans on volatile OpenAI/Codex
+subagent-config docs → it is WEATHER, not frozen truth. Instead of a promise to remember to
+re-check, the recheck is MECHANIZED: `verified: 2026-09-04` + `half_life_days: 90` in the
+frontmatter → `/guide`'s staleness organ auto-prepends a ⚠ stale-card banner at half-life,
+and the `recheck:` line names the exact volatile facts to re-synthesize (not hand-patch).
+This is Sella **L8 applied to itself** — a knowledge-card that dates its own decay. The
+transferable rule: *any subchapter that cites a vendor doc or a version fact carries a
+half-life; the guide surfaces its own expiry so no human has to hold the reminder.* Pattern
+to reuse for the next weather chapter. STAGED — reposoma commit is majkee's (writer-law 3).
+
 ### [2026-09-03 · claude/oraculum · opus · office · ref: nablarva toolbox/termbrana/research/evidence/t06-tunnel-v0-roundtrip.md + HANDSHAKE r3] — TABLE proven live: first working Claude↔Codex tunnel; HANDSHAKE r3
 
 The cross-vendor line reached its first LIVE synchronous exchange: termbrana tunnel v0 (app-server stored-thread supervisor, Law-2.4 enable) passed its t3 round-trip gate — attempt 1 FAILED on a zero-turn rollout defect (0.152.1 behavior boundary no doc names; receipt-grade find), fix f32eb9a moved thread birth to first send (Cartan's proven continuous sequence), re-run PASSED with independent verification. TABLE adopted as the HANDSHAKE's fourth meeting shape (r3, Cartan co-sign pending). Shim deployed after behavior proof — L8 honored end-to-end: fixture-green ≠ behavior-true was demonstrated, then closed, in one day. v1 candidates: resident process (mid-stream steer), lock-residue mechanism. Probe queue unchanged: A-eco still waits on majkee's desk (CS.probe-a-eco card), D after A.
