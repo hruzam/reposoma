@@ -1,3 +1,11 @@
+---
+title: _bus builder — the session's verified multi-seat exchange
+scope: bus
+audience: agent + operator + builder
+machine: both
+verified: 2026-09-05
+---
+
 # _bus builder — the session's verified multi-seat exchange
 
 `what: the canonical shape of _bus/ — numbered POINT · RETURN · VERDICT cycles.`
@@ -55,6 +63,7 @@ A POINT is terse and executable. It contains:
 
 ```yaml
 cycle: <NN>
+turn: <optional coordination-turn coordinate; see raw.guides/runbook/res/fanout-turns.md>
 from: <seat>
 to: <seat>
 scope: <one bounded task>
@@ -131,13 +140,23 @@ The seat that verifies the RETURN writes one VERDICT. It contains:
 
 ```yaml
 cycle: <NN>
+turn: <optional coordination-turn coordinate; see raw.guides/runbook/res/fanout-turns.md>
 point: <absolute or session-relative POINT path>
-return: <absolute or session-relative RETURN path>
+return: <absolute or session-relative RETURN path | none + reason; none is STOP/BLOCKED only>
 verified_by: <seat · date · host when relevant>
 disposition: <ACCEPT | REVISE | STOP | BLOCKED>
 gate_effect: <advanced | unchanged | closed, with durable evidence pointer>
-status_rewritten: <yes | no + reason>
+status_rewritten: <yes | no + reason | deferred: turn NN; see raw.guides/runbook/res/fanout-turns.md>
 ```
+
+> `turn:` groups ordinary cycles opened by one head decision; it is not current state and does
+> not create a fourth BUS kind. Full-session fan-out operations live in
+> `raw.guides/runbook/res/fanout-turns.md`.
+
+> `return: none + reason` is legal only when no RETURN exists and the disposition is STOP or
+> BLOCKED. The VERDICT must verify the absence and state why the cycle cannot receive a RETURN;
+> it never authors a surrogate RETURN. A RETURN that arrives later does not reopen the closed
+> cycle or receive a second VERDICT: its information is assessed in a new numbered cycle.
 
 Then three sections:
 
@@ -155,13 +174,14 @@ limit; "none" is valid>
 
 A cycle is closed only when the VERDICT:
 
-- checks the RETURN against cited artifacts,
+- checks the RETURN against cited artifacts, or for a STOP/BLOCKED `return: none + reason`
+  verifies both the RETURN's absence and the stated reason,
 - names all curvature rather than smoothing it away,
 - gives one disposition,
 - states how the verified result affected the gate,
 - disposes of every remaining uncertainty, and
-- confirms that STATUS was rewritten to the new present position, or explains why the cycle is
-  BLOCKED and STATUS could not advance.
+- accounts for the STATUS edge in `status_rewritten:`; grouped-cycle deferral, owner discharge,
+  and late-artifact rules live in `raw.guides/runbook/res/fanout-turns.md`.
 
 The VERDICT records a past transition. It must not grow a second next-action list; `STATUS.next`
 remains the only current next action.

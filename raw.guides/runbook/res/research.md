@@ -1,3 +1,7 @@
+---
+title: The big-scope research gate
+chapter-of: runbook
+---
 # res/research — the big-scope research gate
 
 `what: the pre-program research session that decides whether a BIG scope should exist at all.`

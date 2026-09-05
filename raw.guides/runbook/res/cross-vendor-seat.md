@@ -1,3 +1,7 @@
+---
+title: A cross-vendor seat in the session
+chapter-of: runbook
+---
 # RUNBOOK · res — a cross-vendor seat in the session
 
 `what: how a seat from the OTHER runtime (today: Codex) appears in RUNBOOK · STATUS · the file set.`

@@ -1,3 +1,7 @@
+---
+title: Token economy and delegation shape
+chapter-of: runbook
+---
 # RUNBOOK · res — token economy and delegation shape
 
 `what: what a RUNBOOK fixes about WHO spends tokens, and what a session records about what it spent.`

@@ -1,3 +1,11 @@
+---
+title: RUNBOOK builder — the session launcher
+scope: runbook
+audience: agent + operator + builder
+machine: both
+verified: 2026-09-05
+---
+
 # RUNBOOK builder — the session launcher
 
 `what: the canonical shape of RUNBOOK.md, and the rule that delimits a session.`
@@ -10,6 +18,15 @@
 `revised: 2026-08-27 after triangulated audit (Fable · Janus · @Cartan/Codex) — HANDOFF name`
 `retired before first use; STATUS.md carries the position. Authority model per majkee's gavel:`
 `two files are allowed, two authorities are not.`
+
+## Manifest
+
+- `res/cross-vendor-seat.md` · chapter · DRAFT — cross-vendor seat instrument, tunnel handle, and enable layers
+- `res/csharp-head-protocol.md` · chapter · GAVELED 2026-09-04 — cSharp protocol: head posture, transfer ritual, and letter to successors
+- `res/fanout-turns.md` · chapter · GAVELED 2026-09-05 — full-session fan-out, coordination join, and cold recovery
+- `res/research.md` · chapter · GAVELED 2026-09-03 — big-scope pre-RUNBOOK research gate
+- `res/token-economy.md` · chapter · DRAFT — delegation shape and spend record
+- `raw/` · collected runbook substrate reached only by explicit path; not served by the resolver
 
 ## What a RUNBOOK is
 
@@ -104,6 +121,13 @@ participant_1:   # [agent-name, {brand, model, effort}, host]
 participant_2:   # …one per seat, in order. Include the human when a PAD needs their hands.
 ```
 
+Participant seat names are unique within one RUNBOOK; two incarnations of one agent are two
+seats, and BUS filenames use the declared seat name.
+
+Only the declared `status_owner` replaces STATUS; a verifier or witness attests the observed
+effect in VERDICT `status_rewritten:` and does not rewrite STATUS unless it is also the
+`status_owner`.
+
 No `state:` field — see above. No mutable field of any kind belongs in this file.
 
 A multi-session arc's head seat may carry a `head_note:` naming its **protocol** — the head
@@ -111,6 +135,10 @@ posture the arc runs under. Today exactly one is gaveled: the cSharp protocol (a
 RUNBOOK and stays as navigator/status_owner): `res/csharp-head-protocol.md`. A protocol is
 named for the posture, never for the seat that fills it; siblings open by promotion, never by
 design.
+
+A cSharp coordinating independent full CLI sessions in one decision uses
+`res/fanout-turns.md`; ordinary in-window subagent delegation remains governed by
+`res/token-economy.md`.
 
 **`prompt-0`, `prompt-<N>`**
 

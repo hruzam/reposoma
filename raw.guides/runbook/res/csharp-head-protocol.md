@@ -1,3 +1,7 @@
+---
+title: The cSharp protocol — head posture, transfer ritual, and letter to successors
+chapter-of: runbook
+---
 # res/csharp-head-protocol — the cSharp protocol
 
 `what: the head posture for multi-session arcs — authors the RUNBOOK and STAYS; majkee's board-slang.`

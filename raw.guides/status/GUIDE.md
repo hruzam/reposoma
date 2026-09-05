@@ -1,3 +1,11 @@
+---
+title: STATUS builder — the session's bounded recovery snapshot
+scope: status
+audience: agent + operator + builder
+machine: both
+verified: 2026-09-05
+---
+
 # STATUS builder — the session's bounded recovery snapshot
 
 `what: the canonical shape of STATUS.md — one present-tense position per session gate.`
@@ -42,6 +50,10 @@ could exist while the pane pipe was dead, so the PAD checked `#{pane_pipe}` dire
 continuing. If STATUS cannot support that class of cold resume, it is incomplete regardless of
 how polished its prose is.
 
+> When `delegated:` is present, `recovery_probe:` reconciles each row against the corresponding
+> POINT, any RETURN, and the contents—not mere presence—of any VERDICT, following
+> `raw.guides/runbook/res/fanout-turns.md`.
+
 ## Anatomy — fixed fields
 
 Keep the file short enough to read in thirty seconds. These fields are all mandatory; `none` is
@@ -64,6 +76,19 @@ expected: <observable result that proves next succeeded>
 `worktree:` names dirty paths, not merely “dirty.” `checkpoint:` is one current safe edge, not a
 `Done` section. `in_flight:` describes uncertainty honestly; do not convert “unknown” into
 “probably completed.” `expected:` is evidence the next writer can check, not an intention.
+
+### Optional full-session fan-out fields
+
+`delegated:` — optional only while one full-session coordination turn is open; one row per
+current branch. Each row has exactly `cycle`, `to`, `turn`, and `awaiting`; `awaiting` is
+`return` or `verdict <seat>`. Semantics: `raw.guides/runbook/res/fanout-turns.md`.
+
+`join_when:` — optional and exactly one while that turn is open; it names the observable cycle
+obligations whose verified contents permit the owner to replace STATUS. Semantics:
+`raw.guides/runbook/res/fanout-turns.md`.
+
+`next:` remains singular during fan-out and names the next verification or the join, never the
+workers' task list.
 
 ## The crash-safe update edge
 
