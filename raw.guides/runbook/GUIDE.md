@@ -24,6 +24,7 @@ verified: 2026-09-05
 - `res/cross-vendor-seat.md` · chapter · DRAFT — cross-vendor seat instrument, tunnel handle, and enable layers
 - `res/csharp-head-protocol.md` · chapter · GAVELED 2026-09-04 — cSharp protocol: head posture, transfer ritual, and letter to successors
 - `res/fanout-turns.md` · chapter · GAVELED 2026-09-05 — full-session fan-out, coordination join, and cold recovery
+- `res/presence-board.md` · chapter · GAVELED 2026-09-09 — advisory cross-session attachment records and detach boundary
 - `res/research.md` · chapter · GAVELED 2026-09-03 — big-scope pre-RUNBOOK research gate
 - `res/token-economy.md` · chapter · DRAFT — delegation shape and spend record
 - `raw/` · collected runbook substrate reached only by explicit path; not served by the resolver
