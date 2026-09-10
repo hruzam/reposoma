@@ -8,6 +8,26 @@
 
 ---
 
+## [2026-09-10 · Trajectory] — the shim's OWN wait-window dies on research-grade turns (+ exits 0)
+
+Distinct from the 09-04 process-kill lesson below: with the harness cap out of the picture,
+`tunnel-codex.py` itself gave up — `timed out after 6.0s` (cold start) and `27.2s` "waiting
+for app-server output" — leaving the turn `status: "interrupted"`, `completedAt: null`.
+Trigger: a counter-sign brief that sent Codex into WEB SEARCH (it fetched Termux upstream
+sources to validate extra-keys syntax — admirable diligence, fatal to the transport). Two
+turns lost; `tun read` reconciled the interrupted state exactly per contract.
+
+**Contract defect, second finding: the shim EXITED 0 on both failures.** The man-page
+contract (10/11/12/13/20/30/40/50) has no code for its own output-wait timeout — a driver
+script chaining on `&&` sails past a dead turn.
+
+**Workaround that held (3 clean verdict rounds):** brief with "NO web search, LOCAL file
+reads only, keep the turn short" — the model complies and the turn fits the window.
+
+v1 candidates: adaptive/longer app-server wait or `--wait <s>` flag · nonzero exit (40?)
+on internal timeout. Evidence: `src/observation.app-server-wait.2026-09-10.md`. Field
+context: ia-sync `codex-remote-control-cli-01-wrapper`, Cartan counter-sign rounds.
+
 ## [2026-09-04 · Atlas] — first real work-dispatch: readOnly verify → gated execute
 
 Context: drove the tunnel to hand Cartan a write-side cleanup task (Codex-desktop-app `.codex/`

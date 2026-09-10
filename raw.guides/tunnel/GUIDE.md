@@ -71,6 +71,7 @@ error · 50 reconcile mismatch (streamed ≠ read-back — record, never silentl
 |---|---|---|
 | `res/user-run.md` | chapter | user-run — bring-up, session reset, multi-vault patterns |
 | `dev-journal.tunnel.md` | journal (dev-layer, uncanonical) | field-usage lessons ladder — append-only, not `/guide`-served |
+| `src/` | dev-layer (uncanonical, sella-src pattern) | driving observations + evidence — reached by explicit path only |
 
 ## Lineage — point, never copy
 
