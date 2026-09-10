@@ -3,7 +3,7 @@ title: remote-cli — terminal-reach of living agent sessions (beds · doors · 
 scope: remote-cli
 audience: operator + any seat
 machine: both
-verified: 2026-09-10
+verified: 2026-09-11
 half_life_days: 60
 verify_cmd: "tmux has-session -t agentive && grep -c -- '--bed' ~/.config/zsh/system/tailscale.zsh"
 ---
@@ -29,6 +29,38 @@ verify_cmd: "tmux has-session -t agentive && grep -c -- '--bed' ~/.config/zsh/sy
 
 Inside any bed: run `claude` or `codex` on the spot, or hop seats — the session you
 start OUTLIVES your connection.
+
+## One session, many seats, many views — the tmux model (kills the "one at a time" myth)
+
+tmux is four layers: **server → session → window → pane.** The bed uses ONE session
+(`agentive`); agents live in its **windows** (the seats). This is the mental model that
+dissolves the commonest confusion — *"all my sessions look like copies of the same"*:
+
+- **session** = the persistent container. One (`agentive`) is enough — never make more
+  just to run more agents.
+- **windows = seats.** EACH window runs its OWN independent program. claude on window 1,
+  codex on window 2, a shell on 3 — **all alive at once, all hanging**, fully independent.
+  This is where multi-agent lives. `Ctrl+b <n>` hops · `Ctrl+b c` new seat · `Ctrl+b w`
+  pick from a list. You are NOT limited to one agent at a time.
+- **clients = the devices/terminals viewing.** Two devices attached to the same session
+  **mirror** each other (same window, shrunk to the smaller screen). THAT mirroring is
+  the "multiple copies of the same" you see — a viewing artifact, not a limit on how
+  many agents run.
+
+**The one real limit + its fix — grouped sessions.** Two clients on one session share a
+single "active window" pointer, so they fight (move on the phone → the laptop moves too).
+To give each device an INDEPENDENT view of the same live windows:
+
+```sh
+# on the host, make a second session that SHARES agentive's windows, own pointer:
+/usr/bin/tmux new-session -t agentive -s phone     # phone attaches to `phone`
+```
+Now phone-view sits on codex while laptop-view sits on claude — same processes, separate
+viewports, no tug-of-war. (Kill a grouped view with `tmux kill-session -t phone`; the
+shared windows and their agents survive — only that view closes.)
+
+One-line truth: **more agents = more windows, never more sessions; more independent
+device-views = grouped sessions, never more agents.**
 
 ## For idiot — exact commands, zero thinking
 
