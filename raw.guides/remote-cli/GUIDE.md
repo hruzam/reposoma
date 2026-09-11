@@ -96,6 +96,33 @@ sh ~/ia-sync/devices/_shared/termux/bin/agentive-door    # bed, shell seat
 tmux attach -t agentive                                  # bed, last-active seat
 ```
 
+### 🔎 what's alive? — SEE before you leap (the exact proof commands)
+tmux is new? Start here. Two questions: *which beds exist* and *what's running in each*.
+
+**From a plain shell (on the host, or after a plain `tso office` / `ssh`):**
+```
+tmux ls
+#   → agentive: 2 windows (created …) (attached)      ← the bed, and how many seats
+#   → rc-nablarva: 1 windows …                        ← other sessions if any
+
+tmux list-windows -t agentive
+#   → 0: claude   (running: claude)                   ← seat 0 = a claude
+#   → 1: claude   (running: claude) (active)          ← seat 1 = another claude, current
+#   this is the exact proof: two agents alive at once, in one bed
+```
+
+**From INSIDE a bed (already attached) — visual pickers, no typing:**
+```
+Ctrl+b w      # window list: every seat + what runs in it, arrow-key pick (BEST for beginners)
+Ctrl+b s      # session list: every bed; pick one
+Ctrl+b (      # jump to previous session   ·   Ctrl+b ) = next session
+```
+The **green bar at the bottom** always shows where you are: `[agentive] 1:claude*` =
+bed `agentive`, seat 1, the `*` marks your current seat.
+
+**One rule so you never feel lost:** `Ctrl+b w` shows you everything running; arrow to
+the one you want, Enter. That single reflex answers "what do I have and where is it."
+
 ### ✅ the whole idea in one line
 Start `claude`/`codex` **inside a bed** → kill the window / lock the phone / drop the
 VPN → nothing dies → reattach from ANY device, the session is exactly where you left it.
