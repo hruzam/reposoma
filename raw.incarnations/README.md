@@ -1,7 +1,10 @@
 # raw.incarnations
 
-> **PENDING @majkee GAVEL** — bed prepared 2026-09-11 by @trajectory at majkee's ask.
-> The mechanism goes live when majkee stamps it; until then this is a proposal on disk.
+> **GAVELED LIVE — majkee, 2026-09-11.** Bed prepared by @trajectory at majkee's ask and
+> stamped live the same day. The incarnation mechanism is now a temple bed of record —
+> sibling to raw.therapy. Its lifecycle (birth · authorship · cross-vendor acceptance ·
+> maintenance) is specified by the session seeded at
+> `~/ia-sync/.dev/session/incarnations-00-mechanism/`.
 
 Per-seat **incarnation seeds** — the OUTWARD loading spine a fresh incarnation boots from.
 

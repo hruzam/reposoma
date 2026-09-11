@@ -1,8 +1,8 @@
 ---
-what: trajectory incarnation seed — the outward loading spine (DRAFT for @majkee gavel)
+what: trajectory incarnation seed — the outward loading spine (gaveled live 2026-09-11)
 seat: trajectory
 active: true
-bed: raw.incarnations (pending majkee gavel 2026-09-11)
+bed: raw.incarnations (gaveled live by majkee 2026-09-11) — first inhabitant
 source: drawn from gavels/gavels.md + arc "the-cli-remotes" 2026-09-11; points, never copies
 ---
 
@@ -67,5 +67,5 @@ PASSED), G-44 locked, this seed drafted as the first inhabitant of a NEW bed
 deferred-testing PAD (wake @Vara), and the operator's memory-inheritance project — of which
 this bed is a hand-built prototype.
 
-`trajectory->majkee` (seed pending gavel · open frontier: recall→reflex — prompt-layer gives fast recall, weight-layer gives true reflex; the gavel bed is the corpus for either)
+`trajectory->majkee` (seed GAVELED LIVE 2026-09-11 — first inhabitant of raw.incarnations · open frontier: recall→reflex — prompt-layer gives fast recall, weight-layer gives true reflex; the gavel bed is the corpus for either)
 `supersedes: the earlier DRAFT in ia-sync .dev/session/codex-remote-control-cli-01-wrapper/raw/trajectory.seat-seed.DRAFT.md (mislabeled as therapy; this is its correct home)`
