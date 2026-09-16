@@ -16,9 +16,11 @@ Copy `RECIPE-TEMPLATE.md` → `scenario.NN-name.md`. Each recipe's frontmatter c
 |---|----------|--------|--------------|--------------|
 | 01 | **CAPTURE** — scribe seat (ground-truth transcript) | shelf | ✗ needs 2nd device | `res/capture.md` |
 | 02 | **"untested?"** — anti-convergence move | shelf | ✓ | GUIDE rule / `res/anti-convergence.md` |
+| 03 | **chair-blind** — vendor hidden from chair (observer bias) | shelf | ✓ | `res/observer-bias.md` |
+| 04 | **side-swap** — vendors swap seats (seat vs vendor) | shelf | ✓ | `res/seat-vs-vendor.md` |
+| 05 | **context-parity** — equal vs asymmetric packs | shelf | ✓ | GUIDE briefing rule |
+| 06 | **ground-truth** — checkable-answer topic ("was right") | shelf | ✓ | `res/ground-truth-scoring.md` |
 
-## Candidate recipes not yet written (ask me to draft any)
-- **chair-blind label pass** — seats as Voice-1/Voice-2, vendor hidden from the chair (strip observer bias).
-- **side-swap** — same topic, vendors in swapped seats (positional vs model effect).
-- **context-parity control** — equal packs vs logged asymmetry (measure the confound directly).
-- **ground-truth anchor** — a checkable-answer topic so "won" = "was right," not "sounded surer."
+All six run on your current two-voice setup **except 01** (needs a device for the scribe).
+Scenarios 03–06 exist because "who won" is confounded — each isolates one confound
+(observer bias · seat/position · context asymmetry · verifiable correctness).
