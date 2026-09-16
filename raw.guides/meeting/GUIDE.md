@@ -99,8 +99,9 @@ next version.
 
 ## The vacuole → chapter lifecycle
 - `raw/` — evidence (debriefs, transcripts).
-- `src/` — **the vacuole**: scenarios still cooking. Run, observe, discard or refine.
-  Nothing here is doctrine.
+- `src/` — **the vacuole** (the experimental room): a shelf of scenario recipes
+  (`RECIPE-TEMPLATE.md` → `scenario.NN-*.md`), each flagged `runnable_now` or blocked.
+  Run, observe, discard or refine. Nothing here is doctrine.
 - `res/` — a scenario that PROVES a finding *closes from the vacuole* into a reader
   chapter, served by `/guide meeting <chapter>`, carrying `chapter-of: meeting`.
 - `GUIDE.md` — this body: the stable protocol + doctrine.
