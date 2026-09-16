@@ -7,6 +7,7 @@ lives here; every vendor-specific file elsewhere is a **one-way rendering** of i
 - `PTYRA.md` — WHO-AM-I. Identity, the boundary role, BUFFER→SMOOTH→RELEASE.
 - `PTYRA.knowledge.md` — operating discipline, authority gradient, contracts.
 - `skill.stenograph.md` — the recorder regime (event typology, flush, blocks).
+- `skill.journal.md` — the day-scratchpad regime (coarse, loose, `## pending`).
 
 These hold the **invariant behavior contract** — the shape shared across every
 vendor. When Ptyra's behavior should change, it changes *here first*.
@@ -35,7 +36,8 @@ copies the format forces, and make them safe by rule.
 ## Derived renderings (keep this map current — an unlisted copy is an orphan)
 | Target | File | Form | Notes |
 |--------|------|------|-------|
-| Claude.ai | `raw.claude-ai.agents/ptyra.md` | Project master prompt (two regimes) | flush-as-persistence + Project-not-Skill are its VENDOR DELTA |
+| Claude.ai | `raw.claude-ai.agents/ptyra.md` (dispatcher) + `ptyra.A-mouthex.md` · `ptyra.B-stenogram.md` · `ptyra.C-journal.md` | Project master prompt, three regimes split per file | flush-as-persistence, Project-not-Skill, and the `ptyra-ac-journal` CLI-fold are its VENDOR DELTA |
+| reposoma CLI | `.claude/agents/ptyra-ac-journal.md` | Haiku subagent (fold · pending) | the journal hand — writes REGIME C artifacts into `.majkee/journal/<day>.md` |
 | ChatGPT | *(none — the `raw.chatGPT-agents/ptyra` copy was removed 2026-09)* | — | re-render here from source if needed again |
 
 ## To update Ptyra
