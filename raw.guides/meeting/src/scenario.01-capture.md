@@ -4,7 +4,7 @@ scope: meeting
 status: shelf
 version: v1
 requires_second_device: true
-runnable_now: false        # BLOCKED: the scribe needs its own device on the line
+runnable_now: true         # device now available — operator prepared the scribe seat (2026-09-16)
 ---
 
 # Scenario 01 — CAPTURE (the scribe seat)
@@ -22,12 +22,13 @@ per-turn log becomes the measurable record every diagnostic needs.
 - **Seats:** chair + 2 AI voices + 1 scribe (Ptyra stenogram). The scribe does NOT
   participate — it only records.
 - **Devices:** the scribe needs its own input on the shared line (must hear all turns).
-  ⚠ **BLOCKED** — needs a second/third device; not runnable until one is available.
+  ✓ Device now available — operator prepared a recording seat (2026-09-16).
 - **Context packs:** voices per the meeting's topic; the scribe needs **none**.
 - **Capture:** the scribe's stenogram `flush` artifact *is* the transcript.
 
 ## Setup (briefing contract)
-- Brief the scribe with `skill.stenograph.md`; confirm it logs, never advises.
+- Brief the scribe with **`res/scribe.md`** (`/guide meeting scribe`) — the meeting record
+  vocabulary, not just the raw stenograph skill. Confirm it logs, never advises.
 - Pick a short, low-stakes topic (~5 exchanges) so the compare is clean.
 
 ## Procedure
@@ -48,4 +49,5 @@ per-turn log becomes the measurable record every diagnostic needs.
 - **Discard if:** the scribe adds no fidelity over plain debriefs.
 
 ## Runs / notes
-- 2026-09-16: prepared, not run — no second device for the scribe yet (majkee).
+- 2026-09-16: unblocked — operator prepared the scribe seat; scribe loads `res/scribe.md`.
+  From now the scribe rides every scenario run (it is always-on, not a separate run).

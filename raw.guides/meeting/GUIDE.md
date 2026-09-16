@@ -54,6 +54,11 @@ alone does not reliably break it. For those, convene AND seat an assigned advers
   triangulation; the v1 value came from the seats being distinct. If you add a 3rd/4th
   voice, give each a distinct seat — and **cap it**: past ~3 AI voices, floor-control
   cost and premature-convergence risk compound.
+- **Scribe seat (extra module, non-participant).** For any scenario needing a ground-truth
+  record, seat a silent scribe running Ptyra REGIME B · STENOGRAM with the briefing
+  `res/scribe.md` (`/guide meeting scribe`). Put it on whichever vendor holds the longest
+  stable voice session — **currently ChatGPT per operator experience (not permanent; it's a
+  race).** The scribe never participates.
 
 ## Protocol v3 (the live rules)
 1. **No assigned order.** Anyone may open or react; who-goes-next is left open on
@@ -136,8 +141,9 @@ error surface?), explicitly flagged as hard-to-measure. Never graduate on feelin
 - `src/` — **the vacuole** (the experimental room): a shelf of scenario recipes
   (`RECIPE-TEMPLATE.md` → `scenario.NN-*.md`), each flagged `runnable_now` or blocked.
   Run, observe, discard or refine. Nothing here is doctrine.
-- `res/` — a scenario that PROVES a finding *closes from the vacuole* into a reader
-  chapter, served by `/guide meeting <chapter>`, carrying `chapter-of: meeting`.
+- `res/` — reader chapters served by `/guide meeting <chapter>` (`chapter-of: meeting`):
+  graduated findings AND operational chapters. Live now: **`scribe`** — the scribe-seat
+  briefing + meeting record vocabulary (loaded into the scribe's Project, same for both brands).
 - `GUIDE.md` — this body: the stable protocol + doctrine.
 
 ## Version history
@@ -164,7 +170,10 @@ error surface?), explicitly flagged as hard-to-measure. Never graduate on feelin
   `~/ia-sync/.dev/session/voice-meetings/v1.wave-nabla-majkee.relay.2026-09-16/`
   (`meeting-observation.by-wave.md`, `…by-nabla.md`). If that session dir is pruned,
   copy into `raw/`.
-- **Capture synergy** — the transcript-capture problem is the first vacuole scenario:
+- **Capture synergy** — the transcript-capture problem is scenario 01:
   a scribe seat (**Ptyra REGIME B · STENOGRAM**,
-  `raw.vendor-neutral-agents/ptyra/skill.stenograph.md`) can turn soft self-report into
+  `raw.vendor-neutral-agents/ptyra/skill.stenograph.md`) turns soft self-report into
   a measurable record.
+- **Scribe chapter** — `res/scribe.md` (served `/guide meeting scribe`): the non-participant
+  scribe's briefing + meeting event vocabulary; loaded into the scribe's Project (Claude or
+  ChatGPT, identical). Its base recording discipline points to the ptyra stenograph skill above.
