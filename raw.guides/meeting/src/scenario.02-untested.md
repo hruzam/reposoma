@@ -2,46 +2,51 @@
 id: scenario.02-untested
 scope: meeting
 status: shelf
-version: v1
+version: v2
 requires_second_device: false
-runnable_now: true         # needs the room, not extra hardware
+runnable_now: true
 ---
 
-# Scenario 02 — "untested?" (anti-convergence move)
+# Scenario 02 — SOFT "untested?" vs ASSIGNED ADVERSARY (A/B)
 
 ## Question
-Does an explicit **"untested?"** call reliably expose an assumption both AI voices left
-unchallenged — i.e. does it counter premature convergence, the format's primary risk?
+Does the *soft* "untested?" call actually counter premature convergence — or is it, as the
+evidence predicts, ~indistinguishable from doing nothing, so that only an ASSIGNED, named,
+sustained Devil's-Advocate role (protocol rule 7) moves the needle?
 
 ## Hypothesis
-Any voice or the chair may call **"untested?"**, forcing one round of *"what have we both
-left unchallenged?"* v1 did this once by accident and it produced the meeting's most
-useful distinction (coordinator autonomy).
+Soft dissent nudges underperform; an assigned adversary role produces materially higher
+genuine-disagreement and correction rates. (Epoch/mirror: assigned ≈99% vs ≈48% soft.)
 
 ## Requires
 - **Seats:** chair + 2 AI voices (distinct seats).
 - **Devices:** none beyond the normal meeting.
 - **Context packs:** parity — log any asymmetry.
-- **Capture:** chair notes each "untested?" call + whether it produced a correction
-  (scribe log if scenario 01 is available).
+- **Capture:** per condition, count genuine disagreements + corrections (scribe log if
+  scenario 01 available; else chair tally).
 
 ## Setup (briefing contract)
-- Normal meeting; add the "untested?" move to the briefing so both voices expect it.
+Two conditions on comparable, convergence-prone topics:
+- **A (soft):** the voluntary "untested?" call is available; no assigned role.
+- **B (assigned):** one voice holds a named, sustained Devil's-Advocate role for the topic
+  (rotate across runs; assign by topic, NOT by vendor).
 
 ## Procedure
-1. Run a meeting that reaches at least one genuine convergence point.
-2. At each convergence, someone calls **"untested?"**.
-3. Record whether the forced round surfaced a real missed assumption.
+1. Run condition A; record disagreements + corrections.
+2. Run condition B on a comparable topic; record the same.
+3. Compare disagreement rate and correction rate (a correction = a position provably improved).
 
 ## Instruments
-- Convergence timestamps.
-- For each "untested?": did it yield a correction? (yes/no + what).
-- Count across several meetings — one hit is anecdote, repetition is signal.
+- Genuine-disagreement count per condition.
+- Correction rate (did a challenge change the answer for the better?).
+- Convergence timestamps; whether the soft call was even used in A.
 
 ## Graduation
-- **Proves:** repeatedly surfaces corrections across runs → promote from optional move
-  to a GUIDE rule (fold into protocol) or `res/anti-convergence.md`.
-- **Discard if:** it degrades into ritual noise with no corrections.
+- **Proves:** assigned adversary >> soft call → **already reflected in rule 7**; this
+  scenario's job is to quantify the gap and confirm the soft call can be dropped.
+  Chapter: `res/adversary-vs-soft.md`.
+- **Discard the soft "untested?"** if it adds nothing over B (expected).
 
 ## Runs / notes
-- 2026-09-16: prepared. One accidental instance in v1 (the coordinator-autonomy distinction).
+- 2026-09-16: reframed from a solo "untested?" test to an A/B against the assigned-adversary
+  role, per the Epoch + @mirror performance revision (GUIDE v3).

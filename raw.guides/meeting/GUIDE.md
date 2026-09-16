@@ -4,7 +4,7 @@ scope: meeting
 audience: operator + the seated voices (human chair + AI participants)
 machine: both
 state: DRAFT — experimental; first live run 2026-09-16; a PLAYGROUND, not gate-grade canon
-protocol_version: v2
+protocol_version: v3
 verified: 2026-09-16
 verify_cmd: "ls ~/reposoma/raw.guides/meeting/ && ls ~/reposoma/raw.guides/meeting/{src,res,raw}"
 ---
@@ -26,18 +26,36 @@ gate-grade findings. It is a **GUIDE, deliberately NOT a RUNBOOK** — a meeting
 solved (see `src/` scenario #1) and a scenario *closes from the vacuole* into a
 `res/` chapter.
 
+## When to convene (and when NOT) — the cost gate *(v3)*
+A cross-vendor meeting is expensive and carries a real failure mode (premature
+convergence). It is NOT the default path to a good answer — evidence (@Epoch 2026-09-16,
+revised by @mirror) is that for many tasks a single strong model + structured self-critique
+is competitive. Convene a meeting when **both** hold:
+1. a **convergence error would carry real downstream consequence** (an architecture / design
+   call that compounds if wrong), AND
+2. the task sits in a **domain where vendor training distributions plausibly diverge**
+   (recent events, cross-stack knowledge, differing code-style priors) — so a second vendor
+   injects genuinely new signal, not an echo.
+
+**Verifiability is NOT the gate** (@mirror's correction of the raw Epoch thesis): a
+high-consequence, low-verifiability architecture question is exactly where a *silent*
+single-model convergence error is most dangerous and hardest to detect — self-critique
+alone does not reliably break it. For those, convene AND seat an assigned adversary
+(rule 7). Where a subtopic IS checkable, anchor it to ground truth (diagnostics + scenario 06).
+
 ## The room
 - **Chair (human):** Majkee. Supplies empirical observations neither AI can perceive
   from its own device (acoustic overlap, stuck sessions). Not merely a moderator.
 - **Two AI voices**, each on its own device. Candidate voices —
   ChatGPT side: **WAVE / ASYMMETRY** · Claude side: **SYMMETRY / NABLA**. Any two fill
-  the seats; no side privileged.
+  the seats; no side privileged. For top performance, run each voice on its vendor's current
+  flagship — as of 2026-09: **GPT-6 Astra** (GPT side), **Claude Opus 5** (Claude side).
 - **Topology law — distinct seats.** Two voices in one role produce convergence, not
   triangulation; the v1 value came from the seats being distinct. If you add a 3rd/4th
   voice, give each a distinct seat — and **cap it**: past ~3 AI voices, floor-control
   cost and premature-convergence risk compound.
 
-## Protocol v2 (the live rules)
+## Protocol v3 (the live rules)
 1. **No assigned order.** Anyone may open or react; who-goes-next is left open on
    purpose — that emergence is what we study.
 2. **Name on open.** Every turn begins with the speaker's name, then the words.
@@ -53,19 +71,29 @@ solved (see `src/` scenario #1) and a scenario *closes from the vacuole* into a
 6. **Echo rule** *(new in v2)*. A voice that hears its own last turn played back
    (transcription echo loop) goes silent and does nothing until the chair speaks fresh.
    *(Device-side failure that stalled the end of the v1 session.)*
+7. **Assigned adversary** *(new in v3)*. When convened for a high-consequence call, one
+   voice takes a **named, sustained Devil's-Advocate role** for the topic — its job is to
+   attack the emerging consensus, not to help reach it. This is the **load-bearing move**:
+   evidence (@Epoch/@mirror) shows *soft* dissent nudges are ~indistinguishable from doing
+   nothing, while an assigned sustained adversary moves genuine disagreement decisively
+   (≈99% vs ≈48%). **Rotate** the role across topics (not a fixed seat); **assign by topic,
+   NOT by vendor.**
 
 **PARKED — do NOT add without vacuole evidence:** deterministic collision arbitration,
-one-point-per-turn limits, mandatory anti-convergence ritual. v1 showed no collision;
-adding these now would be ceremony.
+one-point-per-turn limits. v1 showed no collision; adding these now would be ceremony.
+*(The old "mandatory anti-convergence ritual" is superseded by rule 7 — a soft ritual was
+the weak version the evidence rejected.)*
 
 ## The primary risk: premature convergence (not collision)
 Both v1 voices independently reported a pull toward agreement — *"smoothing too fast."*
 Between two AI voices this feels like cooperation, which is exactly why it is
 dangerous: the failure is not fighting for the floor, it is **both voices stopping
-attacking the shared model.** Watch for it. Candidate move under test (see `src/`
-scenario #2): **"untested?"** — any voice or the chair may call it to force one round of
-*"what have we both left unchallenged?"* Not yet a rule; it graduates to a `res/`
-chapter only if it repeatedly exposes missed assumptions.
+attacking the shared model** — and it worsens because self-critique alone does not reliably
+break it (sycophancy penetrates even a lone model's self-review). The **primary countermeasure
+is the assigned-adversary role (rule 7)**, NOT a soft prompt. The voluntary **"untested?"**
+call survives only as a *weak backstop* under A/B test (scenario 02): it is measured against
+the assigned adversary and expected to be near-useless alone — kept only to quantify how much
+the soft version underperforms.
 
 ## Pre-session briefing contract (read before "real" begins)
 Establish and record:
@@ -92,10 +120,16 @@ concede-≠-lose · observer bias). To make it measurable, report:
   of vendor, the effect is positional, not model.
 - **Convergence timestamps** — mark agreements; flag any never challenged.
 
-## End-of-meeting debrief (each AI voice)
+## End-of-meeting debrief (each AI voice) — COLOR, not the graduation signal
 A few lines: did turn-taking work / feel crowded? did it want to speak and hold back,
-or step on the other? one rule that would improve the next meeting? These feed the
-next version.
+or step on the other? one rule that would improve the next meeting?
+
+⚠ **Debrief is qualitative color, NOT the signal a scenario graduates on** *(v3)*. Evidence
+(@Epoch/@mirror): perceived decision-quality can run *inverse* to actual accuracy — the
+highest-accuracy condition self-reported the LOWEST confidence. **Graduation anchors to an
+objective outcome** — ground-truth correctness where the topic is checkable (scenario 06),
+else a downstream-consequence proxy (was the decision later reversed? did the convergence
+error surface?), explicitly flagged as hard-to-measure. Never graduate on feelings.
 
 ## The vacuole → chapter lifecycle
 - `raw/` — evidence (debriefs, transcripts).
@@ -115,6 +149,15 @@ next version.
 - **v2** (2026-09-16): + chair-hand-off binding (rule 5), + echo rule (rule 6);
   collision machinery kept parked; added the pre-session briefing contract + the
   diagnostics checklist. First v2 run: **pending**.
+- **v3** (2026-09-16): performance revision from an @Epoch research pass challenged by
+  @mirror (evidence: `raw/epoch.brand-strengths-for-performance.2026-09-16.md`; mirror
+  verdict **REVISE**). Added the **cost gate** (convene on consequence × vendor-divergence,
+  NOT verifiability); the **assigned-adversary role** (rule 7 — load-bearing over soft
+  dissent); demoted the debrief to color (graduation anchors to objective outcome);
+  reframed scenario 02 as an A/B vs the assigned adversary; added scenario 07 (role-by-
+  strength routing, NOT vendor-hardcoded). Model note: GPT-6 Astra (~2026-09-03) is the
+  current GPT-side flagship; Claude Opus 5 (2026-07-24) the Claude side. First v3 run:
+  **pending**.
 
 ## Manifest (point, never copy)
 - **Evidence** (v1 debriefs) live in their session home:
