@@ -8,6 +8,27 @@
 
 ---
 
+## [2026-09-17 · Trajectory] — the sandbox setting is kernel-enforced, not shim-trusted
+
+Operator pushback on the sandbox check (`res/user-run.md` §"Sandbox check before write-side
+dispatch"): a `sandbox.type` string in local state is only meaningful if something in the
+Codex vendor machinery actually enforces it. Traced it end to end — it does.
+
+`strings` on the real vendor binary (not the npm JS launcher) surfaces OpenAI's actual
+enforcement code: `sandboxing/src/landlock.rs`, `LandlockRestrict`, `seccomp-then-exec`,
+`CODEX_SANDBOX_NETWORK_DISABLED` (Linux: **Landlock LSM** for filesystem + **seccomp** for
+syscalls/network; macOS: `Seatbelt`/`sandbox-exec`). Live-verified via the exposed
+`codex sandbox` CLI (same enforcement path the app-server delegates to for a thread's
+turns): a read-only permission set turned a write attempt into a literal kernel `EROFS`
+("Read-only file system") and a network attempt into a DNS resolution failure — both
+kernel-level refusals, not application-level "no"s.
+
+**Takeaway:** `tun status`'s `sandbox.type` selects a real OS-level jail (Landlock ruleset +
+seccomp filter on Linux) that the kernel enforces around every tool-exec the model attempts —
+immune to the model "deciding" otherwise. Hardens #4 and #9 below (which recorded the
+*behavior* from the outside) with the *mechanism* underneath. Full trace + live-test
+transcript: `src/observation.sandbox-enforcement-mechanism.2026-09-17.md`.
+
 ## [2026-09-10 · Trajectory] — the shim's OWN wait-window dies on research-grade turns (+ exits 0)
 
 Distinct from the 09-04 process-kill lesson below: with the harness cap out of the picture,

@@ -85,6 +85,8 @@ and its state folders differ. Written by the `/issue-card` skill (sibling of `co
 Prefixes are for the human eye and glob ergonomics (`CS.*` / `RT.*` / `ISS.*`). Machines never
 parse filenames — `kind:` in frontmatter is the truth.
 
+**[ISSUE-DRAFT]** — Clarification: this law forbids inferring `kind:` from the filename; extracting the `YYYY-MM-DD` date substring from a filename for sort ordering is a distinct operation and does not violate it.
+
 **[ISSUE-DRAFT] Sort key — the durable radar.** Dated categories (cold-start-card,
 issue-card) **sort by the filename `YYYY-MM-DD` date, primary.** A date in the name is
 repository data that survives clone / checkout / host-move; filesystem mtime is only one
@@ -163,6 +165,36 @@ pointers:
   surfaces — filename for zero-read matching, frontmatter for cheap metadata scan.
 - **No `status:` field** — the `issues/{open,parked,archive}` folder carries the state; a
   triage or a fix is a `mv` between them.
+
+### [ISSUE-DRAFT] Issue-reaction frontmatter — the dateless delta
+
+A reaction card captures a known **pattern** of defect and its **playbook** response. Unlike
+issue cards (which describe a single dated defect instance), reaction cards are dateless,
+permanent, and recur. It carries the same flat, `~`-anchored contract, `kind: issue-reaction`,
+with pattern-and-playbook keys replacing the instance keys:
+
+```yaml
+---
+kind: issue-reaction
+brand: claude
+found_by: <seat/agent>                 # reaction-domain author key
+project: <origin registry key>         # which repo/component owns the pattern
+root: ~/<whole path to project root>
+pattern: <ONE sentence describing the defect pattern>  # the pattern class
+playbook: <how to respond when you hit this pattern>   # the response playbook
+assoc: [<tag>, <tag>, <tag>, <tag>, <tag>, <tag>, <tag>]   # >=7 discriminators
+pointers:
+  - ~/<where related instance cards or deeper trail live>
+---
+```
+
+- **`pattern:` is the one-sentence description** — a reader identifies the pattern without
+  opening the body. **`playbook:` is the response** — when an instance of this pattern
+  appears, this is how to react.
+- **`assoc:` is >=7 association tags** — the "know, not said" discriminators (class · tech ·
+  subsystem · host · symptom · area · severity), same as issue cards. An agent greps these to
+  surface candidate reactions without a body read. No `date:` field, no archive — reaction
+  cards are dateless and permanent, like routines. Filename is `IR.<slug>.md` (dateless).
 
 ## Master prompt — the prompt grammar (shared with runbooks)
 
