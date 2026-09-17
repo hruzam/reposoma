@@ -44,3 +44,11 @@ Migrated 2026-09-17 from `~/reposoma/_issues/open/` into the cold-start card vau
 subtree (session `cs-card-sys-update`, phase 1). Conformed to the issue-card schema (added
 `assoc:`). The old-path original is left in place until majkee proves the new shape and
 removes it in a reviewed commit — do not read both as two live issues.
+
+Re-flattened 2026-09-17 (same session, phase 1 @vector) from `issues/open/` up to flat
+`issues/` — the nested `issues/{open,parked,archive,reactions}` subtree is retired in favor
+of a flat `issues/` + fold-to-`routines/`-or-`archive/` model; see
+`~/reposoma/raw.guides/cold-start-card/res/issue-card.md`. This card has not been folded —
+it still awaits a triage/fold call. Flagging for majkee: this looks like a
+known-recurring-from-the-start (structural, tailscale-mount) candidate for direct graduation
+to `routines/`, but that fold is an operator call, not made here.

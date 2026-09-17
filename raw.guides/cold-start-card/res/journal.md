@@ -17,6 +17,64 @@ Pending actionable work lives in the vault:
 
 ---
 
+## 2026-09-17 — the issue category is born, then redesigned FLAT (session `cs-card-sys-update`, @Trajectory cSharp + majkee)
+
+The cold-start family grew a second card category: **issues**. The reason it belongs HERE and
+not in a parallel vault: an issue is the same mechanism as a cold-start card — a durable,
+frontmatter-first, folder=state record in `~/reposoma/_cold-start/` — differing only in what it
+holds. An issue card is **memory: a fix-manual.** It carries a defect AND (once known) its fix,
+so a later incarnation looks the fix up instead of re-deriving it. (Placement was gated first:
+Janus + a cross-vendor @mirror both rejected per-project issue vaults in favor of this central
+one — a project always travels with reposoma, so no project ever needs local issue files.)
+
+**The redesign is the real lesson.** The first build used a nested `issues/{open,parked,archive,
+reactions}` subtree plus a separate `IR.<slug>.md` "reaction" card type for recurring fixes.
+majkee reviewed it and simplified it, and the simpler shape is better *because it folds into what
+already exists* instead of inventing a parallel structure:
+
+- **`issues/` is FLAT** — same level as `card/`, no private state subtree. WHY: the vault's one
+  law is folder=state; issue state is carried by which top-level folder the card sits in, not by
+  a nested tree or a `status:` field.
+- **The `reactions/` category and `IR.` type are DELETED.** WHY: the recurring-fix role is served
+  by the EXISTING `routines/` category via a **fold** — an issue that recurs *graduates into a
+  routine*. No third category needed. Three paths: known-recurring-from-the-start → `routines/`
+  directly (structural defects, e.g. a tailscale-mount hazard) · solved one-shot → `archive/` ·
+  archived one that recurs → pulled into `routines/`.
+- **Origin is dual-signalled, matching the vault's own radar/manifest philosophy:** a graduated
+  issue KEEPS its `ISS.<slug>.<date>.md` name in `routines/` (grep-visible origin radar; `RT.*` =
+  born routine, `ISS.*` = graduated) and its date as "first seen", and gains an `origin:` field
+  (manifest). It is NEVER renamed to `RT.` — the retained prefix is the point.
+- **Parked is an `assoc:` tag + body note, not a folder or a `status:` field.** WHY: preserves
+  folder=state; a deferred issue (e.g. the larva case) is just a caught issue findable by tag.
+
+**GUIDE restructured to a thin signpost + subchapters.** The single-file GUIDE outgrew one file,
+so it became a signpost carrying only shared law + a Manifest, with `res/cold-start-card.md` and
+`res/issue-card.md` holding the per-category detail — subchapter name = skill name, so a skill
+points at its subchapter mechanically. The 2026-08-27 gaveled CS/routine content was RELOCATED
+byte-verbatim (witnessed word-for-word), not reworded — a meaning-preserving move, not a
+re-decision.
+
+**New reusable canon-status label: `[GAVELED · REVIEW-AFTER-USE]`** (alias `[PROVISIONAL]`). It
+names the state BETWEEN draft and bedrock: *in force — follow it as canon — but new and unproven,
+flagged for re-audit after its first real use, adjustable then by the audit-always rule without a
+fresh gavel ceremony.* WHY it exists: it came out of an operator master-rule this session —
+reserve the heavy gavel ceremony for changes that turn a behavioral pattern or a decision; a
+meaning-preserving edit is just audited, and a new-but-blessed shape shouldn't hide behind a draft
+wall nor pose as settled bedrock. The issue category wears this label until a real issue card is
+written and a real fold performed.
+
+Built cross-vendor: the Claude `issue-card` skill and the Codex-native one (@Cartan, over a
+file-bus cycle) both express the identical rules, each witnessed rule-by-rule (@assay). Codex form
+differs from Claude form; the rules are identical — which is the whole point of putting the schema
+in the GUIDE subchapter and having both skills point at it.
+
+**Friction captured (brand-agnostic, worth remembering):** a cross-host trap bit hard — a Codex
+build that ran on the *office* working tree looked *missing* from home, because uncommitted
+changes don't sync between machines; only commits do. The lesson isn't "someone lied," it's "a
+report about disk from another host is unverifiable until that host commits+pushes." Verify a
+claim against the machine you're on, and treat an absent file as an un-synced commit before an
+undone one.
+
 ## 2026-08-28 — Codex smoke test PASS (@Cartan; entry approved by majkee)
 
 @Cartan wrote and re-read the first Codex card in the rebuilt central vault
