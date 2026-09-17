@@ -28,9 +28,10 @@ verify_cmd: "ls ~/reposoma/_cold-start/ && grep -rl '_cold-start' ~/ia-sync/clau
 > one-shot → archive/ · recurred-after-all → archive/ → routines/); the old nested
 > `issues/{open,parked,archive,reactions}` subtree and the `IR.<slug>.md` reaction-card type
 > are DELETED from the design. Its first real use (a real issue card written + a real fold)
-> is the trigger to re-audit. **One item still genuinely open (not yet in force):** the Codex
-> `issue-card` skill is not yet repointed to this flat model — @Cartan rebuilds it via
-> majkee's relay.
+> is the trigger to re-audit. Both `issue-card` skills — Claude and Codex — are rebuilt to this
+> flat model and cross-witnessed (@assay; the Codex rebuild is bus cycle 01, 2026-09-17). What
+> remains for the session gate is operator-side only: the by-hand git and the fresh-session
+> behavior proofs — not a design change to this file.
 
 _The one law behind both `cold-start-card` skills (Claude + Codex) and the `_cold-start/`
 vault. Gaveled by majkee 2026-08-27 (session `o-rep.atl-fab.ccard`); shape journal:

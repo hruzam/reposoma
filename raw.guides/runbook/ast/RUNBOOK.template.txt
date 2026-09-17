@@ -1,0 +1,48 @@
+# RUNBOOK: <program>-<NN>-<phase>
+
+```yaml
+goal: >
+  <the point reached at the end of the process>
+gate: >
+  <the one observable condition that closes this session>
+participant_1: [<seat>, {brand: <brand>, model: <model>, effort: <effort>}, host: <host>, role: <fixed role>]
+participant_2: [<seat>, {brand: <brand>, model: <model>, effort: <effort>}, host: <host>, role: <fixed role>]
+status_owner: <one declared participant>
+# head_note: <protocol name and fixed posture, only for a multi-session arc>
+```
+
+## Why this session exists
+
+<The bounded problem and why it earns a session.>
+
+## Fixed facts
+
+- <Settled fact that every participant may rely on.>
+
+## prompt-0 — <seat>
+
+```text
+<Copy-pasteable prompt with absolute paths, owned scope, gates, done-when, and return path.>
+```
+
+## prompt-1 — <seat>
+
+```text
+<Copy-pasteable prompt with absolute paths, owned scope, gates, done-when, and return path.>
+```
+
+## Known constraints + destructive holds
+
+- <Fixed boundary known at authoring time.>
+
+## Acceptance evidence
+
+- <Observable proof that satisfies the gate.>
+
+## References
+
+- `<absolute path>` — <why it is authoritative or useful>
+
+## What this session deliberately does not do
+
+- <Adjacent work excluded from this gate.>

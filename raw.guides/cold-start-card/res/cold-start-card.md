@@ -39,14 +39,15 @@ model: sonnet                    # thinking level the task deserves:
 dedicated: <seat/agent the author recommends for the next incarnation>
 recommend: <author's one-line steer>
 runbook: ~/<project>/<session-root>/<program>-<NN>-<phase>/RUNBOOK.md   # optional —
-                                 # point to the LIVE session RUNBOOK; the _runbook/
-                                 # bench copy is a draft/template after promotion
+                                 # exact LIVE session RUNBOOK in the owning project
 pointers:                        # where depth lives — point, never copy
   - ~/reposoma/pulse.atlas.md
 ---
 ```
 
 - Skip keys that are genuinely empty; never invent values.
+- Omit `runbook:` when no live session bed exists. Temple is the card/canon home, never the
+  owner of a project session or a fallback RUNBOOK path.
 - `model` + `dedicated` + `recommend` = the author's routing assessment — the human reads
   these in the palette (brick D2) before launching anything.
 

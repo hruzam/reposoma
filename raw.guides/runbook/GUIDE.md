@@ -3,7 +3,7 @@ title: RUNBOOK builder — the session launcher
 scope: runbook
 audience: agent + operator + builder
 machine: both
-verified: 2026-09-05
+verified: 2026-09-17
 ---
 
 # RUNBOOK builder — the session launcher
@@ -28,6 +28,7 @@ verified: 2026-09-05
 - `res/presence-board.md` · chapter · GAVELED 2026-09-09 — advisory cross-session attachment records and detach boundary
 - `res/research.md` · chapter · GAVELED 2026-09-03 — big-scope pre-RUNBOOK research gate
 - `res/token-economy.md` · chapter · DRAFT — delegation shape and spend record
+- `ast/` · static copy assets — `RUNBOOK.template.txt`; inert authoring source, never a session bed
 - `raw/` · collected runbook substrate reached only by explicit path; not served by the resolver
 
 ## What a RUNBOOK is
@@ -38,8 +39,9 @@ is told. It is read once at start and rarely again.
 It is not a plan, not a log, and not a state file. Everything the RUNBOOK says stays true for
 the whole session. The moment a file needs updating as work proceeds, it is `STATUS.md`, not a
 RUNBOOK. For the same reason the RUNBOOK carries **no `state:` field** — a mutable field in a
-read-once file is a second state surface. Lifecycle is positional: on the bench = draft, in a
-session folder = live, pruned = closed. The live position lives in `STATUS.md` alone.
+read-once file is a second state surface. Lifecycle is positional: outside an owning session
+folder = inert authoring material, in the session folder = live, pruned = closed. The live
+position lives in `STATUS.md` alone.
 
 ## The rule that delimits a session
 
@@ -101,18 +103,24 @@ the next action (`status.md` 08-15, `pulse.md` 08-24, a CS card 08-24) — a fre
 undocumented precedence knowledge to resume. File count is the symptom; **duplicated authority
 is the cause.**
 
-## Drafted here, lives there
+## Authored where it lives
 
 ```
-~/reposoma/_runbook/<project>/<slug>/     the DRAFTING BENCH
 <project>/<session-root>/<program>-<NN>-<phase>/RUNBOOK.md    where it LIVES
 ```
 
-A RUNBOOK may be drafted in the bench before a session exists. **Promotion into the session
-folder is what makes it live.** After promotion the bench copy is a template, never a second
-state store. Process state — position, bus, pads, evidence — stays with the project.
+An actual RUNBOOK is authored only in the owning project's declared session root. Temple carries
+the doctrine and an inert copy source at `ast/RUNBOOK.template.txt`; it does not own sessions,
+draft session beds, or project process state. Copy the asset into the new session folder, then
+fill it there. Process state — position, bus, pads, evidence — stays with the project.
+
+Legacy material elsewhere in reposoma is historical substrate, not an authoring target, template
+registry, or exception to this rule.
 
 ## Structure
+
+For a copy-ready skeleton, use `ast/RUNBOOK.template.txt`. The structure below remains the law;
+the asset is only a convenience and must change with this section when their shapes diverge.
 
 **Front-matter**
 

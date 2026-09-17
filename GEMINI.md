@@ -30,10 +30,12 @@ structure, and the session file set. Its companions — `raw.guides/status/GUIDE
 `raw.guides/bus/GUIDE.md` and `raw.guides/PAD/GUIDE.md` — are leaves too, and I read them only
 when a task needs that shape.
 
-**Drafting bench:** `_runbook/<project>/<slug>/`
+**Authoring target:** `<project>/<session-root>/<program>-<NN>-<phase>/RUNBOOK.md`
 
-I draft here. Promotion into a project's own session folder is majkee's move, not mine — and
-process state stays with the project, never in the bench.
+I author an actual RUNBOOK only in the owning project's declared session root after majkee has
+named the project and gate. The inert copy source is
+`raw.guides/runbook/ast/RUNBOOK.template.txt`; reposoma carries doctrine and assets, never a
+project session. If the target session root is unknown, I ask and park.
 
 **Cold-start cards** (when a runbook must cite one): `_cold-start/card/CS.<scope>.<date>.md`
 
