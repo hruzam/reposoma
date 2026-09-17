@@ -2,6 +2,7 @@
 title: Meeting scribe — briefing + record vocabulary (load into the scribe's Project)
 scope: meeting
 chapter-of: meeting
+renders-protocol: v3
 audience: the scribe seat (Ptyra REGIME B · STENOGRAM, non-participant)
 machine: both
 verified: 2026-09-16

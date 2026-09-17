@@ -142,8 +142,9 @@ error surface?), explicitly flagged as hard-to-measure. Never graduate on feelin
   (`RECIPE-TEMPLATE.md` → `scenario.NN-*.md`), each flagged `runnable_now` or blocked.
   Run, observe, discard or refine. Nothing here is doctrine.
 - `res/` — reader chapters served by `/guide meeting <chapter>` (`chapter-of: meeting`):
-  graduated findings AND operational chapters. Live now: **`scribe`** — the scribe-seat
-  briefing + meeting record vocabulary (loaded into the scribe's Project, same for both brands).
+  graduated findings AND operational chapters. Live now: **`participant`** (the two voices)
+  and **`scribe`** (the recorder) — the two seat briefings, each a version-bound rendering of
+  the protocol, loaded into their Projects (identical across brands).
 - `GUIDE.md` — this body: the stable protocol + doctrine.
 
 ## Version history
@@ -177,3 +178,9 @@ error surface?), explicitly flagged as hard-to-measure. Never graduate on feelin
 - **Scribe chapter** — `res/scribe.md` (served `/guide meeting scribe`): the non-participant
   scribe's briefing + meeting event vocabulary; loaded into the scribe's Project (Claude or
   ChatGPT, identical). Its base recording discipline points to the ptyra stenograph skill above.
+- **Seat briefings are version-bound renderings of the protocol.** `res/participant.md`
+  (`renders-protocol: v3`, for the two voices) and `res/scribe.md` (`renders-protocol: v3`,
+  for the scribe) are the participant/scribe-facing renderings of THIS GUIDE's protocol version.
+  On a protocol bump, BOTH re-derive — never edit a seat briefing alone (orphan/drift guard).
+  **Three surfaces, max: GUIDE + the two renderings.** Per-scenario role lines are run-time
+  (chair-stated), not protocol-version.
