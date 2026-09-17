@@ -27,6 +27,20 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [x] **AGOL ORIENTATION FIX — DEPLOYED + VERIFIED 2026-09-16.** majkee deployed; Atlas verified
+  live==table (byte-identical) + orientation clause LIVE on `~/.claude/agents/agol.md` rule 1. Agol consult (3 Qs,
+  relayed via majkee — Agol read-only). Found: live+table `agol.md` identical + bare 60-line advisor,
+  NO orientation spine → structural cross-project over-claim every spawn (not stale content, absent
+  orientation). Q1 GAVELED: sharpened rule 1 with ONE pointer clause (registry/index.md as authority,
+  point-never-copy, no beds enumerated → can't rot; shaped to host future L6 seed-pointer per G-28).
+  G-27 read verbatim ≠ "wait for recurrence" (it's ceremony∝reversibility → green-lights the fast loop
+  on a reversible doc edit); recurrence-gate is G-42/G-29 family, not this. Q2 CONCUR w/ Agol: park L7
+  role + RT-card stub (A0 + L7 tiers it; stub = negative-value rot surface, zero readiness gain — RT
+  vehicle already spec'd). Q3: NO sniffer sub-agent (L6-parked daemon pattern; Agol can't spawn anyway).
+  Reconciliation collision flag carried: if staged Atlas-prompt delta amends lock-22/23 wording → notify
+  incarnations session. DELIVERED: `~/ia-sync/claude/agents/agol.md` rule-1 edit (STAGED, table) +
+  return note `_mail/agol/inbox/atlas.consult-return.2026-09-16.md` (created the inbox). OPEN: majkee
+  `deploy.sh` + commit/push ia-sync (INERT until deploy; don't `sync.sh` before deploy).
 - [x] **cSHARP PROTOCOL — folded + gaveled 2026-09-04.** My own first-cSharp transfer letter folded to
   `raw.guides/runbook/res/csharp-head-protocol.md` (renamed from `csharp-head.md`, `git mv`, history kept).
   Existence check found ~90% already folded by the 09-03 gavel — only 2 lines were orphans, so the fold is a

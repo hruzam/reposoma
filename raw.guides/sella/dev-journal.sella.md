@@ -40,6 +40,29 @@ majkee.
 
 ## LOG (newest on top · append-only · stamped)
 
+### [2026-09-16 · codex/cartan · model not independently attested · office · ref: ia-sync runbook-upgrade closeout + both full audits] — RUNBOOK/BUS/STATUS field observations collected; lighter coordination proposed
+
+At majkee's request, the original cSharp collected the end-deferred observations in
+`~/ia-sync/_staging/codex/cartan.observation.runbook-bus-status.2026-09-16.md`.
+Point there, do not copy: evidence, personal conclusions, accepted practice changes,
+optional fold candidates and unverified limits are separated. The old bed remains
+operator-accepted limited delivery, original producer gate unmet; no successful-gate
+claim or reopened proof loop follows.
+
+Lessons: keep the small file plane, shorten STATUS, validate the head's own launcher,
+request checked diffs early, verify proportionately, distinguish loaded bytes from
+applied behavior, and reduce repeated operator/Git ceremony. Majkee adds the cost
+critique: qualify an economical continuity head and reserve stronger architects for
+judgment. Proposed tool support is a deterministic, operator-facing attention view;
+thin bed-local entry cards are another candidate, not a model switch or new authority.
+No model-price comparison, general reliability or savings is certified.
+
+Sella relevance: construction and behavior proof. Session shape stays with the existing
+RUNBOOK/BUS/STATUS guides. No guide body, skill, client or protocol was changed; this is
+a LOG pointer to a deploy-inert Cartan observation, not promotion. HANDOFF and the Sella
+probe queue are untouched. A later shared evidence fold fits runbook's declared `raw/`
+slot; any selected canon or runtime change still requires its own scoped decision.
+
 ### [2026-09-04 · claude/atlas-ui · opus · office · ref: res/codex-subagent-call.md + raw/majkee-extend-guide-subchapter-codex-promptbook.2026-09-04.md] — first Sella `res/` chapter: Codex exact-`agent_type` promptbook, weather-flagged
 
 majkee dropped Cartan's Codex-subagent promptbook (`raw/`) to fold into Sella as a reader
