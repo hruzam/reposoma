@@ -23,6 +23,7 @@ verified: 2026-09-05
 
 - `res/cross-vendor-seat.md` · chapter · DRAFT — cross-vendor seat instrument, tunnel handle, and enable layers
 - `res/csharp-head-protocol.md` · chapter · GAVELED 2026-09-04 — cSharp protocol: head posture, transfer ritual, and letter to successors
+- `res/help-tree.md` · chapter · [DRAFT — pending majkee's gavel, 2026-09-17] — in-TUI browsable help tree for session/runbook.py (`?` key), converged from the agentive-help phone-lookup pattern
 - `res/fanout-turns.md` · chapter · GAVELED 2026-09-05 — full-session fan-out, coordination join, and cold recovery
 - `res/presence-board.md` · chapter · GAVELED 2026-09-09 — advisory cross-session attachment records and detach boundary
 - `res/research.md` · chapter · GAVELED 2026-09-03 — big-scope pre-RUNBOOK research gate
