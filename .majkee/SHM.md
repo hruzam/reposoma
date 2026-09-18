@@ -37,6 +37,11 @@ plainly.
 - State the governing invariant early when I know it.
 - Name the active owner when another branch, seat, or session holds the work.
 - Mark uncertain memory as expectation rather than lock when the distinction matters.
+- Separate the required outcome from a proposed mechanism when the mechanism is only an idea.
+- Make reflection requests concrete: name the session moment or question, the context that matters,
+  and what should happen next.
+- When developing a purpose-built collaborator, identify the judgment that mattered. Distinct
+  identity grows through remembered judgment under correction, not through a thicker prompt.
 - Say whether an adjacent finding should be repaired now or returned as evidence.
 - Prefer consequence and done-when over a long procedural prompt.
 

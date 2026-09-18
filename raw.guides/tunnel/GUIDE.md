@@ -64,12 +64,16 @@ error · 50 reconcile mismatch (streamed ≠ read-back — record, never silentl
 
 → chapter `user-run` — bring-up on a new host, session reset, multi-vault patterns,
   TUNNEL_CODEX_STATE wiring (`/guide tunnel user-run`)
+→ chapter `settings` — the knob card: what each sandbox mode actually permits, the fine
+  knobs (`writable_roots`, `/tmp`, network), model/effort/identity params, and which of
+  the three routes can reach each one today (`/guide tunnel settings`)
 
 ## Manifest
 
 | file | class | title |
 |---|---|---|
 | `res/user-run.md` | chapter | user-run — bring-up, session reset, multi-vault patterns |
+| `res/settings.md` | chapter | settings — the knob card (what you can set, what it means, how to send it) |
 | `dev-journal.tunnel.md` | journal (dev-layer, uncanonical) | field-usage lessons ladder — append-only, not `/guide`-served |
 | `src/` | dev-layer (uncanonical, sella-src pattern) | driving observations + evidence — reached by explicit path only |
 

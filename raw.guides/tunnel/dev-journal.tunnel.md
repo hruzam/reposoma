@@ -8,6 +8,31 @@
 
 ---
 
+## [2026-09-18 · Trajectory] — the parametrization ceiling, and why `-c` is the keystone
+
+Drove the question "can we loosen the leash — model, effort, identity?" to the bottom.
+The shim sends **3 of 16** `thread/start` params and **2 of 17** `turn/start` params; the
+rest is unused surface, tight by omission rather than design.
+
+**The blocker and the key, both found:** Codex's native preset registry (`[profiles.*]` +
+`--profile`) is **structurally unreachable** here — the binary's own error string omits
+`app-server` from the commands `--profile` applies to, and `-c profile="x"` is rejected as
+a retired config key. But plain `-c key=value` **does** work on app-server (handshake
+verified). Since the shim spawns one app-server per verb with no daemon, **spawn-level
+config is effectively per-turn config** — so `-c model_reasoning_effort="high"` on one
+`send` needs no `turn/start` param work at all, and per-vault settings need no global
+`config.toml` edit. One small primitive covers most of the leash.
+
+**Session hygiene, measured:** `close` orphans the thread rather than ending it (state file
+is the sole holder of the threadId — lose it and recovery means date-hunting
+`~/.codex/sessions/`). The state file path IS the thread address. And the `[usage: …]` tail
+prints both `last` and `total`: reading `total` (177K/258K ≈ 69 %) instead of
+`last.input_tokens` (51K ≈ 20 %) rotates a thread ~3× too early and throws away the memory
+it exists to hold.
+
+Full trace, probe tables, and the bundler-not-compiler design note:
+`src/observation.parametrization-and-session-hygiene.2026-09-18.md`.
+
 ## [2026-09-17 · Trajectory] — the sandbox setting is kernel-enforced, not shim-trusted
 
 Operator pushback on the sandbox check (`res/user-run.md` §"Sandbox check before write-side
