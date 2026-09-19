@@ -17,7 +17,7 @@
 | jar-kuba | office | bootstrap | [`registry/jar-kuba.md`](jar-kuba.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/flag.md` |
 
 | fantasyobchod | home | active/maintenance | [`registry/fantasyobchod.md`](fantasyobchod.md) | `AGENTS.md` · `CLAUDE.md` · siblings: freya |
-| psdvsSys | home | active/bootstrap | [`registry/psdvsSys.md`](psdvsSys.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/flag.md` |
+| ham | home | active/bootstrap | [`registry/ham.md`](ham.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/flag.md` · twin: ham.devenv |
 | applications-in-common | home | active/bootstrap | [`registry/applications-in-common.md`](applications-in-common.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/hypotheses.md` · siblings: freya, nabla-lab |
 
 ## Sibling-graph (who shares what)
