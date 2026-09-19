@@ -146,19 +146,28 @@ outside the workspace root is still blocked. There is no side-door — widening 
 the only supported path.
 
 **Two mechanics before you widen:**
-- **Sandbox is fixed at thread birth.** No verb re-sandboxes a live thread. To change it:
-  `tun close` (re-arms the gate) → `tun open --enable --sandbox workspace-write` → a NEW
-  thread. The prior thread's memory is gone; re-brief.
+- **Sandbox is fixed at thread birth *by house rule*, not by the protocol.** The shim sends
+  it only at `thread/start`, so in practice you change it with `tun close` (re-arms the
+  gate) → `tun open --enable --sandbox workspace-write` → a NEW thread, prior memory gone.
+  0.154.0 *does* expose a per-turn `sandboxPolicy` override, but only a client can send it
+  (never the model), and wiring it to `send` would hand leash-loosening to any Bash-capable
+  seat. We decline it deliberately. Knob detail: `/guide tunnel settings`.
 - **`approvalPolicy: "never"` is baked into v0.** A writable sandbox therefore executes
   autonomously with no approval prompt — the only gate is your initial `open`.
 
 **When escalation is clean:** routine multi-edit work inside ONE repo → open `workspace-write`
-launched at that repo's root. **When it is not:** work spanning several repos (it would force
-`danger-full-access` to cover them all), or anything where the surgical-table gate
+launched at that repo's root. **When it is not:** anything where the surgical-table gate
 (author-on-table / operator-or-executor-deploys) should hold. For those, keep the tunnel
 `read-only` and use the seat as verifier + plan-author, handing the emitted script to a
 write-capable seat (see previous section) — gated execution plus free cross-vendor
 verification, a feature not a limitation.
+
+**Multi-repo work — a house choice, not a mechanical limit.** Earlier text here claimed work
+spanning several repos "would force `danger-full-access`". That is false:
+`sandbox_workspace_write.writable_roots` makes several named repos writable while everything
+else stays EROFS (verified 2026-09-18, 0.154.0). The restriction stands as policy — keep
+multi-repo fan-out behind verify→execute — but say it as a choice, because the mechanism
+does not force it.
 
 `danger-full-access` is a deliberate, rare choice — with `approvalPolicy: "never"` it is a
 large trust surface. Never a habit.

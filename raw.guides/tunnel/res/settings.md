@@ -128,9 +128,17 @@ exclude_tmpdir_env_var = false
 is not per-tunnel and not per-vault. Widening here widens *everything*. Treat an edit to
 it as a machine-layer change, not a tunnel setting.
 
-`-c key=value` overrides (as used in this chapter's probes) apply only to **direct**
-`codex` invocations; the shim does not forward them, so they cannot configure a tunnel
-thread.
+**Correction (2026-09-18): global is not the only option.** `codex app-server` accepts
+`-c key=value` (handshake-verified), and the shim spawns **one app-server per verb** with
+no daemon — so a `-c` override is scoped to a single call. That makes per-vault settings
+possible *without* editing this file, and makes spawn-level config effectively per-turn
+config. `sandbox_workspace_write.writable_roots` has no `thread/start` equivalent at all,
+so `-c` is the only route to a multi-root sandbox through this transport.
+
+**Not yet wired:** the shim does not forward `-c` today, so this route requires the Route C
+work below before it is usable. Note also that `-c profile="<name>"` is rejected (retired
+config key) and `--profile` does not apply to `app-server` — Codex's own preset registry is
+unreachable from this transport, which is why a house-side preset surface exists at all.
 
 ### Route C — protocol params *(not reachable today · needs shim work)*
 
