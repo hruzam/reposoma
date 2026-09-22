@@ -14,7 +14,7 @@ recommend: Runs happen on Majkee's devices, not in the builder session — re-en
 pointers:
   - ~/reposoma/pulse.atlas.md
   - ~/reposoma/raw.guides/meeting/GUIDE.md
-  - ~/reposoma/raw.guides/meeting/res/scribe.md
+  - ~/ia-sync/.dev/session/voice-meetings/   # LIVING home: seat briefings, addendum template, tests, themes, run artifacts
   - ~/reposoma/raw.guides/meeting/raw/epoch.brand-strengths-for-performance.2026-09-16.md
   - ~/reposoma/.majkee/journal/2026-09-16.md
   - ~/reposoma/raw.guides/sella/raw/codex-spawns-temporary-helperFile.ByMajkeeCartan.md
