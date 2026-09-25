@@ -27,6 +27,32 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **SMALL JOBS + INVARIANCE BED — DRAWN 2026-09-23 (Fable seat, buffering cycle, majkee gaveled draw).**
+  STAGED on the table (INERT until majkee `deploy.sh` + commit/push ia-sync · commit reposoma · push
+  remote-hub — don't `sync.sh` before deploy): (1) `/drop-brief` reshaped → YAML frontmatter
+  (who·task·project·dropped·push) + four fixed chapters, resting state verbatim, user-only; take-side
+  repointed in `atlas-ui.md` + `eagle.md`; `~/.remote/brief.md` reset + README §Briefs rewritten (tag
+  form retired). (2) NEW `/chatbot-port <slug> [--check]` (`ia-sync/claude/skills/chatbot-port/`) —
+  both-homes lookup · advise/refuse/near-miss-wait/update-ask · fold rules · provenance keys ·
+  `## Twin contract` for Cartan's Codex rendering (same slug). Pilot port landed:
+  `~/reposoma/.germline/skills/skill.buffering-cycle.md` (orphan; near-miss `codex/buffering`
+  recorded — first case for the twin-slug ruling). (3) Twin-slug discipline = ONE standing line in
+  `atlas-ui` Guardrails (single source; Codex builders fold into Atlas later, no copies). (4) Bed:
+  `~/ia-sync/.dev/session/invariance-autonomy/raw/master-brief.2026-09-23.md` — dogfoods the brief
+  shape; majkee's scheme rendered + alignment verdict (structure YES, arrow flipped to build-time
+  composition — `@import` NOT in agent files, guide-verified); identity tree + generic naming
+  (`identity.md` · fixed keys · fixed H2s); subject choice OPEN (Atlas vs `*bus`/medusa — lean `*bus`,
+  name from data); **`-p` NEVER** (re-gaveled); Cartan counter-sign block. Roster sweep corrected:
+  Codex skills live at `~/.agents/skills/` (deploy_codex leg), config.toml local by design.
+  **Cartan RETURN folded (same day):** REVISE accepted — subject **Atlas GAVELED** (bounded,
+  undeployed measurement; `*bus` later; Medusa untouched); my "RUNBOOK + STATUS" misstatement
+  corrected; RUNBOOK author = Flight MANNED / Houston, NOT Atlas (subject ≠ author — closes the
+  atlas-as-houston question); entry line = Claude direct · Codex delegated-under-Cartan + profile
+  probe; Codex `chatbot-port` twin authored by Cartan (undeployed, dry-run PASS); his 3 contract
+  gaps folded into Claude `chatbot-port` v2 (primary-source rule · unresolved-provenance stop ·
+  `twin-commit:` key — majkee yes). OPEN: majkee deploys · Cartan syncs `twin-commit` into the
+  twin · Flight/Houston authors RUNBOOK · Houston↔Cartan collision ruled in the pilot session ·
+  PARKED: .germline/skills-as-bus (own session) · `~/.remote` retirement (informational).
 - [x] **AGOL ORIENTATION FIX — DEPLOYED + VERIFIED 2026-09-16.** majkee deployed; Atlas verified
   live==table (byte-identical) + orientation clause LIVE on `~/.claude/agents/agol.md` rule 1. Agol consult (3 Qs,
   relayed via majkee — Agol read-only). Found: live+table `agol.md` identical + bare 60-line advisor,
@@ -2097,7 +2123,7 @@ words. Companion mail in his inbox stands.)*
 ## [2026-07-15] — larva regime cards folded (mini-harvest, no new primitives)
 
 **Task source:** majkee direct — the two remaining larva skill cards
-(`larva.dev/.shared/skills/skill.regime-creative.md` + `skill.regime-mii.md`) vs the
+(`larva.dev/.germline/skills/skill.regime-creative.md` + `skill.regime-mii.md`) vs the
 global skill set. Precycle audit of all 20 `~/.claude/skills/` run first (clusters:
 buffering pair · regime-arch · therapy · refresh/pull · run-shapes · briefs · tooling ·
 4 tombstones — set is healthy).
