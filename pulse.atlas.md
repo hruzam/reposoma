@@ -27,6 +27,15 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **GERMLINE-00-HOME — RUNBOOK parked, prompt-0/1 DONE, gate waits on prompt-2 (2026-09-25).**
+  Name `.germline` gaveled (over `.shared`/`.canon`); source `~/reposoma/.germline/` (reposoma `e8c5b30`:
+  README rule · CHATBOT.md saddle · pilot port), `~/.germline` symlink (never a deploy leg), project scope
+  `<root>/.germline/`. Both `chatbot-port` twins repointed + `twin-commit:` (ia-sync `4db6745`), deployed
+  15:26 live==table. Bed `~/ia-sync/.dev/session/germline-00-home/` (RUNBOOK+STATUS, atlas-as-houston
+  provisional; router in ia-sync `pulse.md`). OPEN: two fresh-session receipts (Claude + Codex) → close ·
+  home-box symlink · ovitmugen seat told its brick went live. NEXT after close: `invariance-autonomy/res/
+  architecture.md` (three cases + performance numbers); pilot RUNBOOK by Flight/Houston, not Atlas.
+  majkee's own continuity: `~/reposoma/.majkee/journal/2026-09-25.md` §4–5.
 - [ ] **SMALL JOBS + INVARIANCE BED — DRAWN 2026-09-23 (Fable seat, buffering cycle, majkee gaveled draw).**
   STAGED on the table (INERT until majkee `deploy.sh` + commit/push ia-sync · commit reposoma · push
   remote-hub — don't `sync.sh` before deploy): (1) `/drop-brief` reshaped → YAML frontmatter

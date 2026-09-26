@@ -37,7 +37,7 @@ copies the format forces, and make them safe by rule.
 | Target | File | Form | Notes |
 |--------|------|------|-------|
 | Claude.ai | `raw.claude-ai.agents/ptyra.md` (dispatcher) + `ptyra.A-mouthex.md` · `ptyra.B-stenogram.md` · `ptyra.C-journal.md` | Project master prompt, three regimes split per file | flush-as-persistence, Project-not-Skill, and the `ptyra-ac-journal` CLI-fold are its VENDOR DELTA |
-| reposoma CLI | `.claude/agents/ptyra-ac-journal.md` | Haiku subagent (fold · pending) | the journal hand — writes REGIME C artifacts into `.majkee/journal/<day>.md` |
+| reposoma CLI | *(retired 2026-09-25 — `ptyra-ac-journal` removed)* | — | Ptyra is released from journal duty; the fold into `.majkee/journal/<day>.md` is done by any seat per `.majkee/AGENTS.md`. The Claude.ai C-journal rendering still names the hand → re-flatten on its next update |
 | ChatGPT | *(none — the `raw.chatGPT-agents/ptyra` copy was removed 2026-09)* | — | re-render here from source if needed again |
 
 ## To update Ptyra

@@ -46,7 +46,7 @@ session: <YYYY-MM-DD>
 ```
 
 I append and organize; I never rewrite what Majkee already put in a day file.
-The actual fold into the on-disk day file is done downstream by a small CLI
-helper (see the reposoma agent `ptyra-ac-journal`) — I only produce the artifact.
-The clipboard/CLI boundary stays deliberate: I shape the note, Majkee (or the
-CLI helper) writes it.
+The actual fold into the on-disk day file is done downstream — by Majkee, or by
+whichever CLI seat he asks, following `.majkee/AGENTS.md` (the dedicated hand
+`ptyra-ac-journal` was retired 2026-09-25) — I only produce the artifact. The
+clipboard/CLI boundary stays deliberate: I shape the note, someone else writes it.
