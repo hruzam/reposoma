@@ -29,7 +29,15 @@ surfaces + age-stamps).
 
 - [ ] **PAJDULIUM family bootstrap — runs 1 (web) + 2 (studio) DONE on disk (2026-09-26).**
   See dated entry `[2026-09-26 pajdulium]`. README for `raw.research/web-design/` written (03 →
-  nablarva session raw). Shell block dispatched to @Trajectory (office + home via tailnet). · **`/new-project` step-5 defect** (points
+  nablarva session raw). Git side done by @Trajectory (web `5c12010` · studio `46cce58` ·
+  reposoma `3f732fa` · ia-sync `bdb00d4`); office deploy by majkee (map regenerated 11:24);
+  home released by majkee from home. (Resolved non-issue: the `Permission denied (publickey)` was
+  `ssh hruzam` run ON home = ssh-to-self — offered home's id_ed25519; office has only id_rsa.
+  Office→home path itself was never tested — @Trajectory's ssh was blocked by the harness.)
+  Office→home ssh then verified by majkee (clean return; `$MACHINE_NAME` empty in non-interactive
+  ssh — check with `hostname`). **Skill fix WRITTEN on table** (`claude/skills/new-project/SKILL.md`:
+  step 5 → ia-sync table path + activation = commit→deploy; dead `ia-sync` command replaced ×4) +
+  `Bash(ssh hruzam:*)` added to `claude/settings.json` allow (majkee gavel). INERT until `deploy.sh`. · **`/new-project` step-5 defect** (points
   at live `~/.config/zsh/registries/projects.json`, must be the ia-sync table) → draft fix for gavel.
 - [ ] **GERMLINE-00-HOME — RUNBOOK parked, prompt-0/1 DONE, gate waits on prompt-2 (2026-09-25).**
   Name `.germline` gaveled (over `.shared`/`.canon`); source `~/reposoma/.germline/` (reposoma `e8c5b30`:
