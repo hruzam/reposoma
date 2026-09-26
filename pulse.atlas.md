@@ -27,6 +27,10 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **PAJDULIUM family bootstrap — runs 1 (web) + 2 (studio) DONE on disk (2026-09-26).**
+  See dated entry `[2026-09-26 pajdulium]`. README for `raw.research/web-design/` written (03 →
+  nablarva session raw). Shell block dispatched to @Trajectory (office + home via tailnet). · **`/new-project` step-5 defect** (points
+  at live `~/.config/zsh/registries/projects.json`, must be the ia-sync table) → draft fix for gavel.
 - [ ] **GERMLINE-00-HOME — RUNBOOK parked, prompt-0/1 DONE, gate waits on prompt-2 (2026-09-25).**
   Name `.germline` gaveled (over `.shared`/`.canon`); source `~/reposoma/.germline/` (reposoma `e8c5b30`:
   README rule · CHATBOT.md saddle · pilot port), `~/.germline` symlink (never a deploy leg), project scope
@@ -279,6 +283,23 @@ surfaces + age-stamps).
   live (my seat has no Bash). → `[2026-08-07 PAD]` entry.
 
 ---
+
+## [2026-09-26 pajdulium] — `/new-project` run 1: pajdulium-web (flat, private, both hosts)
+- Family gaveled: `pajdulium-web` (public CS/PL site, lead capture) · `pajdulium-studio` (engine,
+  owns web-link) · `pajdulium-mobile` (planned, no repo). Separate flat beds, no devenv.
+- Written: 13-file harness in `~/www/kuklana/pajdulium-web/` (locks L1–L7 + L1a: Nette-or-Laravel
+  spike at Phase 1) · `registry/pajdulium-web.md` · index row + sibling-graph line.
+- Docs: `web-design-philosophy` 01+02 moved by majkee → `raw.research/web-design/` (research, not
+  canon/guides — promotion ladder research → guide → canon). 03 is framework-owned, stays out.
+- Machine layer: `jar-kuba` + `pajdulium-web` added to `registries/projects.json` via @Delta — first
+  on live only (skill step-5 defect: deploy.sh line 252 rsyncs table→live, would have erased it);
+  mirrored onto `~/ia-sync/zsh/registries/projects.json`, parity IDENTICAL.
+- Noted: jar-kuba runs the same site↔engine / photo→vision→preview pattern — candidate shared anchor.
+- **Run 2 — pajdulium-studio** (flat, private, both): Python (compute + data layer: companions/
+  antagonists, soil, raised beds, geology — mined into own portfolio). Locks L1–L10 (gated render ·
+  owns web-link v0 · standalone engine · vendor seam · no personal data — web owns leads/email ·
+  L10 knowledge provenance). Contract `.dev/contracts/web-link.md`. Beacon + index row + back-edges.
+  `projects.json` + studio via @Delta, table first then live.
 
 ## [2026-09-03 Codex-app fan-out] — silent `.codex/` over-control across project working trees; ia-sync CLEAN
 

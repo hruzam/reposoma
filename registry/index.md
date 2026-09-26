@@ -15,6 +15,8 @@
 | vacuole | office | building | [`registry/vacuole.md`](vacuole.md) | `pulse.md` · `PROJECT.yaml` · `AGENTS.md` · siblings: reposoma · methods: vacuole-mini (#1), anechoic (#2) |
 | nabla-lab | office | building | [`registry/nabla-lab.md`](nabla-lab.md) | `PROJECT.yaml` · `AGENTS.md` · `session/` · siblings: applications-in-common |
 | jar-kuba | office | bootstrap | [`registry/jar-kuba.md`](jar-kuba.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/flag.md` |
+| pajdulium-web | both | bootstrap | [`registry/pajdulium-web.md`](pajdulium-web.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/flag.md` · siblings: pajdulium-studio |
+| pajdulium-studio | both | bootstrap | [`registry/pajdulium-studio.md`](pajdulium-studio.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/flag.md` · `.dev/contracts/web-link.md` · siblings: pajdulium-web |
 
 | fantasyobchod | home | active/maintenance | [`registry/fantasyobchod.md`](fantasyobchod.md) | `AGENTS.md` · `CLAUDE.md` · siblings: freya |
 | ham | home | active/bootstrap | [`registry/ham.md`](ham.md) | `AGENTS.md` · `.dev/PROJECT.yaml` · `.dev/flag.md` · twin: ham.devenv |
@@ -29,6 +31,7 @@
 - **nabla-lab → [all projects]** — research supplier; shapes mathematical ideas (instrument cards, papers, seeds) into cleared artifacts that feed downstream implementations. Standalone third-party; no formal infrastructure shared yet — edges form as outputs are adopted.
 - **applications-in-common ↔ freya** — share **ui-bricks**: element patterns proven in the playground (`bricks/`, provenance-headed) are adoption candidates for freya UI; freya's element questions seed playground hypotheses. Scopes stay separate — playground tests, freya ships.
 - **nabla-lab → applications-in-common** — first named supplier edge: the lab shapes ideas; the playground is the grounded practical sibling (mechanisms tested against reality via the H-ledger, survivors promoted as bricks). Deliberately NOT one project — different scope, shared usage as outputs mature.
+- **pajdulium-web ↔ pajdulium-studio** — share **web-link**: web sends gated design requests (registered lead) → studio renders → emailed. Studio owns the contract (`pajdulium-studio/.dev/contracts/web-link.md`, v0). Planned third member: pajdulium-mobile (scanner, no repo).
 > **Graph still-filling:** freya + freya.devenv added 2026-07-20 (unmounted from freya.devstudio; beacons pending; devstudio retired). nabla-lab beacon deposited (2026-06-27); supplier edges open. Graph settling.
 
 ## Shared layers (cross-cutting — not projects, but teams need them)
