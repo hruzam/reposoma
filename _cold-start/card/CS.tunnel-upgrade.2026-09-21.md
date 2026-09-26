@@ -23,6 +23,36 @@ pointers:
   - ~/ia-sync/zsh/ai/tunnel-codex.py
 ---
 
+## Re-entry
+
+```bash
+cd ~/ia-sync && claude --resume e6276187-0ac9-439f-a4fd-72ebdbd19a0d
+```
+
+Works on **both hosts** — the transcript was hand-carried home→office 2026-09-23 (rsync over
+tailscale, checksum-verified, refreshed 2026-09-26). **If you land on office, read the office
+warning section below BEFORE trusting any host fact in the transcript.** Fallback on any host
+without the transcript: `claude --agent trajectory`, then runbook + pointers.
+
+**Read order:** `STATUS.md` (the runbook's sibling) → this card → body. **STATUS owns the
+position and the next action; on any conflict STATUS wins.** The table below is orientation
+only, not a competing directive.
+
+| | state at close (2026-09-26) |
+|---|---|
+| T1 — canon corrections | **done, committed, verified present on disk** |
+| T2 — shim (`-c` passthrough · occupancy % · close orphan-guard · vault relocation) | **not started** — `compose==live`, no `-c` in the shim |
+| T3 — preset registry + `res/registry.md` `[DRAFT]` | blocked on T2's verification outcome |
+| Law 2.4 hole (tracked vault state) | **closed**, re-verified still closed |
+| Quota spent this session | **zero** — every probe was `codex sandbox` or an app-server handshake |
+| Outstanding debts | none |
+| Deferred to its own session | session-control verbs (`tun threads` / `bind` / `name`) |
+
+**The next move costs a real turn**, so it waits on @majkee to open the table (Law 2.4): T2
+opens with a *verification probe*, not with code — proving whether a born thread honours
+spawn-level `-c` sandbox config. Exact probe and both outcome branches are written into
+STATUS `next:` / `expected:`.
+
 ## prompt-0
 
 ###### prompt
