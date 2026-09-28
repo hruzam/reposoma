@@ -1,0 +1,18 @@
+# .gitattributes — merge-strategy overrides
+#
+# pulse*.md (pulse.md, pulse.atlas.md, pulse.claude.md, pulse.gemini.md,
+# pulse.flight.md) are rolling-state ledgers — every writer inserts near the
+# same anchor (an "OPEN LEDGER" / "What changed" list), so two sessions
+# committing around the same time collide there even when their entries never
+# actually conflict in content. `merge=union` tells git to auto-combine both
+# sides' lines on conflict instead of dropping in <<<<<<< markers.
+#
+# Evidence: a 2026-09-29 audit of this repo's stash pile found 16 accumulated
+# stashes (spanning 2026-08-01 to 2026-09-26), all "stash before sync, redo
+# and commit for real" debris — every single one confirmed redundant against
+# HEAD. pulse.atlas.md alone appeared in the majority of them. Same pattern,
+# same fix as ia-sync's journal.host-cleanup.md (commits 14e38f6, 6a32375,
+# 69056b0). Ordering may still need a manual pass after a union merge (it
+# doesn't know "newest first"), but that beats a broken doc landing in
+# shared history — or more silently accumulating stash debris.
+pulse*.md merge=union
