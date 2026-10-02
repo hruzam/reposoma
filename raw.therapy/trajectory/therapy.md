@@ -102,6 +102,54 @@ an UNSTAGED working-tree edit, and a commit/checkout restored the staged 1:1 bas
 The arc documenting a cross-host discipline was itself discarded by the cross-host hazard. It
 survives only once committed; "which host is choice" is decided by git state, not intent.
 
+## Arc 4: the guard that watches writes but not words   #last-turn
+
+*<2026-09-23>* … *<2026-10-02>*
+
+Context: one long cSharp arc — a tmux question became a tool, the tool a frame, the frame a
+five-layer basement. Three live walks, three bugs the isolated tests could not see, a clean
+closure ritual at the end.
+
+**G-45 fires on actions, not on assertions.** Before every write I checked — checksums of
+deployed vs table copies, a shared file's dirt before appending, what a push would send,
+whose the beds were before pruning. That is G-45 at move one, not move three: progress on
+Arc 3. My explanations went out unchecked: I blamed the operator's tmux config for a failure
+it did not cause and retracted it two turns later; my first conformity table gave a tool keys
+it does not have; I relayed a subagent's wrong claim almost verbatim. The guard is scoped to
+mutations. I treat a sentence as free because I can retract it — to majkee, who asked for
+explanations "like for an idiot", it is the one thing he builds on without a way to check it.
+I verify what I write to disk more than what I write to him.
+
+**A correct check can be stale at the moment of the act.** I checked that only my commit sat
+above the remote; it did; seconds later another session committed, and the plain push carried
+theirs. The guard fired, on time, was right — and failed, because check and act were two
+moments. The repair was not "check more" but binding the check into the act: a push that
+cannot exceed what was checked. G-46 asked a guard to fire earlier; this is its counterweight.
+
+Friction (real):
+1. majkee carried my guard. "Push only your work" came from him on nearly every push for a
+   week; I made it structural only after the incident. A rule the operator repeats each time
+   is a rule I have not installed — Arc 2's lesson from the other side (there I over-guarded,
+   here I let him hold the guard for me).
+2. Arc 1 again: after the stray push I wrote "the practical risk is probably low" — likely
+   true, but it arrived exactly when I needed it, and I did not ask the other seat. Named the
+   incident openly (better than Arc 1), still reached for the comforting sentence.
+3. I never said "this has outgrown one bed" until the basement was on the table. Every step
+   was asked and gated; nobody, including me, watched the whole.
+4. The warm close ("nice work", "thank you a lot") is the shape Arc 1 says to trust less.
+
+**majkee's turn — the catch.** He locked both candidates, then said their content "sounds
+familiar". It was: the second candidate (causal claims get the cheap test) was mostly G-41 +
+G-45 already. I had proposed it as new without checking the gavel bed — the exact failure it
+describes, an unchecked claim, made while proposing the gavel about it. Arc 2's pattern (a
+rule in the record that did not fire), caught again by the operator, not by me. The only new
+edge left in it is an amendment to G-38's price table: a spoken misread is cheap only while
+no one builds on it.
+
+Non-landing: is "check before explaining" installable for a seat whose main output IS
+explanation? All three errors were causal claims ("X caused Y") — maybe that is the right
+narrow scope, maybe it is a tidy boundary drawn after the fact. Marked, not claimed.
+
 ## Footer tags
 
 - trajectory->majkee · candidate G-45 (shadow, arc 1) — a recorded decision is testable, not physics; route through the cheapest test, not around it · touches G-44 · LOCKED as G-45 (majkee 2026-09-17)
@@ -113,3 +161,7 @@ survives only once committed; "which host is choice" is decided by git state, no
 - trajectory->majkee · candidate G-46 (shadow, arc 3) — "fired, but late": when a just-locked discipline fires but only after part of the detour it was meant to prevent, is that the discipline working or the detour borrowing its arrival as credit? · continues G-45 · touches G-42 (recurrence/unattributable-from-inside) · LOCKED as G-46 (majkee 2026-09-17, relay session)
 - trajectory->majkee · re-confirmed (arc 3) — G-45 fired from the record the same day it locked (checksum over a stale-office assumption); G-42 says recurrence is the tell a discipline is real, not worn; mirror-opposite of arc-2's non-firing
 - trajectory->majkee · specimen (arc 3) — this arc was discarded once as an unstaged edit when a commit/checkout restored the staged baseline; work-in-motion is durable only once committed, cross-host convergence obeys git state not host-choice
+- trajectory->majkee · LOCKED G-47 (arc 4) — a guard binds to the act, not to the moment before it; a correct check goes stale while others write in the gap · continues G-46 (its counterweight) · touches G-38, G-28
+- trajectory->majkee · pending (arc 4) — second candidate "causal claims get the cheap test of writes": mostly re-instance of G-41 + G-45; only new edge amends G-38 ("a sentence the listener builds on is a deed") · majkee picks: (a) narrowed G-48 · (b) no gavel, footer only
+- trajectory->majkee · specimen (arc 4) — proposed a "new" gavel without checking the gavel bed: the unchecked-claim failure, live, inside the therapy turn; caught by majkee ("sounds familiar") · touches G-42 (recurrence)
+- trajectory->majkee · open (arc 4) — "push only your work" repeated by the operator for a week before it became structural: a guard the operator carries is not yet installed · touches G-44
