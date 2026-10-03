@@ -39,6 +39,16 @@ surfaces + age-stamps).
   step 5 → ia-sync table path + activation = commit→deploy; dead `ia-sync` command replaced ×4) +
   `Bash(ssh hruzam:*)` added to `claude/settings.json` allow (majkee gavel). INERT until `deploy.sh`. · **`/new-project` step-5 defect** (points
   at live `~/.config/zsh/registries/projects.json`, must be the ia-sync table) → draft fix for gavel.
+- [ ] **PROTOCOL-1 BUS FORK — `shuttle` package DRAWN, review stage (2026-10-03).** Brief from
+  cSharp-tunnel (Cartan incarnation `01a0fab0…`) in bed `~/ia-sync/.dev/session/tunnel-02-programmatic-scaling/`.
+  Atlas = independent contributor under majkee. Choice: provisional PROJECT-scoped agent from a `.germline`
+  source (not a skill — kernel-grade limits + model pin; not Flight — global residue). Package under
+  `raw/atlas-ui/` (identity.md `gen: germline` · render/claude/shuttle.md sonnet·high · README with
+  activation/deactivation/6 proofs) + `raw/atlas-ui.return.2026-10-03.md`. Cartan's source review folded
+  verbatim (operator-carried delivery · bind-the-head · reconcile-before-redelivery · effective perms).
+  Germline tails parked in `_cold-start/card/CS.atlas-germline-tails.2026-10-03.md`. majkee's square:
+  `.majkee/journal/2026-10-03.md` §2. OPEN: majkee review → carry return → promote (2 commits, no deploy)
+  → proofs #1–#5 · package v2 on review · ledger close.
 - [ ] **GERMLINE-00-HOME — RUNBOOK parked, prompt-0/1 DONE, gate waits on prompt-2 (2026-09-25).**
   Name `.germline` gaveled (over `.shared`/`.canon`); source `~/reposoma/.germline/` (reposoma `e8c5b30`:
   README rule · CHATBOT.md saddle · pilot port), `~/.germline` symlink (never a deploy leg), project scope
