@@ -56,7 +56,11 @@ error · 50 reconcile mismatch (streamed ≠ read-back — record, never silentl
 61 turn-in-flight (BRICK-01: another send/ask/steer on this vault is still running — wait, or
 `tun read`; never a second turn on one head).
 
-**Stdout contract:** open/close/status/resume → stdout EMPTY (banners on stderr) · send/ask/steer → result text + final [usage: {...}] line · read → raw thread JSON.
+**Stdout contract:** open/close/status/resume → stdout EMPTY (banners on stderr) · send/ask/steer → result text + one final usage line · read → raw thread JSON.
+The usage line is `[usage: ctx=<last.input>/<window> (<pct>%) out=<n>]` by default (BRICK-01b) —
+occupancy, the only number a seat should act on. `TUNNEL_CODEX_USAGE=full` restores the raw
+`[usage: {...}]` JSON; `off` drops the line (a consumer that wants only the text:
+`tun ask "…" | sed '$d'` also works on any shape).
 
 ## Limits + lifecycle (v0, honest)
 
