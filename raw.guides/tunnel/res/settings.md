@@ -72,7 +72,7 @@ verify→execute is a defensible house rule for its own reasons). But it should 
 |---|---|---|---|
 | `model` | `thread/start` **and** `turn/start` | model id; per-turn form switches model **mid-thread, memory intact** | `open --model` only (thread-birth, frozen) |
 | `effort` | `turn/start` | reasoning effort **per turn** — no new thread, no memory loss | ❌ not reachable |
-| `cwd` | `thread/start` / `turn/start` | workspace root → decides **which `AGENTS.md` loads** and what `workspace-write` covers | ❌ **never sent** — defaults to wherever the shim process was spawned |
+| `cwd` | `thread/start` / `turn/start` | workspace root → decides **which `AGENTS.md` loads** and what `workspace-write` covers | ✅ **`open --cwd <dir>`** (BRICK-01): spawn dir on every verb + `thread/start.cwd` on birth. **Never sent on resume** — a bound/existing thread keeps its own cwd; see `state.runtime.cwd` |
 | `developerInstructions` | `thread/start` | additive persona/brief at birth — replaces the "you are Cartan on X" first `send`, **at zero turn cost** | ❌ not reachable |
 | `baseInstructions` | `thread/start` | replaces the base system prompt wholesale | ❌ — and **not advised**: it decouples the seat from Codex's own harness, which is the decorrelation the cross-vendor setup exists for |
 | `personality` | both | enum `none \| friendly \| pragmatic`; gated by `Model.supportsPersonality` | ❌ tone only, not identity |
@@ -140,12 +140,13 @@ work below before it is usable. Note also that `-c profile="<name>"` is rejected
 config key) and `--profile` does not apply to `app-server` — Codex's own preset registry is
 unreachable from this transport, which is why a house-side preset surface exists at all.
 
-### Route C — protocol params *(not reachable today · needs shim work)*
+### Route C — protocol params *(partly reachable since BRICK-01 · rest needs shim work)*
 
-`thread/start` accepts 16 params; the shim sends 3. `turn/start` accepts 17; the shim
-sends 2. Per-vault settings (`effort`, per-turn `model`, `cwd`, `developerInstructions`)
-all live here and require forwarding work in the shim before any terminal flag can reach
-them.
+On 0.159.3 `thread/start` accepts 15 params and `turn/start` 17. The shim sends four on
+birth (`sandbox`, `approvalPolicy`, `model`, and since BRICK-01 `cwd`) and two on
+`turn/start`. Still unreachable from the terminal: `effort`, per-turn `model`,
+`developerInstructions` — they require forwarding work in the shim before any flag can
+reach them. (The 16/3 counts in earlier revisions of this chapter were on 0.154.0.)
 
 **Compose-first — the shim is a deployed copy, never an authoring surface.** The live
 `~/.config/zsh/ai/tunnel-codex.{py,zsh}` must never be edited in place. Any change to
@@ -180,10 +181,14 @@ thread, and it is the one step in this list that spends quota.
 tun status    # sandbox: {type, networkAccess} — the thread's actual mode
 ```
 
-`ThreadStartResponse` also returns `instructionSources` — the environment-native paths of
-the instruction files the thread actually loaded (i.e. which `AGENTS.md` gave the seat its
-identity). **The shim currently discards it.** Until it is persisted, `tun status` cannot
-tell you who the seat thinks it is.
+`ThreadStartResponse` and `ThreadResumeResponse` both return `instructionSources` — the
+environment-native paths of the instruction files the thread actually loaded (i.e. which
+`AGENTS.md` gave the seat its identity) — plus the effective `sandbox`, `reasoningEffort`,
+`cwd` and `model`. **BRICK-01 persists all of these** into `state.runtime` (+ `observedAt`)
+after every `thread/start`, `thread/resume`, and `tun resume`. So `tun status` has two layers:
+the top-level fields are *your intent at open*; the `runtime` block is *what the server
+reported last time you touched the thread*. For a head you did not birth, only the second
+layer is truthful.
 
 ---
 

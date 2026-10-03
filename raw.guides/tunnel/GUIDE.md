@@ -3,7 +3,7 @@ title: TUNNEL — the live Claude↔Codex table (TABLE shape, HANDSHAKE r3)
 scope: cross-vendor instrument — machine layer; born in termbrana 03-tunnel, independent since
 audience: operator + any Bash-capable seat
 state: LIVE — v0 proven 2026-09-03 (FAIL→fix→PASS receipts); v1 candidates parked
-verified: 2026-09-03 · behavior facts observed on codex-cli 0.152.1 — WEATHER per Sella L8, verify on upgrade
+verified: 2026-10-03 · usage + exit contract on codex-cli 0.159.3 (BRICK-01 deployed office, selftest 89/89); live-turn behaviour facts still date from 0.152.1/0.154.0 — WEATHER per Sella L8, verify on upgrade
 authority: "~/ia-sync/HANDSHAKE.md §TABLE governs the exchange semantics; this guide is usage only. Shim source: ia-sync/zsh/ai/tunnel-codex.{zsh,py} (compose-first; live copy ~/.config/zsh/ai/). Evidence: nablarva toolbox/termbrana/research/evidence/t06-tunnel-v0-roundtrip.md"
 ---
 
@@ -31,21 +31,30 @@ present = clean fail (exit 13), nothing created. One state file = one thread = o
 conversation-with-memory; put it where the work lives.
 
 ```zsh
-export TUNNEL_CODEX_STATE=~/my-work/tunnel.state.json
+export TUNNEL_CODEX_STATE=~/my-work/tunnel.state.json   # inside ia-sync: tunnel*.state.json is gitignored
 
-tun open --enable          # OPERATOR opens the table (law 2.4); preflight only, no thread yet
-tun send "task text"       # thread born on FIRST send; result on stdout
-tun ask "task text"        # send + reconcile + verified result, one command; exit 50 on mismatch
-tun read                   # reconcile / re-fetch last result (streamed == read-back)
-tun send "follow-up"       # same thread — it remembers
-tun close                  # re-arms the enable gate (local state removed)
+tun open --enable [--cwd ~/repo]   # OPERATOR opens the table (law 2.4); preflight only, no thread yet
+tun send "task text"               # thread born on FIRST send (at --cwd if given); result on stdout
+tun ask "task text"                # send + reconcile + verified result; exit 50 on mismatch
+tun read                           # re-fetch the thread (free, no turn) — also the recovery primitive
+tun send "follow-up"               # same thread — it remembers
+tun close                          # prints the threadId + re-bind command, THEN removes local state
+
+# BRICK-01 (2026-10-03) — reach a thread you did NOT birth (an interactive cSharp head):
+tun open --enable --thread <threadId> [--cwd ~/repo]   # BIND: local declaration only, no server resume
+tun resume                         # liveness probe — AFTER the interactive client released it;
+                                   # stamps the server's REAL sandbox/effort/cwd/instruction files into state
+tun status                         # now shows state.runtime (truth as of last contact), not only intent
 ```
 
-`tun` = palette alias → `zsh ~/.config/zsh/ai/tunnel-codex.zsh`.
+`tun` = palette alias → `zsh ~/.config/zsh/ai/tunnel-codex.zsh`. Operator recipe for a bound
+head, step by step with what you should see: `/guide tunnel user-run` §"Binding to a head".
 
 **Exit codes (man-page contract):** 0 ok · 10 not-enabled · 11 usage · 12 no-thread-yet
 (send first) · 13 state-not-specified · 20 spawn-fail · 30 protocol error · 40 turn
-error · 50 reconcile mismatch (streamed ≠ read-back — record, never silently retry).
+error · 50 reconcile mismatch (streamed ≠ read-back — record, never silently retry) ·
+61 turn-in-flight (BRICK-01: another send/ask/steer on this vault is still running — wait, or
+`tun read`; never a second turn on one head).
 
 **Stdout contract:** open/close/status/resume → stdout EMPTY (banners on stderr) · send/ask/steer → result text + final [usage: {...}] line · read → raw thread JSON.
 
@@ -60,7 +69,17 @@ error · 50 reconcile mismatch (streamed ≠ read-back — record, never silentl
 - Quota: each `send` spends real ChatGPT-account turns. The enable gate exists so this
   is always a chosen cost.
 - Any Bash-capable seat may drive verbs AFTER the operator's `open --enable`; no seat
-  enables itself.
+  enables itself. **The gate is a presence check, not an authorisation check** — the shim
+  cannot tell a seat from the operator; a seat that must never enable is held by its
+  instruction contract, not by the shim.
+- **One turn in flight per vault** (BRICK-01): `send/ask/steer` hold `<state>.lock`; a second
+  caller through the same state path gets exit 61. Protection is per *handle*, not per
+  thread — a second vault, an interactive TUI, or any other client on the same thread is
+  outside it. Cross-client order is operator discipline: the interactive client releases
+  before a tunnel turn. The Codex writer-lock is only *read* for a stderr note, never gated on.
+- **Bind ≠ birth.** A bound thread keeps the sandbox, model and cwd it already has;
+  `--sandbox`/`--model` on a bind are intent only. Trust `state.runtime.*` (after `resume`),
+  never `state.sandbox`, for a head you did not birth.
 
 → chapter `user-run` — bring-up on a new host, session reset, multi-vault patterns,
   TUNNEL_CODEX_STATE wiring (`/guide tunnel user-run`)

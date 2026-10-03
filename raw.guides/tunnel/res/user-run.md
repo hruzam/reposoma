@@ -45,6 +45,12 @@ that has the same API credentials — `tun resume` + `tun ask "ping"` confirms t
 Local `~/.codex/thread-writer-locks/<threadId>.lock` is machine-local metadata, not a
 cross-host barrier.
 
+⚠ **Reachable is not the same as free.** Never resume a thread that another client — on
+*any* host, interactive TUI or tunnel — may still hold; that is the writer-lock race
+(@Cartan 2026-09-03). BRICK-01's `tun resume` prints a stderr note when a Codex writer-lock
+exists for the thread: treat it as "the other client has not released", not as residue to
+clean. The lock itself is never touched.
+
 ---
 
 ## Clearing a session (token bloat)
@@ -173,6 +179,54 @@ does not force it.
 large trust surface. Never a habit.
 
 *(field origin: `dev-journal.tunnel.md`, 2026-09-04 · re-verify the enum on any codex-cli upgrade, L8)*
+
+## Binding to a head you did not birth (BRICK-01 · deployed 2026-10-03)
+
+The plain recipe. Use it when the Codex side is an **existing** session — typically an
+interactive cSharp head whose threadId you have — and a Claude seat must reach it through
+the tunnel (Protocol 1). Every step says what you should see; if you don't see it, stop.
+
+```zsh
+# 0. one vault per head, inside the session bed (gitignored: tunnel*.state.json)
+export TUNNEL_CODEX_STATE=~/ia-sync/.dev/session/<bed>/tunnel.state.json
+
+# 1. BIND — costs nothing, touches no server thread
+cd ~/ia-sync && tun open --enable --thread <threadId> --cwd ~/ia-sync
+tun status
+#   see: "threadId": "<threadId>", "bound": true, "cwd": "/home/.../ia-sync" — and NO "runtime" block yet
+
+# 2. the interactive client RELEASES the thread (exits its TUI). Only then:
+tun resume                                   # ⚡ spends nothing, but contends for the thread
+#   see on stderr: resume: thread <id> status=... sandbox=... effort=... instructionSources=[...]
+#   if you ALSO see "NOTE — Codex writer-lock present": the client had not released. Stop; ask.
+tun status
+#   see: a "runtime" block — this is the head's REAL policy. Ignore "sandbox" above it on a bind.
+
+# 3. one turn — write the POINT file first, then point the head at it
+tun ask "read /abs/path/_bus/01.bus.point.md and reply in the six RETURN fields"   # ⚡ quota
+#   see: the reply on stdout, then one line  [usage: {...}]  — transcribe the reply to _bus/01.head.return.md
+
+# 4. the interactive client may reopen now:  codex resume <threadId>   — it will show the tunnel's turn
+```
+
+**Rules that keep this safe**
+
+- **One handle per head.** Don't open a second vault on the same threadId; the turn lock only
+  protects callers through *one* state path (exit 61 for the second caller).
+- **Alternate, never overlap.** TUI *or* tunnel holds the thread, not both. The writer-lock
+  note on `resume`/`send` is your tell.
+- **Timeout or lost reply → `tun read` first, always.** It is free and shows the turn as
+  `completed` or `interrupted`. Only an interrupted/absent turn may be carried by hand;
+  never re-send — "unknown completion is not a retry signal".
+- **`--sandbox` on a bind changes nothing** on the bound thread. To change a bound head's
+  policy, do it from the client that owns it (the TUI), then `tun resume` to re-stamp.
+- **`close` prints the re-bind command before it forgets the thread.** Copy it. The thread
+  lives on server-side; `close` only drops your local address for it.
+- **Changing `--thread` on a vault that already holds one is refused** (exit 11). `close`
+  first — on purpose, so a stale vault can never silently re-target.
+
+Design choices still open to @Cartan's challenge (warn-vs-refuse on the writer-lock;
+`--cwd` not sent on resume): `~/ia-sync/.dev/session/tunnel-02-programmatic-scaling/raw/trajectory/brick-01.md`.
 
 ## TUNNEL_CODEX_STATE — wiring options
 
