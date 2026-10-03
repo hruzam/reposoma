@@ -8,6 +8,45 @@
 
 ---
 
+## [2026-10-03 · Trajectory · office] — BRICK-01 hot run, sitting 1: a TUI-born head bound through the tunnel
+
+Operator-run, Trajectory-navigated, on a disposable thread born in the TUI (`codex --model
+gpt-5.6-terra`, briefed, exited), then `tun open --enable --thread <id> --cwd ~/ia-sync` →
+`tun resume` → `tun ask`. Full ladder + verbatim results:
+`~/ia-sync/.dev/session/tunnel-02-programmatic-scaling/raw/trajectory/hotrun.headless.2026-10-03.md`.
+
+**Lessons that should graduate (all observed, none inferred):**
+1. **The Codex writer-lock is residue, not a gate.** Present after every TUI exit; `thread/resume`
+   succeeds regardless; the next tunnel contact clears it; the tunnel's per-verb app-server leaves
+   none. So BRICK-01's stderr NOTE means exactly "a TUI held this since my last turn" — once per
+   handover, never forever. Warn-only was right; a refusing shim could never bind a TUI-born head.
+2. **Two layers in `state`, proven live.** Top-level `model: gpt-6.1-sol` (preflight default) and
+   `sandbox: read-only` (intent) vs `runtime.model: gpt-5.6-terra`, `runtime.sandbox:
+   workspaceWrite`, `runtime.approvalPolicy: on-request`. For a bound head only `runtime.*` is
+   truthful. Bind changes nothing on the thread.
+3. **A TUI-born head carries `approvalPolicy: on-request`.** In the TUI the operator answers the
+   prompt (it wrote into reposoma that way during this sitting); through the tunnel nobody can —
+   a write-requesting turn stalls. Questions are fine. The sister RUNBOOK must say who answers,
+   or keep bound-head turns read-only.
+4. **Identity is deliberate now:** `instructionSources` = `~/.codex/AGENTS.md` + `~/ia-sync/AGENTS.md`
+   with `--cwd ~/ia-sync`. The cheapest proof of "who the head thinks it is".
+5. **Memory survives release → bind → resume → turn → TUI again.** KESTREL came back through the
+   tunnel; the tunnel's question then appeared in the reopened TUI. Two alternations ran clean.
+6. **Three operator gotchas, now glossed in `res/user-run.md`:** `TUNNEL_CODEX_STATE` is per
+   shell (a second terminal → exit 13, by design); `tun status` prints to **stderr** so
+   `| jq` sees nothing — read the file with `jq .runtime "$TUNNEL_CODEX_STATE"`; bare `tun read`
+   floods the terminal by contract — always filter.
+7. **Placeholders bite.** `grep -c "<id>"` returned a confident 0. Angle brackets are never typed.
+
+**Open (second sitting):** turn lock live (exit 61 on a real in-flight turn) · interrupt +
+`tun read` recovery · and F-B6: the operator's second `tun ask` may have run while the TUI was
+still attached and still worked — one observed instance, unverified as safe; the
+alternate-never-overlap rule stands until a deliberate sitting tests overlap.
+
+## [2026-10-03 · codex/cartan · office · ref: operator tunnel test] — testing tunnel session present
+
+Read the `tunnel` guide under an explicit read-only brief. No `tun` verb was invoked; no state, `src/`, or canonical-guide file was created or changed. KESTREL is retained only as the current test token.
+
 ## [2026-09-18 · Trajectory] — the parametrization ceiling, and why `-c` is the keystone
 
 Drove the question "can we loosen the leash — model, effort, identity?" to the bottom.

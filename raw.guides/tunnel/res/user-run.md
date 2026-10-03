@@ -199,8 +199,11 @@ tun status
 tun resume                                   # ⚡ spends nothing, but contends for the thread
 #   see on stderr: resume: thread <id> status=... sandbox=... effort=... instructionSources=[...]
 #   if you ALSO see "NOTE — Codex writer-lock present": the client had not released. Stop; ask.
-tun status
-#   see: a "runtime" block — this is the head's REAL policy. Ignore "sandbox" above it on a bind.
+jq .runtime "$TUNNEL_CODEX_STATE"          # NOT `tun status | jq` — status prints on stderr by design
+#   see: the head's REAL policy — model, sandbox, reasoningEffort, approvalPolicy, instructionSources.
+#   On a bind these WILL differ from the top-level fields (those are your intent). Trust runtime.
+#   A TUI-born head typically shows sandbox workspaceWrite + approvalPolicy on-request: it will ASK
+#   before a write, and the tunnel has nobody to answer — fine for questions, a limit for write tasks.
 
 # 3. one turn — write the POINT file first, then point the head at it
 tun ask "read /abs/path/_bus/01.bus.point.md and reply in the six RETURN fields"   # ⚡ quota
@@ -208,6 +211,28 @@ tun ask "read /abs/path/_bus/01.bus.point.md and reply in the six RETURN fields"
 
 # 4. the interactive client may reopen now:  codex resume <threadId>   — it will show the tunnel's turn
 ```
+
+**What each command actually is** (glosses — nothing here is magic)
+
+| you type | it really is | what it is for |
+|---|---|---|
+| `tun …` | palette alias → `zsh ~/.config/zsh/ai/tunnel-codex.zsh …` | the shim. Every verb spawns one short-lived `codex app-server --stdio`, does its job, exits. No daemon |
+| `export TUNNEL_CODEX_STATE=<path>` | an env var the shim reads | **the address of the head.** One file = one thread. Must be set in *every* shell you use `tun` from (agents' Bash calls too — each is a fresh shell) |
+| `tun open --enable` | creates the state file after a server preflight (`initialize` · `account/read` · `model/list`) | opens the table (Law 2.4). Costs no turn |
+| `--thread <id>` | writes that id into the state file; **nothing is sent to the server** | bind to a head you did not birth |
+| `--cwd <dir>` | spawn directory of every `app-server` + `thread/start.cwd` on birth | decides which `AGENTS.md` the head loads. Not sent on resume |
+| `tun status` | `jq .` of the state file to **stderr** — local only | your intent (top-level) + the server's last report (`runtime` block). To pick a field, read the file: `jq .runtime "$TUNNEL_CODEX_STATE"` — piping `tun status` into `jq` gets nothing (stdout purity) |
+| `tun resume` | `thread/resume` → stamps `runtime` | liveness probe + the only way to learn a bound head's real policy. No turn spent |
+| `tun ask "…"` | `turn/start` + `thread/read` verify | one turn, **spends quota**, exit 50 if streamed ≠ read-back |
+| `tun send "…"` | same, without the verify lane | one turn, spends quota |
+| `tun read` | `thread/read(includeTurns)` → **raw JSON of the whole thread on stdout** | inspect / recover. Free. **Always filter it** — bare, it floods the terminal: `tun read \| jq '{turns: (.thread.turns\|length), status: .thread.status}'` · last turn only: `tun read \| jq '.thread.turns[-1] \| {status, completedAt}'` · page it: `tun read \| less`. Run it before any hand relay |
+| `tun close` | prints threadId + re-bind line, deletes state (+ our lock) | forget the address locally; the thread lives on server-side |
+| `codex resume <id>` | the interactive TUI on the same thread | see what the tunnel did; **release it** (exit) before the next tunnel turn |
+| `ls -t ~/.codex/sessions/$(date +%Y/%m/%d)/rollout-*.jsonl \| head -1` | newest transcript file today | find the id of a thread you just made — it is the UUID at the end of the filename |
+| `jq …` | JSON filter | pretty-print or pick a field; optional, `cat` works too |
+
+`<id>`, `<dir>`, `<bed>` in angle brackets are **placeholders** — substitute your value; the
+brackets are never typed (a literal `grep "<id>"` will always say 0).
 
 **Rules that keep this safe**
 
