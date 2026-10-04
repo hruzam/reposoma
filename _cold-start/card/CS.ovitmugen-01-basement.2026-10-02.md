@@ -45,5 +45,21 @@ push only with an explicit refspec to an own commit. Never deploy.
   contract (nablarva-00, nablarva-03); D2's state dir goes to Cartan's nablarva-03 blueprint
   via majkee before B1 writes `~/.local/state/ovitmugen/`.
 - **Lesson:** every live walk found a bug the isolated selftest could not — test on home too.
-- **Hygiene debt:** nablarva commits c2882bd, c630f0e, 06ab8d5, e5c331b, 852ff08, f8395ae are
-  local only, waiting behind other sessions' unpushed commits (majkee: wait for them).
+- **Hygiene debt** (re-checked 2026-10-04, still true): nablarva commits c2882bd, c630f0e, 06ab8d5,
+  e5c331b, 852ff08, f8395ae are local only, waiting behind other sessions' unpushed commits
+  (majkee: wait for them; push only by explicit refspec to an own commit).
+
+## Added 2026-10-04 — pane-scoped copy (backlog U9, outside the 01 gate)
+
+- **Friction (majkee):** copying a few lines from an agent pane with Shift+drag also takes the
+  other panes' lines. Cause: Shift bypasses tmux and Konsole selects whole screen rows — it
+  knows nothing about panes. Natural, not a bug.
+- **Workaround now:** `C-a z` (zoom the pane) → Shift+drag → `C-a z` back.
+- **Pane-scoped way:** plain drag (no Shift) in the frame → tmux copy mode stays inside the pane
+  and copies on release. System clipboard depends on OSC 52 (`set-clipboard external` is on;
+  Konsole 26.04 acceptance NOT verified). Office facts 2026-10-04: Wayland, `xsel` present,
+  `wl-copy`/`xclip` absent; default server mouse=off, frame mouse=on, no copy-command set.
+- **U9 for the head:** ask majkee for the paste test first (drag in the left pane → paste in another
+  app). Empty → add `set -s copy-command 'xsel -ib'` to ovitmugen.tmux.conf (+ selftest that the
+  option loads) and a help line "copy: C-a z + Shift-drag, or plain drag"; record U9 in
+  raw/ui-operability.2026-09-29.md of the bed.
