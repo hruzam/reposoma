@@ -50,6 +50,20 @@ tun status                         # now shows state.runtime (truth as of last c
 `tun` = palette alias → `zsh ~/.config/zsh/ai/tunnel-codex.zsh`. Operator recipe for a bound
 head, step by step with what you should see: `/guide tunnel user-run` §"Binding to a head".
 
+**Vault manager (`tn-*`, session scope, 2026-10-04)** — the "which vault is this shell on"
+device; the shim above stays the only thing that talks to Codex:
+
+```zsh
+tn-ls                                   # every vault under $RB_ROOT; * = this shell's current
+tn-use <bed> [name]                     # export TUNNEL_CODEX_STATE for <bed>/tunnel[.<name>].state.json
+tn-on  <bed> [name] -- --thread <id> --cwd ~/ia-sync    # use + open --enable (values set HERE, Law 2.4)
+tn-st  [bed] [name]                     # intent layer vs runtime layer, readable
+tn-off [bed] [name]                     # close (prints threadId + re-bind line first)
+```
+
+One vault = one thread. A bed may hold several (`tunnel.head.state.json`, `tunnel.impl.state.json`
+…); a shell points at one at a time; two vaults must never share a threadId.
+
 **Exit codes (man-page contract):** 0 ok · 10 not-enabled · 11 usage · 12 no-thread-yet
 (send first) · 13 state-not-specified · 20 spawn-fail · 30 protocol error · 40 turn
 error · 50 reconcile mismatch (streamed ≠ read-back — record, never silently retry) ·
