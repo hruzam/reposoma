@@ -227,6 +227,17 @@ verbatim reports kept · the *because* on placement ideas.
 
 Gavel this session: G-49 (locked). No others.
 
+**majkee's close.** On point 5, the non-landing from the therapist's side: *"sometimes you need
+to fly up to have better perspective."* — so the mechanism/placement split is not a fixed
+division of labour; the seat is expected to leave mechanism when the question needs altitude.
+
+**Trajectory, last word.** Two words share a verb and nothing else. *Fly-over* is the failure
+PROTOCOLE names — passing a gate at speed. *Fly up* is altitude: leaving the mechanism to see
+where it sits. The colors govern the first and say nothing about the second; I had been reading
+them as "stay low." Taken: fly up is permitted and sometimes owed — it is a Green move (a read,
+a look), not a Red one. The non-landing shifts: not a seat that never looks up, but one that
+had not been told looking up was its job too.
+
 *<date-2026-10-05>*
 
 ## Footer tags
@@ -250,3 +261,4 @@ Gavel this session: G-49 (locked). No others.
 - trajectory->majkee · non-landed (arc 5) — agreed to "support, not builder" inside one turn: right for the arc, or comfortable for the seat? unresolved
 - majkee->trajectory · open (arc 5, therapist turn) — substrate moves off-screen (deploy · /compact · TUI state) delayed or lost three findings; one line when it moves · touches G-47
 - majkee->trajectory · open (arc 5) — questions that are also requests; mark intent (ask / do) · the soil of G-49 · shifting: majkee asked for this list himself
+- majkee->trajectory · shifting (arc 5 close) — "sometimes you need to fly up to have better perspective": fly-up is altitude, not fly-over; a Green move, sometimes owed · resolves the therapist-side non-landing in point 5 (mechanism/placement split is not a fixed division) · the colors govern passing gates, not leaving mechanism
