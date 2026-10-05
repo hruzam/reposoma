@@ -95,6 +95,14 @@ occupancy, the only number a seat should act on. `TUNNEL_CODEX_USAGE=full` resto
   thread — a second vault, an interactive TUI, or any other client on the same thread is
   outside it. Cross-client order is operator discipline: the interactive client releases
   before a tunnel turn. The Codex writer-lock is only *read* for a stderr note, never gated on.
+- **Several seats, one head — share the vault file.** Two Claude sessions may consult the same
+  thread if they `tn-use` the *same* vault: the turn lock is per vault, so the second caller
+  waits (exit 61) instead of racing. Never two vaults on one threadId (no shared lock — the one
+  accidental two-writer shape; cross-host is this case by construction). Every message names
+  its sender and cycle — the head sees one conversation. One `_bus/` sequence per thread; the
+  coordinator mints the numbers. And the tunnel is a **consultation line, not a mailbox**:
+  Claude↔Claude traffic goes by files (`_bus/`, mail by path); every relayed word is a model
+  turn and lands in the head's context.
 - **Bind ≠ birth.** A bound thread keeps the sandbox, model and cwd it already has;
   `--sandbox`/`--model` on a bind are intent only. Trust `state.runtime.*` (after `resume`),
   never `state.sandbox`, for a head you did not birth.
