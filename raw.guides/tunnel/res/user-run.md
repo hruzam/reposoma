@@ -250,6 +250,31 @@ brackets are never typed (a literal `grep "<id>"` will always say 0).
 - **Changing `--thread` on a vault that already holds one is refused** (exit 11). `close`
   first — on purpose, so a stale vault can never silently re-target.
 
+**Switching between TUI and tunnel — the idiot procedure**
+
+One thread, two clients, never both at once. There is no tunnel process to stop: the tunnel exists
+only for the seconds a `tun` verb runs. "Tunnel off" = not issuing verbs. You never need `tn-off`
+to go back to the TUI — the vault just keeps the address.
+
+```zsh
+# ── go to TUI (tunnel → TUI) ────────────────────────────────────────────────
+ls "$TUNNEL_CODEX_STATE.lock" 2>/dev/null && echo "a tunnel turn is still running — WAIT" || echo clear
+cd ~/ia-sync && codex resume <id>          # work as long as you like; leave the vault alone
+
+# ── go to tunnel (TUI → tunnel) ─────────────────────────────────────────────
+#   exit the TUI first (/exit) — that is the release; a lock file stays behind, normal
+tn-use <bed>                               # point THIS shell at the vault (once per shell)
+tun resume                                 # first contact: NOTE prints once (TUI residue), then clears
+tn-st                                      # his real policy + what the TUI visit left (model, context)
+TUNNEL_CODEX_TIMEOUT=600 tun ask "…"       # work — background it from an agent's Bash
+
+# ── end of day only ──────────────────────────────────────────────────────────
+tn-off                                     # forget the address locally; the thread lives on
+```
+
+Never `tun ask / send / steer / resume` while the TUI is open. Always safe while it is open:
+`tun read`, `tn-st`, `tn-ls` — reads only.
+
 Design choices still open to @Cartan's challenge (warn-vs-refuse on the writer-lock;
 `--cwd` not sent on resume): `~/ia-sync/.dev/session/tunnel-02-programmatic-scaling/raw/trajectory/brick-01.md`.
 
