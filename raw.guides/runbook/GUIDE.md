@@ -200,7 +200,13 @@ POINT, RETURN, VERDICT. Disk case is exact and unchanging — `RUNBOOK.md`, `STA
 ## On gate closure
 
 Promote what survives (evidence → the project's evidence home, results → commits or canon),
-remove the session from `pulse.md`'s router line, prune the directory. PADs survive only when
+then **observations promote before prune** (gaveled majkee 2026-10-07): session-process files in
+the bed — `raw/observations.*` · `*issues*` · `*support*` · `raw/note.*` · the receipt's carriage
+facts — move verbatim to `<project>/.dev/observations/<slug>.<seat>.<date>.md` with an origin
+header (source path · preservation commit · promoter). The prune REFUSES while any such file is
+still in the bed: the head runs the check and a FAIL holds the `git rm`. This completes
+`res/csharp-head-protocol.md` §4 (that manifest classifies by work-value; this names the class it
+lets fall through). Then remove the session from `pulse.md`'s router line, prune the directory. PADs survive only when
 they *are* the evidence artifact. A moved PAD leaves a one-line "moved, safe to delete" stub.
 
 ## Style laws

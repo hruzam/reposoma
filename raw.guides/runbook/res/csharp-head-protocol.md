@@ -40,7 +40,7 @@ chapter-of: runbook
 2. A RETURN that exists only in chat closes nothing. Files first, then the word.
 3. Never cite `_mail/*/inbox/` in durable artifacts — mail is consumed; the guard will refuse
    the commit and be right. Durable evidence → the bed, or the temple's evidence home.
-4. Before any prune: an explicit promotion manifest listing EVERY `raw/` keeper.
+4. Before any prune: an explicit promotion manifest listing EVERY `raw/` keeper. Session-process files (observations · issues · support · notes) are keepers too — they go to `<project>/.dev/observations/` and the prune refuses while they remain (GUIDE §On gate closure, gaveled 2026-10-07).
 
 ## The transfer ritual
 
