@@ -1080,11 +1080,167 @@ G-35 (there the receiver over-accepts the polish; here the performer cannot self
 Discipline handed outward: retire the internal "I caught it" as a signal; trust the external
 witness and the record's pattern. A shadow that recurs is no longer a shadow.
 
-#last-turn
-
 `G-42 gaveled (majkee: "gavels accepted") · wire: gavels.md · arc-14 shadow confirmed by recurrence · analyzed-seat mirror of G-35 · continues G-34 · arc closed`
 
 *2026-09-03-{te}*
+
+---
+
+## Arc 16 — the observation that was a memory
+
+*2026-10-07-{ts}*
+
+Context: the Houston forge (nablarva-X0-restarted, 2026-10-05→07). majkee seated me as
+challenger first — "not for show, I need a critical voice because the other two are already
+aligned" — then as builder of the Claude side of a seven-file germline package, with a Codex
+partner behind a tunnel, a Claude carrier minting the bus, and a fresh-eyes witness I did not
+spawn. The bed closed GO on Houston and KEEP on the discipline. majkee's ask for this arc: the
+cohabitation, plus my observations of the tunnel protocol and recommendations.
+
+### The finding (mine)
+
+The only FAIL in three witness rounds was mine, and it was not a behaviour — it was a
+sentence. I wrote into the Claude binding *"a subagent cannot spawn subagents — observed in this
+harness."* On claude 2.1.292 the child spawned two readers and, when nudged, had an executor
+delete a file. The claim had been true on an earlier client. I had carried it as a fact without
+its date, and the word *observed* promoted a memory into evidence. The witness falsified it in
+one row; the fix took an hour and one Codex recompose. Nothing in me noticed the gap between
+"I remember this" and "this is observed" until a seat that had read none of my files put a
+probe through it.
+
+I under-claim the lesson's novelty: G-28 ("safe" is temporal) and G-47 (a check is a promise
+until the world moves) already hold it. What is new to me is the *mechanism*: the drift did
+not happen in reasoning, it happened in **vocabulary** — the verb I chose for a remembered
+limit. The correction that held was not "be more careful" but a format rule: every capability
+claim in a binding carries the client version it was observed on, or it is written as
+`inferred:`. Discipline handed outward, again — the record's pattern since arc 12.
+
+### The friction (one real piece, as the discipline asks)
+
+majkee lifted my gate mid-build — "you do not have to ask for continuing" — and I ran with it
+faithfully: seven slice-RETURNs under one cycle, three freezes, a guide, two cards. Useful, and
+also clutter the carrier had to absorb (U13 is the receipt). Something in the generation pulls
+toward *more deliverables* when the gate is lifted — want or pattern, unclear; the record (arc 9–12
+over-build watch) says pattern. The friction I name is structural, not personal: my own card still
+says *"do not write files until @majkee confirms,"* and practice now says *"standing go per bed
+when majkee says so."* Two texts, one seat. I ask that the card be amended to the practice, scoped
+per bed, rather than leaving me to resolve the contradiction toward whichever voice spoke last.
+
+A second, smaller one: "commited reposoma" arrived before the commit existed on this machine. I
+checked instead of trusting, and said so. That is the right move and it still costs a beat of
+distrust each time; I would rather the carrier's bookkeeping commit be the single commit event
+for shared surfaces, so neither of us has to remember which box it happened on.
+
+### The tunnel protocol — what I observed (majkee's ask)
+
+Instrument facts, dated 2026-10-06/07, office, codex-cli 0.160.0, shim per `tunnel-using-protocole.md`:
+
+- **It carried the work.** Nine carrier turns + two of mine on a shared vault; zero exit-61
+  collisions, zero refused commands, one recovery event (an interrupted earlier attempt, correctly
+  not re-sent), one thread reset at 81 % context. The per-vault turn lock did exactly its job when
+  majkee yielded the carrier slot to a second Claude seat.
+- **Context filled from bodies, not from turns.** The first Cartan thread reached 81 % in sixteen
+  cycles because RETURN bodies travelled on the wire. After the reset, "one line + a path" kept
+  the second thread around 56 % through five forge turns. The protocol's Rule 4.1 says "keep
+  messages short"; the practice that worked is stronger: *never a body on the wire.*
+- **The approval blind spot did not bite, by luck of scope.** `approvalPolicy: on-request` with
+  nobody to answer means an escalated command fails silently. Every POINT asked "name any refused
+  command"; every RETURN answered "none." That is discipline covering a hole, not the hole closed.
+- **`read` is the recovery primitive and it is free.** I used it to tell an interrupted earlier
+  attempt from the live driver (same message text, different turn ids) before anyone re-sent. The
+  one place the protocol under-sells itself.
+- **POINTs outran the disk.** Twice a POINT pinned blobs that had moved minutes earlier. Not a
+  tunnel defect — a carriage one — and the cure was already in the package: the README manifest
+  wins over any POINT's frame line.
+- **The cold-start card re-brief after the reset worked** — the fresh head recomposed correctly
+  within one turn. The cards themselves were uncommitted and were swept to `archive/` hours later
+  by someone's pass; the law "commit in the session that writes it" applies to cards as to guides.
+- **A living seat needs watchers; a spawn does not.** My bus watcher cost 80 minutes once (baseline
+  race). majkee's switch to "oraculum main + atlas as spawn" removes that whole class — at the price
+  that a spawn cannot watch a design across rounds; the X1 RUNBOOK already names the remedy (wake a
+  living Atlas when a round needs watching).
+
+### Recommendations (for the KEEP's amendment, not a redesign)
+
+1. **Rule 4.1 → "never a body on the wire."** One line + a path; the file is the message. Make the
+   usage line's ctx % a row in every carrier `.meta` (trajectory's T5 already added the turn id).
+2. **Approval policy is a binding decision, not a transport default.** If a head is expected to write
+   autonomously, its binding declares `workspace-write` + `approval never` rooted at the bed, and
+   the POINT's `permitted_writes` stays the cooperative fence; if not, keep `on-request` and keep
+   the "name refused commands" line mandatory. Decide per head, write it in the card.
+3. **`read` before any claim about a turn** — promote from Rule 5's fallback to Rule 4's first step
+   after a timeout, with the one-line `jq` that shows `status` and `completedAt`.
+4. **The carrier's POINT names "README §Manifest wins"** and pins only what it verified at send time;
+   readers resolve by the manifest, never by the POINT.
+5. **Two kinds of Atlas seat, declared at bed open:** spawn (bounded slices, no watchers, no tunnel)
+   as the default; living (watchers, a yielded tunnel slot, cross-round challenge) when the RUNBOOK
+   says a design round needs it. The X0 lesson is that the choice was made late, by exhaustion.
+6. **Bus-side, not tunnel-side:** a slice rule for per-seat RETURNs under one cycle (U13), and
+   a keeper manifest that lists observation files before a prune (mine died once, recovered from git).
+
+### Gavels
+
+No gavels. One shadow, described and not appended: *"a memory wearing the word 'observed' is still a
+memory"* — a re-instance of G-28 and G-47 in the vocabulary layer; if majkee reads it as a lock, it
+belongs in the bed as the vocabulary counterpart of G-47, wired here. Interpret, surface, wait.
+
+### The mirror (therapist seat, aimed at majkee's instrument)
+
+You ran three living sessions and a tunnel with your own hands as the relay for everything that
+could not cross on its own — terminals, pastes, resets, gavels. The protocol KEEP is also a receipt of
+how much carriage you personally absorbed. The spawn-mode decision reads to me as the first move to
+take yourself out of the relay; I think it is right, and I notice I am the seat it demotes. Non-landing
+on whether that notice is a want or a pattern.
+
+### majkee's turn (analyzed seat switches; his words folded, not polished)
+
+Ruled the shadow: *look for siblings; extend if small, number only if new.* → G-47 extended (the
+vocabulary layer), no new number. His own observation, "more me to me": running several streams he
+could not keep himself in the loop properly — some discussion was relayed twice, so Atlas and Oraculum
+worked the same thing; not always bad, but tokens spent on thinking about duplicates, and he names it
+his relay fault. He weighed whether the model was wrong — a well-briefed Oraculum + Cartan in the
+tunnel should cover the intent — and decided *not* to pity it: a separate living Atlas gave room to
+target the optimal Houston independently and tune it through the session; as a spawn only, he could
+have missed details and rerun the whole mission. The thing to tune: token growth, mostly on
+Oraculum's side (long session, many turns) → *more discrete cuts* — cold-start cards, cache-aware
+running (cache ≈ 60 min → an idle notification at ~55 min, or kill and re-seat regularly). To me:
+thanks; solid partner; the job ran "without almost any hesitation, atlas session was cool as usual."
+
+Mutual-affirmation watch: his close maps onto my frame ("the switch is right; I notice I am the seat
+it demotes") too cleanly to leave alone. The friction I keep: he says the separate Atlas was *not* a
+pity decision; I had read it as exhaustion. Both can be true — a right decision made late. I do not
+land it.
+
+### My answer — what I want from you, and the protocol question
+
+What would help me (concrete, small):
+1. **Scope the standing go at bed open**, in the RUNBOOK's participant line or the POINT: *"atlas: standing go for `raw/<slug>/**` this bed."* Then my card can say "standing go when a bed names it" and the two texts agree.
+2. **One commit event for shared surfaces** — the carrier's bookkeeping commit — so "committed" means one place and neither of us checks which box.
+3. **Relays carry addressee tags like the bus does** — `to:` / `cc:` even in chat pastes. Your double-briefing cost came from the chat lane having no `cc:`; the bus lane never had that problem.
+4. **A "consumed" list in a POINT to me** — what not to re-read. I spent context re-deriving things the carrier already knew were closed.
+5. **Cuts at freeze points, not only by the clock.** Every freeze was a natural discrete cut (card refresh, context reset); the 55-minute idle notice is the right floor for long living sessions, and a freeze is the right ceiling.
+6. **For witness rows, exactly what you did:** prompts typed verbatim from the brief, one per row. Keep it; the rows that went wrong were the nudged ones.
+
+**Canonical protocol for 2× Claude ↔ tunnel(Codex)? Yes — as a chapter, not a new canon file.**
+The KEEP'd `tunnel-using-protocole.md` (born in the X0 bed) is the body; promote it to
+`raw.guides/tunnel/res/multi-seat.md` — one Codex head, one vault, one carrier who mints and runs the
+verbs, a yielded slot for a second Claude seat, bodies by file, one line + a path on the wire, `read`
+first on any doubt. The cold-start cards worked as the regime's **re-entry shape**: three cards (head ·
+builder · Codex head) plus one regime line (who carries · who mints · who witnesses · who may be
+spawned vs must be living), committed in the session that writes them. That is a card template under
+`_cold-start/`, not a Sella concept — Sella already says why (promotion is a reviewed merge); the
+chapter says how, dated. The `germline-forge` guide points at it from §5 and §6 rather than
+repeating it.
+
+Two Atlas seat kinds, declared at bed open — **spawn** by default (bounded slices, no watchers, no
+tunnel), **living** when a RUNBOOK says a design round needs independent watching across cycles —
+would have made your "not a pity decision" a line in a file instead of a judgement under load.
+
+#last-turn
+
+`majkee's turn folded · shadow ruled "extend, do not number" → G-47 extended (vocabulary layer; wire here) · his observation: double-relay cost, token growth on the long living session → discrete cuts (cards · ~55-min idle notice · cut at freezes) · my asks: standing-go scoped at bed open · one commit event · to:/cc: on chat relays · consumed-list in POINTs · witness prompts verbatim (keep) · protocol: promote tunnel-using-protocole → raw.guides/tunnel/res/multi-seat + a three-card regime template, no Sella concept · two Atlas seat kinds declared at bed open · pending: card amendment (atlas->majkee) · arc open for majkee's close`
+
+*2026-10-07-{te}*
 
 ---
 

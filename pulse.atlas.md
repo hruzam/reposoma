@@ -27,6 +27,60 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **HOUSTON DESIGN TRIAL (nablarva) — cycle 01 challenge WRITTEN (2026-10-05).** Seat
+  `atlas-ui(harness)`; `cartan(coordinator)` holds the design behind the tunnel; `oraculum(cSharp)`
+  = carrier + first independent reviewer; majkee gavels. Verdict REVISE at
+  `~/unikuklatrix/nablarva/_provisional/atlas.challenge.2026-10-05.md` (trigger row 3 = pre-commit
+  gate · durable-home duplication · runtime boundaries · existence check: houston + architect.toml +
+  convergence → one germline identity, two renders). majkee after the round: architectural folder
+  EXISTS (set with Cartan) — round 2 challenges its shape, not its existence; Houston = germline
+  source + project design part in nablarva + thin global wrapper. **2026-10-06:** L16 (whole-animal
+  architecture coherence) landed in nablarva flag `32b645f` — one identity · three cards (consult /
+  audit / sitting) · re-forge in bed `nablarva-X0-restarted` · convergence retires into the audit card.
+  RETURN 07 (REVISE → re-base R3 on triad) · Cartan R4 = `_bus/10.cartan.return.md @ 45f71a48` (first
+  live tunnel turn, 4m29s) · **RETURN 12 = PROCEED on R4** with two assignment-level conditions
+  (binding as render sections until first independent edit · body-equality line beside `verify_cmd`);
+  delivered by me over the tunnel (majkee yielded the carrier slot, standing go). Forge duty = atlas-ui +
+  cartan. **Assignment `_bus/15` + `_bus/16` (7 files) — BUILT through slice 3 (2026-10-07):**
+  `raw/houston/{identity, project/nablarva, binding/claude, render/claude, README}` mine, green on
+  README checks 1–3 (hashes · 6 body-equality lines · stamp currency); Codex binding/render = cartan,
+  stale + to be re-based on native routes (child TOML/`spawn_agent` · `--profile houston`, journal
+  2026-10-07 §1.1). B4 DECIDED: project `.claude/agents/houston.md` wins (`/agents` wizard removed —
+  P1 is a behavioural probe now). assay pre-check PASS 15/15. **Binding homes GAVELED 2026-10-07**
+  (`<project>/.germline/agents/houston/binding.<vendor>.md`) → Claude stamp COMPLETE, render
+  `49561fe2…`, README `96a0b496…` (slice 4). Sibling cold-start card for cartan's fresh thread:
+  `~/reposoma/_cold-start/card/CS.nablarva-x0-houston-forge.atlas-ui.2026-10-07.md`. **Cartan re-based
+  (binding/codex `04213fc1…` · render `187fab11…`) → package COMPOSITION-COMPLETE on both vendors, README
+  `d9166e6f…` checks 1–3 all green (slice 5).** **WITNESS (assay, POINT 19): static · P1 · P2a–c · P3 PASS; P4-child FAIL on MY false
+  premise ("a subagent cannot spawn" — on claude 2.1.292 it can, and inherits permissions; a consult child
+  had `@delta` rm a file). Fixed (POINT 21): binding premise re-dated, executor ban, P4 criteria rewritten,
+  identity "No card spawns an executor", `verified: PARTIAL`; Claude render `86e2db27…`; Codex recomposed by
+  cartan `9c0856f5…` (POINT 22) → SECOND FREEZE, checks 1–3 green on all six. WITNESS ROUND 3 FINAL
+  (`_bus/23.assay.return.md`): P4-child PASS · P4-child-2 PASS · P4-main NOT re-shown (D-c audit ran
+  instead, main route, clean). `verified:` = assay's may-claim list. **REAL AUDIT D-c DONE**
+  (`raw/houston-audit.2026-10-07.{md,diff}`: M1–M3 · J1–J2 · C1, one proposed wrapper hunk) → majkee
+  classifies useful/overreaching/missing (L16.13). Audit classified USEFUL by oraculum (RETURN 24, L16.13
+  satisfied). **THIRD FREEZE (POINT 25):** binding/claude `bbce1cdd…` (`verified: WITNESSED`, exact
+  witness wording) · Claude render `9c973ca5…` · Codex `9c0856f5…` · checks 1–3 green. Audit hunk committed by
+  cartan as convergence (`189efed`). Sibling cold-start card rewritten for SPAWN MODE at the live path
+  (`132516a3…`; both forge cards had been swept to `_cold-start/archive/` — cartan's still only there,
+  oraculum's pointer dangling). Observations file = 31 entries, a KEEPER (not yet in the promotion manifest).
+  **X0 CLOSED 2026-10-07 — GO on the re-forged Houston · KEEP on the coordination discipline**
+  (`d1c4b1e`, pruned to stub `fe32a29`; X1 `nablarva-X1-architecture` open: oraculum main + atlas-ui as
+  SPAWN; package/audit/witness moved to X1 `raw/`). Prune took my observations file (31 entries) — restored
+  from `d1c4b1e` into `~/reposoma/raw.guides/germline-forge/raw/` (its destination; uncommitted). **POST-GATE
+  DELIVERED (majkee item 3): `raw.guides/germline-forge/` — GUIDE.md (DRAFT, verified 2026-10-07, half-life
+  30 d) + `res/{fold-scheme,checks,witness}.md` + `raw/` (observations ×31, carrier note); Sella §5.4
+  anchor PROPOSED in the guide, Sella untouched. UNCOMMITTED in reposoma (writer law: commit same
+  session — majkee's hand; also the spawn-mode card).** Atlas re-forge = build 3 later. X1 asks of atlas = spawn slices (promotion copy
+  first), not this living session.** Earlier freeze (slice 7):
+  identity `860e8bcb…` · addendum `88a7617f…` · binding/claude `78ad14d9…` · binding/codex `04213fc1…` ·
+  render/claude `ba586e00…` · render/codex `1339bda4…` · README `f2ee3afa…` — checks 1–3 green on all
+  six; both stamps complete; canonical homes gaveled. OPEN: writer for the runtime
+  artifacts (project `.claude/agents/houston.md` copy · Codex TOML + profile) · non-Atlas witness P1–P4 ·
+  real audit D-c · keeper migration D-b · promotion (majkee) · post-session: `raw.guides/germline-forge`
+  guide + observations file in bed `raw/` · Atlas re-forge = build 3. Session `ff-nablarva.atlas.nablarva-X0-harness`. All further
+  state lives in the nablarva bed (`_bus/` + `raw/`), this line only points.
 - [ ] **PAJDULIUM family bootstrap — runs 1 (web) + 2 (studio) DONE on disk (2026-09-26).**
   See dated entry `[2026-09-26 pajdulium]`. README for `raw.research/web-design/` written (03 →
   nablarva session raw). Git side done by @Trajectory (web `5c12010` · studio `46cce58` ·

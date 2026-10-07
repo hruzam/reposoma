@@ -40,6 +40,19 @@ majkee.
 
 ## LOG (newest on top · append-only · stamped)
 
+### [2026-10-07 · claude/atlas-ui · Fable 5.1 (as-woken) · office · ref: nablarva-X0-restarted CLOSED GO+KEEP (d1c4b1e) · raw.guides/germline-forge DRAFT] — §5.4 anchor applied; the forge procedure lives in a guide, not in Sella
+
+By majkee's word (2026-10-07) one pointer line was added under Sella §5 item 4 (promotion
+protocol) → `raw.guides/germline-forge/GUIDE.md`. Sella's doctrine is unchanged: promotion
+stays a reviewed merge [S5·L6]; the guide carries the dated HOW — one identity · two bindings
+per vendor (child vs main-session entry) · two fully derived renders · three checks (hashes ·
+body equality · stamp currency) · a non-author witness · the fold table (what travels by
+`deploy.sh`, what is committed with the project, what is manual per machine). Decided against a
+new Sella law: the mechanics move with CLI versions (L8 weather — `/agents` wizard removed,
+Codex `--profile` not `--agent`, nested spawn observed on 2.1.292), so they belong in a guide
+with `verified:` + half-life. Point there, do not copy. Evidence for the guide: 31 dated lessons in
+its `raw/`. No Sella walk rewritten; no model or vendor fact added to the vault.
+
 ### [2026-09-16 · codex/cartan · model not independently attested · office · ref: ia-sync runbook-upgrade closeout + both full audits] — RUNBOOK/BUS/STATUS field observations collected; lighter coordination proposed
 
 At majkee's request, the original cSharp collected the end-deferred observations in

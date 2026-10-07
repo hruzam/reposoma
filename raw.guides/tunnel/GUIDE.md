@@ -119,6 +119,7 @@ occupancy, the only number a seat should act on. `TUNNEL_CODEX_USAGE=full` resto
 |---|---|---|
 | `res/user-run.md` | chapter | user-run — bring-up, session reset, multi-vault patterns |
 | `res/settings.md` | chapter | settings — the knob card (what you can set, what it means, how to send it) |
+| `res/multi-seat.md` | chapter | multi-seat — one Codex head, one vault, one carrier, several Claude seats (proven: Houston forge, GO+KEEP) |
 | `dev-journal.tunnel.md` | journal (dev-layer, uncanonical) | field-usage lessons ladder — append-only, not `/guide`-served |
 | `src/` | dev-layer (uncanonical, sella-src pattern) | driving observations + evidence — reached by explicit path only |
 

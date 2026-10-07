@@ -441,6 +441,9 @@ date, because of L8 — an undated claim is an unclaimed claim.
 a REVIEWED MERGE, never auto-deploy [S5·L6]. Nothing an agent wrote reaches a live
 surface (`~/.claude/`, a deploy target) without passing a human or gate review. This is
 L8 operationalized: selection pressure applied at the boundary, with a receipt.
+→ build / fold / prove / promote procedure, dated: `raw.guides/germline-forge/GUIDE.md`
+(DRAFT 2026-10-07 — one identity · two bindings · two derived renders · three checks ·
+witness · promotion map; anchor applied by majkee's word 2026-10-07).
 
 **Operator vault — the `.hlm` pattern (named 2026-09-02, majkee).** A project may carry an
 operator-private directory (`.hlm/`). The seal is about READING, not tracking: no agent
