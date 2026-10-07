@@ -55,3 +55,13 @@ U1–U12 (X0 RUNBOOK) · docket 8 · M3/C1-lock L12 lines · J2 · bus GUIDE sli
 ## Update 2026-10-07 07:50 — X0 CLOSED (GO + KEEP), X1 opened
 
 X0 preserved at `d1c4b1e`, pruned to stub. Package (third freeze), audit, witness, tunnel protocol + vault now live in `nablarva-X1-architecture/`; vault path changed, same head thread. X1 STATUS owns the position; this card only points. The "What closes X0" section above is history.
+
+## Waking Atlas as a spawn (added 2026-10-07 after Atlas folded his card)
+
+Atlas's background lives in **his** card, not here: `~/reposoma/_cold-start/card/CS.nablarva-x0-houston-forge.atlas-ui.2026-10-07.md` — read §"What a spawned atlas-ui may be asked (its rows only)", §"How to do one slice", §"Spawn-notes" (7 items: watcher baseline · README §Manifest over POINT · numbering gap U13 · what broke · pipeline not typing · one body per session · the spawn is not a witness). Its pointers still say `nablarva-X0-restarted/…`; translate: workbench `raw/houston/` + audit + witness now at `~/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/raw/`; X0 bus/STATUS/observations at preservation commit `d1c4b1e` (`git show d1c4b1e:.dev/session/nablarva-X0-restarted/<path>`). Canonical bytes are at the homes since check 1 — a source edit now means a NEW forge bed, never an in-place edit of the homes.
+
+Spawn prompt skeleton (`Agent`, `subagent_type: atlas-ui`, model per his card: opus for a recomposing source edit, sonnet for a re-pin/verify):
+```text
+You are atlas-ui(harness), spawned by oraculum(cSharp) in bed <X1 path>. Read first: ~/reposoma/_cold-start/card/CS.nablarva-x0-houston-forge.atlas-ui.2026-10-07.md (your card; X0 paths translate to nablarva-X1-architecture/raw/), then <bed>/STATUS.md, then your POINT <bed>/_bus/NN.oraculum.point.md. Your rows only; write scope = <explicit paths>; recompose by pipeline, README checks 1–3, re-pin, RETURN at <bed>/_bus/NN.atlas-ui.return.md with blobs. No commit (carrier commits). Anything outside your rows → `out of row:` naming the owner.
+```
+Checks 1–2 of X1 are done (promotion by an Atlas spawn, migration by cartan); the next Atlas-shaped work is a verification row or a `verified:` widening after a witness — not a design round.
