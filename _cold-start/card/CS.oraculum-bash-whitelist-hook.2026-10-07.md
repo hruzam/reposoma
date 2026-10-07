@@ -29,7 +29,7 @@ Origin: nablarva X0/X1 carrier regime (2026-10-01→07). The carrier seat needs 
 
 - Settings rules `Bash(<prefix>:*)` exist, merge across scopes, **deny > ask > allow — a blanket `deny: ["Bash"]` cannot be carved by allow rules**; so settings alone give no per-agent whitelist.
 - Agent frontmatter `tools:` / `disallowedTools:` take **bare tool names only**, no `Bash(...)` patterns.
-- Agent frontmatter **`hooks:`** is supported and fires **only while that agent runs** (agent-scoped). `PreToolUse` receives `tool_input.command`; deny = exit 2 + stderr, or exit 0 + `{"hookSpecificOutput":{"hookEventName":"PreToolUse","permissionDecision":"deny","permissionDecisionReason":"…"}}`. Optional `if: "Bash(…)"` filter on the hook entry.
+- Agent frontmatter **`hooks:`** is supported and fires **only while that agent runs** (agent-scoped). **In-house precedent, read first:** `houston.md:25–34` already runs `PreToolUse · matcher: "Bash"` → `~/.claude/hooks/guard-destructive.sh` — same shape, same script home (`claude/hooks/` on the table → `~/.claude/hooks/` live); the whitelist script is its sibling, and the two hooks compose (both run; any deny holds). `PreToolUse` receives `tool_input.command`; deny = exit 2 + stderr, or exit 0 + `{"hookSpecificOutput":{"hookEventName":"PreToolUse","permissionDecision":"deny","permissionDecisionReason":"…"}}`. Optional `if: "Bash(…)"` filter on the hook entry.
 - **The agent sees the denial reason** → it can route to a spawn. That line IS the economy.
 - Per-launch alternative for living sessions only: `claude --agent oraculum --allowedTools "Bash(git log:*)" …` (everything else asks the human; useless unattended).
 
