@@ -167,6 +167,14 @@ STATUS GUIDE) — a read-once file cannot carry what is learned after the first 
 **`references`** — point, do not copy. Canon lives with the project; a RUNBOOK that reproduces
 canon has forked it.
 
+**`observations_read`** — the reader clause of `.dev/observations/` (gaveled 2026-10-07, pairs
+with §On gate closure). Before authoring, the head runs `ls <project>/.dev/observations/<program>*`
+— the slug law makes the predecessor line greppable — reads what it finds, and the RUNBOOK carries
+`observations_read: [<files>]` or `observations_read: none exist`. A RUNBOOK without the line is
+not parkable. The reader is the next head on the same program line, at authoring: the only moment
+a session's lesson can still change behaviour. Other readers follow pointers that already exist
+(cold-start card · closing receipt · a guide being forged); none are obliged.
+
 **No journal.** History lives in git. Doing-state lives in `STATUS.md`. A per-session journal
 is a third log competing with both.
 
