@@ -214,7 +214,11 @@ facts — move verbatim to `<project>/.dev/observations/<slug>.<seat>.<date>.md`
 header (source path · preservation commit · promoter). The prune REFUSES while any such file is
 still in the bed: the head runs the check and a FAIL holds the `git rm`. This completes
 `res/csharp-head-protocol.md` §4 (that manifest classifies by work-value; this names the class it
-lets fall through). Then remove the session from `pulse.md`'s router line, prune the directory. PADs survive only when
+lets fall through). Then remove the session from `pulse.md`'s router line, prune the directory.
+When the closure promoted ≥1 observation file, the closing head spawns **@agol once** (bounded:
+read `<project>/.dev/observations/*`, return patterns across sessions + candidate improvements to
+guides / skills / regimes; no verdict shape) → `.dev/observations/harvest.<date>.agol.md`; its
+candidates enter the next RUNBOOK on any line as U-rows (gaveled majkee 2026-10-07, "all three"). PADs survive only when
 they *are* the evidence artifact. A moved PAD leaves a one-line "moved, safe to delete" stub.
 
 ## Style laws
