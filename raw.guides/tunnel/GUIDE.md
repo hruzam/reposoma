@@ -45,6 +45,11 @@ tun open --enable --thread <threadId> [--cwd ~/repo]   # BIND: local declaration
 tun resume                         # liveness probe — AFTER the interactive client released it;
                                    # stamps the server's REAL sandbox/effort/cwd/instruction files into state
 tun status                         # now shows state.runtime (truth as of last contact), not only intent
+
+# PREAMBLE (2026-10-08) — a standing turn rule prepended to EVERY send/ask/steer:
+tun open [--enable] --preamble <file>   # set at open (law 2.4); existing vault: set/replace · `none` clears
+#   head receives: <file text> + "\n\n---\n\n" + <message> · stderr names the prepend · stdout unchanged
+#   missing file at turn time → exit 11, no turn sent · chapter: /guide tunnel preamble
 ```
 
 `tun` = palette alias → `zsh ~/.config/zsh/ai/tunnel-codex.zsh`. Operator recipe for a bound
@@ -112,6 +117,9 @@ occupancy, the only number a seat should act on. `TUNNEL_CODEX_USAGE=full` resto
 → chapter `settings` — the knob card: what each sandbox mode actually permits, the fine
   knobs (`writable_roots`, `/tmp`, network), model/effort/identity params, and which of
   the three routes can reach each one today (`/guide tunnel settings`)
+→ chapter `preamble` — why a turn costs what it *reads* (not what it says), the `--preamble`
+  notation, where the rule file lives (template here · project wording with the project ·
+  bed instance dies with the bed), default template (`/guide tunnel preamble`)
 
 ## Manifest
 
@@ -120,6 +128,7 @@ occupancy, the only number a seat should act on. `TUNNEL_CODEX_USAGE=full` resto
 | `res/user-run.md` | chapter | user-run — bring-up, session reset, multi-vault patterns |
 | `res/settings.md` | chapter | settings — the knob card (what you can set, what it means, how to send it) |
 | `res/multi-seat.md` | chapter | multi-seat — one Codex head, one vault, one carrier, several Claude seats (proven: Houston forge, GO+KEEP) |
+| `res/preamble.md` | chapter | preamble — a standing turn rule the shim prepends to every send/ask/steer (shim 17a00fe) |
 | `dev-journal.tunnel.md` | journal (dev-layer, uncanonical) | field-usage lessons ladder — append-only, not `/guide`-served |
 | `src/` | dev-layer (uncanonical, sella-src pattern) | driving observations + evidence — reached by explicit path only |
 
