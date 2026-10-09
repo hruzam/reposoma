@@ -27,6 +27,12 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **ORACULUM BASH WHITELIST — BUILT + PROBED on table, deploy pending (majkee) (2026-10-08).**
+  Agent-scoped PreToolUse hook, all probes green (main thread + subagent). Uncommitted in ia-sync:
+  `claude/hooks/{oraculum-bash-whitelist.sh,guard-destructive.sh,README.md}` · `deploy.sh` hooks leg ·
+  oraculum.md `hooks:`. guard-destructive fixed + folded (ISS card → archive after both-host verify).
+  Next = majkee dry-run → deploy → commit/push → home pull+deploy. → `[2026-10-08 bash-whitelist]`.
+
 - [ ] **HOUSTON DESIGN TRIAL (nablarva) — cycle 01 challenge WRITTEN (2026-10-05).** Seat
   `atlas-ui(harness)`; `cartan(coordinator)` holds the design behind the tunnel; `oraculum(cSharp)`
   = carrier + first independent reviewer; majkee gavels. Verdict REVISE at
@@ -353,6 +359,33 @@ surfaces + age-stamps).
   here. (migration debt — not done now to avoid importing stale items as false-live signal.)
 - [ ] **majkee: commit + push reposoma** — carries this restructure + `raw.guides/PAD/pad-builder.md`
   live (my seat has no Bash). → `[2026-08-07 PAD]` entry.
+
+---
+
+## [2026-10-08 bash-whitelist] — oraculum Bash whitelist: agent-scoped PreToolUse hook (session ff-sync.atlas.oraculum-bash-list)
+
+From `_cold-start/card/CS.oraculum-bash-whitelist-hook.2026-10-07.md`. majkee present; quick run (inbox
+not read). Gavels this sitting: script home = table `claude/hooks/` + new `deploy.sh` leg (a) · `python3 -`
+DROPPED from the list · majkee's own oraculum.md edits committed first (`bda9281`, via @delta) · name =
+`oraculum-bash-whitelist.sh` (one script per seat).
+
+- **Built:** `~/ia-sync/claude/hooks/oraculum-bash-whitelist.sh` (stdin JSON via jq · quote-aware split ·
+  every segment must pass · substitution/heredoc denied · fail closed) · `deploy.sh` hooks leg (rsync `-a`,
+  no `--delete`) · oraculum.md `hooks:` block (houston.md shape) · pattern note `claude/hooks/README.md`.
+  List added vs card: `cd pwd date hostname sha256sum diff`, `export TUNNEL_CODEX_STATE=` only.
+- **Probes (claude 2.1.293, 2026-10-08):** offline 35/35 · main thread (`--agents` session def) allow /
+  deny `python3` / deny compound `rm` — reason visible, agent did not route around · subagent mode same,
+  hook fired 3/3.
+- **Finding — harness trap:** frontmatter hooks are SILENTLY SKIPPED for an agent defined in an untrusted
+  project folder (debug log only: "Skipping frontmatter hooks … not trusted"). Card's premise that a scratch
+  `.claude/agents/` copy is a valid probe was false; user-level seats unaffected. Recorded in the README.
+- **Finding — dead precedent:** `guard-destructive.sh` reads `$TOOL_INPUT` (never set) → passes everything;
+  houston has no Bash anyway; script is live-only. Filed
+  `_cold-start/issues/ISS.guard-destructive-reads-dead-env-var.2026-10-08.md`. **majkee: fix + fold** →
+  `~/ia-sync/claude/hooks/guard-destructive.sh` (stdin/jq, fail closed, patterns unchanged, probe 12/12).
+  Card stays in `issues/` until both hosts verify post-deploy; houston-wiring question left to majkee.
+- [ ] majkee: `deploy.sh --dry-run` → `deploy.sh` → commit + push ia-sync → home `git pull` + `deploy.sh`.
+- [ ] majkee: commit reposoma (this pulse + the ISS card).
 
 ---
 

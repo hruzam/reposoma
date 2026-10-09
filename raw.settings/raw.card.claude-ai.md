@@ -2,7 +2,7 @@
 card: card.claude-ai
 brand: Anthropic — claude.ai (chat + Projects)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-09-02
+verified: 2026-10-08
 half_life: ~weeks
 half_life_days: 21
 recheck:
@@ -11,6 +11,14 @@ recheck:
   - https://releasebot.io/updates/anthropic/claude
 surface_type: chat (NO filesystem; standing instructions + retrieved knowledge)
 ---
+
+## Refresh delta 2026-10-08
+_Since last verify 2026-09-02. Source: support.claude.com release notes (article 12138966), live-fetched 2026-10-08 by @Epoch._
+- **Oct 7:** Claude Haiku 5.5 launched; Max and Team plans gain monthly API credits (claim by linking a Console org in billing). H
+- **Sep 28:** Claude Sonnet 5.5. **Sep 22:** Claude Opus 5.5 (Anthropic: 40% cheaper to run than Opus 5). H
+- **Sep 25:** developer portal for submitting plugins to the Claude directory. H
+- **Sep 16:** Cowork features rolling into every conversation (no mode pick; gradual for Pro/Max, web/desktop/mobile); Claude Design / Slides / Docs added (Artifacts on all plans incl. Free; Enterprise beta, off by default). H
+- **Sep 15:** Salesforce plugin beta (paid plans, org approval). **Sep 10:** smart reports beta (Enterprise). H
 
 # claude.ai — chat & Projects (the architect / authoring surface)
 

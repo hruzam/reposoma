@@ -24,6 +24,11 @@ active_pins:
     effort: high
     status: pending-effective-runtime-witness
     gavel: "majkee 2026-10-09 (nablarva e4ebf15)"
+  codex/houston-main:
+    model: gpt-6.1-sol
+    effort: high
+    status: pending-effective-runtime-witness
+    gavel: "majkee 2026-10-09 install-for-test (nablarva .codex/profiles/houston-nablarva.config.toml)"
 ---
 
 # Model + effort per route — cross-vendor render settings

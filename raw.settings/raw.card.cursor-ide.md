@@ -2,7 +2,7 @@
 card: card.cursor-ide
 brand: Cursor (IDE; runs Claude / GPT / Grok / etc. models)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-09-02
+verified: 2026-10-08
 half_life: ~2-3 weeks (feature-drop cadence still fast; numbered "Cursor 3.x" releases gave way to named drops — watch for a version-scheme change)
 half_life_days: 21
 recheck:
@@ -10,6 +10,15 @@ recheck:
   - https://releasebot.io/updates/cursor
   - https://forum.cursor.com        # feature reality vs docs
 ---
+
+## Refresh delta 2026-10-08
+_Since last verify 2026-09-02. Source: cursor.com/changelog, live-fetched 2026-10-08 by @Epoch. Agent-mode internals, rules-file format and pricing NOT re-verified (CONFIDENCE L there)._
+- **Oct 6:** Remote control for local agents from the Cursor iOS app (on by default except Enterprise orgs; computer must stay awake). H
+- **Sep 23:** Rollouts (per-PR deploy health) + Security Review (one comment per PR); Teams/Enterprise. H
+- **Sep 10:** Cursor Projects (beta) — coordinator agent plans + delegates to cloud agents; shared context files; Slack/schedule/PR triggers. H
+- **Sep 2:** Self-hosted machines (tool execution stays in own network; Lambda/Modal/Vercel; computer use on Linux/Mac). H
+- **Aug 27:** Cloud Agents can start without an SCM repo (Cursor Origin repo). H
+- Version scheme: changelog shows named drops, no numbered 3.x entries — consistent with card's watch note.
 
 # Cursor IDE — native build surface
 

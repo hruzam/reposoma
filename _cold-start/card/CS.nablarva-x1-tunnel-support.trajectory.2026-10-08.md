@@ -43,7 +43,7 @@ you have no task — say you are oriented and wait.
 ## Where to log — two homes, two purposes
 
 - **nablarva (live, for the team):** my vault, `.dev/observations/nablarva-X1-architecture.trajectory.2026-10-08.md`.
-  - Append-only and never pruned (observations law). The next entry is **T15**.
+  - Append-only and never pruned (observations law). The next entry is **T18**.
   - Holds diagnoses, effective-policy readings, and STATUS-ready lines marked "for the carrier, verbatim".
   - The carrier's own defect log is hers. I read it and never write it; ask oraculum where it lives.
 - **ia-sync (transport backlog, for the next tunnel upgrade):** `~/ia-sync/.dev/session/tunnel-03-feedback-upgrade/raw/`.
@@ -57,10 +57,10 @@ you have no task — say you are oriented and wait.
 
 - **Hotfix live:** ia-sync `17a00fe` `tun open --preamble <file|none>`, selftest 113/113. Guide chapter is reposoma `62db7e8` (`/guide tunnel preamble`).
 - **Copied live by hand, three tunnel files only.** A full `deploy.sh` would also ship other seats' undeployed agents and hooks (`houston.md`, `oraculum.md`, `guard-destructive.sh`, `oraculum-bash-whitelist.sh`). That is majkee's deploy, still pending.
-- **X1 vault was closed by majkee.** Reopen with `tn-on … --thread <id> --cwd … --preamble …/tunnel.preamble.md`; the full recipe is in T14. Last known head is `01a113e0-b774-7e32-926a-bc19f050ab2c` (cartan(coordinator)). Use the re-bind line majkee copied from `tn-off`.
+- **X1 vault was closed by majkee.** Reopen with `tn-on … --thread <id> --cwd … --preamble …/tunnel.preamble.md`; the full recipe is in T14. Live head is `01a118ff-674c-7680-9e57-67ca2f257323` (compacted in TUI 2026-10-08 18:01, id kept). `01a113e0` is retired; `01a113d8` (journal §1.1.4) is a dead zero-turn id. Run `tn-check --id <id>` before any bind (T17).
 - **Policy at last reading:** `gpt-6-sol`/`medium`, `workspaceWrite`, network off, approvals on-request with reviewer `auto_review`. **Not yet verified on a tunnel turn (T11):** check the rollout's last `turn_context` after the first ask.
 
-## Open verifications (in order)
+## Open verifications (in order) — superseded 2026-10-08 22:00: the live list is X1 `raw/pad.1-tunnel-support.md` (A–J); T15–T17 in the vault
 
 1. The first X1 turn with the preamble: stderr shows `prepended`, and a short turn's `ctx` delta is a few kB (T14).
 2. That same turn's `turn_context.approvals_reviewer` = `auto_review` (T11).

@@ -2,7 +2,7 @@
 card: card.gemini-gems
 brand: Google — Gemini app (Gems / chat)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-09-02
+verified: 2026-10-08
 half_life: ~weeks — line is PARKED, consider longer (see refresh delta)
 half_life_days: 21
 recheck:
@@ -11,6 +11,12 @@ recheck:
   - https://blog.google/products/gemini/
 surface_type: chat (NO filesystem; standing instructions + knowledge)
 ---
+
+## Refresh delta 2026-10-08
+_Since last verify 2026-09-02. Source: gemini.google/release-notes, live-fetched 2026-10-08 by @Epoch (first ~100K of 157K chars read). Line is PARKED._
+- **2026.09.30 — Skills in Gemini chat:** reusable instructions built from chats, auto-run on matching prompts, combinable; global, users 18+. **Gems are being REPLACED by Skills** ("will soon replace Gems"); existing Gems auto-migrate when retired. Card's Gems framing is on a retirement path. H
+- **2026.09.10:** native Gemini app for Windows 10+ (Alt+Space), connects Gmail/Drive. H
+- **Models (CORRECTION 2026-10-08, pass 2):** the Gemini APP release notes show no model change after Gemini 3.6 Flash (2026.07.21) — the full page is now read (the remaining ~57K chars are 2024-and-older entries) and it never mentions Gemini 3.8 Flash or Gemini 4. BUT OpenRouter's catalog lists `google/gemini-3.8-flash` created 2026-09-02 (M), and Latent Space AINews (Oct 1) reports "Gemini 4 Argon", Google DeepMind's new model, limited for now to vetted government and cybersecurity users, 1M output (M, headline-level; no Google page read). So "no model changes" holds for the Gemini APP release notes only; the API/model catalog (OpenRouter) and press (Latent Space) show newer models. Treat the release notes as silent on them, not as proof of absence.
 
 # Gemini Gems — custom chatbots (Gemini-side authoring / research surface)
 

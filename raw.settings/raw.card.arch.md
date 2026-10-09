@@ -2,7 +2,7 @@
 card: card.arch
 brand: Research — Arch Linux workstation health (scope: arch)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-09-02
+verified: 2026-10-08
 half_life: ~7 days
 half_life_days: 7
 recheck:
@@ -11,6 +11,11 @@ recheck:
   - https://security.archlinux.org/advisory
 verify_cmd: "curl -s https://archlinux.org/feeds/news/ | grep -c '<item>'"
 ---
+
+## Refresh delta 2026-10-08
+_Since last verify 2026-09-02. Source: archlinux.org/feeds/news, live-fetched 2026-10-08 by @Epoch. Security advisories feed NOT checked._
+- **2026-09-22 — MANUAL INTERVENTION:** mkinitcpio >=42 with the systemd hook + TPM2-based LUKS unlock requires re-enrolling TPM2 (affects PCRs 0-7, 9, 12-14). See `systemd-cryptenroll(1)` (pinned values) / `systemd-pcrlock(8)` (custom policy). Relevant to this Manjaro-adjacent workstation only if TPM2 LUKS unlock is used. H
+- No other news items after 2026-09-02. H
 
 # arch — synthesis log
 

@@ -2,7 +2,7 @@
 card: card.gemini-cli
 brand: Google — Gemini CLI
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-09-02
+verified: 2026-10-08
 half_life: ~1-2 weeks (nightlies daily; stable ~weekly) — line is PARKED, consider longer (see refresh delta)
 half_life_days: 14
 recheck:
@@ -13,6 +13,11 @@ recheck:
 verify_cmd: gemini --version
 auth_survival: paid Gemini API key OR enterprise license   # see VOLATILE
 ---
+
+## Refresh delta 2026-10-08
+_Since last verify 2026-09-02. Source: github.com/google-gemini/gemini-cli/releases, live-fetched 2026-10-08 by @Epoch. Line is PARKED; only newest release itemized. Year of release inferred from nightly tags (CONFIDENCE M). Local `gemini --version` not run._
+- **Latest stable v0.63.0** (Oct 6, 2026): retry progress indicator during connection recovery; distinguishes missing MCP-enablement config from malformed JSON; bounded tool output size + better memory in long agent loops; removed invalid `diff.external` override; temp-dir cleanup on background shell exit; fixed infinite auth loop; autonomous plan execution in non-interactive mode; output truncation disabled when `maxChars` ≤ 0. H/M
+- Releases page carries no Antigravity-migration notice (absence on that page ≠ proof; card's PARKED status unchanged). Sections below not re-verified.
 
 # Gemini CLI — native build surface
 

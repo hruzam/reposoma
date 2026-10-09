@@ -3,7 +3,8 @@ title: germline-forge — build one identity, two bindings, two renders; fold it
 scope: germline-forge
 audience: builder (atlas-ui / atlas-auto / Codex harness builders) + operator + any seat asked to witness or promote a forged agent
 machine: both
-verified: 2026-10-07 · distilled from the Houston forge (nablarva-X0-restarted, closed GO + KEEP; package frozen three times; witnessed by assay on claude 2.1.292; Codex routes per codex-cli 0.160.0)
+verified: 2026-10-07
+verified-note: distilled from the Houston forge (nablarva-X0-restarted, closed GO + KEEP; package frozen three times; witnessed by assay on claude 2.1.292; Codex routes per codex-cli 0.160.0)
 half_life_days: 30
 recheck: on any claude-code or codex-cli upgrade (entry mechanisms and spawn behaviour are weather — Sella L8); on the next forge (Codex side proof, Atlas re-forge)
 status: DRAFT — first distillation; majkee reviews; becomes canon by his word, not by age

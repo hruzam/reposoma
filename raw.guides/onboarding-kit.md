@@ -1,5 +1,5 @@
 ---
-verified: 2026-07-07
+verified: 2026-10-08
 half_life_days: 90
 ---
 
@@ -8,6 +8,7 @@ half_life_days: 90
 `tier: raw.guides · the deliverable bundle the architect emits per project`
 `audience: Houston (or an architect agent) onboarding a project from raw.guides/project-intake.md`
 `date: 2026-06-17 · companion to: bootstrap-new-project.md (the procedure) · DRY by reference`
+`refreshed: 2026-10-08 by @Epoch — command name, missing-file reference and Gemini-sunset tense fixed. NOT re-verified: Cursor .cursor/rules/*.mdc path, Gemini contextFileName, agentctl status.`
 
 > The intake (`raw.guides/project-intake.md`) is the INPUT. This file is the OUTPUT contract —
 > what *"PROJECT.yaml and not only that, per temple dogma"* means concretely. One bundle per
@@ -48,15 +49,15 @@ Start every project with the **four seats** (doctrine §6): architect + challeng
 Per operator (2026-06-17): these two need no robust system. The cards converge on *one source, three consumers*:
 - Author **one `AGENTS.md`** at repo root `[GC]` — the graduated, canon-grade cross-tool surface every runtime reads.
 - **Gemini CLI:** set `contextFileName: AGENTS.md` in `.gemini/settings.json` (so `GEMINI.md` → `AGENTS.md`). Skills via the shared SKILL.md corpus (same open standard, reused — never duplicated). MCP minimal/placeholder.
-  - ⚠ **Auth path:** personal-login Gemini CLI **sunsets 2026-06-18**; target the surviving **API-key / Antigravity (`agy`)** surface (`~/.gemini/antigravity-cli/`), *not* the dying personal login. (`agy` is not 1:1 parity — re-verify.)
+  - ⚠ **Auth path:** personal-login Gemini CLI was **replaced by Antigravity CLI on 2026-06-18** (Gemini CLI docs banner, checked 2026-10-08; applies to Unpaid-tier and Google One users); target the surviving **API-key / Antigravity (`agy`)** surface (`~/.gemini/antigravity-cli/`), *not* the retired personal login. (`agy` is not 1:1 parity — re-verify.)
 - **Cursor CLI/IDE:** reads `AGENTS.md` (fallback contract) + `.cursor/rules/*.mdc` (scope by globs, the native leash) and loads the shared `~/.claude/{skills,agents}` corpus directly. MCP at `.cursor/mcp.json` (minimal/placeholder).
 - **No `agentctl`, no lockfile, no materialize pipeline** for these two. The robust gate earns its seat only at Claude-harness scale / ≥2 actively-materialized projects (agentctl spec, activation entry B). Defer it; name the threshold; don't pre-build show.
 
 ## Freshness gate (operator rule: a raw.settings primitive is trustworthy only if `verified` ≤ 72h)
-Run `aihs-stale` (or inspect each card directly in `raw.settings/`) before onboarding a Gemini or Cursor surface:
+Run `harness-stale` (or inspect each card directly in `raw.settings/`) before onboarding a Gemini or Cursor surface:
 - `raw.settings/raw.card.gemini-cli.md` — load-bearing volatile fact: auth path / `agy` surface. Highest urgency.
 - `raw.settings/raw.card.cursor-ide.md` — surface conventions stable; recheck the MCP path.
-- `raw.settings/raw.card.agents.addendum.md` — recheck MCP config paths before baking them into a surface.
+- ~~`raw.settings/raw.card.agents.addendum.md`~~ — file no longer exists (2026-10-08). MCP-path recheck now lives in `raw.settings/raw.card.claude-code.md` (MCP scope) and `raw.card.agent-docs.md`; successor relationship unconfirmed. Recheck MCP config paths before baking them into a surface.
 
 A full re-derivation is not needed — a targeted researcher recheck of the volatile bits (card `recheck:` URLs) suffices.
 

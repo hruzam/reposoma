@@ -1,5 +1,5 @@
 ---
-verified: 2026-07-07
+verified: 2026-10-08
 half_life_days: 90
 ---
 
@@ -29,7 +29,7 @@ already loaded (~30 lines), a new project CLAUDE.md should stay under ~90 lines 
 keep the combined total safely under 120. Prefer `@path/to/file` imports over inline
 expansion to pull content on demand rather than always-on.
 
-*Official (code.claude.com/docs/en/memory, verified 2026-07-02): the 200-line figure is
+*Official (code.claude.com/docs/en/memory, re-verified 2026-10-08; first verified 2026-07-02): the 200-line figure is
 **per-file**, soft adherence recommendation, no hard truncation for CLAUDE.md. All files
 still concatenate — cumulative load degrades adherence proportionally, but Anthropic does
 not issue a combined cap; their mitigation is `.claude/rules/<name>.md` with `paths:` frontmatter
@@ -37,6 +37,7 @@ not issue a combined cap; their mitigation is `.claude/rules/<name>.md` with `pa
 temple's conservative engineering judgment, not officially mandated.*
 
 *⚠ Do not conflate with MEMORY.md — that has a separate hard limit: 200 lines / 25KB truncation.*
+*2026-10-08 additions (memory docs, live): a CLAUDE.md over 4 MiB is skipped entirely; a warning fires when the combined size of all loaded CLAUDE.md files exceeds a combined limit; `AGENTS.md` is read natively (v2.1.277) only when no `CLAUDE.md`/`CLAUDE.local.md` exists at or above the working dir, controllable by `instructionFiles` (`claude-md-or-agents-md` default · `claude-md-and-agents-md` · `claude-md` · `managed-only`; user/managed settings only); auto-memory notes carry `type: user|feedback|project|reference`. MEMORY.md limit re-confirmed: first 200 lines or 25KB. NOT re-checked: `agentctl` / `agentctl materialize` status (Step 3).*
 
 ## Step 1 — start with the four seats (doctrine §6)
 **architect + challenger + researcher + implementer.** Plus a plan file, a flag/decisions ledger,

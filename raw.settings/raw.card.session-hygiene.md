@@ -2,7 +2,7 @@
 card: card.session-hygiene
 brand: Cross-tool — Claude Code CLI · Cursor IDE · Gemini CLI (session hygiene + token distro)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-09-02
+verified: 2026-10-08
 half_life: ~3-4 weeks (Claude Code ships ~daily; Cursor mechanics underdocumented; numbers shift on each release)
 half_life_days: 28
 recheck:
@@ -20,6 +20,8 @@ recheck:
 ## Research origin
 
 **Session:** @Epoch, 2026-07-02. All sources live-fetched; no training-data recall.
+
+**Refresh:** @Epoch, 2026-10-08 — manual live-fetch pass (NOT `/refresh` snapshot; no substrate file written). Fetched: sub-agents docs, geminicli.com subagents docs, cursor.com/changelog, remote-control docs (intro only). Deltas listed under VOLATILE. Second pass same day re-checked bug #8609 and Remote Control requirements (VOLATILE bullets below). Third pass (same day) re-checked RC timeouts, resume commands and Trusted Devices (VOLATILE bullets). Still NOT re-checked: all quantified third-party figures (CheesecakeLabs/MindStudio/InfoQ/MorphLLM).
 
 **Refresh:** @Epoch substrate + @Atlas hand re-synthesis, 2026-09-02 (structured-card exception) — `/refresh session-hygiene` snapshot, 6/6 sources live. Deltas: Remote Control is **GA on all plans** (preview language gone); RC timeout **scoped to server mode** (interactive mode retries indefinitely); NEW Trusted Devices (beta, Team/Enterprise); NEW subagent model-resolution order (v2.1.251+); Cursor Cloud Agents subagent isolation (2026-08-19, different surface — coverage gap, not contradiction); Gemini subagents + #8609 hold. Substrate: `raw.research/session-hygiene/report/raw.session-hygiene.2026-09-02.md`.
 
@@ -47,11 +49,18 @@ quantified findings, comparative isolation table, and canon mapping.
 ## ⚠ VOLATILE — read first
 
 - **Gemini CLI subagents** = now a standard feature (no PREVIEW flag) as of 2026-08-01 (launched Apr 2026 as preview). Config `.gemini/agents/*.md`; recursion guard still enforced.
-- **GitHub bug #8609 (CLOSED 2026-08-01):** Gemini CLI long session → auto model-switch → crash; `/compress` recovery also failed → session unrecoverable. Marked p2, now Closed (fix release not stated). Re-test long unattended sessions before relying on them.
+- **GitHub bug #8609 (CLOSED; see the 2026-10-08 bullet below):** Gemini CLI long session → auto model-switch → crash; `/compress` recovery also failed (requested maxOutputTokens 100117 vs API max 65536) → session unrecoverable. Marked p2. Closed with NO linked fix/PR/date on the issue page — do not assume it is fixed; re-test long unattended sessions and keep manual `/compress` checkpoints.
 - **Cursor context mechanics** are not fully published. The <50% effective window and 80% vs 12% numbers are practitioner-measured, not Cursor-official.
 - **Claude Code Plan subagent isolation** is GA and documented (code.claude.com); the 7× multi-agent multiplier is from MindStudio enterprise analysis (not Anthropic-official).
 - **Subagent model resolution order (v2.1.251+, 2026-09-02, H):** per-invocation `model` → subagent frontmatter `model` → `CLAUDE_CODE_SUBAGENT_MODEL` env → main-conversation model. Env var no longer outranks frontmatter. `CLAUDE_CODE_SUBAGENT_MODEL_FORCE=1` (v2.1.257) is the hard override. Explore stays "inherits main model, capped at Opus" (v2.1.198, confirmed).
 - **Cursor Cloud Agents (2026-08-19, M):** subagents run in an isolated project copy with clean context in their own cloud env (+ `/goal`, Custom Modes, mid-run steering). Different surface from the local-IDE mechanics in §Cursor below — not yet covered by this card.
+- **Fork cost claim partly stale (2026-10-08, H):** docs say fork mode is default-on in interactive sessions (v2.1.232+), OFF in `-p`/SDK (`CLAUDE_CODE_FORK_SUBAGENT=1|0` overrides), and **forks share the parent's prompt cache**, so they are cheaper than fresh subagents for context-heavy work. The §Claude Code lines "Long parent + fork = full re-read cost" and the table's "Expensive for long parents" predate this — read them as cache-miss worst case. Forks cannot spawn forks.
+- **Subagent limits (2026-10-08, H):** nesting default 3 layers (`CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH`); 20 concurrent (`CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS`). Subagent results now arrive framed/indented as subagent output (v2.1.277). Built-in Explore = main model (Opus when main is Fable), still skips CLAUDE.md + git status; Plan inherits.
+- **Gemini CLI subagents (2026-10-08, H):** enabled by default, no preview/enterprise label on the docs page; disable via `experimental.enableAgents:false`; `.gemini/agents/*.md`; recursion guard holds even with `*` tool wildcard; new: browser agent, inline `mcpServers` in agent frontmatter, subagent policy rules (`~/.gemini/policies/`), remote subagents over A2A. Banner: Gemini CLI "was replaced by Antigravity CLI on June 18th, 2026" for Unpaid-tier and Google One users.
+- **Bug #8609 (2026-10-08, H):** confirmed CLOSED; opened 2025-09-17, label priority/p2. The issue page shows NO linked PR/branch/milestone and no closing date — closed with no stated fix. Earlier "treat as resolved" wording is too strong: treat as closed-without-evidence-of-fix; keep manual `/compress` checkpoints.
+- **Remote Control requirements (docs, live 2026-10-08, H; first ~120 lines read):** Pro/Max/Team/Enterprise (Team/Ent need an Owner toggle), no API keys. NOT available on Bedrock/Vertex/Foundry, with `ANTHROPIC_BASE_URL` pointing off api.anthropic.com (gateway/proxy), or via the Claude apps gateway; unavailable when `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC` or `DISABLE_GROWTHBOOK` is set; `DISABLE_TELEMETRY`/`DO_NOT_TRACK` are OK from v2.1.283 unless the org requires Trusted Devices. Server mode `claude remote-control` flags: `--spawn same-dir|worktree|session`, `--capacity` (default 32), `-c/--continue` and `--session-id` (v2.1.200+), `--permission-mode`, `--chrome` (v2.1.273+), `--debug` (v2.1.282+). Interactive: `claude --remote-control`/`--rc`; in-session `/remote-control` or `/rc`. Untrusted directory → trust prompt (exits with an error without a TTY). Passing global flags such as `--settings` before `remote-control` makes it refuse to start. Timeouts (docs, pass 3, H): server mode `claude remote-control` gives up after roughly 10 minutes without network and the process exits; interactive sessions retry for as long as the outage lasts; HTTP 403 retries up to 3 min; presence heartbeat unreachable ~30 min → disconnect; forwarded dialogs expire after 5 min (`dialogExpiry`, v2.1.224); server-session resume window ~4 hours (v2.1.228+: `--continue`/`--session-id` can unarchive); a crashed server-mode session is re-served when a connected device sends a message (v2.1.238); outside server mode, one remote session per interactive process. Resume: `claude remote-control` restores all sessions the server was serving, `--continue` only the starting one, `--session-id <id>` one specific; sessions begun with `/remote-control` or `claude --remote-control` resume via `claude --continue`/`--resume`.
+- **Trusted Devices (docs, pass 3, H):** still BETA, but available on Pro, Max, Team AND Enterprise (off by default; an Owner enables it org-wide on Team/Enterprise, an individual turns on "Require trusted devices" on Pro/Max). Needs an enrolled device credential + a sign-in ≤18 h old; biometric step-up (Face ID / Touch ID / Windows Hello / passkey) refreshes the session; the CLI host receives its credential automatically at sign-in. The older "Team/Enterprise only" wording in §Remote session restore is WRONG (corrected below).
+- **Cursor (2026-10-08, H for items, L for mechanics):** changelog Aug 27–Oct 6 shows no local-IDE context-mechanics change; new surfaces are Cursor Projects beta (Sep 10, cloud coordinator agent delegating to other agents with shared context files) and remote control of local agents from iOS (Oct 6).
 
 ---
 
@@ -136,7 +145,7 @@ hermetically isolated — no history carries across.
 Long session on large-context model → CLI auto-switches to smaller model → accumulated context
 (documented: 8.1M tokens) exceeds smaller model's cap → API error. `/compress` recovery also
 failed (requested `maxOutputTokens = 100K+`; API max = 65,536), leaving the session unrecoverable.
-Marked p2, now Closed (fix release not stated in the issue). Treat as resolved but re-test long
+Marked p2, Closed with no fix linked (confirmed 2026-10-08). Do NOT treat as resolved; re-test long
 unattended sessions; keep manual `/compress` checkpoints as belt-and-suspenders.
 
 ---
@@ -239,7 +248,7 @@ Fills the gap these cards assumed away: recovering a Claude Code session running
   - Launched directly in the SSH shell → cannot re-grab the dead PTY. From the same project dir in a fresh shell: `claude -c` (`--continue`) or `claude --resume` — reconnects to the RC session recorded in that conversation (transcript is server-side). Server-mode variant: `claude remote-control -c` (v2.1.200+).
 - **`! claude --resume`** with a leading `!` is the run-shell-from-inside-a-session form — NOT the recovery path. Restore from a plain shell.
 - **Clocks (split, 2026-09-02):** *server mode* (`claude remote-control`) — host offline >~10 min → gives up, process exits (restart + resume). *Interactive mode* (`claude --remote-control`) — retries indefinitely and self-reconnects when the network returns. No multiplexer → remote `sshd` can SIGHUP `claude` once keepalive declares the frozen client dead, so reconnect promptly or hold from phone. Ultraplan disconnects active RC.
-- **Trusted Devices** (beta, Team/Enterprise only, off by default): RC viewing/steering bound to an enrolled device + sign-in ≤18 h old with biometric step-up. Orthogonal to recovery; matters only if the org toggles it on.
+- **Trusted Devices** (beta, Pro/Max/Team/Enterprise [corrected 2026-10-08], off by default): RC viewing/steering bound to an enrolled device + sign-in ≤18 h old with biometric step-up. Orthogonal to recovery; matters only if the org toggles it on.
 - **Prevent it:** `tmux new -s work` → then `claude` inside it. Official: "To keep a session running on a remote machine after you disconnect from SSH, start it inside tmux or screen."
 
 **Full guide (dated, sourced):** `raw.research/harness/reports/2026-08-01-remote-control-tmux-ssh-persistence.md`

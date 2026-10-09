@@ -2,7 +2,7 @@
 card: card.laravel
 brand: Research — Laravel / PHP ecosystem (scope: laravel)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-09-02
+verified: 2026-10-08
 half_life: ~7 days
 half_life_days: 7
 recheck:
@@ -12,6 +12,15 @@ recheck:
   - https://github.com/laravel/boost/releases
 verify_cmd: "curl -s https://feed.laravel-news.com | grep -c '<item>'"
 ---
+
+## Refresh delta 2026-10-08
+_Since last verify 2026-09-02. Source: feed.laravel-news.com, live-fetched 2026-10-08 by @Epoch. Pass 2 added Boost + laravel/mcp (GitHub releases, H) and PHP branch status (web search, M)._
+- **Laravel 13.35** (Oct 7): `Route::query()`, opt-in model `defaults()`, property arrays in fake assertions, percentage-based worker memory limits. H
+- **Laravel AI SDK 1.1** (Oct 6): Agent Skills support, Cohere text generation, approval for built-in tools, better provider-tool failover. H
+- Ecosystem: Synapse (Redberry dashboard for AI SDK agents), VMPal (VMs for agents) — news only. M
+- **Laravel Boost v2.10.3** (Oct 7): schema-builder table listing for unsupported DB drivers, fixes to four bundled skills. v2.10.2 (Oct 5): MCP support for Pi, rejects non-object JSON5 MCP config roots. v2.10.1 (Oct 1): keeps syncing CLAUDE.md for existing Claude Code projects, slims always-loaded guidelines. H
+- **laravel/mcp v1.0.1** (Sep 24): loopback redirect URI validation by parsed host. **v1.0.0** (Sep 14, major): OAuth challenges on authenticated MCP routes, MCP conformance suite, client honors server caching hints, nested request input via dot notation, serves legacy `initialize` clients alongside the modern protocol. H
+- **PHP:** 8.5 is the current stable branch; exact latest patch NOT confirmed (php.net snapshot stale; a Pantheon note of 2026-08-31 lists 8.5.10 and 8.4.25). PHP 8.6 GA scheduled 2026-11-19; RC1 (planned Sep 24) shipment unconfirmed. M — check php.net/downloads.
 
 # laravel — synthesis log
 

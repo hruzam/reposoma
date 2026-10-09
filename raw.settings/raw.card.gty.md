@@ -2,7 +2,7 @@
 card: card.gty
 brand: Antigravity — agy CLI (gty)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-09-02
+verified: 2026-10-08
 half_life: ~2-4 weeks (fast-moving CLI, weekly point releases)
 half_life_days: 21
 recheck:
@@ -11,6 +11,14 @@ recheck:
 verify_cmd: agy --version
 auth_survival: API Key (ANTIGRAVITY_API_KEY / GEMINI_API_KEY) in env or settings; direct Gemini API key auth (no OAuth) since v1.1.13
 ---
+
+## Refresh delta 2026-10-08
+_Since last verify 2026-09-02. Source: github.com/google-antigravity/antigravity-cli/releases, live-fetched 2026-10-08 by @Epoch (release year not shown on page; inferred). Local `agy --version` not run._
+- **Latest 1.3.1** (Oct 7): `/diff` ←/→ between files, n/N across files; fixes `/rewind` in long conversations, Windows plugin install/uninstall, `/tasks` showing only shell cmds. H
+- **1.3.0** (Oct 6): default Verbosity `high`→`medium` (tool calls/thoughts grouped into summaries); `/diff` file view j/k now moves line cursor. Behavior change. H
+- **1.2.17** (Oct 5): announcement cards above prompt (Esc dismiss); Windows sandbox no longer needs admin. **1.2.16** (Oct 3): image generation runs via built-in `image-generator` subagent. H
+- **Script-breaking (older, 1.2.14):** `--json-schema` now rejects plain text / bare type names / missing schema files with exit 1. H
+- Versions between 09-02 and 1.2.14 not itemized (L).
 
 # Antigravity CLI (gty) — native build surface
 

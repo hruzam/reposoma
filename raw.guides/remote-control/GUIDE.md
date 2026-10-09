@@ -3,7 +3,7 @@ title: Remote Access — Claude Code native Remote Control (tmux-free engine)
 scope: remote-control
 audience: operator
 machine: both
-verified: 2026-08-20
+verified: 2026-10-08
 half_life_days: 42
 recheck:
   - https://code.claude.com/docs/en/remote-control
@@ -17,7 +17,8 @@ moved-from: "~/.config/zsh/guides/remote.md (2026-08-20) — content REWRITTEN a
 ## VOLATILE — read first
 
 - Requires claude >= v2.1.51. Check: `claude --version`
-- Requires Pro, Max, or Team plan. Remote Control is not available on Free tier.
+- Requires Pro, Max, Team or Enterprise (Team/Enterprise: an Owner enables the toggle); API keys are not supported (docs, live 2026-10-08). **Not available** on Bedrock/Vertex/Foundry, with `ANTHROPIC_BASE_URL` pointing off api.anthropic.com (LLM gateway/proxy), via the Claude apps gateway, or when `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC` / `DISABLE_GROWTHBOOK` is set (`DISABLE_TELEMETRY`/`DO_NOT_TRACK` are fine from v2.1.283 unless the org requires Trusted Devices).
+- **Refresh note 2026-10-08 (@Epoch):** requirements re-checked against the live docs ONLY. NOT re-read: `ai/rc.sh` (engine truth — where it disagrees, this guide is the bug) and the systemd pin section. Docs now describe server mode as a multi-session factory (`--capacity` default 32, `--spawn same-dir|worktree|session`) and say "outside server mode, each instance supports one remote session at a time" — check the "single-seat" law below against these before relying on either. Timeouts (docs): server mode gives up after ~10 min without network and exits; interactive mode retries indefinitely; server-session resume window ~4 h; Trusted Devices is beta on Pro/Max/Team/Enterprise.
 - Engine truth: `~/.config/zsh/ai/rc.sh` (table: `~/ia-sync/zsh/ai/rc.sh`). **On any
   conflict between this guide and that script, the script wins and this guide is the bug.**
 

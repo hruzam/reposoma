@@ -2,7 +2,7 @@
 card: card.codex-cli
 brand: OpenAI — Codex CLI
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-09-02
+verified: 2026-10-08
 half_life: ~1-2 weeks (ships multiple alpha builds/day; stable line moves weekly)
 half_life_days: 10
 recheck:
@@ -19,6 +19,17 @@ corpus:
   epoch_delta_2026-09-01: raw.guides/codex-builder-user/refresh-delta.2026-09-01.md
   # ^ reused as source for this 2026-09-02 pass — see Refresh delta section below
 ---
+
+## Refresh delta 2026-10-08
+_Since last verify 2026-09-02. Source: github.com/openai/codex/releases, live-fetched 2026-10-08 by @Epoch. Pass 2 added model/deprecation entries from learn.chatgpt.com/codex/changelog (read first 100K of 151K chars). Pass 3 sampled the release list: stable 0.156.1 (Sep 23), 0.159.2 (Sep 29), 0.159.3 (Sep 30), 0.160.1 (Oct 5), 0.161.0 (Oct 7), plus a 0.162.0-alpha series (Oct 2–4); other stables in 0.157–0.160.0 NOT itemized (list is ~100 pages mostly alphas; CONFIDENCE L there). Local `codex --version` not run._
+- **Latest stable 0.161.0** (Oct 7, 2026): GPT-6.1 Sol is default in bundled + Amazon Bedrock catalogs; Daybreak opt-in via `--enable cli_daybreak` or `features.cli_daybreak=true` (`daybreak=true` alone insufficient); `codex exec --cyber-access-program`; `/mcp login <name>` in TUI; mic/speaker selection for voice. H
+- **0.160.1** (Oct 5): preserves `SYSTEMROOT`/`TEMP`/`TMP` when launching remote stdio MCP servers with explicit remote env. H
+- No deprecations noted in either release. Sections below not re-verified this pass.
+- **2026-09-29:** GPT-6.1 Sol in Codex (`gpt-6.1-sol`). **2026-09-22:** GPT-6 Sol and Luna rolling out (`/model`, or `codex --model gpt-6-sol` / `gpt-6-luna`). H (learn.chatgpt.com/codex/changelog)
+- **2026-09-14:** GPT-5.3-Codex-Spark deprecated, gone from CLI/desktop/IDE extension. H
+- **⚠ DEADLINE 2026-10-14 (6 days out):** GPT-5.5 retires from Codex for ChatGPT-signed-in users (API unaffected). Check any pinned `model =` in `~/.codex/config.toml` and scripts. H
+- **2026-09-05 BREAKING:** `codex mcp-server` and the standalone `codex-mcp-server` binary REMOVED — use the Codex app server instead; `codex mcp` (connecting to external MCP servers) still works. Affects anything that launched Codex AS an MCP server. H
+- **0.156.1** (Sep 23, hotfix for 0.156.0): GPT-6 Sol and GPT-6 Luna added to the model catalog/picker; rate-limit switch prompt now recommends GPT-6 Luna. **0.159.3** (Sep 30): optional reminders to finish account security setup for local sessions signed in with ChatGPT (backport of #49744). **0.159.2** (Sep 29): fixes console windows flashing on Windows when Codex launches background processes/sandboxed commands (backport of #49385). Release notes mention no flag/config/sandbox/MCP changes in these. H
 
 # OpenAI Codex CLI — native surface
 
