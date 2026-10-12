@@ -27,7 +27,11 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
-- [ ] **ORACULUM BASH WHITELIST — BUILT + PROBED on table, deploy pending (majkee) (2026-10-08).**
+- [ ] **ORACULUM BASH WHITELIST — DEPLOYED office + pushed (`5bf1df2`), verified live 2026-10-10
+  (whitelist rc=2 · guard rc=2 · env pins opus/sonnet 5-5). Open: home pull+deploy+guard check → ISS
+  card to archive/. Note: houston reconfigured to a thin loader (majkee + other session) — guard is
+  no longer wired to any seat; README row stale until they decide.**
+  (was: BUILT + PROBED on table, deploy pending (majkee) (2026-10-08).)
   Agent-scoped PreToolUse hook, all probes green (main thread + subagent). Uncommitted in ia-sync:
   `claude/hooks/{oraculum-bash-whitelist.sh,guard-destructive.sh,README.md}` · `deploy.sh` hooks leg ·
   oraculum.md `hooks:`. guard-destructive fixed + folded (ISS card → archive after both-host verify).

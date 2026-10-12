@@ -47,3 +47,25 @@ make application settings so dry, that we can ask agent to check actual
 vendor shifts  - maybe as cron session : routine build - to collect data 
 and with any implementer spawn --> update app config|settings files.
 ```
+
+Example unless the claude code where can be used aliases for model like just `opus`, 
+codex requires direct model line and generation assignation as `GPT-5.6-Terra` 
+
+***codex reply to matter***
+```
+fleet registry (your one maintained source)
+    └─ render →
+       ~/.codex/agents/astrobley.toml
+       ~/.codex/agents/houston.toml
+       ~/.codex/houston.config.toml
+ 
+  That renderer is your harness/deployment layer, not a Codex feature. Mark outputs generated and validate them with
+  codex --strict-config after rendering.
+ 
+  A custom model gateway could provide aliases/routing, but that moves model-routing responsibility outside Codex
+  and is heavier than a small local renderer.
+```
+
+
+
+

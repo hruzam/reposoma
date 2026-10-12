@@ -17,18 +17,18 @@ active_pins:
   claude/houston:
     model: opus
     effort: high
-    status: active
-    gavel: "nablarva .claude/agents/houston.md"
+    status: pending-effective-runtime-witness
+    gavel: "majkee 2026-10-10 final fold (~/ia-sync/claude/agents/houston.md)"
   codex/houston-child:
     model: gpt-6.1-sol
     effort: high
     status: pending-effective-runtime-witness
-    gavel: "majkee 2026-10-09 (nablarva e4ebf15)"
+    gavel: "majkee 2026-10-10 final fold (~/ia-sync/codex/agents/houston.toml)"
   codex/houston-main:
     model: gpt-6.1-sol
     effort: high
     status: pending-effective-runtime-witness
-    gavel: "majkee 2026-10-09 install-for-test (nablarva .codex/profiles/houston-nablarva.config.toml)"
+    gavel: "majkee 2026-10-10 final fold (~/ia-sync/codex/profiles/houston.config.toml)"
 ---
 
 # Model + effort per route — cross-vendor render settings
