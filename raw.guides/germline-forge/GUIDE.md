@@ -10,6 +10,7 @@ recheck: on any claude-code or codex-cli upgrade (entry mechanisms and spawn beh
 status: DRAFT — first distillation; majkee reviews; becomes canon by his word, not by age
 authority: nablarva flag L16 @ 32b645f (one identity · three cards · L16.14 pens) · germline README (source → stamped one-way render) · majkee gavels 2026-10-07 (binding homes · 7 files · B4) · Sella §5.4 (promotion = reviewed merge)
 ---
+> **⚠ STALE in part (2026-10-14, atlas-ui):** §0–§3 describe the pre-2026-10-10 model (build-time render files, body-equality checks) and §2 the reposoma home + `~/.germline` symlink. Superseded by the Houston runtime-load fold (2026-10-10) and germline-01 (majkee GO 2026-10-12: source `~/ia-sync/germline/` → deployed real `~/.germline/`). Current truth: `~/ia-sync/germline/README.md`. Re-distill pending.
 
 # germline-forge — how an agent is forged, folded, proven and promoted
 

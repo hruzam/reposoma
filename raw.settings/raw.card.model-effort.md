@@ -17,18 +17,21 @@ active_pins:
   claude/houston:
     model: opus
     effort: high
-    status: pending-effective-runtime-witness
-    gavel: "majkee 2026-10-10 final fold (~/ia-sync/claude/agents/houston.md)"
+    status: active
+    gavel: "majkee 2026-10-10 final fold (~/ia-sync/claude/agents/houston.md); majkee 2026-10-13 GO (witnessed)"
+    witness: "~/ia-sync/.dev/session/germline-01-builds-and-deploy/raw/witness.install-test.assay.2026-10-13.md (C2/C3: claude-opus-5-5 · effort high in subagent jsonl; C1/C4: model witnessed, effort not recorded in main jsonl)"
   codex/houston-child:
     model: gpt-6.1-sol
     effort: high
-    status: pending-effective-runtime-witness
-    gavel: "majkee 2026-10-10 final fold (~/ia-sync/codex/agents/houston.toml)"
+    status: active
+    gavel: "majkee 2026-10-10 final fold (~/ia-sync/codex/agents/houston.toml); majkee 2026-10-13 GO (witnessed)"
+    witness: "~/ia-sync/.dev/session/germline-01-builds-and-deploy/raw/witness.install-test.assay.2026-10-13.md (row X1: turn_context gpt-6.1-sol · high)"
   codex/houston-main:
     model: gpt-6.1-sol
     effort: high
-    status: pending-effective-runtime-witness
-    gavel: "majkee 2026-10-10 final fold (~/ia-sync/codex/profiles/houston.config.toml)"
+    status: active
+    gavel: "majkee 2026-10-10 final fold (~/ia-sync/codex/profiles/houston.config.toml); majkee 2026-10-13 GO (witnessed)"
+    witness: "~/ia-sync/.dev/session/germline-01-builds-and-deploy/raw/witness.install-test.assay.2026-10-13.md (row X2: turn_context gpt-6.1-sol · high, all turns)"
 ---
 
 # Model + effort per route — cross-vendor render settings
