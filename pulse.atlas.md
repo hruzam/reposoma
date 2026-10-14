@@ -27,6 +27,13 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [ ] **GERMLINE-02 GUIDE-MODEL PIVOT — consult delivered, gavels pending (2026-10-14).** guide-model-01-law
+  re-aimed: procedure → neutral germline programs, guides → books; cards = private controllers,
+  programs = public. POINT + RETURN (CORRECTIONS C1–C5) + INSIGHT in the bed; Houston consult
+  **stretches** (5 constraints). Leans 1–9 ACCEPTED by majkee 2026-10-14. Next = myShell journal +
+  RECONCILIATION fold → Cartan replacement cold-start card → fresh Octopus; I re-enter via
+  `CS.atlas-germline-02-consult.2026-10-14.md`. → `[2026-10-14 germline-02]`.
+
 - [ ] **ORACULUM BASH WHITELIST — DEPLOYED office + pushed (`5bf1df2`), verified live 2026-10-10
   (whitelist rc=2 · guard rc=2 · env pins opus/sonnet 5-5). Open: home pull+deploy+guard check → ISS
   card to archive/. Note: houston reconfigured to a thin loader (majkee + other session) — guard is
@@ -363,6 +370,69 @@ surfaces + age-stamps).
   here. (migration debt — not done now to avoid importing stale items as false-live signal.)
 - [ ] **majkee: commit + push reposoma** — carries this restructure + `raw.guides/PAD/pad-builder.md`
   live (my seat has no Bash). → `[2026-08-07 PAD]` entry.
+
+---
+
+## [2026-10-14 germline-02] — guide-model-01-law pivots to germline programs (session ff-sync.atlas.guide-model-01-law.harness)
+
+Consult posture for Cartan (cSharp) before Octopus plans. Bed: `~/ia-sync/.dev/session/guide-model-01-law/raw/`.
+Sealed `hypotheses.reconcile-only.md` NOT read.
+
+- **Arc:** started as GUIDE.md-vs-CONTROLLER.md taxonomy counsel on the v3 package → majkee re-aimed:
+  every operational instruction is a program (Laravel/OpenCart frame: controller = process · model =
+  information structure at its owner · fn = bounded job · vendor skill/agent = final class, thin loader);
+  guide = book; BACKGROUND loses its job. Then: cards = **private** controllers (agent-scoped, hold the
+  pen), programs = **public** controllers (any reader, require capabilities, never grant); private → public
+  may point, never reverse; promotion rule = one home per procedure.
+- **Delivered (all in the bed):** `POINT.atlas-to-Cartan.2026-10-13.md` (majkee blessed) ·
+  `RETURN.atlas.germline-02-reconciliation.2026-10-14.md` (fidelity review of Cartan's RECONCILIATION +
+  SOURCE-ACCOUNTING: CORRECTIONS C1 sharing-across-seats · C2 grain · C3 thin-wrapper rule · C4 BACKGROUND
+  shown as decided → gavel item · C5 bed-level sources + `guide read|write` vocab) ·
+  `INSIGHT.atlas.germline-load-graph.2026-10-14.md` (two-visibility model, graph, Epoch vendor facts,
+  Houston constraints, naming candidates, open tests).
+- **Houston consult (neutral, no ia-sync addendum) — stretches:** C1 specialise-never-replace · C2 functions
+  table = only index, `perform` resolves never discovers · C3 enforcement home + compaction-surviving
+  witness · C4 cards keep the pen · C5 skills/ ↔ programs/ boundary + naming gavel. Stamps 6abf41fe ·
+  9a3f17c0 · 46dcd163.
+- **@Epoch 2026-10-14:** vendor scope precedence unusable (Claude skills personal>project, agents
+  project>user, Codex none) · spec one-level-deep · `allowed-tools` = grant not restriction · Codex listing
+  ~2% cap · Codex scans `~/.agents/skills` · OpenAI docs → learn.chatgpt.com.
+- **Side cleanup:** ISS cards `germline-deploy-before-commit` (vector commit `e3231c3`, scope A gaveled) +
+  `germline-migration-tail` (vector: preamble → `ia-sync/germline/tunnel/`, journal line, germline-forge
+  STALE banner, removal list). majkee committed both repos (`2d6e14a` · `5357179`/`d09d2ed`), pushed,
+  cards → `archive/`. `~/.germline/tunnel/` deployed.
+- **majkee rulings this session:** Sella older than germline (germline may claim "program") ·
+  invariance-autonomy = older but the foundation stone (principles bind, placements revisable) ·
+  `~/reposoma/.germline/skills/` STAYS — chatbot-dedicated, not CLI.
+
+**Leans 1–9 — ACCEPTED by majkee 2026-10-14 ("a perfect") as working gavels for the planning gate:**
+1. `germline/programs/<slug>/CONTROLLER.md` + `fn/<verb-object>.md`; one run = **process** (record =
+   selection receipt + stamps + completion evidence).
+2. One global `perform` — resolves a named program, never discovers; projects ship none; a project
+   package specialises its global namesake, never replaces it.
+3. Cards = private controllers (hold the pen); programs = public (require, never grant); private →
+   public only; promotion rule.
+4. Guides = books; BACKGROUND.md retired as a fixed slot; guide `res/` = knowledge depth only.
+5. Scope test: controller if another occasion could breach it or the breach is costly; L1 drops "or lacks".
+6. Prose informs, harness enforces — vendor-side enforcement pointing down, or "unenforceable on X".
+7. Chatbots read programs as-is; skill mirrors rendered on demand (spec-only SKILL.md via
+   `/chatbot-port` re-aimed); `germline/skills/` + `~/reposoma/.germline/skills/` dissolve into programs
+   once they land (reposoma skills stay until then).
+8. Shared verb dictionary per vendor · inform/enforce pairing = census check · verb-object = soft convention.
+9. Symlinked `perform` = test before deciding · @mirror skipped (Houston gave the independent view).
+
+Handoff: `to-myShell` packet given in chat (journal 2026-10-14 + RECONCILIATION C1–C5 + leans) ·
+card `~/reposoma/_cold-start/card/CS.atlas-germline-02-consult.2026-10-14.md`.
+
+Open:
+- [x] majkee gavels on names · boundary · enforcement · visibility · BACKGROUND · session subject →
+  leans 1–9 accepted 2026-10-14.
+- [ ] Cartan folds RETURN C1–C5 into RECONCILIATION → replacement cold-start card → fresh Octopus.
+- [ ] Tests on a dated client: `!cat` hydration across compaction · `!` for a seat without Bash · Codex
+  unknown-frontmatter · Claude `Skill(name)` rule · custom skill dirs (Epoch run 2026-10-14).
+- [ ] Still on disk: `~/reposoma/.germline/agents/houston/*` (4 stale of 6) + `tunnel/` + README:14 symlink line.
+- [ ] Later: Sella glossary + germline-forge §1 wording align ("program"); germline-forge re-distill;
+  Houston cards rewiring (own move, fresh eyes).
 
 ---
 
