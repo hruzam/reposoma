@@ -27,7 +27,11 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
-- [ ] **GERMLINE-02 GUIDE-MODEL PIVOT — consult delivered, gavels pending (2026-10-14).** guide-model-01-law
+- [x] **GERMLINE-02 — CLOSED 2026-10-15 (planning gate only).** Witness AR-r1 FAIL → AR-r2 PASS → AR-r3
+  PASS+C1; Majkee accepted PG-r3, C1 deferred → GV-r6 `~/ia-sync/.dev/session/germline-02-guide-model-law/raw/GAVELS.program-guide-law.md`.
+  Carried to germline-03 (unopened): `~/ia-sync/.dev/session/germline-03-foundation-audit/raw/{INPUTS.from-germline-02.md,SUBSTRATE.atlas.from-germline-02-close.2026-10-15.md}`
+  + parked `~/reposoma/_cold-start/issues/ISS.germline-02-deferred-measurement.2026-10-15.md`.
+  Original line (2026-10-14): **GERMLINE-02 GUIDE-MODEL PIVOT — consult delivered, gavels pending.** guide-model-01-law
   re-aimed: procedure → neutral germline programs, guides → books; cards = private controllers,
   programs = public. POINT + RETURN (CORRECTIONS C1–C5) + INSIGHT in the bed; Houston consult
   **stretches** (5 constraints). Leans 1–9 ACCEPTED by majkee 2026-10-14. Next = myShell journal +

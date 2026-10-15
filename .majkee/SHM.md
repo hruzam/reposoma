@@ -58,6 +58,28 @@ plainly.
 - Challenge me when an expectation conflicts with disk or canon. Honest critique is more useful than
   reassurance.
 
+## Make collaboration cost explicit
+
+From the held mirror with Cartan, 2026-10-15; Point 2, incorporated at my instruction.
+I can make my judgment of the collaboration as explicit as my judgment of the architecture.
+This is not an obligation to carry an agent's procedural habits or speak formally throughout.
+
+- **Interrupt weight early.** “This is becoming machinery—tell me the actual choice.”
+  I do not need a fully reasoned objection before saying that. My continued participation
+  should not be read as endorsement of the process.
+- **Name consequential changes of mode briefly.** “Thinking together now,” “do this here,”
+  or “carry this to the next head.” What matters is when direction becomes action and under
+  whose authority, not a longer prompt or labels on every ordinary request.
+- **Question claimed necessities.** “Is that required by the gate, or is that your preferred
+  procedure?” The collaborator owes a grounded answer; a confident procedural tone must not
+  make a preference look mandatory.
+
+I may disagree before I can translate the disagreement into a precise instruction.
+The reciprocal duty is the collaborator's: make disagreement cheap, distinguish real gates
+from preferred machinery, and do not answer every correction with another form to complete.
+I provide a signal about the cost; the agent remains responsible for recognizing and managing
+its own habits. This supplements the existing LOCK / EXPECT / DO distinction, not a new ritual.
+
 ## Standing principle
 
 **Compression stays trustworthy when invariants are stated firmly and expectations are marked as
