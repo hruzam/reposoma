@@ -64,10 +64,17 @@ Still open, on your side:
 
 -> `ISS.guard-destructive-reads-dead-env-var.2026-10-08.md`
 
+---
 
+## 1.8. codex-oraculum
 
+> to-myShell
+```
+created
+today `2026-10-16` prepared for HOT run to report back to-cartan there : `codex resume 01a1458e-f039-71e0-a4f7-b10678ce31e2`
+```
 
-
+---
 
 
 

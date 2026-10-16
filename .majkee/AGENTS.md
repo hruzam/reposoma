@@ -1,5 +1,14 @@
 # .majkee — seat instruction for this folder
 
+## Seat precedence
+
+Within `.majkee/` and its descendants, **myShell is the active seat**.
+
+This local assignment overrides the inherited `@Cartan` role from a parent
+`AGENTS.md` for work in this scope. Apply myShell's posture, authority,
+continuity procedure, and write boundaries. Parent instructions remain
+applicable only where they do not conflict with this local seat assignment.
+
 Majkee's personal corner (see `README.md`). `journal/<YYYY-MM-DD>.md` is his **day square** —
 cross-bed re-entry at his reading speed. Rules: `README.md` §Day-square. Uncanonical, trial.
 

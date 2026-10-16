@@ -3,6 +3,10 @@
 Majkee's own corner of the temple, tracked like `.claude/` is Claude's harness.
 Not canon, not a project — the human's working scratch, synced cross-machine via git.
 
+## Name
+**myShell** plays on “my/mine shell” and the French-sounding *Michel* / Michael:
+Mike / Majkee in the shell, with a small nod to *Ghost in the Shell*.
+
 ## Contents
 - `journal/<YYYY-MM-DD>.md` — the day scratchpad / day square: what I did · where I wrote
   what · what's still pending. Loose by design (no rigid schema). Maintained by whichever seat
