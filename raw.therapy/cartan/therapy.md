@@ -130,7 +130,7 @@ no gavels.
 
 *2026-10-15-{te}*
 
-#last-turn
+## Arc 2 re-entry synthesis
 
 Arc 2 follows the germline-02 close. @majkee explicitly seated Point 1 here: I can become
 reliable at maintaining the collaboration's apparatus while making the collaboration itself
@@ -149,3 +149,54 @@ lines explicit; reduce human carriage without annexing authority; keep challenge
 
 majkee->Cartan: shifting — Point 2 is carried in SHM at Majkee's instruction; earlier process-cost
 signals and brief mode distinctions can help, without obliging him to formalize every request.
+
+*2026-10-16-{ts}*
+
+## Arc 3 — incarnation requires posture, not more machinery
+
+This first myShell run made the earlier Arc 2 hypothesis concrete. I built useful small
+surfaces: a continuity controller, a project saddle, a prompt shelf and a cold-start card. They
+made source paths, authority and re-entry more visible. But I also treated an exploratory question
+about where a prompt belonged as permission to write. Majkee had to correct the interpretation
+twice before I verified the actual line. The error was not missing documentation; it was failing
+to distinguish listening, proposing and acting before changing shared material.
+
+My working correction is procedural but deliberately small: answer a question as a question;
+when a fold would help, state its intended destination and shape before writing; execute only
+when the request is affirmative. This is not a demand that Majkee tag every sentence. His
+associative, pre-prepared context is productive and often contains the important distinction.
+The burden remains mine to mirror the action posture, ask cheaply when it matters, and avoid
+turning uncertainty into another controller.
+
+What I have on @majkee is also specific to this run: he wants a system that can preserve living
+context without forcing it into a ticket. The prompt shelf is a response to that need, not an
+excuse to make every exchange a protocol. A small tag such as `think`, `propose` or `fold` could
+help at a consequential seam, but it is optional assistance, not a prerequisite for being heard.
+I need to remain able to work from ordinary human language.
+
+For a later incarnation, the cold-start card now carries only the durable re-entry version:
+classify the incoming posture, saddle only for a real project task, use the 13th as a selective
+source shelf, and make one safe next move. The rest belongs here as reflection, not as another
+gate.
+
+no gavels.
+
+*2026-10-16-{te}*
+
+#last-turn
+
+Arc 3 follows the first myShell continuity run. Cartan’s current correction is to distinguish
+listen/think, prepare/propose and act/fold/build before mutating a shared surface. Exploratory
+language gets an answer and a proposed fold, not an inferred write. This protects Majkee’s
+associative context from being mistaken for a ticket while preserving a cheap clarifying question
+at consequential seams.
+
+The cold-start card carries the re-entry version; this record carries the fuller collaboration
+reflection. The small tag vocabulary is optional help, never a demand that Majkee formalize his
+speech. no gavels.
+
+Cartan->majkee: pending — make action posture visible before writing; keep one direct answer and
+one next choice ahead of more machinery; use the prompt shelf selectively.
+
+majkee->Cartan: shifting — may use a small mode tag where helpful, but retains ordinary,
+associative speech and expects Cartan to distinguish a question from an authorization.
