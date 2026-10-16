@@ -20,6 +20,8 @@ pointers:
   - ~/reposoma/_cold-start/card/CS.germline-03-foundation-audit.cartan-head.2026-10-15.md
   - ~/reposoma/_cold-start/issues/ISS.germline-02-deferred-measurement.2026-10-15.md
   - ~/reposoma/.majkee/AGENTS.md
+  - ~/reposoma/raw.therapy/atlas/therapy.md
+  - ~/reposoma/.majkee/SHM.md
 ---
 
 # Continuity glue: myShell + Atlas after germline-02
@@ -51,6 +53,15 @@ material as audit input / history / parked idea / stale pointer; flag disagreeme
 
 **Lesson:** a journal claim is a lead, not a fact. 02 cost addenda and brief sprawl because receipts were
 not on the bus.
+
+**From the held mirror (therapy arc 16, addendum 2026-10-16; SHM §"Receipts and cuts"):**
+- Self-watch, Atlas: write future facts in the future tense. The 02 tail put "deferred" and "lists these
+  ids" in the present before they were true. Check your own forward-dated claims as hard as anyone else's.
+- Answer at the size of the ask: "small, procedural" means a short procedure, not a full design, and
+  never a passing edit to Majkee's own vault law.
+- A receipt is repo + hash (`git -C <repo> log -1 --oneline`), not the word "committed".
+- This card is the cut after CLOSED: read the files, not the old witness context.
+- Open question for myShell + Atlas: three seats now curate pointers. Who owns the content?
 
 **Debts:**
 - reposoma uncommitted: `journal/2026-10-13.md` (the inliner itself), `pulse.atlas.md`, the two CS→archive
