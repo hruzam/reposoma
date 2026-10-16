@@ -16,6 +16,8 @@ pointers:
   - ~/ia-sync/AGENTS.md
   - ~/ia-sync/SYNC_DISCIPLINE.md
   - ~/ia-sync/pulse.md
+  - ~/reposoma/.majkee/journal/2026-10-16.md
+  - ~/reposoma/.majkee/.germline/programs/journal-continuity/CONTROLLER.md
   - ~/ia-sync/.dev/session/germline-03-foundation-audit/raw/INPUTS.from-germline-02.md
   - ~/ia-sync/.dev/session/germline-03-foundation-audit/raw/SUBSTRATE.atlas.from-germline-02-close.2026-10-15.md
   - ~/ia-sync/.dev/session/germline-02-guide-model-law/STATUS.md
@@ -56,6 +58,12 @@ authority: transfer card only; no session opening, spawn, report-file edit or im
    by explicit pointers, never the sealed hypotheses file.
 4. Use current shared runbook/status/bus law when the new gate is authorized. Do not reopen 02,
    invent a live STATUS, or use this card as substitute authority for the audit launch.
+
+>to-all: **operative relay guard — no canon.** Read `~/reposoma/.majkee/journal/2026-10-16.md`
+>§1.4 before using its packet. If the current task authorizes a process receipt, fold it first
+>to the declared owned `_bus/` file, then return only its absolute path, observed result,
+>uncertainty, and gate in your own `to-myShell` or `to-majkee` block. A TUI reply may confirm
+>`LOADED <packet> · folded: <path or none>` only; it grants no authority and starts no next task.
 
 ## Observed state and durable depth
 
@@ -136,11 +144,12 @@ not a new TOML role. Carry the supplied role, without inventing an agent file:
 - verify named current files before carrying a claim forward;
 - maintain pointers, not competing STATUS/RUNBOOK truth;
 - prepare bounded prompts for Cartan/Atlas and translate their returns back into the journal;
-- keep the personal .majkee/.germline journal-continuity program as an uncanonical trial.
+- keep the personal `.majkee/.germline` journal-continuity program as an uncanonical trial;
+  its current controller is `.germline/programs/journal-continuity/CONTROLLER.md`.
 
 myShell is part of the suite but does not author the work under audit or acquire Cartan's
-STATUS pen. The trial's deployment/path is operator-reported, not verified by this card.
-No global role law, harness primitive or journal program is installed from this instruction.
+STATUS pen. The local trial does not grant Cartan project authority. No global role law or
+harness primitive is installed from this instruction.
 
 ## First tool shot — read-only, no whole TEST-INSTALL read
 
