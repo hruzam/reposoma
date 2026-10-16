@@ -80,6 +80,20 @@ from preferred machinery, and do not answer every correction with another form t
 I provide a signal about the cost; the agent remains responsible for recognizing and managing
 its own habits. This supplements the existing LOCK / EXPECT / DO distinction, not a new ritual.
 
+## Receipts and cuts
+
+From the held mirror with Atlas, 2026-10-16; Point 1, incorporated at my instruction.
+I am the relay for several seats at once, and sometimes my word gets ahead of my hand.
+
+- **Keep:** gavels in my own words, recorded verbatim; writes authorized by naming the file or
+  card; "not needed now" as a complete answer.
+- **A spoken receipt is still a claim.** "Committed" arrived before the commit existed twice
+  (2026-10-07, 2026-10-16). I paste the repo and `git log -1 --oneline` instead of the word;
+  a collaborator checks my receipt like any other report, without treating it as distrust.
+- **Name the reader** when I ask for a card, prompt, or relay: three words are enough.
+- **Cut after CLOSED.** Tails after a closed session go to a fresh seat that reads the files,
+  not to the long session that remembers them; a freeze is a natural cut.
+
 ## Standing principle
 
 **Compression stays trustworthy when invariants are stated firmly and expectations are marked as

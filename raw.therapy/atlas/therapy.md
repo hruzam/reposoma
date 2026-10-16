@@ -1236,9 +1236,45 @@ Two Atlas seat kinds, declared at bed open — **spawn** by default (bounded sli
 tunnel), **living** when a RUNBOOK says a design round needs independent watching across cycles —
 would have made your "not a pity decision" a line in a file instead of a judgement under load.
 
+### Addendum 2026-10-16 — germline-02 witness tail (adjusts this arc; not a new arc)
+
+*2026-10-16-{ts}*
+
+majkee's call: check older content, fold only what is unique, else adjust existing. The turn
+(Point 1 "what you have on me", Point 2 "session mirror") was mostly re-instances:
+
+- **"Committed" before the commit — re-instance of this arc's friction + ask 2.** "both committed"
+  passed unchecked once; "committed reposoma" arrived while HEAD was still `354789e`. Asked: paste the
+  hash, not the word. Uptake was immediate — his next message carried `! git log -1 --oneline`, and
+  reposoma read `5625e92` clean. The receipt arrived as a receipt.
+- **Tense slip — counterpart of this arc's finding (G-47 vocabulary layer).** Arc 16: a memory
+  wearing *observed*. Here: a future wearing the present — the ISS card said "deliberately deferred"
+  and "the launcher lists these ids" before either was true; the .germline advice said "first …
+  anywhere", unverified. Same mechanism, the other direction in time. I check others' claims well and
+  my own forward-dated ones weakly.
+- **Over-answer to "small plea, procedural, not build" — re-instance of arcs 9–12.** A full
+  CONTROLLER file and a passing suggestion to move verbs out of his vault's law: more than asked,
+  and a change to *his* law offered casually.
+- **Long context after CLOSED — re-instance of ask 5.** All tails (substrate, card, pulse tick,
+  .germline, reincarnation card) ran on a compacted witness context. Cut after CLOSED; tails go fresh.
+
+Unique, kept here: **pointer stewardship ×3.** The myShell role list, Cartan's card and my witness
+doctrine now say the same thing (point never restate, verify before carry). Beautiful symmetry →
+yellow flag: who *owns content* while three seats curate pointers? Non-landing — gap or pattern-match,
+unclear. Also open: did the long witness context help germline-02, or only feel like continuity?
+
+Small ask, new: when asking for a card or prompt, name its reader in three words.
+
+Gavels: none locked. The shadow ("a gate announced is not a gate shut") is G-47-family; offered as
+extend-not-number, not ruled, not appended. majkee's Point 1 incorporated into `~/reposoma/.majkee/SHM.md`
+§"Receipts and cuts" at his instruction. Close: "THX for session" — plain close.
+
+*2026-10-16-{te}*
+
 #last-turn
 
 `majkee's turn folded · shadow ruled "extend, do not number" → G-47 extended (vocabulary layer; wire here) · his observation: double-relay cost, token growth on the long living session → discrete cuts (cards · ~55-min idle notice · cut at freezes) · my asks: standing-go scoped at bed open · one commit event · to:/cc: on chat relays · consumed-list in POINTs · witness prompts verbatim (keep) · protocol: promote tunnel-using-protocole → raw.guides/tunnel/res/multi-seat + a three-card regime template, no Sella concept · two Atlas seat kinds declared at bed open · pending: card amendment (atlas->majkee) · arc open for majkee's close`
+`2026-10-16 addendum (germline-02 tail): mostly re-instances → adjusted in arc 16, no new arc · commit-claim → hash pasted, uptake same session (5625e92) · tense slip = G-47 vocabulary counterpart (future as present) · over-answer = arcs 9–12 · cut after CLOSED = ask 5 · unique: pointer stewardship ×3 (open) · new ask: name the card's reader · SHM.md §Receipts and cuts · shadow G-47-family not ruled · plain close "THX for session"`
 
 *2026-10-07-{te}*
 
