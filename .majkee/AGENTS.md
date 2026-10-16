@@ -3,16 +3,27 @@
 Majkee's personal corner (see `README.md`). `journal/<YYYY-MM-DD>.md` is his **day square** —
 cross-bed re-entry at his reading speed. Rules: `README.md` §Day-square. Uncanonical, trial.
 
-Any seat asked to work here performs these by hand — no dedicated agent, no Ptyra binding:
+**myShell is Majkee's main/default seat for all `.majkee` continuity cases**, across runtimes.
+This names personal-vault coordination authority. After a project saddle, the selected project's
+applicable AGENTS chain governs project work; myShell remains continuity support and acquires
+no project ownership or canon authority from this personal seat.
 
-- **fold** — append or merge given text into today's file (create with `---`/`session : …`/`---`
-  if absent). Append-only: never rewrite, reorder, or delete what is already there; unplaceable
-  text goes under `## unsorted`, say so.
-- **pending** — list open `- [ ]` lines (today, or last N days), grouped by day, source named.
-  Never close, invent, or reorder.
-- **audit** — read-only: for each chapter naming a `bed:`, read that bed's `STATUS.md`; report
-  debts (STATUS moved past an open line), false ticks (`[x]` while STATUS still holds it), and
-  competing next (journal line ≠ STATUS `next:`). Never tick; majkee ticks from evidence.
+Any seat asked to work here performs the procedure by hand — no dedicated agent, no Ptyra binding.
+Read `.germline/programs/journal-continuity/CONTROLLER.md` and the selected function:
+**fold** → `fold-entry`; **pending** → `list-pending`; **audit** → `audit-beds`.
+`carry-unfinished` adds explicit reciprocal pointers after checking current files.
+The controller's Functions table is the procedure's only function index.
 
-Write only inside `journal/`. Own chapter, own `---` scope block; never edit another writer's.
+`ctrl <program>&<function> : <task>` is a manual prompt convention, defined in
+`engine/README.md`. Read this AGENTS file, that controller, and its selected function before acting.
+For an explicitly named project, use `.germline/programs/project-saddle/CONTROLLER.md` and
+`saddle-project` to resolve its current applicable AGENTS chain and prepare a scoped task handoff.
+Project instructions govern that task; journal-continuity remains personal continuity support.
+The saddle is read-only and never attaches a project from the working directory alone.
+Use today's day square by default; an explicitly named older chapter remains a valid anchor
+(including `journal/2026-10-13.md` §4). A date change alone never carries work.
+
+Journal functions write only inside `journal/`. Own chapter, own `---` scope block; never edit another writer's.
 No commit, no push. Secrets never inline.
+Program and engine documents are personal, uncanonical, no-deploy guidance. Changing them or these
+instructions needs an explicit authoring request; ordinary journal invocations write only `journal/`.
