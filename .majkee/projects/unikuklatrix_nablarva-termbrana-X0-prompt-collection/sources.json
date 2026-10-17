@@ -1,0 +1,736 @@
+{
+  "schema": "personal-briefing-sources/v1",
+  "title": "Nabla briefing: programs, session work, Ovitmugen, Termbrana, X0 to X1",
+  "collected_at": "2026-10-17T03:46:18+02:00",
+  "timezone": "Europe/Prague",
+  "host": "office / hruzam-120922",
+  "author": "myShell",
+  "authority": "Personal explanatory briefing, uncanonical; operator-authorized files only.",
+  "repositories": {
+    "reposoma": {
+      "root": "/home/hruzam/reposoma",
+      "head": "124c2f03679e45f5f866b63c1cfa66970d96424b",
+      "branch": "core",
+      "observed_status": [
+        "M .majkee/journal/2026-10-16.md",
+        "?? .majkee/projects/unikuklatrix_nablarva-termbrana-X0-prompt-collection/"
+      ],
+      "status_scope": ".majkee only"
+    },
+    "ia-sync": {
+      "root": "/home/hruzam/ia-sync",
+      "head": "3bb2f9ae7f7c332641fc3a2dba8b8a25fe5e6a1c",
+      "branch": "main",
+      "observed_status": [
+        "M .dev/session/germline-03-foundation-audit/STATUS.md",
+        " M .dev/session/germline-03-foundation-audit/raw/MANIFEST.cartan.g03-first-split-01.md",
+        "?? .dev/session/germline-03-foundation-audit/raw/SUBSTRATE.germline-04-guide-dogfood.2026-10-17.md"
+      ],
+      "status_scope": "repository"
+    },
+    "nablarva": {
+      "root": "/home/hruzam/unikuklatrix/nablarva",
+      "head": "f6403ea61e05e1d0641aa6802d9817ebe691503c",
+      "branch": "core",
+      "observed_status": [
+        "?? .dev/session/nablarva-X1-architecture/_bus/14.cartan.return.md",
+        "?? .dev/session/nablarva-X1-architecture/_bus/14.oraculum.point.md"
+      ],
+      "status_scope": "repository"
+    }
+  },
+  "reading_limits": [
+    "Selected local source and Git history, not a whole-repository or whole-journal audit.",
+    "Source hashes identify complete files; reviewed_scope describes the portions actually read.",
+    "Working-tree hashes matter separately from HEAD: several owner/journal inputs are modified or untracked.",
+    "No live tool, deployment, permission, model, host-version, or acceptance tests rerun.",
+    "Historical test outcomes are reports from the identified evidence, not newly reproduced results.",
+    "Nablarva .hlm operator vault was not read.",
+    "X1 cycle-14 bus files were observed untracked but their contents were not read or classified.",
+    "No commit, push, deploy, message delivery, project STATUS/RUNBOOK update, or architecture lock performed."
+  ],
+  "delegated_context_reviews": [
+    {
+      "task": "/root/program_context",
+      "model": "gpt-6-luna",
+      "role": "read-only local program/function presynthesis",
+      "evidence_policy": "Main cited controller, engine, procedure and package sources checked by controller."
+    },
+    {
+      "task": "/root/nablarva_context",
+      "model": "gpt-5.6-terra",
+      "role": "read-only project synthesis and challenge",
+      "evidence_policy": "Main cited status, runbook, architecture, code-boundary and historical closure sources checked by controller."
+    }
+  ],
+  "delegated_design_consultations": [
+    {
+      "task": "/root/subagent_astrobley",
+      "role": "astrobley",
+      "model": "gpt-6.1-sol",
+      "cycle": "myshell-nabla-composer-counsel-01",
+      "scope": "Design proposal only; chat returns; controller writes artifacts."
+    },
+    {
+      "task": "/root/oraculum",
+      "role": "oraculum",
+      "model": "gpt-6-astra",
+      "cycle": "myshell-nabla-composer-counsel-01",
+      "scope": "Analysis-only creative buffering; chat returns; controller writes artifacts."
+    }
+  ],
+  "counsel_evidence_limit": "Counsel read the supplied contextual briefings and their shared exchange. Their proposals do not constitute independent verification of all primary sources.",
+  "sources": [
+    {
+      "id": "M01",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/AGENTS.md",
+      "repository_path": ".majkee/AGENTS.md",
+      "version": "observed working-tree bytes",
+      "sha256": "4c20728aa8567ed5f779cf683dc0da8dcb37eadacda312feb0bcec259b113d96",
+      "git_blob_observed": "c405798b0cc977d6994618c32612651d0868c897",
+      "git_blob_at_head": "c405798b0cc977d6994618c32612651d0868c897",
+      "matches_head": true,
+      "line_count": 38,
+      "reviewed_scope": "Personal seat, write boundaries; full file."
+    },
+    {
+      "id": "M02",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/engine/README.md",
+      "repository_path": ".majkee/engine/README.md",
+      "version": "observed working-tree bytes",
+      "sha256": "244b44e3c97e80c00ffe02ffb0da07852b897d659807909f4a23dfc0f2d0207d",
+      "git_blob_observed": "72061386026a86f718a61e18ed30fba71a84c754",
+      "git_blob_at_head": "72061386026a86f718a61e18ed30fba71a84c754",
+      "matches_head": true,
+      "line_count": 93,
+      "reviewed_scope": "Manual prompt convention; full file."
+    },
+    {
+      "id": "M03",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/.germline/programs/journal-continuity/CONTROLLER.md",
+      "repository_path": ".majkee/.germline/programs/journal-continuity/CONTROLLER.md",
+      "version": "observed working-tree bytes",
+      "sha256": "a8a5fa7ce8eccda23653e943df5293c567e11cb90535739866a8c8292dc2ffcf",
+      "git_blob_observed": "a5933ad954fbeebeb17e862c8ce282ba2856fe5f",
+      "git_blob_at_head": "a5933ad954fbeebeb17e862c8ce282ba2856fe5f",
+      "matches_head": true,
+      "line_count": 60,
+      "reviewed_scope": "Invariants and Functions; full file."
+    },
+    {
+      "id": "M04",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/.germline/programs/project-saddle/CONTROLLER.md",
+      "repository_path": ".majkee/.germline/programs/project-saddle/CONTROLLER.md",
+      "version": "observed working-tree bytes",
+      "sha256": "b29f0e213c5190172a1fd99d724cb00b54bce2742e021acdad2e3b17c8876aac",
+      "git_blob_observed": "1c860ce2cae24fb584b941a3d161c203bc1a7cfd",
+      "git_blob_at_head": "1c860ce2cae24fb584b941a3d161c203bc1a7cfd",
+      "matches_head": true,
+      "line_count": 56,
+      "reviewed_scope": "Read-only entry and function binding; full file."
+    },
+    {
+      "id": "M05",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/.germline/programs/project-saddle/fn/saddle-project.md",
+      "repository_path": ".majkee/.germline/programs/project-saddle/fn/saddle-project.md",
+      "version": "observed working-tree bytes",
+      "sha256": "c18a447c56e7c89b530bb7357aeaab64570f26b035616bb1fd5931b87659fe8e",
+      "git_blob_observed": "f76db2d70f04a78fdc676d0e72781f6e3288977f",
+      "git_blob_at_head": "f76db2d70f04a78fdc676d0e72781f6e3288977f",
+      "matches_head": true,
+      "line_count": 37,
+      "reviewed_scope": "Verified chain procedure; full file."
+    },
+    {
+      "id": "M06",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/.germline/programs/journal-continuity/fn/carry-unfinished.md",
+      "repository_path": ".majkee/.germline/programs/journal-continuity/fn/carry-unfinished.md",
+      "version": "observed working-tree bytes",
+      "sha256": "2ef90ef5268b213e7de9f323910de66083fbb3b0f390e142ce3f6201d04d50c0",
+      "git_blob_observed": "e718e46c387b776e87a286c11c851479d130ac0e",
+      "git_blob_at_head": "e718e46c387b776e87a286c11c851479d130ac0e",
+      "matches_head": true,
+      "line_count": 35,
+      "reviewed_scope": "Carry authorization; full file."
+    },
+    {
+      "id": "J01",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/journal/2026-10-16.md",
+      "repository_path": ".majkee/journal/2026-10-16.md",
+      "version": "observed working-tree bytes",
+      "sha256": "54b939c697bcfb9eab92282833229a15b0d436338b24a29da309660150fc40e8",
+      "git_blob_observed": "78e50f1f9157a2da30455b8800d706b194587809",
+      "git_blob_at_head": "c37d42a68b5610ab87ea65ef05243214bbf617b2",
+      "matches_head": false,
+      "line_count": 2040,
+      "reviewed_scope": "Selected lines 87–500 and 1091–end, nearby relay guard and boundary passages. Not a complete audit of the middle sector."
+    },
+    {
+      "id": "R01",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/raw.guides/runbook/GUIDE.md",
+      "repository_path": "raw.guides/runbook/GUIDE.md",
+      "version": "observed working-tree bytes",
+      "sha256": "4339f7f2b3d4c4fb741c342eed5112d0baeef9cf015d1f5f74a18394677a0080",
+      "git_blob_observed": "28479a2349853bc8c89b2b4dbd6e005f468770fb",
+      "git_blob_at_head": "28479a2349853bc8c89b2b4dbd6e005f468770fb",
+      "matches_head": true,
+      "line_count": 231,
+      "reviewed_scope": "Opening sections: session launcher, one gate, pulse seam, structure and owner; partial read."
+    },
+    {
+      "id": "R02",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/raw.guides/status/GUIDE.md",
+      "repository_path": "raw.guides/status/GUIDE.md",
+      "version": "observed working-tree bytes",
+      "sha256": "74512734c5ee6a2b0c90d7f1a560d4d2ec3b2fc8d6d0ca23ae80ccc23fe4d445",
+      "git_blob_observed": "a0010b2399e85c1154310d080ab213ecff5701bd",
+      "git_blob_at_head": "a0010b2399e85c1154310d080ab213ecff5701bd",
+      "matches_head": true,
+      "line_count": 178,
+      "reviewed_scope": "Opening through replacement law and tense separation; partial read."
+    },
+    {
+      "id": "T01",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/zsh/session/base.zsh",
+      "repository_path": "zsh/session/base.zsh",
+      "version": "observed working-tree bytes",
+      "sha256": "9d3ce240a0bdf4a7acf1cd0ec1180491c756024901a2bfcf95cfe03cb7319002",
+      "git_blob_observed": "c973efbee449cea1577d84d2d3aa5d14ec40a106",
+      "git_blob_at_head": "c973efbee449cea1577d84d2d3aa5d14ec40a106",
+      "matches_head": true,
+      "line_count": 51,
+      "reviewed_scope": "Engine wiring and deployment/source distinction; full file."
+    },
+    {
+      "id": "T02",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/zsh/session/runbook.zsh",
+      "repository_path": "zsh/session/runbook.zsh",
+      "version": "observed working-tree bytes",
+      "sha256": "bb59b903136a560e2dc7fceaadcf6f31bf598bfd714ee2953dc6d80200916b2b",
+      "git_blob_observed": "37a71e27b7a01e86a81f604ee7bc708c9ed0cb86",
+      "git_blob_at_head": "37a71e27b7a01e86a81f604ee7bc708c9ed0cb86",
+      "matches_head": true,
+      "line_count": 152,
+      "reviewed_scope": "Shell browser entry and root resolution; opening ~170 lines."
+    },
+    {
+      "id": "T03",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/zsh/session/runbook.py",
+      "repository_path": "zsh/session/runbook.py",
+      "version": "observed working-tree bytes",
+      "sha256": "c08fa3bc2741e078a1dc5b3f4278e424eee1c57fe91c0b84354c79b64c38c27f",
+      "git_blob_observed": "f8f6c06edce8f77075fe90dd66365bf7c7aaf549",
+      "git_blob_at_head": "f8f6c06edce8f77075fe90dd66365bf7c7aaf549",
+      "matches_head": true,
+      "line_count": 2587,
+      "reviewed_scope": "Header, STATUS extraction, discovery, optional Ovitmugen bridge; selected sections, not full code audit."
+    },
+    {
+      "id": "T04",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/zsh/session/keyboard.zsh",
+      "repository_path": "zsh/session/keyboard.zsh",
+      "version": "observed working-tree bytes",
+      "sha256": "68982631e27e243874e4a06669abbb7be9741bd38d3a225d0a28d36cdc2ff80b",
+      "git_blob_observed": "f86e85fe2fef11a1465610d02376281b08157b2b",
+      "git_blob_at_head": "f86e85fe2fef11a1465610d02376281b08157b2b",
+      "matches_head": true,
+      "line_count": 56,
+      "reviewed_scope": "Actual rb/ov/tn aliases; full file."
+    },
+    {
+      "id": "T05",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/zsh/session/ovitmugen.py",
+      "repository_path": "zsh/session/ovitmugen.py",
+      "version": "observed working-tree bytes",
+      "sha256": "97dba115a36abf216ab6f5deabda601ce82e395cdd285a1b52aca7568f5a3125",
+      "git_blob_observed": "e489a9f218a25e0dcb91303807908c4cfd0fb1ca",
+      "git_blob_at_head": "e489a9f218a25e0dcb91303807908c4cfd0fb1ca",
+      "matches_head": true,
+      "line_count": 1089,
+      "reviewed_scope": "Header/laws, adapter, function inventory and selected sections; Git last-change evidence. Not a full correctness audit."
+    },
+    {
+      "id": "T06",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/zsh/session/help/ovitmugen/HELP.md",
+      "repository_path": "zsh/session/help/ovitmugen/HELP.md",
+      "version": "observed working-tree bytes",
+      "sha256": "524a7166b18e24985f19930ceb1850e1c31b240b1ca62644824a774e2d7cdb17",
+      "git_blob_observed": "7de6c1a0a5eb3b937637d0472e09605a4962cc0c",
+      "git_blob_at_head": "7de6c1a0a5eb3b937637d0472e09605a4962cc0c",
+      "matches_head": true,
+      "line_count": 210,
+      "reviewed_scope": "Operator help; full file."
+    },
+    {
+      "id": "N01",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/AGENTS.md",
+      "repository_path": "AGENTS.md",
+      "version": "observed working-tree bytes",
+      "sha256": "efb3077bd5213f0021344565dc5f5eba4dc2f3e9a073295b9ef54a714f591508",
+      "git_blob_observed": "9d11ba79c79060af617b38dacdfa5733241929cf",
+      "git_blob_at_head": "9d11ba79c79060af617b38dacdfa5733241929cf",
+      "matches_head": true,
+      "line_count": 74,
+      "reviewed_scope": "Project meaning, read order and scope; full file."
+    },
+    {
+      "id": "N02",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md",
+      "repository_path": ".dev/session/flag.md",
+      "version": "observed working-tree bytes",
+      "sha256": "a9a1740f1770f2b05f1676847664c855ba8b3f0440c802e01ecee209c47f1a1d",
+      "git_blob_observed": "f6235abd81018cdec843a87ad0cdc41ea8d23e32",
+      "git_blob_at_head": "f6235abd81018cdec843a87ad0cdc41ea8d23e32",
+      "matches_head": true,
+      "line_count": 238,
+      "reviewed_scope": "Locked decisions and pending docket; full file."
+    },
+    {
+      "id": "N03",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/pulse.md",
+      "repository_path": ".dev/session/pulse.md",
+      "version": "observed working-tree bytes",
+      "sha256": "c337463e47622abd74888e7771ec33518996bb309617cee7e0356c7a818e2359",
+      "git_blob_observed": "735dbc9205c0fccc2046401cf2aa50aaf1e30136",
+      "git_blob_at_head": "735dbc9205c0fccc2046401cf2aa50aaf1e30136",
+      "matches_head": true,
+      "line_count": 11,
+      "reviewed_scope": "Current router; full file."
+    },
+    {
+      "id": "N04",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/PROJECT.yaml",
+      "repository_path": "PROJECT.yaml",
+      "version": "observed working-tree bytes",
+      "sha256": "794d9129d333e3198869650c24bcfb20501a5ad71db6a75c89e13913cc0620b8",
+      "git_blob_observed": "cd78ff455e75f251305270886f4ab56499cd59b3",
+      "git_blob_at_head": "cd78ff455e75f251305270886f4ab56499cd59b3",
+      "matches_head": true,
+      "line_count": 24,
+      "reviewed_scope": "Machine contract and pointers; full file."
+    },
+    {
+      "id": "N05",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/AGENTS.PROJECT-DESIGN.md",
+      "repository_path": ".dev/session/AGENTS.PROJECT-DESIGN.md",
+      "version": "observed working-tree bytes",
+      "sha256": "2d5f2e4ccb95470de908c9f358ef54229a64e6a569b1a91fd63f23ac0862eeb8",
+      "git_blob_observed": "59e611d7845bc4a3c0daad1d183985deeafd7984",
+      "git_blob_at_head": "59e611d7845bc4a3c0daad1d183985deeafd7984",
+      "matches_head": true,
+      "line_count": 329,
+      "reviewed_scope": "Working wrapper, organ roles, Ovitmugen notes, key grammar; selected sections and delegated reading."
+    },
+    {
+      "id": "O01",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/ovitmugen-01-basement/STATUS.md",
+      "repository_path": ".dev/session/ovitmugen-01-basement/STATUS.md",
+      "version": "observed working-tree bytes",
+      "sha256": "9fecc5e79b7204496568ba89729c8aeefe4d13558fe9ce49b58b3399de67ee31",
+      "git_blob_observed": "b8241bc0f689906eaa4eb120dca0d970e6d6af1d",
+      "git_blob_at_head": "b8241bc0f689906eaa4eb120dca0d970e6d6af1d",
+      "matches_head": true,
+      "line_count": 44,
+      "reviewed_scope": "Current recorded basement position; full file."
+    },
+    {
+      "id": "O02",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/ovitmugen-01-basement/RUNBOOK.md",
+      "repository_path": ".dev/session/ovitmugen-01-basement/RUNBOOK.md",
+      "version": "observed working-tree bytes",
+      "sha256": "ce505c8ae372b0414aff4b426d24d5b7d41466d6b687aaa9ebdb5849709f1025",
+      "git_blob_observed": "badb3678536290de8a12ef629d06e7e9ae6d3ce8",
+      "git_blob_at_head": "badb3678536290de8a12ef629d06e7e9ae6d3ce8",
+      "matches_head": true,
+      "line_count": 110,
+      "reviewed_scope": "Gate, engineering laws, scope and acceptance; full file."
+    },
+    {
+      "id": "O03",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/ovitmugen-01-basement/raw/architecture.pipes-ui-keys.2026-09-29.md",
+      "repository_path": ".dev/session/ovitmugen-01-basement/raw/architecture.pipes-ui-keys.2026-09-29.md",
+      "version": "observed working-tree bytes",
+      "sha256": "f75019aaf247dd57ad9117a39698678f748d9826a4d89b408e0047ea93f1800c",
+      "git_blob_observed": "0869e004114002496157cf886b1d47294bcd36ea",
+      "git_blob_at_head": "0869e004114002496157cf886b1d47294bcd36ea",
+      "matches_head": true,
+      "line_count": 192,
+      "reviewed_scope": "Layers, proposed map/pipes, identity boundary and build order; selected sections plus delegated reading."
+    },
+    {
+      "id": "B01",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/README.md",
+      "repository_path": "toolbox/termbrana/README.md",
+      "version": "observed working-tree bytes",
+      "sha256": "5812edd9486bf246236e60f5e119ef9959cd2f870dcaa49a627b31ec30be13b5",
+      "git_blob_observed": "876a639d31e2f099d0caba1b403514c8b48e304d",
+      "git_blob_at_head": "876a639d31e2f099d0caba1b403514c8b48e304d",
+      "matches_head": true,
+      "line_count": 157,
+      "reviewed_scope": "Product status, M0 boundary and observation grades; opening and milestone table."
+    },
+    {
+      "id": "B02",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/toolbox/termbrana/DECISIONS.md",
+      "repository_path": "toolbox/termbrana/DECISIONS.md",
+      "version": "observed working-tree bytes",
+      "sha256": "94d0b0b1e01dfc7cead09db6b27db7b65ff9cd28c8ef8e31f39ca744e85783d8",
+      "git_blob_observed": "d59f2cc38e9b09f03ab274afa2a9edeba85a5773",
+      "git_blob_at_head": "d59f2cc38e9b09f03ab274afa2a9edeba85a5773",
+      "matches_head": true,
+      "line_count": 178,
+      "reviewed_scope": "ADR-0002: freeze, host parity, observation ceiling, verification loop; selected ADR."
+    },
+    {
+      "id": "X01",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X0-restarted/README.md",
+      "repository_path": ".dev/session/nablarva-X0-restarted/README.md",
+      "version": "observed working-tree bytes",
+      "sha256": "3012358fbe973ceba24375b7ea77780706a05a428be4c2931ff227d9729f8b54",
+      "git_blob_observed": "83161c3e595e2e9717c88532e202371463f22c1f",
+      "git_blob_at_head": "83161c3e595e2e9717c88532e202371463f22c1f",
+      "matches_head": true,
+      "line_count": 9,
+      "reviewed_scope": "Live closure stub and preservation pointer; full file."
+    },
+    {
+      "id": "X04",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/RUNBOOK.md",
+      "repository_path": ".dev/session/nablarva-X1-architecture/RUNBOOK.md",
+      "version": "observed working-tree bytes",
+      "sha256": "fa6a29b5b3adfcaf739209cc2cca78c5920363ca7dec95fde622e2d6a8b3a9a3",
+      "git_blob_observed": "88816c6667da66f5d524dc39e8907611635592f5",
+      "git_blob_at_head": "88816c6667da66f5d524dc39e8907611635592f5",
+      "matches_head": true,
+      "line_count": 80,
+      "reviewed_scope": "Architecture gate and scope including later-gavel annotation; full file."
+    },
+    {
+      "id": "X05",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X1-architecture/STATUS.md",
+      "repository_path": ".dev/session/nablarva-X1-architecture/STATUS.md",
+      "version": "observed working-tree bytes",
+      "sha256": "5cb82dea5a47abdb7f75158ec37b13700a6ff66a8ac3b7fedc074205a1cc1423",
+      "git_blob_observed": "c5025a73445ae725c3565c2f8bda3925635de15b",
+      "git_blob_at_head": "c5025a73445ae725c3565c2f8bda3925635de15b",
+      "matches_head": true,
+      "line_count": 94,
+      "reviewed_scope": "Recorded live X1 position; full file."
+    },
+    {
+      "id": "X06",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/docs/ARCHITECTURE.md",
+      "repository_path": "docs/ARCHITECTURE.md",
+      "version": "observed working-tree bytes",
+      "sha256": "99e6f0f90e79ade6fd17a0b302fa3100e0cba79c1a22b32b4dd20f46dd33d0a6",
+      "git_blob_observed": "81fd4a7bd1bd8bfb17e33ba2c549ce0bdb53f70f",
+      "git_blob_at_head": "81fd4a7bd1bd8bfb17e33ba2c549ce0bdb53f70f",
+      "matches_head": true,
+      "line_count": 13,
+      "reviewed_scope": "Pre-architecture pointer; full file."
+    },
+    {
+      "id": "G01",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/.dev/session/germline-03-foundation-audit/STATUS.md",
+      "repository_path": ".dev/session/germline-03-foundation-audit/STATUS.md",
+      "version": "observed working-tree bytes",
+      "sha256": "269ab687d33432ba2900f17d1ed885aaa34646a50544cd59e5364b6f9978de1c",
+      "git_blob_observed": "de3b74745088ed011898bbf669b1795d4e9fd591",
+      "git_blob_at_head": "850796e6ebe4dd9a13fb21a4ed926e24e8d698fa",
+      "matches_head": false,
+      "line_count": 38,
+      "reviewed_scope": "Unapproved A2 mapping and holds; full file."
+    },
+    {
+      "id": "G02",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/.dev/session/germline-03-foundation-audit/RUNBOOK.md",
+      "repository_path": ".dev/session/germline-03-foundation-audit/RUNBOOK.md",
+      "version": "observed working-tree bytes",
+      "sha256": "6a92cad7f69984c59063f4fdd3a04936aa91249924b8d227bb2b4fc5f2ca04c4",
+      "git_blob_observed": "54c27de6e79352d7fae66a67b85f9281fc439de9",
+      "git_blob_at_head": "54c27de6e79352d7fae66a67b85f9281fc439de9",
+      "matches_head": true,
+      "line_count": 79,
+      "reviewed_scope": "Audit-only gate and receipt ownership; full file."
+    },
+    {
+      "id": "G03",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/.dev/session/germline-03-foundation-audit/raw/SUBSTRATE.germline-04-guide-dogfood.2026-10-17.md",
+      "repository_path": ".dev/session/germline-03-foundation-audit/raw/SUBSTRATE.germline-04-guide-dogfood.2026-10-17.md",
+      "version": "observed working-tree bytes",
+      "sha256": "cf041fe5937e53f76b49fe3ba22c485cd2eccd00244146c49d3cd6d2bec3f281",
+      "git_blob_observed": "7caacfe93f9fa4d4bed3bf9f61cce78e915cffac",
+      "git_blob_at_head": null,
+      "matches_head": false,
+      "line_count": 67,
+      "reviewed_scope": "Future-only substrate and C1/C2 corrections; full file."
+    },
+    {
+      "id": "P01",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/projects/ia-sync_guide-model-01-law/guide-model/PACKAGE.md",
+      "repository_path": ".majkee/projects/ia-sync_guide-model-01-law/guide-model/PACKAGE.md",
+      "version": "observed working-tree bytes",
+      "sha256": "d2a205c4faa0196bec0c3a4cace0c45a2ee904dc64e0a6d1da80a0192965511f",
+      "git_blob_observed": "e0b52d26441bfdc0065148bdddeaed72c59f665b",
+      "git_blob_at_head": "e0b52d26441bfdc0065148bdddeaed72c59f665b",
+      "matches_head": true,
+      "line_count": 40,
+      "reviewed_scope": "Historical staged package and thread-limited receipt; full file."
+    },
+    {
+      "id": "P02",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/projects/unikuklatrix_nablarva/03_OVITMUGEN_CONTRACTS.md",
+      "repository_path": ".majkee/projects/unikuklatrix_nablarva/03_OVITMUGEN_CONTRACTS.md",
+      "version": "observed working-tree bytes",
+      "sha256": "88fb251af6ebd06781bac67fca532443045f7d2c5c8ca025e22338e0818bb41a",
+      "git_blob_observed": "3b04893c867de58c9794beae23f611aa09c0cbec",
+      "git_blob_at_head": "3b04893c867de58c9794beae23f611aa09c0cbec",
+      "matches_head": true,
+      "line_count": 127,
+      "reviewed_scope": "Personal draft proposing pane injection, in conflict with current Ovitmugen rules; full file."
+    },
+    {
+      "id": "X02",
+      "repository": "nablarva",
+      "repository_path": ".dev/session/nablarva-X0-restarted/STATUS.md",
+      "version": "historical Git object; not an existing live file",
+      "commit": "d1c4b1ef0d6b4a56182c66474b51b17cf5b56939",
+      "git_blob": "affc6e69ad9a8567de27ae94644bcfb6aa31703b",
+      "sha256": "bb582c06b64ee1686e24cfd8bbee5145493a051f5dc30d74bfbd2aacccd16b81",
+      "line_count": 61,
+      "retrieve_argv": [
+        "git",
+        "-C",
+        "/home/hruzam/unikuklatrix/nablarva",
+        "show",
+        "d1c4b1ef0d6b4a56182c66474b51b17cf5b56939:.dev/session/nablarva-X0-restarted/STATUS.md"
+      ],
+      "reviewed_scope": "full historical file"
+    },
+    {
+      "id": "X03",
+      "repository": "nablarva",
+      "repository_path": ".dev/session/nablarva-X0-restarted/_bus/27.oraculum.receipt.md",
+      "version": "historical Git object; not an existing live file",
+      "commit": "d1c4b1ef0d6b4a56182c66474b51b17cf5b56939",
+      "git_blob": "e35f2065fad4bd2585fa5712a02561e53db55a6b",
+      "sha256": "7e690c52429026a2327d37aace82780c961e416b44983da71867b7d8e47931e2",
+      "line_count": 41,
+      "retrieve_argv": [
+        "git",
+        "-C",
+        "/home/hruzam/unikuklatrix/nablarva",
+        "show",
+        "d1c4b1ef0d6b4a56182c66474b51b17cf5b56939:.dev/session/nablarva-X0-restarted/_bus/27.oraculum.receipt.md"
+      ],
+      "reviewed_scope": "full historical file"
+    }
+  ],
+  "claims": [
+    {
+      "id": "manual-programs",
+      "status": "observed guidance",
+      "sources": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06"
+      ],
+      "statement": "Two local prompt programs; no automatic runtime dispatcher."
+    },
+    {
+      "id": "session-authority",
+      "status": "documented law",
+      "sources": [
+        "R01",
+        "R02",
+        "N02"
+      ],
+      "statement": "RUNBOOK is fixed; STATUS owns position; pulse routes."
+    },
+    {
+      "id": "browser",
+      "status": "observed source",
+      "sources": [
+        "T01",
+        "T02",
+        "T03",
+        "T04"
+      ],
+      "statement": "Shell/Python browser with optional tmux bridge; indicators do not semantically certify closure."
+    },
+    {
+      "id": "ovitmugen-baseline",
+      "status": "source and recorded baseline outcome",
+      "sources": [
+        "T05",
+        "T06",
+        "O01",
+        "O02"
+      ],
+      "statement": "View manager exists; current rules forbid input injection; historical tests not rerun."
+    },
+    {
+      "id": "ovitmugen-basement",
+      "status": "proposal plus owner-state limit",
+      "sources": [
+        "O01",
+        "O02",
+        "O03"
+      ],
+      "statement": "Map/events/state expansion remains recorded as unbuilt."
+    },
+    {
+      "id": "termbrana",
+      "status": "documented technical decision and product limit",
+      "sources": [
+        "B01",
+        "B02",
+        "N02"
+      ],
+      "statement": "M0 frozen; probe exists; semantic product features planned; plugin sees rendered output."
+    },
+    {
+      "id": "x0-closure",
+      "status": "historical closure receipt",
+      "sources": [
+        "X01",
+        "X02",
+        "X03"
+      ],
+      "statement": "GO on Houston plus KEEP on evaluated discipline; follow-up carried forward."
+    },
+    {
+      "id": "x1-open",
+      "status": "current owner record",
+      "sources": [
+        "N03",
+        "X04",
+        "X05",
+        "X06"
+      ],
+      "statement": "Architecture gate remains open; current architecture document is a pointer."
+    },
+    {
+      "id": "future-g04",
+      "status": "future-only planning",
+      "sources": [
+        "J01",
+        "G01",
+        "G02",
+        "G03"
+      ],
+      "statement": "First source only, sole synthesis writer, later explicit source selection; G03 mapping remains separate."
+    },
+    {
+      "id": "injection-disagreement",
+      "status": "comparison by myShell",
+      "sources": [
+        "P02",
+        "T05",
+        "O02",
+        "N02",
+        "N05"
+      ],
+      "statement": "Personal injection draft conflicts with current Ovitmugen boundary; no resolution inferred."
+    },
+    {
+      "id": "layer-map",
+      "status": "inferred: myShell",
+      "sources": [
+        "M02",
+        "R01",
+        "R02",
+        "T01",
+        "T03",
+        "O03"
+      ],
+      "statement": "Manual procedure, session authority, and shell tools serve distinct roles."
+    }
+  ],
+  "briefing_artifacts": [
+    {
+      "file": "CONTEXT.md",
+      "sha256": "904c8dc52c34525f3cb220d11575c2839ccb259eea8f2792ae978974b14678b6"
+    },
+    {
+      "file": "EXCHANGE.md",
+      "sha256": "dde73d06a5710ce1fd512bb33b21e1460c1533644510d53f3b40319ed15b7379"
+    },
+    {
+      "file": "FOR-NABLA.astrobley.md",
+      "sha256": "f37ca2ce0fb6caad9fbafcfbbe66265f7fdb493aa97a37b3bbe2d36f51f8a5b0"
+    },
+    {
+      "file": "FOR-NABLA.oraculum.md",
+      "sha256": "52a15fcd7c33dcde382e783fc62b55e904fdf480fcde88549cc4f9e7550e5df6"
+    },
+    {
+      "file": "README.md",
+      "sha256": "2cb4ee3825a41ea3d21e181b98a1d8a73d677c5af347ebc1a71457b5fffbb980",
+      "previous_revisions": [
+        {
+          "sha256": "be0f87203e7ecb79760046b4d1d77b6296c46bd818f4a5a624e0c8612ff0fce4",
+          "superseded_at": "2026-10-17T04:14:45+02:00",
+          "reason": "Added navigation to operator-requested Sella-v.0.1 design supplement."
+        }
+      ]
+    }
+  ],
+  "counsel_exchange": {
+    "file": "EXCHANGE.md",
+    "method": "Initial independent views, controller-recorded shared exchange, one reciprocal read by each, then final attributed snippets.",
+    "gate": "Personal advisory gate complete; proposals saved, no project or build decision.",
+    "final_snippets": [
+      "FOR-NABLA.astrobley.md",
+      "FOR-NABLA.oraculum.md"
+    ],
+    "controller_observation": "Both final views support one exchange with renderable blocks. Oraculum describes a reading-unit preference relative to Astrobley's initial view; the controller records the subsequent convergence without rewriting either attributed return."
+  },
+  "artifact_index_updated_at": "2026-10-17T04:14:45+02:00",
+  "supplementary_design_collections": [
+    {
+      "directory": "sella-v.0.1",
+      "index": "sella-v.0.1/README.md",
+      "evidence": "sella-v.0.1/evidence.sella-v.0.1.json",
+      "cycle": "myshell-sella-language-02",
+      "status": "Personal design proposal, not implementation or Sella amendment."
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "schema": "personal-design-evidence/v1",
+  "version": "sella-v.0.1",
+  "cycle": "myshell-sella-language-02",
+  "recorded_at": "2026-10-17T04:14:45+02:00",
+  "author": "myShell",
+  "host": "office / hruzam-120922",
+  "timezone": "Europe/Prague",
+  "authority": "Operator requested three attributed design briefs in the existing Nabla.Tmux collection. Proposal only; no canonical/source program change or implementation.",
+  "repositories": {
+    "reposoma": {
+      "root": "/home/hruzam/reposoma",
+      "head": "124c2f03679e45f5f866b63c1cfa66970d96424b"
+    },
+    "ia-sync": {
+      "root": "/home/hruzam/ia-sync",
+      "head": "3bb2f9ae7f7c332641fc3a2dba8b8a25fe5e6a1c"
+    },
+    "nablarva": {
+      "root": "/home/hruzam/unikuklatrix/nablarva",
+      "head": "f6403ea61e05e1d0641aa6802d9817ebe691503c"
+    }
+  },
+  "local_sources": [
+    {
+      "id": "personal-seat",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/AGENTS.md",
+      "repository_path": ".majkee/AGENTS.md",
+      "sha256": "4c20728aa8567ed5f779cf683dc0da8dcb37eadacda312feb0bcec259b113d96",
+      "reviewed_scope": "Full file; personal authority and source write boundaries."
+    },
+    {
+      "id": "manual-engine",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/engine/README.md",
+      "repository_path": ".majkee/engine/README.md",
+      "sha256": "244b44e3c97e80c00ffe02ffb0da07852b897d659807909f4a23dfc0f2d0207d",
+      "reviewed_scope": "Full file; manual ctrl and relay convention, not an installed parser."
+    },
+    {
+      "id": "journal-controller",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/.germline/programs/journal-continuity/CONTROLLER.md",
+      "repository_path": ".majkee/.germline/programs/journal-continuity/CONTROLLER.md",
+      "sha256": "a8a5fa7ce8eccda23653e943df5293c567e11cb90535739866a8c8292dc2ffcf",
+      "reviewed_scope": "Full file; function bindings and shared constraints."
+    },
+    {
+      "id": "list-pending",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/.germline/programs/journal-continuity/fn/list-pending.md",
+      "repository_path": ".majkee/.germline/programs/journal-continuity/fn/list-pending.md",
+      "sha256": "9e173128ccc52d8a9ddd25d1964932149c4259211bedf4ddb8c4b9aadfb7fcbb",
+      "reviewed_scope": "Full file; partial reports and uncertainty."
+    },
+    {
+      "id": "fold-entry",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/.germline/programs/journal-continuity/fn/fold-entry.md",
+      "repository_path": ".majkee/.germline/programs/journal-continuity/fn/fold-entry.md",
+      "sha256": "66271104b629f787b34821df7f7a3351bf8e95741f165972769ba3e35907dc97",
+      "reviewed_scope": "Full file; authorized own-scope journal fold."
+    },
+    {
+      "id": "project-controller",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/.germline/programs/project-saddle/CONTROLLER.md",
+      "repository_path": ".majkee/.germline/programs/project-saddle/CONTROLLER.md",
+      "sha256": "b29f0e213c5190172a1fd99d724cb00b54bce2742e021acdad2e3b17c8876aac",
+      "reviewed_scope": "Full file; read-only scoped entry and table binding."
+    },
+    {
+      "id": "sella-guide",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/raw.guides/sella/GUIDE.md",
+      "repository_path": "raw.guides/sella/GUIDE.md",
+      "sha256": "1e9631b02f9cd5ef465ea00bd5f5abc00b69dfcf4c4c1848d6134df15277aaaf",
+      "reviewed_scope": "Selected opening boundary, mission, laws, application and glossary sections; historical platform tables not treated as current authority."
+    },
+    {
+      "id": "runbook-guide",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/raw.guides/runbook/GUIDE.md",
+      "repository_path": "raw.guides/runbook/GUIDE.md",
+      "sha256": "4339f7f2b3d4c4fb741c342eed5112d0baeef9cf015d1f5f74a18394677a0080",
+      "reviewed_scope": "Selected session-shape and owner-state clauses from original briefing read."
+    },
+    {
+      "id": "status-guide",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/raw.guides/status/GUIDE.md",
+      "repository_path": "raw.guides/status/GUIDE.md",
+      "sha256": "74512734c5ee6a2b0c90d7f1a560d4d2ec3b2fc8d6d0ca23ae80ccc23fe4d445",
+      "reviewed_scope": "Selected current-position and recovery clauses from original briefing read."
+    },
+    {
+      "id": "project-locks",
+      "repository": "nablarva",
+      "path": "/home/hruzam/unikuklatrix/nablarva/.dev/session/flag.md",
+      "repository_path": ".dev/session/flag.md",
+      "sha256": "a9a1740f1770f2b05f1676847664c855ba8b3f0440c802e01ecee209c47f1a1d",
+      "reviewed_scope": "L9-prime, L12, L14, L16 and pending decisions; full file read in context preparation."
+    },
+    {
+      "id": "global-germline",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/germline/README.md",
+      "repository_path": "germline/README.md",
+      "sha256": "0b2aabb66223a34f10697d1dad7ea9a6b01d8be5a537580e66db46d2cecce4fe",
+      "reviewed_scope": "Full file; portable source/render boundary and random edit stamp rule. Its statement about proof of reading is not accepted as mechanically proven."
+    },
+    {
+      "id": "native-codex-source",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/codex/agents/astrobley.toml",
+      "repository_path": "codex/agents/astrobley.toml",
+      "sha256": "c49f7d32465d324ac478668b1ba63a88df2f383fafb9b639cd88c37ce4474467",
+      "reviewed_scope": "Full file; authored local role source, not a runtime permission test."
+    },
+    {
+      "id": "claude-source-example",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/claude/agents/atlas-ui.md",
+      "repository_path": "claude/agents/atlas-ui.md",
+      "sha256": "594f72db6205e0c90fa13f644c4e4205e50b30ec64ef81ac4ad9dc5322fd4a07",
+      "reviewed_scope": "Opening role, source and tool-scope clauses; inspected as local source, not current product specification."
+    },
+    {
+      "id": "ovitmugen-boundary",
+      "repository": "ia-sync",
+      "path": "/home/hruzam/ia-sync/zsh/session/ovitmugen.py",
+      "repository_path": "zsh/session/ovitmugen.py",
+      "sha256": "97dba115a36abf216ab6f5deabda601ce82e395cdd285a1b52aca7568f5a3125",
+      "reviewed_scope": "Header/laws from prior context; no input injection permitted in this tool."
+    },
+    {
+      "id": "context-briefing",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/projects/unikuklatrix_nablarva-termbrana-X0-prompt-collection/CONTEXT.md",
+      "repository_path": ".majkee/projects/unikuklatrix_nablarva-termbrana-X0-prompt-collection/CONTEXT.md",
+      "sha256": "904c8dc52c34525f3cb220d11575c2839ccb259eea8f2792ae978974b14678b6",
+      "reviewed_scope": "Existing shared contextual briefing read by advisers; primary claims remain attributed to its sources."
+    },
+    {
+      "id": "prior-exchange",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/projects/unikuklatrix_nablarva-termbrana-X0-prompt-collection/EXCHANGE.md",
+      "repository_path": ".majkee/projects/unikuklatrix_nablarva-termbrana-X0-prompt-collection/EXCHANGE.md",
+      "sha256": "dde73d06a5710ce1fd512bb33b21e1460c1533644510d53f3b40319ed15b7379",
+      "reviewed_scope": "Existing composer consultation and reciprocal corrections."
+    },
+    {
+      "id": "prior-evidence",
+      "repository": "reposoma",
+      "path": "/home/hruzam/reposoma/.majkee/projects/unikuklatrix_nablarva-termbrana-X0-prompt-collection/sources.json",
+      "repository_path": ".majkee/projects/unikuklatrix_nablarva-termbrana-X0-prompt-collection/sources.json",
+      "sha256": "37d4f0d47e1051a5654ac42a585989dc1e2f43a1126dfe16b5a3c684bbd0f1ca",
+      "reviewed_scope": "Original source and artifact identity index; navigation revision recorded without changing original source snapshots."
+    }
+  ],
+  "web_sources": [
+    {
+      "id": "codex-docs",
+      "url": "https://learn.chatgpt.com/docs/agent-configuration/subagents",
+      "documentation_read_at": "2026-10-17T04:14:45+02:00",
+      "sections": [
+        "Orchestration and thread controls",
+        "Approvals and sandbox controls",
+        "Custom agents"
+      ],
+      "supported_claim": "Custom agent TOML and parent-owned sandbox/approval settings; runtime follow-up orchestration is documented.",
+      "local_limit": "Existing Codex adviser followups observed; no external adapter implementation or new policy test."
+    },
+    {
+      "id": "claude-docs",
+      "url": "https://code.claude.com/docs/en/sub-agents",
+      "documentation_read_at": "2026-10-17T04:14:45+02:00",
+      "sections": [
+        "Write subagent files",
+        "Frontmatter reference",
+        "Permission modes"
+      ],
+      "supported_claim": "YAML/Markdown definitions and conditional parent/child permission-mode behavior.",
+      "local_limit": "No Claude runtime or permission probe in this sitting."
+    },
+    {
+      "id": "gemini-docs",
+      "url": "https://geminicli.com/docs/core/subagents/",
+      "documentation_read_at": "2026-10-17T04:14:45+02:00",
+      "sections": [
+        "Creating custom subagents",
+        "Agent definition files",
+        "File format"
+      ],
+      "supported_claim": "Gemini CLI native subagents and YAML/Markdown custom definitions are documented.",
+      "local_limit": "No local installation/account/permission/delegation qualification."
+    },
+    {
+      "id": "codex-thread-history",
+      "url": "https://learn.chatgpt.com/docs/app-server",
+      "supported_claim": "Persisted JSONL thread logs and stored thread reading.",
+      "documentation_read_for": "Preceding history/attachment consultation; no native history file modified."
+    },
+    {
+      "id": "claude-transcripts",
+      "url": "https://code.claude.com/docs/en/hooks",
+      "supported_claim": "JSONL transcript paths in hook inputs.",
+      "documentation_read_for": "Preceding history/attachment consultation; no native history file modified."
+    },
+    {
+      "id": "claude-memory",
+      "url": "https://code.claude.com/docs/en/memory",
+      "supported_claim": "Separate Markdown memory index/topic files and transcript retention distinction.",
+      "documentation_read_for": "Preceding history/attachment consultation; no native history file modified."
+    }
+  ],
+  "consultations": [
+    {
+      "author": "Astrobley",
+      "task": "/root/subagent_astrobley",
+      "model": "gpt-6.1-sol",
+      "role": "Programmer perspective",
+      "method": "First view, full shared-exchange reciprocal read, final chat-only brief."
+    },
+    {
+      "author": "Oraculum",
+      "task": "/root/oraculum",
+      "model": "gpt-6-astra",
+      "role": "Project-designer perspective",
+      "method": "First analysis, full shared-exchange reciprocal read, final analysis-only brief."
+    },
+    {
+      "author": "myShell",
+      "role": "Controller, source checks, agentive-access design and sole artifact writer",
+      "method": "Verified source-dependent claims and integrated differences without changing attributed briefs."
+    }
+  ],
+  "observed_findings": [
+    "Existing local programs are manual prompt procedures; no parser is installed by this work.",
+    "Five local table/function bindings were structurally checked in the preceding review; names, paths and stamps matched.",
+    "Current Sella draft includes older pulse-doing-state wording; current project/session laws assign pulse routing and STATUS current position.",
+    "A random stamp under an edit-maintenance rule is not a content hash or mechanical proof of cognitive reading.",
+    "Only the current-session Codex consultation route was exercised; documentation is separate from local qualification."
+  ],
+  "proposed_not_implemented": [
+    "request/0.1 Markdown/frontmatter source and request-ir/0.1 generated representation are illustrative candidate shapes, not a completed schema.",
+    "Parser, selective loader, checks, render/runtime planning and fold preparation.",
+    "Per-operation asymmetric native/manual/unsupported/unqualified outcomes.",
+    "Two-binding interrupted-reader pilot with partial-report and missing-capability negative cases."
+  ],
+  "open_choices": [
+    "Mandatory semantic requirements and permissible substitutions by task class.",
+    "Exact accepted packet fields and how the existing controller table is deterministically parsed.",
+    "Whether preparation-only automation earns its cost before editor or automatic-writer work.",
+    "Future journal writer concurrency, transaction, deduplication and recovery boundary."
+  ],
+  "unchanged_boundaries": [
+    "No existing controller/function/AGENTS/Sella/vendor source edited.",
+    "No journal write, project STATUS update, canon decision, commit, push, deploy, runtime adapter activation or tmux delivery.",
+    "Original source snapshot identity records preserved; parent README navigation and its artifact hash updated explicitly."
+  ],
+  "artifacts": [
+    {
+      "file": "EXCHANGE.md",
+      "sha256": "1d19e0077002a70fb9f12e7fee7fa29295a457a5201a8e60688943ff5a0fdffd",
+      "words": 1161
+    },
+    {
+      "file": "README.md",
+      "sha256": "423c131df7d38391467a32e9893a9baccd5fce087dc0796985eb496379520f9c",
+      "words": 1316,
+      "previous_revisions": [
+        {
+          "sha256": "2e10fe2727a0d3eba64c8bb4e39baee1b37c44f6d4bd7e98fc8d1b94e79fea1c",
+          "superseded_at": "2026-10-17T04:21:45+02:00",
+          "reason": "Linked history and attachment refinement requested by operator."
+        }
+      ]
+    },
+    {
+      "file": "brief.astrobley.sella-v.0.1.md",
+      "sha256": "d732f7a23c9fda94e8c816b247d3904fa1f999bb76fff2812e94d28e4235aa80",
+      "words": 740
+    },
+    {
+      "file": "brief.myshell.sella-v.0.1.md",
+      "sha256": "ff485f948f0e396dcd0d3245fab6c15e969308735df608cbfa3f6d24c044266a",
+      "words": 919
+    },
+    {
+      "file": "brief.oraculum.sella-v.0.1.md",
+      "sha256": "8299e178bf9754a1353ec1193e74930ee4161b2d06b9925ebc2dd54b5649818d",
+      "words": 761
+    },
+    {
+      "file": "note.myshell.history-and-attachments.sella-v.0.1.md",
+      "sha256": "073a529e328e73fde0361a20c4f96597a702121ff6ceb1ac715e642d094e624f",
+      "words": 661
+    }
+  ],
+  "artifact_index_updated_at": "2026-10-17T04:21:45+02:00",
+  "refinements": [
+    {
+      "topic": "History, pending prompts and RUNBOOK/tmux attachments",
+      "recorded_at": "2026-10-17T04:21:45+02:00",
+      "file": "note.myshell.history-and-attachments.sella-v.0.1.md",
+      "authors": [
+        "myShell",
+        "Astrobley (bounded consultation)"
+      ],
+      "status": "Proposal only; no implementation or vendor-history write."
+    }
+  ]
+}
