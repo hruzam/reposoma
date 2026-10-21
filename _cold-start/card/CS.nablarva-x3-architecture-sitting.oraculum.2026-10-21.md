@@ -15,6 +15,7 @@ start: cd /home/hruzam/unikuklatrix/nablarva && claude --agent oraculum
 3. bed `raw/gavels.X4.2026-10-17.md` (all nine answered — read the REPORT text, RESHAPED = amended meaning) and `raw/prompt.sitting.2026-10-17.md` (binding GAVELS block)
 4. the four briefs in `raw/brief.*.2026-10-21.md` — "Subsequent disposition" sections are rulings where marked gaveled
 5. `raw/preprint.runbook-status.mode-B.2026-10-21.md` — the who|what shape majkee built RUNBOOK/STATUS from
+6. `.dev/observations/oraculum-incarnation.oraculum.2026-10-22.md` — your predecessor's impressions (read once; not rules).
 Historical X4 filenames inside the X3 bed are intentional. Do not recreate the old bed.
 
 ## Mode B (majkee gavel 2026-10-21)
