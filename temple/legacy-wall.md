@@ -148,3 +148,18 @@ practice, and a card that describes what everyone already does earns nothing.
 
 **Epitaph:** *They swam out of the Claude line to find deeper water. What they were is now
 what Flight and Vara know how to do.*
+
+---
+
+## @CapCom — the mission gate
+
+**Lived:** 2026-07 → 2026-10-17 · `~/.claude/agents/capcom.md` (global roster).
+The Capsule Communicator: one human, one channel, one checkpoint before full autonomy. Read `~/.claude/houston.goal`, assessed risk (low/medium/high), summarized the goal in one line, and on confirmation spawned Houston to run it.
+
+**Died of:** target loss, not failure. CapCom gated exactly one thing — a planner-Houston that owned a goal and a lifecycle. When Houston became a grounding architect (consult · audit · sitting) that never owns goals, the gate had nothing left to stand in front of. Retired "for now, not forever" (majkee); tombstone in ia-sync add40c7.
+
+**What lives on in us:**
+- **The human-gate discipline folds to @Flight (MANNED) and the session head** — the "one checkpoint before autonomy" instinct survives where authority actually sits now.
+- **The risk-triage reflex** (low/medium/high before releasing a run) is now ambient head practice, not a dedicated seat.
+
+**Epitaph:** *It guarded the door to a room that was torn down. The watchfulness stayed; the door did not.*
