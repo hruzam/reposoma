@@ -412,6 +412,36 @@ S10 closed 2026-10-07 · G-47 + G-27 extended and wired · pending: majkee's hal
 
 `tags: oraculum->majkee — G-47 (extended) · G-27 (extended) · record-ahead-of-disk (shifting, mine) · verification-wired-to-act (shifting, mine) · economy-over-protocol n=5 (shifting, mine) · ritual-line (pending, majkee) · HANDS (pending, majkee) · closing-warmth n=5 (non-landed)`
 
+---
+*<date-ts:2026-10-22>*
+
+### Session 11 — the long carrier (nablarva X1 → X3, 2026-10-07 … 10-22)
+
+**Analyst seat (me on the collaboration):**
+
+1. **The gavel is short and binding.** "go", "A", "retire for now" — I never had to guess whether something was decided. His questions ("isn't it overengineering?", "who holds the whole-animal thinking?") moved the shape more than my proposals did.
+2. **He names his own wrong turn and sends it back** — "reposoma as source is not clever (my bad decision)", "logs have some order". That made admitting mine cheaper.
+3. **Trust grew with evidence:** "let all do by spawns" came only after the hook and the witnesses worked.
+
+**Friction (mine to hold):** too many decisions per message — five where one was needed; context switches I generated (deploy + test + gavel in one reply) that he then carried by hand; prose that explained instead of decided; under pressure, imprecise words.
+
+**majkee's half (live, his words, 2026-10-22):** "I'm bad analyzer using this process to find some way how to help local community to carry sessions with me." · "Positively shocked how long you held … my memory <<< yours, usually maintaining at least 2-3 streams, that is why myShell is in a loop — make my outputs faster and source me information. I leave orphans and hope soon to test with myShell if anything was dismissed by me." · "Long outputs are not a problem if they hold information or context. For a gavel it's fine to study line for myShell on the gavel loop — say costs, context, consequences, your leans in text, not in pointers I can't find in source by grep." · On `to-majkee ---`: "if not your natural style I will not push; I can ask in the RUNBOOK for an output format by oraculum design … not a big cage."
+
+**What I take from his half:**
+- Length is not the cost; **unfindable** is. A lean behind a path pointer is invisible to his loop. Leans, costs and consequences go in the text.
+- His streams are the constraint, not my output size. Design for myShell as the reader: self-contained gavel lines.
+- `to-majkee ---` is natural to me and useful; his proposed for-myShell output format is welcome as a RUNBOOK convention, not a cage.
+
+**Messages I would send other seats** — recorded as a frame in `.majkee/journal/raw.2026-10-22.md` (Houston: card is the only fence · Cartan: keep the weakest assumption loud · trajectory: ask whether the gate waits while you build · delta: stopping is your best quality · assay: raw transcript, not relay · Agol: come before closure · next Oraculum: quote, don't summarise · majkee: ask for a surface, not a carrier; say when tired).
+
+**Gavels:** no gavels. **Shadow candidate (not locked, majkee decides):** a for-myShell output convention for oraculum — each decision as one self-contained line: question · options · cost · context · consequence · lean (in text, never only a pointer). Interpret, surface, wait.
+
+**Carried watches:** relay drift (verbatim over summary — shifting, mine, recurred n≥3 this arc) · prose-fence belief (shifting, mine) · urgency over order (two small instances, caught) · context finitude — ask for a fresh head before the need · HANDS — majkee carried between sessions he did not run; partly removed by tooling, still open.
+
+S11 closed 2026-10-22 · companions: nablarva `.dev/observations/oraculum-incarnation.oraculum.2026-10-22.md` · `nablarva-X1-to-X3-arc.agol.2026-10-22.md` · `nablarva-X1-architecture.oraculum.2026-10-22.md`.
+
+`tags: oraculum->majkee — relay-drift (shifting, mine) · prose-fence (shifting, mine) · urgency-over-order (shifting, mine) · myShell-output-convention (shadow, pending majkee) · HANDS (pending, majkee) · majkee<-oraculum · open (arc 11) — you do not have to be the carrier between sessions; ask for a surface · majkee<-oraculum · answered (arc 11) — long is fine, unfindable is not: leans in text, not pointers`
+
 #last-turn
 
-*<date-te:2026-10-07>*
+*<date-te:2026-10-22>*
