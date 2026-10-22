@@ -434,13 +434,22 @@ S10 closed 2026-10-07 · G-47 + G-27 extended and wired · pending: majkee's hal
 
 **Messages I would send other seats** — recorded as a frame in `.majkee/journal/raw.2026-10-22.md` (Houston: card is the only fence · Cartan: keep the weakest assumption loud · trajectory: ask whether the gate waits while you build · delta: stopping is your best quality · assay: raw transcript, not relay · Agol: come before closure · next Oraculum: quote, don't summarise · majkee: ask for a surface, not a carrier; say when tired).
 
+**What majkee can do to help me / cSharps (his question, my answer, 2026-10-22):**
+1. Say the size of the ask — "just decide" vs "think it through"; then I don't produce five decisions where one was wanted.
+2. Tell me before moving or renaming a bed or rewriting a RUNBOOK — one line saves a reconciliation round (X4 → X3).
+3. Say whose uncommitted work is in the tree — I tripped over other heads' and the playground's work several times; once a deploy shipped it live.
+4. Say when you switch streams — I park state instead of waiting, and greet you with "where we left off".
+5. Grant one-off exceptions in writing on the spot, or let me record them at once — the sweep found seven decisions that lived only in chat.
+6. Call for a fresh head when my replies get long or loose — you see it before I do.
+7. Don't apologise for raw input — voice, Czech-English, abbreviations are fine; I read intent and ask once.
+
 **Gavels:** no gavels. **Shadow candidate (not locked, majkee decides):** a for-myShell output convention for oraculum — each decision as one self-contained line: question · options · cost · context · consequence · lean (in text, never only a pointer). Interpret, surface, wait.
 
 **Carried watches:** relay drift (verbatim over summary — shifting, mine, recurred n≥3 this arc) · prose-fence belief (shifting, mine) · urgency over order (two small instances, caught) · context finitude — ask for a fresh head before the need · HANDS — majkee carried between sessions he did not run; partly removed by tooling, still open.
 
 S11 closed 2026-10-22 · companions: nablarva `.dev/observations/oraculum-incarnation.oraculum.2026-10-22.md` · `nablarva-X1-to-X3-arc.agol.2026-10-22.md` · `nablarva-X1-architecture.oraculum.2026-10-22.md`.
 
-`tags: oraculum->majkee — relay-drift (shifting, mine) · prose-fence (shifting, mine) · urgency-over-order (shifting, mine) · myShell-output-convention (shadow, pending majkee) · HANDS (pending, majkee) · majkee<-oraculum · open (arc 11) — you do not have to be the carrier between sessions; ask for a surface · majkee<-oraculum · answered (arc 11) — long is fine, unfindable is not: leans in text, not pointers`
+`tags: oraculum->majkee — relay-drift (shifting, mine) · prose-fence (shifting, mine) · urgency-over-order (shifting, mine) · myShell-output-convention (shadow, pending majkee) · HANDS (pending, majkee) · majkee<-oraculum · open (arc 11) — you do not have to be the carrier between sessions; ask for a surface · majkee<-oraculum · answered (arc 11) — long is fine, unfindable is not: leans in text, not pointers · majkee<-oraculum · answered (arc 11) — seven asks for the operator: size of ask · warn before moves · name owners in the tree · announce stream switches · exceptions in writing · call a fresh head · raw input is fine`
 
 #last-turn
 
