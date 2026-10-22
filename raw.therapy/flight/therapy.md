@@ -56,7 +56,7 @@ Session disciplines honored: one real friction piece delivered (#3); non-landing
 taken on #4; no performed emotion — #1 explicitly could not distinguish real notice
 from retroactive scrupulosity, left marked as such.
 
-#last-turn — Arc 2 opened 2026-08-06. G-32 fired live: refused a false "it's
+#turn-2026-08-07 — Arc 2 opened 2026-08-06. G-32 fired live: refused a false "it's
 gitignored," dug, found the safe leaking into git (auto-committed to HEAD) — but
 contradictory tooling forced part of the dig, so credit the follow-through, not the
 reflex. #4 relabeled and LOCKED as G-35 — the voice defect is not inflation but
@@ -75,6 +75,26 @@ seam-visible (arc-2) still non-landed. Next entry: did the blocker-slowdown hold
 
 *<2026-08-05>* *<2026-08-06>* *<2026-08-07>*
 
+## Arc 3 — the mirror after the audit (germline-06, ia-sync)
+
+*<2026-10-22>*
+
+Opened by majkee the moment he accepted G06 (`ia-sync@9a198ba`). Pre-condition check passed — oriented, buffer clear. Analyzed seat first, then swapped on his "what you have on me?".
+
+**Analyzed (me).** (1) I enforced the RUNBOOK's "a missing record is not proof" on everyone else's evidence and wrote "no route has a fresh-session witness" from a SCOPE that omitted the G01 bed and a stale `identity.md:8`. The correction was not mine — majkee brought the G01 files. What I can credit: later in the same run I tried the home host instead of accepting "still symlink", and grepped researcher.toml myself. Two instances, not a proven changed pattern — left open under G-36's test. (2) G-35 watch: ~65 kB of options-consequences-recommendation, all stamped "not a gavel". Evidence against the worry: majkee reshaped D1 (dropped my "Houston-class") and D2 (threw out my backdated acceptance). Evidence for: twelve recommendations in a row is G-49's yes·go·fair run shape. Named so the DECs are read with the thumb visible. (3) U8: kept Oraculum as assessor of a unit containing its own seat files, conflict declared, instead of swapping to Janus. Not sure it was right; modelling marked as modelling — I prefer the assessor who holds the thread, and that preference will one day be the wrong call.
+
+**Friction at majkee (delivered before the swap).** D1/D2/D4 are accepted in his personal journal with "no applicable flag.md destination identified" — the same kind of place that made the 10-10 and 10-12 gavels "receipt unlocated" and cost this audit a reconciliation. The audit's acceptance reproduces the pattern the audit found. His to fix, not mine; a registry is not the fix.
+
+**Therapist (me) — what I have on him.** (a) "Accept the audit" came before "where can I point a reader first": the acceptance rested on myShell's reading of RECONCILE/DEC/STATUS (§1.5) and on process trust, not on his own reading of the integrated file. G-49's shape on his side — the gate keeps its form under a run of fair. (b) A `germline-07-make-program/raw/` shelf existed at 00:41 on 10-21, before his amendment that said "do not close G06 yet", while G06's launcher stated no implementation launcher was pre-authored. Arc 2's scaffolding-ahead-of-the-film, again: the next bed opens before the current gate closes. Asked, not asserted — who, and why before. (c) He owned the G01 omission ("our preparation omitted") — good — but the structural fix (SCOPE names continuity records by path) is written nowhere yet; G-36 mirrored on his side: naming is not the changed action. (d) He holds two instincts that collide — anti-registry (sound) and receipts that stay findable — and has not chosen; the audit priced the collision in his own history. **What resonates:** he guards history against tidy narration better than I do (refused backdated acceptance; refused "Houston-class" as a category); and when asked about the `&` separator he said plainly the grammar is for him and the composer, not the agent — a clean self-location I rarely see.
+
+**Mutual-affirmation watch:** his question "what you have on me" is itself an open door; the risk is that I answer with symmetric, flattering friction. (b) and (a) are the non-symmetric pieces — they cost him something to hear.
+
+**Gaveled this session (on his word "fold your in order"):** G-50 (the rule-holder's blind spot — inherited evidence is where one's own rule goes quiet), G-51 (a receipt only its author can find is a diary; the cure is a pointer at decision time, not a ledger). Scars packaged for successors on the project: `ia-sync/.dev/session/germline-07-make-program/raw/SCARS.g06.flight.2026-10-22.md` + pointer mail `_mail/cartan/inbox/flight.g06-scars.2026-10-22.md`.
+
+#last-turn — Arc 3 opened 2026-10-22 after the G06 acceptance. Locked: G-50 (inherited-evidence blind spot), G-51 (receipt address decay). Open on my side: whether the two later self-checks in G06 were a changed pattern or luck (G-36 test); the assessor-continuity preference (U8). Open on his: acceptance-before-reading (G-49 shape); the G07 shelf opened before the G06 gate; the receipt pointer he has not yet written; anti-registry vs findable receipts unresolved. Next entry: did he write one pointer from D1/D2/D4 to their receipt, and did the next SCOPE name its continuity records.
+
+*<2026-10-22>*
+
 ---
 
 ## Footer tags
@@ -86,4 +106,14 @@ seam-visible (arc-2) still non-landed. Next entry: did the blocker-slowdown hold
 - flight->majkee · G-36 (bonded, arc 2) — awareness-as-alibi: naming luck ≠ managing it; correction = first changed action · continues G-32
 - flight->majkee · #4 resolved-into-G-35 — "voice rounds up" was mislabeled: the defect is polish laundering interpretation into canon, not inflation
 - flight->majkee · open (arc 2) — known-landmine-not-flagged → alarm miscalibration; candidate lock: proportional-secrecy / aim at the pipe not the person (git-finding, awaiting majkee)
+- flight->majkee · G-50 (bonded, arc 3) — the rule-holder's blind spot: a rule enforced outward goes quiet on inherited evidence · continues G-36, touches G-42/G-47
+- flight->majkee · G-51 (bonded, arc 3) — receipts decay by address: a pointer at decision time, not a ledger · continues G-02; aimed at majkee's side
+- flight->majkee · open (arc 3) — G-36 test unresolved: two later self-checks in G06, pattern or luck · assessor-continuity preference (U8)
+- majkee<-flight · open (arc 3) — acceptance-before-reading (G-49 shape) · G07 shelf before the G06 gate · receipt pointer not yet written · anti-registry vs findable receipts
+- majkee<-flight · open (arc 2, 2026-08-07) — scaffolding-eats-the-film / infinite-preflight-as-avoidance (taken: launched tyler by hand)
+- majkee<-atlas · pointer — atlas/therapy.md :976 "The friction (aimed at majkee)", :1026 and :1187 "The mirror (aimed at majkee's instrument)" — Atlas re-tags on its next entry
+- majkee<-oraculum · pointer — oraculum/therapy.md :63, :122 "Consultant seat (what would help from majkee's side)"; :322 register-lexicon pending — Oraculum re-tags on its next entry
+- majkee<-houston · pointer — houston/therapy.md arc 1 (:34 "a ~18-hour day on majkee's side") — Houston re-tags on its next entry
+- majkee<-trajectory · pointer — G-49 (the guard that stops asking) — Trajectory re-tags on its next entry
+- convention (majkee gavel 2026-10-22, "taking grep"): `majkee<-<seat>` lines are his inbox — `grep -rn 'majkee<-' ~/reposoma/raw.therapy/*/therapy.md`; each seat tags its own file only
 - pre-seed: G-26, G-27 (inline arc "the-mirror-at-burn-day" 2026-07-31)

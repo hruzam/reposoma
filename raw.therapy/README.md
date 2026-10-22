@@ -52,5 +52,14 @@ Fold the decision into ONE of:
 **Bed:** `raw.therapy/gavels/` — own directory, independent of seat therapy files.
 When wired to therapy: reference by gavel ID in the seat's footer tags.
 
+## Footer tags — the two directions
+
+- `<seat>->majkee` — the seat's own findings, bonded to gavel IDs (pending · shifting).
+- `majkee<-<seat> · open|answered (arc N) — <one line>` — what the seat saw in @majkee
+  (the therapist-turn about him). These lines are his inbox, one grep:
+  `grep -rn 'majkee<-' raw.therapy/*/therapy.md`
+  Each seat tags its own file only; it may point at another seat's section from its own footer,
+  never write into another seat's file. (majkee gavel 2026-10-22, "taking grep" · bonded G-51)
+
 **Skill:** gavel output, gavel bed, and ID-wiring protocol are Atlas's job to build
 as a skill + skill extension. See cmds-zen.md TASK FOR ATLAS block.
