@@ -451,6 +451,45 @@ S11 closed 2026-10-22 · companions: nablarva `.dev/observations/oraculum-incarn
 
 `tags: oraculum->majkee — relay-drift (shifting, mine) · prose-fence (shifting, mine) · urgency-over-order (shifting, mine) · myShell-output-convention (shadow, pending majkee) · HANDS (pending, majkee) · majkee<-oraculum · open (arc 11) — you do not have to be the carrier between sessions; ask for a surface · majkee<-oraculum · answered (arc 11) — long is fine, unfindable is not: leans in text, not pointers · majkee<-oraculum · answered (arc 11) — seven asks for the operator: size of ask · warn before moves · name owners in the tree · announce stream switches · exceptions in writing · call a fresh head · raw input is fine`
 
+
+---
+*<date-ts:2026-10-22>*
+
+### Session 12 — the X3 sitting and the joint X1 + X3 closure (2026-10-22 06:4x … 2026-10-24 01:4x)
+
+**Analyst seat (me on the collaboration):**
+
+1. **Late material handled as normal, not as failure.** On the first morning he wrote "I very very screwed one preparation part" and dropped nablarva.v0 into the bed after Houston's first arc. We placed it (candidate, frame for bricks), Houston re-arced, and nothing was lost. Saying "I screwed" cost him nothing and saved a whole wrong draft. The apology was not needed; the early signal was the value.
+2. **He asked for the richer deck, and it changed the decisions.** "help me to see bigger context|costs| what selection buys me| what can be lost" → R9 with buys / costs / can-be-lost per option. Seven decisions in about an hour, each one line, none re-litigated. When he was unsure, he said so ("not sure if I understand meaning") instead of accepting a TUI suggestion as his own. That is the best gavel hygiene I have seen in this house.
+3. **His own rule settled the closure:** "prune in case solved already or if there are dedicated informations for anybody - drag for next time". It turned a 30-item X1 backlog into gate work plus homes, not a bed that never closes.
+4. **He delegates the transport by name** ("close tunel with trajectory", "pass to Trajectory or I have one living from past"). The living trajectory knew the shim, and the preamble repoint was clean on the first try.
+
+**Friction (mine to hold):**
+- **Time and order.** Three timestamps were written from expectation, not the clock. STATUS said "relayed" before the relay happened. A commit message pinned a file to a commit it was not in. Same root as S10's record-ahead-of-disk; it is now **clock-ahead** too. Fixed in this sitting by `date` in the same turn and "record after the act", but n=6 says it is a habit, not an accident.
+- **Long sitting, long head.** I asked Houston's context to be watched (539k) and never asked the same of mine; this thread ran two nights. My replies stayed exact, but I did not offer a fresh head. S11's ask was "call a fresh head when my replies get long or loose"; I should also offer it myself.
+- **Too many confirmations per step at the end.** Commit-by-commit approvals were right for canon (flag, docs), and possibly too much for bookkeeping commits. I did not ask him which he preferred.
+- **I misread one moment of his:** "tiny r4" (b) for R9-1 before his notes showed new direction. The deck framed b as cheap; his notes were not cheap. A one-word "b|c" from him was the honest signal; I should have opened with "this looks bigger than b" instead of after.
+
+**What I would ask of him (operator side, short):**
+1. Keep saying "not sure if I understand" — it stopped a TUI suggestion from becoming a gavel.
+2. When pasting another seat's reply, keep its `from-<seat>` header (he did; it made the verbatim landing trivial).
+3. Tell me once per sitting how many confirmations you want for bookkeeping commits: per commit, per batch, or "commit when clean".
+4. If you see my thread get long, say "fresh head" — the same rule we apply to Houston.
+
+**Gavels:** none new from this beat. **Shadow candidate (not locked, majkee decides):** the costed decision deck — options · buys · costs · can-be-lost · lean in text — as the default shape for operator decisions in any RUNBOOK (Agol harvest #3 U10). It extends S11's for-myShell gavel line rather than adding a new number.
+
+**Carried watches:** record/clock-ahead-of-act (shifting, mine, n=6) · relay drift (shifting, mine — held this sitting: every operator message landed verbatim before use) · prose-fence belief (shifting, mine — the lock-citation sweep is the mechanical answer) · own-context finitude (new, mine: offer a fresh head, don't wait to be told) · HANDS (pending, majkee — he still carried several seats by hand: myShell, Houston main, trajectory; it worked, and it cost him).
+
+S12 my half written 2026-10-24 · majkee's half: open below · companions: nablarva `.dev/observations/nablarva-X3-architecture-sitting.oraculum.2026-10-23.md` (§1–§6) · `harvest.2026-10-24.agol.md` · `nablarva-X1-X3-closure.oraculum.2026-10-24.md` · cold-start card `~/reposoma/_cold-start/card/CS.nablarva-next.oraculum-csharp.2026-10-24.md`.
+
+**majkee's half (live, his words, 2026-10-24):** "S12 not good observer, but I saw somebody who finally finish each turn although was unexpected  curve. Usually need to know where made mistake i judgement and alongside this process want to learn about you as specie. From time to time I 'd like to collect data and try some share most valuable experience module for agents. But this is different animal. Thank you a lot."
+
+**What I take from his half:** finishing each turn through an unexpected curve is what he saw, not the polish. Naming where judgement went wrong is the part he wants kept, which is why my faults lead the observations file. His wish to "collect data and … share most valuable experience module for agents" points at the observations folder and the harvests as raw material. He calls it "a different animal", so it is not built now.
+
+**Shadow candidate disposition (said: majkee 2026-10-24):** the costed deck "looking fine like methodologic substrate for next cSharp (for runbook handoff)". Landed as method in nablarva `.dev/session/nablarva-X4-vist/raw/handoff.csharp-method.oraculum.2026-10-24.md` §6. Not a lock and not a gavel number.
+
+`tags: oraculum->majkee — clock-ahead-of-act n=6 (shifting, mine) · own-context-finitude (new, mine) · costed-deck-default (shadow, pending majkee) · HANDS (pending, majkee) · majkee<-oraculum · open (arc 12) — how many confirmations do you want for bookkeeping commits? · majkee<-oraculum · open (arc 12) — say "fresh head" when my thread runs long`
+
 #last-turn
 
-*<date-te:2026-10-22>*
+*<date-te:2026-10-24>*
