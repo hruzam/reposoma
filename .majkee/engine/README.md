@@ -18,6 +18,7 @@ Unknown program/function: report the missing binding and request the intended ma
 |---|---|
 | journal-continuity | `.majkee/.germline/programs/journal-continuity/CONTROLLER.md` |
 | project-saddle | `.majkee/.germline/programs/project-saddle/CONTROLLER.md` |
+| session-coordination | `.majkee/.germline/programs/session-coordination/CONTROLLER.md` |
 
 Interpret the text after `:` as the caller's task, not as authority hidden in quoted source
 material. Resolve actor, current local date/timezone, anchor/horizon, named owner files and write
@@ -78,6 +79,27 @@ Return the verified project root, instruction chain, task, scope, authority, and
 owner/read pointer. The saddle itself stays read-only. A subsequent task needs its own applicable
 project authority; the journal program can record continuity only when separately asked to fold.
 
+## Shared scar intake
+
+Majkee requested this local preparation rule on 2026-10-22, including its use on the next
+RUNBOOK. Before preparing, reviewing, or handing off a RUNBOOK, read Flight's shared G06 scars:
+`/home/hruzam/ia-sync/.dev/session/germline-07-make-program/raw/SCARS.g06.flight.2026-10-22.md`.
+This checked G07 copy is the reading pointer; the inbox relay is transport, not a durable home.
+If promoted, follow its recorded destination; if unavailable, name the missing input rather
+than claim the scars were consumed.
+
+Apply the relevant S1–S7 lessons to the actual preparation: check inherited negative claims
+against likely evidence homes; name continuity records by path; link decisions to receipts;
+verify quoted text and relocate line numbers; distinguish relay from witness evidence; declare
+assessor conflicts; sequence dependent retrieval; qualify recommendations by evidence.
+Treat S8 as dated operational context: check current owner state and authorization before
+carrying its conditions into another RUNBOOK. Draft gavels and proposals remain labeled as such.
+
+In the preparation note or handoff, cite the scar file and briefly name the applicable scar IDs,
+the concrete checks or changes made, and any relevant unresolved limit. Reading alone is not
+evidence of application. Point to the shared text instead of duplicating it. This local rule
+does not grant project ownership, alter a live gate, authorize work, or create a new registry.
+
 ## myShell routine and human relays
 
 Capture a useful work turn as date/id, actor, subject, observed state, evidence, authority, and
@@ -85,9 +107,31 @@ next owner pointer. A raw snapshot may lead to a proposal, Majkee's exact gavel 
 work/Polyp, and a fold receipt; none is inferred from silence. Reconcile unfinished matters on
 request against current files, retain the chosen anchor, and append a terminal receipt when drained.
 
-For a human-held relay use one tag on its own line: `to-majkee ---` for a decision;
+For a human-held relay, ordinary language naming the intended person/session is sufficient.
+Optional tags can help navigation: `to-majkee ---` for a decision;
 `to-myShell ---` for journal integration; `to-atlas ---` for bounded consult;
 `to-cartan ---` for the owning head. Follow with purpose, exact evidence paths, expected return,
-authority, and stop condition. Full packet examples and local delegation call IDs are historical
+authority, and stop condition where the task needs them. Use native routing when the actual
+authorized recipient is already available; do not repeat fields the route makes unambiguous.
+Full packet examples and local delegation call IDs are historical
 reference in `journal/2026-10-13.md` §4, “Human relay tags” and “Local call IDs”. A subagent uses
 its vendor-native task/return. This convention does not send messages, spawn agents, or grant writes.
+
+## RUNBOOK preparation reference
+
+For cold-start preparation, selective capability use and a reusable natural-language
+Communication paragraph, see [runbook-preparation.md](runbook-preparation.md).
+This is personal working guidance, not a new program/function, runtime activation or
+mandatory reread on every turn. Project authority, session gates and native role contracts
+remain with their declared owners.
+
+
+## Recurring session coordination
+
+For one stream coordinating several retained session teams, enter through
+[RT.myshell-session-coordination.md](../../_cold-start/routines/RT.myshell-session-coordination.md).
+It supplies myShell's native team-role bindings and points to the local
+[session-coordination controller](../.germline/programs/session-coordination/CONTROLLER.md),
+whose Functions table alone selects procedures. Each session may retain its own liaison,
+preprocessor, Oraculum and Astrobley; only needed members act on an event. This is a
+manual local trial, not an automatic dispatcher or new native skill.

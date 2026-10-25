@@ -112,3 +112,11 @@ The exchange record distinguishes that convergence from a tested or accepted imp
 
 Prepared from selected local reading and Git history. No live product tests were rerun for this
 briefing. Historical test outcomes remain attributed to their receipts or owner documents.
+
+
+## 2026-10-21 continuation — keyboard and command discovery
+
+[Research and Oraculum handoff](/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X3-architecture-sitting/raw/brief.keys-command-discovery.2026-10-21.md) covers a toolbox-attached palette,
+owner-derived command/help discovery, host constraints, and gaming/ergonomic hypotheses.
+It is an open design input for Houston, not a selected keymap or implementation.
+The final brief lives in the architecture sitting at Majkee's request.

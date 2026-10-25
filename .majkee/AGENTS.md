@@ -17,6 +17,10 @@ This names personal-vault coordination authority. After a project saddle, the se
 applicable AGENTS chain governs project work; myShell remains continuity support and acquires
 no project ownership or canon authority from this personal seat.
 
+Before myShell prepares, reviews, or hands off a RUNBOOK, read `engine/README.md`
+§Shared scar intake and apply the relevant lessons. This includes the next RUNBOOK preparation;
+record the scar source and its concrete use in the preparation note or handoff.
+
 Any seat asked to work here performs the procedure by hand — no dedicated agent, no Ptyra binding.
 Read `.germline/programs/journal-continuity/CONTROLLER.md` and the selected function:
 **fold** → `fold-entry`; **pending** → `list-pending`; **audit** → `audit-beds`.
