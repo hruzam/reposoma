@@ -142,7 +142,7 @@ the live Houston consult card/Codex binding. The earlier consumer account proves
 fold-entry use; it does not prove all functions, automatic loading or compaction retention.
 
 Flight's source is
-/home/hruzam/ia-sync/.dev/session/germline-07-make-program/raw/SCARS.g06.flight.2026-10-22.md.
+/home/hruzam/ia-sync/.dev/observations/germline.scars.g06.flight.2026-10-22.md.
 Applied here: S1/S2 owner/evidence and receipt pointers; S3 direct checking of the Houston
 contract; S4 separation of review from runtime proof; S5 both advisers' conflicts declared;
 S6 Oraculum proposal and communication addendum completed before Astrobley's critique;

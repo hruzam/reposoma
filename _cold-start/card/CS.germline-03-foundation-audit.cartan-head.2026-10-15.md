@@ -20,11 +20,11 @@ pointers:
   - ~/reposoma/.majkee/.germline/programs/journal-continuity/CONTROLLER.md
   - ~/ia-sync/.dev/session/germline-03-foundation-audit/raw/INPUTS.from-germline-02.md
   - ~/ia-sync/.dev/session/germline-03-foundation-audit/raw/SUBSTRATE.atlas.from-germline-02-close.2026-10-15.md
-  - ~/ia-sync/.dev/session/germline-02-guide-model-law/STATUS.md
-  - ~/ia-sync/.dev/session/germline-02-guide-model-law/raw/GAVELS.program-guide-law.md
-  - ~/ia-sync/.dev/session/germline-02-guide-model-law/raw/FINAL-ACCEPTANCE.majkee.program-guide-law.md
-  - ~/ia-sync/.dev/session/germline-02-guide-model-law/raw/REVIEW.atlas.program-guide-law.md
-  - ~/ia-sync/.dev/session/germline-02-guide-model-law/raw/CHECKPOINT.cartan.program-guide-law.md
+  - ~/ia-sync/.dev/records/germline/2026-11-03/germline-02-guide-model-law/STATUS.md
+  - ~/ia-sync/.dev/records/germline/2026-11-03/germline-02-guide-model-law/raw/GAVELS.program-guide-law.md
+  - ~/ia-sync/.dev/records/germline/2026-11-03/germline-02-guide-model-law/raw/FINAL-ACCEPTANCE.majkee.program-guide-law.md
+  - ~/ia-sync/.dev/records/germline/2026-11-03/germline-02-guide-model-law/raw/REVIEW.atlas.program-guide-law.md
+  - ~/ia-sync/.dev/records/germline/2026-11-03/germline-02-guide-model-law/raw/CHECKPOINT.cartan.program-guide-law.md
   - ~/reposoma/_cold-start/issues/ISS.germline-02-deferred-measurement.2026-10-15.md
   - ~/reposoma/_cold-start/card/CS.atlas-germline-tails.2026-10-03.md
   - ~/ia-sync/codex/agents/houston.toml

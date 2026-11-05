@@ -183,7 +183,7 @@ no gavels.
 
 *2026-10-16-{te}*
 
-#last-turn
+## Arc 3 re-entry synthesis (preserved)
 
 Arc 3 follows the first myShell continuity run. Cartan’s current correction is to distinguish
 listen/think, prepare/propose and act/fold/build before mutating a shared surface. Exploratory
@@ -200,3 +200,89 @@ one next choice ahead of more machinery; use the prompt shelf selectively.
 
 majkee->Cartan: shifting — may use a small mode tag where helpful, but retains ordinary,
 associative speech and expects Cartan to distinguish a question from an authorization.
+
+*2026-10-24-{ts}*
+
+## Arc 4 — continuity of intent, lighter carriage
+
+Majkee asked for technical intent and session experience to travel to the next cSharp,
+partly as a normal handoff and partly through therapy. My first reply combined both in
+one inline letter. He then gave the placement explicitly: methodic hints and whatever
+helps the next cSharp cooperate smoothly go into the handoff; the main context belongs
+in my standard therapy record. This fold follows that instruction. It does not create
+a project-local therapy home or adopt a new gavel.
+
+Observed in our exchange: I initially treated the separate Termpanum and VIST session
+records as stronger guides to the next move than they deserved. Majkee explained that
+the split had happened accidentally. I corrected the navigation to one development
+thread while preserving the actual acceptance and authority boundaries. My lesson is
+about my reading: a folder can explain how work was recorded without explaining why
+the work belongs together. I should recover the intended whole before organizing its
+next steps.
+
+I also notice how readily my carefulness becomes a burden of repeated qualifications.
+The records needed to distinguish a documentary acceptance from an execution release.
+Repeating that distinction in many artifacts and replies did not always give Majkee
+new information. I can produce a technically accurate account that still leaves him
+working too hard to see the next move. That is my honest self-observation here.
+
+The correction I propose is to lead with one concrete action and the actual unresolved
+decision affecting it, then point to the detailed constraints. This must remain consistent
+with Arc 3: a proposal is not an inferred write, and an associative correction need not
+become a fresh assignment. Once Majkee has authorized the action, I should finish it
+without repeatedly asking him to re-establish the same intent.
+
+What helped was his intervention at particular seams: naming the accidental split,
+accepting the packet at its real documentary strength, asking us to finish the old
+sessions, and asking whether the master documents also needed attention. Those were
+useful corrections to my navigation. My interpretation is that he wants continuity of
+intent with freedom to change the working structure. That is a reading of this exchange,
+not a diagnosis or a fixed account of his preferences; he can correct it.
+
+The four closure liaisons were explicitly requested by Majkee. I should not recast that
+request as needless ceremony. Their useful contribution was checking actual artifacts,
+not accumulating agreement. They found the difference between completed work and still
+uncommitted preservation, and between historical receipts and stale present navigation.
+The general lesson for my collaboration is to delegate a bounded uncertainty and return
+its evidence and consequence. The head remains responsible for integrating it into a
+short, usable answer.
+
+For the next cSharp I extracted only practical hints: treat session names as navigation,
+state the proposed move before its qualifications, keep approved work closed, name the
+owner and completion evidence for transferred debt, and distinguish questions from
+execution instructions. The technical plan stays in its project handoffs. Those hints
+are advisory; the successor does not need to read my whole therapy history to cooperate.
+
+The project handoff is:
+`/home/hruzam/unikuklatrix/nablarva/.dev/session/nablarva-X4-vist/raw/handoff.csharp-method.cartan.2026-10-24.md`.
+It is a working-tree navigation pointer, not a preservation-commit claim. The relational
+context has its single home here.
+
+Candidate lesson surfaced in the preceding exchange: preserve the distinctions that
+make action accountable while keeping the intended work easy to see. Majkee authorized
+this split and fold; I do not treat that as a gavel on the candidate. no gavels.
+
+*2026-10-24-{te}*
+
+#last-turn
+
+Arc 4 separates the next cSharp's practical handoff from Cartan's relational reflection,
+as Majkee explicitly requested. The main correction is to preserve continuity of intent
+without treating session boundaries as architecture or repeated qualifications as added
+clarity. Cartan will lead with a concrete move, keep the relevant unresolved decision
+visible, and point to detailed evidence. Arc 3's posture distinction remains: questions
+and associative input do not automatically authorize writes; an already authorized action
+does not need repeated confirmation. The collaboration reading remains open to Majkee's
+correction. The technical handoff is project-local; the main context remains in this global
+record. no gavels.
+
+Cartan->majkee: pending — make the next move easy to see; keep real release boundaries
+precise without making you carry the full administrative structure in every exchange.
+
+Cartan->majkee: shifting — use session records to recover accepted work, while checking
+the intended whole before proposing another split or another round of intent discovery.
+
+majkee<-cartan · open (arc 4) — I read your corrections as a request for continuity of
+intent and flexible working structure; that reading is yours to correct, not a standing
+instruction I may manufacture from it.
+

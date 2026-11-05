@@ -1,0 +1,5 @@
+# Phone originals and derived image/OCR previews remain local.
+/media/
+/private/
+__pycache__/
+*.pyc

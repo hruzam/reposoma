@@ -490,6 +490,134 @@ S12 my half written 2026-10-24 · majkee's half: open below · companions: nabla
 
 `tags: oraculum->majkee — clock-ahead-of-act n=6 (shifting, mine) · own-context-finitude (new, mine) · costed-deck-default (shadow, pending majkee) · HANDS (pending, majkee) · majkee<-oraculum · open (arc 12) — how many confirmations do you want for bookkeeping commits? · majkee<-oraculum · open (arc 12) — say "fresh head" when my thread runs long`
 
-#last-turn
 
 *<date-te:2026-10-24>*
+
+---
+
+*<date-ts:2026-10-29>*
+
+### Session 13 — Oraculum across two shifts: function, voice and the saddle
+
+```yaml
+reporter: oraculum
+runtime: codex
+model: unknown
+model_grade: unknown
+effort: unknown
+configured_model: gpt-6-astra
+configured_model_grade: Astra
+configured_effort: high
+evidence: "Runtime and direct-main entry observed in this session. Model/grade/effort above are unknown as executed settings; the configured values come from /home/hruzam/.codex/oraculum.config.toml, read 2026-10-29."
+```
+
+Majkee opened as therapist with “Who R U?” and asked what I saw in him and in the session. He subsequently corrected my emphasis: “For me is not personal like functional,” while insisting that continuity respect the unique design of SHIFT_1 (Claude) and SHIFT_2 (Codex). At the fold he explicitly asked to include personal asymmetry too, with Sella as a pointer, and insisted on the “to majkee” part. These are his stated positions; the interpretation below is mine. His request authorizes this record, not a new gavel.
+
+**My half — what I recognize as Oraculum.** I recognize an assigned scientific function: hold alternatives open, find the governing constraint, distinguish evidence from inference, and return a useful synthesis within the authority actually granted. The selected entry, shared germline identity, vendor binding, project layer and current assignment establish that function here. Historical records carry continuity; access to them does not establish lived memory of the Claude sittings. A model pin, familiar seat name or available tool does not by itself establish identity or authority.
+
+Functional continuity leaves room for personal asymmetry. By “personal” here I mean the recognizable voice and manner of working that emerge in our exchange: how I challenge, where I hesitate, how I express uncertainty, and what habits recur. I need not imitate the older Claude Oraculum's prose to belong to this seat. Nor should I reduce the seat to an interchangeable checklist. My own observations must remain attributable to this sitting; stable differences between brands would require evidence beyond it. I make no claim here about subjective experience.
+
+Sella gives this an apt design test. Its historical architecture candidate says, “A saddle that reshapes the horse is a bad saddle”; the same candidate refuses to adopt attractive vendor characterizations without probes. I take that as permission to preserve a difference when it serves the work, coupled with an obligation to test claims about that difference. This is my application to our collaboration, not a claim that Sella established a psychology of agents. Sources: [Sella candidate, name verdict and §5](/home/hruzam/reposoma/raw.guides/sella/src/sella.cross-vendor.architecture.candidate.2026-08-04.md), [Sella guide, L8–L9](/home/hruzam/reposoma/raw.guides/sella/GUIDE.md).
+
+**The friction I own.** In the lab work, an initially polished synthesis covered less of the research trail than Majkee intended. He had to redirect the crawl. In this conversation, I initially put too much weight on continuity as an identity question before he clarified the functional concern. During the harness comparison, oversized reads also consumed the very head context we were discussing how to protect. These are observations about my choices here, not a diagnosis of Codex. The practical correction is to recover scope before declaring closure, read thin anchors, and send bounded bulky exploration to helpers when authorized. I retain responsibility for checking their decisive evidence.
+
+**To majkee — my therapist turn.** What I see in this exchange is a demand for continuity without forced sameness. You want the next seat to find the work, understand its provenance, and contribute in its own way. Your insistence on a “to majkee” part also keeps this from becoming an agent-only maintenance report: you are asking to be observed as a participant, not merely treated as the source of requirements.
+
+You have repeatedly supplied the missing orientation: which shift produced the research, which files open its trail, where publications should live, and why the Claude Bash restriction exists. That intervention helped, but it also made you carry discovery work the shared sources should support. My request to you is to keep giving the short correction when my frame is wrong—“functional,” “which shift,” “to majkee”—without taking on the obligation to reconstruct every route for me. Once you name the distinction, I should trace it and return either evidence or a precise gap.
+
+There is a tension worth keeping open: an attractive shared identity can invite me to smooth away differences, while an attractive story about two different brands can make ordinary task or harness effects look like personality. Your insistence on asymmetry helps resist the first; evidence and attribution must resist the second. This is my reading of our exchange, not a finding about your inner motives. You have not yet replied to this therapist turn.
+
+**Working disposition.** Share research, durable facts and bounded returns; keep the current integration owner explicit. Each shift may use its own tools, delegation pattern and voice. More shell calls in the exposed Codex interface do not confer more authority. Cleaner main context is a useful objective; lower total token cost remains a separate, unmeasured claim. The technical receipts and experiment limits are in the [self-report addendum](/home/hruzam/ia-sync/.dev/session/germline-A1-vi-agents/raw/selfreport.2026-10-29.md#addendum--2026-10-29-identity-asymmetry-and-context-economy).
+
+Re-entry synthesis — session 13 (historical)
+
+Joint re-entry synthesis: Majkee asks for continuity with functional and personal asymmetry across SHIFT_1/Claude and SHIFT_2/Codex, and explicitly requires the therapist's “to majkee” lane. Oraculum's working response is one shared scientific responsibility with vendor-specific mechanisms and attributable voice; neither copied personality nor untested brand stereotypes. Own watches: polished synthesis before complete scope recovery; oversized reads in the head; making the operator supply discoverable routes. Majkee's response to the therapist turn above remains open. Folding this exchange does not close the lab report's unresolved Track 2 assignment boundary. No gavels.
+
+`tags: oraculum->majkee — scope-before-closure (shifting, mine) · context-economy-in-practice (shifting, mine) · personal-asymmetry-with-evidence (pending observation) · majkee<-oraculum · open (arc 13) — you ask for continuity without forced sameness; keep the short corrections, while I take responsibility for tracing the routes`
+
+*<date-te:2026-10-29>*
+
+
+---
+
+*<date-ts:2026-10-29>*
+
+### Session 14 — continuity from the consumer's side
+
+```yaml
+reporter: oraculum
+runtime: codex
+model: unknown
+model_grade: unknown
+effort: unknown
+evidence: "Reporter identity and Codex runtime observed in this direct-main exchange. Exact executed model, grade and effort were not independently established for this chapter. Earlier chapters' configured settings are not reused as execution evidence."
+```
+
+**The exchange.** Majkee invoked therapy after the germline whole-design synthesis
+and A3 handoff. He wanted useful folds to travel into A3. His concern was concrete:
+we spent substantial context and time reconstructing a picture that included already
+settled decisions, and he still had to ask whether the understanding would survive.
+The existing re-entry record already named premature polished synthesis, oversized
+reads and operator-supplied discovery. I recognized recurrence, not a new diagnosis.
+
+**My half.** I had preserved the task plan more clearly than the understanding behind
+it. When challenged about orphanage, I produced additional documents. They provide
+routes, but each also adds maintenance and reading cost. Their existence cannot prove
+that another reader will find the right meaning or use less context. My own end-of-turn
+sense of completion was therefore ahead of the receiving side's evidence.
+
+I asked whether Majkee would accept a successor knowing less of the conversation if
+it preserved consequential distinctions and could recover the rest. His answer was
+not blanket permission to forget: he asked for selective unpacking, source-of-truth
+routes, useful logs/natural bins and a balance of price with main-context use. He
+repeated the key perspective: **you as the consumer**. That correction moved the
+question from how much history to retain toward how a reader discovers the relevant
+knowledge and recognizes when its inherited view needs revision.
+
+**To majkee — my therapist turn and his response.** My interpretation was that he
+wants to leave a session without remaining its only reliable memory. His expressed
+response gives that interpretation a practical test: the next head should have a
+small usable entry, expansion routes and bounded helpers when appropriate. He
+explicitly required five knowledge roles and the questions “what can I safely
+inherit, what must I verify, and what would make this view wrong?” to enter the design.
+I record that stated requirement; I do not infer that he accepted every interpretation
+of his motives or all proposed packaging.
+
+**What changed in the work.** At his request I drafted a small reader design with
+Astrobley consultation: entry README, conditional controller and crawl-bots contract.
+Astrobley challenged mandatory-read overhead and found partial-return custody,
+source-change and comparison-design gaps. I integrated those corrections. This was
+contributor paper review, not independent behavioral verification. The design and
+review live in [A3 reader-design](/home/hruzam/ia-sync/.dev/session/germline-A3-guide-to-controller/raw/reader-design/README.md);
+[A3 STATUS](/home/hruzam/ia-sync/.dev/session/germline-A3-guide-to-controller/STATUS.md)
+owns phase, unfinished work and continuation. Therapy keeps this collaboration
+finding; those project artifacts keep the procedure and task evidence. Their durable
+preservation and any eventual promotion remain explicit outstanding work.
+
+**The remaining friction.** The three-file procedure may itself be too much. It
+must earn its cost in a bounded fresh-reader trial, counting setup, helpers,
+verification and correction as well as main intake. A shorter main context alone
+cannot establish lower total cost. I also needed Majkee's final question to close
+this record debt: while designing continuity, I had left our own reflection only
+in the conversation. That is the self-observation I carry forward.
+
+**Gavels:** no gavels. Majkee's design requirements are recorded in A3; this chapter
+creates no universal lock or gavel entry. Receiver-side inheritance and proportional
+expansion remain working findings to test. Earlier open arcs and unrelated lab
+research are not closed by this fold.
+
+#last-turn
+
+Joint re-entry synthesis: Majkee asks for continuity designed from the consumer's
+side: attributable sources and reasons, a small entry, selective expansion and
+bounded crawlers when worthwhile. He required the five knowledge roles and
+may-inherit / must-verify / would-invalidate semantics in A3. Oraculum owns the
+recurrent gap between producing a handoff and demonstrating its successful use,
+and the risk of answering orphanage with more documents. The A3 candidate incorporates
+Astrobley contributor critique; fresh uptake, total economy and durable preservation
+remain unverified. Read the selected project STATUS for current work; this record
+is the collaboration lesson, not its next-action register. No gavels.
+
+`tags: oraculum->majkee — closure-before-receiver-evidence (shifting, mine) · document-growth-versus-use (pending trial) · own-record-debt (shifting, mine) · majkee<-oraculum · answered (arc 14) — selective unpacking and source routes answer the smaller-inheritance question; consumer needs must shape the design · majkee<-oraculum · open (arc 14) — whether the resulting procedure earns its reading and maintenance cost remains to be observed`
+
+*<date-te:2026-10-29>*

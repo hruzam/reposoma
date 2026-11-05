@@ -1,0 +1,2896 @@
+{
+  "review_date": "2026-11-03",
+  "window_start": "2026-10-28",
+  "window_end": "2026-11-03",
+  "verification_scope": "Primary pages checked where cited; no independent reproduction, tool installation, network scan or credential retrieval.",
+  "items": [
+    {
+      "id": "TC01",
+      "intake": "2026-11-03",
+      "theme": "ai-foundations",
+      "title": "Attention and transformer visual explanations",
+      "captured_from": "Pham Tấn Hạnh; Graduateml",
+      "capture_dates": [
+        "2026-10-28",
+        "2026-10-29"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "Animations introduce embeddings, attention scores, softmax, context vectors and transformer blocks.",
+      "assessment": "Useful conceptual reference. A few video frames do not establish the full derivation; the post promising a path to ChatGPT in seconds is an illustration, not a training recipe.",
+      "next": "Keep; reproduce a tiny attention calculation before treating the diagrams as a tutorial.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S001",
+          "file": ".pending-1793830992-Screenshot_2026-10-28-23-23-12-064_com.facebook.katana.jpg",
+          "sha256": "50c85aa9588b72f763e773fe7aa209d5d0b3f61c6c2dfd7ec3875d3462d9ca55",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S002",
+          "file": ".pending-1793834337-Screenshot_2026-10-29-00-18-57-149_com.facebook.katana.jpg",
+          "sha256": "f9dffe1dd1b716b0c832bd81eb27a33eb5fc85fde872d30285c1362b08805885",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S046",
+          "file": "Screenshot_2026-10-28-23-22-21-946_com.facebook.katana.jpg",
+          "sha256": "5055a63cdb061ac5de4e877ec3a0fff56da376e2c81085876addb06a1396bf91",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S047",
+          "file": "Screenshot_2026-10-28-23-22-37-522_com.facebook.katana.jpg",
+          "sha256": "52b6f11583fe7592e870bd8652596d17b0d889954d8a97b170f19fd4720050b4",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S048",
+          "file": "Screenshot_2026-10-28-23-23-19-791_com.facebook.katana.jpg",
+          "sha256": "c6b5bf1879179cd3d8d7fd58b7e3ed30e879a10a683a393e759f147d3e55f14e",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S049",
+          "file": "Screenshot_2026-10-28-23-23-23-257_com.facebook.katana.jpg",
+          "sha256": "7f22d462bcc5aadc54070b6494cd93c7fc75627f18b703ad35f278ea716a7d39",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S050",
+          "file": "Screenshot_2026-10-28-23-23-25-519_com.facebook.katana.jpg",
+          "sha256": "435bde11c337e66b83081ae80cd7ab0d3177fe7420a8ab2def3e2c59cd1c805e",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S051",
+          "file": "Screenshot_2026-10-28-23-23-32-249_com.facebook.katana.jpg",
+          "sha256": "2b5ba8fb445c0557b088fa680b81c7a546080f3e76aaec5b2ef7fbd0ebbdbf4c",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S052",
+          "file": "Screenshot_2026-10-28-23-23-34-980_com.facebook.katana.jpg",
+          "sha256": "0b8d8776ecda55ff8866f49429f58ff80c82e0d8ab2292a581d7a7c14695dc84",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S053",
+          "file": "Screenshot_2026-10-28-23-23-40-109_com.facebook.katana.jpg",
+          "sha256": "e651017118893ba5cfd00b677286c7f7e8935ddfa37bcb04af00ff91c33e357c",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S057",
+          "file": "Screenshot_2026-10-29-00-19-01-952_com.facebook.katana.jpg",
+          "sha256": "19efe2f2f4774dbc9ce846ebcda1cfba275f207bac5f6f954e418f629785bacd",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/ai-foundations.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC02",
+      "intake": "2026-11-03",
+      "theme": "ai-foundations",
+      "title": "Recommendation systems",
+      "captured_from": "Between The Tokens",
+      "capture_dates": [
+        "2026-10-29"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "An animated simulation illustrates how recommendations learn from viewer choices.",
+      "assessment": "Toy data and displayed accuracy describe the demonstration; they do not explain a specific commercial recommendation system.",
+      "next": "Keep for learning; make a small recommender and measure held-out ranking quality.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S054",
+          "file": "Screenshot_2026-10-29-00-10-50-529_com.facebook.katana.jpg",
+          "sha256": "fba1b322e5a0d383dc7b4bbdb34f5aabe6e9e4bdc55bae735a384520a44d34ee",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S055",
+          "file": "Screenshot_2026-10-29-00-11-12-368_com.facebook.katana.jpg",
+          "sha256": "cc7fdc2cbc6f367940961c4460794e1b92768b88f961c910c352e109ae42415b",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S056",
+          "file": "Screenshot_2026-10-29-00-11-36-065_com.facebook.katana.jpg",
+          "sha256": "58baf5a8ef92c3b7da00d8ed5199083025d17896af41cb1cda91d526bb44011b",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/ai-foundations.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC03",
+      "intake": "2026-11-03",
+      "theme": "ai-foundations",
+      "title": "Decision trees and overfitting",
+      "captured_from": "Between The Tokens",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "Weather-like features route through a decision tree; deeper trees memorize training samples.",
+      "assessment": "Good learning prompt. The screenshot percentages are simulation results, not transferable benchmark guarantees.",
+      "next": "Keep; compare depth-limited trees on train and held-out data.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S193",
+          "file": "Screenshot_2026-11-03-10-12-07-789_com.facebook.katana.jpg",
+          "sha256": "17d680f636a6756cc14251a82e9b61822a2cf4fdb3d4237b32d72bd53a5d33d6",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S194",
+          "file": "Screenshot_2026-11-03-10-12-26-192_com.facebook.katana.jpg",
+          "sha256": "9a3c80155944b4af2b404c597d7bbce4ffa475e2a49a43acf6978e77ffd2e6d7",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S195",
+          "file": "Screenshot_2026-11-03-10-12-35-761_com.facebook.katana.jpg",
+          "sha256": "8815f7d5549a0abc18d1112bc0e63e7cedc97d505bfc5cb03588e39bad2a6ccc",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S196",
+          "file": "Screenshot_2026-11-03-10-13-05-685_com.facebook.katana.jpg",
+          "sha256": "1cb36a453afe9f410e2fc6d6f94b51a83ba5fec74b457e792653f6f8070af6d6",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../decision-methods/decision-trees.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC04",
+      "intake": "2026-11-03",
+      "theme": "ai-research",
+      "title": "Google AX orchestration",
+      "captured_from": "Md Ismail Sojal",
+      "capture_dates": [
+        "2026-10-28"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "AX declares agent workloads, workspaces and models and supports sandboxed execution.",
+      "assessment": "The official repository confirms the runtime and warns of major breaking changes. Billion-task language is a design ambition, not a benchmark verified here.",
+      "next": "Read architecture only if cluster orchestration is a current bottleneck; park migration.",
+      "sources": [
+        "https://github.com/google/ax"
+      ],
+      "frames": [
+        {
+          "id": "S023",
+          "file": "Screenshot_2026-10-28-02-32-50-351_com.facebook.katana.jpg",
+          "sha256": "5cbc309d2f3b161ce56d061e3c54ddadd6675af4b4aa68cd26b4735c8685a536",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S024",
+          "file": "Screenshot_2026-10-28-02-33-26-445_com.facebook.katana.jpg",
+          "sha256": "09cdf2ba121761a2b4106986ef03521a9f3d187a17fb720a66376f9ad3be2642",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC05",
+      "intake": "2026-11-03",
+      "theme": "ai-research",
+      "title": "STAIR structured retrieval",
+      "captured_from": "Md Ismail Sojal",
+      "capture_dates": [
+        "2026-10-28"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed; headline overstated",
+      "claim": "The post says a retriever hallucinates 65 times less and implies zero liability.",
+      "assessment": "The paper defines hallucination here as generating an invalid document identifier. Its 3.25% versus 0.05% figures explain the 65-fold ratio. This is not end-to-end answer accuracy, universal replacement of RAG, or a liability guarantee.",
+      "next": "High-value reading: evaluate structure-aware retrieval on a small representative document set before considering a change.",
+      "sources": [
+        "https://arxiv.org/abs/2609.03874",
+        "https://arxiv.org/html/2609.03874v2"
+      ],
+      "frames": [
+        {
+          "id": "S025",
+          "file": "Screenshot_2026-10-28-10-51-59-326_com.facebook.katana.jpg",
+          "sha256": "75be53c4b9bb301d2737e8959ad466fa45a00ddace4b3bd13b20e60630dc4696",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S026",
+          "file": "Screenshot_2026-10-28-10-52-09-044_com.facebook.katana.jpg",
+          "sha256": "006db9540579f4980d05566aa6f559335fd5bf2e56bdfa8e0c7a7547755562b4",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/research.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC06",
+      "intake": "2026-11-03",
+      "theme": "ai-research",
+      "title": "SwaT cross-family KV transfer",
+      "captured_from": "Md Ismail Sojal",
+      "capture_dates": [
+        "2026-10-30"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "Swarm Telepathy transfers internal cached states between model families; the post cites better accuracy and speed.",
+      "assessment": "The abstract reports mean 40% higher accuracy and fourfold speed in its experiments. This uses learned KV-cache transfer, not communication between arbitrary closed chat APIs. It needs internal model-state access.",
+      "next": "Research watchlist; inspect model/runtime requirements before any reproduction.",
+      "sources": [
+        "https://arxiv.org/abs/2610.15095"
+      ],
+      "frames": [
+        {
+          "id": "S078",
+          "file": "Screenshot_2026-10-30-01-00-10-119_com.facebook.katana.jpg",
+          "sha256": "9d40276894aab2c0c3a7ac56848053d10e37fa0f87761fb0c43a522ff9d45103",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S079",
+          "file": "Screenshot_2026-10-30-01-00-45-956_com.facebook.katana.jpg",
+          "sha256": "40d33a68c62fd493f18cd8f451e896baddedbd2d1015d8b37bc14834ee9c38a4",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../cache-methods/cross-model-kv.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC07",
+      "intake": "2026-11-03",
+      "theme": "ai-research",
+      "title": "The Trinity capability-driven improvement",
+      "captured_from": "Cecile G. Tamura",
+      "capture_dates": [
+        "2026-10-30"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "Creator, Explorer and Evolver roles reorganize task experience into reusable capabilities.",
+      "assessment": "The paper reports 34-point gains on training benchmarks and 26 on unseen benchmarks. These are author-reported results for evolved harnesses; they do not establish unrestricted autonomous self-improvement.",
+      "next": "Read for evaluation and capability-reuse ideas; do not transplant the architecture from a summary.",
+      "sources": [
+        "https://arxiv.org/abs/2610.36077"
+      ],
+      "frames": [
+        {
+          "id": "S080",
+          "file": "Screenshot_2026-10-30-05-16-59-037_com.facebook.katana.jpg",
+          "sha256": "25924b193884168ce066448021af000132849907c2a12dc507827ec81f3e5ce2",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S081",
+          "file": "Screenshot_2026-10-30-05-17-04-366_com.facebook.katana.jpg",
+          "sha256": "5a30b1b7a52efdd7909f0fc5c01363c306ab16c711cfaa16536db38656608659",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S082",
+          "file": "Screenshot_2026-10-30-05-17-10-354_com.facebook.katana.jpg",
+          "sha256": "1c3a1be899e22fb79d62e7028cb55d7d782b48dd22a9a24f8e17869c20977aa6",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S083",
+          "file": "Screenshot_2026-10-30-05-17-14-572_com.facebook.katana.jpg",
+          "sha256": "6979587cb26fe0b2eeb3d954eddc51998909950046d865eb0dd719bafdce1318",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../decision-methods/capability-routing.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC08",
+      "intake": "2026-11-03",
+      "theme": "ai-research",
+      "title": "AKV cache engineering",
+      "captured_from": "Raymond de Lacaze / LLMs and Agentic AI",
+      "capture_dates": [
+        "2026-10-30"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "Agents can drop selected KV entries and adjust retained positions without rewriting the text trajectory.",
+      "assessment": "The abstract describes serving-engine support and reports cost and latency gains. These operations are not simply a shorter prompt and require compatible infrastructure.",
+      "next": "Park implementation unless serving your own models; keep as architecture research.",
+      "sources": [
+        "https://arxiv.org/abs/2610.28577"
+      ],
+      "frames": [
+        {
+          "id": "S084",
+          "file": "Screenshot_2026-10-30-05-36-31-200_com.facebook.katana.jpg",
+          "sha256": "88959d41fc324297ae20646a2801381215198956cccf69ba346a51823ead242a",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S085",
+          "file": "Screenshot_2026-10-30-05-36-42-144_com.facebook.katana.jpg",
+          "sha256": "4ec77a874dad2a0169141a0446b97b2762bdfeee97812025e2f20f8de0b18a1e",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../cache-methods/akv.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC09",
+      "intake": "2026-11-03",
+      "theme": "ai-research",
+      "title": "JEPA representation alignment",
+      "captured_from": "Md Ismail Sojal",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed; headline overstated",
+      "claim": "The post frames a 109M-parameter model outperforming 72B-parameter models as a broad scaling reversal.",
+      "assessment": "The paper concerns cross-modal representation alignment and good paired views. Its theorem has assumptions. Alignment results do not establish that the small model is a better general assistant.",
+      "next": "Keep the paper; read the task definition and theorem assumptions before reusing the comparison.",
+      "sources": [
+        "https://arxiv.org/abs/2610.39302"
+      ],
+      "frames": [
+        {
+          "id": "S125",
+          "file": "Screenshot_2026-11-03-07-01-11-765_com.facebook.katana.jpg",
+          "sha256": "1da8e74d9bde7701f226a1572c78d2ee69c8770e9f68a76a0aaa7d1759ec890f",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S126",
+          "file": "Screenshot_2026-11-03-07-01-40-097_com.facebook.katana.jpg",
+          "sha256": "84e793430bf9df2efc692f5500b2c6b1c39b3270f95b5cbc14c16c93b7786bf5",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/research.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC10",
+      "intake": "2026-11-03",
+      "theme": "ai-research",
+      "title": "Weight-space programming",
+      "captured_from": "Md Ismail Sojal",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed; scope limited",
+      "claim": "A frontier LLM directly edits a small fraction of another network’s weights without gradient training.",
+      "assessment": "The author blog reports a targeted Qwen looping fix, with forward-pass feedback. It also reports failure to materially improve a non-looping Gemma model. This is not a general replacement for model training.",
+      "next": "Keep on research watchlist; read limitations alongside the successful case.",
+      "sources": [
+        "https://rikiyat.github.io/blog/weight-space-programming/"
+      ],
+      "frames": [
+        {
+          "id": "S131",
+          "file": "Screenshot_2026-11-03-08-46-31-619_com.facebook.katana.jpg",
+          "sha256": "59fa7860be51c95fdd0c2bbb7d95705bd39c6b277e467ec3312a5e9ef19051fd",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S132",
+          "file": "Screenshot_2026-11-03-08-46-39-903_com.facebook.katana.jpg",
+          "sha256": "75a760058814787979a1ff878a64ceca6d2e500889fc9f75e6755d804e56a046",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/research.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC11",
+      "intake": "2026-11-03",
+      "theme": "ai-workflows",
+      "title": "Web scraping through an MCP connector",
+      "captured_from": "App Spotlight",
+      "capture_dates": [
+        "2026-10-30"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A post connects Ultimate Web Scraper as a custom MCP and asks Claude to collect a catalog.",
+      "assessment": "The connector/service identity, pricing, permissions and actual extraction quality are not established by these frames. The broad headline is not evidence that every site can be scraped.",
+      "next": "Park until a real extraction task exists; verify the exact connector first.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S003",
+          "file": ".pending-1793940474-Screenshot_2026-10-30-05-47-54-254_com.facebook.katana.jpg",
+          "sha256": "23503e2e8817d82b9e5845d3a4a580ba05af394e8aff791bf946ba7a7f6ad2d4",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S086",
+          "file": "Screenshot_2026-10-30-05-47-40-148_com.facebook.katana.jpg",
+          "sha256": "cd048f867c759b8a7269368a9995613995be2ac25c9ed12bd962bd7484a1c2de",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S087",
+          "file": "Screenshot_2026-10-30-05-47-43-025_com.facebook.katana.jpg",
+          "sha256": "5d7e0687b1044888634218b8bb605d8d9dbbfc79f0767e4d666659ad60fb0d6b",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S088",
+          "file": "Screenshot_2026-10-30-05-47-44-281_com.facebook.katana.jpg",
+          "sha256": "a1c2399c207f40b254789cf6e2a5b23c3a96929d0a515718772a090d0e254069",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S089",
+          "file": "Screenshot_2026-10-30-05-47-46-375_com.facebook.katana.jpg",
+          "sha256": "0ee47c92b2525b4d58bd153652de1f98ae25ba4b05526964ede51a6552c100b0",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S090",
+          "file": "Screenshot_2026-10-30-05-47-48-703_com.facebook.katana.jpg",
+          "sha256": "577e24afe74b08dbe9612db593637a936518b69f07e62aacb50a7e816cd94861",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC12",
+      "intake": "2026-11-03",
+      "theme": "ai-workflows",
+      "title": "Voice input: Wispr Flow",
+      "captured_from": "Wispr Flow sponsored reel",
+      "capture_dates": [
+        "2026-10-29"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "Sponsored video shows voice-to-text input.",
+      "assessment": "Advertisement captured as a lead; no accuracy, platform support or cost checked.",
+      "next": "Optional trial only if dictation friction is a real problem.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S058",
+          "file": "Screenshot_2026-10-29-00-58-53-242_com.google.android.youtube.jpg",
+          "sha256": "659607d512d4db856c53d050034fa1ad7f8977d5a9cffc513790930587951d20",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC13",
+      "intake": "2026-11-03",
+      "theme": "ai-workflows",
+      "title": "Agent harness workshops",
+      "captured_from": "Md Ismail Sojal; workshop thumbnails from AI Engineer / beamnxw",
+      "capture_dates": [
+        "2026-11-02",
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "partly source-confirmed",
+      "claim": "Posts recommend workshops on separating agent reasoning, tools, state and recovery.",
+      "assessment": "Primary Anthropic writing supports incremental work, persistent progress and environment checks. The exact videos, salary story, 10x reliability and 60% faster-token claims were not verified.",
+      "next": "Read the primary article; extract one recovery/checkpoint idea for a future scoped experiment.",
+      "sources": [
+        "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents"
+      ],
+      "frames": [
+        {
+          "id": "S101",
+          "file": "Screenshot_2026-11-02-02-46-33-388_com.facebook.katana.jpg",
+          "sha256": "cf01a41618c3e4c0b40a03823152a874e2be2ea94e10a6c30978d18d0ee50104",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S133",
+          "file": "Screenshot_2026-11-03-08-58-39-377_com.facebook.katana.jpg",
+          "sha256": "02e50c774962e1d4c0076eb682efa4e2fce41f625975fd9cc26595d95343b9a2",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S134",
+          "file": "Screenshot_2026-11-03-08-58-46-945_com.facebook.katana.jpg",
+          "sha256": "f72c5f94a2135c5764a9757eb0104d3557ae689edec1937a0e94a13ea9e789ff",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/agent-workflows.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC14",
+      "intake": "2026-11-03",
+      "theme": "ai-workflows",
+      "title": "Browser Use",
+      "captured_from": "Duncan Rogoff",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "Browser Use lets an AI agent operate a browser.",
+      "assessment": "The repository exists. The social-media follower-export demonstration is not a measured reliability claim. Browser automation still needs task-specific validation.",
+      "next": "Keep for a concrete browser task; compare with existing tools before adding another runtime.",
+      "sources": [
+        "https://github.com/browser-use/browser-use"
+      ],
+      "frames": [
+        {
+          "id": "S114",
+          "file": "Screenshot_2026-11-03-00-06-04-483_com.facebook.katana.jpg",
+          "sha256": "17867cb55e88fe9d5c8e0f283002b56e3092719a36784a01abb924e6a11c22d5",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S115",
+          "file": "Screenshot_2026-11-03-00-06-16-670_com.facebook.katana.jpg",
+          "sha256": "c048dc2a46be46570e75ca4e3877064ddbbaf2d5c286d549103a166396f50a14",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/agent-workflows.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC15",
+      "intake": "2026-11-03",
+      "theme": "ai-workflows",
+      "title": "Agentmemory persistent memory",
+      "captured_from": "Duncan Rogoff",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "A site advertises memory that types back.",
+      "assessment": "The site identity matches the screenshot. Its operational benefits were not tested; session-memory collection and retention need review before adoption.",
+      "next": "Park unless current memory retrieval has a demonstrated failure.",
+      "sources": [
+        "https://www.agentmemory.tech/"
+      ],
+      "frames": [
+        {
+          "id": "S116",
+          "file": "Screenshot_2026-11-03-00-06-25-106_com.facebook.katana.jpg",
+          "sha256": "bce8000a04950caa69487187136692cb91b443af08e396b2c36fac8843d9bacd",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC16",
+      "intake": "2026-11-03",
+      "theme": "ai-workflows",
+      "title": "Scientific Agent Skills",
+      "captured_from": "Duncan Rogoff",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "A scientific skills collection packages domain workflows for agents.",
+      "assessment": "The project exists and the former claude-scientific-skills URL redirects to scientific-agent-skills. Existence is not validation of every domain procedure.",
+      "next": "Select one skill for an actual scientific task; review its sources before using it.",
+      "sources": [
+        "https://github.com/K-Dense-AI/scientific-agent-skills"
+      ],
+      "frames": [
+        {
+          "id": "S117",
+          "file": "Screenshot_2026-11-03-00-06-31-942_com.facebook.katana.jpg",
+          "sha256": "8b80dae52f726cdc6b195b228b9a310cf15a7ddb019dbafe38b04f7ecfbb8c1a",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/agent-workflows.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC17",
+      "intake": "2026-11-03",
+      "theme": "ai-workflows",
+      "title": "Diagram Design collection",
+      "captured_from": "Duncan Rogoff",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unresolved source",
+      "claim": "A diagram collection shows flowcharts, state machines, ER diagrams and swimlanes.",
+      "assessment": "The title is legible, but the owner/repository URL is not established. Do not install a similarly named project based only on this title.",
+      "next": "Keep the design reference; recover an exact repository link only when needed.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S118",
+          "file": "Screenshot_2026-11-03-00-06-38-661_com.facebook.katana.jpg",
+          "sha256": "fd8eab0bbdea33e5695c995d7be82749691fdc386b8b5a710d282567b2386ba3",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S119",
+          "file": "Screenshot_2026-11-03-00-06-47-257_com.facebook.katana.jpg",
+          "sha256": "fc5838272d15ec50f752ecff0ff4ea216a2a09d1f153eafc9a2334cc8b28d1a4",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S120",
+          "file": "Screenshot_2026-11-03-00-06-54-868_com.facebook.katana.jpg",
+          "sha256": "0babeb694e067c184c88ba42c0c9a70f68d3e459c8e77a2cb25470650d89f441",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC18",
+      "intake": "2026-11-03",
+      "theme": "ai-workflows",
+      "title": "Community cybersecurity skills",
+      "captured_from": "Duncan Rogoff",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed; attribution corrected",
+      "claim": "A reel presents Anthropic Cybersecurity Skills.",
+      "assessment": "The mukul975 repository explicitly identifies itself as an independent community project, unaffiliated with Anthropic. The title is not vendor endorsement.",
+      "next": "Keep with corrected attribution; review individual skill code and scope before adoption.",
+      "sources": [
+        "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+      ],
+      "frames": [
+        {
+          "id": "S121",
+          "file": "Screenshot_2026-11-03-00-06-59-325_com.facebook.katana.jpg",
+          "sha256": "a2bed91c7e0ec6217d3adbd9d4c53d3c8d1e459c1b07ba44367c59a7cacf63b6",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/agent-workflows.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC19",
+      "intake": "2026-11-03",
+      "theme": "ai-workflows",
+      "title": "Awesome Harness Engineering",
+      "captured_from": "Duncan Rogoff",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unresolved source",
+      "claim": "A resource collection advertises agent harness patterns and templates.",
+      "assessment": "The title is readable, but the exact repository owner is missing. It is a discovery lead rather than an installation recommendation.",
+      "next": "Park until an exact source is recovered.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S122",
+          "file": "Screenshot_2026-11-03-00-07-03-778_com.facebook.katana.jpg",
+          "sha256": "1274ad44ef9fe364e5ffeb32349153d914d59516f812862124d856bb603781f1",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC20",
+      "intake": "2026-11-03",
+      "theme": "ai-workflows",
+      "title": "OpenViking context database",
+      "captured_from": "Duncan Rogoff",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "OpenViking combines context resources for agents.",
+      "assessment": "Official repository identity matches. This is additional infrastructure; its value depends on a concrete memory/retrieval problem and measured benefit.",
+      "next": "Keep as a candidate; do not adopt solely from the feature list.",
+      "sources": [
+        "https://github.com/volcengine/OpenViking"
+      ],
+      "frames": [
+        {
+          "id": "S123",
+          "file": "Screenshot_2026-11-03-00-07-07-116_com.facebook.katana.jpg",
+          "sha256": "61a32755f01ca07026a2616035da36fec1cc72f5ff493d4235bd718527911cce",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/agent-workflows.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC21",
+      "intake": "2026-11-03",
+      "theme": "ai-workflows",
+      "title": "HackerTube curation example",
+      "captured_from": "Md Ismail Sojal",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "A post describes Karpathy building a video catalog from Hacker News recommendations.",
+      "assessment": "His own blog confirms the project account and data-export option. A personal success story is not a general two-hour delivery estimate.",
+      "next": "Useful inspiration for this clipping inbox: source selection, topic grouping and portable export.",
+      "sources": [
+        "https://karpathy.bearblog.dev/hacker-tube/"
+      ],
+      "frames": [
+        {
+          "id": "S127",
+          "file": "Screenshot_2026-11-03-07-07-21-442_com.facebook.katana.jpg",
+          "sha256": "72f1bc5af6650fad1044d5cb1f1f3ac9f829dd4a38f6c06890631fc16800c3a3",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S128",
+          "file": "Screenshot_2026-11-03-07-07-36-492_com.facebook.katana.jpg",
+          "sha256": "e08a1f1661036c561c8b72d9bc6352b1373090d64399d518e8d3a10fb8fd7255",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/agent-workflows.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC22",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "Backend learning map",
+      "captured_from": "Virex Explains",
+      "capture_dates": [
+        "2026-10-29"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A reel lists servers, APIs, databases, caching, queues, containers and observability.",
+      "assessment": "A useful topic checklist, not an ordered curriculum or proof that ten pieces make a complete backend.",
+      "next": "Use as a gap checklist for one small project.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S059",
+          "file": "Screenshot_2026-10-29-05-29-29-224_com.facebook.katana.jpg",
+          "sha256": "2350887e6e34430bafdebeec3a678f5d572d62eb9519b53694e291dedc6fa3e9",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S060",
+          "file": "Screenshot_2026-10-29-05-29-31-158_com.facebook.katana.jpg",
+          "sha256": "cf1c06a9cf20e495cb120decb355f59e8c706644692c62212177cc306174bbd3",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S061",
+          "file": "Screenshot_2026-10-29-05-29-35-890_com.facebook.katana.jpg",
+          "sha256": "598ee8016911068362e4b2addab0bfd76df884900e9647164a642da2aad8c785",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S062",
+          "file": "Screenshot_2026-10-29-05-29-51-801_com.facebook.katana.jpg",
+          "sha256": "a3b72f6c83e33dc43b5d5c70b99c1f1c0147925eedb7f48d6f6fa7d0e90f0822",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S063",
+          "file": "Screenshot_2026-10-29-05-30-04-369_com.facebook.katana.jpg",
+          "sha256": "39b4462746324e96798e3c2987cccec4b85eac53c7caa211ee2c5132cc410f81",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S064",
+          "file": "Screenshot_2026-10-29-05-30-09-011_com.facebook.katana.jpg",
+          "sha256": "96936823db08996432689223ceb2107fd4b119d6194a458a4dfa2d81540dc274",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S065",
+          "file": "Screenshot_2026-10-29-05-30-18-902_com.facebook.katana.jpg",
+          "sha256": "eb8b4d6c3d2b0436cc04dffd68ae5af6cf252a8a8b004766d66683d9d1cd675a",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/developer-engineering.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC23",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "Ten programming repositories",
+      "captured_from": "algorithmswithpeter",
+      "capture_dates": [
+        "2026-10-29"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified; visible repository references",
+      "claim": "The list includes build-your-own-x, awesome, public-apis, freeCodeCamp, free-programming-books, system-design-primer, developer-roadmap, coding-interview-university, awesome-python and project-based-learning.",
+      "assessment": "These are discovery/catalog resources with different purposes. Repository identities are transcribed from frames; individual current contents and recommendations were not audited.",
+      "next": "Pick one path or project; avoid treating all ten as a study backlog.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S066",
+          "file": "Screenshot_2026-10-29-12-44-26-518_com.facebook.katana.jpg",
+          "sha256": "18a6155cb327d1146022ea3d7ee2f7620fa2c613f1bea9b42ee0a9752a1cfdc1",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S067",
+          "file": "Screenshot_2026-10-29-12-45-01-420_com.facebook.katana.jpg",
+          "sha256": "858312af227a8eb33c3a6fc5ad74e908080afd06b9b0d1f9a052e39f0ee56761",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S068",
+          "file": "Screenshot_2026-10-29-12-45-16-036_com.facebook.katana.jpg",
+          "sha256": "f2b7650ba42f751192687c5a4a77c65b562d2c975e2a6b0a579b70cfc8cdb179",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S069",
+          "file": "Screenshot_2026-10-29-12-45-28-388_com.facebook.katana.jpg",
+          "sha256": "59a3122f093cef7c02dcb9b7cd47dab82e214bbb70d648639dee20cc4c1ffaba",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S070",
+          "file": "Screenshot_2026-10-29-12-45-43-767_com.facebook.katana.jpg",
+          "sha256": "4776334b63c50e7d9f9acc7e1e8a77de85acfa0105ca2ed8f848efe620a67927",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S071",
+          "file": "Screenshot_2026-10-29-12-45-58-805_com.facebook.katana.jpg",
+          "sha256": "ac56f88742e715726b3d46c594b847b7ef5729ba5d7e56a2fe6f30f1530aa6ad",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S072",
+          "file": "Screenshot_2026-10-29-12-46-15-094_com.facebook.katana.jpg",
+          "sha256": "da05bc7ecb17d0d7327eb13c36e97c3d161b8048c92e0917b575967b210a41db",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S073",
+          "file": "Screenshot_2026-10-29-12-46-28-712_com.facebook.katana.jpg",
+          "sha256": "1fb57c5794c6d247a15bb9a7393851b052d32a6645442dcd9c4e5375fa5b85de",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S074",
+          "file": "Screenshot_2026-10-29-12-46-51-051_com.facebook.katana.jpg",
+          "sha256": "7998aa0b18b81d1e4378e04fdad8e272e8b53aec69e46d074d71b8fed4a79de6",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S075",
+          "file": "Screenshot_2026-10-29-12-47-04-218_com.facebook.katana.jpg",
+          "sha256": "6c24879f8162160a9b60273511515db6dca39b5298cb8023209775402efc8683",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/tool-references.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC24",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "GitHub URL shortcuts",
+      "captured_from": "Codextron",
+      "capture_dates": [
+        "2026-11-02",
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "partly source-confirmed",
+      "claim": "A reel shows the dot-key web editor shortcut, GitMCP and Gitingest.",
+      "assessment": "GitHub docs confirm github.dev and GitMCP documents the domain conversion. Gitingest was visible, but its website timed out during this check.",
+      "next": "Keep as convenience references; verify service boundaries before sharing non-public code.",
+      "sources": [
+        "https://docs.github.com/en/codespaces/the-githubdev-web-based-editor",
+        "https://gitmcp.io/"
+      ],
+      "frames": [
+        {
+          "id": "S106",
+          "file": "Screenshot_2026-11-02-23-59-06-500_com.facebook.katana.jpg",
+          "sha256": "a39ab88a8912ddf7ed6697fefa402fcd6f48e3334f6521a67591c8461b85e419",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S107",
+          "file": "Screenshot_2026-11-02-23-59-10-914_com.facebook.katana.jpg",
+          "sha256": "43a5df9536d8a2149b2a53f25a39993b5ed5c599519d6acebb45a145226300af",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S108",
+          "file": "Screenshot_2026-11-03-00-00-11-322_com.facebook.katana.jpg",
+          "sha256": "b1627c1d6675b0659008e9319a3614f78662d974524f07fa12d3c8fd00f13f64",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/tool-references.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC25",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "Developer roadmaps",
+      "captured_from": "Code With Toushif",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "A reel points to interactive developer roadmaps.",
+      "assessment": "roadmap.sh offers community roadmaps. A roadmap is a selection aid, not a requirement to learn everything.",
+      "next": "Choose only the next missing skill for the project in hand.",
+      "sources": [
+        "https://roadmap.sh/"
+      ],
+      "frames": [
+        {
+          "id": "S109",
+          "file": "Screenshot_2026-11-03-00-02-29-183_com.facebook.katana.jpg",
+          "sha256": "22e98a29085f31cf3758e69b5b75bdda70067f7ef21e85c52533bff59b9f9baf",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S111",
+          "file": "Screenshot_2026-11-03-00-02-50-941_com.facebook.katana.jpg",
+          "sha256": "a42778912dc35a4907180189650d1e7e71e88e807877f6181d7b459c7fa2e8c6",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S112",
+          "file": "Screenshot_2026-11-03-00-02-53-733_com.facebook.katana.jpg",
+          "sha256": "ea0faac4c7144707126d9d2cc268e98e9799edcf970a8b1d167f99dd622b4420",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/developer-engineering.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC26",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "Bolt browser builder",
+      "captured_from": "Code With Toushif",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A video shows a Bolt new-project interface.",
+      "assessment": "The screenshot identifies a product lead; it does not establish cost, generated-code quality or deployability.",
+      "next": "Park unless comparing application scaffolding tools.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S110",
+          "file": "Screenshot_2026-11-03-00-02-32-556_com.facebook.katana.jpg",
+          "sha256": "2b5cc39ca83a3e05b65f6674731e9c2f396ce8fe7529398702440be85047bc3a",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC27",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "Transform.tools",
+      "captured_from": "Code With Toushif",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "A converter transforms data/code representations such as SVG to JSX.",
+      "assessment": "The site exposes those conversion categories. Output still needs review against the target application.",
+      "next": "Keep as a reference for non-sensitive conversions.",
+      "sources": [
+        "https://transform.tools/"
+      ],
+      "frames": [
+        {
+          "id": "S113",
+          "file": "Screenshot_2026-11-03-00-03-14-661_com.facebook.katana.jpg",
+          "sha256": "0cea928452dc5ee51d04fe57fe2bde5159bb564abf82903069a729a7a0e185c4",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/tool-references.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC28",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "Algorithms overview",
+      "captured_from": "Afzal Web Solutions",
+      "capture_dates": [
+        "2026-11-02"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A poster names binary search, sorting, Dijkstra, dynamic programming and BFS.",
+      "assessment": "Useful retrieval cue. Complexity annotations need their assumptions and do not substitute for understanding the algorithm.",
+      "next": "Keep; implement only the algorithm relevant to a current task.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S103",
+          "file": "Screenshot_2026-11-02-09-43-39-711_com.facebook.katana.jpg",
+          "sha256": "8ffe915902f55f94f7fb8cce09f7e793822d7c2b3158c5d945be279fbcb0c433",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/developer-engineering.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC29",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "HTTP/REST versus WebSocket",
+      "captured_from": "Asad - Software Engineer",
+      "capture_dates": [
+        "2026-11-02"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A visual contrasts request-response calls with a persistent bidirectional connection.",
+      "assessment": "A useful first approximation. The poster does not cover HTTP connection reuse, HTTP/2, HTTP/3 or server-sent events.",
+      "next": "Keep as an introductory explanation; choose a protocol from actual interaction requirements.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S104",
+          "file": "Screenshot_2026-11-02-09-44-38-064_com.facebook.katana.jpg",
+          "sha256": "3e1ca579a529375f2797deb2a7ac001f0fe84768812d2e29c3b9d5b71dae1972",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/developer-engineering.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC30",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "Serving a million users: pagination",
+      "captured_from": "Cloud X Berry and comments",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified; proposed exercise",
+      "claim": "An interview question asks how an API should return records from a million-row users table.",
+      "assessment": "Cursor pagination and indexes are plausible directions. Actual design also depends on filtering, ordering, authorization, payload size and consistency. Ignore the destructive joke in the comments.",
+      "next": "Practice explaining a bounded page size, stable cursor and matching index; measure query behavior on test data.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S163",
+          "file": "Screenshot_2026-11-03-09-55-20-295_com.facebook.katana.jpg",
+          "sha256": "62b2cea9e3eb291dd2686a60de4611b9c80c0998e9da5db63f2548bc3ebbc7fd",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S164",
+          "file": "Screenshot_2026-11-03-09-55-41-574_com.facebook.katana.jpg",
+          "sha256": "0937926f245fd26ab1ba32e5fa161670f85decdefb338e7b91d6bdc4e7be3814",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/developer-engineering.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC31",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "FIFO versus LRU cache eviction",
+      "captured_from": "Systems in Motion",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "An animation compares hit rates for two eviction policies under the same illustrated traffic.",
+      "assessment": "The percentages apply to that workload. LRU does not universally dominate FIFO; admission policy, workload and memory overhead matter.",
+      "next": "Keep; use a replay of real request traces before selecting a cache policy.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S191",
+          "file": "Screenshot_2026-11-03-10-08-08-714_com.facebook.katana.jpg",
+          "sha256": "a69e64728826441f247df9a570f28f1fe92adf867fca390313d9a380d9a6b3fb",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../cache-methods/load-threshold.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC32",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "API versus endpoint",
+      "captured_from": "Stickman Startup",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A visual distinguishes a single operation/address from the set of API operations and rules.",
+      "assessment": "Useful beginner framing. An endpoint should be understood with its HTTP method, contract and authentication, not just its URL.",
+      "next": "Keep as a teaching reference.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S207",
+          "file": "Screenshot_2026-11-03-10-32-00-286_com.facebook.katana.jpg",
+          "sha256": "75039d7b564d64aea63c2ad390d403f9b6490f386dbb85873b374fc27aad7d26",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S208",
+          "file": "Screenshot_2026-11-03-10-32-02-972_com.facebook.katana.jpg",
+          "sha256": "36da5e23c916a664732155dc25fc9d79db4dd7191aa58fc21412a27525b41bd1",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S209",
+          "file": "Screenshot_2026-11-03-10-32-13-366_com.facebook.katana.jpg",
+          "sha256": "7db5549a2758bb9d112511991ead72501421ebba6f3cfbacef0ed5d12362c616",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S210",
+          "file": "Screenshot_2026-11-03-10-32-19-089_com.facebook.katana.jpg",
+          "sha256": "403fcbedce6c24ced2b44ddb97146113e28a9f22d61403907da3705c87585e0e",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S211",
+          "file": "Screenshot_2026-11-03-10-32-21-680_com.facebook.katana.jpg",
+          "sha256": "ba7eb0dcc2942d9173803197d7a44b922838b2386dd875309f401a438f71bd7f",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/developer-engineering.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC33",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "DevOps concepts",
+      "captured_from": "Code Crack",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A poster summarizes twelve DevOps concepts.",
+      "assessment": "A vocabulary map, not evidence that the listed stack is required for every project.",
+      "next": "Use as a discussion checklist; defer tools without an operational need.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S129",
+          "file": "Screenshot_2026-11-03-07-36-07-869_com.facebook.katana.jpg",
+          "sha256": "0adb6ac1e8e2bdd1b8de1573b76c05ab7c747a976dff5330270f14dd57325334",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/developer-engineering.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC34",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "ast-grep",
+      "captured_from": "algorithmswithpeter",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "A reel recommends ast-grep among underrated repositories.",
+      "assessment": "The upstream repository confirms structural code search and rewriting. The screenshot itself contains little usage detail.",
+      "next": "Potentially useful: test a read-only structural search on a small fixture before any rewrite.",
+      "sources": [
+        "https://github.com/ast-grep/ast-grep"
+      ],
+      "frames": [
+        {
+          "id": "S130",
+          "file": "Screenshot_2026-11-03-07-38-32-607_com.facebook.katana.jpg",
+          "sha256": "99f75fedf4a5f018fa5793aebd804250d0b565b6a8afb6f595c1d6e6aa8ce24a",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/developer-engineering.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC35",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "Forward Deployed Engineer portfolio",
+      "captured_from": "Md Ismail Sojal",
+      "capture_dates": [
+        "2026-10-30"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified; editorial project list",
+      "claim": "A post proposes twelve enterprise projects spanning tenant isolation, SSO, connectors, RAG, webhooks, deployment, redaction, incidents, billing, onboarding and a case study.",
+      "assessment": "Good requirements prompts. It does not establish hiring requirements or the need to build twelve separate systems.",
+      "next": "Prefer one integrated project: tenant-scoped webhook intake, idempotency, retries, metrics and a short case study.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S093",
+          "file": "Screenshot_2026-10-30-16-31-21-004_com.facebook.katana.jpg",
+          "sha256": "470eaf1d1ec98dcffa2e615fba17c8eecb287b4b2d198618d50b4b5162fa5522",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S094",
+          "file": "Screenshot_2026-10-30-16-31-29-397_com.facebook.katana.jpg",
+          "sha256": "52f638657a084c75c422920d9bbb45be64dd2725360de6c12840e91149a4a7d3",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S095",
+          "file": "Screenshot_2026-10-30-16-31-38-906_com.facebook.katana.jpg",
+          "sha256": "30c21e5d39897d3391b6e50b7891b33874ef169a08dcefbe8f1c77484d105213",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/developer-engineering.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC36",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "Cybersecurity job advertisement",
+      "captured_from": "Solvertech sponsored post",
+      "capture_dates": [
+        "2026-10-28"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified; dated advertisement",
+      "claim": "A Czech advertisement offers an on-site cybersecurity role at Solvertech.",
+      "assessment": "Keep separately from technical advice. Availability and compensation were not checked and can expire.",
+      "next": "Only revisit if job searching; verify on the employer site.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S027",
+          "file": "Screenshot_2026-10-28-10-53-44-675_com.facebook.katana.jpg",
+          "sha256": "2b20c767d6595fa0281e53dcd385cfe0184331742d40255c7e12af8dabf5c49a",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "crap",
+      "knowledge_note": "../technical-knowledge/crap/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC37",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "SaaS moat discussion",
+      "captured_from": "Claude Ai Community / Luca Vitale",
+      "capture_dates": [
+        "2026-11-02"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified; opinion",
+      "claim": "A community post asks what SaaS survives AI competition; a reply mentions a moat beyond code.",
+      "assessment": "A strategic question, not evidence for a business prediction. Useful only when grounded in customers, distribution, data or switching costs.",
+      "next": "Park as a prompt for a real product decision.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S102",
+          "file": "Screenshot_2026-11-02-03-34-52-853_com.facebook.katana.jpg",
+          "sha256": "8fe58a29acf27929d88eafbebd9c8e9ef231b7986a9964a6295e080fb5941862",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC38",
+      "intake": "2026-11-03",
+      "theme": "defensive-security",
+      "title": "Linux security starter stack",
+      "captured_from": "LinuxTeck",
+      "capture_dates": [
+        "2026-10-28"
+      ],
+      "review_date": "2026-11-03",
+      "status": "partly source-confirmed",
+      "claim": "A LinuxTeck sequence covers Lynis, UFW, Fail2ban, Nmap, tcpdump, OpenVAS, Suricata, Wazuh, AppArmor/SELinux and password hashing.",
+      "assessment": "Lynis is confirmed upstream as an audit tool. The rest is a useful captured overview, not an audited deployment recipe. Empty/transition frames and set-and-forget wording omit important configuration and monitoring context.",
+      "next": "Start with a disposable Linux VM and a documented baseline; select layers from actual exposure.",
+      "sources": [
+        "https://cisofy.com/lynis/"
+      ],
+      "frames": [
+        {
+          "id": "S029",
+          "file": "Screenshot_2026-10-28-17-49-40-925_com.facebook.katana.jpg",
+          "sha256": "87c2b5113aed31f09d92be31926aa8de192204067939f5f8f8595cd795db0b9d",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S030",
+          "file": "Screenshot_2026-10-28-17-49-50-538_com.facebook.katana.jpg",
+          "sha256": "f32cad4af52b6670d86bde0cc8ec3a1b393f0a053a34eb43752a1aea2676a114",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S031",
+          "file": "Screenshot_2026-10-28-17-49-52-920_com.facebook.katana.jpg",
+          "sha256": "3b8e8fafe02aceebeef1123d65bb2c1115c003aaef1080b9db5bd46434691306",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S032",
+          "file": "Screenshot_2026-10-28-17-50-13-533_com.facebook.katana.jpg",
+          "sha256": "832d6fcad5d9a5e864bb6f185ce154f9ebeb070b18edc5c6355937d85d01431c",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S033",
+          "file": "Screenshot_2026-10-28-17-50-18-957_com.facebook.katana.jpg",
+          "sha256": "6ca94e7fb81d05b3b60f44cb70858286bc10d1f9c2e7fb9653ea086186216b12",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S034",
+          "file": "Screenshot_2026-10-28-17-50-29-988_com.facebook.katana.jpg",
+          "sha256": "1cbf588b0fc95caf38693fedef9ffa8ba25be7319656dbbf805ee81f947cffb5",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S035",
+          "file": "Screenshot_2026-10-28-17-50-37-089_com.facebook.katana.jpg",
+          "sha256": "c03997e70b4f82ca4a9099f7d98bae0ed4406537decbb6623a1c80ca83c0d6a9",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S036",
+          "file": "Screenshot_2026-10-28-17-50-41-895_com.facebook.katana.jpg",
+          "sha256": "d203d7bfc7a5003383a24a3fbdc8b221e0ad2d2f9c1a10a518fe6a6101a46dec",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S037",
+          "file": "Screenshot_2026-10-28-17-50-50-979_com.facebook.katana.jpg",
+          "sha256": "473ac00e30fccc1b967933036ab20e9981b092147ca2b98f117e96a92785bda0",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S038",
+          "file": "Screenshot_2026-10-28-17-51-02-655_com.facebook.katana.jpg",
+          "sha256": "d39976d52bf5b8464f4d898664e65661561bb4490305c0a270a3a773e82cd3bc",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S039",
+          "file": "Screenshot_2026-10-28-17-51-13-685_com.facebook.katana.jpg",
+          "sha256": "4d258013ff48b7bbb43b726c81a85be7582809d19916a09f6cfd21782376e806",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S040",
+          "file": "Screenshot_2026-10-28-17-51-32-266_com.facebook.katana.jpg",
+          "sha256": "f7932c0e8575ee9866a10fb3b9c838d617113662c74e2dde979117a5de347d51",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S041",
+          "file": "Screenshot_2026-10-28-17-51-43-736_com.facebook.katana.jpg",
+          "sha256": "dd3cee6f3d3008119227f9b0adeb161410342c131f8f3bda3c6f63c143601010",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S042",
+          "file": "Screenshot_2026-10-28-17-51-54-921_com.facebook.katana.jpg",
+          "sha256": "52827f72bffc3716f76bc22efd6520394fc5cc181f36bcea0e142614b51345de",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S043",
+          "file": "Screenshot_2026-10-28-17-52-07-737_com.facebook.katana.jpg",
+          "sha256": "4e15489362477ca40f255aab461403544f00e4219c225f94114d7e35321b1cdf",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S044",
+          "file": "Screenshot_2026-10-28-17-52-17-505_com.facebook.katana.jpg",
+          "sha256": "d517f981990aa192d609aead1890ab12a915692934a89fa2e53c3b9ae5f1ec11",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S045",
+          "file": "Screenshot_2026-10-28-17-52-22-721_com.facebook.katana.jpg",
+          "sha256": "a7e1750b3420a0c28ca41b9488709865d5a7a5f5740d8459b035ae0bb0ac6b5b",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/security.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC39",
+      "intake": "2026-11-03",
+      "theme": "defensive-security",
+      "title": "Blue-team monitoring lab",
+      "captured_from": "Md Jahid Shah",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A reel combines OSSEC, Suricata and Zeek in a lab.",
+      "assessment": "Keep the detection/visibility idea. Screenshots of terminals do not validate the depicted detections, performance or integration.",
+      "next": "Design one local benign test event and require evidence at collection, detection and alert stages.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S156",
+          "file": "Screenshot_2026-11-03-09-52-50-415_com.facebook.katana.jpg",
+          "sha256": "139e20428ba6ae44d13cc2e8bef03f0c1f70358927f198660a63542699cb9b99",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S157",
+          "file": "Screenshot_2026-11-03-09-52-58-258_com.facebook.katana.jpg",
+          "sha256": "35bd4bc9cefbacfaab038a551f28580767eb443b8b857a6453eff4ca7a172562",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S158",
+          "file": "Screenshot_2026-11-03-09-53-01-513_com.facebook.katana.jpg",
+          "sha256": "c7e845471fe451dc9908922190bfea8e8a7f2b1abbbab70b3cc9b28963a1912d",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S159",
+          "file": "Screenshot_2026-11-03-09-53-07-637_com.facebook.katana.jpg",
+          "sha256": "5b8e15ecd28a14c5681452e6d232a259df4e1be819d68bf5ff30bff94f17471d",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/security.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC40",
+      "intake": "2026-11-03",
+      "theme": "defensive-security",
+      "title": "Zero Trust concepts",
+      "captured_from": "Code Crack",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A poster covers per-request verification, identity, least privilege, device health and segmentation.",
+      "assessment": "Use as a vocabulary card. A slogan or product does not demonstrate these controls actually hold.",
+      "next": "Map three ideas to one application and identify evidence that each control works.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S143",
+          "file": "Screenshot_2026-11-03-09-40-40-003_com.facebook.katana.jpg",
+          "sha256": "7e78aad151f0ac95275c4b7f1462578268b73241e2263265d135caae25ffcab4",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/security.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC41",
+      "intake": "2026-11-03",
+      "theme": "defensive-security",
+      "title": "Security fundamentals",
+      "captured_from": "Code Crack",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A poster lists threat modeling, input validation, rate limiting, encryption, hashing, secret handling, logs and patching.",
+      "assessment": "Good interview/review prompts; a static list cannot establish security coverage.",
+      "next": "Keep; connect each chosen concept to a concrete failure and test.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S149",
+          "file": "Screenshot_2026-11-03-09-42-33-100_com.facebook.katana.jpg",
+          "sha256": "f4c3403a2a776ddbec668b303e21d8cbcae118690ba8550144333ab3a473fcc1",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S150",
+          "file": "Screenshot_2026-11-03-09-42-36-824_com.facebook.katana.jpg",
+          "sha256": "d35733b443031de106f578c2a9e73a7ef9b9f0a4fcb1ced92accd02302ef6958",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/security.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC42",
+      "intake": "2026-11-03",
+      "theme": "defensive-security",
+      "title": "Wireshark investigation filters",
+      "captured_from": "Bbck2basics",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "partly source-confirmed",
+      "claim": "Frames show filters for long DNS names, TXT records, curl user agents, SYN traffic and a service-name string.",
+      "assessment": "Wireshark documents the DNS fields. These filters select observations; none alone proves tunneling, exfiltration or compromise. Retain a baseline and packet context.",
+      "next": "Use a benign saved lab capture to explain why each matching packet is or is not suspicious.",
+      "sources": [
+        "https://www.wireshark.org/docs/dfref/d/dns.html"
+      ],
+      "frames": [
+        {
+          "id": "S021",
+          "file": ".pending-1794303208-Screenshot_2026-11-03-10-33-27-783_com.facebook.katana.jpg",
+          "sha256": "38130932c9e410a130aaa736522fdc48373d0375f914968dc7c4b92efce73af7",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S212",
+          "file": "Screenshot_2026-11-03-10-32-58-201_com.facebook.katana.jpg",
+          "sha256": "000d1983296fb56de04b8c640f85661e2af383ae512b37a08f051eaf9b1e965e",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S213",
+          "file": "Screenshot_2026-11-03-10-33-00-678_com.facebook.katana.jpg",
+          "sha256": "2cbcf3ecd8fa33e39c4a589e1018e63de266a61c93bc574daa96ddacfd077960",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S214",
+          "file": "Screenshot_2026-11-03-10-33-02-437_com.facebook.katana.jpg",
+          "sha256": "5be2ee2e759d3dc75f49d85fbfa33db38173c9e87909a73d1a062706d58130a1",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S215",
+          "file": "Screenshot_2026-11-03-10-33-33-664_com.facebook.katana.jpg",
+          "sha256": "c714a062ee5e935e51f91d0d7518a5ce20c876ff53e06fc72305f52c3684c635",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S216",
+          "file": "Screenshot_2026-11-03-10-33-42-612_com.facebook.katana.jpg",
+          "sha256": "68c6555400d947473e816e0562d5ae92b60a20d4d6efb41c1e28d9e16f183804",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S217",
+          "file": "Screenshot_2026-11-03-10-33-52-066_com.facebook.katana.jpg",
+          "sha256": "448b28eeb6ce006dedf886477a7b622a8e78d5996e3bd1fb82da61df0a1b569f",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S218",
+          "file": "Screenshot_2026-11-03-10-33-59-298_com.facebook.katana.jpg",
+          "sha256": "c1148b726bc51bcd120cdeca7d971a5ac6eba720e6e509eb6219579a3a63c145",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/security.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC43",
+      "intake": "2026-11-03",
+      "theme": "defensive-security",
+      "title": "Advanced networking fragment",
+      "captured_from": "Hacker339",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified; incomplete",
+      "claim": "An intro, reflected-attack sketch and OSI-layer graphic appear in a networking reel.",
+      "assessment": "There is too little of the explanation to reconstruct a reliable technique or lesson.",
+      "next": "Park as an incomplete reference; recover the original video only if needed.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S188",
+          "file": "Screenshot_2026-11-03-10-04-59-355_com.facebook.katana.jpg",
+          "sha256": "71b4591c4f11b8b26b9669743f14d1e68ea3bedf4274753c718663f4c1d4f4af",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S189",
+          "file": "Screenshot_2026-11-03-10-05-30-171_com.facebook.katana.jpg",
+          "sha256": "b7c367b6adb1b3ce3c9b6081ca9fd84481d0ed8f898ca4649dca472e625c1611",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S190",
+          "file": "Screenshot_2026-11-03-10-05-40-650_com.facebook.katana.jpg",
+          "sha256": "5460f0b6a44d11e18d391578db343ea10389e11cf47062627be192a526e42f2f",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC44",
+      "intake": "2026-11-03",
+      "theme": "defensive-security",
+      "title": "Beginner hacking guide fragment",
+      "captured_from": "Hacker339",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified; incomplete",
+      "claim": "A reel labeled Beginner Hacking Guide is Trap shows a terminal.",
+      "assessment": "The single frame is insufficient to recover an actionable lesson or source.",
+      "next": "Park; do not turn it into a command recipe.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S022",
+          "file": ".pending-1794304254-Screenshot_2026-11-03-10-50-54-332_com.facebook.katana.jpg",
+          "sha256": "54b30435e4a4982b32efbfa8c6a52371167e3120a9c1dda27c28461f2461f462",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC45",
+      "intake": "2026-11-03",
+      "theme": "defensive-security",
+      "title": "WAF identification: WAFW00F",
+      "captured_from": "Bhavik Patel",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A reel names WAFW00F as a tool for identifying web application firewalls.",
+      "assessment": "Tool-name reference only; this frame does not verify the target, result or tool version.",
+      "next": "Keep only if a permitted web-testing task needs this information.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S011",
+          "file": ".pending-1794301353-Screenshot_2026-11-03-10-02-32-892_com.facebook.katana.jpg",
+          "sha256": "0306e1f07c8b91f97304f89b5de535216d718bbc01c88d311e1f277e3340d0d3",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC46",
+      "intake": "2026-11-03",
+      "theme": "security-tools",
+      "title": "AI-assisted pentesting frameworks",
+      "captured_from": "Station X",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "partly source-confirmed",
+      "claim": "Station X presents PentestGPT, XBOW, Nuclei AI, HexStrike AI, NodeZero and building your own wrapper.",
+      "assessment": "PentestGPT has an upstream project. Nuclei really supports -ai, with a ProjectDiscovery API key and cloud interaction; it is not proof of a separate Nuclei-ai product. Other benchmarks and command examples were not audited.",
+      "next": "Keep for comparison on an intentionally vulnerable local lab; no framework installed or scan run.",
+      "sources": [
+        "https://github.com/GreyDGL/PentestGPT",
+        "https://docs.projectdiscovery.io/opensource/nuclei/running"
+      ],
+      "frames": [
+        {
+          "id": "S007",
+          "file": ".pending-1794301230-Screenshot_2026-11-03-10-00-30-027_com.facebook.katana.jpg",
+          "sha256": "ee1ae147f9bbd17fd996ea8a41299700ddc3a6cb40a67be74dafb6651e6c9c33",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S008",
+          "file": ".pending-1794301231-Screenshot_2026-11-03-10-00-31-920_com.facebook.katana.jpg",
+          "sha256": "3fcc8f0368be7dc1b7b28a8a980b3b0e37304dad468256ffed549911888b477d",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S009",
+          "file": ".pending-1794301248-Screenshot_2026-11-03-10-00-47-821_com.facebook.katana.jpg",
+          "sha256": "971f6e6d77a16acae542801158e63eda37ecbcc1fbcfdbd787c45b864b3a754f",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S010",
+          "file": ".pending-1794301249-Screenshot_2026-11-03-10-00-49-423_com.facebook.katana.jpg",
+          "sha256": "6a1cdeeff30930a4652d31da3a15455d75ad9ddbff6f4927f460129f4565d06d",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S165",
+          "file": "Screenshot_2026-11-03-10-00-12-860_com.facebook.katana.jpg",
+          "sha256": "a31c7e59cce093f091262c8f60ed6db177de63da15f24bc1778b996c3aaaa25b",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S166",
+          "file": "Screenshot_2026-11-03-10-00-33-731_com.facebook.katana.jpg",
+          "sha256": "07268f05674f7b9f1477e5effc8520a82096849bad677fc98aba545c1ba3428f",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S167",
+          "file": "Screenshot_2026-11-03-10-00-35-970_com.facebook.katana.jpg",
+          "sha256": "1fe3953dcc766434fb857feb0370bfe5f4d68deb921b96861a63ec126d3f2227",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S168",
+          "file": "Screenshot_2026-11-03-10-01-06-314_com.facebook.katana.jpg",
+          "sha256": "f2a04bf90baf4ed3a3a50da88e32cdc19cd403bf99b95bd0c0781cd89971bdb9",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S169",
+          "file": "Screenshot_2026-11-03-10-01-18-575_com.facebook.katana.jpg",
+          "sha256": "65eb45c9f55fe2449cea192865eda5fcc8d1139d1aa67ea8aafa2c15521f804e",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S170",
+          "file": "Screenshot_2026-11-03-10-01-29-497_com.facebook.katana.jpg",
+          "sha256": "ba5c88ad122800fe7f80e1ac1599d5b557724c7913c8bfb1b137d61cb0d00c3b",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S171",
+          "file": "Screenshot_2026-11-03-10-01-31-056_com.facebook.katana.jpg",
+          "sha256": "02af0419ed0e5fb51d5b7d43b9261c44775b205af917d3b9739e8793838fcdea",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S172",
+          "file": "Screenshot_2026-11-03-10-01-32-492_com.facebook.katana.jpg",
+          "sha256": "c2677a975ae4af0df78ca127717d51d20b3f5a5e3a965bb0ba756bd52b0be3cb",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S173",
+          "file": "Screenshot_2026-11-03-10-01-34-125_com.facebook.katana.jpg",
+          "sha256": "a86c21e9812219c747a790252f16423d8e5fa2b7332c9dbe5d9c3561f5631fa2",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S174",
+          "file": "Screenshot_2026-11-03-10-01-41-368_com.facebook.katana.jpg",
+          "sha256": "3364a2bde9a0e313f1d11182f12fd978fd9e4d62dfca4f61d022ebbb067f9834",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S175",
+          "file": "Screenshot_2026-11-03-10-01-43-100_com.facebook.katana.jpg",
+          "sha256": "87cef8aef3561d1c0882dcce766437a0cd3af79badd702ab8e138c3dffe560ed",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/tool-references.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC47",
+      "intake": "2026-11-03",
+      "theme": "security-tools",
+      "title": "Commercial automated security platforms",
+      "captured_from": "Hacker339",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A reel names NodeZero, Pentera, XBOW and Equixly; one frame is blank/transition.",
+      "assessment": "Names are identifiable but capabilities, independence of testing, access requirements and pricing were not checked.",
+      "next": "Park until a defined assessment need and evaluation criteria exist.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S004",
+          "file": ".pending-1794300124-Screenshot_2026-11-03-09-42-04-224_com.facebook.katana.jpg",
+          "sha256": "60f252a3fea46149e216095d057ef801f6a9ed84f3e5913594aa6b55258cebf3",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S144",
+          "file": "Screenshot_2026-11-03-09-41-44-234_com.facebook.katana.jpg",
+          "sha256": "30cd2cc7090d2c211a5aa296cd725e91c12b2fdd5ec8dc5f5f8fa1b85490e00e",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S145",
+          "file": "Screenshot_2026-11-03-09-41-53-543_com.facebook.katana.jpg",
+          "sha256": "e592ab560df9e7748524ed0c95cfb575a64c3baf675e48ea0baa2722e605abd2",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S146",
+          "file": "Screenshot_2026-11-03-09-42-06-172_com.facebook.katana.jpg",
+          "sha256": "5b8886cf973dfe7b7f56ba5930f87c91355d632899c2f644e12d234a158d8b6f",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S147",
+          "file": "Screenshot_2026-11-03-09-42-08-358_com.facebook.katana.jpg",
+          "sha256": "50d26479a4cdbbae3dfb6dc7ec1d1c8b0ab137e2e6f9cb3eb5afc21dceae4d74",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S148",
+          "file": "Screenshot_2026-11-03-09-42-09-298_com.facebook.katana.jpg",
+          "sha256": "afb32e5e9bcc130fe571c276a11e5396393fe1f26d0c286eb443c8829279f4f5",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC48",
+      "intake": "2026-11-03",
+      "theme": "security-tools",
+      "title": "Unclear AI hacking-tool list",
+      "captured_from": "Hacker339",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unresolved source",
+      "claim": "A reel appears to name PoisonGPT, WormGPT, an OpenPentest-like agent, NeuroSploit-like text, a Free...GPT name and Nebula.",
+      "assessment": "Several names are obscured or ambiguous. Exact spelling, legitimate upstream owners and advertised capabilities are unresolved. Do not substitute guessed download links.",
+      "next": "Low priority; recover the original source before considering any item.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S135",
+          "file": "Screenshot_2026-11-03-09-36-15-271_com.facebook.katana.jpg",
+          "sha256": "c71c428f0ff8bf7dc749b2f21c41e0655b40764c4460e243c582c14012820dfa",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S136",
+          "file": "Screenshot_2026-11-03-09-36-31-849_com.facebook.katana.jpg",
+          "sha256": "e69383b6103c7d40b13472e7a3b3aaffd804431109513b1892b45fcd8f6ac05f",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S137",
+          "file": "Screenshot_2026-11-03-09-36-37-792_com.facebook.katana.jpg",
+          "sha256": "db57a2a076060b6b6b32cdcbf11a3bfc479890095e1968ff626ca35229ed3919",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S138",
+          "file": "Screenshot_2026-11-03-09-36-43-659_com.facebook.katana.jpg",
+          "sha256": "3a0676ac11e712bf8dd24d2671eb0a64960663ff3f85eef137f55f82dd05d895",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S139",
+          "file": "Screenshot_2026-11-03-09-37-15-777_com.facebook.katana.jpg",
+          "sha256": "45ddb99584a16e555edad323e78f0995139806ac34f17802de1a73eb61a52d4a",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S140",
+          "file": "Screenshot_2026-11-03-09-37-34-609_com.facebook.katana.jpg",
+          "sha256": "851b5d0c2815c6a03f12831a2532f65e0306f6103bab5ba053d582a38152e45f",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S141",
+          "file": "Screenshot_2026-11-03-09-37-45-115_com.facebook.katana.jpg",
+          "sha256": "7a76a97bf9c10ab5f0d8b7153746bc8fc4cf45e8cbfdaf3d8d60860dd0d8881a",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S142",
+          "file": "Screenshot_2026-11-03-09-38-35-429_com.facebook.katana.jpg",
+          "sha256": "831068903833c77daa5a47d9697d1aa62642ccc0fcdb6448f99d03b08e77e910",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC49",
+      "intake": "2026-11-03",
+      "theme": "security-tools",
+      "title": "OSINT and public search services",
+      "captured_from": "Hacker339",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "Hunter.io, PublicWWW, ZoomEye and GitHub are visible in an ethical-hacking search-engine list.",
+      "assessment": "Two frames are too dark to identify confidently. Group the readable services by what they search; they are not interchangeable or evidence of permission to access a result.",
+      "next": "Keep readable names as leads; recover missing names only for a real research question.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S005",
+          "file": ".pending-1794300171-Screenshot_2026-11-03-09-42-51-134_com.facebook.katana.jpg",
+          "sha256": "596a8ede7b2fd931134f8e35ba7212bfc59b8624a3c7fba6b7df8f00a4db1bf4",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S151",
+          "file": "Screenshot_2026-11-03-09-42-59-063_com.facebook.katana.jpg",
+          "sha256": "42065ab0f2cb83aa7fe223666d6ba59fa3f97ad0da59f39ed2e949a669b2d57b",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S152",
+          "file": "Screenshot_2026-11-03-09-43-00-283_com.facebook.katana.jpg",
+          "sha256": "cc9d7fab61bfd6461f603c6d1f43390ecd195585496965c2601f5233aae97cb9",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S153",
+          "file": "Screenshot_2026-11-03-09-43-01-249_com.facebook.katana.jpg",
+          "sha256": "752072e7339e535c1ca928c2536dcdd6285ad5138c3eac01b647a75f7682e0c4",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S154",
+          "file": "Screenshot_2026-11-03-09-43-02-502_com.facebook.katana.jpg",
+          "sha256": "65df8964f8c1467988878b4dd40072134ca2fdf18fc5a46c3d0e92aba62f7532",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S155",
+          "file": "Screenshot_2026-11-03-09-43-04-099_com.facebook.katana.jpg",
+          "sha256": "f6fd989db02c6b7ee8c4d3ad24174fcc6317de4c09f0c863daabf08340210b14",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/tool-references.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC50",
+      "intake": "2026-11-03",
+      "theme": "security-tools",
+      "title": "Reverse engineering tools",
+      "captured_from": "Station X",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "partly source-confirmed",
+      "claim": "Station X shows GhidraMCP, Frida and ImHex.",
+      "assessment": "ImHex has a matching upstream repository. A GhidraMCP label can refer to different integrations; this reel does not establish the exact owner. Frida usage and integration details remain unchecked here.",
+      "next": "Keep ImHex as a concrete lead; identify the exact MCP project before any installation.",
+      "sources": [
+        "https://github.com/WerWolv/ImHex"
+      ],
+      "frames": [
+        {
+          "id": "S006",
+          "file": ".pending-1794300821-Screenshot_2026-11-03-09-53-41-754_com.facebook.katana.jpg",
+          "sha256": "bdef41a0f843ff17f259a1a7694e97b5ce28d92503fdd71803fa863d71ef2e40",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S160",
+          "file": "Screenshot_2026-11-03-09-53-38-256_com.facebook.katana.jpg",
+          "sha256": "fc3a7a9792507a9ed3c6e9c619abdb2cd90ee4941f96d90854ba7a81b22993d3",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S161",
+          "file": "Screenshot_2026-11-03-09-53-40-410_com.facebook.katana.jpg",
+          "sha256": "fac4704731d9f3796b72d2746598a3656f6bd56e0de5a12f77cfd76278734093",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S162",
+          "file": "Screenshot_2026-11-03-09-53-56-770_com.facebook.katana.jpg",
+          "sha256": "8eb206b361d9665ab3ab152458ee8c7aa916e7b4963bd6ef962d12c984f52204",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/tool-references.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC51",
+      "intake": "2026-11-03",
+      "theme": "security-tools",
+      "title": "Password and Wi-Fi audit toolbox",
+      "captured_from": "Hacker339",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "partly source-confirmed",
+      "claim": "Frames name Aircrack-ng, CrackStation, Hashcat, John the Ripper and Hydra.",
+      "assessment": "Aircrack-ng upstream confirms a Wi-Fi assessment suite. These tools serve different tasks; transitions and repeated frames do not form a tutorial or benchmark.",
+      "next": "Reference only; choose a single learning exercise on owned test data if a need arises.",
+      "sources": [
+        "https://www.aircrack-ng.org/"
+      ],
+      "frames": [
+        {
+          "id": "S013",
+          "file": ".pending-1794302083-Screenshot_2026-11-03-10-14-43-225_com.facebook.katana.jpg",
+          "sha256": "016904f147fc9db479497df2c88f998bd29675c74b54f89821a983da96980d74",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S014",
+          "file": ".pending-1794302092-Screenshot_2026-11-03-10-14-52-770_com.facebook.katana.jpg",
+          "sha256": "7d8d7057fc5e854768df5dddcc16817f633ab9954ef983d983388759d7834c35",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S015",
+          "file": ".pending-1794302104-Screenshot_2026-11-03-10-15-03-951_com.facebook.katana.jpg",
+          "sha256": "15478af5334080d6b29bc7378997cdd870672a10a6ebf391d50b0a20ad1c6ef8",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S016",
+          "file": ".pending-1794302106-Screenshot_2026-11-03-10-15-06-179_com.facebook.katana.jpg",
+          "sha256": "0903ae132faa49d370f6edc036af388f248ec99cc06b18856c2e799fccdec953",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S017",
+          "file": ".pending-1794302115-Screenshot_2026-11-03-10-15-15-946_com.facebook.katana.jpg",
+          "sha256": "5f7ccb88bbc8c8810306bc4e2703ee74a730662d81e04df87ce4f263a334b400",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S018",
+          "file": ".pending-1794302117-Screenshot_2026-11-03-10-15-17-599_com.facebook.katana.jpg",
+          "sha256": "3936ebd8c8ae1e143891f796df5061224b888c7e22ae83eba9e1ae55092e58c3",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S019",
+          "file": ".pending-1794302125-Screenshot_2026-11-03-10-15-25-189_com.facebook.katana.jpg",
+          "sha256": "70b824957091f99696ccdfdb521b391d6e84eabd07fedb6a0819be50d2c70f39",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S020",
+          "file": ".pending-1794302128-Screenshot_2026-11-03-10-15-27-996_com.facebook.katana.jpg",
+          "sha256": "caef888fdf0ef7dcd6a51ca43c0f554a316a8e320757c9e673b4e08891624b41",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S197",
+          "file": "Screenshot_2026-11-03-10-14-32-130_com.facebook.katana.jpg",
+          "sha256": "5afa95f99dda84687d809df5494480e0cf12faa22bd7c35e45c223af80414ec7",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S198",
+          "file": "Screenshot_2026-11-03-10-14-45-788_com.facebook.katana.jpg",
+          "sha256": "d5a631b377f4936f4e84892cf67638367c2981ea3c6ceb776b632b01eec9a6c2",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S199",
+          "file": "Screenshot_2026-11-03-10-15-14-064_com.facebook.katana.jpg",
+          "sha256": "1208a0c65f3a68b07307b5717635a2cfa63481257ff42ec1ab4b5c26ace2d5d9",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S200",
+          "file": "Screenshot_2026-11-03-10-15-19-967_com.facebook.katana.jpg",
+          "sha256": "b7acbc201e9f88a7279533a158b64956dd048d1b54d758cbeb961185d5e286db",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S201",
+          "file": "Screenshot_2026-11-03-10-15-36-362_com.facebook.katana.jpg",
+          "sha256": "0bbffb2f1d155cb50b404dbdf61753bde1dd8a2b6e130fe4ee8e496f7819a6fe",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S202",
+          "file": "Screenshot_2026-11-03-10-15-38-290_com.facebook.katana.jpg",
+          "sha256": "ee7ae9f1568503273e4f8d072dc34ffb3187d7bc8dd62a7872efcbdff57bd50b",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S203",
+          "file": "Screenshot_2026-11-03-10-15-39-408_com.facebook.katana.jpg",
+          "sha256": "4980ce627d28285f72ffaa35ab10e4f39d31b3adaeaeef394f1911ff53548567",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S204",
+          "file": "Screenshot_2026-11-03-10-15-40-474_com.facebook.katana.jpg",
+          "sha256": "5a4bed3aaf0c7cc52407df7dd3ad7772d3622739676ed183850538550f8c9081",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/tool-references.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC52",
+      "intake": "2026-11-03",
+      "theme": "security-learning",
+      "title": "Games and prompt-injection practice",
+      "captured_from": "Station X",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "partly source-confirmed",
+      "claim": "Station X lists Uplink, Hacker Simulator, Hacknet, Grey Hack, ThreatGEN, TIS-100, EXAPUNKS, Bitburner, Bandit and SecureBot.",
+      "assessment": "Bandit is confirmed by its operator as beginner training. Entertainment games, programming puzzles and real command-line exercises have different learning goals; the reel does not validate transfer to operational security.",
+      "next": "Start with a short Bandit session if shell fundamentals need practice. Keep games as optional recreation.",
+      "sources": [
+        "https://overthewire.org/wargames/bandit/"
+      ],
+      "frames": [
+        {
+          "id": "S012",
+          "file": ".pending-1794301447-Screenshot_2026-11-03-10-04-06-677_com.facebook.katana.jpg",
+          "sha256": "e99cd292d5e4626280b33adf0fd602792a24443dff5c5986ea664b305e328bd4",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S176",
+          "file": "Screenshot_2026-11-03-10-04-12-207_com.facebook.katana.jpg",
+          "sha256": "ae5dcb5e2275518d257cb3a5345064790c7275dccf069cee8347b206437b02b8",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S177",
+          "file": "Screenshot_2026-11-03-10-04-13-782_com.facebook.katana.jpg",
+          "sha256": "bd643b02b1c36a5e3f8771e2904b08a8cb2f4772f0e51ac5a86810457e561707",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S178",
+          "file": "Screenshot_2026-11-03-10-04-14-677_com.facebook.katana.jpg",
+          "sha256": "c4b969ae99905e130e18f0917038f455b350816c5089c0f5cdaf37dcab0996f2",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S179",
+          "file": "Screenshot_2026-11-03-10-04-16-043_com.facebook.katana.jpg",
+          "sha256": "637fd0c7ad2d594909c7dd935620af07b3c87dbfb0c4ed2c4dbdd09fc14a8074",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S180",
+          "file": "Screenshot_2026-11-03-10-04-17-663_com.facebook.katana.jpg",
+          "sha256": "91fd978754f358e3bd2edfe32ade859cd6932a1838ed101ecb810f79a2818920",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S181",
+          "file": "Screenshot_2026-11-03-10-04-19-587_com.facebook.katana.jpg",
+          "sha256": "8121e111ff62975277b8f27d71ef0cae7f79d70fe658029f978fb0acb327af00",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S182",
+          "file": "Screenshot_2026-11-03-10-04-21-463_com.facebook.katana.jpg",
+          "sha256": "9d2e48eafc63b27c52ff39632d5d8ea4bd0a50f1bbeed3a50bcdc76b71974ac0",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S183",
+          "file": "Screenshot_2026-11-03-10-04-24-030_com.facebook.katana.jpg",
+          "sha256": "0bcb8bb2825acd0c2c8e34743dcab4134dbbbce89c9e91e8f556642300d18ef2",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S184",
+          "file": "Screenshot_2026-11-03-10-04-25-251_com.facebook.katana.jpg",
+          "sha256": "ba64ea3b18104d96a976b82c281ac0742d43b5af169f7a573fe052cbc3841330",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S185",
+          "file": "Screenshot_2026-11-03-10-04-26-841_com.facebook.katana.jpg",
+          "sha256": "1d946cc9bf0089593060ce6c3c0a348d7ad04172a05c2fbb7835af9234f0eef0",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S186",
+          "file": "Screenshot_2026-11-03-10-04-28-654_com.facebook.katana.jpg",
+          "sha256": "9726e7ee83a2fd1205831a27add7c388746b76f7b4f1b4ceefe72a055717b933",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S187",
+          "file": "Screenshot_2026-11-03-10-04-30-499_com.facebook.katana.jpg",
+          "sha256": "eb08f7d45ede5fc5f12e333dfade4b148a1b3985f9cad6281e8203899997988d",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/tool-references.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC53",
+      "intake": "2026-11-03",
+      "theme": "creative-tools",
+      "title": "Hypit video variation workflow",
+      "captured_from": "Hacker Computer School",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed; marketing unverified",
+      "claim": "Hypit advertises generating variants of video workflows, including face and scene swaps.",
+      "assessment": "The upstream repository matches. View-count promises and the 45-video visual are marketing claims, not performance evidence.",
+      "next": "Park unless there is a concrete video task using material you have permission to reuse.",
+      "sources": [
+        "https://github.com/hypit-ai/hypit"
+      ],
+      "frames": [
+        {
+          "id": "S224",
+          "file": "Screenshot_2026-11-03-10-48-50-442_com.facebook.katana.jpg",
+          "sha256": "f54adb1c34e92ab190ea7e3d0e3c09257adbf57ec97ce38a5d45862b0671cb21",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S225",
+          "file": "Screenshot_2026-11-03-10-48-54-450_com.facebook.katana.jpg",
+          "sha256": "ec26be4b1a441e93bbb01676ef5e1940833d3045c198a0891c20222a4318e604",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S226",
+          "file": "Screenshot_2026-11-03-10-48-56-478_com.facebook.katana.jpg",
+          "sha256": "6ed036d06a69ecd983b9a8462349ac549d7dc4c4d83e306be929297cd12d6b71",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC54",
+      "intake": "2026-11-03",
+      "theme": "creative-tools",
+      "title": "Text-to-CAD",
+      "captured_from": "Hacker Computer School",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed",
+      "claim": "The repository describes AI-assisted physical-product design.",
+      "assessment": "The exact upstream owner is earthtojake. Generated CAD still needs dimensional and manufacturing validation; stars do not establish fit for a specific part.",
+      "next": "Optional experiment: a simple noncritical bracket with explicit dimensions and an inspected export.",
+      "sources": [
+        "https://github.com/earthtojake/text-to-cad"
+      ],
+      "frames": [
+        {
+          "id": "S227",
+          "file": "Screenshot_2026-11-03-10-48-58-034_com.facebook.katana.jpg",
+          "sha256": "6867339d28720a3c7ee2971cf2889b714a3d33416c83270e01ec5e6f1d7b0002",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/tool-references.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC55",
+      "intake": "2026-11-03",
+      "theme": "creative-tools",
+      "title": "Geo-sleuth photo-location skill",
+      "captured_from": "Hacker Computer School",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "source-confirmed; accuracy untested",
+      "claim": "A skill combines maps, elevation, imagery and street view to infer photo location.",
+      "assessment": "The Oldcircle repository matches. The demonstration precision is not a general accuracy guarantee. No personal/travel photo was submitted or geolocated in this review.",
+      "next": "Optional test on a public landmark image with known ground truth; record errors and evidence.",
+      "sources": [
+        "https://github.com/Oldcircle/geo-sleuth"
+      ],
+      "frames": [
+        {
+          "id": "S228",
+          "file": "Screenshot_2026-11-03-10-49-08-334_com.facebook.katana.jpg",
+          "sha256": "c650a9d6b2b7c77faec679fc7a61c835c65edcfd4df260facab00c308b70b354",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S229",
+          "file": "Screenshot_2026-11-03-10-49-11-531_com.facebook.katana.jpg",
+          "sha256": "ef0c34ad9c07edb0c4a3fe67bd2c6f198015c8a57e6fca3f8b72fee430a3db9c",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "useful",
+      "knowledge_note": "../technical-knowledge/useful/tool-references.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC56",
+      "intake": "2026-11-03",
+      "theme": "misc-reference",
+      "title": "Fibonacci clock visual",
+      "captured_from": "Equationsinmotion",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A clock illustration uses a Fibonacci spiral.",
+      "assessment": "Interesting visual-design reference, with no demonstrated programmer or security workflow benefit.",
+      "next": "Keep as low-priority inspiration.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S205",
+          "file": "Screenshot_2026-11-03-10-16-51-190_com.facebook.katana.jpg",
+          "sha256": "b5adb92e3c1d303de8a01a04fa2d87192493564ff0aec55d46f5a468d9a52c23",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "crap",
+      "knowledge_note": "../technical-knowledge/crap/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC57",
+      "intake": "2026-11-03",
+      "theme": "misc-reference",
+      "title": "Windows network reset tip",
+      "captured_from": "Tech... reel; name partially obscured",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A video shows netsh int ip reset in an administrator terminal.",
+      "assessment": "A context-free troubleshooting command is not a diagnosis. Do not run it just because a saved reel recommends it.",
+      "next": "Park; revisit only with a specific Windows networking fault.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S206",
+          "file": "Screenshot_2026-11-03-10-17-58-583_com.facebook.katana.jpg",
+          "sha256": "2553326c9a707345b85288f522065e8a04d7743a2df77dbc8a00f77f00b4cb13",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC58",
+      "intake": "2026-11-03",
+      "theme": "misc-reference",
+      "title": "Saved Wi-Fi password Python snippet",
+      "captured_from": "semi.Python / Thelaptop445",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A Python snippet wraps Windows netsh commands to display saved profiles and keys.",
+      "assessment": "This describes local credential retrieval, not cracking arbitrary Wi-Fi. Text parsing and shell invocation are fragile. No code was run or credentials retrieved.",
+      "next": "Low priority; retain only as a conceptual reference.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S192",
+          "file": "Screenshot_2026-11-03-10-10-33-310_com.facebook.katana.jpg",
+          "sha256": "09cc90d7cab40332893c03bae8068b60b263850bdf0ab9f2991166c2250f406d",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC59",
+      "intake": "2026-11-03",
+      "theme": "misc-reference",
+      "title": "IPChat room-based messaging",
+      "captured_from": "Piyushkaamriti",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified",
+      "claim": "A reel shows ipchat.in with a room-based messaging interface.",
+      "assessment": "A landing-page frame does not establish privacy, encryption or service trustworthiness.",
+      "next": "Park; no sensitive material or account access supplied.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S221",
+          "file": "Screenshot_2026-11-03-10-44-11-751_com.facebook.katana.jpg",
+          "sha256": "fddf1c5d8fec9f0e9a3e464e06f4ad0a63f453413660d7aea64a47535cf00773",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC60",
+      "intake": "2026-11-03",
+      "theme": "developer-learning",
+      "title": "TCP/TLS animated fragments",
+      "captured_from": "Virex Explains",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified; incomplete",
+      "claim": "Two frames refer to three messages, TLS, AES-GCM and ChaCha20.",
+      "assessment": "Potential introductory network explanation. There is insufficient context to infer protocol-version details or a complete handshake.",
+      "next": "Keep with incomplete label; recover a full explanation before using it as teaching material.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S222",
+          "file": "Screenshot_2026-11-03-10-45-33-457_com.facebook.katana.jpg",
+          "sha256": "a8afba0d3e44c89484c3a7c35a51a2be4415534f3efb7da0e716bce1367c085b",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S223",
+          "file": "Screenshot_2026-11-03-10-46-01-437_com.facebook.katana.jpg",
+          "sha256": "1f115946831124426b3bfba01d3fdc65db131522782855f64c549cdc9dc79102",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC61",
+      "intake": "2026-11-03",
+      "theme": "misc-reference",
+      "title": "CA key incident fragment",
+      "captured_from": "Dev speedrun",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified; incomplete",
+      "claim": "A graphic shows a CA private-key value of four and hints at a company incident.",
+      "assessment": "No incident identity or primary source is recoverable from this frame. It cannot substantiate a claim about a real CA.",
+      "next": "Park until the incident and source can be identified.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S230",
+          "file": "Screenshot_2026-11-03-10-50-25-409_com.facebook.katana.jpg",
+          "sha256": "ff5aee78f08c881d49f7a1335652e1bdac63997fe6f0fab0b0c87d931ccb152a",
+          "retention": "retained-evidence",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    },
+    {
+      "id": "TC62",
+      "intake": "2026-11-03",
+      "theme": "ai-workflows",
+      "title": "Hosting after AI-assisted app generation",
+      "captured_from": "Claude Ai Community / IndigoSea1295 and comments",
+      "capture_dates": [
+        "2026-11-03"
+      ],
+      "review_date": "2026-11-03",
+      "status": "unverified; community discussion",
+      "claim": "A community post asks where people host mobile apps made with Claude; comments mention Lovable, Railway, Vercel, Cloudflare, Netlify and Supabase.",
+      "assessment": "Comments mix web hosting, backend services and development tools. They do not establish a native mobile release workflow or which service fits a particular app.",
+      "next": "Keep as a requirements prompt: identify web versus native client, backend and data needs before choosing hosting.",
+      "sources": [],
+      "frames": [
+        {
+          "id": "S219",
+          "file": "Screenshot_2026-11-03-10-35-27-668_com.facebook.katana.jpg",
+          "sha256": "ae7cd80ab37327aea9ce69e498b9e281a7e900a89336d8682679b01ff63b85bd",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        },
+        {
+          "id": "S220",
+          "file": "Screenshot_2026-11-03-10-35-35-819_com.facebook.katana.jpg",
+          "sha256": "c2b451e8b4b23da29e9eb0840d552450aa3f1ea72c359be55ef65583e21d67a8",
+          "retention": "removed-after-extraction",
+          "retention_reviewed_on": "2026-11-04"
+        }
+      ],
+      "knowledge_disposition": "unproven",
+      "knowledge_note": "../technical-knowledge/unproven/README.md",
+      "extracted_on": "2026-11-04"
+    }
+  ]
+}

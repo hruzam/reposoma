@@ -5,15 +5,15 @@ brand: claude
 found_by: atlas
 project: ia-sync
 root: ~/ia-sync
-where: ~/ia-sync/.dev/session/germline-02-guide-model-law/raw/PROPOSAL.program-guide-law.md (PG-r3 P2:81-88, P4:131-168, P5:209, P6:252-254)
+where: ~/ia-sync/.dev/records/germline/2026-11-03/germline-02-guide-model-law/raw/PROPOSAL.program-guide-law.md (PG-r3 P2:81-88, P4:131-168, P5:209, P6:252-254)
 defect: Germline-02 accepted the public-program law with deliberately deferred design items (C1 qualified-binding pin home/kind/coexistence, composer, classmap-as-report, src/journal slug-law seam, native-row currency) that must reach germline-03-foundation-audit as required inputs and not be orphaned.
 assoc: [parked, germline, program-law, deferred-gavel, composer, classmap, resolver, pin-policy, slug-law, native-binding, germline-03]
 severity: med
 pointers:
-  - ~/ia-sync/.dev/session/germline-02-guide-model-law/raw/REVIEW.atlas.program-guide-law.md
-  - ~/ia-sync/.dev/session/germline-02-guide-model-law/raw/FINAL-ACCEPTANCE-BRIEF.majkee.program-guide-law.md
-  - ~/ia-sync/.dev/session/germline-02-guide-model-law/raw/GAVELS.program-guide-law.md
-  - ~/ia-sync/.dev/session/germline-02-guide-model-law/STATUS.md
+  - ~/ia-sync/.dev/records/germline/2026-11-03/germline-02-guide-model-law/raw/REVIEW.atlas.program-guide-law.md
+  - ~/ia-sync/.dev/records/germline/2026-11-03/germline-02-guide-model-law/raw/FINAL-ACCEPTANCE-BRIEF.majkee.program-guide-law.md
+  - ~/ia-sync/.dev/records/germline/2026-11-03/germline-02-guide-model-law/raw/GAVELS.program-guide-law.md
+  - ~/ia-sync/.dev/records/germline/2026-11-03/germline-02-guide-model-law/STATUS.md
 ---
 
 # Germline-02 deferred measurement items: carry to germline-03

@@ -43,7 +43,8 @@ ff-sync.trajectory.senior-dev-01-tunnel via cs card (find cs card)
 PYTHONDONTWRITEBYTECODE=1 zsh ~/.config/zsh/ai/tunnel-codex.selftest.zsh
 ```
 
-1. cartan behind tunnel : `01a0fab0-ebcd-7280-84ee-a40e38c29838` 
+1. cartan behind tunnel : `01a0fab0-ebcd-7280-84ee-a40e38c29838`
+2. trajectory IT support, holding important tunnel buiilding data `claude --resume "ff-nablarva.trajectory.senior-dev-02-tunnel"` 
 
 ---
 
@@ -77,12 +78,17 @@ today `2026-10-16` prepared for HOT run to report back to-cartan there : `codex 
 ---
 
 
+## 1.9. nablarva- prompt composer 0
+- waiting on germline to be finished, replay him back than
+`codex resume 01a14828-d771-74a0-8695-305dc963ed20`
 
 
 
+---
 
+# START THIS
 
-
+`/home/hruzam/reposoma/_cold-start/card/CS.germline-A1-agent-production.2026-10-30.md` continue with VIG0 (vendor invariant germline 0).
 
 
 

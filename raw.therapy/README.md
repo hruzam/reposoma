@@ -26,6 +26,37 @@ New therapy files are gaveled by @majkee, not authored by agents.
 
 Invoke `/therapy` — the skill handles re-entry, session protocol, and output shape.
 
+## Report and session-chapter provenance
+
+From 2026-10-29 onward, each new report and each new session chapter folded into a
+seat's record identifies the reporting runtime brand (`codex`, `claude`, `gemini`,
+or another actual runtime). The seat's identity stays the same across brands;
+the seat name alone does not establish which runtime produced the report.
+
+Place a compact provenance block near the report heading or immediately after the
+chapter's opening timestamp. Keep it per chapter, not only in the file's frontmatter:
+one accumulated record may contain several runtimes and models.
+
+```yaml
+reporter: <seat-name>
+runtime: <codex | claude | gemini | other runtime | unknown>
+model: <exact model identifier | unknown>
+model_grade: <explicitly declared grade/tier | unknown>
+effort: <declared reasoning effort | unknown>
+evidence: <for each field, observed | configured/requested | unknown; source>
+```
+
+Record model grade and effort when available; otherwise write `unknown`. A configured
+or requested model/effort is not proof of the executed setting: retain that distinction
+in `evidence`. Do not infer a model, grade or effort from a seat name, runtime brand,
+writing style or apparent capability. Keep any change of runtime/model within a chapter
+attributed to the relevant portion instead of giving the whole chapter one false label.
+
+When folding someone else's report, preserve its original reporter and provenance.
+If the folding seat adds a synthesis, attribute that addition separately. Do not relabel
+the source with the folder's runtime. Historical entries need no speculative backfill;
+unknown provenance stays unknown. This metadata creates no new seat, therapy bed or gavel.
+
 ## Canon
 
 `raw.canon/canon.reflection-channels.md` — doctrine for therapy vs crossfeed.

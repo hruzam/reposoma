@@ -83,7 +83,7 @@ would retire it.
 At small scale this rule is a check inside authoring — the first RUNBOOK of a toolbox applies it
 inline, and no research session exists for it. At BIG scale — a complex application, a large
 task-group, a standalone system — the rule becomes a gate of its own **before any RUNBOOK
-exists**: a research session in nablarva whose verdict is *worth reinventing, or not*. Wiring,
+exists**: a research session in whose verdict is *worth reinventing, or not*. Wiring,
 bounds, and the three checks: `res/research.md`.
 
 ## One authority — the seam with pulse.md
