@@ -1,0 +1,11 @@
+{
+  "markdown_files": 5,
+  "parsed_json_blocks": 3,
+  "math_checks_passed": 12,
+  "study_bodies_read": 10,
+  "local_links_checked": true,
+  "remote_links_live_checked": false,
+  "errors": [],
+  "confidence_bound_n20": 0.13910834066826516,
+  "confidence_bound_n100": 0.029513049607039932
+}

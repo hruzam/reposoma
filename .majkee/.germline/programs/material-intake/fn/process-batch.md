@@ -1,9 +1,14 @@
 ---
 program: material-intake
 function: process-batch
-revision: 2026-11-04
-stamp: a59c07e3
+revision: 2026-11-05
+stamp: 96b1e7ac
+title: process-batch
+scope: material-intake
+kind: procedure
+updated: '2026-11-05'
 ---
+
 # process-batch
 
 Inputs, output homes, model limits, consultant binding and cleanup authority come
@@ -103,6 +108,11 @@ Write concise Markdown under explicit subject slugs in the approved output root.
 Read selected destinations first and preserve unrelated work. Extend a clearly
 matching note rather than creating a competing copy. No project search/attachment.
 
+Require the controller's leading YAML frontmatter on authored Markdown: `title`,
+`scope`, `kind` and `updated`. Preserve existing metadata, body and ownership.
+Only actual source verification advances `verified`; extraction or copying alone
+does not. Ensure any catalog/receipt generator preserves this frontmatter on rerun.
+
 Extract the mechanism, when it applies, a useful example or comparison, limits and
 primary sources. Distinguish reported experimental results from reproduced results
 and myShell's own derivations. Group related frames into a single knowledge item.
@@ -176,6 +186,9 @@ Finish `receipt.md` with batch/request, checked program/function stamps, origina
 count, group counts, priority entry points, stage completion/holds, source-check
 limits, worker/consultant bindings and remaining next pointer if any. No personal
 filenames or transcript dump. Keep the exact deletion log private.
+
+The receipt and thematic indexes follow the same Markdown metadata minimum;
+validate their YAML mapping as part of the final checks.
 
 Return the knowledge entry links and retained/removed/held counts. State what was
 actually verified and what remains uncertain. No commit, push, deployment or schedule.

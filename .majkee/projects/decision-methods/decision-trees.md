@@ -1,3 +1,10 @@
+---
+title: Decision trees, overfitting and forests
+scope: decision-methods
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # Decision trees, overfitting and forests
 
 TC03 · extracted 4 November 2026. The reel is titled **Decision Trees**, part 25

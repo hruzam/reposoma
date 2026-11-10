@@ -1,3 +1,10 @@
+---
+title: Decision methods
+scope: decision-methods
+kind: backlog-index
+updated: '2026-11-05'
+---
+
 # Decision methods
 
 Both requested trees live here, as Majkee confirmed on 4 November 2026:

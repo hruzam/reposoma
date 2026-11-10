@@ -1,3 +1,10 @@
+---
+title: Developer engineering
+scope: technical-knowledge
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # Developer engineering
 
 Extracted 4 November 2026 from TC22–TC35. These are condensed principles and

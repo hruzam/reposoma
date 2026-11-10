@@ -1,3 +1,10 @@
+---
+title: Disposition of all 62 clippings
+scope: technical-knowledge
+kind: backlog-index
+updated: '2026-11-05'
+---
+
 # Disposition of all 62 clippings
 
 Extracted by myShell on 4 November 2026. Every item has exactly one primary pile and destination. Research may be useful without its results having been independently reproduced. Individual rejected claims can also appear in the crap note.

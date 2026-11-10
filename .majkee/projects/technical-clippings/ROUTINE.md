@@ -1,3 +1,10 @@
+---
+title: Repeat this review
+scope: technical-clippings
+kind: procedure
+updated: '2026-11-05'
+---
+
 # Repeat this review
 
 For a **new general batch**, use the full
@@ -68,6 +75,9 @@ with a new `scan`. The scan steps below apply to a fresh intake date.
    authorized removal of excluded personal/unreviewed copies too; only the 21
    selected evidence images remain. For a new intake, establish whether images are
    disposable copies before applying the same cleanup.
+   Give authored knowledge/index/receipt Markdown leading YAML frontmatter with
+   `title`, `scope`, `kind` and `updated`. Preserve factual verification dates when
+   only metadata or placement changes. The full controller owns this requirement.
 8. Verify the catalog coverage and inspect the project changes. Check that all raw
    media, derived sheets/OCR and sorted symlinks remain ignored. For example:
 

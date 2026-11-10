@@ -1,3 +1,10 @@
+---
+title: Agent workflows
+scope: technical-knowledge
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # Agent workflows
 
 TC13–TC21; extracted 4 November 2026. Product names remain leads, with their

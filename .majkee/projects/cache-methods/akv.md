@@ -1,3 +1,10 @@
+---
+title: 'AKV: cache engineering for agents'
+scope: cache-methods
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # AKV: cache engineering for agents
 
 TC08 · extracted 4 November 2026 · primary paper checked; not reproduced.

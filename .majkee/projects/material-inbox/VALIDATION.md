@@ -1,3 +1,10 @@
+---
+title: Procedure authoring receipt
+scope: material-inbox
+kind: receipt
+updated: '2026-11-05'
+---
+
 # Procedure authoring receipt
 
 4 November 2026 · myShell · office / `hruzam-120922`.
@@ -37,3 +44,19 @@ authoring task. First-batch behavior remains to be observed on an explicitly inv
 new batch. No deploy dry-run applies: this is locally invoked Markdown guidance,
 with no global/native-skill installation, watcher, parser or deployment change.
 No commit or push was performed.
+
+## 5 November extension
+
+The operator requested same-slug transfer into a named project's `.dev/_back-log/`
+and frontmatter on backlog Markdown. The controller now binds `process-batch`
+(`96b1e7ac`) and `transfer-backlog` (`1f4a8c62`), with controller stamp `f4d6b381`.
+The stamps above record the initial 4 November revision, not current invocation pins.
+The new function defaults to copying and specifies dated README import/export records,
+target-project gates, collision handling and metadata/link checks. No target project
+was selected and no transfer was performed during authoring.
+
+Frontmatter was added to the authored backlog notes and local entry documents without
+changing their existing bodies during normalization. The catalog generator now preserves
+frontmatter and leaves unchanged catalog content untouched. YAML parsing, function pins,
+local-link checks and generator regression checks passed; no factual `verified` dates
+were invented or refreshed by the metadata edit.

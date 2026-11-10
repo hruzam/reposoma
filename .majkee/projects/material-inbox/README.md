@@ -1,3 +1,10 @@
+---
+title: Material inbox — disposable copies to knowledge
+scope: material-inbox
+kind: backlog-index
+updated: '2026-11-05'
+---
+
 # Material inbox — disposable copies to knowledge
 
 Put a batch of **copies** in `media/<batch-id>/` below this folder. Any image names
@@ -38,3 +45,8 @@ or assume agent instances survived.
 Authoritative local procedure:
 [material-intake controller](../../.germline/programs/material-intake/CONTROLLER.md).
 This is manual prompt guidance, not a shell command or automatically installed skill.
+
+For an existing extracted scope, use `material-intake&transfer-backlog` with its
+source path and explicitly named project. It copies the same slug into
+`<project>/.dev/_back-log/<slug>/` and records the date/source in README frontmatter,
+after resolving the target's instructions. It does not move the source or activate work.

@@ -1,3 +1,10 @@
+---
+title: Why six percentage points can change overload
+scope: cache-methods
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # Why six percentage points can change overload
 
 Extracted 4 November 2026 from TC31 / frame S191, Systems in Motion.

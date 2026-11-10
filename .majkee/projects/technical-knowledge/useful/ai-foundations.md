@@ -1,3 +1,10 @@
+---
+title: AI foundations
+scope: technical-knowledge
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # AI foundations
 
 TC01, TC02; decision trees from TC03 are in the priority

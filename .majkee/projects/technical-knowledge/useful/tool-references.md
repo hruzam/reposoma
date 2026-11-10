@@ -1,3 +1,10 @@
+---
+title: Tool and learning references
+scope: technical-knowledge
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # Tool and learning references
 
 Extracted 4 November 2026. These are pointers for a future concrete task. They

@@ -1,3 +1,10 @@
+---
+title: Majkee's local prompt engine — manual trial
+scope: myShell-engine
+kind: procedure
+updated: '2026-11-05'
+---
+
 # Majkee's local prompt engine — manual trial
 
 This shelf translates Majkee's short requests into a read path and bounded task for the current
@@ -123,6 +130,21 @@ at most Sol/medium. One optional named consultant supplies programming advice
 (Astrobley) or conceptual counsel (Oraculum), using its existing native role contract;
 the controller records the consultant exception and exact scope. This does not
 install a skill, change global TOMLs, create a schedule or alter another project's state.
+
+To place an already extracted subject in a project's backlog:
+
+```text
+ctrl material-intake&transfer-backlog :
+source: projects/decision-methods;
+project: nablarva;
+mode: copy
+```
+
+The selected function resolves the target's governing read path and places the
+same slug at `<project-root>/.dev/_back-log/<slug>/`. It requires Markdown
+frontmatter and a dated import record in the destination README; copying does
+not refresh factual verification or start project work. Source removal is not
+part of this function. No target project is selected merely by this example.
 
 ## myShell routine and human relays
 

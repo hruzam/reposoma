@@ -1,0 +1,205 @@
+{
+  "review_date": "2026-10-27",
+  "agent": "Wave",
+  "status": "research assessment; not implementation authorization",
+  "repositories": {
+    "nabla-lab": {
+      "owner": "hruzam",
+      "branch": "core",
+      "commit": "ec59d2414137b1a2ade7e544154b1104f88e1836",
+      "commit_time": "2026-10-27T10:18:05Z"
+    },
+    "nablarva": {
+      "owner": "hruzam",
+      "baseline_commit": "74f4501ea101f66eddb64f884c70f510cf949754",
+      "note": "Earlier reviewed baseline, not a fresh assertion of current HEAD"
+    }
+  },
+  "execution_boundary": {
+    "remote_writes": false,
+    "live_agent_spawns": false,
+    "paid_inference": false,
+    "subagents_used": false,
+    "local_numerical_checks": true
+  },
+  "coverage": [
+    {
+      "path": "publications/inner-circle/tensor-analytics/study.md",
+      "blob_sha": "72c52f5d61c5a33261c2502e4b60d78fc1299526",
+      "read_depth": "full-body",
+      "purpose": "units, masks, CP/Tucker invariance, bilinear router",
+      "url": "https://github.com/hruzam/nabla-lab/blob/ec59d2414137b1a2ade7e544154b1104f88e1836/publications/inner-circle/tensor-analytics/study.md"
+    },
+    {
+      "path": "publications/inner-circle/spectral-retrieval/study.md",
+      "blob_sha": "4aedaeae32c4cb31e2de5312339815ac76fb61d3",
+      "read_depth": "full-body",
+      "purpose": "graph construction, diffusion, approximation, evaluation",
+      "url": "https://github.com/hruzam/nabla-lab/blob/ec59d2414137b1a2ade7e544154b1104f88e1836/publications/inner-circle/spectral-retrieval/study.md"
+    },
+    {
+      "path": "publications/inner-circle/coalition-evidence/study.md",
+      "blob_sha": "563a6f1c6308c17cf93bfb83f50a329ed3b8332e",
+      "read_depth": "full-body",
+      "purpose": "capacity constraints, symmetry counterexample, correlated evidence",
+      "url": "https://github.com/hruzam/nabla-lab/blob/ec59d2414137b1a2ade7e544154b1104f88e1836/publications/inner-circle/coalition-evidence/study.md"
+    },
+    {
+      "path": "publications/inner-circle/flow-control-stopping/study.md",
+      "blob_sha": "6a6339cd9ad6ffe9db36cd271d8d6448fe63d57a",
+      "read_depth": "full-body",
+      "purpose": "identifiability, sampled control, loss-based stopping",
+      "url": "https://github.com/hruzam/nabla-lab/blob/ec59d2414137b1a2ade7e544154b1104f88e1836/publications/inner-circle/flow-control-stopping/study.md"
+    },
+    {
+      "path": "publications/inner-circle/mental-map/study.md",
+      "blob_sha": "bb83c66c19c2b08473968a0ec8b7faa1b952fe36",
+      "read_depth": "full-body",
+      "purpose": "source lineage, coverage, retrieval, historical fidelity",
+      "url": "https://github.com/hruzam/nabla-lab/blob/ec59d2414137b1a2ade7e544154b1104f88e1836/publications/inner-circle/mental-map/study.md"
+    },
+    {
+      "path": "publications/inner-circle/interactive-interposition/study.md",
+      "blob_sha": "2e6920dba96eee5f79252ae0ae15bc19d99a3afa",
+      "read_depth": "full-body",
+      "purpose": "turn correlation, completion, transport/source boundaries",
+      "url": "https://github.com/hruzam/nabla-lab/blob/ec59d2414137b1a2ade7e544154b1104f88e1836/publications/inner-circle/interactive-interposition/study.md"
+    },
+    {
+      "path": "publications/inner-circle/stance-geometry/study.md",
+      "blob_sha": "539fb227559a3fc009d4a73ef7ecbf8e9fa7da88",
+      "read_depth": "full-body",
+      "purpose": "measurement, sphere/categorical geometry, frame alignment",
+      "url": "https://github.com/hruzam/nabla-lab/blob/ec59d2414137b1a2ade7e544154b1104f88e1836/publications/inner-circle/stance-geometry/study.md"
+    },
+    {
+      "path": "publications/inner-circle/coherence-composition/study.md",
+      "blob_sha": "3780b5a197771f7ad95ed00d51bde25c921b6ab2",
+      "read_depth": "full-body",
+      "purpose": "affine consistency, typed ports, model-relative quantities",
+      "url": "https://github.com/hruzam/nabla-lab/blob/ec59d2414137b1a2ade7e544154b1104f88e1836/publications/inner-circle/coherence-composition/study.md"
+    },
+    {
+      "path": "publications/inner-circle/cascade-diagnostics/study.md",
+      "blob_sha": "7a591bc280245b4ce31ba46af5b5a55199b4ac3d",
+      "read_depth": "full-body",
+      "purpose": "offspring operators, transient amplification, temporal observations",
+      "url": "https://github.com/hruzam/nabla-lab/blob/ec59d2414137b1a2ade7e544154b1104f88e1836/publications/inner-circle/cascade-diagnostics/study.md"
+    },
+    {
+      "path": "publications/inner-circle/scratch-instruments/study.md",
+      "blob_sha": "7506d46602c753a537806682a0526bed074f11be",
+      "read_depth": "full-body",
+      "purpose": "compression, anchoring, representation, controlled budgets",
+      "url": "https://github.com/hruzam/nabla-lab/blob/ec59d2414137b1a2ade7e544154b1104f88e1836/publications/inner-circle/scratch-instruments/study.md"
+    }
+  ],
+  "supporting_reads": [
+    {
+      "path": "AGENTS.md",
+      "blob_sha": "e304149234aa779720a1bcde1923f7447c5a2c49",
+      "read_depth": "full-body"
+    },
+    {
+      "path": "session/pulse.md",
+      "blob_sha": "f18864527e46463d44ce8dfc43df50e76052f24b",
+      "read_depth": "full-body; historical state not activated"
+    },
+    {
+      "path": "publications/inner-circle/index.html",
+      "blob_sha": "c68da03e89d56af77f0bdf70ea22d5690432f115",
+      "read_depth": "full-text; navigation rather than visual rendering"
+    },
+    {
+      "path": "publications/inner-circle/research-tracks.md",
+      "blob_sha": "f820aeac6a4229eb7873f118286ebce0edae033e",
+      "read_depth": "full-body"
+    },
+    {
+      "path": "publications/inner-circle/substrate-gap-register.md",
+      "blob_sha": "c2046b74a70ebbad3d6e92d3c54d97c0b9e3b338",
+      "read_depth": "full-body"
+    }
+  ],
+  "prior_context": [
+    {
+      "url": "https://github.com/hruzam/nablarva/blob/74f4501ea101f66eddb64f884c70f510cf949754/.dev/session/nablarva-X4-vist/raw/vist-01-principle-and-applications.md",
+      "read_depth": "full-body earlier in conversation; lines 1-105 refreshed in this review"
+    },
+    {
+      "path": ".dev/session/nablarva-X4-vist/raw/read-carefuly-VIST-substrate-old-larva/",
+      "read_depth": "six documents read earlier in this conversation; not independently re-audited in full this turn"
+    }
+  ],
+  "external_sources": [
+    {
+      "id": "O1",
+      "url": "https://developers.openai.com/codex/cli/reference",
+      "depth": "official reference; exec/fork section inspected; not run",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "O2",
+      "url": "https://developers.openai.com/codex/app-server",
+      "depth": "official reference; handshake/fork/turn sections inspected; not run",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "A1",
+      "url": "https://code.claude.com/docs/en/agent-view",
+      "depth": "official reference; shell/background fork sections inspected; not run",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "A2",
+      "url": "https://code.claude.com/docs/en/cli-reference",
+      "depth": "official reference; resume/fork/model/effort flags inspected; not run",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "A3",
+      "url": "https://code.claude.com/docs/en/sub-agents",
+      "depth": "official reference; fork versus fresh context inspected; not run",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "A4",
+      "url": "https://code.claude.com/docs/en/prompt-caching",
+      "depth": "official reference; prefix/model/effort/cache limits inspected; not run",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "P1",
+      "url": "https://arxiv.org/html/2510.03215v2",
+      "depth": "C2C full-text method and relevant analyses inspected; no model replication",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "P2",
+      "url": "https://arxiv.org/abs/2406.18665",
+      "depth": "RouteLLM abstract and identity checked; no full theorem/implementation audit",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "P3",
+      "url": "https://arxiv.org/abs/2405.14831",
+      "depth": "HippoRAG abstract and identity checked; no replication",
+      "checked": "2026-10-27"
+    },
+    {
+      "id": "P4",
+      "url": "https://arxiv.org/abs/2510.15945",
+      "depth": "BEACON identity and abstract scope checked; no optimality theorem audit",
+      "checked": "2026-10-27"
+    }
+  ],
+  "not_read_or_not_reproduced": [
+    "Not all 72 historical source files reported by the publication authors were re-read.",
+    "External reposoma Study One / Study Two were not loaded.",
+    "No private operator vault, inbox, or _monkeynet content was read.",
+    "Publication figures were not audited against their CSVs; local checks independently exercise selected equations.",
+    "No installed-user-host CLI version, account billing, permission coverage, or provider cache-hit behavior was tested.",
+    "No trained tensor decomposition, retrieval benchmark, routing fit, or C2C model experiment was run.",
+    "The reported missing historical cross-vendor results were not replaced by this informed review."
+  ]
+}

@@ -1,3 +1,10 @@
+---
+title: Technical clippings catalog
+scope: technical-clippings
+kind: backlog-index
+updated: '2026-11-05'
+---
+
 # Technical clippings catalog
 
 62 grouped items, 218 historical frame records (removed images are labeled below).

@@ -1,3 +1,10 @@
+---
+title: Defensive-security knowledge
+scope: technical-knowledge
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # Defensive-security knowledge
 
 TC38–TC42 and readable parts of the security-tool lists; extracted 4 November 2026.

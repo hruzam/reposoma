@@ -1,14 +1,20 @@
 ---
 program: material-intake
-revision: 2026-11-04
-stamp: 87a4ce19
+revision: 2026-11-05
+stamp: f4d6b381
 scope: personal .majkee trial; uncanonical; manual; no deploy
+title: material-intake
+kind: procedure
+updated: '2026-11-05'
 ---
+
 # material-intake
 
 Turn a named batch of disposable image copies into researched, reusable Markdown
 knowledge and a small evidence set. myShell owns selection, integration, cleanup
 and the receipt. The result is personal backlog; inclusion creates no active task.
+`transfer-backlog` separately places a selected same-slug package into an explicitly
+named project's `.dev/_back-log/`, with dated README provenance and target gates.
 
 ## Entry and authority
 
@@ -36,10 +42,14 @@ deletion, overrides this default grant. Read-only requests produce a report with
 creating notes, receipts or other files. A cleanup hold need not block authorized
 independent extraction work.
 
-Resolve the exact batch and output paths; keep them inside `.majkee/projects/`
+For `process-batch`, resolve the exact batch and output paths; keep them inside `.majkee/projects/`
 unless the operator separately authorizes another scope. Do not search for or attach
 existing projects merely because a subject resembles their name. Follow any nested
 AGENTS chain on an actual selected output path before writing.
+
+For `transfer-backlog`, resolve the named source, project entry and exact destination
+using its selected function. Its target write authority is limited to the authorized
+backlog placement; the batch-cleanup grant does not extend to project files.
 
 ## Invariants
 
@@ -62,10 +72,13 @@ AGENTS chain on an actual selected output path before writing.
 - Delete only the exact named disposable copies and generated derivatives after
   extraction/retention checks. Preserve evidence that still adds value. No phone,
   source-device, sibling-folder or external-service deletion.
-- This function changes no canon, project STATUS, global agent TOML or native skill
+- These functions change no canon, project STATUS, global agent TOML or native skill
   installation. Journal folding requires its own requested journal function.
 
 ## Required inputs and output homes
+
+The following batch inputs apply to `process-batch`; transfer inputs and target
+read/write gates are specified in `transfer-backlog`.
 
 Required: named batch directory, current actor/date/timezone, and task authority.
 Optional: priorities; capture-date window; explicit output root; consultant choice
@@ -86,6 +99,15 @@ For each batch, use:
 The receipt is this intake's checkpoint, not a project pulse or promise to act later.
 Keep batch IDs unique within the working home. Re-entry reads the existing receipt
 and private inventory; never replace an earlier intake by rescanning a reduced folder.
+
+## Markdown metadata
+
+Authored backlog Markdown, indexes, receipts and procedures require valid leading
+YAML frontmatter with at least `title`, `scope`, `kind` and `updated` (the actual
+edit date). Preserve existing typed fields and the target's stronger schema. Do not
+invent a `verified` date: transport/metadata edits do not establish factual freshness.
+The transfer function defines dated README import/export records. The batch
+function applies this minimum when extracting knowledge and writing its receipt.
 
 ## Native worker and optional consultant
 
@@ -128,7 +150,8 @@ Native bindings for another runtime require an explicit mapping, not copied TOML
 
 | function id | occasion | file binding | expected stamp | result |
 |---|---|---|---|---|
-| process-batch | new intake or explicit re-entry of a named batch | fn/process-batch.md | a59c07e3 | accounted inputs, thematic notes, evidence dispositions, cleanup and receipt |
+| process-batch | new intake or explicit re-entry of a named batch | fn/process-batch.md | 96b1e7ac | accounted inputs, thematic notes, evidence dispositions, cleanup and receipt |
+| transfer-backlog | selected source slug to an explicitly named project's backlog | fn/transfer-backlog.md | 1f4a8c62 | verified same-slug copy and dated README provenance |
 
 This is the only function index. Require the selected binding's program/function/stamp
 to match before proceeding. Missing file or mismatch: report the exact gap and hold

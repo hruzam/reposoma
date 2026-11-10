@@ -1,3 +1,10 @@
+---
+title: 'Application caches: eviction and freshness'
+scope: cache-methods
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # Application caches: eviction and freshness
 
 Extracted 4 November 2026 from TC31; checked against primary documentation.

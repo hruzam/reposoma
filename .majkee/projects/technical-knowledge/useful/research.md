@@ -1,3 +1,10 @@
+---
+title: Research knowledge worth keeping
+scope: technical-knowledge
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # Research knowledge worth keeping
 
 Extracted 4 November 2026. These are source-backed ideas, not independently

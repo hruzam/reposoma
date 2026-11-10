@@ -1,3 +1,10 @@
+---
+title: Technical clippings
+scope: technical-clippings
+kind: backlog-index
+updated: '2026-11-05'
+---
+
 # Technical clippings
 
 REDMI15 technical screenshot collection, reviewed by **myShell on 3 November 2026**.

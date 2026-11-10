@@ -1,3 +1,10 @@
+---
+title: Knowledge extraction and image retention
+scope: technical-clippings
+kind: receipt
+updated: '2026-11-05'
+---
+
 # Knowledge extraction and image retention
 
 myShell · 4 November 2026 · operator request: extract useful thematic knowledge,

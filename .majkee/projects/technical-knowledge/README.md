@@ -1,3 +1,10 @@
+---
+title: Extracted technical knowledge
+scope: technical-knowledge
+kind: backlog-index
+updated: '2026-11-05'
+---
+
 # Extracted technical knowledge
 
 myShell · 4 November 2026 · extracted from the 3 November REDMI15 intake.

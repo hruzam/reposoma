@@ -1,3 +1,10 @@
+---
+title: Transformer KV caches
+scope: cache-methods
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # Transformer KV caches
 
 Extracted 4 November 2026 as background for TC08 and TC06. Primary reference checked:

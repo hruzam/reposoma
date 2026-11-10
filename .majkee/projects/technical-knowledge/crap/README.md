@@ -1,3 +1,10 @@
+---
+title: Rejected claims and low-value noise
+scope: technical-knowledge
+kind: backlog-index
+updated: '2026-11-05'
+---
+
 # Rejected claims and low-value noise
 
 myShell judgment, 4 November 2026. “Crap” here applies to the identified claim or

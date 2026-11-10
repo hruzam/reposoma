@@ -1,3 +1,10 @@
+---
+title: 'SwaT: translating cached state between models'
+scope: cache-methods
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # SwaT: translating cached state between models
 
 TC06 · extracted 4 November 2026 · research result, not independently reproduced.

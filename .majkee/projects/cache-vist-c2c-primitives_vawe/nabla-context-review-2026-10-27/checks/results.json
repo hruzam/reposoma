@@ -1,0 +1,148 @@
+{
+  "kind": "synthetic-and-algebraic-checks",
+  "seeded": true,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5"
+  },
+  "tests": [
+    {
+      "name": "cp_common_time_permutation",
+      "status": "PASS",
+      "values": {
+        "residual_before": 0.6442984416380352,
+        "residual_after": 0.6442984416380352,
+        "conclusion": "Common time permutation preserves this masked residual. No CP fitting or forecasting was performed."
+      }
+    },
+    {
+      "name": "low_rank_is_not_sparsifier",
+      "status": "PASS",
+      "values": {
+        "original_energy": 2.9999999999999996,
+        "truncated_energy": -2.0793077573779898e-18,
+        "conclusion": "Discarding a positive mode violates the all-vectors lower sparsifier bound for epsilon=0.5."
+      }
+    },
+    {
+      "name": "coalition_identity",
+      "status": "PASS",
+      "values": {
+        "shapley": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "mu_pair_12": 0.5,
+        "mu_pair_13": 0.0,
+        "graded_vectors_checked": 100,
+        "conclusion": "Equal Shapley values do not imply identity-blind coalition scores."
+      }
+    },
+    {
+      "name": "affine_cycle_obstruction",
+      "status": "PASS",
+      "values": {
+        "minimum_squared_residual": 0.3333333333333334,
+        "conclusion": "The pinned affine cycle is inconsistent; the homogeneous system still has a zero section."
+      }
+    },
+    {
+      "name": "subcritical_transient_amplification",
+      "status": "PASS",
+      "values": {
+        "spectral_radius": 0.6,
+        "first_generation_total": 1.2999999999999998,
+        "conclusion": "Subcritical asymptotics can coexist with transient amplification; this is not a pollution detector."
+      }
+    },
+    {
+      "name": "fisher_rao_scale",
+      "status": "PASS",
+      "values": {
+        "distance": 1.8545904360032242,
+        "embedding_radius": 2.0,
+        "conclusion": "Categorical Fisher-Rao convention uses radius two. No stance extraction was evaluated."
+      }
+    },
+    {
+      "name": "revisit_is_not_coverage",
+      "status": "PASS",
+      "values": {
+        "revisit_walk_coverage": [
+          "a",
+          "s"
+        ],
+        "reachable": [
+          "a",
+          "b",
+          "s"
+        ],
+        "conclusion": "A revisit is not a coverage certificate; enumerated successor closure is stronger."
+      }
+    },
+    {
+      "name": "sampling_vs_euler",
+      "status": "PASS",
+      "values": {
+        "kh": 3.0,
+        "exact_pole": 0.049787068367863944,
+        "euler_pole": -2.0,
+        "conclusion": "Sampling a continuous solution differs from discretizing its dynamics by Euler."
+      }
+    },
+    {
+      "name": "effective_rank_not_semantic_information",
+      "status": "PASS",
+      "values": {
+        "label_independent_matrix_effective_rank": 7.999999999999998,
+        "label_encoding_matrix_effective_rank": 1.0,
+        "conclusion": "Singular-value spread alone does not establish task information. This does not refute C2C experimental performance."
+      }
+    },
+    {
+      "name": "scratch_budget_boundary",
+      "status": "PASS",
+      "values": {
+        "interior_maximum_for_a_0_2": 1.6094379124341003,
+        "maximum_budget_for_a_1_2": 0.0,
+        "conclusion": "A useful nonzero intermediate budget is not guaranteed by this model."
+      }
+    },
+    {
+      "name": "tensor_contraction_vs_relational_join",
+      "status": "PASS",
+      "values": {
+        "event_scores": [
+          0.14285714285714285,
+          0.8571428571428571,
+          1.2857142857142856
+        ],
+        "conclusion": "This tensor contraction is exactly an ordinary grouped weighted join. Tensor notation is not evidence of extra capability."
+      }
+    },
+    {
+      "name": "heat_vs_restart_walk",
+      "status": "PASS",
+      "values": {
+        "heat": [
+          0.2517326804911213,
+          0.49999401635422186,
+          0.24827330315465654
+        ],
+        "pagerank": [
+          0.34527027027027024,
+          0.4594594594594594,
+          0.19527027027027025
+        ],
+        "matched_mean_walk_length": 5.666666666666666,
+        "conclusion": "Both distributions conserve probability; matching mean walk lengths does not make the filters equal."
+      }
+    }
+  ],
+  "passed": 12,
+  "total": 12,
+  "live_agent_tests": false,
+  "paid_inference": false
+}

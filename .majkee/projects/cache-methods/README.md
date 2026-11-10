@@ -1,3 +1,10 @@
+---
+title: Cache methods
+scope: cache-methods
+kind: backlog-index
+updated: '2026-11-05'
+---
+
 # Cache methods
 
 Priority extraction requested by Majkee, 4 November 2026. These are personal

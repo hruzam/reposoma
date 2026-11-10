@@ -1,3 +1,10 @@
+---
+title: Unproven or unresolved
+scope: technical-knowledge
+kind: backlog-index
+updated: '2026-11-05'
+---
+
 # Unproven or unresolved
 
 Parked 4 November 2026. This pile means **evidence or practical fit is missing**.

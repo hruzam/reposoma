@@ -5,6 +5,7 @@ import hashlib
 import html
 import json
 import re
+from datetime import date
 from pathlib import Path
 from urllib.parse import quote
 
@@ -139,7 +140,23 @@ def catalog(data):
                  frame.get('retention') == 'removed-after-extraction' else
                  f'[{frame["id"]}](media/{item["intake"]}/{quote(frame["file"])})')
                 for frame in item['frames']), ''])
-    (ROOT / 'CATALOG.md').write_text('\n'.join(lines))
+    path = ROOT / 'CATALOG.md'
+    body = '\n'.join(lines)
+    previous = path.read_text() if path.exists() else ''
+    if previous.startswith('---\n'):
+        metadata, separator, old_body = previous[4:].partition('\n---\n')
+        if not separator:
+            raise ValueError('CATALOG.md has unclosed frontmatter; refusing to replace it')
+        if old_body.lstrip('\n') == body:
+            return
+        metadata, count = re.subn(r'^updated:.*$', f"updated: '{date.today().isoformat()}'",
+                                  metadata, flags=re.MULTILINE)
+        if not count:
+            metadata += f"\nupdated: '{date.today().isoformat()}'"
+    else:
+        metadata = ('title: Technical clippings catalog\nscope: technical-clippings\n'
+                    f"kind: backlog-index\nupdated: '{date.today().isoformat()}'")
+    path.write_text('---\n' + metadata + '\n---\n\n' + body)
 
 
 if __name__ == '__main__':

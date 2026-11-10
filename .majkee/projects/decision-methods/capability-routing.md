@@ -1,3 +1,10 @@
+---
+title: Capability routing in Trinity
+scope: decision-methods
+kind: knowledge-note
+updated: '2026-11-05'
+---
+
 # Capability routing in Trinity
 
 TC07 · extracted 4 November 2026 · primary paper checked; implementation untested.
