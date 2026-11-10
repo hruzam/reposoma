@@ -5,7 +5,7 @@ brand: codex
 seat: oraculum
 project: nabla-lab
 root: ~/nabla-lab
-commit: 26127e7 (core)
+commit: 07c62dc (core)
 task: Re-enter the completed Jev round-2 research and select a bounded local-model or observer experiment from its evidence.
 resume: codex --profile oraculum -C ~/nabla-lab
 model: astra
@@ -17,6 +17,9 @@ pointers:
   - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/README.md
   - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/local-model-candidates.md
   - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/bounded-peer-research.md
+  - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/successor-prompt.md
+  - ~/ia-sync/.dev/session/jev-01-codex-pilot/raw/oraculum.two-rail-cooperation.2026-11-10.md
+  - ~/ia-sync/.dev/session/jev-local-01-qualification/README.md
   - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/implementation-substrate.md
   - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/calibration-protocol.md
   - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/verification.md
@@ -78,3 +81,7 @@ The source handoff lives in ia-sync and is transfer material for Nablarva; it is
 ## Done when
 
 The successor can locate the protocol, exact receipts, candidate comparison and Cartan handoff, distinguish completed research from unexecuted experiments, and return one bounded next-study proposal or act within a new explicit assignment. This is not an instruction to stratify the entire private backlog. Keep this multi-reader card until its intended readers have consumed it; use the vault lifecycle then.
+
+## Operator's two-rail launch preparation
+
+Majkee subsequently supplied intended Jev partner thread `01a1c4af-1fbe-7301-9f52-654e1a0b8cd3`; current readiness remains unverified. A separate Cartan for local models is still unassigned. Its preparation vault is `~/ia-sync/.dev/session/jev-local-01-qualification/`, with source material but intentionally no RUNBOOK/STATUS yet. The complete operator-copyable prompt is `~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/successor-prompt.md`; it proposes an explicitly assigned research pen at `~/nabla-lab/session/jev-coordination-01-two-rails/` only when launched. That coordination folder is intentionally absent at this handoff. Both actual engineering heads retain their own gates. The older `~/ia-sync/.dev/session/oraculum-02-csharp-cooperation/` concerns a child/harness gate and is not this main-peer arrangement. No native messages, live bus cycles or new session launches occurred while preparing these pointers. The launch packet was subsequently published in nabla-lab `core` commit `07c62dc` (successor prompt) and ia-sync `main` commit `3854bcc` (cooperation note and local qualification README/substrate). This is document publication only: the local qualification bed still has no RUNBOOK/STATUS, the proposed coordination folder remains absent, and no peer/session/bus action occurred.
