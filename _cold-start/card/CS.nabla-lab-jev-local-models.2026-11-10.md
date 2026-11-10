@@ -5,7 +5,7 @@ brand: codex
 seat: oraculum
 project: nabla-lab
 root: ~/nabla-lab
-commit: 194e0d3 (core)
+commit: 26127e7 (core)
 task: Re-enter the completed Jev round-2 research and select a bounded local-model or observer experiment from its evidence.
 resume: codex --profile oraculum -C ~/nabla-lab
 model: astra
@@ -16,12 +16,15 @@ pointers:
   - ~/nabla-lab/session/flag.md
   - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/README.md
   - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/local-model-candidates.md
+  - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/bounded-peer-research.md
   - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/implementation-substrate.md
   - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/calibration-protocol.md
   - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/verification.md
   - ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/office-observation.json
   - ~/nabla-lab/publications/inner-circle/jev-usage/README.md
   - ~/ia-sync/.dev/session/jev-01-codex-pilot/raw/oraculum.calibration-protocol.2026-11-10.md
+  - ~/ia-sync/.dev/session/jev-01-codex-pilot/raw/HANDOFF.tui-bus-substrate.2026-11-10.md
+  - ~/reposoma/raw.guides/bus/GUIDE.md
 session_id: 01a19fc8-3245-72c2-a92c-07cfa57c8c5d
 rollout: ~/.codex/sessions/2026/11/03/rollout-2026-11-03T06-00-59-01a19fc8-3245-72c2-a92c-07cfa57c8c5d.jsonl
 cli_version_on_path: 0.167.0
@@ -41,7 +44,7 @@ Resolve the actual entry's identity/instructions, then the project pulse and fla
 
 ## Observed state
 
-The November 4 Jev/Coin intake is closed and archived; its published lab commit is the HEAD above. November 10 was a separately assigned round on calibration, selective observation, local weights, recursive computation, cache methods and both host envelopes. Research/design is complete for that bounded intake. Majkee then explicitly clarified interest in supported local models with accessible weights, including options without Ollama, and requested this successor card.
+The November 4 Jev/Coin intake is closed and archived at lab commit `c69d5725fc14`; the card's commit field identifies the newer research release. November 10 was a separately assigned round on calibration, selective observation, local weights, recursive computation, cache methods and both host envelopes. Research/design is complete for that bounded intake. Majkee then explicitly clarified interest in supported local models with accessible weights, including options without Ollama, and requested this successor card.
 
 Completed: calibration protocol and dated Jev-01 handoff; implementation substrate; live office read-only capacity receipt; exact small mathematical calculations; primary-source local-model shortlist. Review corrections and limits are recorded in verification. No empirical Jev calibration, full cache replay, model training or home benchmark is claimed. The older multi-reader November 4 card remains untouched and describes the earlier parked collection.
 
@@ -65,6 +68,12 @@ cat ~/nabla-lab/session/research-jev-usage/round-2.2026-11-10/README.md
 If assigned another research phase, begin with one falsifiable task and identify whether it needs typed decisions, fixed-label classification, generation or directly programmed numerical weights. The shortlist recommends Laya versus frozen multilingual MiniLM+head for linguistic decisions; SetFit and generative adapters are later distinct experiments. Follow the substrate for observer/cache or recursive mathematics. Fixture texts and independently adjudicated labels are not yet built. Do not repeat completed arithmetic as though it were new empirical evidence.
 
 No paid-call grant remains. This card does not authorize installations, training, remote home probes, commits/push, canon or implementation. Execution belongs to a separately assigned builder; Oraculum's scope remains research and synthesis. A later reader must verify pointer availability and current host capacity before selecting a job. No fresh successor-session smoke test has been performed.
+
+## Named Cartan peer and bounded streams
+
+Majkee's later November 10 request asks the successor to organize research streams through a specific Cartan session, one at a time with slowly increasing loop limits. Read the bounded-peer-research pointer before activation. Proposed batches are one, then up to two, then up to three closed cycles, with an operator checkpoint before each increase and a goal check after every result. Only one assignment is in flight across all streams; unfinished delivery/completion must be reconciled before another dispatch.
+
+The source handoff lives in ia-sync and is transfer material for Nablarva; it is not a Jev bed located in Nablarva. It was untracked on office at this assessment; another host needs the owner's or majkee's delivery before following that pointer. Historical thread IDs and old allowances are not inherited. Bind the actual named peer, current return address, goal, assigned bus/owner and finite budgets. This session exposed no native TUI sender in tool metadata. Oraculum may coordinate research but must use an authorized transport worker or majkee's relay under its current identity; Cartan retains engineering implementation and STATUS ownership. No peer was contacted by this addendum. The bounded procedure and index link were subsequently published in nabla-lab `core` commit `26127e7`; this release does not publish or alter the separate ia-sync handoff. The card remains a transfer pointer, not a new running loop or STATUS.
 
 ## Done when
 
