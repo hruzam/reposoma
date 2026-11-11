@@ -1,0 +1,58 @@
+to-cartan(germline-09) from-majkee ---
+
+Close out G09 run-01 so we can prepare a fresh run in the same bed.
+
+This authorizes G09-only resource retirement and closeout documentation. No new tunnel target turns,      
+repairs, implementation, deployment or commit/push.
+
+1. Quiesce and retire owned resources
+
+Inventory what G09 actually created. Distinguish stored threads, local vaults, native workers and running 
+processes.
+
+Known R1 thread:
+01a176f7-532b-7722-9324-0ecb92694073
+
+Use the existing caretaker for bounded cleanup if available. Verify quiescence through supported zero-turn
+operations and correctly scoped process/session observations. Do not infer death from cross-namespace PID 
+absence.
+
+Archive the known stored thread through a supported operation; do not permanently delete it. Close G09-    
+owned local vaults only after preserving their exact contents and identifiers. Keep vault snapshots        
+gitignored.
+
+Stop/release only native workers or active operations demonstrably owned by G09. If ownership is unclear,  
+report a cleanup hold. Never delete Codex writer locks or kill unrelated clients.
+
+2. Preserve evidence and write the self-report
+
+Leave existing evidence in place. Preserve the original RUNBOOK, release and pre-close STATUS before       
+changing closeout state. Do not overwrite handed-off records.
+
+Write:
+/home/hruzam/ia-sync/.dev/session/germline-09-source-reader/raw/closeout/SELFREPORT.run-01.2026-10-26.md   
+
+Include:
+- Original goal and expected versus observed results.
+- Actual actors, resource identifiers and retirement outcomes.
+- Sequence of events, consumed attempts and validated completions.
+- Verified findings versus remaining uncertainty.
+- Program/function consumption and what operational material reached the main; mark unavailable
+measurements honestly.
+- Exact evidence paths/hashes, modified files, remaining repairs and recommendations for the next
+caretaker/controller.
+
+Aim for <=800 words plus evidence tables. Distinguish reported loading from observed behavior.
+
+3. Hand back the bed
+
+Preserve the old release, then revoke further dispatch in RELEASE.json. Record the separate cleanup        
+authority and outcomes.
+
+Update STATUS with the unchanged acceptance gate: run-01 stopped, gate unmet, resource disposition, no     
+outstanding work except explicitly reported holds, and handback for replanning.
+
+Do not rewrite RUNBOOK, prune the bed, reset attempt accounting or start run-02.
+
+Return the self-report’s absolute path and a short cleanup summary, then make no further edits.
+

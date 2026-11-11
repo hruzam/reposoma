@@ -1,0 +1,22 @@
+---
+CMD: `source ~/reposoma/.majkee/helpers/cmd/CMD.zsh`
+
+---
+
+# 1. `mySHell`
+
+```yaml
+helps me estabilish team when need manage more 
+than one session in paralel to keep myShell's
+```
+**cmd**
+```cmd|prompt
+read /home/hruzam/reposoma/_cold-start/routines/RT.myshell-session-coordination.md
+```
+---
+
+# 2. `codex agents`
+
+```<alias-bash>
+alias c-houston='codex --profile houston -C ~/unikuklatrix/nablarva'
+```

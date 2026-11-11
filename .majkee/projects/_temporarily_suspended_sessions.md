@@ -86,9 +86,94 @@ today `2026-10-16` prepared for HOT run to report back to-cartan there : `codex 
 
 ---
 
-# START THIS
+# Before restarted office: `2026-11-11`
 
-`/home/hruzam/reposoma/_cold-start/card/CS.germline-A1-agent-production.2026-10-30.md` continue with VIG0 (vendor invariant germline 0).
+### JEV+ group
+
+ oraculum nabla-lab
+
+```bash
+codex resume 01a1c4f1-b2c9-7642-a6b7-b37a1f4d7e59
+```
+
+### cartan|jev-01:engineer
+
+```bash
+codex resume 01a1c4af-1fbe-7301-9f52-654e1a0b8cd3
+```
+
+###
+
+```bash
+codex resume 01a1aa8a-b5d4-70d3-9823-4f44f05af2d2
+```
 
 
+## myShell(photosorter)
 
+```bash
+codex resume 01a1a0ee-bf83-7490-b72a-f37585be680e
+```
+
+```bash
+
+```
+
+## cartan|jev-01:engineer
+
+```bash
+codex resume 01a18b45-7706-7aa2-a1c8-876134cb21fa
+```
+
+## .dev/session/composer-01-parse
+
+```bash
+codex resume 01a14828-d771-74a0-8695-305dc963ed20
+```
+
+## cartan|houston-navigation : `.dev/session/documentation-X1-organ-discovery/GOTO.md`
+
+```bash
+codex resume 01a1c33c-33df-72b1-ade2-db5aa06eee9f
+```
+
+## oraculum(stridulatrix)
+
+```bash
+codex resume 01a18d9c-3203-7c63-be6d-374e82bdb387
+```
+
+
+## myShell|germline experts
+
+-need them to comunicate together -> consensuz and restarted compromise
+
+### TOP germline|sella forked
+
+```bash
+codex resume 01a1562a-f22a-7d32-a9ae-905068218e3f
+```
+
+### myShell(germline expert)
+
+```bash
+codex resume 01a19f1f-54f8-79f0-bff8-c1604b078982
+```
+
+## 
+
+```bash
+.dev/session/germline-09-source-reader/raw/run-02/HANDOFF.md
+```
+
+## PC mainatainer `~/ia-sync/`
+
+```bash
+codex resume 01a1ccad-dcf6-7080-8a99-c851981d21eb
+```
+
+##
+
+```bash
+
+```
