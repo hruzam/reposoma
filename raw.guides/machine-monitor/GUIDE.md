@@ -49,7 +49,8 @@ Observed 2026-11-12 unless identified as operator intent:
 | Storage | sda 223.6 GiB; sda1 EFI; sda2 Btrfs root/home; about 209 GiB available at inventory |
 | Swap | None observed; memory-pressure protection remains to be assessed |
 | Present | OpenSSH client, Git, rsync, zsh, Python 3, curl |
-| Missing from command lookup | Tailscale, jq, tmux, zellij, PHP, Composer, Docker, Node.js, npm |
+| Missing from command lookup | tmux, zellij, PHP, Composer, Docker, Node.js, npm |
+| Access tools | Tailscale 1.102.5 and jq 1.8.2 installed by operator; tailscaled running, enrolled |
 | SSH identity | Local ed25519 keypair exists; private material stays local |
 | Git access | Authenticated pulls verified for ia-sync/main and reposoma/core after public-key registration and selecting the existing unlocked local SSH agent. |
 | Git author configuration | Configured locally in ia-sync and reposoma using the public address explicitly supplied by majkee on 2026-11-12; email accounts were not accessed. |
@@ -113,47 +114,13 @@ part of loading these bricks. GitHub SSH access is verified with the existing un
 
 ## Tailnet and SSH readiness
 
-Monitor is not enrolled. Its `tailscale_id` and `tailscale_ip` in `machines.json`
-are null deliberately. Do not invent an IP, reuse a peer's node ID, or assume the
-new host has a MagicDNS name before enrollment.
+Monitor is enrolled: `100.80.107.66`, node `n7msXDoqQ621CNTRL`, DNS
+`hruzam-mntr.tail36b8ab.ts.net`. Home and office peer IDs match the registry;
+home was online, office offline at the latest check. Login access is not yet proven.
 
-Known peer records, **repository evidence, not live reachability verification**:
-
-| Peer | Tailnet DNS | IPv4 | SSH user |
-|---|---|---|---|
-| office | hruzam-120922.tail36b8ab.ts.net | 100.126.182.111 | hruzam |
-| home | hruzam.tail36b8ab.ts.net | 100.110.27.60 | hruzam |
-
-Identity source: `~/ia-sync/machines.json`; existing remote dispatch records:
-`~/ia-sync/zsh/registries/hosts.json`. Monitor is not a remote dispatch target yet.
-That registry needs a monitor entry only after its real tailnet DNS and inbound
-access role are established.
-
-Remaining steps, **not performed by this bootstrap**:
-
-1. Install Tailscale and jq using the Manjaro package manager. Review the full
-   system transaction; avoid a partial rolling-release upgrade. Typical command:
-   `sudo pacman -Syu tailscale jq`.
-2. Start the daemon: `sudo systemctl enable --now tailscaled`.
-3. Enroll with `sudo tailscale up`; majkee completes the login in the intended
-   existing tailnet. Account/admin access and policy permissions are not yet verified.
-4. Inspect `tailscale status --json` and `tailscale ip -4`. Record actual Self.ID,
-   Self.HostName, Self.DNSName and IP; update monitor's machine record from evidence.
-5. Test `tailscale ping hruzam-120922` and `tailscale ping hruzam`. Confirm the
-   peer identities against the recorded IDs before trusting the connection.
-6. Establish SSH authorization separately. For ordinary OpenSSH, monitor's public
-   key must be accepted on each destination, the SSH service reachable, and the
-   host-key fingerprint verified through a trusted channel. Keep private keys local.
-   Tailscale connectivity alone does not authorize an SSH login.
-7. Test interactive SSH to each peer. Do not automatically disable host-key checking:
-   `ssh hruzam@hruzam-120922.tail36b8ab.ts.net` and
-   `ssh hruzam@hruzam.tail36b8ab.ts.net`.
-
-Tailscale SSH is an alternative with destination-side setup and tailnet SSH policy;
-ordinary SSH over the tailnet does not require enabling Tailscale SSH on monitor.
-See the [Linux installation documentation](https://tailscale.com/docs/install/linux)
-and [Tailscale SSH documentation](https://tailscale.com/docs/features/tailscale-ssh).
-No inbound monitor service, routing advertisement or exit-node role is configured.
+Follow [the access track](res/access.md) for current direction-by-direction evidence,
+policy changes, key-only monitor service preparation, public-key exchange and tests.
+Use ordinary OpenSSH over Tailscale, continuing the existing home/office model.
 
 ## Project access remains a decision
 
@@ -168,3 +135,7 @@ Optional later tools: tmux for persistent remote sessions; jq for existing shell
 helpers. zellij, Docker, Node and PHP are workload choices, not bootstrap requirements.
 The existing office presence records are historical/shared declarations; their
 remote paths do not certify local projects or active sessions on monitor.
+
+## Manifest
+
+- `res/access.md` · chapter · monitor ↔ home/office setup track, evidence and directional acceptance
