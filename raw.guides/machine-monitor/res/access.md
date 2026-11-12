@@ -13,31 +13,36 @@ must pass; registering a key with GitHub does not authorize a login to a PC.
 ## Current checkpoint — 2026-11-12
 
 - Monitor is enrolled and online: node `n7msXDoqQ621CNTRL`, IPv4 `100.80.107.66`,
-  DNS `hruzam-mntr.tail36b8ab.ts.net`.
-- Home's observed node ID matches `machines.json`; home was online and answered a
-  Tailscale ping over the LAN transport. A bounded TCP22 host-key scan got no reply.
-  This does not distinguish network policy, firewall and SSH service availability.
-- Office's observed node ID matches the registry, but office was offline.
-- Monitor initially had no listening sshd or authorized_keys. The operator has
-  generated its host keys; ED25519 fingerprint observed locally:
+  DNS `hruzam-mntr.tail36b8ab.ts.net`. Home and office are now online; node IDs match
+  `~/ia-sync/machines.json`.
+- Home self-published its public keys in ia-sync commit `1881c9e`. Its ED25519 host
+  fingerprint matches the live tailnet scan exactly, ending `WmRB0` (zero); the old
+  `WmRBO` historical text was a transcription error. Monitor accepted home's host
+  key and client public key, preserving a backup of its existing known_hosts.
+- Monitor's key-only sshd is active/enabled. Public host fingerprint:
   `SHA256:XcMUK2B+Geq55COSYl3jwjXrOzm56QMlR2R78QkpTk8`.
-  The key-only service is now installed, active and enabled, listening on port 22
-  for IPv4 and IPv6. A loopback connection matched the local host fingerprint and
-  offered only publickey authentication. Public-key authorization remains pending;
-  monitor still has no authorized_keys file.
-- No successful monitor↔peer SSH login has yet been established.
+  Monitor now has an authorized_keys entry for home; no private key was transferred.
+- Monitor published its own host and client public keys in pushed ia-sync commit
+  `73c4b53`, correcting the malformed scan-derived monitor known_hosts entry.
+  Follow `~/ia-sync/ssh/peers/README.md`; accept only a committed host key that matches
+  the actual tailnet peer. Publication alone installs nothing on the receiving host.
+- Monitor → home passes strict host-key verification and reaches authentication,
+  then returns `Permission denied (publickey)`. Home still needs to accept monitor's
+  published client key. No successful monitor↔peer login is claimed yet.
+- Office peer-key files have not been published at this checkpoint. Home's reported
+  reposoma divergence (one local commit and ten incoming) was left untouched.
 
 | Required direction | Last evidence | Remaining proof |
 |---|---|---|
-| monitor → home | Tailscale ping passes; TCP22 no reply | policy/listener, host trust, public-key authorization, login receipt |
-| home → monitor | Monitor listener verified locally | policy, home client public key, host trust, login receipt |
-| monitor → office | Office offline | online peer, network, service, trust, authorization, login receipt |
-| office → monitor | Office offline; monitor listener verified locally | online peer, policy, office client public key, host trust, login receipt |
-| home → office | Historical working route; office currently offline | current login receipt |
-| office → home | Historical working route; office currently offline | current login receipt |
+| monitor → home | Strict host trust passes; publickey authentication denied | home accepts monitor key; login receipt |
+| home → monitor | Monitor listener verified; home client key accepted on monitor | home trusts monitor host key; login receipt from home |
+| monitor → office | Office online; peer keys not published | published keys, trust, authorization, login receipt |
+| office → monitor | Office online; monitor keys published | reciprocal peer acceptance; login receipt |
+| home → office | Historical route only; both online now | current login receipt |
+| office → home | Historical route only; both online now | current login receipt |
 
-Do not turn an old successful result into a current readiness claim. Recheck home↔office
-once the new four directions work, preserving the original connection path.
+Each direction requires its own origin-side login receipt. A successful ping or
+accepted public key does not establish all six paths or the complete live policy.
 
 ## 1. Network identity and policy
 
