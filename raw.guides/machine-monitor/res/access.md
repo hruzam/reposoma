@@ -38,7 +38,7 @@ must pass; registering a key with GitHub does not authorize a login to a PC.
 | home → monitor | Monitor listener verified; home client key accepted on monitor | home trusts monitor host key; login receipt from home |
 | monitor → office | Office online; peer keys not published | published keys, trust, authorization, login receipt |
 | office → monitor | Office online; monitor keys published | reciprocal peer acceptance; login receipt |
-| home → office | Historical route only; both online now | current login receipt |
+| home → office | **Verified.** Office sshd logged `Accepted publickey` from `100.110.27.60` with home's client key `SHA256:EEejMl…` (latest 2026-11-06); in routine use via `tso` | none |
 | office → home | Historical route only; both online now | current login receipt |
 
 Each direction requires its own origin-side login receipt. A successful ping or
