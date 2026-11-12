@@ -149,11 +149,13 @@ On monitor, bare `tso` cancellation, EOF, invalid choice or a target-free call w
 stops before ping/SSH. After its bounded ping, `tso` uses OpenSSH with
 `ConnectTimeout=8` and `ConnectionAttempts=1` for plain and `-t` bed modes; a failed
 ping may still proceed to SSH. These options bound connection establishment, not
-an established interactive session. Source and monitor-deployed checks passed;
-home/office defaults are preserved in isolated tests, while installation of this
-new shell code on those peers is not certified. See cycle 09 and 12 RETURNs/VERDICTs
-under `~/ia-sync/.dev/session/monitor-01-integration/_bus/` for deployment, backup
-and verification receipts.
+an established interactive session. The shared files are deployed and verified on
+all three hosts. Fresh-shell checks on home and office preserve their original
+default peers and verify explicit monitor/bed routing with network calls mocked.
+Real SSH-login evidence is recorded separately in the directional table above.
+See cycle 09/12 (monitor), 14 (home) and 15 (office) RETURNs/VERDICTs under
+`~/ia-sync/.dev/session/monitor-01-integration/_bus/` for deployment, backup,
+verification and preserved local-work receipts.
 
 `tso -t <peer>` additionally needs tmux and `agentive-door` on the destination;
 monitor does not need local tmux merely to attach to a remote session. Browser,

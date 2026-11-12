@@ -81,8 +81,9 @@ raw host/address targets work, including leading `-t` for the remote tmux bed.
 Cancel, EOF, invalid selection or a target-free call without a terminal makes no
 connection. Both SSH modes use an eight-second connection timeout and one attempt;
 an established interactive session has no overall timeout. The shared keyboard's
-unavailable PHP aliases are removed on monitor. Home/office defaults passed isolated
-tests; deployment of the new shell source on those peers is not certified.
+unavailable PHP aliases are removed on monitor. The seven shared files are also
+deployed and verified on home and office; fresh-shell checks preserve their original
+default peers. Peer host configs and policy files were left unchanged.
 
 From a fresh terminal:
 
@@ -113,8 +114,9 @@ copy; it does not apply Tailscale control-plane policy. Plain `bash ~/ia-sync/de
 is broader still, including agent/runtime surfaces; it remains excluded while
 unrelated live settings drift is unresolved. Deployment host resolution and project-map
 generation work with jq or Python 3. The `tso` peer resolver uses Python 3. The accepted seven-file and later one-file
-deployments, with backup/rollback receipts, are in the session's cycle 09 and 12
-RETURNs and VERDICTs.
+monitor deployments, with backup/rollback receipts, are in the session's cycle 09
+and 12 RETURNs and VERDICTs. Cycles 14 and 15 record home/office adoption and
+preservation of their existing Git work; office's journal/mail edits remain unstaged.
 
 Builder contract: `~/ia-sync/zsh/guides/guide-for-builder.md`, Architecture rules.
 The initial .zshrc backup is `~/.zshrc.bak-monitor-20261112-043027`; the pre-brick
