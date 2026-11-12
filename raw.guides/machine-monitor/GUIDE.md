@@ -30,12 +30,14 @@ maintenance. Source and deploy discipline: `~/ia-sync/SYNC_DISCIPLINE.md`.
 
 ## Current role and boundaries
 
-The host is being prepared as a possible monitoring/access device. Running PHP
-projects remotely on home or office is under consideration; majkee will decide
-later. PHP installation is explicitly deferred to majkee. No local PHP, database,
-web server, Docker stack, project path mapping or remote service execution is
-established by this bootstrap. A browser or SSH client can access a remote PHP
-application without a local PHP runtime, once networking and authorization work.
+Monitor is a third computer in the verified home/office/monitor SSH mesh. The six
+requested repositories—nablarva, nabla-lab, vacuole, applications-in-common,
+pajdulium-web and pajdulium-studio—were cloned and verified clean on `core` at
+the physical paths in `~/ia-sync/zsh/registries/projects.json` (session
+`~/ia-sync/.dev/session/monitor-01-integration/raw/clone-verification.2026-11-12.json`).
+This restores tracked Git history, not ignored state or project runtime readiness.
+PHP installation and project runtime startup remain deferred to majkee. No local
+PHP, database, web server or Docker stack was started for this integration.
 
 ## Verified local inventory
 
@@ -48,8 +50,8 @@ Observed 2026-11-12 unless identified as operator intent:
 | RAM | MemTotal 12,151,568 KiB, approximately 11.6 GiB |
 | Storage | sda 223.6 GiB; sda1 EFI; sda2 Btrfs root/home; about 209 GiB available at inventory |
 | Swap | None observed; memory-pressure protection remains to be assessed |
-| Present | OpenSSH client, Git, rsync, zsh, Python 3, curl |
-| Missing from command lookup | tmux, zellij, PHP, Composer, Docker, Node.js, npm |
+| Present | OpenSSH client, Git, rsync, zsh, Python 3, curl, tmux |
+| Missing from command lookup | zellij, PHP, Composer, Docker, Node.js, npm |
 | Access tools | Tailscale 1.102.5 and jq 1.8.2 installed by operator; tailscaled running, enrolled |
 | SSH identity | Local ed25519 keypair exists; private material stays local |
 | Git access | Authenticated pulls verified for ia-sync/main and reposoma/core after public-key registration and selecting the existing unlocked local SSH agent. |
@@ -73,14 +75,19 @@ It intentionally loads no home/office PHP or project scopes.
 Monitor now loads the shared signposts: `ai/base.zsh` (including Jev/tools),
 `experimental/base.zsh`, `session/base.zsh`, `archx/base.zsh` and
 `system/base.zsh` (including remote-cli). `RB_ROOT` points to ia-sync's session
-shelf. Project-specific scopes, PHP engines and default peer selection remain
-unset. The shared keyboard's unavailable PHP aliases are removed on monitor.
+shelf. Project-specific scopes, PHP engines and `TAILSCALE_PEER` remain unset.
+Bare `tso` offers home or office from `machines.json`; explicit logical names and
+raw host/address targets work, including leading `-t` for the remote tmux bed.
+Cancel, EOF, invalid selection or a target-free call without a terminal makes no
+connection. Both SSH modes use an eight-second connection timeout and one attempt;
+an established interactive session has no overall timeout. The shared keyboard's
+unavailable PHP aliases are removed on monitor. Home/office defaults passed isolated
+tests; deployment of the new shell source on those peers is not certified.
 
 From a fresh terminal:
 
 ```sh
-zsh-deploy-check     # preview shell-only deployment
-zsh-deploy           # install shell bricks plus this host's config/.zshrc
+zsh-deploy-check     # preview shell-only deployment; inspect every listed change
 ai-help
 exp-list            # list available experimental bricks; does not execute them
 rb-board
@@ -91,23 +98,29 @@ remote-help
 ```
 
 The aliases live in `zsh/system/keyboard.zsh`; the engine is
-`~/ia-sync/deploy.sh --zsh-only`. Before these aliases are installed, invoke:
+`~/ia-sync/deploy.sh --zsh-only`. Before these aliases are installed, preview with:
 
 ```sh
 bash ~/ia-sync/deploy.sh --zsh-only --dry-run
-bash ~/ia-sync/deploy.sh --zsh-only
 ```
 
-Both host resolution and project-map generation work with jq or Python 3.
-Plain `bash deploy.sh` is still the full deployment across shell and agent/runtime
-surfaces. Shell-only deployment installs no packages and starts no services.
+Review the dry-run list and back up changed shared bricks before any write.
+`zsh-deploy` / `bash ~/ia-sync/deploy.sh --zsh-only` copies the whole zsh tree;
+its rsync leg does **not** make per-file backups of every shared brick. Use an
+exact-file copy when only selected files are approved. A routine shell-only deploy
+can overwrite the nested, inert `~/.config/zsh/.config/tailnet.access-controls.json`
+copy; it does not apply Tailscale control-plane policy. Plain `bash ~/ia-sync/deploy.sh`
+is broader still, including agent/runtime surfaces; it remains excluded while
+unrelated live settings drift is unresolved. Deployment host resolution and project-map
+generation work with jq or Python 3. The `tso` peer resolver uses Python 3. The accepted seven-file and later one-file
+deployments, with backup/rollback receipts, are in the session's cycle 09 and 12
+RETURNs and VERDICTs.
 
 Builder contract: `~/ia-sync/zsh/guides/guide-for-builder.md`, Architecture rules.
 The initial .zshrc backup is `~/.zshrc.bak-monitor-20261112-043027`; the pre-brick
 shell tree is `~/.config/zsh.backup-monitor-bricks-20261112-043831`.
 
-Command loading does not prove its external dependencies are ready: Tailscale,
-tmux, jq and provider executables may still be needed when their commands run.
+Command loading does not prove external dependencies or project runtimes are ready.
 The shared startup prints the existing Gemini-parked and substrates-loaded notices.
 No model/API request, experiment execution, peer connection or package install is
 part of loading these bricks. GitHub SSH access is verified with the existing unlocked local SSH agent.
@@ -122,19 +135,19 @@ Follow [the access track](res/access.md) for current direction-by-direction evid
 policy changes, key-only monitor service preparation, public-key exchange and tests.
 Use ordinary OpenSSH over Tailscale, continuing the existing home/office model.
 
-## Project access remains a decision
+## Project runtime remains a decision
 
-After connectivity works, select an actual project and verify its current owner
-host, path, runtime and web binding there. Choose browser access, an SSH tunnel,
-or remote shell execution according to that project. Local development hostnames
-and loopback-bound web servers do not become remotely reachable merely by joining
-the tailnet. Do not start services, publish ports, or copy project secrets as part
-of host registration.
+Before running a cloned project, verify its host pin, runtime, ignored local state
+and web binding. Choose browser access, an SSH tunnel or remote execution according
+to that project. Local development hostnames and loopback-bound web servers do not
+become remotely reachable merely by joining the tailnet. Do not start services,
+publish ports, or copy project secrets as part of host registration.
 
-Optional later tools: tmux for persistent remote sessions; jq for existing shell
-helpers. zellij, Docker, Node and PHP are workload choices, not bootstrap requirements.
+Zellij, Docker, Node and PHP remain workload choices, not bootstrap requirements.
 The existing office presence records are historical/shared declarations; their
 remote paths do not certify local projects or active sessions on monitor.
+
+Current integration position: `~/ia-sync/.dev/session/monitor-01-integration/STATUS.md`.
 
 ## Manifest
 

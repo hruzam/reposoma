@@ -17,24 +17,28 @@ key fingerprints live only in `~/ia-sync/ssh/peers/`. This chapter records **dir
 state only** — do not copy identities or fingerprints here.
 
 - All three computers have published their peer keys in `~/ia-sync/ssh/peers/`.
-- Monitor sshd is key-only and active; it trusts both peers' published host keys
-  after matching live tailnet scans, and authorizes both home and office client keys.
+- Monitor sshd is key-only and active, and authorizes both home and office client
+  keys. Monitor’s SSH client trusts both peers' published host keys after matching
+  live tailnet scans.
   Office's existing RSA client key needs no algorithm downgrade on monitor.
-- Both monitor-origin SSH checks now pass strict host verification and explicit
-  monitor-key authentication. Together with four peer-reported receipts, all six
-  directed SSH paths have succeeded. This does not verify all-port policy or runtimes.
+- Both monitor-origin SSH checks pass strict host verification and explicit
+  monitor-key authentication. Four fresh checks were then **executed on their home
+  or office origins** using default trust files, `BatchMode=yes` and strict host
+  checking; monitor orchestrated and observed them over strict SSH. All six directed
+  ordinary-SSH paths have exit-0 evidence. See
+  `~/ia-sync/.dev/session/monitor-01-integration/raw/strict-peer-rechecks.2026-11-12.json`.
 
-| Required direction | Last evidence | Remaining proof |
+| Required direction | Execution and observation | SSH-path proof |
 |---|---|---|
-| monitor → home | **Verified locally 2026-11-12** — strict host check, explicit monitor key, exit 0; `hruzam` / `hruzam` | none for this direction |
-| home → monitor | **Peer-reported verified 2026-11-12** — exit 0 with committed monitor known_hosts file | default known_hosts persistence not established by that receipt |
-| monitor → office | **Verified locally 2026-11-12** — strict host check, explicit monitor key, exit 0; `hruzam-120922` / `hruzam` | none for this direction |
-| office → monitor | **Peer-reported verified 2026-11-12** — exit 0 with committed monitor known_hosts file | default known_hosts persistence not established by that receipt |
-| home → office | **Verified** — office sshd log, latest 2026-11-06; routine use via `tso` | none |
-| office → home | **Verified** — receipt from office 2026-11-12 (`BatchMode`, strict host key → `hruzam`/`hruzam`); majkee confirms routine use | none |
+| monitor → home | Executed and observed on monitor; strict host check, explicit monitor key | exit 0 |
+| home → monitor | Executed on home; monitor orchestrated/observed; default trust, strict BatchMode | exit 0 |
+| monitor → office | Executed and observed on monitor; strict host check, explicit monitor key | exit 0 |
+| office → monitor | Executed on office; monitor orchestrated/observed; default trust, strict BatchMode | exit 0 |
+| home → office | Executed on home; monitor orchestrated/observed; default trust, strict BatchMode | exit 0 |
+| office → home | Executed on office; monitor orchestrated/observed; default trust, strict BatchMode | exit 0 |
 
-Each direction requires its own origin-side login receipt. A successful ping or
-accepted public key does not establish all six paths or the complete live policy.
+These receipts establish ordinary SSH login on each directed path at the test time;
+they do not prove a project runtime or the whole access-policy scope.
 
 ## 1. Network identity and policy
 
@@ -46,37 +50,42 @@ tailscale ping hruzam
 tailscale ping hruzam-120922
 ```
 
-## Requested network scope — three computers, all ports
+## Saved network scope and device follow-up
 
-Majkee clarified on 2026-11-12: **computer-based all ↔ all; devices need access
-on request**. The candidate in
-`~/ia-sync/zsh/.config/tailnet.access-controls.json` now reflects that scope.
-It is not an automatically deployed or verified live policy.
+Majkee requested an all-port mesh among the three computers, with devices accessing
+them on request. He confirmed a control-plane save and supplied a host-local export.
+The comparison in `~/ia-sync/.dev/session/monitor-01-integration/raw/policy-comparison.2026-11-12.json`
+found the computer mesh grant, host aliases and separate Tailscale SSH section equal
+to the intended candidate. This is a comparison of Majkee's supplied saved export,
+not a direct API retrieval of current control-plane state.
 
-Merge that candidate file into the CURRENT admin policy (the file is the only copy of
-the hosts entry and the computer-to-computer grant; do not retype them here).
+The saved export also contains **standing TCP 22 access from tab and redmi to all
+three computers**. That differs from the on-request device intent. Majkee deferred
+the retain/narrow/remove choice to the existing
+[`device-ssh-safety-audit.md`](/home/hruzam/ia-sync/.dev/_backlog/device-ssh-safety-audit.md);
+no policy change was made for this finding. Network permission alone does not
+authenticate an SSH user.
 
-This permits all protocols and ports among the three computers in all six directed
-paths. Phones/tablets have no standing grant. Their host aliases may remain as an
-address book; aliases alone grant nothing. Device access must be requested and
-scoped explicitly later. This also removes the old computers' wildcard access to
-non-computer destinations. Other live ACLs/grants must be checked because allows
-are additive; an existing broad allow could still permit device access.
+Keep three objects distinct: the repository candidate at
+`~/ia-sync/zsh/.config/tailnet.access-controls.json`, the deployed nested copy at
+`~/.config/zsh/.config/tailnet.access-controls.json`, and Majkee's saved control-plane
+policy. The nested copy is inert and can be overwritten by a routine zsh deploy;
+neither a shell deploy nor a Git commit applies control-plane policy. No refresh of
+that inert copy is required for the verified shell commands. The export/proposal
+contents stay host-local; use the comparison receipt above and the backlog item as
+review entrances rather than reproducing policy text here.
 
-Keep unrelated policy sections and the separate `ssh` section unchanged. That
-section controls the Tailscale SSH product; the computers use ordinary OpenSSH.
-The operator has been asked to merge this candidate in Admin → Access controls.
-Live save/validation is pending; a repository commit or shell deploy does not apply it.
-
-## 2. Prepare monitor's destination service
+## 2. Verify monitor's destination service
 
 Source: `~/ia-sync/ssh/sshd.monitor.conf`.
 Operator procedure: `~/ia-sync/install-pkgs/monitor-ssh.md`.
-The drop-in permits public-key login as hruzam, rejects passwords and root login,
-and uses OpenSSH's existing listen addresses. It does not install client keys or
-change the firewall. Administrative commands require the operator's terminal.
+The installed drop-in permits public-key login as hruzam, rejects passwords and
+root login, and uses OpenSSH's existing listen addresses. It does not install
+client keys or change the firewall. Administrative commands require the operator's
+terminal.
 
-Afterward, verify effective settings, not merely the file contents:
+After a service/configuration change, recheck effective settings rather than only
+the file contents:
 
 ```sh
 sudo sshd -t
@@ -90,27 +99,34 @@ Keep the public host-key fingerprint for trusted first-contact comparison on hom
 and office. A fingerprint collected only by unauthenticated ssh-keyscan is not
 independent evidence of the server's identity.
 
-## 3. Exchange public authorization, preserving local keys
+## 3. Maintain public authorization, preserving local keys
 
 Procedure (publish, accept a peer, receipt) lives only in `~/ia-sync/ssh/peers/README.md`.
+All three computers have exchanged the current public peer keys; use that procedure
+when a peer or key changes.
 Private keys, authorized_keys and SSH-agent sockets never enter either Git repository.
 The older PCs are key-only, so do not enable password login to bypass a missing
 authorization.
 
 ## 4. Use the existing shell and verify all directions
 
-No new peer engine is needed. `system/base.zsh` already loads the commands;
-`TAILSCALE_PEER` remains unset on monitor so the operator selects the peer explicitly.
-Logical labels in machines.json are not automatically SSH aliases.
+No new peer engine is needed. `system/base.zsh` loads `tso` on monitor.
+`TAILSCALE_PEER` remains unset there, but bare interactive `tso` offers home/office
+from `machines.json`; `tso home` and `tso office` resolve logical labels through that
+map. Explicit raw host/address targets still work, including noninteractively.
+Other helpers such as `tsp` retain their own explicit-target behavior.
 
 From monitor:
 
 ```sh
+tso                         # choose home or office
+tso home                    # logical name; also accepts office
+tso -t office               # land in remote agentive tmux bed
 tsp hruzam.tail36b8ab.ts.net
 tsp hruzam-120922.tail36b8ab.ts.net
 ```
 
-From home and office after their trust/authorization is ready:
+From home and office, ordinary explicit SSH remains available:
 
 ```sh
 ssh hruzam@hruzam-mntr.tail36b8ab.ts.net
@@ -125,9 +141,19 @@ ssh -o BatchMode=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=8 \
 ```
 
 Expected hostnames: `hruzam-mntr` / `hruzam` / `hruzam-120922`; expected user: hruzam.
-Record all six directions independently, including home ↔ office. An outbound
-login does not prove the reverse. Network permission does not authorize a public
-key or start an application service.
+The six directions above have separate origin-side receipts; repeat a direction
+after trust or access changes. An outbound login does not prove the reverse.
+Network permission does not authorize a public key or start an application service.
+
+On monitor, bare `tso` cancellation, EOF, invalid choice or a target-free call without a terminal
+stops before ping/SSH. After its bounded ping, `tso` uses OpenSSH with
+`ConnectTimeout=8` and `ConnectionAttempts=1` for plain and `-t` bed modes; a failed
+ping may still proceed to SSH. These options bound connection establishment, not
+an established interactive session. Source and monitor-deployed checks passed;
+home/office defaults are preserved in isolated tests, while installation of this
+new shell code on those peers is not certified. See cycle 09 and 12 RETURNs/VERDICTs
+under `~/ia-sync/.dev/session/monitor-01-integration/_bus/` for deployment, backup
+and verification receipts.
 
 `tso -t <peer>` additionally needs tmux and `agentive-door` on the destination;
 monitor does not need local tmux merely to attach to a remote session. Browser,
@@ -149,7 +175,8 @@ Evidence entrances:
   both original PCs; historical hardening, not current live proof.
 - `~/ia-sync/devices/_shared/termux-bootstrap.md`: historical home/office public
   host-key fingerprints and why new devices cannot password-pull keys.
-- `~/ia-sync/zsh/system/tailscale.zsh`: explicit peer passes to ordinary ssh.
+- `~/ia-sync/zsh/system/tailscale.zsh`: monitor chooser, logical-target resolution
+  and bounded ordinary SSH connection setup.
 - `~/ia-sync/install-pkgs/harden-host.md`: original key-only SSH procedure, also
   containing database/firewall changes that must not be blindly applied to monitor.
 - [Tailscale access grants](https://tailscale.com/docs/features/access-control/grants)
