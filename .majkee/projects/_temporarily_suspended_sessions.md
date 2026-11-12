@@ -98,9 +98,15 @@ codex resume 01a1c4f1-b2c9-7642-a6b7-b37a1f4d7e59
 
 ### cartan|jev-01:engineer
 
+```<promt-old-session-but-know-how-vist>
+codex resume 01a17a76-073b-7750-8bd9-7a899d3b4646
+```
+
 ```bash
 codex resume 01a1c4af-1fbe-7301-9f52-654e1a0b8cd3
 ```
+
+
 
 ###
 
@@ -119,7 +125,7 @@ codex resume 01a1a0ee-bf83-7490-b72a-f37585be680e
 
 ```
 
-## cartan|jev-01:engineer
+## cartan|germline:engineer
 
 ```bash
 codex resume 01a18b45-7706-7aa2-a1c8-876134cb21fa
