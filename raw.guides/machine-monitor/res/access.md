@@ -17,8 +17,9 @@ key fingerprints live only in `~/ia-sync/ssh/peers/`. This chapter records **dir
 state only** — do not copy identities or fingerprints here.
 
 - All three computers have published their peer keys in `~/ia-sync/ssh/peers/`.
-- Monitor sshd is key-only and active; it trusts home's host key and authorizes home's
-  client key.
+- Monitor sshd is key-only and active; it trusts both peers' published host keys
+  after matching live tailnet scans, and authorizes both home and office client keys.
+  Office's existing RSA client key needs no algorithm downgrade on monitor.
 - Office has verified monitor's and home's committed host fingerprints against live
   tailnet scans; it has not yet accepted monitor's keys (awaiting majkee go-ahead).
 
@@ -26,8 +27,8 @@ state only** — do not copy identities or fingerprints here.
 |---|---|---|
 | monitor → home | Strict host trust passes; publickey authentication denied | home accepts monitor key; login receipt |
 | home → monitor | Monitor listener verified; home client key accepted on monitor | home trusts monitor host key; login receipt from home |
-| monitor → office | Office keys published; office has not accepted monitor's client key | office accepts monitor key; login receipt |
-| office → monitor | Both sides published; monitor has not accepted office's client key | monitor accepts office key; login receipt |
+| monitor → office | Strict host trust passes; publickey authentication denied | office accepts monitor key; login receipt |
+| office → monitor | Office client key accepted on monitor; listener active | office trusts monitor host key; login receipt from office |
 | home → office | **Verified** — office sshd log, latest 2026-11-06; routine use via `tso` | none |
 | office → home | **Verified** — receipt from office 2026-11-12 (`BatchMode`, strict host key → `hruzam`/`hruzam`); majkee confirms routine use | none |
 
