@@ -51,14 +51,15 @@ Observed 2026-11-12 unless identified as operator intent:
 | Present | OpenSSH client, Git, rsync, zsh, Python 3, curl |
 | Missing from command lookup | Tailscale, jq, tmux, zellij, PHP, Composer, Docker, Node.js, npm |
 | SSH identity | Local ed25519 keypair exists; private material stays local |
-| Git access | Agent-session `git pull --rebase origin main` failed: publickey authentication; ssh-askpass executable unavailable |
+| Git access | Authenticated pulls verified for ia-sync/main and reposoma/core after public-key registration and selecting the existing unlocked local SSH agent. |
 | Git author configuration | Configured locally in ia-sync and reposoma using the public address explicitly supplied by majkee on 2026-11-12; email accounts were not accessed. |
 | Initial shell | Manjaro defaults; empty ~/.config/zsh; no MACHINE_NAME |
 
 RAM and missing PHP resemble home. They are **not identity evidence for home**.
 Use the registered hostname and, once enrolled, the actual Tailscale node ID.
-Git authentication failure does not establish whether the key is unregistered,
-locked, or unavailable to this session; resolve that before claiming sync works.
+The initial Git authentication failure was resolved after public-key registration
+and selection of the existing unlocked local SSH agent. New agent sessions must
+inherit a working SSH_AUTH_SOCK; do not hardcode its ephemeral path in portable files.
 
 ## Shell source and installation
 
@@ -108,7 +109,7 @@ Command loading does not prove its external dependencies are ready: Tailscale,
 tmux, jq and provider executables may still be needed when their commands run.
 The shared startup prints the existing Gemini-parked and substrates-loaded notices.
 No model/API request, experiment execution, peer connection or package install is
-part of loading these bricks. Remote sync remains blocked by GitHub SSH authentication.
+part of loading these bricks. GitHub SSH access is verified with the existing unlocked local SSH agent.
 
 ## Tailnet and SSH readiness
 
