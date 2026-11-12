@@ -12,7 +12,7 @@ must pass; registering a key with GitHub does not authorize a login to a PC.
 
 ## Current checkpoint — 2026-11-12
 
-Identities (node IDs, IPs, DNS) live only in `~/ia-sync/machines.json`; host and client
+Identities (logical names, hostnames, node IDs and IPs) live only in `~/ia-sync/machines.json`; host and client
 key fingerprints live only in `~/ia-sync/ssh/peers/`. This chapter records **directional
 state only** — do not copy identities or fingerprints here.
 
@@ -122,14 +122,12 @@ From monitor:
 tso                         # choose home or office
 tso home                    # logical name; also accepts office
 tso -t office               # land in remote agentive tmux bed
-tsp hruzam.tail36b8ab.ts.net
-tsp hruzam-120922.tail36b8ab.ts.net
 ```
 
-From home and office, ordinary explicit SSH remains available:
+From home and office:
 
 ```sh
-ssh hruzam@hruzam-mntr.tail36b8ab.ts.net
+tso monitor
 ```
 
 For each origin, verify the destination's host-key fingerprint through the trusted
