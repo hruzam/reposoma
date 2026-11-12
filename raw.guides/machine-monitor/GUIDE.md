@@ -114,12 +114,9 @@ part of loading these bricks. GitHub SSH access is verified with the existing un
 
 ## Tailnet and SSH readiness
 
-Monitor is enrolled: `100.80.107.66`, node `n7msXDoqQ621CNTRL`, DNS
-`hruzam-mntr.tail36b8ab.ts.net`. Home and office peer IDs match the registry;
-home was online, office offline at the latest check. Monitor sshd is now active
-and enabled with public-key-only authentication observed locally. Peer login access
-is not yet proven. Requested network scope: all ports among the three computers;
-phones/tablets only on explicit request. Live policy application is pending.
+Tailnet identity (node ID, IP) lives only in `~/ia-sync/machines.json`; peer host and
+client keys live only in `~/ia-sync/ssh/peers/`. Monitor sshd is public-key-only
+(source `~/ia-sync/ssh/sshd.monitor.conf`).
 
 Follow [the access track](res/access.md) for current direction-by-direction evidence,
 policy changes, key-only monitor service preparation, public-key exchange and tests.

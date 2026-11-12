@@ -12,34 +12,24 @@ must pass; registering a key with GitHub does not authorize a login to a PC.
 
 ## Current checkpoint — 2026-11-12
 
-- Monitor is enrolled and online: node `n7msXDoqQ621CNTRL`, IPv4 `100.80.107.66`,
-  DNS `hruzam-mntr.tail36b8ab.ts.net`. Home and office are now online; node IDs match
-  `~/ia-sync/machines.json`.
-- Home self-published its public keys in ia-sync commit `1881c9e`. Its ED25519 host
-  fingerprint matches the live tailnet scan exactly, ending `WmRB0` (zero); the old
-  `WmRBO` historical text was a transcription error. Monitor accepted home's host
-  key and client public key, preserving a backup of its existing known_hosts.
-- Monitor's key-only sshd is active/enabled. Public host fingerprint:
-  `SHA256:XcMUK2B+Geq55COSYl3jwjXrOzm56QMlR2R78QkpTk8`.
-  Monitor now has an authorized_keys entry for home; no private key was transferred.
-- Monitor published its own host and client public keys in pushed ia-sync commit
-  `73c4b53`, correcting the malformed scan-derived monitor known_hosts entry.
-  Follow `~/ia-sync/ssh/peers/README.md`; accept only a committed host key that matches
-  the actual tailnet peer. Publication alone installs nothing on the receiving host.
-- Monitor → home passes strict host-key verification and reaches authentication,
-  then returns `Permission denied (publickey)`. Home still needs to accept monitor's
-  published client key. No successful monitor↔peer login is claimed yet.
-- Office peer-key files have not been published at this checkpoint. Home's reported
-  reposoma divergence (one local commit and ten incoming) was left untouched.
+Identities (node IDs, IPs, DNS) live only in `~/ia-sync/machines.json`; host and client
+key fingerprints live only in `~/ia-sync/ssh/peers/`. This chapter records **directional
+state only** — do not copy identities or fingerprints here.
+
+- All three computers have published their peer keys in `~/ia-sync/ssh/peers/`.
+- Monitor sshd is key-only and active; it trusts home's host key and authorizes home's
+  client key.
+- Office has verified monitor's and home's committed host fingerprints against live
+  tailnet scans; it has not yet accepted monitor's keys (awaiting majkee go-ahead).
 
 | Required direction | Last evidence | Remaining proof |
 |---|---|---|
 | monitor → home | Strict host trust passes; publickey authentication denied | home accepts monitor key; login receipt |
 | home → monitor | Monitor listener verified; home client key accepted on monitor | home trusts monitor host key; login receipt from home |
-| monitor → office | Office online; peer keys not published | published keys, trust, authorization, login receipt |
-| office → monitor | Office online; monitor keys published | reciprocal peer acceptance; login receipt |
-| home → office | **Verified.** Office sshd logged `Accepted publickey` from `100.110.27.60` with home's client key `SHA256:EEejMl…` (latest 2026-11-06); in routine use via `tso` | none |
-| office → home | Historical route only; both online now | current login receipt |
+| monitor → office | Office keys published; office has not accepted monitor's client key | office accepts monitor key; login receipt |
+| office → monitor | Both sides published; monitor has not accepted office's client key | monitor accepts office key; login receipt |
+| home → office | **Verified** — office sshd log, latest 2026-11-06; routine use via `tso` | none |
+| office → home | Office trusts home's host key; home's acceptance of office's client key unconfirmed | login receipt from office |
 
 Each direction requires its own origin-side login receipt. A successful ping or
 accepted public key does not establish all six paths or the complete live policy.
@@ -61,18 +51,8 @@ on request**. The candidate in
 `~/ia-sync/zsh/.config/tailnet.access-controls.json` now reflects that scope.
 It is not an automatically deployed or verified live policy.
 
-In the CURRENT admin policy, add monitor to the existing `hosts` object:
-
-```json
-"monitor": "100.80.107.66"
-```
-
-Replace the old computer-to-wildcard and standing Android grants with:
-
-```json
-{"src": ["office", "home", "monitor"],
- "dst": ["office", "home", "monitor"], "ip": ["*"]}
-```
+Merge that candidate file into the CURRENT admin policy (the file is the only copy of
+the hosts entry and the computer-to-computer grant; do not retype them here).
 
 This permits all protocols and ports among the three computers in all six directed
 paths. Phones/tablets have no standing grant. Their host aliases may remain as an
@@ -110,29 +90,10 @@ independent evidence of the server's identity.
 
 ## 3. Exchange public authorization, preserving local keys
 
-On each source machine, inspect the public key being selected by SSH and its
-fingerprint (for example `ssh-keygen -lf ~/.ssh/id_ed25519.pub`). Keep private keys
-on their originating host. Use an already trusted session or the operator's local
-terminal to append the verified public key to the destination account's
-`~/.ssh/authorized_keys`, preserving all existing entries and restrictions.
-Directory mode must be 700 and authorized_keys mode 600, owned by that account.
-
-The four authorizations are explicit:
-
-| Destination | Authorize the public key from |
-|---|---|
-| home | monitor |
-| office | monitor |
-| monitor | home and office |
-
-If home and office use the same public key, verify that fact; one matching entry
-then suffices on monitor. Do not assume it from shared usernames or GitHub access.
-Use local temporary files or the operator's clipboard for key exchange. Private
-keys, authorized_keys and SSH-agent sockets never enter either Git repository.
-
-The older PCs were hardened to key-only login, so a fresh monitor cannot necessarily
-bootstrap with ssh-copy-id: it first needs an already authorized route or the
-operator at the destination. Do not enable password login simply to bypass that gap.
+Procedure (publish, accept a peer, receipt) lives only in `~/ia-sync/ssh/peers/README.md`.
+Private keys, authorized_keys and SSH-agent sockets never enter either Git repository.
+The older PCs are key-only, so do not enable password login to bypass a missing
+authorization.
 
 ## 4. Use the existing shell and verify all directions
 
