@@ -68,15 +68,47 @@ and `~/.zshrc`. The bootstrap preserves the existing Manjaro prompt, declares
 `MACHINE_NAME=monitor`, and adds user executable directories without PATH duplicates.
 It intentionally loads no home/office PHP or project scopes.
 
-`~/ia-sync/deploy.sh` resolves `machines.json` using jq or Python 3. A full deploy
-also changes agent/runtime surfaces; inspect its dry run before choosing that scope.
-The initial installation copied only these two shell files; the original .zshrc
-backup is `~/.zshrc.bak-monitor-20261112-043027`. A fresh interactive PTY shell
-reported `monitor` without startup errors; installed bytes match source. The
-no-jq resolver passed checks for all three hosts, an unknown host and an override.
-The bootstrap is recorded in local commits. No push occurred: GitHub SSH
-authentication remains unresolved. The operator-provided Git author configuration
-does not authorize or establish access to an email account.
+Monitor now loads the shared signposts: `ai/base.zsh` (including Jev/tools),
+`experimental/base.zsh`, `session/base.zsh`, `archx/base.zsh` and
+`system/base.zsh` (including remote-cli). `RB_ROOT` points to ia-sync's session
+shelf. Project-specific scopes, PHP engines and default peer selection remain
+unset. The shared keyboard's unavailable PHP aliases are removed on monitor.
+
+From a fresh terminal:
+
+```sh
+zsh-deploy-check     # preview shell-only deployment
+zsh-deploy           # install shell bricks plus this host's config/.zshrc
+ai-help
+exp-list            # list available experimental bricks; does not execute them
+rb-board
+archx-help
+sysmon
+ts-help
+remote-help
+```
+
+The aliases live in `zsh/system/keyboard.zsh`; the engine is
+`~/ia-sync/deploy.sh --zsh-only`. Before these aliases are installed, invoke:
+
+```sh
+bash ~/ia-sync/deploy.sh --zsh-only --dry-run
+bash ~/ia-sync/deploy.sh --zsh-only
+```
+
+Both host resolution and project-map generation work with jq or Python 3.
+Plain `bash deploy.sh` is still the full deployment across shell and agent/runtime
+surfaces. Shell-only deployment installs no packages and starts no services.
+
+Builder contract: `~/ia-sync/zsh/guides/guide-for-builder.md`, Architecture rules.
+The initial .zshrc backup is `~/.zshrc.bak-monitor-20261112-043027`; the pre-brick
+shell tree is `~/.config/zsh.backup-monitor-bricks-20261112-043831`.
+
+Command loading does not prove its external dependencies are ready: Tailscale,
+tmux, jq and provider executables may still be needed when their commands run.
+The shared startup prints the existing Gemini-parked and substrates-loaded notices.
+No model/API request, experiment execution, peer connection or package install is
+part of loading these bricks. Remote sync remains blocked by GitHub SSH authentication.
 
 ## Tailnet and SSH readiness
 
