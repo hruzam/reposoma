@@ -21,15 +21,20 @@ must pass; registering a key with GitHub does not authorize a login to a PC.
 - Monitor initially had no listening sshd or authorized_keys. The operator has
   generated its host keys; ED25519 fingerprint observed locally:
   `SHA256:XcMUK2B+Geq55COSYl3jwjXrOzm56QMlR2R78QkpTk8`.
-  Key-only service installation and public-key authorization remain pending.
+  The key-only service is now installed, active and enabled, listening on port 22
+  for IPv4 and IPv6. A loopback connection matched the local host fingerprint and
+  offered only publickey authentication. Public-key authorization remains pending;
+  monitor still has no authorized_keys file.
 - No successful monitor↔peer SSH login has yet been established.
 
 | Required direction | Last evidence | Remaining proof |
 |---|---|---|
 | monitor → home | Tailscale ping passes; TCP22 no reply | policy/listener, host trust, public-key authorization, login receipt |
-| home → monitor | Monitor SSH preparation pending | service, policy, home client public key, host trust, login receipt |
+| home → monitor | Monitor listener verified locally | policy, home client public key, host trust, login receipt |
 | monitor → office | Office offline | online peer, network, service, trust, authorization, login receipt |
-| office → monitor | Office offline; monitor SSH preparation pending | both endpoints, office client public key, host trust, login receipt |
+| office → monitor | Office offline; monitor listener verified locally | online peer, policy, office client public key, host trust, login receipt |
+| home → office | Historical working route; office currently offline | current login receipt |
+| office → home | Historical working route; office currently offline | current login receipt |
 
 Do not turn an old successful result into a current readiness claim. Recheck home↔office
 once the new four directions work, preserving the original connection path.
@@ -44,29 +49,37 @@ tailscale ping hruzam
 tailscale ping hruzam-120922
 ```
 
-The checked-in `~/ia-sync/zsh/.config/tailnet.access-controls.json` is a historical
-reference, not a live-policy export or an automatically deployed policy. It grants
-home/office initiation to all destinations, but does not list monitor as a source.
-Tailscale ping success alone does not prove that TCP22 is permitted.
+## Requested network scope — three computers, all ports
 
-Inspect the current admin policy before editing it. If needed, merge this entry into
-its existing `hosts` object:
+Majkee clarified on 2026-11-12: **computer-based all ↔ all; devices need access
+on request**. The candidate in
+`~/ia-sync/zsh/.config/tailnet.access-controls.json` now reflects that scope.
+It is not an automatically deployed or verified live policy.
+
+In the CURRENT admin policy, add monitor to the existing `hosts` object:
 
 ```json
 "monitor": "100.80.107.66"
 ```
 
-For the requested SSH access, add this entry to its existing `grants` array:
+Replace the old computer-to-wildcard and standing Android grants with:
 
 ```json
-{"src": ["monitor"], "dst": ["home", "office"], "ip": ["tcp:22"]}
+{"src": ["office", "home", "monitor"],
+ "dst": ["office", "home", "monitor"], "ip": ["*"]}
 ```
 
-If the live policy no longer permits home/office → monitor, add the corresponding
-reverse SSH grant. Preserve existing grants and Android restrictions. Do not replace
-the whole policy with these fragments or grant monitor access to every device/port
-as a side effect of preparing SSH. The existing `ssh` policy section concerns the
-separate Tailscale SSH product; leave that authentication model unchanged.
+This permits all protocols and ports among the three computers in all six directed
+paths. Phones/tablets have no standing grant. Their host aliases may remain as an
+address book; aliases alone grant nothing. Device access must be requested and
+scoped explicitly later. This also removes the old computers' wildcard access to
+non-computer destinations. Other live ACLs/grants must be checked because allows
+are additive; an existing broad allow could still permit device access.
+
+Keep unrelated policy sections and the separate `ssh` section unchanged. That
+section controls the Tailscale SSH product; the computers use ordinary OpenSSH.
+The operator has been asked to merge this candidate in Admin → Access controls.
+Live save/validation is pending; a repository commit or shell deploy does not apply it.
 
 ## 2. Prepare monitor's destination service
 
@@ -144,7 +157,9 @@ ssh -o BatchMode=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=8 \
 ```
 
 Expected hostnames: `hruzam-mntr` / `hruzam` / `hruzam-120922`; expected user: hruzam.
-Record each direction independently. An outbound login does not prove the reverse.
+Record all six directions independently, including home ↔ office. An outbound
+login does not prove the reverse. Network permission does not authorize a public
+key or start an application service.
 
 `tso -t <peer>` additionally needs tmux and `agentive-door` on the destination;
 monitor does not need local tmux merely to attach to a remote session. Browser,
