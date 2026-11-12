@@ -20,14 +20,15 @@ state only** — do not copy identities or fingerprints here.
 - Monitor sshd is key-only and active; it trusts both peers' published host keys
   after matching live tailnet scans, and authorizes both home and office client keys.
   Office's existing RSA client key needs no algorithm downgrade on monitor.
-- Office has verified monitor's and home's committed host fingerprints against live
-  tailnet scans; it has not yet accepted monitor's keys (awaiting majkee go-ahead).
+- Both monitor-origin SSH checks now pass strict host verification and explicit
+  monitor-key authentication. Together with four peer-reported receipts, all six
+  directed SSH paths have succeeded. This does not verify all-port policy or runtimes.
 
 | Required direction | Last evidence | Remaining proof |
 |---|---|---|
 | monitor → home | **Verified locally 2026-11-12** — strict host check, explicit monitor key, exit 0; `hruzam` / `hruzam` | none for this direction |
 | home → monitor | **Peer-reported verified 2026-11-12** — exit 0 with committed monitor known_hosts file | default known_hosts persistence not established by that receipt |
-| monitor → office | Strict host trust passes; publickey authentication denied | office accepts monitor key; login receipt |
+| monitor → office | **Verified locally 2026-11-12** — strict host check, explicit monitor key, exit 0; `hruzam-120922` / `hruzam` | none for this direction |
 | office → monitor | **Peer-reported verified 2026-11-12** — exit 0 with committed monitor known_hosts file | default known_hosts persistence not established by that receipt |
 | home → office | **Verified** — office sshd log, latest 2026-11-06; routine use via `tso` | none |
 | office → home | **Verified** — receipt from office 2026-11-12 (`BatchMode`, strict host key → `hruzam`/`hruzam`); majkee confirms routine use | none |
