@@ -29,7 +29,7 @@ state only** — do not copy identities or fingerprints here.
 | monitor → office | Office keys published; office has not accepted monitor's client key | office accepts monitor key; login receipt |
 | office → monitor | Both sides published; monitor has not accepted office's client key | monitor accepts office key; login receipt |
 | home → office | **Verified** — office sshd log, latest 2026-11-06; routine use via `tso` | none |
-| office → home | Office trusts home's host key; home's acceptance of office's client key unconfirmed | login receipt from office |
+| office → home | **Verified** — receipt from office 2026-11-12 (`BatchMode`, strict host key → `hruzam`/`hruzam`); majkee confirms routine use | none |
 
 Each direction requires its own origin-side login receipt. A successful ping or
 accepted public key does not establish all six paths or the complete live policy.
