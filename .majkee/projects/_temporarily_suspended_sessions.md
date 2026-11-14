@@ -178,8 +178,14 @@ codex resume 01a19f1f-54f8-79f0-bff8-c1604b078982
 codex resume 01a1ccad-dcf6-7080-8a99-c851981d21eb
 ```
 
-##
+# 2. REUSABLE SESSIONS
+
+## `~/ia-sync`
+
+>to all: `trajectory` mechanic on opus.
 
 ```bash
-
+claude --resume b0080cc2-e56d-4244-86a9-b88660720e63
 ```
+
+
