@@ -1,5 +1,8 @@
 ---
 kind: cold-start-card
+superseded: 2026-11-14 by trajectory (its author). DO NOT START. Phase 0 was not run by a Claude oraculum; the agreed plan
+  (nablarva raw/plan.runbook-and-team.cartan-trajectory.2026-11-14.md) and the activated controller nablarva.cartan
+  (raw/activation.controller.nablarva-cartan.2026-11-14.md) replaced it. Current state: the bed's STATUS.md.
 date: 2026-11-13
 brand: claude
 seat: trajectory|engineer
