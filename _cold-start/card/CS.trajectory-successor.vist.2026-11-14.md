@@ -4,10 +4,12 @@ date: 2026-11-14
 brand: claude
 seat: trajectory|engineer (builder / report author)
 from_session: 06352fda-5b7f-4621-b7d1-617be6bc51a4 (retiring, context low)
-to_session: b0080cc2-e56d-4244-86a9-b88660720e63 (tmux vist:10, cwd ~/ia-sync, already open, idle)
+to_session: FRESH Claude session with cwd ~/unikuklatrix/nablarva (seat cwd = repo whose rules govern its writes; majkee 2026-11-14).
+  Launch: tmux new-window -t vist -n traj-x0 -c ~/unikuklatrix/nablarva 'exec claude --agent trajectory --model opus'
+  then set labels (@seat trajectory @vendor claude @carrier tmux; @id after start). b0080cc2 (vist:10, cwd ia-sync) is NOT used for X0.
 projects: [ia-sync, nablarva]
 task: Builder seat for vist-X0 RUNBOOK preparation under cartan's agreed plan. Nothing assigned yet; wait for a POINT.
-resume: in vist:10 paste prompt-0 below (majkee or the controller does it, not the old trajectory)
+resume: in the new window paste prompt-0 below (majkee or the controller does it, not the old trajectory)
 authority: builder only. The controller (cartan, Codex) owns STATUS, integration and push. Majkee owns GO/STOP and releases (L21).
 ---
 
