@@ -6,11 +6,11 @@ stamp: a3ea5e32
 ---
 # saddle-project
 
-Inputs: explicit shortlist alias, task (`myShell-says:` or `task:`), task path/scope, actor and
+Inputs: explicit roster alias, task (`myShell-says:` or `task:`), task path/scope, actor and
 authority (read-only if omitted). Read `project-entry`, `instruction-chain` and relevant named
 `owner-state`. Output is a handoff to the current seat/operator; this function writes nothing.
 
-1. Match the explicit alias exactly to the controller's shortlist. Verify the root is a directory
+1. Match the explicit alias exactly to the controller's project roster. Verify the root is a directory
    and its mandatory AGENTS is readable. Resolve actual paths; if an alias/path changed meaning,
    escapes the declared project scope, or is missing, report it and hold. Do not search for a
    substitute root. If the task names no path, require an explicit project-wide/root scope.

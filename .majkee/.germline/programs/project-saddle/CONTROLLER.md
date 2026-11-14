@@ -14,7 +14,8 @@ This manual local entry supplies a checked read path and scoped handoff, not a n
 - Read `.majkee/AGENTS.md`. Require explicit project alias, task, and task-path/scope;
   preserve declared task authority (read-only when omitted).
   never infer attachment from cwd, remembered work, a journal mention, or a similarly named folder.
-- Use only the maintained shortlist below; recheck paths and instructions each invocation. Missing,
+- Resolve the explicit alias using `~/ia-sync/zsh/registries/projects.json` (`projects` map);
+  treat its path as declared data and recheck it and instructions each invocation. Missing,
   ambiguous, unreadable, or conflicting required paths/instructions hold the affected handoff.
   Report the exact gap; do not invent instructions, fall back to another project, or create files.
 - Read applicable instructions from ancestors through project root and down to the named task
@@ -32,18 +33,14 @@ verified root plus root AGENTS; `instruction-chain` = current applicable files a
 where available, not historical journal assertions. Omitted authority defaults to read-only;
 missing project/task/scope is reported before task handling.
 
-## Maintained shortlist
+## Project roster
 
-| explicit alias | absolute root | mandatory project entry |
-|---|---|---|
-| ia-sync | `/home/hruzam/ia-sync` | `/home/hruzam/ia-sync/AGENTS.md` |
-| reposoma | `/home/hruzam/reposoma` | `/home/hruzam/reposoma/AGENTS.md` |
-| nablarva | `/home/hruzam/unikuklatrix/nablarva` | `/home/hruzam/unikuklatrix/nablarva/AGENTS.md` |
-| freya | `/home/hruzam/www/imago_cz/freya` | `/home/hruzam/www/imago_cz/freya/AGENTS.md` |
-
-These paths existed on office when authored; existence is rechecked on the actual host. The list
-is extensible only by an explicit authoring request after verifying root and AGENTS. It is not
-project canon, an exhaustive registry, or an authority to infer JEV's or another project's root.
+`~/ia-sync/zsh/registries/projects.json` is the portable zsh physical-root roster; its `projects`
+object maps exact aliases to declared paths. It is a locator, not evidence that a checkout
+exists on this host or that its instructions apply. Verify the directory, root `AGENTS.md`,
+and applicable chain every time. Compare the deployed `~/.config/zsh/registries/projects.json`
+when present; surface disagreements rather than silently choosing a mapping. Unknown aliases
+and stale or ambiguous paths hold the handoff.
 
 ## Functions
 
