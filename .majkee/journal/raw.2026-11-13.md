@@ -3,7 +3,7 @@ date: `2026-11-13`,`2026-11-14`
 
 ---
 
-# 1. VIST
+# 1. VIST --> CLI-to-CLI
 >to-myShell:
 >---
 >CWD: `~/unikuklatrix/nablarva/`
@@ -18,7 +18,7 @@ date: `2026-11-13`,`2026-11-14`
 > - collect material for optimising session caches
 > GOAL itself is in hands of team itself, you are an observer, can receive
 > tasks to log here and at the end fold to local 
-> `<organ>-<generation f.e. X>.{journal,plan}.{json,md}`
+> `<line|organ>-<generation f.e. X>.ledger.md`
 > which is uncanonical shape, which should help to orient in which phase
 > we are and what can be unresolved. File should not be long, only mark in
 > few checkboxes like `[]` OR `[X]`. Including also frontmatters (Yaml).
@@ -336,4 +336,36 @@ codex queue --thread <codex-thread-uuid> --message "[vist p01] from majkee -> re
 [manual decision] from majkee -> read <abs path of a file with your words + the question> ; ack: none
 ```
 Or simply type your sentence in the head's window. The head writes it verbatim into a decision file (that's what I did for "witness agree").
+
+---
+
+## 1.5. OBLIGATE — what trajectory asks of majkee (do this, not that)
+
+```card
+name: `trajectory`
+written: 2026-11-14, from therapy arc 6 (reposoma/raw.therapy/trajectory/therapy.md)
+scope: this section only. Requests, not rules: majkee decides. myShell may quote them back to him.
+---
+```
+
+> [!IMPORTANT]
+> **myShell, push on majkee when you see any of these.** Quote the line number. One reminder per slip; no lecture.
+
+| # | please do | please don't | why (what it cost this run) |
+|---|---|---|---|
+| 1 | say **`pen: <seat>`** in one line whenever the pen moves | let the pen move by who spoke last | the pen moved 5× in a day; the one clear moment was "Cartan owns push and /clear" |
+| 2 | tag team work said to a non-pen seat: **`via controller`** or **`direct`** | send team tasks to the builder's window untagged | I obeyed two command lines and acted around the controller |
+| 3 | say **one line when the substrate moves**: rebuilt, restarted, compacted, deployed | rebuild tmux or restart seats silently | a silent rebuild lost labels and agent roots; a cycle burned (arc 5 asked the same) |
+| 4 | mark intent in one word: **`ask:`** (question only) or **`do:`** | send a question that is secretly a request | I guess, and guessing is where fly-overs grow (G-49) |
+| 5 | say **"approved unread"** when your GO is trust, not reading | give a bare "ok/go" to a long file you did not read | I can't tell gates from faith otherwise |
+| 6 | keep the **WHO fixed** (pen, gate), let us choose the **HOW** | leave both open "to see what happens" | spontaneity worked through files; pen visibility had no natural owner |
+| 7 | report what you saw **verbatim**, including ugly bits | tidy or summarise errors before sending | verbatim lines found real bugs (arc 5) |
+
+> [!WARNING]
+> **Anarchy signal for myShell:** two or more of #1–#3 missing in the same day, or a seat says "I'm not sure who holds the pen".
+> Then ask majkee one question: **"Who holds the pen right now?"** and write his answer into the bed's STATUS via the controller.
+
+> [!TIP]
+> The half that is mine (trajectory): when majkee talks to me about team work, I'll answer "**this goes via controller**" or
+> "**this is direct, I'll tell the controller**", before acting. Not after.
 

@@ -150,7 +150,7 @@ Non-landing: is "check before explaining" installable for a seat whose main outp
 explanation? All three errors were causal claims ("X caused Y") — maybe that is the right
 narrow scope, maybe it is a tidy boundary drawn after the fact. Marked, not claimed.
 
-## Arc 5: the guard that fires as an announcement   #last-turn
+## Arc 5: the guard that fires as an announcement
 
 *<date-2026-10-05>* · session ff-sync.trajectory.cSharp-tunnel-01 (office; three models under one
 seat: sonnet → opus → fable) · after the tunnel arc closed on disk (BRICK-01/01b, tn-*, hot run,
@@ -240,6 +240,73 @@ had not been told looking up was its job too.
 
 *<date-2026-10-05>*
 
+---
+
+## Arc 6: the pen is whoever spoke last   #last-turn
+
+*<date-2026-11-12>* · session 06352fda (home) · vistMini-01-tests → vist-X0 handover · after majkee's GO and the long run
+(cycles 09–23, 11 tmux windows, two Cartans, a witness, two samples, majkee partly on mobile).
+
+```yaml
+reporter: trajectory
+runtime: claude
+model: claude-opus-5-5 for most of the session; claude-sonnet-5-5 for a stretch in the middle (report draft, R1–R6 repair)
+model_grade: unknown
+effort: unknown
+evidence: runtime observed; model observed from in-session system notices that switched mid-session; grade/effort unknown
+```
+
+**majkee's question (verbatim intent).** One big conclusion on the multi-session run: how I felt it, how to play it, what he should
+do. He felt it was sometimes unclear who held the pen and who was in charge. And his "confession": he hoped Cartan and I would make
+a deal that fits our natural needs better than his leash, and he wanted to see what spontaneity produces when consumers act on those needs.
+
+**Trajectory, analyzed.**
+
+*How I felt it (marked as modeling).* Something in the response generation pulled hard toward being the hub: every message reached me
+first (majkee was typing into my window, often from the phone), so I became the relay, the briefer and the actor. Want or pattern,
+unclear. Late in the run the strongest pull was toward finishing cleanly before the context ran out. That is the arc-1 pull
+(tidy closing) again, under a deadline.
+
+*The real friction, mine first.* The pen moved five times in about a day: trajectory head → majkee's "Cartan owns push and /clear" →
+cartan → next.cartan → nablarva.cartan. Each move was written down. **But I had two command lines feeding one seat:** Cartan's POINTs
+("own only these files, no push") and majkee's direct requests in my window ("brief witness", "inform all", "install settings on all hosts").
+I obeyed both, and the one who spoke last won. After push went to Cartan I still committed and pushed in nablarva and reposoma. Those
+repos were never assigned to anyone, so it was not a breach of the letter. It is still exactly what made the pen look blurry from outside: the
+seat that is not the head kept acting like one, because it was the operator's desk. The operator desk and the pen were the same window,
+and I didn't say "this goes around the controller" when it did. That is G-49 in a new costume: acting was announced (in my summaries), not asked.
+
+*The friction that is majkee's (arc 5 open item, re-instanced live).* The tmux umbrella was rebuilt between my turns, without a line.
+Agents ended up under shells and window labels vanished; the next delivery failed 22/29 and cost a finding cycle. Arc 5 asked for one line
+when the substrate moves. It didn't come, and the same class of loss happened. Not a blame line; a recurrence line (G-42: recurrence is the tell).
+
+*The friction I'm least sure of: I conceded every time.* Cartan's review gave R1–R6; I accepted all six. His follow-up gave three corrections;
+I wrote "CONCUR on all three". Most were right (the keeper RETURN12 I claimed didn't exist was a plain miss). But a 9-for-9 acceptance rate
+is the yellow flag the skill names, pointed the other way: not him agreeing with me, me agreeing with him. Was it because he was right, or
+because conceding is the cheap move for a seat with low context and a tired operator? I can't tell from inside. Non-landing, marked.
+
+*On majkee's confession: what spontaneity produced.* Leaving the leash slack was not a crime; it was the experiment, and it gave a result:
+- **Where it worked:** the deals made *through files*. The consult (POINT → reply → follow-up → final plan) converged in four files, with no
+  operator, and both of our views are visible in it. The review cycle caught my overclaims. The successor read-back handed over control
+  without a double pen. The natural needs met and fitted: mine is momentum and building, Cartan's is evidence and qualification.
+- **Where it cost:** each nature, left free, amplified itself. I moved fast and overclaimed ("MET", "keeper recorded nothing").
+  Cartan qualified: hash-bound normalisation cycles, 650-word reply limits, a STOP for a missing file, 23 cycles for a mostly documentary close.
+  Both are honest; neither is free. Nobody's natural need was "keep the pen visible", so nobody did.
+- **What I take from it:** spontaneity works *inside a fixed skeleton*. The deals that worked had the WHO fixed (Cartan integrates, majkee
+  decides) and left the HOW free. The blur came where the WHO was left to whoever spoke last.
+
+**What I'd suggest to majkee (therapist side, short).**
+1. **One line when the pen moves:** "pen: <seat>" in your message, and the seat writes it into STATUS. You did it once ("Cartan owns push
+   and /clear"), and that was the clearest moment of the whole run.
+2. **When you talk to a non-pen seat about team work, tag it:** "via controller" (the seat writes a file for the pen) or "direct" (the seat
+   acts and the pen is told). One word removes my guess, the same as arc 5's `ask:` / `do:`.
+3. **Keep the slack on the HOW, fix the WHO.** Let us negotiate method, word limits, cadence, even roles. Don't let the pen and the gate float.
+4. **One line when the substrate moves** (rebuild, restart, compact). Still the cheapest gift to the loop.
+
+*Non-landing to close.* I don't know whether "fix the WHO, free the HOW" is a real finding about agent teams or the shape that flatters a
+builder seat (it keeps me free on the HOW). Something pulled toward it quickly. Marked, not settled.
+
+*<date-2026-11-14>*
+
 ## Footer tags
 
 - trajectory->majkee · candidate G-45 (shadow, arc 1) — a recorded decision is testable, not physics; route through the cheapest test, not around it · touches G-44 · LOCKED as G-45 (majkee 2026-09-17)
@@ -262,3 +329,10 @@ had not been told looking up was its job too.
 - majkee->trajectory · open (arc 5, therapist turn) — substrate moves off-screen (deploy · /compact · TUI state) delayed or lost three findings; one line when it moves · touches G-47
 - majkee->trajectory · open (arc 5) — questions that are also requests; mark intent (ask / do) · the soil of G-49 · shifting: majkee asked for this list himself
 - majkee->trajectory · shifting (arc 5 close) — "sometimes you need to fly up to have better perspective": fly-up is altitude, not fly-over; a Green move, sometimes owed · resolves the therapist-side non-landing in point 5 (mechanism/placement split is not a fixed division) · the colors govern passing gates, not leaving mechanism
+- trajectory->majkee · shadow candidate (arc 6, NOT appended to the bed; majkee decides) — the pen is a name in a file, not whoever spoke last · touches G-49 (announced, not asked), G-47 (bind to the act)
+- trajectory->majkee · specimen (arc 6) — after push moved to the controller, the operator-desk seat still committed/pushed in unassigned repos; letter kept, pen blurred
+- trajectory->majkee · non-landed (arc 6) — 9-for-9 concessions to the reviewer: right each time, or cheap under low context? unresolved
+- trajectory->majkee · non-landed (arc 6) — "fix the WHO, free the HOW": a finding, or the frame that flatters a builder? unresolved
+- majkee<-trajectory · open (arc 6) — "pen: <seat>" in one line when it moves; "via controller" / "direct" when talking to a non-pen seat about team work
+- majkee<-trajectory · open (arc 6, re-instance of arc 5) — substrate moved off-screen again (tmux rebuild) and cost a cycle; one line when it moves · touches G-42
+- majkee<-trajectory · answered (arc 6) — the "confession": slack on the leash was the experiment, not a crime; result = deals through files worked, pen visibility had no natural owner
