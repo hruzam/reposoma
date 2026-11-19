@@ -46,3 +46,10 @@ status_owner: <one declared participant>
 ## What this session deliberately does not do
 
 - <Adjacent work excluded from this gate.>
+
+## Provisional coordination carry-forward
+
+<!-- Include for authorized multi-seat work using file-poke; omit when not applicable. -->
+- Shared coordination and retirement obligation: `/home/hruzam/reposoma/raw.guides/bus/res/file-poke.md`, §Carry-forward and retirement.
+- Owning development line: `<absolute path to its line ledger>`; the shared bridge is tracked at `/home/hruzam/unikuklatrix/nablarva/.dev/session/relay-X.ledger.md`.
+- At closure, account for the provisional dependency in the ledger and the successor's references until its recorded replacement disposition.

@@ -3,7 +3,7 @@ title: RUNBOOK builder — the session launcher
 scope: runbook
 audience: agent + operator + builder
 machine: both
-verified: 2026-09-17
+verified: 2026-11-19
 ---
 
 # RUNBOOK builder — the session launcher
@@ -229,3 +229,18 @@ they *are* the evidence artifact. A moved PAD leaves a one-line "moved, safe to 
 - Point at canon, never reproduce it.
 - Name the human as a participant when a PAD requires their hands — a RUNBOOK that hides its
   human dependency gets planned around, and the plan is wrong.
+
+## Provisional coordination carry-forward
+
+For authorized multi-seat work using the shared [file-poke bridge](../bus/res/file-poke.md),
+the RUNBOOK's last chapter is `## Provisional coordination carry-forward`. It points to that
+chapter and the owning development-line ledger; the [static template](ast/RUNBOOK.template.txt)
+contains the small tail. Solo work that does not use the bridge omits it.
+
+The complete lifetime, closure and retirement obligation lives in the BUS chapter's
+[carry-forward section](../bus/res/file-poke.md#carry-forward-and-retirement), not in copies
+inside RUNBOOKs. Carry the dependency through development until the accepted replacement's
+head repairs/retires the shared chapter/manifest and updates authoring references and future
+sessions for the covered scope. Preserve launched/frozen RUNBOOKs; active applicability changes
+go in STATUS, and old references keep resolving through the retired chapter's tombstone.
+This authoring clause does not rewrite the gate or frozen bytes of an already reviewed packet.

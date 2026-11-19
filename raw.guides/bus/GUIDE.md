@@ -3,16 +3,21 @@ title: _bus builder — the session's verified multi-seat exchange
 scope: bus
 audience: agent + operator + builder
 machine: both
-verified: 2026-09-05
+verified: 2026-11-19
 ---
 
 # _bus builder — the session's verified multi-seat exchange
 
 `what: the canonical shape of _bus/ — numbered POINT · RETURN · VERDICT cycles.`
-`scope: STYLE + LAW only — vendor agnostic. Transport and notification are out of scope.`
+`scope: STYLE + LAW only — vendor agnostic. Transport implementation is out of scope.`
+`provisional bridge: res/file-poke.md covers coordination/notification practice until its accepted replacement; it releases no transport implementation.`
 `companions: raw.guides/runbook/GUIDE.md (the session) · raw.guides/status/GUIDE.md`
 `(the present position)`
 `born: only when a session has two or more active seats. Never pre-create an empty bus.`
+
+## Manifest
+
+- `res/file-poke.md` · chapter · PROVISIONAL, development-limited, Majkee 2026-11-19 — shared file-first coordination, completion feedback and bounded check-ins; includes carry-forward and retirement responsibility
 
 ## What _bus is
 
