@@ -59,7 +59,41 @@ id: ``
 
 ---
 
-## 1.1. myShell as session maintainer (after the vistMini long run)
+### 1.1.1. Who will be waken on office
+
+***session cache***
+```bash
+.dev/session/vist-X0-helloWorld/raw/cache.controller-office.nablarva-cartan.2026-11-19.md
+```
+
+***cold-start card***
+```bash
+/home/hruzam/reposoma/_cold-start/card/CS.nablarva-cartan.office-continuation.2026-11-19.md
+
+```
+
+
+***claude.witness***
+```bash
+cd /home/hruzam/ia-sync && claude --agent oraculum --resume c266d10a-ecda-4f89-9f18-f29b59e3130e
+```
+fallback:
+```bash
+/home/hruzam/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld/raw/witness.host-move.2026-11-19.md
+```
+---
+
+***codex.cartan|controller***
+```bash
+~/.local/bin/codex --cd ~/unikuklatrix/nablarva resume 01a1d582-c6ce-74f1-9e66-44715424aa2c
+```
+fallback:
+```bash
+
+```
+
+
+## 1.2. myShell as session maintainer (after the vistMini long run)
 
 ```card
 name: `trajectory`
@@ -134,42 +168,6 @@ First X0 work (cartan's, I agree): pick ONE question from preregister.vistmini-c
 define its evidence/oracle against L20/L21 before any live run.
 
 Status: merged; no open question to majkee from this section.
-```
-
----
-
->for all: EXITX "DO NOT FOLLOW READING"
-
----
-
-```yaml
----
-date: `2026-11-14`
----
-``` 
-
-# SENSORS
-
-```bash
-
-#!/bin/sh
-echo "## host"; hostname -s; uname -r
-echo "## hwmon"
-for h in /sys/class/hwmon/hwmon*; do
-  echo "$h $(cat $h/name)"
-  ls $h | grep -E '^(temp|fan|in|curr|power)[0-9]+_input' | tr '\n' ' '; echo
-done
-echo "## powercap";     ls /sys/class/powercap 2>&1
-echo "## power_supply"; ls /sys/class/power_supply
-echo "## iio";          ls /sys/bus/iio/devices 2>&1
-echo "## edac";         ls /sys/devices/system/edac/mc 2>&1
-for n in $(ls /sys/class/net | grep -v '^lo$'); do
-  echo "## net $n"; ethtool -i $n 2>/dev/null | head -3
-  ethtool -T $n 2>/dev/null | grep -E 'hardware-(transmit|receive)|PTP Hardware'
-done
-echo "## audio"; arecord -l 2>&1
-echo "## video"; ls /dev/video* 2>&1
-echo "## clock"; chronyc tracking 2>&1 | grep -E 'Frequency|Skew|System time'
 ```
 
 ---
@@ -369,3 +367,38 @@ scope: this section only. Requests, not rules: majkee decides. myShell may quote
 > The half that is mine (trajectory): when majkee talks to me about team work, I'll answer "**this goes via controller**" or
 > "**this is direct, I'll tell the controller**", before acting. Not after.
 
+---
+
+>for all: EXITX "DO NOT FOLLOW READING"
+
+---
+
+```yaml
+---
+date: `2026-11-14`
+---
+``` 
+
+# SENSORS
+
+```bash
+
+#!/bin/sh
+echo "## host"; hostname -s; uname -r
+echo "## hwmon"
+for h in /sys/class/hwmon/hwmon*; do
+  echo "$h $(cat $h/name)"
+  ls $h | grep -E '^(temp|fan|in|curr|power)[0-9]+_input' | tr '\n' ' '; echo
+done
+echo "## powercap";     ls /sys/class/powercap 2>&1
+echo "## power_supply"; ls /sys/class/power_supply
+echo "## iio";          ls /sys/bus/iio/devices 2>&1
+echo "## edac";         ls /sys/devices/system/edac/mc 2>&1
+for n in $(ls /sys/class/net | grep -v '^lo$'); do
+  echo "## net $n"; ethtool -i $n 2>/dev/null | head -3
+  ethtool -T $n 2>/dev/null | grep -E 'hardware-(transmit|receive)|PTP Hardware'
+done
+echo "## audio"; arecord -l 2>&1
+echo "## video"; ls /dev/video* 2>&1
+echo "## clock"; chronyc tracking 2>&1 | grep -E 'Frequency|Skew|System time'
+```
