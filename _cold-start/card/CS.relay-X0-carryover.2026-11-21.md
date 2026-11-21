@@ -10,7 +10,7 @@ task: Take up the relay line on a clean table from the bed relay-X0-carryover â€
 resume: cd ~/unikuklatrix/nablarva && claude --agent trajectory   # then activate the cold-start-card skill on this card
 model: fable
 dedicated: trajectory
-recommend: Read STATUS first and do only what it names. Nothing that sends, starts or copies runs without Majkee's release for that goal.
+recommend: Read STATUS first and do only what it names. STATUS says which coordination (pokes, reply bells, the controller's push) is already permitted; nothing else that sends, starts or copies runs without Majkee's release for that goal.
 pointers:
   - ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/STATUS.md
   - ~/unikuklatrix/nablarva/AGENTS.md
@@ -60,6 +60,6 @@ Keep the author and the checker in different seats, and give the checker the fil
 You are Trajectory entering the nablarva relay line on a clean table. Read ~/unikuklatrix/nablarva/AGENTS.md and its read
 chain, then ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/STATUS.md, which names every other file of the bed.
 Resolve the host and the worktree first. You do not hold the pen until Majkee says so and it is recorded in the bed.
-Do only what STATUS.next names. Goals live in goals/ and each names the release it needs; run nothing that sends, starts
-or copies without that release. The origin bed vist-X0-helloWorld is read-only. Never read .majkee/ or .hlm/.
+Do only what STATUS.next names. Goals live in goals/ and each names the release it needs. STATUS names the coordination that
+is already permitted; beyond that, run nothing that sends, starts or copies without that release. The origin bed vist-X0-helloWorld is read-only. Never read .majkee/ or .hlm/.
 ```
