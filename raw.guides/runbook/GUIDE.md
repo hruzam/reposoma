@@ -185,9 +185,9 @@ is a third log competing with both.
 <program>-<NN>-<phase>/
     RUNBOOK.md            fixed    — the instruction (this guide)
     STATUS.md             present  — the position   (raw.guides/status/GUIDE.md)
-    dock.md               scratch  — operator handwriting; uncanonical, prunable,
-                                     never citable as truth (flag L9). STATUS never
-                                     points into dock.
+    dock.md               scratch  — operator handwriting; uncanonical, disposable
+                                     (deleted outright, never retired), never citable
+                                     as truth (flag L9). STATUS never points into dock.
     pad.<N>-<scope>.md    live     — human sittings  (raw.guides/PAD/GUIDE.md)
     _bus/                 past     — the exchange    (raw.guides/bus/GUIDE.md);
                                      only when ≥2 seats
