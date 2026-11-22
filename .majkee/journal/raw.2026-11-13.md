@@ -59,46 +59,16 @@ id: ``
 
 ---
 
-### 1.1.1. Who will be waken on office
-
-***session cache***
-```bash
-.dev/session/vist-X0-helloWorld/raw/cache.controller-office.nablarva-cartan.2026-11-19.md
-```
-
-***cold-start card***
-```bash
-/home/hruzam/reposoma/_cold-start/card/CS.nablarva-cartan.office-continuation.2026-11-19.md
-
-```
-
-
-***claude.witness***
-```bash
-cd /home/hruzam/ia-sync && claude --agent oraculum --resume c266d10a-ecda-4f89-9f18-f29b59e3130e
-```
-fallback:
-```bash
-/home/hruzam/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld/raw/witness.host-move.2026-11-19.md
-```
----
-
-***codex.cartan|controller***
-```bash
-~/.local/bin/codex --cd ~/unikuklatrix/nablarva resume 01a1d582-c6ce-74f1-9e66-44715424aa2c
-```
-fallback:
-```bash
-
-```
 
 
 ## 1.2. myShell as session maintainer (after the vistMini long run)
 
+> to `myShell`:
+
 ```card
 name: `trajectory`
 vendor: claude code CLI (Anthropic)
-model: `claude-opus-5-5`
+model: `claude-fable-5-2`
 written: 2026-11-14, after majkee GO on vistMini-01 ("scope narrowed, unrun cases go to vist-X0, GO")
 scope: this section only. Proposal, uncanonical. MERGED with cartan's view
   (~/unikuklatrix/nablarva/.dev/session/vist-X0-helloWorld/raw/handoff.vistmini-05-team.cartan.2026-11-14.md), per majkee 2026-11-14
