@@ -40,7 +40,7 @@ It is not a plan, not a log, and not a state file. Everything the RUNBOOK says s
 the whole session. The moment a file needs updating as work proceeds, it is `STATUS.md`, not a
 RUNBOOK. For the same reason the RUNBOOK carries **no `state:` field** — a mutable field in a
 read-once file is a second state surface. Lifecycle is positional: outside an owning session
-folder = inert authoring material, in the session folder = live, pruned = closed. The live
+folder = inert authoring material, in the session folder = live, retired = closed. The live
 position lives in `STATUS.md` alone.
 
 ## The rule that delimits a session
@@ -48,7 +48,8 @@ position lives in `STATUS.md` alone.
 > **One session = one gate.**
 
 The gate is the single condition that closes the session. When it is met, the session dies and
-its folder is prunable. If a scope has no gate, it is a **task inside** a session, not a session.
+its folder is retired — deregistered and gitignored, not deleted. If a scope has no gate, it is a
+**task inside** a session, not a session.
 
 If the gate *changes* mid-flight: the session dies and a numbered sibling opens with the new
 gate. Same law — a session never mutates its own gate.
@@ -208,13 +209,18 @@ POINT, RETURN, VERDICT. Disk case is exact and unchanging — `RUNBOOK.md`, `STA
 ## On gate closure
 
 Promote what survives (evidence → the project's evidence home, results → commits or canon),
-then **observations promote before prune** (gaveled majkee 2026-10-07): session-process files in
+then **observations promote before retire** (gaveled majkee 2026-10-07): session-process files in
 the bed — `raw/observations.*` · `*issues*` · `*support*` · `raw/note.*` · the receipt's carriage
 facts — move verbatim to `<project>/.dev/observations/<slug>.<seat>.<date>.md` with an origin
-header (source path · preservation commit · promoter). The prune REFUSES while any such file is
-still in the bed: the head runs the check and a FAIL holds the `git rm`. This completes
+header (source path · preservation commit · promoter). Retire REFUSES while any such file is
+still in the bed: the head runs the check and a FAIL holds the retire. This completes
 `res/csharp-head-protocol.md` §4 (that manifest classifies by work-value; this names the class it
-lets fall through). Then remove the session from `pulse.md`'s router line, prune the directory.
+lets fall through). Then **retire, do not delete** (gaveled majkee 2026-11-22): remove the session
+from `pulse.md`'s router line, `git rm -r --cached session/<name>/` to deregister it from the tree
+while the files stay on disk, and append `session/<name>/` to the project's `.gitignore`. History
+of what mattered already lives in git (promoted survivors) and in `.dev/observations/`; the retired
+bed is a cold local copy on each machine, recalled only in special cases by a small tailnet/SSH
+move between machines — never re-tracked wholesale.
 When the closure promoted ≥1 observation file, the closing head spawns **@agol once** (bounded:
 read `<project>/.dev/observations/*`, return patterns across sessions + candidate improvements to
 guides / skills / regimes; no verdict shape) → `.dev/observations/harvest.<date>.agol.md`; its
