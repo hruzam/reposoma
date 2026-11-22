@@ -5,7 +5,7 @@ brand: claude
 seat: trajectory
 project: nablarva
 root: ~/unikuklatrix/nablarva
-commit: 1020da5 (core)
+commit: 96f3821 (core)
 task: Take the pen of relay-X1-probes as its fresh lead — on Majkee's word — and plan the probe stage from the accepted handoff. Nothing is released.
 resume: cd ~/unikuklatrix/nablarva && claude --agent trajectory   # then activate the cold-start-card skill on this card
 model: fable
@@ -13,6 +13,7 @@ dedicated: trajectory
 recommend: Start with the working directory in ~/unikuklatrix/nablarva — the predecessor ran from ~/ia-sync, and a consult loaded the wrong project addendum because of it. Read the handoff whole before anything else. Ask Majkee for the pen first; read the plan back to him before asking for any release.
 pointers:
   - ~/unikuklatrix/nablarva/.dev/session/relay-X1-probes/STATUS.md
+  - ~/unikuklatrix/nablarva/.dev/session/relay-X1-probes/RUNBOOK.md
   - ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/handoff.successor-stage.2026-11-22.md
   - ~/unikuklatrix/nablarva/AGENTS.md
   - ~/unikuklatrix/nablarva/.dev/session/flag.md
@@ -38,13 +39,16 @@ Transfer pointer only. **The bed's STATUS owns the position** (one-authority rul
   Before asking for any of them, read back to him which rows he selects, which bed owns each U-case, the stop conditions and
   where the evidence goes.
 - **The STATUS in the bed is an opening skeleton** written by the outgoing pen so that the open work has a router row. Rewrite
-  it as your own once you hold the pen. RUNBOOK or goal files is your proposal to him.
+  it as your own once you hold the pen. **A RUNBOOK frame is already there**, written by the outgoing lead at Majkee's request;
+  it is yours to change until you have read the plan back to him, and fixed after that.
 - **What the stage is not** — handoff §0: it is not `relay-00-research`, it gives no verdict on the relay architecture and it
   qualifies no door. Every agent-operated tmux try is one explicit exception that returns to Majkee; the gate presumes none.
 - **The party is host- and session-bound.** Home's tmux group `helloWorld`; the predecessor's roster is the starting list. Pane
   ids and thread ids go stale. Re-read them against live tmux before any poke. Decisions Majkee owes go through the exec desk
-  (window `seniorDev`): write a sheet, poke the desk. Whether the controller pushes on your poke, as it did for the predecessor,
-  is your first question to him.
+  (window `seniorDev`): write a sheet, poke the desk. Coordination pokes, push pokes included, are your own call — he said so on
+  2026-11-22 and wants the run to go on without him until an approval, a gavel or a decision is really needed.
+- **The predecessor is on call.** The session that wrote this card stays open in window `engineer`. Ask it by a file and one
+  pointer line. Its context was compacted several times: where its memory and a file disagree, the file wins.
 - **Private evidence is outside Git** on home: `~/.local/share/nablarva/custody/`; the relay ledger points at it. `.majkee/` and
   `.hlm/` are never read or listed.
 - **Hazards the predecessor paid for:** a word after `claude` is a prompt and starts an agent — help probes use `--help` flags
@@ -56,6 +60,7 @@ Transfer pointer only. **The bed's STATUS owns the position** (one-authority rul
 ```sh
 hostname -s; git -C ~/unikuklatrix/nablarva status --short; git -C ~/unikuklatrix/nablarva log --oneline -5
 cat ~/unikuklatrix/nablarva/.dev/session/relay-X1-probes/STATUS.md
+cat ~/unikuklatrix/nablarva/.dev/session/relay-X1-probes/RUNBOOK.md
 cat ~/unikuklatrix/nablarva/.dev/session/relay-X0-carryover/raw/handoff.successor-stage.2026-11-22.md
 ```
 
@@ -71,7 +76,7 @@ for a release, let another seat oppose it, and ask of every row whether its outc
 
 ```text
 You are Trajectory entering the nablarva relay line as the fresh lead of relay-X1-probes. Start in ~/unikuklatrix/nablarva.
-Read AGENTS.md and its read chain, then .dev/session/relay-X1-probes/STATUS.md, then the handoff it names, whole.
+Read AGENTS.md and its read chain, then .dev/session/relay-X1-probes/STATUS.md, the RUNBOOK frame beside it, and the handoff they name, whole.
 Resolve the host and the worktree first. You do not hold the pen until Majkee says so and it is recorded in the bed's raw/.
 Nothing is released: before asking for any line of the handoff's release menu, read back to Majkee which rows he selects,
 which bed owns each U-case, the stop conditions and where the evidence goes. His decisions go through the exec desk.
