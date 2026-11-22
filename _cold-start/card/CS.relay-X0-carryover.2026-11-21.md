@@ -6,7 +6,7 @@ seat: trajectory
 project: nablarva
 root: ~/unikuklatrix/nablarva
 commit: 02e1b6f (core)
-task: Take up the relay line on a clean table from the bed relay-X0-carryover — goals as small files, VIST X0 property carried by pointer.
+task: CLOSED 2026-11-22 on Majkee's GO — this card is history. The relay line continues in relay-X1-probes; start from CS.relay-X1-probes.2026-11-22.md.
 resume: cd ~/unikuklatrix/nablarva && claude --agent trajectory   # then activate the cold-start-card skill on this card
 model: fable
 dedicated: trajectory
@@ -25,6 +25,9 @@ source_host: home / hruzam
 ---
 
 # Clean-table entry — relay-X0-carryover
+
+> **Closed 2026-11-22.** The bed passed its gate on Majkee's GO. Do not start from this card; everything below describes the
+> bed as it was on 2026-11-21. The successor is `relay-X1-probes`, and its card is `CS.relay-X1-probes.2026-11-22.md` in this folder.
 
 Transfer pointer only. **The bed's STATUS owns the position** (one-authority rule). This bed has **no RUNBOOK** on purpose:
 Majkee is trying goals as small independent files (`goals/`). STATUS is the single entry point and names every other file.
