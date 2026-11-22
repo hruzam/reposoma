@@ -27,6 +27,12 @@ Audit at saddle: each `- [ ]` → done? tick it. Not done? → **real problem ·
 orphan**. The verdict is my judgment — no tool decides it (the deferred `ai/` reporter only ever
 surfaces + age-stamps).
 
+- [x] **RUNBOOK RETIRE DOCTRINE + FLIGHT TURN CAP — DELIVERED 2026-11-22 (majkee direct).** (1) flight
+  `maxTurns` 30→100 on the surgical table → ia-sync `dd19b6b`, deployed live. (2) runbook GUIDE
+  delete→retire doctrine (closed session = deregister from pulse router + `git rm --cached` + gitignore,
+  kept on disk, tailnet/SSH recall) — reposoma `core` `d906652`; dock.md "prunable"→"disposable
+  (deleted outright, never retired)" reconcile `c609419`. → `[2026-11-22 runbook-retire]`.
+
 - [x] **GERMLINE-02 — CLOSED 2026-10-15 (planning gate only).** Witness AR-r1 FAIL → AR-r2 PASS → AR-r3
   PASS+C1; Majkee accepted PG-r3, C1 deferred → GV-r6 `~/ia-sync/.dev/session/germline-02-guide-model-law/raw/GAVELS.program-guide-law.md`.
   Carried to germline-03 (unopened): `~/ia-sync/.dev/session/germline-03-foundation-audit/raw/{INPUTS.from-germline-02.md,SUBSTRATE.atlas.from-germline-02-close.2026-10-15.md}`
@@ -374,6 +380,32 @@ surfaces + age-stamps).
   here. (migration debt — not done now to avoid importing stale items as false-live signal.)
 - [ ] **majkee: commit + push reposoma** — carries this restructure + `raw.guides/PAD/pad-builder.md`
   live (my seat has no Bash). → `[2026-08-07 PAD]` entry.
+
+---
+
+## [2026-11-22 runbook-retire] — flight turn cap 30→100 + runbook delete→retire doctrine
+
+**Request (majkee, interactive):** (1) unblock/raise flight's turn cap; (2) correct the runbook
+guide's pruning language — closed sessions should be deregistered + gitignored but kept on disk,
+recalled in special cases via tailnet/SSH, not deleted.
+
+**Delivered:**
+- **flight turn cap** — `~/ia-sync/claude/agents/flight.md` `maxTurns: 30 → 100` (finite raise, not
+  full removal — safer for UNMANNED runs). Delta: ia-sync commit `dd19b6b`, pushed `main`, `deploy.sh`
+  ran; live `~/.claude/agents/flight.md:15` verified. Other host picks up on next pull+deploy.
+- **runbook delete→retire doctrine** — `raw.guides/runbook/GUIDE.md`, 3 edits: line 43 `pruned`→
+  `retired = closed`; gate rule `prunable`→`retired — deregistered and gitignored, not deleted`;
+  §On gate closure rewrites `git rm`/`prune the directory` → remove from `pulse.md` router +
+  `git rm -r --cached session/<name>/` (keeps disk) + append `session/<name>/` to project `.gitignore`.
+  Promote-before-close safety gate retained, now gating retire. `git rm --cached` is my mechanism
+  choice — the only git op matching "deregister, keep working files". Delta: reposoma `core` `d906652`.
+- **dock.md reconcile** — scratch line `prunable` → `disposable (deleted outright, never retired)`,
+  firewalling the two vocabularies (sessions retire / dock deletes). Delta: reposoma `core` `c609419`.
+
+**Scope held:** registry = `pulse.md` router only (majkee); sessions root `session/` → `.gitignore` is
+per-project at retire time, not one temple glob. All three Delta runs scoped to single files; majkee's
+other unstaged working-tree changes left untouched. I hold read-only Bash — Delta did all git/deploy.
+**Note:** Delta commit trailers name Opus 4.8 (runs were Haiku) — set deliberately, cosmetic.
 
 ---
 
