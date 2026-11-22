@@ -2,14 +2,14 @@
 kind: cold-start-card
 date: 2026-11-22
 brand: claude
-seat: trajectory
+seat: flight
 project: nablarva
 root: ~/unikuklatrix/nablarva
 commit: 96f3821 (core)
 task: Take the pen of relay-X1-probes as its fresh lead — on Majkee's word — and plan the probe stage from the accepted handoff. Nothing is released.
-resume: cd ~/unikuklatrix/nablarva && claude --agent trajectory   # then activate the cold-start-card skill on this card
+resume: cd ~/unikuklatrix/nablarva && claude --agent flight   # in tmux window `lead`; model as Majkee sets it; then activate the cold-start-card skill on this card. The flight build is the predecessor's recommendation because its definition tells it to delegate; `--agent trajectory` is the alternative. Majkee chooses at launch.
 model: fable
-dedicated: trajectory
+dedicated: flight
 recommend: Start with the working directory in ~/unikuklatrix/nablarva — the predecessor ran from ~/ia-sync, and a consult loaded the wrong project addendum because of it. Read the handoff whole before anything else. Ask Majkee for the pen first; read the plan back to him before asking for any release.
 pointers:
   - ~/unikuklatrix/nablarva/.dev/session/relay-X1-probes/STATUS.md
@@ -51,6 +51,10 @@ Transfer pointer only. **The bed's STATUS owns the position** (one-authority rul
   pointer line. Its context was compacted several times: where its memory and a file disagree, the file wins.
 - **Private evidence is outside Git** on home: `~/.local/share/nablarva/custody/`; the relay ledger points at it. `.majkee/` and
   `.hlm/` are never read or listed.
+- **Do not work alone.** The predecessor did nearly everything inline and paid in context and in stale sentences. Give log
+  lines, exact-match edits and checks to `delta`, long reads and the stale-sentence sweep to `field`, a fresh-eyes check to
+  `assay`. The communication protocol — file first, one labelled line, look first, fallback by the other door only after a
+  definite failure — is a section of the RUNBOOK.
 - **Hazards the predecessor paid for:** a word after `claude` is a prompt and starts an agent — help probes use `--help` flags
   only. A list of forbidden git verbs is read as "no git" — say what is allowed in the gates line. A POINT that asks for one word
   gets one word — ask for the table first.
@@ -75,7 +79,7 @@ for a release, let another seat oppose it, and ask of every row whether its outc
 ###### prompt
 
 ```text
-You are Trajectory entering the nablarva relay line as the fresh lead of relay-X1-probes. Start in ~/unikuklatrix/nablarva.
+You are the fresh lead of the session bed relay-X1-probes on the nablarva relay line. Start in ~/unikuklatrix/nablarva.
 Read AGENTS.md and its read chain, then .dev/session/relay-X1-probes/STATUS.md, the RUNBOOK frame beside it, and the handoff they name, whole.
 Resolve the host and the worktree first. You do not hold the pen until Majkee says so and it is recorded in the bed's raw/.
 Nothing is released: before asking for any line of the handoff's release menu, read back to Majkee which rows he selects,
