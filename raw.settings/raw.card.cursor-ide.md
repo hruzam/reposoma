@@ -2,7 +2,7 @@
 card: card.cursor-ide
 brand: Cursor (IDE; runs Claude / GPT / Grok / etc. models)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-10-08
+verified: 2026-11-23
 half_life: ~2-3 weeks (feature-drop cadence still fast; numbered "Cursor 3.x" releases gave way to named drops — watch for a version-scheme change)
 half_life_days: 21
 recheck:
@@ -10,6 +10,14 @@ recheck:
   - https://releasebot.io/updates/cursor
   - https://forum.cursor.com        # feature reality vs docs
 ---
+
+## Refresh delta 2026-11-23
+_Since last verify 2026-10-08. Source: cursor.com/changelog, live-fetched 2026-11-23 by @Epoch (H). Page showed 5 entries only (Oct 13–Nov 6); version numbers like 2026.11.05 not shown on the page._
+- **Nov 6 — Voice Chat with Agents:** realtime voice calls with agents in Agents Window, IDE, web, iOS; runs on Grok Voice; Privacy Mode enables zero data retention; separate from dictation (formerly "Voice Mode").
+- **Nov 5 — Build Live Apps:** cloud agents build/deploy/share web apps by link; Cursor sets up DB + auth behind Cursor SSO; security checks before publish; admins can review/unpublish; paid plans with cloud agents.
+- **Oct 20 — Agent SDK GA:** an agent is a code project (`instructions.md`, `tools/`, `skills/`, `mcp-connections/`, `channels/`); evals; deploy to Cursor or own infra; channels: GitHub, GitLab, Bitbucket, Slack, webhooks, cron.
+- **Oct 16 — Cloud Agent Canvases + Environments API (beta):** environments up to 300 repos, load 5x faster. **Oct 13 — Origin App Marketplace:** 20+ integrations, open to public submissions (review + demo video).
+- **No change to rules-file format or existing agent modes** was described on the page. Not checked: pricing page, docs.cursor.com rules reference.
 
 ## Refresh delta 2026-10-08
 _Since last verify 2026-09-02. Source: cursor.com/changelog, live-fetched 2026-10-08 by @Epoch. Agent-mode internals, rules-file format and pricing NOT re-verified (CONFIDENCE L there)._

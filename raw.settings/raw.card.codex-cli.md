@@ -2,7 +2,7 @@
 card: card.codex-cli
 brand: OpenAI — Codex CLI
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-10-08
+verified: 2026-11-23
 half_life: ~1-2 weeks (ships multiple alpha builds/day; stable line moves weekly)
 half_life_days: 10
 recheck:
@@ -19,6 +19,12 @@ corpus:
   epoch_delta_2026-09-01: raw.guides/codex-builder-user/refresh-delta.2026-09-01.md
   # ^ reused as source for this 2026-09-02 pass — see Refresh delta section below
 ---
+
+## Refresh delta 2026-11-23
+_Since last verify 2026-10-08. Source: github.com/openai/codex/releases, live-fetched 2026-11-23 by @Epoch (H; page showed only 2 stable releases, the rest alpha). Releases between Oct 8 and Nov 18 NOT itemised._
+- **Latest stable 0.171.0 (Nov 20):** GPT-6.2 Sol and Astra added to model catalogs, Sol default; TUI workspace on by default (doc/image previews, subagent transcripts); configurable undo/redo in composer; `codex exec --remote` for noninteractive sessions on an existing app server; `/rc` and `/remote` (remote control, device pairing codes); `/statusline` for custom MCP status lines.
+- **0.170.0 (Nov 18):** WebRTC negotiation for realtime voice calls in TUI; auto-refreshed auth headers for OTel HTTP exporters; experimental identically-named MCP servers across environments.
+- **Not verified:** GPT-6.2 model ids/pricing (run `codex debug models`), config.toml key changes, anything 0.1xx before 0.170.
 
 ## Refresh delta 2026-10-08
 _Since last verify 2026-09-02. Source: github.com/openai/codex/releases, live-fetched 2026-10-08 by @Epoch. Pass 2 added model/deprecation entries from learn.chatgpt.com/codex/changelog (read first 100K of 151K chars). Pass 3 sampled the release list: stable 0.156.1 (Sep 23), 0.159.2 (Sep 29), 0.159.3 (Sep 30), 0.160.1 (Oct 5), 0.161.0 (Oct 7), plus a 0.162.0-alpha series (Oct 2–4); other stables in 0.157–0.160.0 NOT itemized (list is ~100 pages mostly alphas; CONFIDENCE L there). Local `codex --version` not run._

@@ -2,7 +2,7 @@
 card: card.claude-code
 brand: Anthropic — Claude Code (CLI)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-10-08
+verified: 2026-11-23
 half_life: ~1-3 weeks (ships ~1 version/day — cadence roughly tripled since July)
 half_life_days: 14
 recheck:
@@ -17,6 +17,17 @@ corpus:
 ---
 
 # Claude Code — native build surface
+
+## Refresh delta 2026-11-23
+_Since last full verify 2026-10-08 (card at v2.1.293). Source: `code.claude.com/docs/en/changelog`, live-fetched 2026-11-23 by @Epoch (H). PARTIAL: only v2.1.321–330 itemised; **v2.1.294–320 NOT itemised** (page is 1.4M chars; read 0–200K). Settings-hierarchy section was separately re-verified earlier today (e0c0ccb)._
+- **Latest upstream v2.1.330** (Nov 20, 2026). H
+- **Fable 5.2** `claude-fable-5-2` default Fable model (v2.1.321, Nov 9; 1M ctx; $8/$40 per Mtok). Anthropic news page confirms Fable 5.2 + Mythos 5.2 released Nov 9 (no prices on that page). H for Fable 5.2 id/price (changelog); Mythos 5.2 access/price not verified (L). Haiku 5.5 released Oct 7 (news page, H).
+- **Code Mode** (experimental opt-in, v2.1.323; works with agent teams v2.1.326 and OTel v2.1.329). `engines["claude-code"]` in plugin.json; `CLAUDE_CODE_AUTO_MODE_MODEL` (managed); default context window for unknown models 200K→1M (`CLAUDE_CODE_DISABLE_1M_CONTEXT=1` restores) (323). Removed `subagentStatusLine` setting; plugin `agent` setting deprecated (323).
+- **Hooks (watch):** PreToolUse hook that errors no longer blocks a script's tool call in Code Mode; set `"onFailure":"block"` on command/HTTP/mcp_tool hooks that must refuse (329, 328). Prompt hooks accept model aliases `haiku`/`sonnet` (330).
+- **MCP:** `claude mcp add-json <name> -` reads stdin (327); `mcp add --scope project` stops if `.mcp.json` has top-level servers without `mcpServers` (327); `deniedMcpServers` name entries hide only the named claude.ai connector, deny exact URL to block all (330); `claude.ai <name>` deny entries apply in cloud/self-hosted runner (328); `/mcp` shows "Server message" row (329); `claude mcp serve` ignores `sandbox.excludedCommands` (326).
+- **Sandbox/permissions:** `sandbox.autoAllowBashIfSandboxed` + sandboxed Bash follows normal permission flow by default (325); `sandbox.failIfUnavailable` (328); `sandbox.filesystem.allowWrite` can allow some sensitive home folders blocked by default (326); `Skill(name)` in `permissions.allow` for unattended runs (325); `permissions.blockReadsOutsideWorkingDirectories` asks on more Bash cmds in bypass/auto (327). Auto mode now available for Opus 4.6/Sonnet 4.6 on Bedrock/Google/Foundry/gateway; `disableAutoMode` (328).
+- **Other:** recurring tasks and `/loop` last up to 30 days (was 7) (330); `/tasks` lists scheduled tasks, loops, forks (329); `claude auth login` supports Enterprise Admin Console orgs, `CLAUDE_CODE_FULL_SIGN_IN_LINK=1` (330); automatic retry at max_tokens removed — set `CLAUDE_CODE_MAX_OUTPUT_TOKENS` behind gateways (329); `attributionProject` (327); `/tui classic` (327); `--settings <file>` for `claude remote-control` (321); `prependPlugins`/`appendPlugins` managed marketplaces, `pluginDigests` deprecated (325); new env vars `CLAUDE_CODE_DISABLE_DEFERRED_TOOL_RESUME`, `CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS`, `OTEL_RESOURCE_INCLUDE_HOST`, `CLAUDE_CODE_DISABLE_AGENT_PROGRESS_SUMMARIES`, `CLAUDE_CODE_RESUME_HINT_COMMAND`, `CLAUDE_CODE_PERFORCE_MODE`, `CLAUDE_CODE_PLUGIN_DIR_WATCH=0`; fast mode on Vertex (322); self-hosted runner gets built-in `gh api` when no `gh` (326); mods' `$.tool.call`/`$.mcp.call` no longer prompt (321).
+- **Not re-verified:** `worktree.bgIsolation` values/default; local `claude --version`; MCP/skills/hooks docs pages; Mythos 5.2.
 
 ## Refresh delta 2026-10-08
 _Since last verify 2026-09-02 (card was at v2.1.258). Source: `code.claude.com/docs/en/changelog`, live-fetched 2026-10-08 by @Epoch. Itemized v2.1.259–2.1.293 across two passes (v2.1.262 and v2.1.264 absent from the fetched excerpt; v2.1.279 block only partly visible, items marked "likely"). Local `claude --version` not re-run — upstream latest ≠ local truth._
