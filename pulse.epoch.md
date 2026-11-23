@@ -17,15 +17,15 @@ price and path below as STALE until re-fetched. Nothing here is a source; it is 
 
 ## OPEN LEDGER — the living square
 
-- [ ] **claude-code card (`raw.settings/raw.card.claude-code.md`) — partly re-verified.** Settings
-  hierarchy section done 2026-11-23 (reposoma `e0c0ccb`). Header `verified:` still 2026-10-08 (half-life
-  14 d) — rest of card unverified. MCP-scope line (~L98) was reconciled with L37 internally, MCP docs
-  NOT re-fetched. → `[2026-11-23 settings-desk]`.
-- [ ] **18 of 20 dated `raw.settings` cards past half-life** (only `nature` + `autonomous-orchestrator`
-  inside). Not refreshed. Per-card table: `_mail/toAll/inbox/epoch.stale-cards.2026-11-23.md`.
+- [ ] **Stale-card job: RUNS ON OFFICE (timer fired 11-23 09:00, exit 0, old script), NOT on home (by design now).** My earlier "not installed" verdict checked home only — wrong for the system. New layout prepared in ia-sync (uncommitted): zsh/scheduled/{harness-check.zsh,harness.service,harness.timer,README.md} + deploy.sh leg deploy_scheduled_units (enable only on SCHEDULED_ENABLE_HOSTS=office). Pending: majkee commits/pushes ia-sync → office pulls + deploy.sh → verify with systemctl --user start harness.service + journalctl → delete old ~/.config/zsh/ai/harness-check.zsh on home+office → commit the pending office mail zsh.stale-settings-cards-2026-11-23.md (untracked on office).
+- [ ] **18 guides never tracked** — have verified: but no half_life_days:, so harness-check skips them (browser-egress, bus, cold-start-card, gemini-seats, guide-writing, harness-check, laravel-daily-epistemics, machine-home, machine-office, meeting, project-topology, regime-session, runbook, session-browser, status, temple-mail, tree-snapshot, tunnel). Needs majkee's half-life numbers (or a default). Also no verified: at all: gty addendum card; 9 guides without frontmatter.
+- [ ] **Guide rows all render as "guide:GUIDE (GUIDE)"** — script derives name from filename (every file is GUIDE.md); fix = use parent dir name. Not done.
+- [ ] **Deploy chain for the patch:** see the stale-job bullet above. Deployed `~/.config/zsh/guides/ai.md` has NO source (copied 2026-06-29, absent on office, old backup at `~/www/oldSync/bckp/dot.config@zsh/guides/ai.md`) and is largely stale/wrong: `gemini-base.zsh` missing, `g-astro`/`g-epoch`/`g-vega` aliases gone, alias is `harness-stale` not `aihs-stale`, `~/reposoma/.git/hooks/post-commit` missing, timer not on home, daily mail name, sample output from June. Decision: retire — majkee deletes by hand; keep the 0009-L5 lesson + doorbell smoke probe docs if wanted elsewhere.
+- [ ] **Uncommitted from this session:** raw.settings cards claude-code/cursor-ide/codex-cli, pulse.epoch.md, raw.guides/scheduler/{GUIDE.md,res/}, ~/ia-sync/zsh/ai/harness-check.zsh. Nothing pushed.
+- [ ] **claude-code card — header bumped 2026-11-23, PARTIAL.** Delta section covers v2.1.321–330 + settings hierarchy; **v2.1.294–320 still not itemised**, docs pages (MCP/skills/hooks) not re-fetched.
+- [ ] **15 of 20 dated `raw.settings` cards past half-life** after 2026-11-23 refreshes of claude-code, cursor-ide, codex-cli (still stale: the rest; `nature`, `autonomous-orchestrator`, `claude-code`, `cursor-ide`, `codex-cli` are inside). Not refreshed. Per-card table: `_mail/toAll/inbox/epoch.stale-cards.2026-11-23.md`.
   Refresh needs majkee's pick of which cards, in what order.
-- [ ] **Claude Code changelog v2.1.294–325 never itemised** (read only v2.1.326–330; newest seen v2.1.330,
-  20 Nov). Re-read from `code.claude.com/docs/en/changelog` with offsets, or github CHANGELOG.md.
+- [ ] **Claude Code changelog v2.1.294–320 never itemised** (v2.1.321–330 done 2026-11-23). Page is 1.4M chars; use WebFetch offsets ≥200000 or github CHANGELOG.md.
 - [ ] **Vendor-page checks outstanding (aggregator-only claims, rated M):** Fable 5.2 / Mythos 5.2 (9 Nov,
   `$8/$40` for Fable 5.2) → anthropic.com; Cursor 2026.11.05–06 → cursor.com/changelog; Google/Antigravity
   November news (none found) → geminicli.com/docs/changelogs + antigravity.google changelog.
@@ -34,10 +34,7 @@ price and path below as STALE until re-fetched. Nothing here is a source; it is 
 - [ ] **`worktree.bgIsolation`** — allowed values / default / min version NOT read (index says scope "Any
   file"). nablarva `.claude/settings.json` sets `"none"` (commit `6f5af9e`, pushed). Read
   `code.claude.com/docs/en/settings-reference#worktree-bgisolation` before anyone relies on it.
-- [ ] **majkee: `_mail` README mismatch.** README says `_mail` is gitignored except README/.gitignore, but
-  `git check-ignore` shows `_mail/toAll/inbox/` files are NOT ignored (checked 2026-11-23). Decide: fix the
-  README line or add the ignore rule. Also: 2026-11-09 and 2026-11-16 automated stale mails still unread in
-  `inbox/` (move to `archive/` is the receiver's act).
+- [ ] **majkee: `_mail` README mismatch.** RESOLVED 2026-11-23 — mail IS git-tracked and syncs (README fixed); only the unread 11-09/11-16 mails remain the receiver's to archive.
 - [ ] **majkee/harness-check owner: generator defects** — empty-name rows (`eagle`, `machine.office`,
   `reposoma`); addendum card lacks `verified:`; README "monthly" vs weekly Monday mails since 2026-09-07.
 - [x] **settings.json vs settings.local.json answered + card section fixed** — reposoma `e0c0ccb`, pushed.
@@ -47,6 +44,20 @@ price and path below as STALE until re-fetched. Nothing here is a source; it is 
 - [x] **Curated staleness mail committed + pushed** — `_mail/toAll/inbox/epoch.stale-cards.2026-11-23.md`, reposoma `2b13425`.
 
 ---
+
+## [2026-11-23 stale-job patch]
+- (a) Cron check on host `home`: no timer installed; the script only writes the alert mail and spawns no research.
+- (b) Design chosen: all hosts run the timer; mail keyed by ISO week (`zsh.stale-settings-cards-<YYYY-Www>.md`); deterministic body (no host/time); temp-file + `cmp` skip-if-unchanged; last writer wins; best-effort `git pull --ff-only` before scan; never commits. Brand fallback to card name for empty-name rows.
+- (c) CORRECTION to myself: I (relaying a Zenith scan) claimed a `half_life` vs `half_life_days` key mismatch. That was FALSE: every card with `half_life:` already has `half_life_days:`. The real gap is the 18 untracked guides (see ledger).
+- (d) I first patched the deployed `~/.config/zsh` copy, then learned zsh is deployed from `~/ia-sync/zsh` via deploy.sh. Delta ported the patch to source (source was byte-identical to the pre-patch backup). Backup at the session scratchpad `harness-check.zsh.bak`.
+- (e) `zsh -n` OK and `--debug` run clean. Non-debug mode and systemd NOT run.
+- Later same day: office check (read-only, via ssh) found the timer running with old script; design changed to single-writer (office), script moved to ia-sync `zsh/scheduled/` (Delta, uncommitted). My claim "mail doesn't sync" was a misread — it syncs via git; the job doesn't commit.
+- Open: claude/houston.goal:13 mentions ai/harness-check.zsh (historical, left); office ~/reposoma has uncommitted _cold-start/.majkee changes — a pull there must not touch them.
+
+## [2026-11-23 card-refresh pass]
+- Refreshed from live changelogs: claude-code (partial — v2.1.321–330 itemised; v2.1.294–320 not), cursor-ide, codex-cli.
+- Cron check on host `home`: no weekly staleness job installed (no crontab, no user timers, no harness.timer/service). Details in ledger.
+- Remaining 15 stale cards need majkee's priority pick.
 
 ## [2026-11-23 settings-desk] — settings question, card fix, gap newspaper, staleness mail
 
