@@ -34,15 +34,17 @@ price and path below as STALE until re-fetched. Nothing here is a source; it is 
 - [ ] **`worktree.bgIsolation`** — allowed values / default / min version NOT read (index says scope "Any
   file"). nablarva `.claude/settings.json` sets `"none"` (commit `6f5af9e`, pushed). Read
   `code.claude.com/docs/en/settings-reference#worktree-bgisolation` before anyone relies on it.
-- [ ] **majkee: `_mail` mismatch.** README says `_mail` is gitignored except README/.gitignore, but
-  `_mail/toAll/inbox/epoch.stale-cards.2026-11-23.md` is NOT ignored (untracked). Decide: commit it, or fix
-  the ignore rule / README. Also: 2026-11-09 and 2026-11-16 automated stale mails still unread in `inbox/`
-  (move to `archive/` is the receiver's act).
+- [ ] **majkee: `_mail` README mismatch.** README says `_mail` is gitignored except README/.gitignore, but
+  `git check-ignore` shows `_mail/toAll/inbox/` files are NOT ignored (checked 2026-11-23). Decide: fix the
+  README line or add the ignore rule. Also: 2026-11-09 and 2026-11-16 automated stale mails still unread in
+  `inbox/` (move to `archive/` is the receiver's act).
 - [ ] **majkee/harness-check owner: generator defects** — empty-name rows (`eagle`, `machine.office`,
   `reposoma`); addendum card lacks `verified:`; README "monthly" vs weekly Monday mails since 2026-09-07.
 - [x] **settings.json vs settings.local.json answered + card section fixed** — reposoma `e0c0ccb`, pushed.
 - [x] **nablarva `.claude/settings.json` created + pushed** — nablarva `6f5af9e`.
 - [x] **Epoch Gazette 2026-11-23 filed** — `.majkee/journal/newspaper.2026-11-23.md`, reposoma `06f2976`, pushed.
+- [x] **pulse.epoch.md created + pushed** — reposoma `0a0abf3`.
+- [x] **Curated staleness mail committed + pushed** — `_mail/toAll/inbox/epoch.stale-cards.2026-11-23.md`, reposoma `2b13425`.
 
 ---
 
