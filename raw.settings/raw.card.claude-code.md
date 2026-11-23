@@ -82,12 +82,20 @@ _Since last verify 2026-07-16 (card was at v2.1.210). Sources: `code.claude.com/
    - Local test: `claude --plugin-dir <path>` (no global install; accepts .zip). Scaffold: `claude plugin init <name>` (v2.1.157).
 
 ## Settings hierarchy
-`~/.claude/settings.json` (global) → `<repo>/.claude/settings.json` (team) → `settings.local.json` (personal, gitignored). Hooks + permissions live here.
+`~/.claude/settings.json` (global) → `<repo>/.claude/settings.json` (team) → `settings.local.json` (personal; Claude Code adds `**/.claude/settings.local.json` to the GLOBAL git excludes on its first write — a hand-created file is NOT ignored until you add it to .gitignore). Hooks + permissions live here.
 Precedence (high→low): Managed → CLI args → Local → Project → User.
 **New (v2.1.251):** managed settings now require org approval for settings that terminate sandbox TLS, route sandbox traffic through a proxy, inject credentials, weaken sandbox isolation, or set credential/org/routing headers via `ANTHROPIC_CUSTOM_HEADERS`.
+- **Local file location (v2.1.211+):** `settings.local.json` is read/written at the git repo root (main checkout root in a worktree), not the starting dir; older starting-dir files are still read, rules from both apply, root wins on same key. Stays beside the shared file outside git, when root = $HOME, on Windows. Shared `.claude/settings.json` is read from the session's primary working dir (`/cd` re-reads both from the new dir, v2.1.246+).
+- **Lists merge, scalars override:** `permissions.allow` etc. are combined across files; scalars (e.g. `model`) take the highest level. Exceptions taking one whole value: `fallbackModel`; `modelPicker` (only managed/--settings/user; ignored in project/local, v2.1.242+).
+- **Trust:** shared-file `permissions.allow`, `additionalDirectories`, `extraKnownMarketplaces`, most `env` wait for workspace trust (`deny`/`ask` apply at once). Local-file `allow` rules skip trust while the file is untracked (tracked → trust applies).
+- **allow vs ask:** a local `allow` (e.g. from "Yes, and don't ask again") does NOT outrank an `ask` rule from project/managed — you are still prompted.
+- **Stricter-value exceptions over managed:** e.g. `remoteControlAtStartup: false` from project/local; `crossSessionInbound` stricter value (accept<hold<refuse) from project/local; `useAutoModeDuringPlan`/`syncClaudeAiSkills`/`syncClaudeAiPlugins` `false` from local (not shared).
+- **Not honored from project/local:** `permissions.defaultMode` `auto`/`bypassPermissions` (before v2.1.257 bypassPermissions worked from any file); telemetry export vars in `env`.
+- **Cloud sessions:** `.claude/settings.local.json` and user file are NOT read; shared file is read only for single-repo sessions outside a project's threads.
+- Source: https://code.claude.com/docs/en/settings — live-fetched 2026-11-23 (this section only re-verified; rest of card still dated by its header).
 
 ## MCP scope (`.mcp.json`)
-All applicable scopes are **merged** at session start (additive, not override):
+Scopes are **merged** at session start (additive) only across DIFFERENT server names; same-named servers do not merge and resolve local > project > user > plugin > connector (see line 37). (internal reconciliation, MCP docs not re-fetched 2026-11-23)
 
 | Scope | File | Notes |
 |-------|------|-------|
