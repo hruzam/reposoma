@@ -178,6 +178,71 @@ codex resume 01a19f1f-54f8-79f0-bff8-c1604b078982
 codex resume 01a1ccad-dcf6-7080-8a99-c851981d21eb
 ```
 
+
+---
+
+## sublime: jsonl transcript to living file
+
+**cwd** : `~/unikuklatrix/nablarva/`
+**host** : `home`
+
+oraculum
+```bash
+codex resume 01a1a9f5-9ab1-7e50-9c48-bc663956aca8
+```
+
+cartan
+```bash
+codex resume 01a1b391-a96e-7cc3-b3ce-ca41c3bcb2bc
+```
+
+testing subject - codex
+```bash
+codex resume 01a1b58c-fd98-7d13-ba68-5d1f98acc6d9
+```
+
+**cwd** : `/tmp/nablarva-claude-native-i97BFz`
+```bash
+claude --resume 76b3407f-6d42-4007-a0bc-f362e31aa8b0
+```
+---
+
+## sublime: reader tool
+
+**cwd** : `~/ia-sync`
+**host** : `home`
+
+oraculum (senior dev)
+```bash
+claude --agent oraculum --resume 4ab201b8-3687-47d5-96ce-e6cdb522bacc
+```
+**ALERT!** : i killed `assay`s scratch directory by killing parent :(
+
+oraculum.fork(haiku)
+```bash
+claude --resume 4ab201b8-3687-47d5-96ce-e6cdb522bacc
+```
+
+oraculum(codex-contra)
+```bash
+codex resume 01a1dec0-27b4-7052-83cb-6f51b2449fe5
+```
+
+---
+
+## shared terminal (download nabla+wave handoff)
+
+**host** : `home`
+**cwd** : `~/unikuklatrix/nablarva`
+
+cartan *(he is copperating with also -> grep: `## sublime: reader tool`)*
+```bash
+codex resume 01a1eac6-5df4-7223-8b2f-b64a0557d6ee
+```
+
+
+
+
 # 2. REUSABLE SESSIONS
 
 ## `~/ia-sync`

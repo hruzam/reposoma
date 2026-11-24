@@ -63,6 +63,15 @@ Naming — siblings, never nesting:
 `<program>` groups related sessions and *is* the wrapper — no wrapper folder. `<NN>` is order.
 `<phase>` names the gate.
 
+`<NN>` is the order token **in the form the line already uses** — it is not always two digits.
+**Respect an existing branch assignation.** When the line (the worktree branch of the program)
+already carries a line or generation letter, every later chapter keeps it and takes the next
+free number: with `relay-X0-carryover` and `relay-X1-probes` taken, the next chapters are
+`relay-X2-…`, `relay-X3-…` — never `relay-01-…`, `relay-02-…` or a restart at `-00-`.
+A name reserved earlier in the plain form is renumbered the same way before it opens.
+Before naming or reserving a chapter, read the line's existing slugs, its ledger if it has one,
+and the project's locks. *(majkee 2026-11-23)*
+
 ```
 checkout-01-cart          gate: cart passes acceptance
 checkout-02-payment       gate: payment methods pass acceptance
