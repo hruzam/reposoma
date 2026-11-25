@@ -3,7 +3,7 @@ title: Scheduled jobs — systemd user timers via ia-sync zsh/scheduled
 scope: scheduler
 audience: operator + agent
 machine: both
-verified: 2026-11-23
+verified: 2026-11-25
 half_life_days: 30
 verify_cmd: systemctl --user list-timers --all
 ---
@@ -35,17 +35,21 @@ ia-sync `deploy.sh` → `deploy_scheduled_units`:
 
 1. Copies `zsh/scheduled/*.service` and `*.timer` to `~/.config/systemd/user/`.
 2. Runs `systemctl --user daemon-reload`.
-3. Runs `systemctl --user enable --now` on the timers only when `$MACHINE` is listed in
-   `SCHEDULED_ENABLE_HOSTS` (default `office`). Other hosts get the units installed, timer not enabled.
+3. Only when `$MACHINE` is listed in `SCHEDULED_ENABLE_HOSTS` (default `office`): creates the
+   harness mail clone if missing (`git clone --branch core <origin of ~/reposoma>
+   ~/.local/share/harness/reposoma-mail`, clone-local `user.name`/`user.email`), then runs
+   `systemctl --user enable --now` on the timers. Other hosts get the units installed, timer not enabled.
 
 No `--delete`: a file removed from ia-sync stays deployed. Remove old deployed files by hand.
 
 ## Policy
 
-- One writer host for anything that writes into a tracked repo: `office`. A second writer
-  creates an untracked same-name file and aborts the other host's `git pull --ff-only`.
-- A job never commits. A human or agent commits and pushes its output.
-- Home runs no timer by design; use the interactive command there.
+- A job never writes into a live working tree. A job that publishes into a tracked repo does it
+  from its own clone (`~/.local/share/harness/reposoma-mail` for harness; deploy.sh creates it on
+  `SCHEDULED_ENABLE_HOSTS`): fetch → reset → write → commit → push.
+- The job commits only its own file, only from its own clone (option C, gaveled 2026-11-25):
+  once per ISO week, skipped if the file is already in `_mail/toAll/inbox/` or `archive/`.
+- Home and monitor run no timer by design; use the interactive command there.
 
 ## How to add a job
 
@@ -57,14 +61,16 @@ No `--delete`: a file removed from ia-sync stays deployed. Remove old deployed f
 4. Verify the real trigger, not the script by hand: `res/verify-trigger.md`.
 5. Add the job to the Jobs table and the Manifest here, and commit reposoma the same session.
 
-## Status — 2026-11-23
+## Status — 2026-11-25
 
-- Office timer fired Mon 11-23 09:00, and again on manual start at 20:23:59; exit 0.
-  BUT `ExecStart` is still `~/.config/zsh/ai/harness-check.zsh` and the mail is named
-  `zsh.stale-settings-cards-2026-11-23.md` (dated). That is the OLD script and unit.
-- New layout (`zsh/scheduled/`, deploy leg `deploy_scheduled_units`) is prepared in ia-sync,
-  uncommitted, not yet deployed.
-- Home: no timer, by design.
+- Office runs the new layout: `ExecStart` = `~/.config/zsh/scheduled/harness-check.zsh`, ISO-week
+  mail name. W48 is published (`_mail/toAll/inbox/zsh.stale-settings-cards-2026-W48.md`).
+- Option C is deployed on all three hosts (ia-sync `577951b`). Office has the clone
+  `~/.local/share/harness/reposoma-mail` and the timer is enabled, next run Mon 11-30 ~09:06.
+  On a manual `systemctl --user start harness.service` it logged `already published` (no commit),
+  and the live `~/reposoma` was byte-identical before and after.
+- Home and monitor: units installed, timer not enabled.
+- First real publish: Mon 11-30 (W49), the first week with no file yet.
 
 ## Manifest
 
