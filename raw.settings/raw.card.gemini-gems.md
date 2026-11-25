@@ -2,7 +2,7 @@
 card: card.gemini-gems
 brand: Google — Gemini app (Gems / chat)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-10-08
+verified: 2026-11-25
 half_life: ~weeks — line is PARKED, consider longer (see refresh delta)
 half_life_days: 21
 recheck:
@@ -11,6 +11,17 @@ recheck:
   - https://blog.google/products/gemini/
 surface_type: chat (NO filesystem; standing instructions + knowledge)
 ---
+
+## Refresh delta 2026-11-25
+_Since last verify 2026-10-08. Sources live-fetched 2026-11-25 by @Epoch sibling: gemini.google/release-notes (full page: 0-100K + 100K-166K; tail is 2023-2024 only), releasebot.io/updates/google/gemini (feed visible only Nov 16-24; Sep/Oct NOT visible there), blog.google/products/gemini/ (index = nav only, no articles; PARTIAL: blog posts only seen via releasebot summaries)._
+- **Gems vs Skills (settled as far as release notes go):** 2026.09.30 entry still the latest word: "Skills will soon replace Gems as the tool for tailoring instructions for specific tasks"; "we will automatically migrate your Gems into skills when Gems go away"; Skills "currently available to 18+ and coming to more users soon". No later release-note entry says Gems are retired/renamed, and releasebot shows no Gems entry in Nov 16-24. So: Gems NOT yet confirmed gone; retirement announced, date NOT published. Gems = on a retirement path (not removed, not renamed). H (release notes), M on "not yet retired" (absence of evidence).
+- **2026.10.13 — Gemini 4 "Argon"** rolling out to Google AI Pro and Ultra subscribers worldwide; same entry: "Customize" lets users add skills so Gemini handles routine tasks. H (release notes; wording from translated/Czech-locale rendering of page).
+- **2026.11.17 — Tasks in Gemini** runs on new "Hydrogen 4" model (release notes) / "Gemini 4 Hydrogen" (blog via releasebot); free, six countries, no extra charge. H/M.
+- **2026.11.17 — Gemini 4 Carbon:** paid Gemini API developers; "Google AI Ultra subscribers can try it in Google Antigravity, AI Studio, the Gemini app, and AI Mode in Search." M (releasebot summary of blog; blog page itself not read).
+- **2026.11.18 — Gemini 4 Neon:** rolls out to Pro and Ultra subscribers in the Gemini app (and AI Pro/Ultra in Antigravity); positioned between Carbon (hardest long-horizon work) and Hydrogen (fast everyday execution). M (releasebot summary). The Gemini APP release notes page had NO Neon/Carbon entry in the portion read — treat app-notes as lagging.
+- **AI Plus:** not mentioned in any source read. Plan gating for Gems/Skills themselves: NOT published in sources read.
+- **Not Gems:** Genie 4 / Project Genie (Nov 18, Ultra; Pro waitlist) is a different product, not Gemini 4.
+- Not verified: whether any Gem-specific limits changed; whether Skills have knowledge-file support; in-app Gem model selector contents (does it offer Gemini 4 tiers?); Gems/Skills sunset date.
 
 ## Refresh delta 2026-10-08
 _Since last verify 2026-09-02. Source: gemini.google/release-notes, live-fetched 2026-10-08 by @Epoch (first ~100K of 157K chars read). Line is PARKED._
@@ -34,18 +45,16 @@ _Since last verify 2026-09-02. Source: gemini.google/release-notes, live-fetched
 - Card content is substantively stable; bumping `verified:` without material rewrite.
 
 ## What it is
-- A "Gem" = a custom chatbot with standing instructions + optional knowledge files. Parallel to
-  claude.ai Projects. NO filesystem / agent files.
+- A "Gem" = a custom chatbot with standing instructions + optional knowledge files (parallel to claude.ai Projects). **Gems are being replaced by Skills** (release notes 2026.09.30; auto-migration when Gems go away, date unpublished) — treat Gem authoring as a legacy path. NO filesystem / agent files.
 - NOT affected by the Gemini CLI sunset (that's the CLI / Code-Assist surface; Gems are the consumer app).
 
 ## Configuration
-- **Gem instructions** (standing prompt) ← researcher's / builder's system prompt lives here.
+- **Gem instructions** (standing prompt) ← researcher's / builder's system prompt lives here (will migrate to Skills).
 - **Knowledge** (attached files) ← feed the RELATIVE cards here.
 - Grounding / Google Search for live "what's new" recalibration.
 
 ## New in Jun–Jul 2026 (verified 2026-07-16, still current as of 2026-09-02)
-- **Gemini 3.5 Flash** (May, globally available via model dropdown): "best model to date for fast,
-  efficient task completion" — available in the Gem model selector. Computer use capability (browser,
+- **Gemini 3.5 Flash** (May, globally available via model dropdown): Gemini 3.5 Flash was the app's best-fast model until Gemini 4 (Oct-Nov 2026); whether the Gem selector exposes Gemini 4 tiers is unverified. Computer use capability (browser,
   mobile, desktop automation) added Jun 24 with enterprise safeguards (confirmation requirements,
   prompt injection detection).
 - **Study Notebooks** (Jun 25 global, Jul 10 update; expanded to mobile Aug 19): personalized
@@ -81,6 +90,5 @@ _Since last verify 2026-09-02. Source: gemini.google/release-notes, live-fetched
 - Gem-specific knowledge-file limits and exact feature toggle set are not fully published — re-verify
   in-app. Which Jun–Aug additions are exposed as Gem configuration options vs. only freeform chat
   still requires in-app confirmation.
-- `gemini.google/release-notes/` lags for Gem-specific items (last confirmed Gem-management entry
-  Sep 2025); `releasebot.io/updates/google/gemini` remains the primary recheck source.
+- release-notes carried the Gems->Skills notice; releasebot feed is shorter-window (Nov 16-24 visible) and blog.google index is nav-only to fetchers.
 </content>
