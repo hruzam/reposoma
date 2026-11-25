@@ -36,8 +36,7 @@ price and path below as STALE until re-fetched. Nothing here is a source; it is 
 - [ ] **Deploy chain for the patch:** see the stale-job bullet above. Deployed `~/.config/zsh/guides/ai.md` has NO source (copied 2026-06-29, absent on office, old backup at `~/www/oldSync/bckp/dot.config@zsh/guides/ai.md`) and is largely stale/wrong: `gemini-base.zsh` missing, `g-astro`/`g-epoch`/`g-vega` aliases gone, alias is `harness-stale` not `aihs-stale`, `~/reposoma/.git/hooks/post-commit` missing, timer not on home, daily mail name, sample output from June. Decision: retire — majkee deletes by hand; keep the 0009-L5 lesson + doorbell smoke probe docs if wanted elsewhere.
 - [ ] **Uncommitted from this session:** raw.settings cards claude-code/cursor-ide/codex-cli, pulse.epoch.md, raw.guides/scheduler/{GUIDE.md,res/}, ~/ia-sync/zsh/ai/harness-check.zsh. Nothing pushed.
 - [ ] **claude-code card — header bumped 2026-11-23, PARTIAL.** Delta section covers v2.1.321–330 + settings hierarchy; **v2.1.294–320 still not itemised**, docs pages (MCP/skills/hooks) not re-fetched.
-- [ ] **15 of 20 dated `raw.settings` cards past half-life** after 2026-11-23 refreshes of claude-code, cursor-ide, codex-cli (still stale: the rest; `nature`, `autonomous-orchestrator`, `claude-code`, `cursor-ide`, `codex-cli` are inside). Not refreshed. Per-card table: `_mail/toAll/inbox/epoch.stale-cards.2026-11-23.md`.
-  Refresh needs majkee's pick of which cards, in what order.
+- [ ] **Now 5 stale dated `raw.settings` cards (of 20): arch, claude-ai, session-hygiene, eagle, reposoma** — after the 2026-11-25 refresh waves; PARTIAL sections say what is unread. Earlier per-card table: `_mail/toAll/inbox/epoch.stale-cards.2026-11-23.md`.
 - [ ] **Claude Code changelog v2.1.294–320 never itemised** (v2.1.321–330 done 2026-11-23). Page is 1.4M chars; use WebFetch offsets ≥200000 or github CHANGELOG.md.
 - [ ] **Vendor-page checks outstanding (aggregator-only claims, rated M):** Fable 5.2 / Mythos 5.2 (9 Nov,
   `$8/$40` for Fable 5.2) → anthropic.com; Cursor 2026.11.05–06 → cursor.com/changelog; Google/Antigravity
@@ -55,8 +54,24 @@ price and path below as STALE until re-fetched. Nothing here is a source; it is 
 - [x] **Epoch Gazette 2026-11-23 filed** — `.majkee/journal/newspaper.2026-11-23.md`, reposoma `06f2976`, pushed.
 - [x] **pulse.epoch.md created + pushed** — reposoma `0a0abf3`.
 - [x] **Curated staleness mail committed + pushed** — `_mail/toAll/inbox/epoch.stale-cards.2026-11-23.md`, reposoma `2b13425`.
+- [ ] **Gemini API calendar: 2026-11-30 Carbon/Argon intro price ends ($2/$10 → $4/$20 on 12-01); 2026-12-01 gemini-2.5-pro/flash route to gemini-3.8-flash / gemini-3.5-flash-lite (breaking API changes); 12-03 omni-1.1-flash routes; 2026-11-30 Claude Code managed marketplaces auto-update default; Opus 4.8 fast mode removal 2026-11-30 (M).**
+- [ ] **Repo drift found by the reposoma-card check (not card issues):** ~/reposoma post-commit hook missing on home (tools.md:15 says installed 2026-06-25 live); AGENTS.md saddle step 3 points at `_mail/monkey/inbox/houston.monkey-not-forget-this.*.md` which no longer exist (all in `_mail/monkey/archive`, newest 2026-07-09; pulse.claude.md newest entry 2026-07-09); `.host` reads 'office' on home; 12 locks (0011 reserved). Route to Atlas/Houston — majkee to decide.
+- [ ] **`~/.config/zsh/guides/office.md` and `home.md` do not exist but are cited by eagle.md:163-164 and the machine.office card guide: line — create or drop the references. eagle.md:64-71 still carries the old nabla-lab rule and a stale mapped list (freya.devstudio, psdvsSys) — route to @Atlas (agent file, not a card).**
+- [ ] **Manjaro: does stable carry the PHP ≥8.5.12 and ca-certificates ≥3.131.1-1 fixes? Unknown — check manjaro stable-update threads.**
+- [ ] **Office runs Claude Code 2.1.330 and Codex 0.171.0 (upstream 2.1.332 / 0.172.0); psdvs.l not a linked valet site; disk root 46%.**
+- [ ] **Sonnet 5.5 cache read = $0.10 (Anthropic pricing) — the claude-code card's 2026-10-08 delta still lists it as unresolved; fix at next claude-code pass; claude-code card still lacks v2.1.294–320 beyond what agent-docs covers.**
+- [ ] **claude-ai: no official page states the claude.ai default model per plan after 5.5; Pro/standard-Team Fable gating conflict (support article vs Anthropic post snippet) unresolved.**
 
 ---
+
+## [2026-11-25 card refresh waves]
+- Batch 1: claude-code (11-23), cursor-ide, codex-cli, ai-news, laravel, model-effort, agent-docs, gemini-gems.
+- Batch 2 + pass 2: arch d027e30→3f9b445, gty 7045b92→fe47f9d, gemini-gems 1cca572, openrouter 22b2a84→df20b0d, gemini-models 69b0015→7243ec9, session-hygiene 3939dd0→2e71ec4 (partial), gemini-cli 11f326e→831febf, claude-ai 0a65f4c→eebb612 (partial), eagle d1bdcb9, reposoma e28514f, machine.office ad39c0d.
+- Result: 15 of 20 dated cards now inside half-life. Five stay stale on purpose: arch, claude-ai, session-hygiene, eagle, reposoma (PARTIAL sections say what is unread).
+- Decisions taken by @Epoch with majkee's delegation: gty half_life_days 21→14; gemini-cli → 7 ("ACTIVE, not parked"); gemini-models "prefer 2.5 / stable default" stance rewritten as SUPERSEDED, replacements labelled INFERENCE; gemini-cli, gty, gemini-models, openrouter, machine.office bumped.
+- History rule: dated sections never rewritten.
+- Corrections to myself: (a) I said Hydrogen was the Antigravity default — it is Gemini Managed Agents; agy's default is Neon. (b) I treated the OpenRouter catalog as unreadable — a summariser artefact; the API works. (c) I called the "breaking changes" line unconfirmed after one reader missed it; a second reader found the wording.
+- Trailer names vary (Sonnet/Opus/Haiku 5.5) — cosmetic, left.
 
 ## [2026-11-25 option C + rollout]
 - Rollout: office and monitor deployed; home was blocked by a hand-edited settings.json, then folded into ia-sync as 9f61561 and deployed.
