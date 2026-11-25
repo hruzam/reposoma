@@ -9,10 +9,27 @@ recheck:
   - https://geminicli.com/docs/changelogs/
   - https://github.com/google-gemini/gemini-cli/releases
   - https://google-gemini.github.io/gemini-cli/ROADMAP.html
-  - https://antigravity.google/docs/gcli-migration       # successor (CONFIRMED)
+  - https://antigravity.google/docs/cli/gcli-migration       # successor (CONFIRMED)
+  - https://github.com/google-antigravity/antigravity-cli/releases
+  - https://aistudio.google.com/docs/changelog
 verify_cmd: gemini --version
 auth_survival: paid Gemini API key OR enterprise license   # see VOLATILE
 ---
+
+## Refresh delta 2026-11-25
+_Since last verify 2026-10-08. Sources live-fetched 2026-11-25 by @Epoch sibling: github.com/google-gemini/gemini-cli/releases, geminicli.com/docs/changelogs/, antigravity.google/docs/cli/gcli-migration, github.com/google-antigravity/antigravity-cli/releases, aistudio.google.com/docs/changelog, ROADMAP.html. Local `gemini --version` / `agy --version` NOT run. GitHub release pages show day+month only; year inferred 2026 (M). PARTIAL — see caveats._
+- **Latest Gemini CLI stable v0.71.1 (Nov 24)**; v0.71.0 stable (Nov 24), v0.70.0 stable (Nov 19); preview v0.72.0-preview.0 (Nov 24). Card's v0.63.0 is 8 minors behind. Headlines: async PowerShell parsing (spinner freezes), nested `.gitignore` negation fix, resume most-recently-active session, a2a-server bearer-token auth + input validation (v0.71.1 patch), `${VAR:-default}` handling, worktree preserved across auth restarts, model-listing + policy-matching fixes (v0.70.0). Source: github.com/google-gemini/gemini-cli/releases. H (year M)
+- **Gemini CLI is NOT dead and is NOT being wound down on GitHub**: ~weekly stable releases continue. No release note on the page mentions Antigravity migration, deprecations, or a Gemini 4 default model. H (absence is not proof; M for "no Gemini 4 support")
+- **geminicli.com/docs/changelogs is STALE/thin**: newest listed v0.64.0 (2026-10-13), page updated Oct 14. It states Gemini CLI "was replaced by Antigravity CLI on June 18th, 2026 for unpaid tier and Google One users" and is "not optimized for Gemini 4 Argon; use Antigravity". Consistent with card's June-18 sunset; the Argon statement is the only new Gemini-4 signal for Gemini CLI. Prefer GitHub over this page for versions. H (statement) / L (as current)
+- **Antigravity CLI (`agy`) newest 1.5.17 (Nov 25)**, 1.5.16 (Nov 24), 1.5.15 (Nov 23), 1.5.14 (Nov 21), 1.5.13/1.5.12 (Nov 19). (Page printed "2025" — evidently typo; sequence follows card's Oct 1.3.x line, so 2026.) Source: github.com/google-antigravity/antigravity-cli/releases. H (year M)
+  - Gemini 4 Neon added to `/model` and `--model`: 1.5.12 with `GEMINI_API_KEY`; 1.5.13 with ADC (`AGY_ADC_AUTH`) / enterprise model gateway. H
+  - Headless: `--output-format json|stream-json` no longer reports ERROR for run that succeeded after retry (1.5.14); `--remote-agent` gains `--mode plan` (1.5.14); with `GEMINI_API_KEY`, `--remote-control` / `--remote-agent` exit code 2 at launch (1.5.12); `-r`/`--resume` aliases for `--conversation` (1.5.16). H
+  - Auth: proactive Google OAuth refresh + pre-stream 401 retry; MCP OAuth requests `offline_access` (1.5.17); macOS SSH keychain fallback to file tokens (1.5.16). `AGY_CLI_AUTO_COMPACT_OVERRIDE` env (1.5.15). H
+- **Migration doc moved**: `antigravity.google/docs/gcli-migration` is now a redirect stub -> `/docs/cli/gcli-migration`. Content (summary read): first `agy` launch offers to move session tokens to OS keyring; skills `~/.gemini/skills/` or `~/.gemini/antigravity-cli/skills/`; workspace skills `.gemini/skills/` -> `.agents/skills/` (manual); MCP moved out of `settings.json` into `mcp_config.json` (global `~/.gemini/config/mcp_config.json`, workspace `.agents/mcp_config.json`); remote URL key `url`/`httpUrl` -> `serverUrl`; extensions -> plugins via `agy plugin import gemini`; GEMINI.md and AGENTS.md rules carry over; "partial parity" (custom themes may not). Doc gave no dates and no enterprise-exception text (not checked further). H
+- **Gemini 4 family (API changelog, aistudio.google.com/docs/changelog):** argon `gemini-4-argon` (Oct 13, price/ctx not listed); carbon (Nov 10, $2/$10 intro through Nov 30); hydrogen (Nov 12, $1.50/$7.50, free tier, default thinking `high`, default model of the Antigravity agent in Gemini Managed Agents); neon (Nov 18, $3/$15, 1M ctx, thinking low/medium/high/xhigh). H
+- **Deprecation clock (impacts card's stability matrix):** `gemini-2.5-pro` deprecated Nov 2, routes to `gemini-3.8-flash` on **2026-12-01** (3.8-flash rates); `gemini-2.5-flash` deprecated Nov 2, routes to `gemini-3.5-flash-lite` on **2026-12-01**; `gemini-3.5-flash` deprecated Oct 8 -> routes to `gemini-3.6-flash`; `gemini-3.7-flash` deprecated Oct 8 -> `gemini-3.8-flash`; `gemini-omni-1.1-flash` routes to `omni-1.2-flash` 2026-12-03. Task brief flagged "breaking changes" on Dec 1; the changelog summary I read did NOT state breaking-change details (M). H (dates)
+- **ROADMAP.html**: generic, undated, no Antigravity mention, issues-tracked; low value as a recheck source. H
+- **Not verified:** enterprise Code Assist exception still valid; `--allowed-tools` removal timing / v1.0; bug #8609 status; auth-mode defaults on v0.71; whether Gemini CLI headless supports any Gemini 4 model; local versions.
 
 ## Refresh delta 2026-10-08
 _Since last verify 2026-09-02. Source: github.com/google-gemini/gemini-cli/releases, live-fetched 2026-10-08 by @Epoch. Line is PARKED; only newest release itemized. Year of release inferred from nightly tags (CONFIDENCE M). Local `gemini --version` not run._
@@ -56,7 +73,7 @@ _Since last verify 2026-09-02. Source: github.com/google-gemini/gemini-cli/relea
 - **Architecture change:** Go binary, closed-source, async/parallel agents, unified backend with Antigravity 2.0 desktop.
   Separate config tree: `~/.gemini/antigravity-cli/`. Still NOT 1:1 parity.
 - **Enterprise exception:** Standard/Enterprise license holders continue on Gemini CLI with full support + latest models — no end-of-life date published for this track.
-- **Gemini CLI repo still active**: stable v0.58.0 published 2026-09-01; nightly cadence continuing daily (v0.59.0 track).
+- **Gemini CLI repo still active**: stable v0.71.1 published 2026-11-24; nightly cadence continuing daily (v0.59.0 track).
 - ACTION: Park an `agy` contingency; don't over-invest in Gemini-CLI-specific glue that `agy` may not honor 1:1.
 
 **Known crash bug — context overflow on model auto-switch (GitHub issue #8609, status not re-checked this pass):**
@@ -109,7 +126,7 @@ _Since last verify 2026-09-02. Source: github.com/google-gemini/gemini-cli/relea
   headless mode, A2A remote subagents. Gemini 3 default; Gemma 4 via API default.
 
 ## VOLATILE / watch
-- Versions move daily (stable v0.58.0 as of 2026-09-01; nightly v0.59.0 track — check GitHub for latest).
+- Versions move daily (stable v0.71.1 as of 2026-11-24; preview v0.72.0-preview.0 — check GitHub for latest).
 - Subagents are PREVIEW → less stable than Claude's GA subagents. Recursion guard is a hard limit.
 - **`--allowed-tools` CLI arg and `tools.allowed` in settings.json are deprecated** (removal at v1.0).
   Migrate to Policy Engine: https://geminicli.com/docs/core/policy-engine/
@@ -128,8 +145,8 @@ Based on: triage.gemini-hang.2026-07-03.md + handoff.gemini-rebuild.addendum-han
 | Headless one-shot (REST API) | ✓✓ | Preferred — no TTY, no noise, no MCP init |
 | Automated loop / agentic CLI | ⚠ | Token bloat, 503 cascade risk, 10-min agentic timeout |
 | @agent in prompt (any scripted mode) | ✗ | Agentic loop — confirmed hang Class C (90s+, triage 2026-07-03); NEVER in scripts |
-| Gemini 2.5-flash | ✓ | Recommended for CLI automation and headless scripts |
-| Gemini 2.5-pro | ✓ | Recommended for thinking/advisor; accept auto-downgrade risk under load |
+| Gemini 2.5-flash | ✓ | Deprecated 2026-11-02; routes to gemini-3.5-flash-lite on 2026-12-01 |
+| Gemini 2.5-pro | ✓ | Deprecated 2026-11-02; routes to gemini-3.8-flash on 2026-12-01 |
 | gemini-3.5-flash (REST) | ✓ | HTTP 200 confirmed 2026-07-03; REST probe via key enumeration |
 | gemini-3.5-flash (CLI agentic) | ⚠ | Agentic-first design; prefer REST for scripted use |
 | Gemini 3.x other (CLI) | ⚠ | CLI instability reported 2026-06-27; agentic-first, timeout/silent-fallback risk |
