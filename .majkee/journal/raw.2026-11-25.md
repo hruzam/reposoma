@@ -8,6 +8,49 @@ date: `2026-11-25`
 
 trajectory: `4f923bb7-ee15-447b-8954-408e16955530`
 
+
+---
+
+`[sidequest]` from majkee:
+
+---
+
+roster: you + myShell ID `a857e21d-3f9d-4cf3-93f4-bbe9aa33ec66`, tmux session `window 3`
+cwd : `` if any coding, json work and assessment
+`oraculum`, 
+
+
+---
+
+```bash
+
+tmux list-windows -t helloWorld -F '#{session_id} | #{window_index} #{window_name} #{window_id} | #{pane_id}'
+$36 | 0 eSharp @75 | %77
+$36 | 1 supervisor-relay @57 | %59
+$36 | 2 seniorDev @58 | %60
+$36 | 3 myShell @59 | %61
+$36 | 4 auditor @64 | %66
+$36 | 5 exec @66 | %68
+$36 | 6 lead @68 | %70
+$36 | 7 sample-codex-2 @72 | %74
+$36 | 8 supervisorCli @73 | %75
+$36 | 9 harnessExp @76 | %78
+
+
+```
+
+
+
+
+
+New location: .dev/session/germline-A1-vi-agents/raw/007-researcher/EPOCH.role-and-inputs.2026-11-25.md. Delta created the
+    007-researcher folder, which didn't exist.
+  - Old file: The file under 006-supervisor is gone. That folder still holds only its original files: BRIEF.md,
+    HANDOFF.cartan.relay-controller.2026-11-24.md and HANDOFF.exec.md. I hadn't seen the other two.
+  - Header: The title now says the file is written against the supervisor brief. One line after the frontmatter says that "BRIEF"
+    means ../006-supervisor/BRIEF.md.                                                       
+  - Commit: The commit staged only that file and added no trailers. The push was a plain push, as main wasn't behind upstream.
+
 ---
 the usual tmux server — every seat lives here
   session helloWorld     shared seats, and the relay party as it is today
@@ -23,10 +66,12 @@ server tmux -L session-window       group 1's sandbox — tests only; do not cre
 server tmux -L terminal-workspace   group 2's sandbox — later
 
 To create the new parts:
-
-tmux new-session -d -s seswin -n lead -c ~/unikuklatrix/nablarva
-tmux new-window  -d -t seswin: -n audit -c ~/unikuklatrix/nablarva
 tmux new-window  -d -t helloWorld: -n supervisorCli -c ~/unikuklatrix/nablarva
+tmux new-session -d -s terwor -n lead -c ~/unikuklatrix/nablarva
+tmux new-window  -d -t terwor: -n audit -c ~/unikuklatrix/nablarva
+tmux list-windows -t terwor -F '#{session_id} | #{window_index} #{window_name} #{window_id} | #{pane_id}'
+
+
 
 Then open your views the way you open helloWorld-37…43 today, and start the three CLIs as you started today's seats: the auditor with codex --profile oraculum, the supervisor with plain codex, the lead like today's lead.
 
