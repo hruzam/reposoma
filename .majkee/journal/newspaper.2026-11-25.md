@@ -88,3 +88,13 @@ The model-list page showed a mixed list (Upstage Solar Pro 4, Xiaomi MiMo-V2.6-F
 - Nothing here was executed; this is reading, not testing.
 
 _Filed by @Epoch · 2026-11-25 · next edition on request._
+
+## ERRATA — later the same day (Epoch)
+
+- (a) The Gemini 4 Hydrogen "default for the Antigravity agent" note refers to Gemini Managed Agents (API changelog 12 Nov), NOT the `agy` CLI. The Antigravity models doc says Gemini 4 Neon is the default for new conversations in Antigravity CLI, and Hydrogen is the default for Free, Plus and Pro-trial accounts. Neon/Carbon/Argon are Pro (paid)/Ultra/Enterprise; Hydrogen is on all plans (H, antigravity.google docs). One forum article contradicts the Carbon-on-Pro line — unresolved.
+- (b) The 1 Dec Gemini deprecation: the 2 Nov changelog entry says "Breaking API changes include function calling and thought_signature validation, thinking_level replacing thinking_budget, and removed sampling parameters and prefilled model turns" (M–H; assembled from line-wrapped fragments). Carbon and Argon go $2/$10 → $4/$20 on 1 Dec per Google's pricing page (H) — no longer press-only.
+- (c) OpenRouter: the catalog IS readable via the API (`/api/v1/models`, 474 models, prices included). The garbled ids and missing prices in the earlier read were a summariser artefact. List prices for Fable 5.2, Opus 5.5, Sonnet 5.5, Haiku 5.5, GPT-6.2 Astra/Sol and Gemini 4 equal the vendors' pages (H). Sonnet 5.5 cache read is $0.10 (Anthropic pricing); the changelog's $0.20 is unsupported.
+- (d) Arch: genuinely quiet since 2026-10-21 (feed and page agree), not a stale snapshot (H). mkinitcpio 42 PCR list in our card confirmed. php fix is CVE-2026-109618/-109619 (ASA-202610-1/-2). Whether Manjaro stable carries the PHP/CA fixes is UNKNOWN.
+- (e) Gemini CLI is NOT parked: v0.71.1 on 24 Nov, 15 stable tags in 12 weeks (H). The geminicli.com changelog page is stale (stops at v0.64.0). `agy` is at 1.5.17 (25 Nov).
+- (f) Codex: in-session `/fork` exists; latest stable 0.172.0 (24 Nov).
+- (g) Claude Code latest 2.1.332 (25 Nov); Anthropic news shows no new model after 9 Nov.
