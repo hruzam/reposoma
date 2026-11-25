@@ -2,7 +2,7 @@
 card: card.refresh.ai-news
 brand: Research — AI/LLM news watch (scope: ai-news)
 kind: knowledge-card · RELATIVE (volatile, RAG-refreshable)
-verified: 2026-10-08
+verified: 2026-11-25
 half_life: ~2 days
 half_life_days: 2
 recheck:
@@ -17,6 +17,26 @@ verify_cmd: "cat ~/reposoma/raw.research/ai-news/draft/sources.jsonl | wc -l"
 
 Skill: `/refresh ai-news` · Data: `raw.research/ai-news/draft/sources.jsonl`
 Substrate: `raw.research/ai-news/report/`
+
+## 2026-11-25
+
+_Manual headline-level gap run by @Epoch (NOT the `/refresh ai-news` pipeline). **The window 2026-10-08 → 2026-11-08 is NOT reconstructed**; this entry covers ~Nov 9–25 only, from changelogs and four newsletters, read through a summarising fetcher. Full prose: `.majkee/journal/newspaper.2026-11-25.md`. `verified` is bumped to this log entry's date because the gap is declared here (the card is a log, not a fact sheet)._
+
+**Lead:** Gemini 4 family GA on the Gemini API — Carbon (Nov 10, $2/$10 introductory to Nov 30), Hydrogen (Nov 12, $1.50/$7.50, Antigravity agent default), Neon (Nov 18, $3/$15, 1M ctx) (H, AI Studio changelog). OpenAI GPT-6.2 Astra $8/$40 and Sol $2/$10 (Nov 17, M — press only; OpenAI pricing page not read). Claude Code v2.1.332 (Nov 25, H) · Codex 0.172.0 (Nov 24, H) · Fable 5.2 / Mythos 5.2 (Nov 9, H on existence, no prices on anthropic.com).
+
+**Deadlines:** Nov 30 Gemini 4 Carbon intro price ends; Dec 1 `gemini-2.5-pro`/`gemini-2.5-flash` route to `gemini-3.8-flash`/`gemini-3.5-flash-lite` with breaking changes (H); Dec 3 `gemini-omni-1.1-flash` routes; Nov 30 Claude Code managed marketplaces auto-update by default (H).
+
+**Newsletter headlines (M):** Import AI 482 (Nov 23), 481 (Nov 16) · The Batch #380 (Nov 20), #379, #378 (Nov 6) · Latent Space AINews Nov 17–24 · Interconnects Nov 14 and Nov 4 (open-model posts, teasers only).
+
+**Conflicts / unverified:** Jensen Huang "departure from Nvidia" (Batch #380; Interconnects Nov 14 leans the same) vs "returning" (Latent Space Nov 23) — unresolved, L. Latent Space Nov 20 "two independent proofs of the Riemann Hypothesis" — not read, L.
+
+**Convergence:** Gemini 4 launch (AI Studio changelog H + Latent Space Nov 18/24 + Batch #378 + press — strong) · GPT-6.2 launch (Latent Space + press; OpenAI page lists title only — medium).
+
+**Feed flags:** latent-space — fetch `/archive` (worked 2026-11-25); import-ai `/archive` works; interconnects `/archive` works; the-batch page works · openrouter catalog not readable by a fetch-only seat (L) — needs a Bash seat with curl. Not fetched this run: ahead-of-ai, deep-learning-focus, the-gradient, ai-normal-tech, ai-guide-humans, prg-ai, rychlofky, hf-daily-papers, nlp-news, manual-check sources.
+
+**Manual-check:** ceciletamura (X-only) · ismail-sojal (auth-blocked) — untouched.
+
+---
 
 ## 2026-10-08
 
