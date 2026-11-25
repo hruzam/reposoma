@@ -136,11 +136,27 @@ This card should be refreshed when any of the following change:
 - Beacon frontmatter field names change (new fields adopted, old ones retired)
 - The cascade step order changes (e.g. a step is added or removed)
 - Eagle's model or tool list changes
-- A new special-case resolution is added (like the nabla-lab rule)
+- A new special-case resolution is added (the former nabla-lab rule is obsolete — nabla-lab is mapped)
 
 
 ## Run log
 
+## Refresh delta 2026-11-25
+
+Verified by @Epoch's sibling (local, read-only) on host home against ~/.claude/agents/eagle.md, ~/ia-sync/claude/agents/eagle.md, ~/.config/zsh/ai/temple-project-map.zsh, raw.card.model-effort.md. Claude Code 2.1.332.
+
+- **Deployed == source, no drift.** `diff ~/.claude/agents/eagle.md ~/ia-sync/claude/agents/eagle.md` -> identical; both 13807 bytes, mtime 5 Nov 03:59. Last source commit: fcee387 "Houston name sweep 2" (ia-sync). [H]
+- **Frontmatter matches the card.** eagle.md:2-15: name eagle, model sonnet, effort low, tools `Read, Grep, Glob, Bash, Write, Agents`, color cyan, memory user. Card frontmatter model/effort/tools/memory all agree. [H]
+- **Tools nuance.** The runtime roster lists eagle's tools as `Read, Grep, Glob, Bash, Write, Agents, Edit` (Edit appended by the harness); the file itself has no Edit (eagle.md:13). Card matches the file. [M]
+- **Model string vs pins.** `sonnet` alias -> Sonnet 5.5 (`claude-sonnet-5-5`, since v2.1.284 per raw.card.model-effort.md:45); `~/.claude/settings.json:40` ANTHROPIC_DEFAULT_SONNET_MODEL=claude-sonnet-5-5. Effort low is valid (levels low..max, card.model-effort:95). No eagle pin in ~/ia-sync/germline/agents/ (only houston, oraculum); houston/binding.claude.md:47 lists eagle as a bounded reader. [H]
+- **Harness read order matches.** eagle.md:123-143 table: AGENTS.md (or CLAUDE.md -> @AGENTS.md) -> .dev/flag.md -> .dev/pulse.md (newest first) -> .dev/PROJECT.yaml; fallback root flag.md/pulse.md; pulse.*.md glob variant; reposoma = pulse.claude.md + pulse.atlas.md. Both reposoma pulse files exist; reposoma has no `.dev/`. [H]
+- **Cascade matches the card.** Steps 0, 1, 2, 3, 3.5, 4 + explicit-path skip (eagle.md:43-109); `~/.remote/brief.md` pre-step (eagle.md:27-31); file `~/.remote/brief.md` exists. `temple-project-root`, `tree-snapshot`, `temple-mail-inbox` are shell functions after sourcing base.zsh (`zsh -c "source ~/.config/zsh/ai/base.zsh && temple-project-root nabla-lab"` -> /home/hruzam/nabla-lab). temple-tree.zsh, tree-converter.sh, registries/tcr/tcr.default.json exist; no per-project tcr.*.json files. [H]
+- **WRONG in card: nabla-lab is now IN the map.** temple-project-map.zsh:24 `[nabla-lab]="/home/hruzam/nabla-lab"` (also projects.json:17); the real project is its own git repo at /home/hruzam/nabla-lab (AGENTS.md, drafts/, guides/); `/home/hruzam/reposoma/nabla-lab` also exists but is only a tracked `_mail/` mailbox dir (git ls-files shows _mail items), so the old resolution map[reposoma]+/nabla-lab lands on the mailbox, not the project. The "omitted by design / map[reposoma]+/nabla-lab" special case is obsolete. Map now has 16 entries (card says 15). eagle.md:64-67 still carries the stale special case and eagle.md:70-71 lists a stale mapped list (freya.devstudio, psdvsSys) — agent-file drift, to route to @Atlas, not fixed here. [H]
+- **Other 15 map entries match the card's list** line for line (map lines 17-32 minus nabla-lab). [H]
+- **Machine guides cited by eagle.md don't exist at the cited paths:** `~/.config/zsh/guides/office.md` and `home.md` absent (guides/ holds claviature.*, codex-relay.*, guide-for-builder.md, index.md, keyboard.md, sudoers.valet-php.conf). eagle.md:163-164 dead pointers; card does not mention them. [H]
+- **Companion skill `/project-read`** exists in ~/.claude/skills. `drop-brief` skill exists (referenced by eagle.md:31). [H]
+- **Card frontmatter `host: office`** — verification ran on home; agent definition is host-independent. [M]
+- Not checked: beacon field-name list (registry/*.md frontmatter beyond a directory listing; note no beacons for freya/freya.devenv/nablarva present in registry/ listing — not investigated), registry/index.md rows vs map, `/project-read` body vs the "no Bash" claim, section 1.5 behavior, whether `Agents` (vs `Agent`) is a valid tool name in this harness.
 ## 2026-10-08
 
 Refreshed by @Epoch against eagle.md and the generated temple-project-map.zsh. tools now include `Agents` (+ `memory: user` mirrored into frontmatter); cascade is 6 steps (0, 1, 2, 3, 3.5, 4) plus a `~/.remote/brief.md` pre-step; map is generated from registries/projects.json and has 15 entries (freya.devstudio replaced by freya + freya.devenv — per Field's read of registry/index.md; psdvsSys gone, ham/ham.devenv present; added nablarva, jar-kuba, pajdulium-web, pajdulium-studio). NOT re-checked: beacon field names, the nabla-lab special case (the current generated map file carries no "omitted" comment — the rule still lives in eagle.md), the 1.5 quick-reference section.
