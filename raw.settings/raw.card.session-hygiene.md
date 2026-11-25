@@ -311,7 +311,7 @@ gates are load-bearing — not just procedural discipline.
 
 - `card.cursor-ide` — verified 2026-11-23 (read 2026-11-25). Add: effective context window (unsourced), mode-switch token-reset behavior (unsourced), real-world 80% vs 12% comparison (Reddit anecdote via InfoQ); also fix the sibling-card claims listed above.
   mode-switch token-reset behavior, real-world 80% vs 12% comparison.
-- `card.gemini-cli` — verified 2026-10-08 (read 2026-11-25; frontmatter not bumped). Add: bug #8609 (closed as completed 2025-10-15, no fix linked), `/compress`
+- `card.gemini-cli` — verified 2026-11-25 (read 2026-11-25; frontmatter not bumped). Add: bug #8609 (closed as completed 2025-10-15, no fix linked), `/compress`
   failure mode, subagent recursion guard.
 
 ---
