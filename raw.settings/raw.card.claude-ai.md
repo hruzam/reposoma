@@ -12,6 +12,21 @@ recheck:
 surface_type: chat (NO filesystem; standing instructions + retrieved knowledge)
 ---
 
+## Refresh delta 2026-11-25
+PARTIAL: support.claude.com release notes, anthropic.com/news, releasebot read once each via summarizing fetch; plan-gating of Fable 5.2, current per-plan model defaults, and 5.x pricing NOT checked.
+_Since last verify 2026-10-08. Sources: support.claude.com release notes (article 12138966), anthropic.com/news, releasebot.io/updates/anthropic/claude, live-fetched 2026-11-25 by @Epoch sibling._
+- **Nov 9:** Claude Fable 5.2 and Claude Mythos 5.2 launched ("most capable models for daunting technical work"; coding, finance, sciences). Succeed 5.1 in the tier stack (inferred from naming). Pricing and plan access not stated on the news page. Source: anthropic.com/news. H (launch) / L (succession, access)
+- **Oct 7 / Sep 28 / Sep 22:** Haiku 5.5 / Sonnet 5.5 / Opus 5.5 confirmed on anthropic.com/news (Opus 5.5 = 40% cheaper to run than Opus 5 on typical workloads). Haiku 5.5: "fastest, most capable small model". H. Whether Sonnet 5.5 / Opus 5.5 became the plan defaults: NOT verified; release notes show no default change after Oct 7.
+- **Nov 10:** Claude Whiteboards, Sheets (beta) and Claude Data (formerly Dashboards, GA) on all paid plans; interactive connectors; MCP Apps open inside Claude (public preview for devs); enterprise auto-connect beta. Source: releasebot (Anthropic posts). M
+- **Nov 24:** Monthly recap (Reflect) out of beta for Free/Pro/Max/Ultra, can include Claude Code sessions and cloud Cowork tasks. Beta: install artifacts as Mac/Windows apps. Beta: send/save files to connected apps (Pro/Max/Ultra gradual; Team/Enterprise owner must enable). Source: support release notes. H
+- **Plan name:** release notes now name an "Ultra" plan alongside Free/Pro/Max (Team/Enterprise). Card does not mention Ultra; its terms/limits NOT checked. H (name only)
+- **Nov 20:** Computer use beta on Team/Enterprise (needs "Computer access" setting); refreshed iOS design (iOS 26+). **Nov 17:** Claude Desktop Stable/Latest channels. H
+- **Nov 12:** Claude Meetings beta (Team/Enterprise, joins Google Meet). **Nov 6:** cost-code tags for Projects (Enterprise beta). **Nov 5:** Enterprise security center / inference hooks (beta); Personal Finance beta (US, Pro/Max/Ultra). H
+- **Oct 21:** Claude Duet (proactive agent app) research preview, Pro/Max. H
+- **Nov 23:** Claude Ship (Team/Enterprise GitHub PR workflows; Code Review GA). **Nov 24:** Skills over MCP public beta; MCP Tasks and Elicitation GA. Source: releasebot. M
+- Not card-relevant: Oct 27 GSA 40% government discount (anthropic.com/news).
+- Claude Code v2.1.332 (Nov 25) not re-verified here (outside card sources).
+
 ## Refresh delta 2026-10-08
 _Since last verify 2026-09-02. Source: support.claude.com release notes (article 12138966), live-fetched 2026-10-08 by @Epoch._
 - **Oct 7:** Claude Haiku 5.5 launched; Max and Team plans gain monthly API credits (claim by linking a Console org in billing). H
