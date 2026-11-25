@@ -68,7 +68,7 @@ No `--delete`: a file removed from ia-sync stays deployed. Remove old deployed f
 
 ## Manifest
 
-- `res/harness-check.md` · chapter · the stale-settings-cards checker (`harness-stale`, the action loop)
+- `res/harness-check.md` · chapter · owner @Epoch · the stale-settings-cards checker (`harness-stale`, the action loop)
 - `res/verify-trigger.md` · chapter · the 0009-L5 rule, the dead-path tale, verify-after-deploy procedure
 
 ## Pointers

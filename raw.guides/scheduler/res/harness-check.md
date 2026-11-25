@@ -3,7 +3,7 @@ title: Harness check — settings-card and guide freshness checker (harness-stal
 chapter-of: scheduler
 ---
 
-<!-- chapter owner: zsh maintainer — pending assignment by majkee -->
+<!-- chapter owner: @Epoch (gaveled by majkee 2026-11-25). Truth lives in ia-sync zsh/scheduled/harness-check.zsh — on conflict the code wins and this chapter is the bug (guide-writing rule 4). Re-verify against the script whenever it changes. -->
 
 # Harness check — freshness checker
 
