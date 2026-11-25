@@ -36,3 +36,29 @@ tmux set-option -u -t helloWorld status
 ```
 
 Common flags: `-t` names the target session or window; `-w` selects a window option; `-u` clears an option; `-g` sets or clears the global default. Session options use `-t session` without `-w`. Check a value with `show-options`, adding `-w` for window options.
+
+## Rename the window
+
+```sh
+tmux rename-window -t 'helloWorld:sample-codex' 'scratch-codex'
+```
+
+Renaming keeps each pane's `%` ID. A pane with ID `%42` is still addressable
+with `-t '%42'`. A target that uses the window name changes from
+`helloWorld:sample-codex.0` to `helloWorld:scratch-codex.0`.
+
+## Close the whole window
+
+This closes every pane in the window. Run the command that matches its current name.
+
+**Before renaming**
+
+```sh
+tmux kill-window -t 'helloWorld:sample-codex'
+```
+
+**After renaming**
+
+```sh
+tmux kill-window -t 'helloWorld:scratch-codex'
+```

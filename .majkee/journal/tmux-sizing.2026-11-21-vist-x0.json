@@ -1,0 +1,34 @@
+{
+  "observed_utc": "2026-11-21T12:19:35.988140+00:00",
+  "scope": "VIST X0 existing windows only",
+  "before": [
+    "@15:ops size=80x24 pane=%15 pid=813698 window-size=largest aggressive-resize=0",
+    "@16:cartan size=108x63 pane=%16 pid=813707 window-size=largest aggressive-resize=0",
+    "@17:witness size=108x63 pane=%17 pid=813716 window-size=largest aggressive-resize=0",
+    "@21:trajectory size=108x63 pane=%21 pid=814486 window-size=largest aggressive-resize=0",
+    "@23:myshell size=108x63 pane=%23 pid=818259 window-size=largest aggressive-resize=0",
+    "@25:cartan2 size=108x63 pane=%25 pid=818275 window-size=largest aggressive-resize=0"
+  ],
+  "after": [
+    "@15:ops size=80x24 pane=%15 pid=813698 window-size=smallest aggressive-resize=1",
+    "@16:cartan size=67x63 pane=%16 pid=813707 window-size=smallest aggressive-resize=1",
+    "@17:witness size=108x63 pane=%17 pid=813716 window-size=smallest aggressive-resize=1",
+    "@21:trajectory size=107x63 pane=%21 pid=814486 window-size=smallest aggressive-resize=1",
+    "@23:myshell size=87x63 pane=%23 pid=818259 window-size=smallest aggressive-resize=1",
+    "@25:cartan2 size=92x63 pane=%25 pid=818275 window-size=smallest aggressive-resize=1"
+  ],
+  "clients": [
+    "session=traj-office window=@0:claude terminal=116x47",
+    "session=view-lab-codex window=@3:codex terminal=73x60",
+    "session=view-lab-controller window=@1:controller terminal=80x60",
+    "session=view-lab-claude window=@2:claude terminal=75x60",
+    "session=view-docs-claude-oraculum window=@7:claude.oraculum terminal=56x62",
+    "session=view-docs-codex-oraculum window=@8:codex.oraculum terminal=56x62",
+    "session=view-docs-codex-controller window=@9:codex.controller terminal=56x62",
+    "session=view-vist-myshell window=@23:myshell terminal=87x64",
+    "session=view-vist-cartan window=@16:cartan terminal=67x64",
+    "session=view-vist-trajectory window=@21:trajectory terminal=107x64",
+    "session=view-vist-witness window=@17:witness terminal=108x64",
+    "session=view-vist-cartan2 window=@25:cartan2 terminal=92x64"
+  ]
+}

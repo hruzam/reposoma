@@ -1,0 +1,8 @@
+{
+  "observed_utc": "2026-11-20T21:04:42.065401+00:00",
+  "authority": "Majkee requested Trajectory presence, 2026-11-20",
+  "observation": "window=trajectory pane=%21 pid=814486 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva seat=trajectory-support id= source_id=06352fda-5b7f-4621-b7d1-617be6bc51a4 carrier=unbound state=prepared-shell",
+  "viewer": "view-vist-trajectory",
+  "selected_window": "trajectory",
+  "scope": "Reserved continuity/adviser window; no CLI resume, live binding or operator-desk activation"
+}

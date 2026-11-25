@@ -1,0 +1,69 @@
+{
+  "observed_utc": "2026-11-20T20:59:36.606285+00:00",
+  "purpose": "Additive VIST X0 shell/viewer preparation only; no agent started or peer input sent",
+  "before": [
+    "nabla-lab window=@1:controller pane=%1 pid=157191 cmd=codex cwd=/home/hruzam/reposoma/.majkee",
+    "nabla-lab window=@2:claude pane=%2 pid=157193 cmd=claude cwd=/home/hruzam/nabla-lab",
+    "nabla-lab window=@3:codex pane=%3 pid=157195 cmd=codex cwd=/home/hruzam/nabla-lab",
+    "nablarva-docs window=@7:claude.oraculum pane=%7 pid=234958 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "nablarva-docs window=@8:codex.oraculum pane=%8 pid=234969 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "nablarva-docs window=@9:codex.controller pane=%9 pid=234973 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "nablarva-docs window=@10:claude.auditor pane=%10 pid=234980 cmd=zsh cwd=/home/hruzam",
+    "traj-office window=@0:claude pane=%0 pid=6635 cmd=claude cwd=/home/hruzam/ia-sync",
+    "view-docs-claude-auditor window=@7:claude.oraculum pane=%7 pid=234958 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "view-docs-claude-auditor window=@8:codex.oraculum pane=%8 pid=234969 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "view-docs-claude-auditor window=@9:codex.controller pane=%9 pid=234973 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "view-docs-claude-auditor window=@10:claude.auditor pane=%10 pid=234980 cmd=zsh cwd=/home/hruzam",
+    "view-docs-claude-oraculum window=@7:claude.oraculum pane=%7 pid=234958 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "view-docs-claude-oraculum window=@8:codex.oraculum pane=%8 pid=234969 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "view-docs-claude-oraculum window=@9:codex.controller pane=%9 pid=234973 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "view-docs-claude-oraculum window=@10:claude.auditor pane=%10 pid=234980 cmd=zsh cwd=/home/hruzam",
+    "view-docs-codex-controller window=@7:claude.oraculum pane=%7 pid=234958 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "view-docs-codex-controller window=@8:codex.oraculum pane=%8 pid=234969 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "view-docs-codex-controller window=@9:codex.controller pane=%9 pid=234973 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "view-docs-codex-controller window=@10:claude.auditor pane=%10 pid=234980 cmd=zsh cwd=/home/hruzam",
+    "view-docs-codex-oraculum window=@7:claude.oraculum pane=%7 pid=234958 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "view-docs-codex-oraculum window=@8:codex.oraculum pane=%8 pid=234969 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "view-docs-codex-oraculum window=@9:codex.controller pane=%9 pid=234973 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva",
+    "view-docs-codex-oraculum window=@10:claude.auditor pane=%10 pid=234980 cmd=zsh cwd=/home/hruzam",
+    "view-lab-claude window=@1:controller pane=%1 pid=157191 cmd=codex cwd=/home/hruzam/reposoma/.majkee",
+    "view-lab-claude window=@2:claude pane=%2 pid=157193 cmd=claude cwd=/home/hruzam/nabla-lab",
+    "view-lab-claude window=@3:codex pane=%3 pid=157195 cmd=codex cwd=/home/hruzam/nabla-lab",
+    "view-lab-codex window=@1:controller pane=%1 pid=157191 cmd=codex cwd=/home/hruzam/reposoma/.majkee",
+    "view-lab-codex window=@2:claude pane=%2 pid=157193 cmd=claude cwd=/home/hruzam/nabla-lab",
+    "view-lab-codex window=@3:codex pane=%3 pid=157195 cmd=codex cwd=/home/hruzam/nabla-lab",
+    "view-lab-controller window=@1:controller pane=%1 pid=157191 cmd=codex cwd=/home/hruzam/reposoma/.majkee",
+    "view-lab-controller window=@2:claude pane=%2 pid=157193 cmd=claude cwd=/home/hruzam/nabla-lab",
+    "view-lab-controller window=@3:codex pane=%3 pid=157195 cmd=codex cwd=/home/hruzam/nabla-lab"
+  ],
+  "created": [
+    {
+      "name": "ops",
+      "window": "@15",
+      "viewer": "view-vist-ops",
+      "expected_id": ""
+    },
+    {
+      "name": "cartan",
+      "window": "@16",
+      "viewer": "view-vist-cartan",
+      "expected_id": "01a1d582-c6ce-74f1-9e66-44715424aa2c"
+    },
+    {
+      "name": "witness",
+      "window": "@17",
+      "viewer": "view-vist-witness",
+      "expected_id": "c266d10a-ecda-4f89-9f18-f29b59e3130e"
+    }
+  ],
+  "after": [
+    "vist-x0 window=@15:ops pane=%15 pid=813698 cmd=zsh cwd=/home/hruzam/reposoma/.majkee seat=myshell-support vendor= id= expected_id= carrier=unbound state=prepared-shell",
+    "vist-x0 window=@16:cartan pane=%16 pid=813707 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva seat=nablarva.cartan vendor=codex id= expected_id=01a1d582-c6ce-74f1-9e66-44715424aa2c carrier=unbound state=prepared-shell",
+    "vist-x0 window=@17:witness pane=%17 pid=813716 cmd=zsh cwd=/home/hruzam/unikuklatrix/nablarva seat=witness vendor=claude id= expected_id=c266d10a-ecda-4f89-9f18-f29b59e3130e carrier=unbound state=prepared-shell"
+  ],
+  "viewers": {
+    "view-vist-ops": "view-vist-ops:ops pane=%15",
+    "view-vist-cartan": "view-vist-cartan:cartan pane=%16",
+    "view-vist-witness": "view-vist-witness:witness pane=%17"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "observed_utc": "2026-11-20T21:53:39.291423+00:00",
+  "created": [
+    {
+      "window": "myshell",
+      "viewer": "view-vist-myshell",
+      "pane": "%23",
+      "root": "zsh"
+    },
+    {
+      "window": "cartan2",
+      "viewer": "view-vist-cartan2",
+      "pane": "%25",
+      "root": "zsh"
+    }
+  ],
+  "scope": "Prepared windows only; no second myShell or spare controller launched",
+  "all_windows": [
+    "ops",
+    "cartan",
+    "witness",
+    "trajectory",
+    "myshell",
+    "cartan2"
+  ]
+}
