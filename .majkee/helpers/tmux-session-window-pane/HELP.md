@@ -32,9 +32,6 @@ tmux new-window -d -t helloWorld: -n sample-codex -c /path/to/scratch 'exec zsh 
 # -d keeps the current window selected; -t targets the session; -n names the window; -c sets its start directory.
 # This starts only a login shell.
 
-tmux list-windows -t helloWorld -F '#{window_index} #{window_name}'
-# Show window indices and names.
-
 tmux select-window -t helloWorld:sample-codex
 # Select it for a client already attached to helloWorld. No output is normal.
 
@@ -42,14 +39,24 @@ tmux attach-session -t helloWorld \; select-window -t :sample-codex
 # From another terminal, attach that terminal to the session and select the window.
 ```
 
+### Find window and active pane IDs
+
+```sh
+tmux list-windows -t helloWorld -F '#{window_index} #{window_name} #{window_id} #{pane_id}'
+```
+
+Each row shows a window and its active pane. In a row such as
+`2 sample-codex @7 %42`, use `-t '@7'` to target the window or `-t '%42'` to
+target the pane. To see every pane in a split window, use the pane listings below.
+
 ### Rename the window
 
 ```sh
 tmux rename-window -t 'helloWorld:sample-codex' 'scratch-codex'
 ```
 
-Renaming keeps each pane's `%` ID. A pane with ID `%42` is still addressable
-with `-t '%42'`. A target that uses the window name changes from
+Renaming keeps the window's `@` ID and each pane's `%` ID. A target that uses
+the window name changes from
 `helloWorld:sample-codex.0` to `helloWorld:scratch-codex.0`.
 
 ### Close the whole window
@@ -70,15 +77,24 @@ tmux kill-window -t 'helloWorld:scratch-codex'
 
 ## Panes
 
-Use the current window name when splitting or listing panes. Replace `%42` with
-the pane ID shown by `list-panes`.
+### List panes
+
+Use the window's current name to list its panes. Add `-s` and target the
+session to list every pane across its windows.
+
+```sh
+tmux list-panes -t 'helloWorld:sample-codex' -F '#{pane_index} #{pane_id}'
+tmux list-panes -s -t helloWorld -F '#{window_index} #{window_name} #{window_id} #{pane_index} #{pane_id}'
+```
+
+### Split or select a pane
+
+Use the window's current name when splitting. Replace `%42` with the pane ID
+shown by `list-panes` when selecting or closing a pane.
 
 ```sh
 tmux split-window -h -t 'helloWorld:sample-codex'
 # Split the active pane side by side. Use -v to stack the panes.
-
-tmux list-panes -t 'helloWorld:sample-codex' -F '#{pane_index} #{pane_id}'
-# Show each pane's index and % ID.
 
 tmux select-pane -t '%42'
 # Select the pane by ID.
