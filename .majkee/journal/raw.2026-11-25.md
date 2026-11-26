@@ -8,22 +8,54 @@ date: `2026-11-25`
 
 trajectory: `4f923bb7-ee15-447b-8954-408e16955530`
 
+to `atlas-ui` : `/home/hruzam/reposoma/_cold-start/card/CS.a1-006-supervisor.2026-11-26.md`
 
 ---
 
-`[sidequest]` from majkee:
+tmux new-session -t helloWorld \; select-window -t :exec
+
+
+`tmux attach-session -t helloWorld \; select-window -t :eSharp`
+tmux select-window -t helloWorld:eSharp
+`tmux attach-session -t helloWorld \; select-window -t :seniorDev`
+`tmux attach-session -t helloWorld \; select-window -t :sample-codex`
+`tmux attach-session -t helloWorld \; select-window -t :sample-codex`
+`tmux attach-session -t helloWorld \; select-window -t :sample-codex`
+`tmux attach-session -t helloWorld \; select-window -t :sample-codex`
+`tmux attach-session -t helloWorld \; select-window -t :sample-codex`
 
 ---
 
-roster: you + myShell ID `a857e21d-3f9d-4cf3-93f4-bbe9aa33ec66`, tmux session `window 3`
-cwd : `` if any coding, json work and assessment
-`oraculum`, 
 
+```bash
+tmux list-windows -t sandbox -F '#{session_id} | #{window_index} #{window_name} #{window_id} | #{pane_id}'
+$46 | 0 codex-sample @82 | %84
+$46 | 1 claude-sample @86 | %88
+$46 | 2 session @87 | %89
+$46 | 3 terminal @88 | %90
+```
+
+The original test session is now `germline` on the default tmux server (`-L default`).
+It keeps its existing windows and pane IDs.
+
+```bash
+tmux -L default list-windows -t '=germline' -F '#{session_id} | #{window_index} #{window_name} #{window_id} | #{pane_id}'
+```
+
+```text
+$46 | 0 codex-sample @82 | %84
+$46 | 1 claude-sample @86 | %88
+$46 | 2 atlas-ui @87 | %89
+$46 | 3 cartan @88 | %90
+```
+
+
+tmux new-session -t germline \; select-window -t :atlas-ui
+tmux new-session -t germline \; select-window -t :cartan
 
 ---
 
 ```bash
-
 tmux list-windows -t helloWorld -F '#{session_id} | #{window_index} #{window_name} #{window_id} | #{pane_id}'
 $36 | 0 eSharp @75 | %77
 $36 | 1 supervisor-relay @57 | %59
@@ -32,13 +64,44 @@ $36 | 3 myShell @59 | %61
 $36 | 4 auditor @64 | %66
 $36 | 5 exec @66 | %68
 $36 | 6 lead @68 | %70
-$36 | 7 sample-codex-2 @72 | %74
+$36 | 7 spare-codex @100 | %102
 $36 | 8 supervisorCli @73 | %75
-$36 | 9 harnessExp @76 | %78
-
-
+$36 | 9 spare-claude @76 | %78
 ```
 
+---
+
+HELP WINDOW SESSION
+
+tmux new-session -t seswin \; select-window -t :lead
+tmux new-session -t seswin \; select-window -t :audit
+
+
+---
+
+###### TRAJECTORY `eSharp`
+
+```prompt-me
+
+Side-quest
+- My first collection and seniorDev's opposing read are in eSharp/side-quest.2026-11-26.md.
+- myShell is not asked yet: her input row holds the text "yes, copy it to office via controller", so I typed nothing. The request is ready in eSharp/request.myShell.side-quest.2026-11-26.md
+```
+
+Everything is recorded in eSharp.decisions.majkee.2026-11-22.md
+
+
+---
+
+tmux -L sandbox-server new-session -d -s sandbox-terwor -n terminal -c ~/unikuklatrix/nablarva
+
+tmux -L sandbox-server kill-window -t '=sandbox:terminal'
+
+
+
+###### TRAJECTORY `eSharp` END
+
+---
 
 
 
@@ -69,7 +132,7 @@ To create the new parts:
 tmux new-window  -d -t helloWorld: -n supervisorCli -c ~/unikuklatrix/nablarva
 tmux new-session -d -s terwor -n lead -c ~/unikuklatrix/nablarva
 tmux new-window  -d -t terwor: -n audit -c ~/unikuklatrix/nablarva
-tmux list-windows -t terwor -F '#{session_id} | #{window_index} #{window_name} #{window_id} | #{pane_id}'
+tmux list-windows -t helloWorld -F '#{session_id} | #{window_index} #{window_name} #{window_id} | #{pane_id}'
 
 
 

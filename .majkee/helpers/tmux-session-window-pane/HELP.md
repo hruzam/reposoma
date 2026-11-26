@@ -21,6 +21,55 @@ tmux detach-client
 # From inside tmux, detach the current client and leave the session running.
 ```
 
+## Attach a fresh terminal to a window
+
+A **client** is the terminal attached to tmux. The **session** holds the
+selected window. Two clients attached directly to `helloWorld` follow that
+same selection, so a switch to `seniorDev` in either terminal moves both.
+
+### Keep this terminal on its own window
+
+From a shell outside tmux, run:
+
+```sh
+tmux new-session -t helloWorld \; select-window -t :supervisorCli
+```
+
+`new-session -t helloWorld` opens and attaches a new session in the
+`helloWorld` group. The two sessions share the same windows, panes, and
+running programs. Each session keeps its own selected window. `\;` passes
+the command separator to tmux, and `:supervisorCli` selects that window in
+the newly attached session.
+
+To give the view a name you can reconnect to, add `-s` when you create it:
+
+```sh
+tmux new-session -t helloWorld -s view-supervisor-cli \; select-window -t :supervisorCli
+```
+
+Later, use `tmux attach-session -t view-supervisor-cli`. The longer
+`new-session -d` → `select-window` → `attach-session` sequence is useful if
+you want to select the window *before* the terminal attaches. The short
+form attaches and selects in the same tmux command sequence.
+
+### Start on a window and share future switches
+
+```sh
+tmux attach-session -t 'helloWorld:supervisorCli'
+```
+
+This opens `supervisorCli` in `helloWorld` itself. Use it when terminals
+attached to `helloWorld` should follow the same window switches.
+
+If you see `$36 | 2 seniorDev @58 | %60`, read it as session ID `$36`,
+window index `2` and name `seniorDev`, window ID `@58`, and pane ID `%60`.
+The window name tells you where you landed. This command shows the mapping
+on the live server:
+
+```sh
+tmux list-windows -t helloWorld -F '#{session_id} | #{window_index} #{window_name} #{window_id} | #{pane_id}'
+```
+
 ## Windows
 
 A tmux window can exist without appearing in a terminal column. `select-window` chooses a window in a tmux session; it prints nothing and does not attach a regular shell to tmux.
@@ -34,9 +83,6 @@ tmux new-window -d -t helloWorld: -n sample-codex -c /path/to/scratch 'exec zsh 
 
 tmux select-window -t helloWorld:sample-codex
 # Select it for a client already attached to helloWorld. No output is normal.
-
-tmux attach-session -t helloWorld \; select-window -t :sample-codex
-# From another terminal, attach that terminal to the session and select the window.
 ```
 
 ### Find window and active pane IDs
@@ -99,6 +145,36 @@ tmux split-window -h -t 'helloWorld:sample-codex'
 tmux select-pane -t '%42'
 # Select the pane by ID.
 ```
+
+### Exit a CLI and keep its pane and window
+
+Start the CLI from the shell already in the pane. Type `codex` or `claude`
+without `exec`. The shell waits for the CLI, then gives you a prompt again
+when you quit it. You can start the next CLI in that same pane.
+
+If the pane started with the CLI as its command, or you ran `exec codex`
+from its shell, the CLI is the pane's main process. When it exits, tmux
+normally removes the pane. Removing the last pane closes the window.
+
+**For a CLI already running as the main process**, go to that pane and
+press your tmux prefix (usually `Ctrl-b`), then `:`. Enter this at the tmux
+prompt **before quitting the CLI**:
+
+```text
+set-option -p remain-on-exit on
+```
+
+Quit the CLI normally. The exited pane stays visible. In that same pane,
+open the tmux prompt again and enter:
+
+```text
+respawn-pane -c /home/hruzam/unikuklatrix/nablarva 'exec zsh -l'
+```
+
+Use the directory where you want the new shell to start. This brings back
+a shell in the existing pane and preserves its `%` ID and window's `@` ID.
+Run future CLIs from that prompt. If the last pane has already disappeared,
+use the shell-window creation example above to recreate the window.
 
 ### Close a pane
 
